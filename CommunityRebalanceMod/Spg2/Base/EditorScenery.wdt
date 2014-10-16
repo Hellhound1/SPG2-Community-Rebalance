@@ -1,0 +1,22 @@
+Colum:	5			
+Id	Name	IconFile	IconId	AsbFile
+0	AsteroidBig_01	Spg2\Models\Scenery\BigAsteroid01\BigAsteroid01.asb	Spg2\Textures\GUI\scenery.dds	0
+1	Asteroid1	Spg2\Models\Scenery\AsteroidDummies\AstDummy1.asb	Spg2\Textures\GUI\scenery.dds	1
+2	Asteroid1Active	Spg2\Models\Scenery\AsteroidDummies\AstDummy1Active.asb	Spg2\Textures\GUI\scenery.dds	2
+3	Asteroid2	Spg2\Models\Scenery\AsteroidDummies\AstDummy2.asb	Spg2\Textures\GUI\scenery.dds	3
+4	Asteroid3	Spg2\Models\Scenery\AsteroidDummies\AstDummy3.asb	Spg2\Textures\GUI\scenery.dds	4
+5	Asteroid3Active	Spg2\Models\Scenery\AsteroidDummies\AstDummy3Active.asb	Spg2\Textures\GUI\scenery.dds	5
+6	Asteroid4	Spg2\Models\Scenery\AsteroidDummies\AstDummy4.asb	Spg2\Textures\GUI\scenery.dds	6
+7	Asteroid4Active	Spg2\Models\Scenery\AsteroidDummies\AstDummy4Active.asb	Spg2\Textures\GUI\scenery.dds	7
+8	Asteroid5	Spg2\Models\Scenery\AsteroidDummies\AstDummy5.asb	Spg2\Textures\GUI\scenery.dds	8
+9	Asteroid5Active	Spg2\Models\Scenery\AsteroidDummies\AstDummy5Active.asb	Spg2\Textures\GUI\scenery.dds	9
+10	Asteroid6	Spg2\Models\Scenery\AsteroidDummies\AstDummy6.asb	Spg2\Textures\GUI\scenery.dds	10
+11	Asteroid6Active	Spg2\Models\Scenery\AsteroidDummies\AstDummy6Active.asb	Spg2\Textures\GUI\scenery.dds	11
+12	Asteroid7	Spg2\Models\Scenery\AsteroidDummies\AstDummy7.asb	Spg2\Textures\GUI\scenery.dds	12
+13	Asteroid7Active	Spg2\Models\Scenery\AsteroidDummies\AstDummy7Active.asb	Spg2\Textures\GUI\scenery.dds	13
+14	JunkLarge1	Spg2\Models\Scenery\Junk\junk01.asb	Spg2\Textures\GUI\scenery.dds	14
+15	JunkLarge2	Spg2\Models\Scenery\Junk\junk02.asb	Spg2\Textures\GUI\scenery.dds	15
+16	JunkLarge3	Spg2\Models\Scenery\Junk\junk03.asb	Spg2\Textures\GUI\scenery.dds	16
+17	JunkLarge4	Spg2\Models\Scenery\Junk\junk04.asb	Spg2\Textures\GUI\scenery.dds	17
+18	JunkLarge5	Spg2\Models\Scenery\Junk\junk05.asb	Spg2\Textures\GUI\scenery.dds	18
+19	Tesla_Ruin	Spg2\Models\Scenery\teslaDestroyed\teslaDestroyed.asb	Spg2\Textures\GUI\scenery.dds	18

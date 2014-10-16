@@ -1,0 +1,25 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+int questCond = 0 ;
+mainquest GetById 47 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 47 SetSolve 1 ;
+	mainquest GetById 47 DeleteObjective 1 ;
+	mainquest GetById 48 SetAcquire 1 ;
+	
+	game SetQuestMode 1 ;
+	
+	ship GetByKeyName m08assassin1 SetEnabled 1 ;
+	/* use m08aTRI as MissionArea */
+	waypoint GetByKeyName m08aWp SetMark 0 ;
+	waypoint GetByKeyName m08aWp SetMissionTask -1 ;
+	ship GetByKeyName m08assassin1 SetMark 1 ;
+	ship GetByKeyName m08assassin1 SetMissionTask 0 ;
+	ship GetByKeyName m08assassin1 SetFriendFoe 2 ;
+	ship GetByKeyName m08assassin1 SetAIQuestStatus 2 ;
+	game ResetShipEnemyList 1 ;
+endif
+End

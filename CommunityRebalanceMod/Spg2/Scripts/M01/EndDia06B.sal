@@ -1,0 +1,30 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M01_COMPLETED ;
+
+mainquest GetById 9 SetSolve 1 ;
+mainquest GetById 9 DeleteObjective 1 ;
+
+ship GetByKeyName spearheadSHP SetEnabled 0 ;
+ship GetByKeyName marrakeshSHP SetEnabled 0 ;
+tutorial Enable 1 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 200 ;
+player AddReputation -100 ;
+player AddCredits 40000 ;
+script Spg2\Scripts\BlueprintAward.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

@@ -1,0 +1,32 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 75 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 75 SetSolve 1 ;
+	mainquest GetById 75 DeleteObjective 1 ;
+	mainquest GetById 76 SetAcquire 1 ;
+	ship GetByKeyName m11samoaSHP SetMark 0 ;
+	ship GetByKeyName m11sanctuary1 SetMark 0 ;
+	waypoint GetByKeyName m11aWp SetMark 1 ;
+	waypoint GetByKeyName m11aWp SetMissionTask 4 ;
+	/*
+	ship GetByKeyName m11ridleySHP SetDestructible 1 ;
+	*/
+	ship GetByKeyName m11samoaSHP SetAIQuestStatus 2 ;
+	ship GetByKeyName m11sanctuary1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m11ridleySHP SetAIQuestStatus 0 ;
+	
+	/* add quest item */
+	int itemId = 11 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	log 66 ;
+	dialogue Spg2\Dialogues\M11\D04.dia ;
+endif
+End

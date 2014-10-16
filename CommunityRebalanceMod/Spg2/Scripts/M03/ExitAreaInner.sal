@@ -1,0 +1,52 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+if mission is active, trigger mission fail warning
+*/
+int questCond = 0 ;
+int titleLine = 0 ;
+int textLine1 = 0 ;
+int textLine2 = 0 ;
+
+/* m03areaBinner */
+questCond = 0 ;
+mainquest GetById 16 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m03areaBinner */
+questCond = 0 ;
+mainquest GetById 17 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m03areaBinner */
+questCond = 0 ;
+mainquest GetById 18 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m03areaBinner */
+questCond = 0 ;
+mainquest GetById 19 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+End

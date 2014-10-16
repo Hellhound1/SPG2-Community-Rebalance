@@ -1,0 +1,715 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky7.amb
+}	
+Spaceship:	
+{	
+	ModelId:	53
+	Position:	30106.25	0.00	106351.16
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	32
+	FactionId:	6
+	Class:	3
+	Skills:	0
+	Level:	5
+	Profession:	0
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04sionBSHP
+	Name:	Sion
+	CaptainName:	Tyrone_Jackson
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	73
+	Position:	30092.71	0.00	106390.38
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	1
+	Class:	2
+	Skills:	0
+	Level:	0
+	Profession:	3
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04convoy1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\DestroyConvoy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	72
+	Position:	30045.65	0.00	106371.11
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	1
+	Class:	1
+	Skills:	0
+	Level:	0
+	Profession:	3
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04convoy2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\DestroyConvoy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	23
+	Position:	30075.05	0.00	106446.62
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	41
+	Class:	4
+	Skills:	0
+	Level:	4
+	Profession:	2
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04anarchist1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\DestroyAnarchists.sal
+		OnCapture:	Spg2\Scripts\M04\CaptureAnarchists.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	22
+	Position:	30050.66	0.00	106330.34
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	41
+	Class:	3
+	Skills:	0
+	Level:	3
+	Profession:	2
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04anarchist2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\DestroyAnarchists.sal
+		OnCapture:	Spg2\Scripts\M04\CaptureAnarchists.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	22
+	Position:	30083.57	0.00	106315.18
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	41
+	Class:	3
+	Skills:	0
+	Level:	3
+	Profession:	2
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04anarchist3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\DestroyAnarchists.sal
+		OnCapture:	Spg2\Scripts\M04\CaptureAnarchists.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	35
+	Position:	24221.61	0.00	106652.70
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	1
+	Class:	2
+	Skills:	0
+	Level:	4
+	Profession:	3
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04convoy3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\MainQuest04Fail.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	22
+	Position:	24186.78	0.00	106695.80
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	41
+	Class:	3
+	Skills:	0
+	Level:	4
+	Profession:	2
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04anarchistB1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\DestroyAnarchists2.sal
+		OnCapture:	Spg2\Scripts\M04\CaptureAnarchists2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	40
+	Position:	24166.91	0.00	106626.95
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	41
+	Class:	3
+	Skills:	0
+	Level:	4
+	Profession:	2
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m04anarchistB2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M04\DestroyAnarchists2.sal
+		OnCapture:	Spg2\Scripts\M04\CaptureAnarchists2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	33
+	Position:	23041.81	-135.33	106706.40
+	Rotation:	-0.28	-2.69	0.00
+	KeyName:	sat284
+	Name:	Relay_satellite
+	NameId:	96
+	FactionId:	36
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	1.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\Satellite\activation3.sal
+		OnDeactivate:	Spg2\Models\Structures\Satellite\deactivation3.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport78.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	20
+	Position:	24992.24	460.74	105571.25
+	Rotation:	-0.06	0.80	0.00
+	KeyName:	mining284A
+	Name:	Remote_mining_facility
+	NameId:	99
+	FactionId:	0
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	0.94
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\MiningFacility2\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\MiningFacility2\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport78.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	6
+	Position:	27587.92	-401.26	104165.18
+	Rotation:	0.10	-2.05	0.00
+	KeyName:	mining284B
+	Name:	Remote_mining_facility
+	NameId:	99
+	FactionId:	0
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	-0.50
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\MiningFacility\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\MiningFacility\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport78.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	6
+	Position:	27531.72	910.00	109009.89
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_284_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	1
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	7
+	Position:	25571.53	-941.00	109053.22
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_284_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	2
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	8
+	Position:	26709.05	-219.00	107844.18
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_284_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	3
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	9
+	Position:	28257.86	-316.00	106602.07
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_284_3
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	4
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	10
+	Position:	27348.83	-961.00	104791.09
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_284_4
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	5
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	11
+	Position:	25468.32	89.00	105751.24
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_284_5
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	6
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	12
+	Position:	25472.31	-334.00	103905.76
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_284_6
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	0
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	25136.06	196.00	109416.95
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_0
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	1
+	Position:	27538.76	-41.00	109403.88
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_1
+	Name:	Engine_dampener
+	NameId:	87
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	2
+	Position:	26660.15	-377.00	108533.59
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_2
+	Name:	Eye_of_storm
+	NameId:	88
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\EyeOfStorm\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	3
+	Position:	28525.69	123.00	107351.45
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_3
+	Name:	Grappling_disperser
+	NameId:	89
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	4
+	Position:	26170.76	-587.00	106193.95
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_4
+	Name:	Hyper-resonance
+	NameId:	90
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	5
+	Position:	23994.95	467.00	104619.48
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_5
+	Name:	Plasma_pulsar
+	NameId:	91
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\PlasmaPulsar\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	6
+	Position:	26381.51	143.00	103885.65
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_6
+	Name:	Sensor_scrambler
+	NameId:	92
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	7
+	Position:	26484.40	387.00	104766.56
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_7
+	Name:	Shield_dampener
+	NameId:	93
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	8
+	Position:	28755.64	183.00	104532.90
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_8
+	Name:	Transport_destabilizer
+	NameId:	94
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	28131.10	-765.00	108979.29
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_284_9
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	30065.70	0.00	106384.16
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m04bTRI
+	Type:	1
+	Radius:	471.20
+	PulseTime:	1.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M04\EnterTriM04B.sal
+}	
+}	
+Trigger:	
+{	
+	Position:	24203.09	0.00	106658.15
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m04cTRI
+	Type:	1
+	Radius:	523.70
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M04\EnterTriM04C.sal
+}	
+}	
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector284.sal
+}	

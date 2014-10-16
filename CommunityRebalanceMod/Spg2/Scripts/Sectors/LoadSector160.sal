@@ -1,0 +1,88 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName mining160A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining160A CallEvent OnActivate ;
+else
+	structure GetByKeyName mining160A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName mining160B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining160B CallEvent OnActivate ;
+else
+	structure GetByKeyName mining160B CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_160_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_160_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_160_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_160_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_160_4 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_160_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_160_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_160_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_160_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_160_4 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_160_5 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

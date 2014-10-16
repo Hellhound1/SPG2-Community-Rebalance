@@ -1,0 +1,12 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 1 ;
+ship GetPlayer SetInvulnerable 0 ;
+
+storypanel 10 ;
+
+End

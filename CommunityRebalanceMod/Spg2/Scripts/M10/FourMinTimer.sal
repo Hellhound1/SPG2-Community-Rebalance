@@ -1,0 +1,23 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* activated after 4 minute timer is out if quest 67 is NOT completed */
+int questCond = 0 ;
+mainquest GetById 67 GetSolve questCond ;
+if questCond == 0
+	ship GetByKeyName m10stilleto3 SetEnabled 1 ;
+	ship GetByKeyName m10stilleto4 SetEnabled 1 ;
+	ship GetByKeyName m10stilleto3 SetMark 1 ;
+	ship GetByKeyName m10stilleto4 SetMark 1 ;
+	ship GetByKeyName m10stilleto3 SetMissionTask 0 ;
+	ship GetByKeyName m10stilleto4 SetMissionTask 0 ;
+	ship GetByKeyName m10stilleto3 SetFriendFoe 2 ;
+	ship GetByKeyName m10stilleto4 SetFriendFoe 2 ;
+	ship GetByKeyName m10stilleto3 SetAIQuestStatus 2 ;
+	ship GetByKeyName m10stilleto4 SetAIQuestStatus 2 ;
+	game ResetShipEnemyList 1 ;
+endif
+End

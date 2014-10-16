@@ -1,0 +1,27 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+mainquest GetById 129 SetSolve 1 ;
+mainquest GetById 130 SetAcquire 1 ;
+waypoint GetByKeyName m19aWp SetMark 1 ;
+waypoint GetByKeyName m19aWp SetMissionTask 4 ;
+game SetControlEnabled 1 ;
+ship GetByKeyName m19ridleyASHP SetEnabled 0 ;
+ship GetByKeyName m19kuzhevASHP SetEnabled 0 ;
+ship GetByKeyName m19protect1 SetEnabled 0 ;
+ship GetByKeyName m19protect2 SetEnabled 0 ;
+ship GetByKeyName m19protect3 SetEnabled 0 ;
+log 105 ;
+game SetQuestMode 0 ;
+End

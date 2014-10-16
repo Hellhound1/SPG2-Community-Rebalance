@@ -1,0 +1,48 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 114 SetSolve 1 ;
+mainquest GetById 115 SetAcquire 1 ;
+
+/* MissionArea */
+ship GetByKeyName m16nyx1 SetEnabled 1 ;
+ship GetByKeyName m16nyx2 SetEnabled 1 ;
+ship GetByKeyName m16nyx3 SetEnabled 1 ;
+ship GetByKeyName m16nyx4 SetEnabled 1 ;
+ship GetByKeyName m16nyx5 SetEnabled 1 ;
+
+ship GetByKeyName m16nyx1 SetFriendFoe 2 ;
+ship GetByKeyName m16nyx2 SetFriendFoe 2 ;
+ship GetByKeyName m16nyx3 SetFriendFoe 2 ;
+ship GetByKeyName m16nyx4 SetFriendFoe 2 ;
+ship GetByKeyName m16nyx5 SetFriendFoe 2 ;
+
+ship GetByKeyName m16nyx1 SetMark 1 ;
+ship GetByKeyName m16nyx2 SetMark 1 ;
+ship GetByKeyName m16nyx3 SetMark 1 ;
+ship GetByKeyName m16nyx4 SetMark 1 ;
+ship GetByKeyName m16nyx5 SetMark 1 ;
+
+ship GetByKeyName m16nyx1 SetMissionTask 0 ;
+ship GetByKeyName m16nyx2 SetMissionTask 0 ;
+ship GetByKeyName m16nyx3 SetMissionTask 0 ;
+ship GetByKeyName m16nyx4 SetMissionTask 0 ;
+ship GetByKeyName m16nyx5 SetMissionTask 0 ;
+
+ship GetByKeyName m16steigerSHP SetAIQuestStatus 2 ;
+ship GetByKeyName m16gladius1 SetAIQuestStatus 2 ;
+ship GetByKeyName m16gladius2 SetAIQuestStatus 2 ;
+ship GetByKeyName m16nyx1 SetAIQuestStatus 2 ;
+ship GetByKeyName m16nyx2 SetAIQuestStatus 2 ;
+ship GetByKeyName m16nyx3 SetAIQuestStatus 2 ;
+ship GetByKeyName m16nyx4 SetAIQuestStatus 2 ;
+ship GetByKeyName m16nyx5 SetAIQuestStatus 2 ;
+
+game ResetShipEnemyList 1 ;
+
+game SetControlEnabled 1 ;
+log 95 ;
+End

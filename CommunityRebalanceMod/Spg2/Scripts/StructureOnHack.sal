@@ -1,0 +1,43 @@
+/*
+-------
+Script by: LGM Games , 2014
++OnHack structure script
+-------
+1. check region and redirect to other scripts
+->separated into blocks of 20 region scripts due to limit of number of variables per script
+*/
+
+int regionId = 0 ;
+region GetId regionId ;
+PrintMessageVar Structure_OnHack: INT regionId ;
+
+int parentFaction = 0 ;
+structure GetParent GetFaction parentFaction ;
+PrintMessageVar ParentStructureFaction: INT parentFaction ;
+
+if regionId < 20
+	PrintMessage structureOnHackA ;
+	script Spg2\Scripts\Regions\StructureOnHackA.sal ;
+endif
+
+if regionId > 19 && regionId < 40
+	PrintMessage structureOnHackB ;
+	script Spg2\Scripts\Regions\StructureOnHackB.sal ;
+endif
+
+if regionId > 39 && regionId < 60
+	PrintMessage structureOnHackC ;
+	script Spg2\Scripts\Regions\StructureOnHackC.sal ;
+endif
+
+if regionId > 59 && regionId < 80
+	PrintMessage structureOnHackD ;
+	script Spg2\Scripts\Regions\StructureOnHackD.sal ;
+endif
+
+if regionId > 79
+	PrintMessage structureOnHackE ;
+	script Spg2\Scripts\Regions\StructureOnHackE.sal ;
+endif
+
+End

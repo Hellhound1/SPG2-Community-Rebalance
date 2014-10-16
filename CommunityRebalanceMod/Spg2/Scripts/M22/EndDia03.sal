@@ -1,0 +1,20 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 153 SetSolve 1 ;
+mainquest GetById 154 SetAcquire 1 ;
+platform GetByKeyName collector1 SetMark 1 ;
+platform GetByKeyName collector2 SetMark 1 ;
+platform GetByKeyName collector3 SetMark 1 ;
+platform GetByKeyName collector4 SetMark 1 ;
+platform GetByKeyName collector5 SetMark 1 ;
+platform GetByKeyName collector1 SetMissionTask 0 ;
+platform GetByKeyName collector2 SetMissionTask 0 ;
+platform GetByKeyName collector3 SetMissionTask 0 ;
+platform GetByKeyName collector4 SetMissionTask 0 ;
+platform GetByKeyName collector5 SetMissionTask 0 ;
+log 120 ;
+End

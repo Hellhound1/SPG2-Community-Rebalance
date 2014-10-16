@@ -1,0 +1,12 @@
+Colum:	7					
+Id	Name	BaseId	IconFile	IconColum	PriceColumn	NameColumn
+0	Power_core	23	12	13	3	1
+1	Propulsion	24	12	13	3	1
+2	Sensors	25	12	13	3	1
+3	Shield	21	12	13	3	1
+4	Transporter	27	12	13	3	1
+5	Grappler	26	12	13	3	1
+6	Light_weapon	35	12	13	3	1
+7	Heavy_weapon	36	12	13	3	1
+8	Hangar	28	12	13	3	1
+9	Cloak	29	12	13	3	1

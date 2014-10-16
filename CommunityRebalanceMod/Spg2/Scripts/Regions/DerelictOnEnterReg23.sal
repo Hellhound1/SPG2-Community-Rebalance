@@ -1,0 +1,8 @@
+/*
++script deprecated
++left only for mod-stability reasons
+*/
+
+script Spg2\Scripts\DerelictOnEnter.sal ;
+
+End

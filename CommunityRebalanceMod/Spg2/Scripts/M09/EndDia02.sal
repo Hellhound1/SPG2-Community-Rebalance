@@ -1,0 +1,17 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 55 SetSolve 1 ;
+mainquest GetById 55 DeleteObjective 1 ;
+mainquest GetById 56 SetAcquire 1 ;
+
+game SetQuestMode 0 ;
+
+waypoint GetByKeyName m09aWp SetMark 1 ;
+waypoint GetByKeyName m09aWp SetMissionTask 4 ;
+game SetControlEnabled 1 ;
+log 51 ;
+End

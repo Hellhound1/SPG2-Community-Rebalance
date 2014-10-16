@@ -1,0 +1,69 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 217 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 218 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+/* Log output */
+PrintMessage M07:_DIRECTORATE_PRISON_DESTROYED! ;
+
+int questCond = 0 ;
+mainquest GetById 44 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 44 SetSolve 1 ;
+	/* mainquest GetById 44 DeleteObjective 1 ; */
+	mainquest GetById 45 SetAvailable 1 ;
+	log 44 ;
+	script Spg2\Scripts\M07\CS07C.sal ;
+	
+	game SetQuestMode 0 ;
+	
+	/* -^-REWARD-^- */
+	player AddExp 5600 ;
+	player AddReputation 100 ;
+	player AddCredits 160000 ;
+	script Spg2\Scripts\AwardLightWeapon2.sal ;
+
+	/* -^-MISSION COMPLETE-^- */
+	int titleLine = 183 ;
+	int textLine1 = 1553 ;
+	int textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+	
+endif
+End

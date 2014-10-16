@@ -1,0 +1,43 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 29 GetAcquire questCond ;
+if questCond == 1
+	
+	game SetQuestMode 1 ;
+
+	mainquest GetById 29 SetSolve 1 ;
+	mainquest GetById 29 DeleteObjective 1 ;
+	mainquest GetById 30 SetAcquire 1 ;
+	structure GetByKeyName m05syndSTA SetEnabled 1 ;	
+	ship GetByKeyName m05kuzhevSHP SetEnabled 1 ;
+	ship GetByKeyName m05protect1 SetEnabled 1 ;	
+	waypoint GetByKeyName m05marker SetMark 0 ;
+	waypoint GetByKeyName m05marker SetMissionTask -1 ;
+	
+	structure GetByKeyName m05syndSTA SetInvulnerable 1 ;
+	ship GetByKeyName m05kuzhevSHP SetInvulnerable 1 ;
+	ship GetByKeyName m05protect1 SetInvulnerable 1 ;
+	ship GetByKeyName m05kuzhevSHP SetBoardable 0 ;
+	ship GetByKeyName m05protect1 SetBoardable 0 ;
+	structure GetByKeyName m05syndSTA SetBoardable 0 ;
+	int aiState = 1 ;
+	ship GetByKeyName m05kuzhevSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m05protect1 SetAIQuestStatus aiState ;
+	
+	
+	
+	
+	ship GetByKeyName m05kuzhevSHP SetFriendFoe 0 ;
+	ship GetByKeyName m05protect1 SetFriendFoe 0 ;
+	structure GetByKeyName m05syndSTA SetFriendFoe 0 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	script Spg2\Scripts\M05\CS05A.sal ;
+endif
+End

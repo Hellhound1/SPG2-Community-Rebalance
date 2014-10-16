@@ -1,0 +1,15 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 60 SetSolve 1 ;
+mainquest GetById 60 DeleteObjective 1 ;
+mainquest GetById 61 SetAcquire 1 ;
+log 54 ;
+waypoint GetByKeyName m09bWp SetMark 1 ;
+ship GetByKeyName m09nimovSHP SetMissionTask -1 ;
+waypoint GetByKeyName m09bWp SetMissionTask 4 ;
+game SetQuestMode 0 ;
+End

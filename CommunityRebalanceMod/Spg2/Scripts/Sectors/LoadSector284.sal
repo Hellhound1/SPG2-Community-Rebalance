@@ -1,0 +1,125 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName sat284 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName sat284 CallEvent OnActivate ;
+else
+	structure GetByKeyName sat284 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName mining284A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining284A CallEvent OnActivate ;
+else
+	structure GetByKeyName mining284A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName mining284B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining284B CallEvent OnActivate ;
+else
+	structure GetByKeyName mining284B CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 4 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_4 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_5 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_6 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_7 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_8 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_284_9 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_284_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_284_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_284_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_284_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_284_4 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_284_5 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_284_6 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

@@ -1,0 +1,174 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky3.amb
+}	
+Structure:	
+{	
+	ModelId:	3
+	Position:	36894.18	231.43	83927.95
+	Rotation:	0.38	1.92	0.00
+	KeyName:	sat226
+	Name:	Relay_satellite
+	NameId:	96
+	FactionId:	36
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	-0.09
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\Satellite\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\Satellite\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport30.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	12
+	Position:	39309.46	-516.00	86138.04
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_226_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	1
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	13
+	Position:	40832.64	-137.00	83043.03
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_226_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	2
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	14
+	Position:	39920.25	-706.00	81971.30
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_226_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	3
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	15
+	Position:	40926.28	337.00	80991.65
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_226_3
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	4
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	3
+	Position:	40719.61	614.00	85689.82
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_226_0
+	Name:	Grappling_disperser
+	NameId:	89
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	4
+	Position:	38479.73	-680.00	84769.28
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_226_1
+	Name:	Hyper-resonance
+	NameId:	90
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	5
+	Position:	37741.86	36.00	82921.30
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_226_2
+	Name:	Plasma_pulsar
+	NameId:	91
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\PlasmaPulsar\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector226.sal
+}	

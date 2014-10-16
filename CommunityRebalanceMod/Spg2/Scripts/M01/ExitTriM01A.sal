@@ -1,0 +1,45 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_ExitTriM01A.sal ;
+PrintMessage Trigger_M01A_Exited ;
+int questCond = 0 ;
+mainquest GetById 2 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage TriM01A_QuestCond_Passed! ;
+	mainquest GetById 2 SetSolve 1 ;
+	mainquest GetById 2 DeleteObjective 1 ;
+	mainquest GetById 3 SetAcquire 1 ;
+	ship GetByKeyName m01pirate SetEnabled 1 ;
+	/*
+	ship GetByKeyName m01trinity SetEnabled 1 ;
+	*/
+	float pirateHull = 500.0 ;
+	ship GetByKeyName m01pirate SetHP pirateHull ;
+	ship GetByKeyName m01pirate SetInvulnerable 1 ;
+	ship GetByKeyName m01pirate SetBoardable 0 ;
+	/*
+	ship GetByKeyName m01trinity SetInvulnerable 1 ;
+	*/
+	/* quest ship AI flag to true */
+	ship GetByKeyName m01pirate SetAIQuestStatus 1 ;
+	/*
+	ship GetByKeyName m01trinity SetAIQuestStatus 2 ;
+	*/
+	log 2 ;
+	planet GetByKeyName trinityPLA SetMark 0 ;
+	planet GetByKeyName trinityPLA SetMissionTask -1 ;
+	/* missionArea! */
+	ship GetByKeyName m01pirate SetFriendFoe 2 ;
+	/*
+	ship GetByKeyName m01trinity SetFriendFoe 1 ;
+	*/
+	game ResetShipEnemyList 1 ;
+	/* Autosave */
+	script Spg2\Scripts\M01\CS01B.sal ;
+endif
+PrintMessage END_ExitTriM01A.sal ;
+End

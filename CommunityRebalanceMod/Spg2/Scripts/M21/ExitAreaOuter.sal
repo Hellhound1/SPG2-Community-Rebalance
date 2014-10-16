@@ -1,0 +1,53 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+activated on mission fail or abandon
+	+linked through QuestMain.wdt
+*/
+int questCond = 0 ;
+
+/* m19areaBouter */
+questCond = 0 ;
+mainquest GetById 143 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m19areaBouter */
+questCond = 0 ;
+mainquest GetById 144 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m19areaBouter */
+questCond = 0 ;
+mainquest GetById 145 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m19areaBouter */
+questCond = 0 ;
+mainquest GetById 146 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m19areaBouter */
+questCond = 0 ;
+mainquest GetById 147 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m19areaBouter */
+questCond = 0 ;
+mainquest GetById 148 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+
+End

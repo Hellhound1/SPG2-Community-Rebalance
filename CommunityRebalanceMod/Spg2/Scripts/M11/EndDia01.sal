@@ -1,0 +1,30 @@
+float time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+mainquest GetById 71 SetSolve 1 ;
+mainquest GetById 71 DeleteObjective 1 ;
+mainquest GetById 72 SetAcquire 1 ;
+
+ship GetByKeyName m11brother1 SetMark 1 ;
+ship GetByKeyName m11brother2 SetMark 1 ;
+ship GetByKeyName m11brother1 SetMissionTask 0 ;
+ship GetByKeyName m11brother2 SetMissionTask 0 ;
+
+ship GetPlayer SetInvulnerable 0 ;
+ship GetByKeyName m11ridleySHP SetInvulnerable 0 ;
+ship GetByKeyName m11terakonSHP SetInvulnerable 0 ;
+
+ship GetByKeyName m11brother1 SetInvulnerable 0 ;
+ship GetByKeyName m11brother2 SetInvulnerable 0 ;
+
+log 64 ;
+
+game SetControlEnabled 1 ;
+
+End

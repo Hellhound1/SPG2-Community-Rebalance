@@ -1,0 +1,39 @@
+Dialogue:
+{
+	Portrait:	20
+	Text:	69
+	Voice:	Spg2\Sound\Voice\nimov\69.wav
+	Duration:	5.721
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	70
+	Voice:	Spg2\Sound\Voice\adrian\70.wav
+	Duration:	4.89
+}
+Dialogue:
+{
+	Portrait:	20
+	Text:	71
+	Voice:	Spg2\Sound\Voice\nimov\71.wav
+	Duration:	24.00
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	72
+	Voice:	Spg2\Sound\Voice\adrian\72.wav
+	Duration:	1.147
+}
+Dialogue:
+{
+	Portrait:	20
+	Text:	73
+	Voice:	Spg2\Sound\Voice\nimov\73.wav
+	Duration:	24.78
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M09\EndDia04.sal
+}

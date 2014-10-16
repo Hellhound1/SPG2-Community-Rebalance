@@ -1,0 +1,28 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default derelict salvage script
+*/
+
+/* blueprint award - dependency on ship level */
+int playerLevel = 1 ;
+player GetLevel playerLevel ;
+int maxBpChance = 40 ;
+if playerLevel < 21
+	maxBpChance = 40 ;
+endif
+if playerLevel > 20 && playerLevel < 51
+	maxBpChance = 30 ;
+endif
+if playerLevel > 50
+	maxBpChance = 20 ;
+endif
+
+int bpChance = 0 ;
+math bpChance = Rnd 1 maxBpChance ;
+
+if bpChance == 1
+	script Spg2\Scripts\BlueprintAward.sal ;
+endif
+
+End

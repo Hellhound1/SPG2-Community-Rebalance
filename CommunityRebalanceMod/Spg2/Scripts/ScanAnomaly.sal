@@ -1,0 +1,73 @@
+/*
+-------
+Script by: LGM Games  
++Random anomaly OnScan script
++rewards player with Experience
++rewards player with Credits if he Free_Scientist licence is equipped
++chance of added adverse effect
++chance to acquire a blueprint
+-------
+*/
+
+int expBase = 50 ;
+int expAdd = 0 ;
+int experience = 50 ;
+int expClass = 0 ;
+
+/* additional exp rewarded per experience level */
+int level = 0 ;
+player GetLevel level ;
+math expAdd = 10 * level ;
+math expClass = expBase + expAdd ;
+
+/* exp reward increased if character class is Engineer */
+int class = 0 ;
+player GetCharacterClass class ;
+if class == 1
+	math experience = expClass * 2 ;
+else
+	math experience = expClass * 1 ;
+endif
+
+/* add final exp reward */
+player AddExp experience ;
+
+/* AddCredits if license equipped */
+/*
+if item in inventory -> Free_Scientist license
+player AddCredits ;
+endif
+*/
+
+/* chance that a localized event will happen OnScan */
+int event = 0 ;
+math event = Rnd 1 10 ;
+if event == 1
+	PrintMessage Revenant_spawned_OnScan_anomaly! ;
+	/* spawn revenant */
+endif
+if event == 2
+	PrintMessage EMP_blast_OnScan_anomaly! ;
+	/* create EMP blast */
+endif
+if event == 3
+	PrintMessage Radiation_discharge_OnScan_anomaly! ;
+	/* create radiation discharge */
+endif
+if event == 4
+	PrintMessage Hyperspace_translocation_OnScan_anomaly! ;
+	/* hyperspace translocation */
+endif
+if event == 5
+	PrintMessage ShipSystem_accident_OnScan_anomaly! ;
+	/* ship system accident */
+endif
+
+/* blueprint award */
+int bpChance = 0 ;
+math bpChance = Rnd 1 80 ;
+if bpChance == 1
+	script Spg2\Scripts\BlueprintAward.sal ;
+endif
+
+End

@@ -1,0 +1,38 @@
+float3 structurePosition = 0.0 0.0 0.0 ;
+float3 effectPosition = 0.0 0.0 0.0 ;
+structure GetByKeyName m10hubTemp SetRiftSpace 1.0 ;
+structure GetByKeyName m10hubTemp GetPosition structurePosition ;
+
+float3 structurePosAdd = 200.0 0.0 -100.0 ;
+math effectPosition = structurePosition + structurePosAdd ;
+
+int retId = 0 ;
+float delay = 0.0 ;
+int asbId = 215 ;
+float lifetime = 0.25 ;
+assemblyex Create retId delay effectPosition asbId lifetime ;
+
+int state = 0 ;
+int interpolation = 0 ;
+delay = 0.0 ;
+assemblyex GetParticle retId 0 SetVisible state interpolation delay ;
+
+pause 0.25 ;
+
+retId = 0 ;
+delay = 1.5 ;
+asbId = 216 ;
+lifetime = 5.0 ;
+assemblyex Create retId delay effectPosition asbId lifetime ;
+
+state = 0 ;
+interpolation = 0 ;
+delay = 0.0 ;
+assemblyex GetParticle retId 0 SetVisible state interpolation delay ;
+
+pause 0.25 ;
+
+structurePosAdd = 0.0 0.0 200.0 ;
+math effectPosition = structurePosition + structurePosAdd ;
+structure GetByKeyName m10hubTemp EnterRiftSpace 1.5 1.0 effectPosition ;
+End

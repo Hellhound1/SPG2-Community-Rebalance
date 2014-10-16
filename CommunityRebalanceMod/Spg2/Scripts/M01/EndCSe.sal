@@ -1,0 +1,24 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_EndCSe.sal ;
+PrintMessage Slijedi_Dijalog_D06 ;
+
+/* disable HUD and player controls */
+game SetControlEnabled 1 ;
+
+/* remove quest item */
+int itemId = 0 ;
+int amount = 1 ;
+player GetQuestItemCount itemId amount ;
+player RemoveQuestItemCount itemId amount ;
+
+/* open a special panel so the player can choose between campaign and freeroam mode */
+campaignchoice 0 ;
+
+game SetQuestMode 0 ;
+
+End

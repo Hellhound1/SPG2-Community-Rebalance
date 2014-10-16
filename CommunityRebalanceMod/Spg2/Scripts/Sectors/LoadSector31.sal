@@ -1,0 +1,98 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName sat31 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName sat31 CallEvent OnActivate ;
+else
+	structure GetByKeyName sat31 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName prison31 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName prison31 CallEvent OnActivate ;
+else
+	structure GetByKeyName prison31 CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 4 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_4 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_5 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_6 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_7 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_8 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_31_9 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 14 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_31_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_31_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_31_2 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

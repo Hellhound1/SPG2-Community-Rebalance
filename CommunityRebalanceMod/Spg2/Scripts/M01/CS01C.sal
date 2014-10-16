@@ -1,0 +1,134 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+game SetControlEnabled 0 ;
+pause 0.5 ;
+
+/* start FadeToBlack */
+float time = 0.6 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 0.6 ;
+
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+/* actor initial state */
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+
+/* turn off HUD */
+game ShowAllPanels 0 ;
+/* CS lines */
+screen ShowLine 1 ;
+
+/* Cutscene camera start */
+camera SetCSCamera 1 ;
+camera GetDefault ;
+/*
+pause 0.7 ;
+*/
+
+int objectType = 0 ;
+float verticalStartA = 5.0 ;
+int focusObjType = 7 ;
+float verticalStartB = 0.0 ;
+
+float3 playerPos ;
+ship GetPlayer GetPosition playerPos ;
+float3 trinityPos ;
+planet GetByKeyName trinityPLA GetPosition trinityPos ;
+
+ship GetPlayer VectorTo trinityPos ;
+
+float cameraDistance ;
+math cameraDistance = Distance playerPos trinityPos ;
+math cameraDistance = cameraDistance + 20.0 ;
+camera SetType 6 objectType NONE verticalStartA focusObjType trinityPLA verticalStartB cameraDistance ;
+
+
+/*
+pause 0.7 ;
+*/
+
+
+/*
+game ShowAllPanels 0 ;
+
+screen ShowLine 1 ;
+
+pause 0.7 ;
+
+
+camera SetCSCamera 1 ;
+camera GetDefault ;
+*/
+
+
+
+
+/* camera target -> player->trinityPLA + zoomIn */
+/*
+int objectType = 0 ;
+float verticalStartA = 5.0 ;
+int focusObjType = 7 ;
+float verticalStartB = 0.0 ;
+
+float3 playerPos ;
+ship GetPlayer GetPosition playerPos ;
+float3 trinityPos ;
+planet GetByKeyName trinityPLA GetPosition trinityPos ;
+
+ship GetPlayer VectorTo trinityPos ;
+
+float cameraDistance ;
+math cameraDistance = Distance playerPos trinityPos ;
+math cameraDistance = cameraDistance + 20.0 ;
+
+camera SetType 6 objectType NONE verticalStartA focusObjType trinityPLA verticalStartB cameraDistance ;
+
+*/
+
+time = 9.7 ;
+float zoomAmount = 2500.0 ;
+camera SetZoom 0 time zoomAmount ;
+pause 0.1 ;
+
+time = 0.6 ;
+camera FadeFromColor black time ;
+pause 0.6 ;
+
+/* initiate dialogue mid-CS */
+dialogue Spg2\Dialogues\M01\D03.dia ;
+/*
+pause 1.4 ;
+*/
+/* camera zoom in on trinityPLA */
+/*
+time = 8.0 ;
+float zoomAmount = 2500.0 ;
+camera SetZoom 0 time zoomAmount ;
+*/
+pause 8.0 ;
+
+/* fade out end */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.2 ;
+camera FadeFromColor black time ;
+/* CS lines */
+screen ShowLine 0 ;
+
+/* Cutscene camera end */
+camera SetDefault ;
+camera SetCSCamera 0 ;
+
+/* turn on HUD */
+game ShowAllPanels 1 ;
+
+game SetControlEnabled 1 ;
+
+tutorial 11 ;
+
+End

@@ -1,0 +1,7 @@
+
+int titleLine = 62 ;
+int textLine1 = 1022 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

@@ -1,0 +1,212 @@
+NamePosition:	32534.0	0.0	49984.0
+MinimumLevel:	1
+MaximumLevel:	15
+MainFaction:
+{
+	Faction:	7
+	Ships:		
+	{	
+		31	32	33
+	}
+}
+Faction:
+{
+	Faction:	25
+	Ships:		
+	{	
+		31	32	33	48
+	}
+}
+Faction:
+{
+	Faction:	6
+	Ships:		
+	{	
+		10	11
+	}
+}
+Faction:
+{
+	Faction:	29
+	Ships:		
+	{	
+		46	47
+	}
+}
+Faction:
+{
+	Faction:	40
+	Ships:		
+	{	
+		31	39	29	10	48
+	}
+}
+Faction:
+{
+	Faction:	46
+	Ships:		
+	{	
+		31	32	11
+	}
+}
+Faction:
+{
+	Faction:	52
+	Ships:
+	{
+		12	51
+	}
+}
+Contraband:
+{
+	Commodities:	5
+	40	45	57	99	100
+}
+RandomMission:
+{
+	Waypoint:	5	sat145
+	Waypoint:	6	memphisSTA
+	Waypoint:	7	memphisSTA
+	Waypoint:	12	memphisSTA
+	Waypoint:	13	31893.13	0.00	52418.08
+	Waypoint:	13	33916.91	0.00	51444.11
+	Waypoint:	13	31523.83	0.00	50301.33
+	Waypoint:	13	34616.08	0.00	48926.55
+	Waypoint:	13	32353.39	0.00	47418.18
+}
+InitialSetup:																																				
+{																																				
+	Security:	1																																		
+	Military:	2																																		
+	Trader:	6																																		
+}																																				
+Encounters:																																				
+{																																				
+	Density:	5																																		
+	SpawnList:																																			
+	{																																			
+		Spawn:	2	10	10	10	3	10	7	8	10	3	2	7	10	11	1	8	4	7	1	12	7	7	10	11	2	6	9	11	10	2	8	7	3	3
+	}																																			
+	SpawnList:																																			
+	{																																			
+		Level:	10																																	
+		Spawn:	2	10	10	10	3	10	7	8	10	3	2	7	10	11	1	8	4	7	1	12	7	7	10	11	5	6	9	11	10	2	8	7	3	3
+	}																																			
+	Security:
+	{
+		Faction:	7
+		Waypoint:		34169.16	0.00	47350.78
+		Waypoint:		31749.40	0.00	47472.57
+		Waypoint:		35918.21	0.00	49818.13
+		Waypoint:		33450.50	0.00	49461.98
+		Waypoint:		31041.73	0.00	49757.00
+		Waypoint:		34123.16	0.00	51466.35
+		Waypoint:		31518.29	0.00	51843.67
+	}
+	Military:
+	{
+		Faction:	7
+		Waypoint:		34169.16	0.00	47350.78
+		Waypoint:		31749.40	0.00	47472.57
+		Waypoint:		35918.21	0.00	49818.13
+		Waypoint:		33450.50	0.00	49461.98
+		Waypoint:		31041.73	0.00	49757.00
+		Waypoint:		34123.16	0.00	51466.35
+		Waypoint:		31518.29	0.00	51843.67
+	}
+	Pirate:
+	{
+		Faction:	46
+		Waypoint:		34169.16	0.00	47350.78
+		Waypoint:		31749.40	0.00	47472.57
+		Waypoint:		35918.21	0.00	49818.13
+		Waypoint:		33450.50	0.00	49461.98
+		Waypoint:		31041.73	0.00	49757.00
+		Waypoint:		34123.16	0.00	51466.35
+		Waypoint:		31518.29	0.00	51843.67
+	}
+	Skirmish:
+	{
+		Faction:	7
+		Faction:	6
+		Faction:	25
+		Faction:	29
+		Enemy:	40
+		Enemy:	46
+		Waypoint:		34169.16	0.00	47350.78
+		Waypoint:		31749.40	0.00	47472.57
+		Waypoint:		35918.21	0.00	49818.13
+		Waypoint:		33450.50	0.00	49461.98
+		Waypoint:		31041.73	0.00	49757.00
+		Waypoint:		34123.16	0.00	51466.35
+		Waypoint:		31518.29	0.00	51843.67
+	}
+	Assassins:
+	{
+		Faction:	52
+	}
+	Science:
+	{
+	}
+	Salvage:
+	{
+	}
+	Looters:
+	{
+	}
+	Anomaly:
+	{
+	}
+	Miner:
+	{
+		Faction:	7
+		Faction:	6
+		Faction:	25
+		Faction:	29
+		Waypoint:		31893.13	0.00	52418.08
+		Waypoint:		33916.91	0.00	51444.11
+		Waypoint:		31523.83	0.00	50301.33
+		Waypoint:		34616.08	0.00	48926.55
+		Waypoint:		32353.39	0.00	47418.18
+	}
+	Trader:
+	{
+		Faction:	7
+		Faction:	6
+		Faction:	25
+		Faction:	29
+		Waypoint:		34169.16	0.00	47350.78
+		Waypoint:		31749.40	0.00	47472.57
+		Waypoint:		35918.21	0.00	49818.13
+		Waypoint:		33450.50	0.00	49461.98
+		Waypoint:		31041.73	0.00	49757.00
+		Waypoint:		34123.16	0.00	51466.35
+		Waypoint:		31518.29	0.00	51843.67
+	}
+}
+Music:
+{
+	Standard:
+	{
+		music_genesis
+		music_things
+		music_darkmoon
+		music_meta
+		music_solaris
+		music_ambientDrones
+		music_Assorted
+		music_AwaitingNews
+		music_DigitalForest
+		music_SpaceTune
+		music_VastEmptyness
+	}
+	Combat:
+	{
+		music_DangerousPursuit
+		music_FilmScoreChase
+		music_Outbreak
+		music_PiratesSearching
+		music_WarDrums
+		music_battle_drums_1
+	}
+}

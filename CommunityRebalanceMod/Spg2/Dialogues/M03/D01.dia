@@ -1,0 +1,38 @@
+Dialogue:
+{
+	Portrait:	18
+	Text:	18
+	Voice:	Spg2\Sound\Voice\tagachi\18.wav
+	Duration:	3.600
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	19
+	Voice:	Spg2\Sound\Voice\adrian\19.wav
+	Duration:	2.300
+}
+Dialogue:
+{
+	Portrait:	18
+	Text:	20
+	Voice:	Spg2\Sound\Voice\tagachi\20.wav
+	Duration:	5.000
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	21
+	Voice:	Spg2\Sound\Voice\adrian\21.wav
+	Duration:	3.901
+}
+Dialogue:
+{
+	Portrait:	18
+	Text:	22
+	Duration:	15.000
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M03\EndDia01.sal
+}

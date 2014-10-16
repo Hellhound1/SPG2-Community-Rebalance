@@ -1,0 +1,77 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName solar134A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar134A CallEvent OnActivate ;
+else
+	structure GetByKeyName solar134A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar134B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar134B CallEvent OnActivate ;
+else
+	structure GetByKeyName solar134B CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar134C GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar134C CallEvent OnActivate ;
+else
+	structure GetByKeyName solar134C CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar134D GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar134D CallEvent OnActivate ;
+else
+	structure GetByKeyName solar134D CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_134_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_134_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_134_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 14 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_134_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_134_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_134_2 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

@@ -1,0 +1,85 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+ship GetPlayer SetInvulnerable 1 ;
+ship GetByKeyName m11ridleySHP SetInvulnerable 1 ;
+ship GetByKeyName m11terakonSHP SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+float3 posSamoa ;
+float3 posSanctuary ;
+float3 posPlayer ;
+float3 posMarker ;
+float3 posAdd ;
+waypoint GetByKeyName m11marker GetPosition posMarker ;
+posAdd = 0.0 0.0 0.0 ;
+math posPlayer = posMarker + posAdd ;
+posAdd = -400.0 0.0 0.0 ;
+math posSamoa = posMarker + posAdd ;
+posAdd = -450.0 0.0 0.0 ;
+math posSanctuary = posMarker + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m11samoaSHP SetPosition posSamoa ;
+ship GetByKeyName m11sanctuary1 SetPosition posSanctuary ;
+ship GetByKeyName m11samoaSHP VectorTo posPlayer ;
+ship GetByKeyName m11sanctuary1 VectorTo posPlayer ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> samoa */
+int objectType = 1 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 60.0 ;
+camera SetType 5 objectType m11samoaSHP rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+dialogue Spg2\Dialogues\M11\D03.dia ;
+
+pause 3.0 ;
+
+/* SPECIAL - DO NOT SKIP */
+
+game ResetShipEnemyList 1 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+ship GetPlayer SetInvulnerable 0 ;
+ship GetByKeyName m11ridleySHP SetInvulnerable 0 ;
+ship GetByKeyName m11terakonSHP SetInvulnerable 0 ;
+
+game SetControlEnabled 1 ;
+
+End

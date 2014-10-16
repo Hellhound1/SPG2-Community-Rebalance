@@ -1,0 +1,32 @@
+Dialogue:
+{
+	Portrait:	1
+	Text:	127
+	Voice:	Spg2\Sound\Voice\adrian\127.wav
+	Duration:	6.076
+}
+Dialogue:
+{
+	Portrait:	34
+	Text:	128
+	Voice:	Spg2\Sound\Voice\morse\128.wav
+	Duration:	5.04
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	129
+	Voice:	Spg2\Sound\Voice\adrian\129.wav
+	Duration:	7.025
+}
+Dialogue:
+{
+	Portrait:	34
+	Text:	130
+	Voice:	Spg2\Sound\Voice\morse\130.wav
+	Duration:	7.74
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M14\EndDia03.sal
+}

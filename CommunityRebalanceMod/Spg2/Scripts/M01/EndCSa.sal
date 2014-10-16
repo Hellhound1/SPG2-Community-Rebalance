@@ -1,0 +1,43 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_EndCSa.sal ;
+
+/* enable player controls */
+/*
+game SetControlEnabled 1 ;
+game ShowAllPanels 1 ;
+*/
+
+/* set mainquest 1 solve flag to active */
+/*
+mainquest GetById 1 SetSolve 1 ;
+mainquest GetById 1 DeleteObjective 1 ;
+*/
+/* set mainquest 2 acquire flag to active */
+/*
+mainquest GetById 2 SetAcquire 1 ;
+*/
+
+/* add quest item */
+/*
+int itemId = 0 ;
+int amount = 1 ;
+player AddQuestItemCount itemId amount ;
+*/
+
+/* activate logs 0 & 1 */
+/*
+log 0 ;
+log 1 ;
+*/
+/* activate mainquest marker on planet Trinity */
+/*
+planet GetByKeyName trinityPLA SetMark 1 ;
+planet GetByKeyName trinityPLA SetMissionTask 4 ;
+*/
+
+End

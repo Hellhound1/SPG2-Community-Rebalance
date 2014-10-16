@@ -1,0 +1,16 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 45 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 45 SetSolve 1 ;
+	mainquest GetById 45 DeleteObjective 1 ;
+	mainquest GetById 46 SetAcquire 1 ;
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M08\D02.dia ;
+endif
+End

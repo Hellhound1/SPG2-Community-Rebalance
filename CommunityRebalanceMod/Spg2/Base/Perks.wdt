@@ -1,0 +1,22 @@
+Colum:	6				
+Id	Name	BonusID	Leve1	Level2	Level3
+0	Merchant	47	0.04	0.08	0.12
+1	Hawkeye	115	0.05	0.1	0.15
+2	Field_Commander	35	0.05	0.1	0.15
+3	Scoundrel	113	0.04	0.08	0.12
+4	Miner	28	0.05	0.1	0.15
+5	Scavenger	29	0.05	0.1	0.15
+6	Collector	30	0.06	0.12	0.18
+7	Space_wolf	21	0.04	0.08	0.12
+8	Student	41	0.05	0.1	0.15
+9	Torrent_surfer	36	0.05	0.1	0.15
+10	Light_vessels	165	0.08	0.16	0.24
+11	Mid-size_vessels	166	0.08	0.16	0.24
+12	Large_vessels	167	0.08	0.16	0.24
+13	Transport_vessels	168	0.08	0.16	0.24
+14	Railguns	60	0.08	0.16	0.24
+15	Beams	59	0.08	0.16	0.24
+16	Plasma_cannons	61	0.08	0.16	0.24
+17	Missiles	62	0.08	0.16	0.24
+18	Shockwaves	63	0.08	0.16	0.24
+19	Torpedoes	64	0.08	0.16	0.24

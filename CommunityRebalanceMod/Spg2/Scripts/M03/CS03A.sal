@@ -1,0 +1,87 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+/* <ACTORS> */
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+ship GetByKeyName m03yukonSHP SetPTE 0 ;
+ship GetByKeyName m03yukonSHP ForceStop 0 ;
+ship GetByKeyName m03yukonSHP SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+float3 playerPos ;
+float3 plymouthPos ;
+float3 playerOffset = 0.0 0.0 400.0 ;
+float3 yukonOffset = 0.0 0.0 300.0 ;
+float3 yukonPos ;
+station GetByKeyName plymouthSTA GetPosition plymouthPos ;
+math playerPos = plymouthPos + playerOffset ;
+ship GetPlayer SetPosition playerPos ;
+math yukonPos = plymouthPos + yukonOffset ;
+ship GetByKeyName m03yukonSHP SetPosition yukonPos ;
+ship GetByKeyName m03yukonSHP VectorTo playerPos ;
+ship GetPlayer VectorTo yukonPos ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> player */
+int objectType = 5 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 600.0 ;
+camera SetType 5 objectType plymouthSTA rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+int miscLine = 1116 ;
+float duration = 4.0 ;
+screen ShowText miscLine duration ;
+
+pause 4.0 ;
+
+objectType = 1 ;
+camDistance = 30 ;
+
+camera SetType 5 objectType m03yukonSHP rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+dialogue Spg2\Dialogues\M03\D01.dia ;
+
+pause 25.0 ;
+
+/* <CAMERA 2> */
+
+/* <CAMERA 3> */
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+script Spg2\Scripts\M03\EndCSa.sal ;
+End

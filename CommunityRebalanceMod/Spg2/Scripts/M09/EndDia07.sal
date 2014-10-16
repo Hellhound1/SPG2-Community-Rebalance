@@ -1,0 +1,20 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+mainquest GetById 64 SetSolve 1 ;
+mainquest GetById 64 DeleteObjective 1 ;
+mainquest GetById 65 SetAcquire 1 ;
+ship GetByKeyName m09ridleySHP SetEnabled 1 ;
+ship GetByKeyName m09ridleySHP SetAIQuestStatus 3 ;
+ship GetByKeyName m09ridleySHP SetCloakInstant 1 ;
+float3 playerPos ;
+float3 offset = 300.0 0.0 300.0 ;
+ship GetPlayer GetPosition playerPos ;
+float3 ridleyPos ;
+math ridleyPos = playerPos + offset ;
+ship GetByKeyName m09ridleySHP SetPosition ridleyPos ;
+ship GetByKeyName m09ridleySHP VectorTo playerPos ;
+script Spg2\Scripts\M09\CS09D.sal ;
+End

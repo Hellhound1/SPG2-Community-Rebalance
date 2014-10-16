@@ -1,0 +1,143 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* shut down manual controls */
+game SetControlEnabled 0 ;
+
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+ship GetByKeyName m01galahadSHP SetEnabled 1 ;
+ship GetByKeyName m01galahadSHP SetPTE 0 ;
+ship GetByKeyName m01galahadSHP ForceStop 0 ;
+ship GetByKeyName m01galahadSHP SetAIQuestStatus 1 ;
+
+/* start FadeToBlack */
+float time = 0.6 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 0.6 ;
+
+float3 avalonPos = 0.0 0.0 0.0 ;
+derelict GetByKeyName avalonDER GetPosition avalonPos ;
+
+/* turn off HUD */
+game ShowAllPanels 0 ;
+/* CS lines */
+screen ShowLine 1 ;
+
+/* Cutscene camera start */
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+float3 playerPos = 0.0 0.0 0.0 ;
+float3 galahadPos = 0.0 0.0 0.0 ;
+float3 galahadOffset = -10.0 0.0 -30.0 ;
+float3 playerOffset = 5.0 0.0 30.0 ;
+
+
+math galahadPos = avalonPos + galahadOffset ;
+
+ship GetByKeyName m01galahadSHP SetPosition galahadPos ;
+ship GetByKeyName m01galahadSHP VectorTo avalonPos ;
+
+/*
+float3 galahadRot ;
+float3 correctionRot = 1.0 1.0 0.0 ;
+ship GetByKeyName m01galahadSHP GetRotation galahadRot ;
+math galahadRot = galahadRot * correctionRot ;
+ship GetByKeyName m01galahadSHP SetRotation galahadRot ;
+*/
+
+
+math playerPos = avalonPos + playerOffset ;
+ship GetPlayer SetPosition playerPos ;
+ship GetPlayer VectorTo avalonPos ;
+
+
+float speed = 0.0 ;
+
+
+/* camera rotation -> avalonDER + zoomIn */
+int objectType = 11 ;
+float rotationStart = 2.4 ;
+float rotationSpeed = 0.32 ;
+float verticalStart = 2.4 ;
+float verticalOffset = 12.0 ;
+float verticalSpeed = 0.16 ;
+float cameraDistance = 100.0 ;
+camera SetType 5 objectType avalonDER rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+
+
+/*
+float3 playerRot ;
+ship GetPlayer GetRotation playerRot ;
+math playerRot = playerRot * correctionRot ;
+*/
+pause 0.5 ;
+
+time = 0.6 ;
+camera FadeFromColor black time ;
+
+
+pause 1.0 ;
+
+ship GetPlayer VectorTo avalonPos ;
+ship GetByKeyName m01galahadSHP VectorTo avalonPos ;
+
+dialogue Spg2\Dialogues\M01\D05.dia ;
+
+
+float zoomTime = 3.0 ; 
+float zoomAmount = 30.0 ; 
+camera SetZoom 0 zoomTime zoomAmount ;
+
+pause 6.0 ;
+
+objectType = 1 ;
+rotationStart = 2.0 ;
+rotationSpeed = 0.10 ;
+verticalStart = 2.4 ;
+verticalOffset = 12.0 ;
+verticalSpeed = -0.40 ;
+cameraDistance = 40.0 ;
+
+camera SetType 5 objectType m01galahadSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+pause 4.0 ;
+
+verticalSpeed = 0.08 ;
+camera SetType 5 0 NONE rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+pause 6.0 ;
+
+camera SetType 5 objectType m01galahadSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+pause 10.5 ;
+
+camera SetType 5 0 NONE rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+pause 15.0 ;
+
+camera SetType 5 objectType m01galahadSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+pause 36.0 ;
+
+camera SetType 5 0 NONE rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+pause 2.0 ;
+
+zoomTime = 3.0 ; 
+zoomAmount = 20.0 ; 
+camera SetZoom 0 zoomTime zoomAmount ;
+
+pause 3.5 ;
+
+
+/* start dialogue */
+
+End

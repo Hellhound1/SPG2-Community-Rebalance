@@ -1,0 +1,36 @@
+/*
+-------
+Script by: LGM Games  
++Chance of spawning pirate looters and helpers
+-------
++check region and redirect to other scripts
+->separated into blocks of 20 region scripts due to limit of number of variables per script
+*/
+PrintMessage CargoLooters_script! ;
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 0
+	int regionId = 0 ;
+	region GetId regionId ;
+
+	if regionId < 20
+		script Spg2\Scripts\Regions\CargoLootersA.sal ;
+	endif
+
+	if regionId > 19 && regionId < 40
+		script Spg2\Scripts\Regions\CargoLootersB.sal ;
+	endif
+
+	if regionId > 39 && regionId < 60
+		script Spg2\Scripts\Regions\CargoLootersC.sal ;
+	endif
+
+	if regionId > 59 && regionId < 80
+		script Spg2\Scripts\Regions\CargoLootersD.sal ;
+	endif
+
+	if regionId > 79
+		script Spg2\Scripts\Regions\CargoLootersE.sal ;
+	endif
+endif
+End

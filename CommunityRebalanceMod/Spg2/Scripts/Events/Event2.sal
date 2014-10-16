@@ -1,0 +1,122 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: TGate shutdown
+-------
++randomize region, eventDur
++addLog + addNews
++only regions that contain a TGate are used to prevent mem-leaks and errors
+=>0, 4, 6, 8, 11, 12, 15, 16, 21, 22, 23, 25, 27, 30, 38, 44, 45, 46, 47, 48, 52, 53, 55, 57, 58, 60, 61, 68, 69, 76
+*/
+
+/* trigger event */
+int eventId = 2 ;
+int placeType = 1 ;
+int regionId = 16 ;
+float eventDur = 60.0 ;
+int modObj = 0 ;
+float modVal = 0.0 ;
+int titleLine = 1020 ;
+int textLine = 1 ;
+math textLine = Rnd 865 867 ;
+
+int result = 0 ;
+math result = Rnd 1 30 ;
+if result == 1
+	regionId = 0 ;
+endif
+if result == 2
+	regionId = 4 ;
+endif
+if result == 3
+	regionId = 6 ;
+endif
+if result == 4
+	regionId = 8 ;
+endif
+if result == 5
+	regionId = 11 ;
+endif
+if result == 6
+	regionId = 12 ;
+endif
+if result == 7
+	regionId = 15 ;
+endif
+if result == 8
+	regionId = 16 ;
+endif
+if result == 9
+	regionId = 21 ;
+endif
+if result == 10
+	regionId = 22 ;
+endif
+if result == 11
+	regionId = 23 ;
+endif
+if result == 12
+	regionId = 25 ;
+endif
+if result == 13
+	regionId = 27 ;
+endif
+if result == 14
+	regionId = 30 ;
+endif
+if result == 15
+	regionId = 38 ;
+endif
+if result == 16
+	regionId = 44 ;
+endif
+if result == 17
+	regionId = 45 ;
+endif
+if result == 18
+	regionId = 46 ;
+endif
+if result == 19
+	regionId = 47 ;
+endif
+if result == 20
+	regionId = 48 ;
+endif
+if result == 21
+	regionId = 52 ;
+endif
+if result == 22
+	regionId = 53 ;
+endif
+if result == 23
+	regionId = 55 ;
+endif
+if result == 24
+	regionId = 57 ;
+endif
+if result == 25
+	regionId = 58 ;
+endif
+if result == 26
+	regionId = 60 ;
+endif
+if result == 27
+	regionId = 61 ;
+endif
+if result == 28
+	regionId = 68 ;
+endif
+if result == 29
+	regionId = 69 ;
+endif
+if result == 30
+	regionId = 76 ;
+endif
+
+math eventDur = Rnd 600.0 1200.0 ;
+globalevent Set eventId placeType regionId eventDur modObj modVal titleLine textLine ;
+
+/* add log and trigger news */
+globalevent AddLog eventId placeType regionId modObj modVal titleLine textLine ;
+
+End

@@ -1,0 +1,46 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+
+/* First entering trigger around Refuge station */
+questCond = 0 ;
+mainquest GetById 92 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	log 78 ;
+	mainquest GetById 92 SetSolve 1 ;
+	mainquest GetById 92 DeleteObjective 1 ;
+	mainquest GetById 93 SetAcquire 1 ;
+	ship GetByKeyName m14phoenixB SetEnabled 2 ;
+	waypoint GetByKeyName m14EarthMarker2 SetMark 0 ;
+	waypoint GetByKeyName m14EarthMarker2 SetMissionTask -1 ;
+	
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M14\D05.dia ;
+		
+endif
+
+/* ================================ */
+
+/* Second entering trigger around Refuge station */
+questCond = 0 ;
+mainquest GetById 97 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 97 SetSolve 1 ;
+	mainquest GetById 97 DeleteObjective 1 ;
+	mainquest GetById 98 SetAcquire 1 ;
+	ship GetByKeyName m14phoenixB SetEnabled 1 ;
+	waypoint GetByKeyName m14EarthMarker2 SetMark 0 ;
+	waypoint GetByKeyName m14EarthMarker2 SetMissionTask -1 ;
+	waypoint GetByKeyName m14EarthMarker6 SetMark 1 ;
+	waypoint GetByKeyName m14EarthMarker6 SetMissionTask 4 ;
+	log 81 ;
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M14\D06.dia ;
+endif
+
+End

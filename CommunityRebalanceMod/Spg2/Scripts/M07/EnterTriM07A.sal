@@ -1,0 +1,61 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 42 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 42 SetSolve 1 ;
+	mainquest GetById 42 DeleteObjective 1 ;
+	mainquest GetById 43 SetAcquire 1 ;
+	/* use m07aTRI as MissionArea */
+	ship GetByKeyName m07steigerSHP SetEnabled 1 ;
+	ship GetByKeyName m07directA SetEnabled 1 ;
+	ship GetByKeyName m07directB SetEnabled 1 ;
+	ship GetByKeyName m07directC SetEnabled 1 ;
+	ship GetByKeyName m07empireA SetEnabled 1 ;
+	ship GetByKeyName m07empireB SetEnabled 1 ;
+	ship GetByKeyName m07empireC SetEnabled 1 ;
+	ship GetPlayer SetInvulnerable 1 ;
+	ship GetByKeyName m07steigerSHP SetInvulnerable 1 ;
+	ship GetByKeyName m07directA SetInvulnerable 1 ;
+	ship GetByKeyName m07directB SetInvulnerable 1 ;
+	ship GetByKeyName m07directC SetInvulnerable 1 ;
+	ship GetByKeyName m07empireA SetInvulnerable 1 ;
+	ship GetByKeyName m07empireB SetInvulnerable 1 ;
+	ship GetByKeyName m07empireC SetInvulnerable 1 ;
+	waypoint GetByKeyName m07marker SetMark 0 ;
+	platform GetByKeyName m07prison SetEnabled 1 ;
+	platform GetByKeyName m07prison SetMark 1 ;
+	
+	waypoint GetByKeyName m07marker SetMissionTask -1 ;
+	platform GetByKeyName m07prison SetMissionTask 12 ;
+	
+	ship GetByKeyName m07steigerSHP SetAIQuestStatus 2 ;
+	ship GetByKeyName m07directA SetAIQuestStatus 2 ;
+	ship GetByKeyName m07directB SetAIQuestStatus 2 ;
+	ship GetByKeyName m07directC SetAIQuestStatus 2 ;
+	ship GetByKeyName m07empireA SetAIQuestStatus 2 ;
+	ship GetByKeyName m07empireB SetAIQuestStatus 2 ;
+	ship GetByKeyName m07empireC SetAIQuestStatus 2 ;
+	
+	/* prison SetCond indestructible */
+	/* empire attacks directorate */
+	
+	ship GetByKeyName m07steigerSHP SetFriendFoe 1 ;
+	ship GetByKeyName m07directA SetFriendFoe 2 ;
+	ship GetByKeyName m07directB SetFriendFoe 2 ;
+	ship GetByKeyName m07directC SetFriendFoe 2 ;
+	ship GetByKeyName m07empireA SetFriendFoe 3 ;
+	ship GetByKeyName m07empireB SetFriendFoe 3 ;
+	ship GetByKeyName m07empireC SetFriendFoe 3 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	log 41 ;
+	script Spg2\Scripts\M07\CS07A.sal ;
+endif
+End

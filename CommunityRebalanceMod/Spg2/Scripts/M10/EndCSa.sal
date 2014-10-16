@@ -1,0 +1,11 @@
+
+ship GetByKeyName m10ridleySHP SetInvulnerable 0 ;
+ship GetByKeyName m10stilleto1 SetInvulnerable 0 ;
+ship GetByKeyName m10stilleto2 SetInvulnerable 0 ;
+ship GetByKeyName m10hub1 SetInvulnerable 0 ;
+
+ship GetByKeyName m10stilleto1 SetAIQuestStatus 2 ;
+ship GetByKeyName m10stilleto2 SetAIQuestStatus 2 ;
+game ResetShipEnemyList 1 ;
+
+End

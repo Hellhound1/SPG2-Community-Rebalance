@@ -1,0 +1,96 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName mining216 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining216 CallEvent OnActivate ;
+else
+	structure GetByKeyName mining216 CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 4 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_4 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_5 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_6 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_7 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_8 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_216_9 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 7 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_216_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_216_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_216_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_216_3 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

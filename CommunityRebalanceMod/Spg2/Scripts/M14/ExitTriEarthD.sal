@@ -1,0 +1,23 @@
+int questCond = 0 ;
+mainquest GetById 104 GetAcquire questCond ;
+if questCond == 1
+	ship GetByKeyName m14alienF SetEnabled 1 ;
+	ship GetByKeyName m14alienG SetEnabled 1 ;
+	ship GetByKeyName m14alienH SetEnabled 1 ;
+	ship GetByKeyName m14alienF SetFriendFoe 2 ;
+	ship GetByKeyName m14alienG SetFriendFoe 2 ;
+	ship GetByKeyName m14alienH SetFriendFoe 2 ;
+	ship GetByKeyName m14alienF SetAIQuestStatus 2 ;
+	ship GetByKeyName m14alienG SetAIQuestStatus 2 ;
+	ship GetByKeyName m14alienH SetAIQuestStatus 2 ;
+	game ResetShipEnemyList 1 ;
+	ship GetByKeyName m14alienF AttackPlayer ;
+	ship GetByKeyName m14alienG AttackPlayer ;
+	ship GetByKeyName m14alienH AttackPlayer ;
+	
+	dialogue Spg2\Dialogues\M14\D10.dia ;
+	
+	log 85 ;
+endif
+
+End

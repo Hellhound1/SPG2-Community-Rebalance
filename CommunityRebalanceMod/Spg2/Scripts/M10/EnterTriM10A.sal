@@ -1,0 +1,66 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 66 GetAcquire questCond ;
+if questCond == 1
+	
+	game SetQuestMode 1 ;
+
+	mainquest GetById 66 SetSolve 1 ;
+	mainquest GetById 66 DeleteObjective 1 ;
+	mainquest GetById 67 SetAcquire 1 ;
+	
+	ship GetByKeyName m10ridleySHP SetEnabled 1 ;
+	ship GetByKeyName m10stilleto1 SetEnabled 1 ;
+	ship GetByKeyName m10stilleto2 SetEnabled 1 ;
+	ship GetByKeyName m10hub1 SetEnabled 1 ;
+	ship GetByKeyName m10ridleySHP SetInvulnerable 1 ;
+	ship GetByKeyName m10stilleto1 SetInvulnerable 1 ;
+	ship GetByKeyName m10stilleto2 SetInvulnerable 1 ;
+	ship GetByKeyName m10hub1 SetInvulnerable 1 ;
+	ship GetByKeyName m10ridleySHP SetBoardable 0 ;
+	
+	ship GetByKeyName m10ridleySHP SetFriendFoe 0 ;
+	ship GetByKeyName m10hub1 SetFriendFoe 0 ;
+	ship GetByKeyName m10stilleto1 SetFriendFoe 2 ;
+	ship GetByKeyName m10stilleto2 SetFriendFoe 2 ;
+	
+	ship GetByKeyName m10ridleySHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m10hub1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m10stilleto1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m10stilleto2 SetAIQuestStatus 1 ;
+	
+	/*
+	structure GetByKeyName m10hubTemp SetEnabled 1 ;
+	*/
+	platform GetByKeyName m10hubSTR SetEnabled 0 ;
+	ship GetByKeyName m10ridleySHP RepairObject 0 m10placeholder 1000.0 ;
+	pause 1.0 ;
+	ship GetByKeyName m10hub1 RepairObject 0 m10placeholder 1000.0 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	ship GetByKeyName m10stilleto1 SetMark 1 ;
+	ship GetByKeyName m10stilleto2 SetMark 1 ;
+	
+	waypoint GetByKeyName m10marker SetMark 0 ;
+	waypoint GetByKeyName m10marker SetMissionTask -1 ;
+	ship GetByKeyName m10stilleto1 SetMissionTask 0 ;
+	ship GetByKeyName m10stilleto2 SetMissionTask 0 ;
+	
+	log 60 ;
+	
+	/* timer 4 minutes */
+	float time = 240.0 ;
+	float direction = -1.0 ;
+	int textLine = 1281 ;
+	int hintLine = 1282 ;
+	game AddTimer m10timer1 Spg2\Scripts\M10\FourMinTimer.sal Spg2\Scripts\M10\FourMinTimer.sal time direction textLine hintLine ;
+	
+	script Spg2\Scripts\M10\CS10A.sal ;
+endif
+End

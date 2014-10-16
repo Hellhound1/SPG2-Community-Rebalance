@@ -1,0 +1,36 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+ship GetByKeyName m12stoner3 SetEnabled 1 ;
+ship GetByKeyName m12stoner4 SetEnabled 1 ;
+ship GetByKeyName m12stoner5 SetEnabled 1 ;
+
+ship GetByKeyName m12stoner3 SetMark 1 ;
+ship GetByKeyName m12stoner4 SetMark 1 ;
+ship GetByKeyName m12stoner5 SetMark 1 ;
+
+ship GetByKeyName m12stoner3 SetMissionTask 0 ;
+ship GetByKeyName m12stoner4 SetMissionTask 0 ;
+ship GetByKeyName m12stoner5 SetMissionTask 0 ;
+
+ship GetByKeyName m12stoner3 SetFriendFoe 2 ;
+ship GetByKeyName m12stoner4 SetFriendFoe 2 ;
+ship GetByKeyName m12stoner5 SetFriendFoe 2 ;
+
+ship GetByKeyName m12stoner3 SetAIQuestStatus 2 ;
+ship GetByKeyName m12stoner4 SetAIQuestStatus 2 ;
+ship GetByKeyName m12stoner5 SetAIQuestStatus 2 ;
+
+game ResetShipEnemyList 1 ;
+
+/* timer = 180sec */
+float time = 90.0 ;
+float direction = -1.0 ;
+int textLine = 1288 ;
+int hintLine = 1289 ;
+game AddTimer m12timer3 Spg2\Scripts\M12\EndTimer.sal Spg2\Scripts\M12\EndTimer.sal time direction textLine hintLine ;
+
+End

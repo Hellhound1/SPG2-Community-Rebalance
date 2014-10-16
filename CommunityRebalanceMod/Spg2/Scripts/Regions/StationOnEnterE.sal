@@ -1,0 +1,370 @@
+/*
+-------
+Script by: LGM Games  
++Random OnEnter station trigger script
++each station has an automatic trigger (size=??????) linked to it
++spawn local security and traders, to make the place more lively
+-------
+1)set proper faction/ship data depending on region
+2)set initial spawn numbers based on region
+3)randomize spawn positions based on parent position
+*/
+
+PrintMessage OnEnter_STATION_trigger_Script_E! ;
+
+/* SET SPAWN POSITIONS */
+float3 posParent = 0.0 0.0 0.0 ;
+station GetParent GetPosition posParent ;
+
+float3 posInterim1 = 1000.0 500.0 1000.0 ;
+float3 posInterim2 = -1000.0 500.0 1000.0 ;
+float3 posInterim3 = 1000.0 500.0 -1000.0 ;
+float3 posInterim4 = -1000.0 500.0 -1000.0 ;
+float3 posInterim5 = 1000.0 -500.0 1000.0 ;
+float3 posInterim6 = -1000.0 -500.0 1000.0 ;
+float3 posInterim7 = 1000.0 -500.0 -1000.0 ;
+
+float3 posAdded = 0.0 0.0 0.0 ;
+float posModifier = 0.0 ;
+
+float3 posSecurity1 = 0.0 0.0 0.0 ;
+math posModifier = Rnd 0.8 1.5 ;
+math posModifier = RndSign ;
+math posAdded = posInterim1 * posModifier ;
+math posSecurity1 = posParent + posAdded ;
+
+float3 posSecurity2 = 0.0 0.0 0.0 ;
+math posModifier = Rnd 0.8 1.5 ;
+math posModifier = RndSign ;
+math posAdded = posInterim2 * posModifier ;
+math posSecurity2 = posParent + posAdded ;
+
+float3 posTrader1 = 0.0 0.0 0.0 ;
+math posModifier = Rnd 0.8 1.5 ;
+math posModifier = RndSign ;
+math posAdded = posInterim3 * posModifier ;
+math posTrader1 = posParent + posAdded ;
+
+float3 posTrader2 = 0.0 0.0 0.0 ;
+math posModifier = Rnd 0.8 1.5 ;
+math posModifier = RndSign ;
+math posAdded = posInterim4 * posModifier ;
+math posTrader2 = posParent + posAdded ;
+
+float3 posTrader3 = 0.0 0.0 0.0 ;
+math posModifier = Rnd 0.8 1.5 ;
+math posModifier = RndSign ;
+math posAdded = posInterim5 * posModifier ;
+math posTrader3 = posParent + posAdded ;
+
+float3 posTrader4 = 0.0 0.0 0.0 ;
+math posModifier = Rnd 0.8 1.5 ;
+math posModifier = RndSign ;
+math posAdded = posInterim6 * posModifier ;
+math posTrader4 = posParent + posAdded ;
+
+float3 posTrader5 = 0.0 0.0 0.0 ;
+math posModifier = Rnd 0.8 1.5 ;
+math posModifier = RndSign ;
+math posAdded = posInterim7 * posModifier ;
+math posTrader5 = posParent + posAdded ;
+
+/* DEFINE VARIABLES FOR LATER USE */
+int spawnType = 2 ; /* region-based; linked to stations */
+int faction = 0 ; /* region-based factionId */
+int facBase = 0 ; /* database factionId used for determining which local factionId is used */
+station GetParent GetFaction facBase ;
+int shipLeader = 0 ; /* local region faction ship ID min | always stays the same  */
+int shipFollower = 0 ;  /* local region faction ship ID min | always stays the same  */
+int shipX = 0 ; /* local region faction ship ID max | changes depending on region and faction */
+int shipY = 0 ; /* local region faction ship ID max | changes depending on region and faction */
+int count = 3 ;
+int regionId = 0 ;
+int fleetExist = 0 ;
+int fleetProfession = 0 ;
+
+/* assign region based parameters */
+region GetId regionId ;
+if regionId == 80
+	if facBase == 45
+		faction = 0 ;
+		shipY = 4 ;
+	endif
+	if facBase == 2
+		faction = 1 ;
+		shipY = 3 ;
+	endif
+endif
+
+if regionId == 81
+	shipY = 2 ;
+	if facBase == 43
+		faction = 0 ;
+		shipY = 4 ;
+	endif
+	if facBase == 2
+		faction = 1 ;
+		shipY = 3 ;
+	endif
+	if facBase == 3
+		faction = 2 ;
+	endif
+	if facBase == 5
+		faction = 3 ;
+	endif
+endif
+
+if regionId == 82
+	if facBase == 44
+		faction = 0 ;
+		shipY = 3 ;
+	endif
+	if facBase == 10
+		faction = 1 ;
+		shipY = 4 ;
+	endif
+endif
+
+if regionId == 83
+	shipY = 4 ;
+	if facBase == 51
+		faction = 0 ;
+	endif
+	if facBase == 6
+		faction = 1 ;
+		shipY = 1 ;
+	endif
+	if facBase == 11
+		faction = 2 ;
+	endif
+endif
+
+if regionId == 84
+	shipY = 2 ;
+	if facBase == 46
+		faction = 0 ;
+	endif
+	if facBase == 6
+		faction = 1 ;
+		shipY = 1 ;
+	endif
+	if facBase == 7
+		faction = 2 ;
+	endif
+endif
+
+if regionId == 85
+	if facBase == 40
+		faction = 0 ;
+		shipY = 4 ;
+	endif
+	if facBase == 7
+		faction = 1 ;
+		shipY = 2 ;
+	endif
+	if facBase == 18
+		faction = 2 ;
+		shipY = 1 ;
+	endif
+endif
+
+if regionId == 86
+	shipY = 3 ;
+	if facBase == 49
+		faction = 0 ;
+		shipY = 2 ;
+	endif
+	if facBase == 14
+		faction = 1 ;
+	endif
+	if facBase == 53
+		faction = 2 ;
+	endif
+endif
+
+if regionId == 87
+	shipY = 4 ;
+	if facBase == 50
+		faction = 0 ;
+	endif
+	if facBase == 11
+		faction = 1 ;
+	endif
+	if facBase == 13
+		faction = 2 ;
+	endif
+endif
+
+if regionId == 88
+	shipY = 3 ;
+	if facBase == 38
+		faction = 0 ;
+	endif
+	if facBase == 13
+		faction = 1 ;
+		shipY = 4 ;
+	endif
+	if facBase == 14
+		faction = 2 ;
+	endif
+endif
+
+if regionId == 89
+	if facBase == 42
+		faction = 0 ;
+		shipY = 5 ;
+	endif
+	if facBase == 16
+		faction = 1 ;
+		shipY = 1 ;
+	endif
+	if facBase == 47
+		faction = 2 ;
+		shipY = 6 ;
+	endif
+endif
+
+if regionId == 90
+	if facBase == 47
+		faction = 0 ;
+		shipY = 6 ;
+	endif
+	if facBase == 16
+		faction = 1 ;
+		shipY = 1 ;
+	endif
+	if facBase == 17
+		faction = 2 ;
+		shipY = 3 ;
+	endif
+endif
+
+if regionId == 91
+	if facBase == 47
+		faction = 0 ;
+		shipY = 6 ;
+	endif
+	if facBase == 17
+		faction = 1 ;
+		shipY = 3 ;
+	endif
+	if facBase == 42
+		faction = 2 ;
+		shipY = 5 ;
+	endif
+endif
+
+if regionId == 92
+	if facBase == 42
+		faction = 0 ;
+		shipY = 5 ;
+	endif
+	if facBase == 47
+		faction = 1 ;
+		shipY = 6 ;
+	endif
+endif
+
+if regionId == 93
+	shipY = 2 ;
+	if facBase == 7
+		faction = 0 ;
+	endif
+	if facBase == 46
+		faction = 1 ;
+	endif
+endif
+
+if regionId == 94
+	if facBase == 42
+		faction = 0 ;
+		shipY = 5 ;
+	endif
+	if facBase == 10
+		faction = 1 ;
+		shipY = 4 ;
+	endif
+	if facBase == 16
+		faction = 2 ;
+		shipY = 1 ;
+	endif
+endif
+
+if regionId == 95
+	if facBase == 9
+		faction = 0 ;
+		shipY = 4 ;
+	endif
+	if facBase == 8
+		faction = 1 ;
+		shipY = 4 ;
+	endif
+endif
+
+/* SPAWN FLEETS */
+int spawnChance = 1 ;
+fleetProfession = 0 ; /* fleet professionId from profession.wdt => SECURITY */
+math spawnChance = Rnd 1 2 ;
+if spawnChance == 1
+	fleet GetByKeyName FLT_Security_1 Exist fleetExist ;
+	if fleetExist != 1
+		math shipLeader = Rnd shipX shipY ;
+		math shipFollower = Rnd shipX shipY ;
+		math count = Rnd 0 2 ; /* randomize number of followers */
+		fleetAdd FLT_Security_1 spawnType posSecurity1 faction shipLeader shipFollower fleetProfession count ;
+	endif
+endif
+math spawnChance = Rnd 1 2 ;
+if spawnChance == 1
+	fleet GetByKeyName FLT_Security_2 Exist fleetExist ;
+	if fleetExist != 1
+		math shipLeader = Rnd shipX shipY ;
+		math shipFollower = Rnd shipX shipY ;
+		math count = Rnd 0 2 ; /* randomize number of followers */
+		fleetAdd FLT_Security_2 spawnType posSecurity2 faction shipLeader shipFollower fleetProfession count ;
+	endif
+endif
+
+fleetProfession = 3 ; /* fleet professionId from profession.wdt => TRADER */
+math spawnChance = Rnd 1 1 ;
+if spawnChance == 1
+	fleet GetByKeyName FLT_Trader_1 Exist fleetExist ;
+	if fleetExist != 1
+		math shipLeader = Rnd shipX shipY ;
+		math shipFollower = Rnd shipX shipY ;
+		math count = Rnd 0 2 ; /* randomize number of followers */
+		fleetAdd FLT_Trader_1 spawnType posTrader1 faction shipLeader shipFollower fleetProfession count ;
+	endif
+endif
+math spawnChance = Rnd 1 1 ;
+if spawnChance == 1
+	fleet GetByKeyName FLT_Trader_2 Exist fleetExist ;
+	if fleetExist != 1
+		math shipLeader = Rnd shipX shipY ;
+		math shipFollower = Rnd shipX shipY ;
+		math count = Rnd 0 1 ; /* randomize number of followers */
+		fleetAdd FLT_Trader_2 spawnType posTrader2 faction shipLeader shipFollower fleetProfession count ;
+	endif
+endif
+math spawnChance = Rnd 1 3 ;
+if spawnChance == 1
+	fleet GetByKeyName FLT_Trader_3 Exist fleetExist ;
+	if fleetExist != 1
+		math shipLeader = Rnd shipX shipY ;
+		math shipFollower = Rnd shipX shipY ;
+		math count = Rnd 0 1 ; /* randomize number of followers */
+		fleetAdd FLT_Trader_3 spawnType posTrader3 faction shipLeader shipFollower fleetProfession count ;
+	endif
+endif
+math spawnChance = Rnd 1 3 ;
+if spawnChance == 1
+	fleet GetByKeyName FLT_Trader_4 Exist fleetExist ;
+	if fleetExist != 1
+		math shipLeader = Rnd shipX shipY ;
+		math shipFollower = Rnd shipX shipY ;
+		math count = Rnd 0 1 ; /* randomize number of followers */
+		fleetAdd FLT_Trader_4 spawnType posTrader4 faction shipLeader shipFollower fleetProfession count ;
+	endif
+endif
+
+End

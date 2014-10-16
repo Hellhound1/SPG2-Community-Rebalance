@@ -1,0 +1,18 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default Hub OnHack script
++used automatically if no override script supplied in object parameters
+-------
+*/
+/*
+HACK
+	+experience
+		+extraExp ifEngineer(duh!)
+	+deactivate
+	+chance to reduce reputation
+	+chance to draw security
+	+reduce next jump price
+*/
+
+End

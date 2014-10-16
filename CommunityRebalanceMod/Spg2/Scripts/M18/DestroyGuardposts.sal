@@ -1,0 +1,120 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 217 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 218 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+int questCond = 0 ;
+mainquest GetById 125 GetAcquire questCond ;
+if questCond == 1
+	PrintMessageVar QUEST_125_ACQ: INT questCond ;
+	
+	int platformCond = 0 ;
+	int platformCondAll = 0 ;
+
+	platform GetByKeyName m18platform1 GetCondition platformCond ;
+	if platformCond != 0
+		PrintMessage Platform1_DEAD ;
+		math platformCondAll ++ ;
+	endif
+
+	platform GetByKeyName m18platform2 GetCondition platformCond ;
+	if platformCond != 0
+		PrintMessage Platform2_DEAD ;
+		math platformCondAll ++ ;
+	endif
+
+	platform GetByKeyName m18platform3 GetCondition platformCond ;
+	if platformCond != 0
+		PrintMessage Platform3_DEAD ;
+		math platformCondAll ++ ;
+	endif
+
+	platform GetByKeyName m18platform4 GetCondition platformCond ;
+	if platformCond != 0
+		PrintMessage Platform4_DEAD ;
+		math platformCondAll ++ ;
+	endif
+
+	platform GetByKeyName m18platform5 GetCondition platformCond ;
+	if platformCond != 0
+		PrintMessage Platform5_DEAD ;
+		math platformCondAll ++ ;
+	endif
+
+	if platformCondAll == 5
+		mainquest GetById 125 SetSolve 1 ;
+		PrintMessage MISSION_SOLVED ;
+	endif
+	
+	
+	
+	int questCond1 = 0 ;
+	mainquest GetById 125 GetSolve questCond1 ;
+	int questCond2 = 0 ;
+	mainquest GetById 126 GetSolve questCond2 ;
+	
+	if questCond2 == 1 && questCond1 == 1
+		mainquest GetById 127 SetSolve 1 ;
+		/* mainquest GetById 127 DeleteObjective 1 ; */
+		mainquest GetById 128 SetAvailable 1 ;
+		/* disable MissionArea */
+		ship GetByKeyName m18ridley SetEnabled 0 ;
+		ship GetByKeyName m18baeldor1 SetEnabled 0 ;
+		log 103 ;
+		
+		game SetQuestMode 0 ;
+
+		/* -^-REWARD-^- */
+		player AddExp 52600 ;
+		player AddReputation 100 ;
+		player AddCredits 380000 ;
+		script Spg2\Scripts\AwardHeavyWeapon.sal ;
+
+		/* -^-MISSION COMPLETE-^- */
+		int titleLine = 183 ;
+		int textLine1 = 1553 ;
+		int textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		
+		dialogue Spg2\Dialogues\M18\D02.dia ;
+	endif
+	
+endif
+
+End

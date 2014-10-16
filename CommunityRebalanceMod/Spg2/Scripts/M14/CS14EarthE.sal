@@ -1,0 +1,81 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 rotReset = 0.0 0.0 0.0 ;
+ship GetPlayer SetRotation rotReset ;
+float3 posPlayer ;
+float3 posAdd = 100.0 0.0 0.0 ;
+float3 posDamocles ;
+structure GetByKeyName m14damoclesSTR GetPosition posDamocles ;
+math posPlayer = posDamocles + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetPlayer VectorTo posDamocles ;
+
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> alienA */
+int objectType = 1 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 20.0 ;
+camera SetType 5 objectType m14alienA rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+dialogue Spg2\Dialogues\M14\D09.dia ;
+
+pause 2.5 ;
+
+/* <CAMERA 2> */
+/* targetCam alienA -> alienB */
+objectType = 1 ;
+float verticalStartA = 5.0 ;
+int focusObjType = 1 ;
+float verticalStartB = 0.0 ;
+float cameraDistance = 60.0 ;
+camera SetType 6 objectType m14alienA verticalStartA focusObjType m14alienB verticalStartB cameraDistance ; 
+
+pause 2.5 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+/*
+game SetControlEnabled 1 ;
+ship GetPlayer SetInvulnerable 0 ;
+*/
+
+End

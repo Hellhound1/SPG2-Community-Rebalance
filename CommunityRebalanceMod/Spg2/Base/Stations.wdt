@@ -1,0 +1,14 @@
+Colum:	2	
+Id	Type
+0	Outpost
+1	Defense_station
+2	Battlestation
+3	Repair_station
+4	Shipyard
+5	Tradeport
+6	Freeport
+7	Research_station
+8	Storage_depot
+9	Mining_depot
+10	Rafinery
+11	Factory

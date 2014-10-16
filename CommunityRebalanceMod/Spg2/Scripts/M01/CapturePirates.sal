@@ -1,0 +1,25 @@
+/* check quest */
+int questCond = 0 ;
+mainquest GetById 3 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage ProslaProvjeraQuesta ;
+	/* set mainquest 3 solve flag to active */
+	mainquest GetById 3 SetSolve 1 ;
+	mainquest GetById 3 DeleteObjective 1 ;
+	/* set mainquest 4 acquire flag to active */
+	mainquest GetById 4 SetAcquire 1 ;
+	/* enable log ID 3 */
+	log 3 ;
+	/* disable ship */
+	ship GetByKeyName m01trinity SetInvulnerable 0 ;
+	ship GetByKeyName m01trinity SetEnabled 0 ;
+	/* set mainquest marker to planet Trinity */
+	planet GetByKeyName trinityPLA SetMark 1 ;
+	planet GetByKeyName trinityPLA SetMissionTask 3 ;
+	/* shut down questMode */
+	game SetQuestMode 0 ;
+	/* Start cutscene */
+	script Spg2\Scripts\M01\CS01C.sal ;
+endif
+
+End

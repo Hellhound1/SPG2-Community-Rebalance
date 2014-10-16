@@ -1,0 +1,493 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky8.amb
+}	
+Spaceship:	
+{	
+	ModelId:	55
+	Position:	68488.85	-347.00	45477.70
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	49
+	Class:	4
+	Skills:	0
+	Level:	18
+	Profession:	2
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m12stoner1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	55
+	Position:	68462.91	0.00	45444.52
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	49
+	Class:	4
+	Skills:	0
+	Level:	17
+	Profession:	0
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	1
+	KeyName:	m12stoner2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	49
+	Position:	68545.31	0.00	45453.31
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	49
+	Class:	7
+	Skills:	0
+	Level:	18
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m12stoner3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	48
+	Position:	68508.80	0.00	45409.71
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	49
+	Class:	7
+	Skills:	0
+	Level:	17
+	Profession:	2
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m12stoner4
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	55
+	Position:	68566.43	0.00	45404.88
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	49
+	Class:	4
+	Skills:	0
+	Level:	19
+	Profession:	2
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	1
+	KeyName:	m12stoner5
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	35
+	Position:	68081.88	0.00	45652.52
+	Rotation:	-1.18	-1.09	0.00
+	KeyName:	leviathanSTR
+	Name:	Leviathan
+	NameId:	292
+	FactionId:	49
+	Hull:	50000.00
+	Destructible:	0
+	PulseTime:	0.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M12\LeviathanOnDestroy.sal
+		OnActivate:	Spg2\Scripts\M12\LeviathanOnActivate.sal
+		OnDeactivate:	Spg2\Scripts\M12\LeviathanOnDeactivate.sal
+		OnScan:	Spg2\Scripts\M12\LeviathanOnScan.sal
+		OnTransport:	Spg2\Scripts\M12\LeviathanOnTransport.sal
+		OnHack:	Spg2\Scripts\M12\LeviathanOnHack.sal
+		OnEnter:	Spg2\Scripts\M12\LeviathanOnEnter.sal
+		OnExit:	Spg2\Scripts\M12\LeviathanOnExit.sal
+		OnHP75:	Spg2\Scripts\M12\LeviathanOnHP75.sal
+		OnHP50:	Spg2\Scripts\M12\LeviathanOnHP50.sal
+		OnHP25:	Spg2\Scripts\M12\LeviathanOnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	9
+	Position:	64201.90	840.00	47676.78
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_130_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	3
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	10
+	Position:	65055.38	-921.00	46643.78
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_130_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	4
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	11
+	Position:	66898.51	941.00	44778.10
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_130_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	5
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	12
+	Position:	68836.98	-213.00	44664.43
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_130_3
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	6
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	13
+	Position:	66056.03	-32.00	42978.57
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_130_4
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	0
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	64178.82	823.00	48383.95
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_0
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	1
+	Position:	65964.77	526.00	48729.10
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_1
+	Name:	Engine_dampener
+	NameId:	87
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	2
+	Position:	65167.00	-426.00	47500.32
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_2
+	Name:	Eye_of_storm
+	NameId:	88
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\EyeOfStorm\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	3
+	Position:	67295.99	-596.00	48063.98
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_3
+	Name:	Grappling_disperser
+	NameId:	89
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	4
+	Position:	68805.48	874.00	46756.46
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_4
+	Name:	Hyper-resonance
+	NameId:	90
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	5
+	Position:	63411.80	368.00	46340.63
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_5
+	Name:	Plasma_pulsar
+	NameId:	91
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\PlasmaPulsar\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	6
+	Position:	63851.09	-707.00	44394.14
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_6
+	Name:	Sensor_scrambler
+	NameId:	92
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	7
+	Position:	65464.85	976.00	43267.16
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_7
+	Name:	Shield_dampener
+	NameId:	93
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	8
+	Position:	64320.08	857.00	45284.00
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_8
+	Name:	Transport_destabilizer
+	NameId:	94
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	67241.37	-261.00	43660.27
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_130_9
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	68134.05	0.00	45682.20
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m12aTRI
+	Type:	1
+	Radius:	1000.00
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M12\EnterTriM12A.sal
+}	
+}
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector130.sal
+}	

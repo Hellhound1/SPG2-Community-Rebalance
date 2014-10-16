@@ -1,0 +1,4 @@
+waypoint GetByKeyName m14EarthMarker6 SetMark 1 ;
+waypoint GetByKeyName m14EarthMarker6 SetMissionTask 4 ;
+
+End

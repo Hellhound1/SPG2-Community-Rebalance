@@ -1,0 +1,90 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+PrintMessage Node1_Grune ;
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+structure GetParent GetPosition posShip ;
+structure GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 217 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 218 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+structure GetParent SetEnabled 0 ;
+
+/* Log output */
+PrintMessage NODE_DESTROYED! ;
+
+/* Conditional */
+int questCond = 0 ;
+
+mainquest GetById 121 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 121 SetSolve 1 ;
+	game SetQuestMode 0 ;
+	
+	structure GetParent SetMark 0 ;
+	structure GetParent SetMissionTask -1 ;
+endif
+
+int questCheckA = 0 ;
+mainquest GetById 119 GetSolve questCheckA ;
+int questCheckB = 0 ;
+mainquest GetById 120 GetSolve questCheckB ;
+int questCheckC = 0 ;
+mainquest GetById 121 GetSolve questCheckC ;
+
+if questCheckA == 1
+	if questCheckB == 1
+		if questCheckC == 1
+			mainquest GetById 122 SetSolve 1 ;
+			mainquest GetById 122 DeleteObjective 1 ;
+			mainquest GetById 123 SetAvailable 1 ;
+			log 99 ;
+			
+			game SetQuestMode 0 ;
+
+			/* -^-REWARD-^- */
+			player AddExp 46600 ;
+			player AddReputation 100 ;
+			player AddCredits 360000 ;
+			script Spg2\Scripts\BlueprintAward.sal ;
+
+			/* -^-MISSION COMPLETE-^- */
+			int titleLine = 183 ;
+			int textLine1 = 1553 ;
+			int textLine2 = -1 ;
+			screen ShowWarnings titleLine textLine1 textLine2 ;
+			
+			dialogue Spg2\Dialogues\M17\D02.dia ;
+		endif
+	endif
+endif
+
+End

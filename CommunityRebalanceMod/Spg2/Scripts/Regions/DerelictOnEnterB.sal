@@ -1,0 +1,146 @@
+/*
+-------
+Script by: LGM Games  
++Random OnEnter derelict trigger script
++each derelict has an automatic trigger (size=300) linked to it
++chance of spawning "protectors"
++regions [20, 39]
+-------
+1. chance for protectors to appear 
+2. spawn protectors (DerProtector1 | DerProtector2 | DerProtector3) + cloak
+3. Decloak
+4. one-liner dialogue
+*/
+
+/* DEFINE VARIABLES USED LATER */
+int spawnType = 0 ; /* region based */
+int factionId = 2 ;
+int number = 0 ;
+math number = Rnd 1 3 ;
+float3 posSpawn1 = 0.0 0.0 0.0 ;
+float3 posSpawn2 = 0.0 0.0 0.0 ;
+float3 posStart = 0.0 0.0 0.0 ;
+derelict GetParent GetPosition posStart ;
+float3 posAdd = 0.0 100.0 400.0 ;
+math posSpawn1 = posStart + posAdd ;
+math posSpawn2 = posStart - posAdd ;
+int shipId = 0 ;
+int shipX = 0 ;
+int shipY = 0 ;
+float3 posRotate = 0.0 0.0 0.0 ;
+ship GetPlayer GetPosition posRotate ;
+int dialogFac = 0 ;
+int dialogLine = 376 ;
+math dialogLine = Rnd 376 385 ;
+float dialogDur = 5.0 ;
+
+/* assign region based parameters */
+int regionId = 20 ;
+region GetId regionId ;
+if regionId == 20
+	factionId = 1 ;
+	shipY = 4 ;
+	dialogFac = 1051 ;
+endif
+
+if regionId == 21
+	factionId = 2 ;
+	shipY = 4 ;
+	dialogFac = 1051 ;
+endif
+
+if regionId > 21 && regionId < 24
+	factionId = 4 ;
+	shipY = 3 ;
+	dialogFac = 1037 ;
+endif
+
+if regionId == 24
+	factionId = 5 ;
+	shipY = 3 ;
+	dialogFac = 1037 ;
+endif
+
+if regionId > 24 && regionId < 28
+	factionId = 4 ;
+	shipY = 4 ;
+	dialogFac = 1040 ;
+endif
+
+if regionId == 28
+	factionId = 2 ;
+	shipY = 4 ;
+	dialogFac = 1040 ;
+endif
+
+if regionId == 29
+	factionId = 2 ;
+	shipY = 4 ;
+	dialogFac = 1041 ;
+endif
+
+if regionId > 29 && regionId < 33
+	factionId = 2 ;
+	shipY = 2 ;
+	dialogFac = 1041 ;
+endif
+
+if regionId == 33
+	factionId = 0 ;
+	shipY = 1 ;
+	dialogFac = 1008 ;
+endif
+
+if regionId == 34
+	factionId = 1 ;
+	shipY = 3 ;
+	dialogFac = 1044 ;
+endif
+
+if regionId == 35
+	factionId = 2 ;
+	shipY = 3 ;
+	dialogFac = 1044 ;
+endif
+
+if regionId > 35 && regionId < 38
+	factionId = 1 ;
+	shipY = 3 ;
+	dialogFac = 1044 ;
+endif
+
+if regionId > 37 && regionId < 40
+	factionId = 1 ;
+	shipY = 1 ;
+	dialogFac = 1008 ;
+endif
+
+/* check if pirate faction to spawn is hostile */
+int alignment ;
+region GetAlignFactionInRegion alignment factionId regionId ;
+if alignment == 2
+	/* ----- Spawn derelict protectors ----- */
+	int checkExist = 0 ;
+	ship GetByKeyName derProtector1 Exist checkExist ;
+	if checkExist != 1
+		PrintMessage Spawn_derProtector1! ;
+		math shipId = Rnd shipX shipY ;
+		shipAdd derProtector1 spawnType posSpawn1 factionId shipId ;
+		ship GetByKeyName derProtector1 AttackPlayer ;
+	endif
+
+	if number == 2
+		ship GetByKeyName derProtector2 Exist checkExist ;
+		if checkExist != 1
+			PrintMessage Spawn_derProtector2! ;
+			math shipId = Rnd shipX shipY ;
+			shipAdd derProtector2 spawnType posSpawn2 factionId shipId ;
+			ship GetByKeyName derProtector2 AttackPlayer ;
+		endif
+	endif
+
+	/* one-liner dialogue */
+	factdialogue dialogFac dialogLine dialogDur ;
+endif
+
+End

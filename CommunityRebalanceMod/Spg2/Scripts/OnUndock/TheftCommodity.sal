@@ -1,0 +1,45 @@
+/*
+-------
+Script by: LGM Games, 2014
+loop through each commodity to get count in inventory
+	+steal between 1 and max count of that commodity
+	+notification
+*/
+
+int level = 0 ;
+player GetLevel level ;
+if level > 4
+
+	int commodityId = 0 ;
+	int count = 0 ;
+	int countNew = 0 ;
+	int countStolen = 0 ;
+	int maxStolen = 0 ;
+	int theft = 0 ;
+
+	for commodityId = 0 < 102 step 1
+		count = 0 ;
+		player GetCommoditiesCount commodityId count ;
+		if count > 0
+			int chance = 0 ;
+			math chance = Rnd 1 10 ;
+			if chance == 1
+				math maxStolen = count * 0.5 ;
+				math countStolen = Rnd 1 maxStolen ;
+				math countNew = count - countStolen ;
+				player SetCommoditiesCount commodityId countNew ;
+				theft = 1 ;
+			endif
+		endif
+	endfor
+
+	/* notification */
+	if theft == 1
+		int titleLine = 1241 ;
+		int textLine1 = 1242 ;
+		int textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+	endif
+endif
+
+End

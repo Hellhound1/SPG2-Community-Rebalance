@@ -1,0 +1,83 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* linked via M18TriA */
+PrintMessage EnterTriM22B ;
+int questCond = 0 ;
+mainquest GetById 152 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage EnterTriM22B_QUEST_CHECK_PASS ;
+	mainquest GetById 152 SetSolve 1 ;
+	mainquest GetById 152 DeleteObjective 1 ;
+	mainquest GetById 153 SetAcquire 1 ;
+	/* MissionArea */
+	
+	game SetQuestMode 1 ;
+	
+	waypoint GetByKeyName m18marker SetMark 0 ;
+	waypoint GetByKeyName m18marker SetMissionTask -1 ;
+	
+	ship GetByKeyName m22ridleyB SetEnabled 1 ;
+	ship GetByKeyName m22ridleyB SetDestructible 0 ;
+	ship GetByKeyName m22kuzhev SetEnabled 1 ;
+	ship GetByKeyName m22kuzhev SetDestructible 0 ;
+	ship GetByKeyName m22protect1 SetEnabled 1 ;
+	ship GetByKeyName m22protect2 SetEnabled 1 ;
+	ship GetByKeyName m22ridleyB SetBoardable 0 ;
+	ship GetByKeyName m22kuzhev SetBoardable 0 ;
+	ship GetByKeyName m22protect1 SetBoardable 0 ;
+	ship GetByKeyName m22protect2 SetBoardable 0 ;
+	ship GetByKeyName m22nexusB1 SetEnabled 1 ;
+	ship GetByKeyName m22nexusB2 SetEnabled 1 ;
+	ship GetByKeyName m22nexusB3 SetEnabled 1 ;
+	ship GetByKeyName m22nexusB4 SetEnabled 1 ;
+	ship GetByKeyName m22brother1 SetEnabled 1 ;
+	ship GetByKeyName m22brother2 SetEnabled 1 ;
+	ship GetByKeyName m22brother3 SetEnabled 1 ;
+	
+	structure GetByKeyName catapult SetEnabled 0 ;
+	structure GetByKeyName catapultDamaged SetEnabled 1 ;
+	platform GetByKeyName m22mothership SetEnabled 1 ;
+	platform GetByKeyName collector1 SetEnabled 1 ;
+	platform GetByKeyName collector2 SetEnabled 1 ;
+	platform GetByKeyName collector3 SetEnabled 1 ;
+	platform GetByKeyName collector4 SetEnabled 1 ;
+	platform GetByKeyName collector5 SetEnabled 1 ;
+	
+	platform GetByKeyName m22mothership GetMesh 6 SetTransparent 0.0 0.0 0.0 ;
+	platform GetByKeyName m22mothership SetDestructible 0 ;
+	
+	ship GetByKeyName m22ridleyB SetFriendFoe 1 ;
+	ship GetByKeyName m22kuzhev SetFriendFoe 1 ;
+	ship GetByKeyName m22protect1 SetFriendFoe 1 ;
+	ship GetByKeyName m22protect2 SetFriendFoe 1 ;
+	ship GetByKeyName m22nexusB1 SetFriendFoe 2 ;
+	ship GetByKeyName m22nexusB2 SetFriendFoe 2 ;
+	ship GetByKeyName m22nexusB3 SetFriendFoe 2 ;
+	ship GetByKeyName m22nexusB4 SetFriendFoe 2 ;
+	ship GetByKeyName m22brother1 SetFriendFoe 2 ;
+	ship GetByKeyName m22brother2 SetFriendFoe 2 ;
+	ship GetByKeyName m22brother3 SetFriendFoe 2 ;
+	platform GetByKeyName m22mothership SetFriendFoe 2 ;
+	
+	platform GetByKeyName m18platform1 SetFriendFoe 2 ;
+	platform GetByKeyName m18platform2 SetFriendFoe 2 ;
+	platform GetByKeyName m18platform3 SetFriendFoe 2 ;
+	platform GetByKeyName m18platform4 SetFriendFoe 2 ;
+	platform GetByKeyName m18platform5 SetFriendFoe 2 ;
+	
+	platform GetByKeyName collector1 SetFriendFoe 2 ;
+	platform GetByKeyName collector2 SetFriendFoe 2 ;
+	platform GetByKeyName collector3 SetFriendFoe 2 ;
+	platform GetByKeyName collector4 SetFriendFoe 2 ;
+	platform GetByKeyName collector5 SetFriendFoe 2 ;
+
+	game ResetShipEnemyList 1 ;
+	
+	script Spg2\Scripts\M22\CS22C.sal ;
+
+endif
+End

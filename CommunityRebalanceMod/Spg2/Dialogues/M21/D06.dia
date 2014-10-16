@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	9
+	Text:	228
+	Voice:	Spg2\Sound\Voice\kuzhev\228.wav
+	Duration:	19.684
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\DiaEndEmpty.sal
+}

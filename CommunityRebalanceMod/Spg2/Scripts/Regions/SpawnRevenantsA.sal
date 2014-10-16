@@ -1,0 +1,194 @@
+/*
+-------
+Script by: LGM Games  
++chance of spawning anomaly revenant
++several specific regions have much higher chance of spawning battles
+*/
+
+int spawnType = 0 ;
+float3 spawnPos = 0.0 0.0 0.0 ;
+anomaly GetParent GetPosition spawnPos ;
+int factionId = 0 ;
+int shipX = 0 ;
+int shipYFriendly = 0 ;
+int shipYEnemy = 0 ;
+int factionFriendly = 0 ;
+int factionEnemy = 0 ;
+int dialogFac = 1041 ;
+int dialogFacAlly = 1000 ;
+
+int regionId = 0 ;
+
+/* REGION BASED PARAMETERS */
+region GetId regionId ;
+if regionId == 0
+	shipYFriendly = 2 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1000 ;
+endif
+if regionId == 1
+	shipYFriendly = 2 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 3 ;
+	dialogFac = 1037 ;
+	dialogFacAlly = 1000 ;
+endif
+if regionId == 2
+	shipYFriendly = 2 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1000 ;
+endif
+if regionId == 3
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1000 ;
+endif
+if regionId == 4
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1000 ;
+endif
+if regionId == 5
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1000 ;
+endif
+if regionId == 6
+	shipYFriendly = 0 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1001 ;
+endif
+if regionId == 7
+	shipYFriendly = 0 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1001 ;
+endif
+if regionId == 8
+	shipYFriendly = 3 ;
+	factionEnemy = 4 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1002 ;
+endif
+if regionId == 9
+	shipYFriendly = 3 ;
+	factionEnemy = 5 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1043 ;
+	dialogFacAlly = 1002 ;
+endif
+if regionId == 10
+	shipYFriendly = 3 ;
+	factionEnemy = 4 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1008 ;
+	dialogFacAlly = 1002 ;
+endif
+if regionId == 11
+	shipYFriendly = 3 ;
+	factionEnemy = 4 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1008 ;
+	dialogFacAlly = 1002 ;
+endif
+if regionId == 12
+	shipYFriendly = 2 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1043 ;
+	dialogFacAlly = 1003 ;
+endif
+if regionId == 13
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1043 ;
+	dialogFacAlly = 1005 ;
+endif
+if regionId == 14
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1043 ;
+	dialogFacAlly = 1005 ;
+endif
+if regionId == 15
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1043 ;
+	dialogFacAlly = 1005 ;
+endif
+if regionId == 16
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1043 ;
+	dialogFacAlly = 1005 ;
+endif
+if regionId == 17
+	shipYFriendly = 2 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1043 ;
+	dialogFacAlly = 1005 ;
+endif
+if regionId == 18
+	shipYFriendly = 1 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1051 ;
+	dialogFacAlly = 1006 ;
+endif
+if regionId == 19
+	shipYFriendly = 1 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1051 ;
+	dialogFacAlly = 1006 ;
+endif
+
+int dialogLine = 0 ;
+float dialogDur = 5.0 ;
+int shipId = 0 ;
+int chance = 1 ;
+math chance = Rnd 1 2 ;
+if chance == 1
+	/* spawn hostile revenant */
+	ship GetByKeyName shipRev1 Exist checkExist ;
+	if checkExist != 1
+		PrintMessage Spawn_hostile_Revenant! ;
+		math shipId = Rnd shipX shipYEnemy ;
+		shipAdd shipRev1 spawnType spawnPos factionEnemy shipId ;
+		/* one-liner dialogue */
+		math dialogLine = Rnd 349 358 ;
+		factdialogue dialogFac dialogLine dialogDur ;
+	endif
+else
+	/* spawn friendly revenant */
+	ship GetByKeyName shipRev1 Exist checkExist ;
+	if checkExist != 1
+		PrintMessage Spawn_Friendly_Revenant! ;
+		math shipId = Rnd shipX shipYFriendly ;
+		shipAdd shipRev1 spawnType spawnPos factionFriendly shipId ;
+		/* one-liner dialogue */
+		math dialogLine = Rnd 359 368 ;
+		factdialogue dialogFacAlly dialogLine dialogDur ;
+	endif
+endif
+
+End

@@ -1,0 +1,18 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 112 SetAcquire 1 ;
+ship GetByKeyName m15brother1 SetAIQuestStatus 2 ;
+ship GetByKeyName m15brother2 SetAIQuestStatus 2 ;
+ship GetByKeyName m15brother3 SetAIQuestStatus 2 ;
+ship GetByKeyName m15brother4 SetAIQuestStatus 2 ;
+ship GetByKeyName m15brother5 SetAIQuestStatus 2 ;
+platform GetByKeyName m15mothership SetAIQuestStatus 2 ;
+waypoint GetByKeyName m15aWp SetMark 1 ;
+waypoint GetByKeyName m15aWp SetMissionTask 4 ;
+log 93 ;
+ship GetByKeyName m15ridleySHP SetEnabled 0 ;
+End

@@ -1,0 +1,65 @@
+/* quest related */
+int questCond = 0 ;
+mainquest GetById 144 GetAcquire questCond ;
+if questCond == 1
+	
+	int shipExist = 0 ;
+	int shipCond1 = 2 ;
+	int shipCond2 = 2 ;
+	int shipCond3 = 2 ;
+	int shipCond4 = 2 ;
+	int shipCond5 = 2 ;
+	
+	ship GetByKeyName m21Imp1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21Imp1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m21Imp2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21Imp2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m21Imp3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21Imp3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	ship GetByKeyName m21Imp4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21Imp4 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	ship GetByKeyName m21Imp5 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21Imp5 GetCondition shipCond5 ;
+	else
+		shipCond5 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				if shipCond4 != 0
+					if shipCond5 != 0
+						mainquest GetById 144 SetSolve 1 ;
+						mainquest GetById 144 DeleteObjective 1 ;
+						mainquest GetById 145 SetAcquire 1 ;
+						dialogue Spg2\Dialogues\M21\D04.dia ;
+					endif
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

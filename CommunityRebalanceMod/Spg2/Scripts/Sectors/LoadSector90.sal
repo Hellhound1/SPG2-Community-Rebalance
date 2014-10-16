@@ -1,0 +1,113 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName amp90 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName amp90 CallEvent OnActivate ;
+else
+	structure GetByKeyName amp90 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName mining90 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining90 CallEvent OnActivate ;
+else
+	structure GetByKeyName mining90 CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 14 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art37 CallEvent OnActivate ;
+	structure GetByKeyName art37 SetCanRepair 0 ;
+else
+	structure GetByKeyName art37 CallEvent OnDeactivate ;
+	structure GetByKeyName art37 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 4 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_4 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_5 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_6 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_7 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_8 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_90_9 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 14 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_90_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_90_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_90_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_90_3 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

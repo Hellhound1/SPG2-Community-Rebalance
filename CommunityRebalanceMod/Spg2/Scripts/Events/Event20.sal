@@ -1,0 +1,140 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: Miner activity increased
+-------
++randomize regId, eventDur
++addLog + addNews
+*/
+
+/* trigger event */
+int eventId = 20 ;
+int placeType = 1 ;
+int regionId = 27 ;
+float eventDur = 60.0 ;
+int modObj = 0 ;
+float modifier = 2.0 ;
+int titleLine = 980 ;
+int textLine = 997 ;
+math textLine = Rnd 997 999 ;
+
+int result = 1 ;
+math result = Rnd 1 36 ;
+
+if result == 1
+	regionId = 0 ;
+endif
+if result == 2
+	regionId = 1 ;
+endif
+if result == 3
+	regionId = 4 ;
+endif
+if result == 4
+	regionId = 6 ;
+endif
+if result == 5
+	regionId = 8 ;
+endif
+if result == 6
+	regionId = 9 ;
+endif
+if result == 7
+	regionId = 11 ;
+endif
+if result == 8
+	regionId = 13 ;
+endif
+if result == 9
+	regionId = 16 ;
+endif
+if result == 10
+	regionId = 18 ;
+endif
+if result == 11
+	regionId = 19 ;
+endif
+if result == 12
+	regionId = 21 ;
+endif
+if result == 13
+	regionId = 25 ;
+endif
+if result == 14
+	regionId = 26 ;
+endif
+if result == 15
+	regionId = 27 ;
+endif
+if result == 16
+	regionId = 30 ;
+endif
+if result == 17
+	regionId = 31 ;
+endif
+if result == 18
+	regionId = 32 ;
+endif
+if result == 19
+	regionId = 34 ;
+endif
+if result == 20
+	regionId = 35 ;
+endif
+if result == 21
+	regionId = 37 ;
+endif
+if result == 22
+	regionId = 39 ;
+endif
+if result == 23
+	regionId = 40 ;
+endif
+if result == 24
+	regionId = 46 ;
+endif
+if result == 25
+	regionId = 47 ;
+endif
+if result == 26
+	regionId = 48 ;
+endif
+if result == 27
+	regionId = 52 ;
+endif
+if result == 28
+	regionId = 53 ;
+endif
+if result == 29
+	regionId = 57 ;
+endif
+if result == 30
+	regionId = 58 ;
+endif
+if result == 31
+	regionId = 59 ;
+endif
+if result == 32
+	regionId = 61 ;
+endif
+if result == 33
+	regionId = 64 ;
+endif
+if result == 34
+	regionId = 67 ;
+endif
+if result == 35
+	regionId = 70 ;
+endif
+if result == 36
+	regionId = 74 ;
+endif
+
+math eventDur = Rnd 600.0 1200.0 ;
+math modifier = Rnd 1.5 4.0 ;
+globalevent Set eventId placeType regionId eventDur modObj modifier titleLine textLine ;
+
+/* add log and trigger news */
+globalevent AddLog eventId placeType regionId modObj modifier titleLine textLine ;
+
+End

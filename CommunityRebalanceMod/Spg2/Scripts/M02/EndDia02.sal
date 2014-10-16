@@ -1,0 +1,39 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M02_COMPLETED ;
+
+game SetControlEnabled 1 ;
+mainquest GetById 13 SetSolve 1 ;
+/* mainquest GetById 13 DeleteObjective 1 ; */
+mainquest GetById 14 SetAvailable 1 ;
+log 12 ;
+
+/* add quest item */
+int itemId = 3 ;
+int amount = 1 ;
+player AddQuestItemCount itemId amount ;
+
+ship GetByKeyName m02raffaleSHP SetEnabled 0 ;
+
+mainmissionpanel 13 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 400 ;
+player AddReputation 100 ;
+player AddCredits 60000 ;
+script Spg2\Scripts\AwardLightWeapon1.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

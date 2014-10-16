@@ -1,0 +1,38 @@
+int questCond = 0 ;
+mainquest GetById 142 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	ship GetByKeyName m21ridleyB SetEnabled 1 ;
+	ship GetByKeyName m21ridleyB SetDestructible 0 ;
+	platform GetByKeyName starpointPlatform1 SetMark 1 ;
+	platform GetByKeyName starpointPlatform2 SetMark 1 ;
+	platform GetByKeyName starpointPlatform3 SetMark 1 ;
+	platform GetByKeyName starpointPlatform4 SetMark 1 ;
+	platform GetByKeyName starpointPlatform5 SetMark 1 ;
+	platform GetByKeyName starpointPlatform6 SetMark 1 ;
+	platform GetByKeyName starpointPlatform7 SetMark 1 ;
+	platform GetByKeyName starpointPlatform8 SetMark 1 ;
+	ship GetByKeyName m21ridleyB SetFriendFoe 1 ;
+	ship GetByKeyName m21ridleyB SetBoardable 0 ;
+	platform GetByKeyName starpointPlatform1 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform2 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform3 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform4 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform5 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform6 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform7 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform8 SetFriendFoe 2 ;
+	game ResetShipEnemyList 1 ;
+	ship GetByKeyName m21ridleyB SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform1 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform2 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform3 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform4 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform5 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform6 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform7 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform8 SetAIQuestStatus 1 ;
+
+	script Spg2\Scripts\M21\CS21A2.sal ;
+endif
+End

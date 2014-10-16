@@ -1,0 +1,118 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName mining9 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining9 CallEvent OnActivate ;
+else
+	structure GetByKeyName mining9 CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 2 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art44 CallEvent OnActivate ;
+	structure GetByKeyName art44 SetCanRepair 0 ;
+else
+	structure GetByKeyName art44 CallEvent OnDeactivate ;
+	structure GetByKeyName art44 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 4 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_4 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_5 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_6 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_7 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_8 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_9_9 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* shut down all derelicts initially */
+derelict GetByKeyName DER_9_0 SetEnabled 0 ;
+derelict GetByKeyName DER_9_1 SetEnabled 0 ;
+derelict GetByKeyName DER_9_2 SetEnabled 0 ;
+derelict GetByKeyName DER_9_3 SetEnabled 0 ;
+derelict GetByKeyName DER_9_4 SetEnabled 0 ;
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 7 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_9_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_9_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_9_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_9_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_9_4 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

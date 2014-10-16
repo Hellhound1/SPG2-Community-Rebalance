@@ -1,0 +1,30 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 109 SetSolve 1 ;
+mainquest GetById 109 DeleteObjective 1 ;
+mainquest GetById 110 SetAcquire 1 ;
+
+
+ship GetByKeyName m15nexus1 SetFriendFoe 2 ;
+ship GetByKeyName m15nexus2 SetFriendFoe 2 ;
+ship GetByKeyName m15ridleySHP SetFriendFoe 1 ;
+
+ship GetByKeyName m15ridleySHP SetAIQuestStatus 1 ;
+ship GetByKeyName m15nexus1 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus2 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus1 SetInvulnerable 0 ;
+ship GetByKeyName m15nexus2 SetInvulnerable 0 ;
+
+game ResetShipEnemyList 1 ;
+
+ship GetByKeyName m15nexus1 SetMark 1 ;
+ship GetByKeyName m15nexus2 SetMark 1 ;
+ship GetByKeyName m15nexus1 SetMissionTask 0 ;
+ship GetByKeyName m15nexus2 SetMissionTask 0 ;
+log 91 ;
+game SetControlEnabled 1 ;
+End

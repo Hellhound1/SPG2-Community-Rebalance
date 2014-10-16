@@ -1,0 +1,13 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 85 SetSolve 1 ;
+mainquest GetById 85 DeleteObjective 1 ;
+mainquest GetById 86 SetAcquire 1 ;
+
+script Spg2\Scripts\M14\CS14A.sal ;
+
+End

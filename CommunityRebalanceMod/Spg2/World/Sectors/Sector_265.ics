@@ -1,0 +1,655 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky7.amb
+}	
+Spaceship:	
+{	
+	ModelId:	59
+	Position:	32142.71	0.00	94828.16
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	10
+	FactionId:	16
+	Class:	7
+	Skills:	0
+	Level:	30
+	Profession:	0
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19ridleyBSHP
+	Name:	Archimedes
+	CaptainName:	Elenor_Ridley
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	11
+	Position:	32072.00	0.00	94820.40
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	9
+	FactionId:	6
+	Class:	8
+	Skills:	0
+	Level:	30
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19kuzhevBSHP
+	Name:	Anathema
+	CaptainName:	Dmitry_Kuzhev
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	32217.79	0.00	94744.25
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	25
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19protect4
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	33
+	Position:	32127.78	0.00	94724.06
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	9
+	Skills:	0
+	Level:	25
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19protect5
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	47
+	Position:	31997.97	0.00	94720.36
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	5
+	Skills:	0
+	Level:	25
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19protect6
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	17
+	Position:	31975.36	0.00	95789.84
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	10
+	Skills:	0
+	Level:	28
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps1.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps1.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	16
+	Position:	32002.49	0.00	95797.46
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	9
+	Skills:	0
+	Level:	27
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps1.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps1.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	15
+	Position:	31931.48	0.00	95797.48
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	7
+	Skills:	0
+	Level:	25
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps1.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps1.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	14
+	Position:	31943.02	0.00	95828.60
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	5
+	Skills:	0
+	Level:	26
+	Profession:	1
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp4
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps1.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps1.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	14
+	Position:	31983.53	0.00	95838.21
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	5
+	Skills:	0
+	Level:	27
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp5
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps1.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps1.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	16
+	Position:	32882.02	0.00	95679.63
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	9
+	Skills:	0
+	Level:	27
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp6
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps2.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	16
+	Position:	32989.77	0.00	95619.43
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	9
+	Skills:	0
+	Level:	26
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp7
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps2.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	15
+	Position:	32851.65	0.00	95790.95
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	7
+	Skills:	0
+	Level:	26
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp8
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps2.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	14
+	Position:	32967.02	0.00	95764.24
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	5
+	Skills:	0
+	Level:	25
+	Profession:	0
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp9
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps2.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	13
+	Position:	33048.10	0.00	95707.23
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	4
+	Skills:	0
+	Level:	25
+	Profession:	1
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m19imp10
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M19\DestroyImps2.sal
+		OnCapture:	Spg2\Scripts\M19\CaptureImps2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	10
+	Position:	34217.68	0.00	97992.85
+	Rotation:	-0.03	1.74	0.00
+	KeyName:	amp265
+	Name:	A.M.P.
+	NameId:	84
+	FactionId:	15
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	-0.98
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\AMP\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\AMP\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport78.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	17
+	Position:	33379.32	-874.00	97714.09
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_265_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	0
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	18
+	Position:	30138.84	488.00	97708.09
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_265_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	1
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	19
+	Position:	30916.05	938.00	95287.57
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_265_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	2
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	20
+	Position:	33588.49	-561.00	94394.18
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_265_3
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	3
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	21
+	Position:	34054.73	982.00	92772.77
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_265_4
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	4
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	22
+	Position:	35529.68	-846.00	94722.03
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_265_5
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	5
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	31090.29	384.00	92213.13
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_265_0
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	1
+	Position:	30397.85	20.00	95666.10
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_265_1
+	Name:	Engine_dampener
+	NameId:	87
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	2
+	Position:	34792.74	-835.00	97056.45
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_265_2
+	Name:	Eye_of_storm
+	NameId:	88
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\EyeOfStorm\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	32452.88	0.00	95413.64
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m19bTRI
+	Type:	1
+	Radius:	2000.00
+	PulseTime:	1.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M19\EnterTriM19B.sal
+}	
+}
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector265.sal
+}	

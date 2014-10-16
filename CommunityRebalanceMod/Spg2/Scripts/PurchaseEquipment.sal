@@ -1,0 +1,61 @@
+/*
+-------
+Script by: LGM Games  
++triggered when player purchases any equipment on a station or planet
++complete blueprint removed from inventory on purchase
+-------
+0. scriptVar id of the purchased equipment
+1. scriptVar quantity
+*/
+
+PrintMessage PURCHASE_EQUIPMENT_SCRIPT_TRIGGERED ;
+
+int varIdSlot = 0 ;
+int equipId = 0 ;
+scriptvar GetValue int varIdSlot equipId ;
+int varCountSlot = 1 ;
+int equipCount = 0 ;
+scriptvar GetValue int varCountSlot equipCount ; 
+
+int itemId = 0 ;
+int itemCount = 0 ;
+
+if equipId == 20
+	itemId = 118 ;
+	player GetQuestItemCount itemId itemCount ;
+	math itemCount = itemCount - equipCount ;
+	player SetQuestItemCount itemId itemCount ;
+endif
+
+if equipId == 28
+	itemId = 120 ;
+	player GetQuestItemCount itemId itemCount ;
+	math itemCount = itemCount - equipCount ;
+	player SetQuestItemCount itemId itemCount ;
+endif
+
+if equipId == 29
+	itemId = 122 ;
+	player GetQuestItemCount itemId itemCount ;
+	math itemCount = itemCount - equipCount ;
+	player SetQuestItemCount itemId itemCount ;
+endif
+
+if equipId == 30
+	itemId = 124 ;
+	player GetQuestItemCount itemId itemCount ;
+	math itemCount = itemCount - equipCount ;
+	player SetQuestItemCount itemId itemCount ;
+endif
+
+/*   salvage beacon NOT yet implemented
+if equipId == 31
+	itemId = 126 ;
+	player GetQuestItemCount itemId itemCount ;
+	math itemCount = itemCount - equipCount ;
+	openStation SetEquipmentCount itemId itemCount ;
+	player SetQuestItemCount itemId itemCount ;
+endif
+*/
+
+End

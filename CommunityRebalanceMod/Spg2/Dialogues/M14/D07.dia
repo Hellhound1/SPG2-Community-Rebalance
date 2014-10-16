@@ -1,0 +1,20 @@
+Dialogue:
+{
+	Portrait:	1
+	Text:	140
+	Voice:	Spg2\Sound\Voice\adrian\140.wav
+	Duration:	1.206
+}
+Dialogue:
+{
+	Portrait:	13
+	Text:	141
+	Voice:	Spg2\Sound\Voice\oneill\141.wav
+	Duration:	28.35
+	Line:	14.175	0
+	Line:	14.175	244
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M14\EndDia07.sal
+}

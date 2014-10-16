@@ -1,0 +1,88 @@
+Dialogue:
+{
+	Portrait:	10
+	Text:	246
+	Voice:	Spg2\Sound\Voice\ridley\246.wav
+	Duration:	2.522
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	247
+	Voice:	Spg2\Sound\Voice\adrian\247.wav
+	Duration:	8.73
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	248
+	Voice:	Spg2\Sound\Voice\kuzhev\248.wav
+	Duration:	9.566
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	249
+	Voice:	Spg2\Sound\Voice\adrian\249.wav
+	Duration:	4.07
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	250
+	Voice:	Spg2\Sound\Voice\kuzhev\250.wav
+	Duration:	6.537
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	251
+	Voice:	Spg2\Sound\Voice\adrian\251.wav
+	Duration:	1.093
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	252
+	Voice:	Spg2\Sound\Voice\kuzhev\252.wav
+	Duration:	16.008
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	253
+	Voice:	Spg2\Sound\Voice\adrian\253.wav
+	Duration:	4.895
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	254
+	Voice:	Spg2\Sound\Voice\kuzhev\254.wav
+	Duration:	4.471
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	255
+	Voice:	Spg2\Sound\Voice\adrian\255.wav
+	Duration:	5.692
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	256
+	Voice:	Spg2\Sound\Voice\kuzhev\256.wav
+	Duration:	14.874
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	257
+	Voice:	Spg2\Sound\Voice\adrian\257.wav
+	Duration:	10.294
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M22\EndDia07.sal
+}

@@ -1,0 +1,20 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 43 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 43 SetSolve 1 ;
+	mainquest GetById 43 DeleteObjective 1 ;
+	mainquest GetById 44 SetAcquire 1 ;
+	log 42 ;
+	platform GetByKeyName m07prison SetFriendFoe 2 ;
+	game ResetShipEnemyList 1 ;
+	platform GetByKeyName m07prison SetMissionTask 0 ;
+	/* prison SetCond destructible */
+	script Spg2\Scripts\M07\CS07B.sal ;
+endif
+End

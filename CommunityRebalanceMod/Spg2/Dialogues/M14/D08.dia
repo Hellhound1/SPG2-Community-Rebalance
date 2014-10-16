@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	34
+	Text:	142
+	Voice:	Spg2\Sound\Voice\morse\142.wav
+	Duration:	14.56
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M14\EndDia08.sal
+}

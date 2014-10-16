@@ -1,0 +1,8 @@
+Colum:	5			
+Id	Name	Red	Green	Blue
+0	Encounter	255	0	90
+1	Main_quest	255	234	0
+2	Side_quest	90	255	0
+3	Random_quest	0	222	255
+4	Position_marker	186	0	255
+5	Mission_area	255	0	0

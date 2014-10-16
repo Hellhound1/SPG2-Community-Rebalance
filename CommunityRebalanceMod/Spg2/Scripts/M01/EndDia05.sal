@@ -1,0 +1,56 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_EndDia05.sal ;
+
+
+/* fade out end */
+time = 0.6 ;
+camera FadeToColor black time ;
+pause 0.6 ;
+
+/* Cutscene camera end */
+camera SetDefault ;
+camera SetCSCamera 0 ;
+
+/* turn on HUD */
+game ShowAllPanels 1 ;
+
+/* shut down manual controls */
+game SetControlEnabled 1 ;
+
+/* CS lines */
+screen ShowLine 0 ;
+
+pause 0.4 ;
+camera FadeFromColor black time ;
+
+/*
+pause 1.0 ;
+*/
+
+
+/* disable ship Galahad */
+ship GetByKeyName m01galahadSHP SetEnabled 0 ;
+/* set mainquest 7 solve flag to active */
+mainquest GetById 7 SetSolve 1 ;
+/* mainquest GetById 7 DeleteObjective 1 ; */
+
+/* set mainquest 8 acquire flag to active */
+mainquest GetById 8 SetAcquire 1 ;
+/* open special panel */
+/*
+storypanel 0 ;
+*/
+
+/* add quest item */
+int itemId = 1 ;
+int amount = 1 ;
+player AddQuestItemCount itemId amount ;
+
+storypanel 0 ;
+
+End

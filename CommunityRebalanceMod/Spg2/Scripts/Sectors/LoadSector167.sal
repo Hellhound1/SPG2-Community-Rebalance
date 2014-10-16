@@ -1,0 +1,91 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName resCen167 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName resCen167 CallEvent OnActivate ;
+else
+	structure GetByKeyName resCen167 CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 25 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art23 CallEvent OnActivate ;
+	structure GetByKeyName art23 SetCanRepair 0 ;
+else
+	structure GetByKeyName art23 CallEvent OnDeactivate ;
+	structure GetByKeyName art23 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_167_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_167_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_167_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_167_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_167_4 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_167_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_167_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_167_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_167_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_167_4 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_167_5 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

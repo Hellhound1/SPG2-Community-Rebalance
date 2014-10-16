@@ -1,0 +1,59 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 124 SetSolve 1 ;
+mainquest GetById 125 SetAcquire 1 ;
+mainquest GetById 126 SetAcquire 1 ;
+mainquest GetById 127 SetAcquire 1 ;
+
+ship GetByKeyName m18nexus1 SetFriendFoe 2 ;
+ship GetByKeyName m18nexus2 SetFriendFoe 2 ;
+ship GetByKeyName m18nexus3 SetFriendFoe 2 ;
+platform GetByKeyName m18platform1 SetFriendFoe 2 ;
+platform GetByKeyName m18platform2 SetFriendFoe 2 ;
+platform GetByKeyName m18platform3 SetFriendFoe 2 ;
+platform GetByKeyName m18platform4 SetFriendFoe 2 ;
+platform GetByKeyName m18platform5 SetFriendFoe 2 ;
+ship GetByKeyName m18ridley SetFriendFoe 1 ;
+ship GetByKeyName m18baeldor1 SetFriendFoe 1 ;
+
+ship GetByKeyName m18ridley SetAIQuestStatus 2 ;
+ship GetByKeyName m18baeldor1 SetAIQuestStatus 2 ;
+ship GetByKeyName m18nexus1 SetAIQuestStatus 2 ;
+ship GetByKeyName m18nexus2 SetAIQuestStatus 2 ;
+ship GetByKeyName m18nexus3 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform1 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform2 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform3 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform4 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform5 SetAIQuestStatus 2 ;
+
+game ResetShipEnemyList 1 ;
+
+ship GetByKeyName m18nexus1 SetMark 1 ;
+ship GetByKeyName m18nexus2 SetMark 1 ;
+ship GetByKeyName m18nexus3 SetMark 1 ;
+ship GetByKeyName m18nexus1 SetMissionTask 0 ;
+ship GetByKeyName m18nexus2 SetMissionTask 0 ;
+ship GetByKeyName m18nexus3 SetMissionTask 0 ;
+platform GetByKeyName m18platform1 SetMark 1 ;
+platform GetByKeyName m18platform2 SetMark 1 ;
+platform GetByKeyName m18platform3 SetMark 1 ;
+platform GetByKeyName m18platform4 SetMark 1 ;
+platform GetByKeyName m18platform5 SetMark 1 ;
+platform GetByKeyName m18platform1 SetMissionTask 0 ;
+platform GetByKeyName m18platform2 SetMissionTask 0 ;
+platform GetByKeyName m18platform3 SetMissionTask 0 ;
+platform GetByKeyName m18platform4 SetMissionTask 0 ;
+platform GetByKeyName m18platform5 SetMissionTask 0 ;
+
+ship GetPlayer SetInvulnerable 0 ;
+
+log 101 ;
+log 102 ;
+game SetControlEnabled 1 ;
+
+End

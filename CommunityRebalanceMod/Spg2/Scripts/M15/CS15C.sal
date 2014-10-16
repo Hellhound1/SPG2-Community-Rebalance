@@ -1,0 +1,93 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posMother ;
+float3 posPlayer ;
+float3 posBrother1 ;
+float3 posBrother2 ;
+float3 posBrother3 ;
+float3 posBrother4 ;
+float3 posBrother5 ;
+float3 posAdd ;
+float3 posRidley ;
+platform GetByKeyName m15mothership GetPosition posMother ;
+posAdd = 0.0 100.0 0.0 ;
+math posBrother1 = posMother + posAdd ;
+posAdd = 0.0 100.0 30.0 ;
+math posBrother2 = posMother + posAdd ;
+posAdd = 0.0 100.0 -30.0 ;
+math posBrother3 = posMother + posAdd ;
+posAdd = 30.0 100.0 0.0 ;
+math posBrother4 = posMother + posAdd ;
+posAdd = -30.0 100.0 0.0 ;
+math posBrother5 = posMother + posAdd ;
+ship GetByKeyName m15ridleySHP GetPosition posRidley ;
+posAdd = 40.0 0.0 0.0 ;
+math posPlayer = posRidley + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m15brother1 SetPosition posBrother1 ;
+ship GetByKeyName m15brother1 SetPosition posBrother2 ;
+ship GetByKeyName m15brother1 SetPosition posBrother3 ;
+ship GetByKeyName m15brother1 SetPosition posBrother4 ;
+ship GetByKeyName m15brother1 SetPosition posBrother5 ;
+ship GetPlayer VectorTo posMother ;
+ship GetByKeyName m15brother1 VectorTo posPlayer ;
+ship GetByKeyName m15brother2 VectorTo posPlayer ;
+ship GetByKeyName m15brother3 VectorTo posPlayer ;
+ship GetByKeyName m15brother4 VectorTo posPlayer ;
+ship GetByKeyName m15brother5 VectorTo posPlayer ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> player */
+int objectType = 0 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 60.0 ;
+camera SetType 5 objectType NONE rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+script Spg2\Models\Structures\Lens\Activate.sal ;
+
+dialogue Spg2\Dialogues\M15\D04.dia ;
+
+pause 17.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+game SetControlEnabled 1 ;
+
+End

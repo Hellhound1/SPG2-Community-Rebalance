@@ -1,0 +1,67 @@
+int artefactState = 0 ;
+artifacts GetById 36 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art13 CallEvent OnActivate ;
+	structure GetByKeyName art13 SetCanRepair 0 ;
+else
+	structure GetByKeyName art13 CallEvent OnDeactivate ;
+	structure GetByKeyName art13 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_252_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_252_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_252_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_252_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_252_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_252_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_252_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_252_4 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

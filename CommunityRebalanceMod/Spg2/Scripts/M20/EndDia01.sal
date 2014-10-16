@@ -1,0 +1,15 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 133 SetSolve 1 ;
+mainquest GetById 134 SetAcquire 1 ;
+waypoint GetByKeyName m15marker SetMark 1 ;
+waypoint GetByKeyName m15marker SetMissionTask 4 ;
+ship GetByKeyName m20ridleyA SetEnabled 0 ;
+game SetControlEnabled 1 ;
+game SetQuestMode 0 ;
+log 108 ;
+End

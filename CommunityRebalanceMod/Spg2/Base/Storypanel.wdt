@@ -1,0 +1,13 @@
+Colum:	5			
+Id	TitleLine	TextLine	Voice	Texture
+0	1169	12	Spg2\Sound\Voice\cutscene\01.wav	Spg2\Textures\Story\Story1.dds
+1	1170	57	Spg2\Sound\Voice\cutscene\02.wav	Spg2\Textures\Story\Story2.dds
+2	1171	71	Spg2\Sound\Voice\cutscene\03.wav	Spg2\Textures\Story\Story3.dds
+3	1172	81	Spg2\Sound\Voice\cutscene\04.wav	Spg2\Textures\Story\Story4.dds
+4	1173	130	Spg2\Sound\Voice\cutscene\06.wav	Spg2\Textures\Story\Story5.dds
+5	1174	175	Spg2\Sound\Voice\cutscene\07.wav	Spg2\Textures\Story\Story6.dds
+6	1175	195	Spg2\Sound\Voice\cutscene\08.wav	Spg2\Textures\Story\Story7.dds
+7	1391	197	Spg2\Sound\Voice\cutscene\09.wav	Spg2\Textures\Story\Story8.dds
+8	1392	199	Spg2\Sound\Voice\cutscene\10.wav	Spg2\Textures\Story\Story9.dds
+9	1176	949	Spg2\Sound\Voice\cutscene\11.wav	Spg2\Textures\Story\Story11.dds
+10	1177	278	Spg2\Sound\Voice\cutscene\12.wav	Spg2\Textures\Story\Story10.dds

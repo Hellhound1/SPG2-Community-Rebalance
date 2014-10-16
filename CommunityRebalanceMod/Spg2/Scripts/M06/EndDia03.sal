@@ -1,0 +1,34 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+mainquest GetById 41 SetSolve 1 ;
+/* mainquest GetById 41 DeleteObjective 1 ; */
+mainquest GetById 42 SetAvailable 1 ;
+game SetControlEnabled 1 ;
+log 39 ;
+ship GetByKeyName m06steigerBSHP SetEnabled 0 ;
+ship GetByKeyName m06taskforceB1 SetEnabled 0 ;
+ship GetByKeyName m06taskforceB2 SetEnabled 0 ;
+trigger GetByKeyName m06bTRI SetEnabled 0 ;
+
+storypanel 3 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 4100 ;
+player AddReputation 100 ;
+player AddCredits 140000 ;
+script Spg2\Scripts\AwardLightWeapon2.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

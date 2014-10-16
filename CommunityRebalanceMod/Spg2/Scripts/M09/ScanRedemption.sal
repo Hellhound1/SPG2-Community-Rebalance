@@ -1,0 +1,22 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 63 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 63 SetSolve 1 ;
+	mainquest GetById 63 DeleteObjective 1 ;
+	mainquest GetById 62 GetSolve questCond ;
+	if questCond == 1
+		mainquest GetById 64 SetAcquire 1 ;
+		derelict GetByKeyName redemptionDER SetMark 0 ;
+		derelict GetByKeyName redemptionDER SetMissionTask -1 ;
+		derelict GetByKeyName redemptionDER SetDestructible 1 ;
+		game SetControlEnabled 0 ;
+		dialogue Spg2\Dialogues\M09\D07.dia ;
+	endif
+endif
+End

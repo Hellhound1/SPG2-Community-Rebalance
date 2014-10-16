@@ -1,0 +1,5 @@
+PrintMessage M01_Stage2.sal ;
+planet GetByKeyName trinityPLA SetMark 1 ;
+planet GetByKeyName trinityPLA SetMissionTask 4 ;
+
+End

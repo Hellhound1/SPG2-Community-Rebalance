@@ -1,0 +1,118 @@
+/*
+-------
+Script by: LGM Games  
++triggered when player purchases any light or heavy weapon or fighter on a station or planet
++complete blueprint removed from inventory on purchase
+-------
+0. scriptVar id of the system sort
+1. scriptVar id of the system
+2. scriptVar count
+*/
+
+PrintMessage PURCHASE_SHIP_SYSTEM_SCRIPT_TRIGGERED ;
+
+int varSortSlot = 0 ;
+int varIdSlot = 1 ;
+int varCountSlot = 2 ;
+int sysSort = 0 ;
+int sysId = 0 ;
+int sysCount = 0 ;
+
+scriptvar GetValue int varSortSlot sysSort ;
+scriptvar GetValue int varIdSlot sysId ;
+scriptvar GetValue int varCountSlot sysCount ;
+
+int itemId = 0 ;
+int itemCount = 0 ;
+
+/* LIGHT WEAPONS */
+if sysSort == 0
+	if sysId == 76
+		itemId = 128 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 77
+		itemId = 130 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 78
+		itemId = 132 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 79
+		itemId = 134 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 80
+		itemId = 136 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+endif
+
+/* HEAVY WEAPONS */
+if sysSort == 1
+	if sysId == 39
+		itemId = 138 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 40
+		itemId = 140 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 41
+		itemId = 142 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 42
+		itemId = 144 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 43
+		itemId = 146 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+endif
+
+/* FIGHTERS */
+if sysSort == 2
+	if sysId == 15
+		itemId = 112 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 16
+		itemId = 114 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+	if sysId == 17
+		itemId = 116 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - sysCount ;
+		player SetQuestItemCount itemId itemCount ;
+	endif
+endif
+
+End

@@ -1,0 +1,35 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 111 SetAcquire 1 ;
+ship GetByKeyName m15nexus3 SetMark 1 ;
+ship GetByKeyName m15nexus4 SetMark 1 ;
+ship GetByKeyName m15nexus5 SetMark 1 ;
+ship GetByKeyName m15nexus6 SetMark 1 ;
+ship GetByKeyName m15nexus3 SetMissionTask 0 ;
+ship GetByKeyName m15nexus4 SetMissionTask 0 ;
+ship GetByKeyName m15nexus5 SetMissionTask 0 ;
+ship GetByKeyName m15nexus6 SetMissionTask 0 ;
+
+ship GetByKeyName m15nexus3 SetFriendFoe 2 ;
+ship GetByKeyName m15nexus4 SetFriendFoe 2 ;
+ship GetByKeyName m15nexus5 SetFriendFoe 2 ;
+ship GetByKeyName m15nexus6 SetFriendFoe 2 ;
+ship GetByKeyName m15kuzhevSHP SetFriendFoe 1 ;
+ship GetByKeyName m15protect1 SetFriendFoe 1 ;
+ship GetByKeyName m15protect2 SetFriendFoe 1 ;
+
+game ResetShipEnemyList 1 ;
+
+ship GetByKeyName m15nexus3 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus4 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus5 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus6 SetAIQuestStatus 2 ;
+ship GetByKeyName m15kuzhevSHP SetAIQuestStatus 2 ;
+ship GetByKeyName m15protect1 SetAIQuestStatus 2 ;
+ship GetByKeyName m15protect2 SetAIQuestStatus 2 ;
+
+End

@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	10
+	Text:	210
+	Voice:	Spg2\Sound\Voice\ridley\210.wav
+	Duration:	4.641
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\DiaEndEmpty.sal
+}

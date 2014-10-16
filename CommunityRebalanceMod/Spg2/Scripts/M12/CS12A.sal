@@ -1,0 +1,72 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posLeviathan ;
+float3 posPlayer ;
+float3 posAdd ;
+structure GetByKeyName leviathanSTR GetPosition posLeviathan ;
+posAdd = 300.0 80.0 0.0 ;
+math posPlayer = posLeviathan + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetPlayer VectorTo posLeviathan ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> player */
+int objectType = 6 ;
+float rotStart = 1.4 ;
+float rotSpeed = 0.10 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 150.0 ;
+camera SetType 5 objectType leviathanSTR rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+time = 6.0 ; 
+float zoomAmount = 350.0 ; 
+camera SetZoom 0 time zoomAmount ;
+
+int miscLine = 1124 ;
+float duration = 6.0 ;
+screen ShowText miscLine duration ;
+
+pause 1.0 ;
+
+dialogue Spg2\Dialogues\M12\D01.dia ;
+
+pause 5.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+End

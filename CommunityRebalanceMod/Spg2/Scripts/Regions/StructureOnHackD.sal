@@ -1,0 +1,669 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default structure OnHack script
++used automatically if no override script supplied in object parameters
+-------
++experience
++chance to deactivate
+	+reduce reputation
+	+chance to draw security
++specific blocks depending on StructureSort
+	+relay satellite[3] || network hub[4]
+		+chance to gain hero location
+		+notification
+	+research center[9]
+		+gain Credits
+		+chance for blueprint piece
+		+notification
+	+prison[11] 
+		+chance to trigger global event pirates
+		+notification
+	+mining facility[6] 
+		+drop ore loot
+		+notification
+	+nebula collector[7] 
+		+drop gas loot
+		+notification
+	+amp[10]
+		+chance to trigger global event anomalies
+		+notification
+	+solar farm[8]
+		+recharge power or shields or weapon energy
+		+notification
+	+auto-repair
+		+reduce next repair price
+		+notification
+	+anti-rad
+		+reduce next charge price
+		+notification
+*/
+
+/* DEFINE VARIABLES FOR LATER USE */
+int titleLine = 1 ;
+int textLine1 = 2 ;
+int textLine2 = -1 ;
+int eventChance = 1 ;
+int regionId = 0 ;
+float modifier = 2.0 ;
+int modObj = 0 ;
+float eventDur = 60.0 ;
+int placeType = 1 ;
+int eventId = 0 ;
+int lootId = 0 ;
+float3 lootPos = 0.0 0.0 0.0 ;
+float3 structPos = 0.0 0.0 0.0 ;
+float3 addedPos = 400.0 0.0 400.0 ;
+structure GetParent GetPosition structPos ;
+math lootPos = structPos + addedPos ;
+
+/* |---------------- EXPERIENCE ----------------| */
+
+int expBase = 150 ;
+int expAdd = 0 ;
+int experience = 50 ;
+int expClass = 0 ;
+
+/* additional exp rewarded per experience level */
+int level = 0 ;
+player GetLevel level ;
+math expAdd = 10 * level ;
+math expClass = expBase + expAdd ;
+
+/* exp reward increased if character class is Engineer */
+int class = 1 ;
+player GetCharacterClass class ;
+if class == 2
+	math experience = expClass * 2 ;
+else
+	math experience = expClass * 1 ;
+endif
+
+/* add final exp reward */
+player AddExp experience ;
+
+/* |---------------- CALCULATE REPUTATION ----------------| */
+int facParent = 0 ;
+int repChange = -50 ; 
+structure GetParent GetFaction facParent ;
+/* faction-dependant reputation gain +/- */
+if facParent < 36
+	repChange = -50 ;
+	if facParent > 7 && facParent < 10
+		repChange = 50 ;
+	endif
+else
+	repChange = 50 ;
+endif
+if facParent == 2
+	repChange = 50 ;
+endif
+
+
+int deactivateChance = 0 ;
+math deactivateChance = Rnd 0 3 ;
+if deactivateChance == 1
+	/* |---------------- DEACTIVATE ----------------| */
+	structure GetParent CallEvent OnDeactivate ;
+	player AddReputation repChange ;
+
+	/* |---------------- SECURITY ----------------| */
+	int chance = 0 ;
+	math chance = Rnd 1 4 ;
+	if chance == 1
+	
+		/* DEFINE VARIABLES USED LATER */
+		int spawnType = 0 ; /* region based */
+		int faction = 0 ;
+		int facBase = 0 ;
+		structure GetParent GetFaction facBase ;
+		int shipId = 0 ;
+		int shipX = 0 ; /* local region faction ship ID min | always stays the same  */
+		int shipY = 0 ; /* local region faction ship ID max | changes depending on region and faction */
+		int number = 0 ;
+		math number = Rnd 1 3 ; /* random chance for multiple ships to appear */
+		float3 posStart = 0.0 0.0 0.0 ;
+		float3 posMid = 0.0 50.0 700.0 ;
+		float3 spawnPos1 = 0.0 0.0 0.0 ;
+		float3 spawnPos2 = 0.0 0.0 0.0 ;
+		structure GetParent GetPosition posStart ;
+		math spawnPos1 = posMid + posStart ;
+		math spawnPos2 = posMid - posStart ;
+		int dialogLine = 339 ;
+		math dialogLine = Rnd 339 348 ;
+		float dialogDur = 5.0 ;
+		int facDiaId = 0 ;
+		math facDiaId = facBase + 1000 ;
+	
+		/* assign region based parameters */
+		region GetId regionId ;
+		if regionId == 60
+			shipY = 4 ;
+			if facBase == 13
+				faction = 0 ;
+			endif
+			if facBase == 50
+				faction = 1 ;
+			endif
+			if facBase == 33
+				faction = 2 ;
+				shipY = 2 ;
+			endif
+			if facBase == 34
+				faction = 3 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 61
+			if facBase == 12
+				faction = 0 ;
+				shipY = 1 ;
+			endif
+			if facBase == 40
+				faction = 1 ;
+				shipY = 4 ;
+			endif
+		endif
+		
+		if regionId == 62
+			if facBase == 12
+				faction = 0 ;
+				shipY = 1 ;
+			endif
+			if facBase == 50
+				faction = 1 ;
+				shipY = 4 ;
+			endif
+		endif
+		
+		if regionId == 63
+			shipY = 4 ;
+			if facBase == 53
+				faction = 0 ;
+				shipY = 3 ;
+			endif
+			if facBase == 9
+				faction = 1 ;
+			endif
+			if facBase == 39
+				faction = 2 ;
+				shipY = 7 ;
+			endif
+			if facBase == 40
+				faction = 3 ;
+			endif
+			if facBase == 18
+				faction = 4 ;
+				shipY = 1 ;
+			endif
+		endif
+		
+		if regionId == 64
+			shipY = 4 ;
+			if facBase == 53
+				faction = 0 ;
+				shipY = 3 ;
+			endif
+			if facBase == 9
+				faction = 1 ;
+			endif
+			if facBase == 40
+				faction = 2 ;
+			endif
+			if facBase == 49
+				faction = 3 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 65
+			if facBase == 53
+				faction = 0 ;
+				shipY = 3 ;
+			endif
+			if facBase == 9
+				faction = 1 ;
+				shipY = 4 ;
+			endif
+			if facBase == 49
+				faction = 2 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 66
+			if facBase == 53
+				faction = 0 ;
+				shipY = 3 ;
+			endif
+			if facBase == 49
+				faction = 1 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 67
+			shipY = 3 ;
+			if facBase == 14
+				faction = 0 ;
+			endif
+			if facBase == 38
+				faction = 1 ;
+			endif
+			if facBase == 48
+				faction = 2 ;
+			endif
+			if facBase == 49
+				faction = 3 ;
+				shipY = 2 ;
+			endif
+			if facBase == 35
+				faction = 4 ;
+				shipY = 1 ;
+			endif
+			if facBase == 36
+				faction = 4 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 68
+			shipY = 3 ;
+			if facBase == 14
+				faction = 0 ;
+			endif
+			if facBase == 38
+				faction = 1 ;
+			endif
+			if facBase == 35
+				faction = 2 ;
+				shipY = 1 ;
+			endif
+			if facBase == 36
+				faction = 3 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 69
+			shipY = 3 ;
+			if facBase == 14
+				faction = 0 ;
+			endif
+			if facBase == 38
+				faction = 1 ;
+			endif
+			if facBase == 48
+				faction = 2 ;
+			endif
+			if facBase == 35
+				faction = 3 ;
+				shipY = 1 ;
+			endif
+			if facBase == 36
+				faction = 4 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 70
+			shipY = 3 ;
+			if facBase == 48
+				faction = 0 ;
+			endif
+			if facBase == 14
+				faction = 1 ;
+			endif
+			if facBase == 17
+				faction = 2 ;
+			endif
+		endif
+		
+		if regionId == 71
+			if facBase == 17
+				faction = 0 ;
+				shipY = 3 ;
+			endif
+			if facBase == 47
+				faction = 1 ;
+				shipY = 6 ;
+			endif
+		endif
+		
+		if regionId == 72
+			if facBase == 17
+				faction = 0 ;
+				shipY = 3 ;
+			endif
+			if facBase == 47
+				faction = 1 ;
+				shipY = 6 ;
+			endif
+		endif
+		
+		if regionId == 73
+			if facBase == 16
+				faction = 0 ;
+				shipY = 1 ;
+			endif
+			if facBase == 42
+				faction = 1 ;
+				shipY = 5 ;
+			endif
+			if facBase == 30
+				faction = 2 ;
+				shipY = 3 ;
+			endif
+		endif
+		
+		if regionId == 74
+			if facBase == 16
+				faction = 0 ;
+				shipY = 1 ;
+			endif
+			if facBase == 42
+				faction = 1 ;
+				shipY = 5 ;
+			endif
+			if facBase == 47
+				faction = 2 ;
+				shipY = 6 ;
+			endif
+			if facBase == 30
+				faction = 3 ;
+				shipY = 3 ;
+			endif
+		endif
+		
+		if regionId == 75
+			if facBase == 15
+				faction = 0 ;
+				shipY = 1 ;
+			endif
+			if facBase == 49
+				faction = 1 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 76
+			if facBase == 15
+				faction = 0 ;
+				shipY = 1 ;
+			endif
+			if facBase == 49
+				faction = 1 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 77
+			if facBase == 15
+				faction = 0 ;
+				shipY = 1 ;
+			endif
+			if facBase == 49
+				faction = 1 ;
+				shipY = 2 ;
+			endif
+		endif
+		
+		if regionId == 78
+			shipY = 2 ;
+			if facBase == 41
+				faction = 0 ;
+			endif
+			if facBase == 0
+				faction = 1 ;
+			endif
+			if facBase == 1
+				faction = 2 ;
+				shipY = 0 ;
+			endif
+			if facBase == 2
+				faction = 3 ;
+				shipY = 3 ;
+			endif
+			if facBase == 18
+				faction = 4 ;
+				shipY = 1 ;
+			endif
+		endif
+		
+		if regionId == 79
+			if facBase == 37
+				faction = 0 ;
+				shipY = 3 ;
+			endif
+			if facBase == 0
+				faction = 1 ;
+				shipY = 2 ;
+			endif
+			if facBase == 6
+				faction = 2 ;
+				shipY = 1 ;
+			endif
+		endif
+	
+		/* ----- Spawn structure security ----- */
+		int checkExist = 0 ;
+		ship GetByKeyName structSecurity1 Exist checkExist ;
+		if checkExist != 1
+			PrintMessage Spawn_structSecurity1! ;
+			math shipId = Rnd shipX shipY ;
+			shipAdd structSecurity1 spawnType spawnPos1 faction shipId ;
+			ship GetByKeyName structSecurity1 AttackPlayer ;
+		endif
+		
+		if number == 2
+			ship GetByKeyName structSecurity2 Exist checkExist ;
+			if checkExist != 1
+				PrintMessage Spawn_structSecurity2! ;
+				math shipId = Rnd shipX shipY ;
+				shipAdd structSecurity2 spawnType spawnPos2 faction shipId ;
+				ship GetByKeyName structSecurity2 AttackPlayer ;
+			endif
+		endif
+		
+		/* one-liner dialogue */
+		factdialogue facDiaId dialogLine dialogDur ;
+	
+	endif
+	/* |---------------- SECURITY ----------------| */
+else
+	/* |---------------- SPECIFIC ----------------| */
+
+	int structSort = 0 ;
+	structure GetParent GetSort structSort ;
+
+	/* auto-repair */
+	if structSort == 1
+		/*
+			+REDUCE PRICE OF NEXT REPAIR
+		*/
+		/* notification */
+		titleLine = 869 ;
+		textLine1 = 936 ;
+		textLine2 = -1 ;
+		/*
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		*/
+	endif
+
+	/* anti-rad charger */
+	if structSort == 2
+		/*
+			+REDUCE PRICE OF NEXT ANTI-RAD CHARGE
+		*/
+		/* notification */
+		titleLine = 870 ;
+		textLine1 = 937 ;
+		textLine2 = -1 ;
+		/*
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		*/
+	endif
+
+	/* relay satellite */
+	if structSort == 3
+		/* 
+			+CHANCE TO GAIN HERO LOCATION
+		*/
+		/* notification */
+		titleLine = 867 ;
+		textLine1 = 938 ;
+		textLine2 = -1 ;
+		/*
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		*/
+	endif
+
+	/* network hub */
+	if structSort == 4
+		/* 
+			+CHANCE TO GAIN HERO LOCATION
+		*/
+		/* notification */
+		titleLine = 867 ;
+		textLine1 = 938 ;
+		textLine2 = -1 ;
+		/*
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		*/
+	endif
+
+	/* mining facility */
+	if structSort == 6
+		/* loot drop */
+		lootId = 8 ;
+		loot LootDrop lootId lootPos ;
+		/* notification */
+		titleLine = 886 ;
+		textLine1 = 936 ;
+		math textLine1 = Rnd 923 925 ;
+		textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+	endif
+
+	/* nebula collector */
+	if structSort == 7
+		/* loot drop */
+		lootId = 9 ;
+		loot LootDrop lootId lootPos ;
+		/* notification */
+		titleLine = 885 ;
+		textLine1 = 936 ;
+		math textLine1 = Rnd 923 925 ;
+		textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+	endif
+
+	/* solar farm */
+	if structSort == 8
+		/*
+			+RECHARGE SHIELDS OR WEAPON ENERGY
+		*/
+		/* notification */
+		titleLine = 873 ;
+		textLine1 = 939 ;
+		textLine2 = -1 ;
+		/*
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		*/
+	endif
+
+	/* research center */
+	if structSort == 9
+	
+		int creditsBase = 500 ;
+		int creditsAdd = 50 ;
+		int playerLevel = 1 ;
+		player GetLevel playerLevel ;
+		math creditsAdd = creditsAdd * playerLevel ;
+		int creditsSum = 0 ;
+		math creditsSum = creditsBase + creditsAdd ;
+		int credits = 0 ;
+		int creditsIncreased = 0 ;
+		int creditsFinal = 0 ;
+	
+		math creditsIncreased = creditsSum * 1.5 ;
+		math credits = Rnd credits creditsIncreased ;
+
+		/* add final credits reward */
+		player AddCredits credits ;
+		
+		/* blueprint award - dependency on ship level */
+		int pcLevel = 1 ;
+		player GetLevel pcLevel ;
+		int maxBpChance = 30 ;
+		if pcLevel < 21
+			maxBpChance = 30 ;
+		endif
+		if pcLevel > 20 && pcLevel < 51
+			maxBpChance = 25 ;
+		endif
+		if pcLevel > 50
+			maxBpChance = 20 ;
+		endif
+
+		int bpChance = 0 ;
+		math bpChance = Rnd 1 maxBpChance ;
+		if bpChance == 1
+			script Spg2\Scripts\BlueprintAward.sal ;
+		endif
+		
+		/* notification */
+		titleLine = 874 ;
+		textLine1 = 927 ;
+		textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+	endif
+
+	/* amp */
+	if structSort == 10
+		/* chance to trigger anomaly activity increased event */
+		math eventChance = Rnd 1 5 ;
+		if eventChance == 1
+			eventId = 17 ;
+			titleLine = 976 ;
+			region GetId regionId ;
+			math eventDur = Rnd 600.0 1200.0 ;
+			math modifier = Rnd 1.5 4.0 ;
+			math textLine = Rnd 923 925 ;
+			globalevent Set eventId placeType regionId eventDur modObj modifier titleLine textLine ;
+			globalevent AddLog eventId placeType regionId eventDur modObj modifier titleLine textLine ;
+		endif
+		/* notification */
+		titleLine = 892 ;
+		textLine1 = 940 ;
+		textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+	endif
+
+	/* prison */
+	if structSort == 11
+		/* chance to trigger pirate activity increased event */
+		math eventChance = Rnd 1 5 ;
+		if eventChance == 1
+			eventId = 8 ;
+			titleLine = 971 ;
+			region GetId regionId ;
+			math eventDur = Rnd 600.0 1200.0 ;
+			math modifier = Rnd 1.5 4.0 ;
+			math textLine = Rnd 907 911 ;
+			globalevent Set eventId placeType regionId eventDur modObj modifier titleLine textLine ;
+			globalevent AddLog eventId placeType regionId eventDur modObj modifier titleLine textLine ;
+		endif
+		
+		/* notification */
+		titleLine = 891 ;
+		textLine1 = 941 ;
+		textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+	endif
+
+	/* |---------------- SPECIFIC ----------------| */
+endif
+	
+End

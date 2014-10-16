@@ -1,0 +1,33 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 58 SetSolve 1 ;
+mainquest GetById 58 DeleteObjective 1 ;
+mainquest GetById 59 SetAcquire 1 ;
+log 53 ;
+ship GetByKeyName m09rev3 SetEnabled 1 ;
+ship GetByKeyName m09rev3 SetMark 1 ;
+ship GetByKeyName m09rev3 SetMissionTask 0 ;
+ship GetByKeyName m09rev3 SetFriendFoe 2 ;
+ship GetByKeyName m09nimovSHP SetMissionTask 13 ;
+game ResetShipEnemyList 1 ;
+
+ship GetByKeyName m09rev3 SetAIQuestStatus 2 ;
+ship GetByKeyName m09nimovSHP SetAIQuestStatus 1 ;
+
+/* timer */
+/*
+float time = 300.0 ;
+*/
+float time = 180.0 ;
+float direction = -1.0 ;
+int textLine = 1279 ;
+int hintLine = 1280 ;
+game AddTimer m09timer1 Spg2\Scripts\M09\FiveMinTimer.sal Spg2\Scripts\M09\FiveMinTimer.sal time direction textLine hintLine ;
+
+game SetControlEnabled 1 ;
+
+End

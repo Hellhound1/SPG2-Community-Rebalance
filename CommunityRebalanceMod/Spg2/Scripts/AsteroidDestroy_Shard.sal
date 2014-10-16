@@ -1,0 +1,96 @@
+float radius = 0 ;
+float3 ePos = 1 2 3 ;
+float3 position = 1 2 3 ;
+float3 e_posC = 1 2 3 ;
+float3 e_posCC = 1 2 3 ;
+asteroid GetParent GetPosition position ;
+asteroid GetParent GetRadius radius ;
+
+/* sound */
+int soundChoice = 1 ;
+math soundChoice = Rnd 1 2 ;
+if soundChoice == 1
+	sound3d expl_crystal1 position ;
+endif
+if soundChoice == 2
+	sound3d expl_crystal2 position ;
+endif
+
+/* get position between asteroid and camera to hide asteroid deletion */
+camera VectorTo e_posC ;
+math e_posCC = e_posC * radius ;
+math e_posC = e_posCC * 0.6 ;
+math ePos = position + e_posC ;
+
+/* MAIN TEXTURE EXPLOSION */
+float eDelay = 0.0 ;
+float3 eDPos = 0 0 0 ;
+float3 eCol = 1 1 1 ;
+float eTransp = 1.0 ;
+int eId = 11 ;
+float eSizeStart = 7.0 ;
+math esizeStart = radius * 1.2 ;
+float eSizeEnd = 8.0 ;
+math eSizeEnd = radius * 1.6 ;
+int eSizeSort = 3 ;
+float eLifetime = 1.0 ;
+float eRndOffset = 0.0 ;
+int eBlend = 0 ;
+/*
+explosion eDelay ePos eDPos eCol eTransp eId eSizeStart eSizeEnd eSizeSort eLifetime eRndOffset eBlend ;
+*/
+float delDelay = 0.4 ;
+asteroid GetParent Delete delDelay ;
+
+/* particle explosion IDs depending on asteroid size */
+int asbId = 108 ;
+int fogId = 111 ;
+
+if radius > 0.00 && radius < 30.01
+	asbId = 108 ;
+	fogId = 111 ;
+endif
+if radius > 30.0 && radius < 70.01
+	asbId = 109 ;
+	fogId = 112 ;
+endif
+if radius > 70.0
+	asbId = 110 ;
+	fogId = 113 ;
+endif
+
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+float lifeFog = 4.0 ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* Fog particles -> FreeModel.wds */
+assembly delay position fogId lifeFog ;
+
+/* CAMERA SHAKE */
+int sort = 1 ;
+int type = 0 ;
+float power = 0.5 ;
+float duration = 0.6 ;
+
+camera Shake sort type power duration delay position radius ;
+
+/* damage blast in radius */
+int vSort = 9 ; /* phased damage */
+float3 vPos = 0.0 0.0 0.0 ;
+asteroid GetParent GetPosition vPos ;
+float vRadius = 100.0 ;
+float radiusFactor = 4.0 ;
+math radiusFactor = Rnd 5.0 10.0 ;
+math vRadius = radius * radiusFactor ;
+float vLifetime = 0.5 ;
+float vDamage = 500.0 ;
+/* damage amount depends on asteroid radius */
+float damageFactor = 0.10 ;
+math damageFactor = Rnd 0.50 1.00 ;
+math vDamage = radius * damageFactor ;
+
+int affectFriendly = 0 ;
+virtualshockwave vSort vPos vRadius vLifetime vDamage affectFriendly ;
+
+End

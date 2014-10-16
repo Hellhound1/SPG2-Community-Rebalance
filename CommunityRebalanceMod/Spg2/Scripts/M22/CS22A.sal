@@ -1,0 +1,119 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+float3 posPlayer ;
+float3 posRidley ;
+float3 posNexus1 ;
+float3 posNexus2 ;
+float3 posNexus3 ;
+float3 posAdd ;
+waypoint GetByKeyName m22marker GetPosition posNexus1 ;
+posAdd = 40.0 0.0 0.0 ;
+math posNexus2 = posNexus1 + posAdd ;
+posAdd = -40.0 0.0 0.0 ;
+math posNexus3 = posNexus1 + posAdd ;
+posAdd = 0.0 0.0 500.0 ;
+math posRidley = posNexus1 + posAdd ;
+posAdd = 40.0 0.0 0.0 ;
+math posPlayer = posRidley + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m22ridleyA SetPosition posRidley ;
+ship GetByKeyName m22nexusA1 SetPosition posNexus1 ;
+ship GetByKeyName m22nexusA2 SetPosition posNexus2 ;
+ship GetByKeyName m22nexusA3 SetPosition posNexus3 ;
+ship GetPlayer VectorTo posNexus1 ;
+ship GetByKeyName m22ridleyA VectorTo posNexus1 ;
+ship GetByKeyName m22nexusA1 VectorTo posRidley ;
+ship GetByKeyName m22nexusA2 VectorTo posRidley ;
+ship GetByKeyName m22nexusA3 VectorTo posRidley ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+dialogue Spg2\Dialogues\M22\D01.dia ;
+
+int objectType = 1 ;
+float cameraDistance = 50.0 ;
+/* <CAMERA 1> */
+/* target ridley->nexus1 */
+objectType = 1 ;
+float verticalStartA = 6.0 ;
+int focusObjType = 1 ;
+float verticalStartB = 2.0 ;
+cameraDistance = 200.0 ;
+camera SetType 6 objectType m22ridleyA verticalStartA focusObjType m22nexusA1 verticalStartB cameraDistance ; 
+/* camera zoom */
+time = 5.1 ; 
+float zoomAmount = 50.0 ; 
+camera SetZoom 0 time zoomAmount ;
+
+pause 5.0 ;
+
+/* <CAMERA 2> */
+/* rotation -> ridley */
+objectType = 1 ;
+float rotationStart = -2.4 ;
+float rotationSpeed = 0.08 ;
+float verticalStart = 2.4 ;
+float verticalOffset = 12.0 ;
+float verticalSpeed = 0.06 ;
+cameraDistance = 30.0 ;
+camera SetType 5 objectType m22nexusA1 rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+/* camera zoom */
+time = 5.1 ; 
+zoomAmount = 90.0 ; 
+camera SetZoom 0 time zoomAmount ;
+
+pause 5.0 ;
+
+/* <CAMERA 3> */
+/* rotation -> nexus2 */
+objectType = 1 ;
+rotationStart = -2.4 ;
+rotationSpeed = -0.08 ;
+verticalStart = -2.4 ;
+verticalOffset = 17.0 ;
+verticalSpeed = 0.04 ;
+cameraDistance = 160.0 ;
+camera SetType 5 objectType m22nexusA2 rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+/* camera zoom */
+time = 5.1 ; 
+zoomAmount = 30.0 ; 
+camera SetZoom 0 time zoomAmount ;
+
+pause 5.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+End

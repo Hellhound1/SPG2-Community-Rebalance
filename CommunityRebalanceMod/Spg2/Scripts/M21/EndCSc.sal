@@ -1,0 +1,25 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 145 SetSolve 1 ;
+mainquest GetById 145 DeleteObjective 1 ;
+mainquest GetById 146 SetAcquire 1 ;
+ship GetByKeyName m21brother1 SetFriendFoe 2 ;
+ship GetByKeyName m21brother2 SetFriendFoe 2 ;
+ship GetByKeyName m21brother3 SetFriendFoe 2 ;
+ship GetByKeyName m21brother1 SetMark 1 ;
+ship GetByKeyName m21brother2 SetMark 1 ;
+ship GetByKeyName m21brother3 SetMark 1 ;
+ship GetByKeyName m21brother1 SetMissionTask 0 ;
+ship GetByKeyName m21brother2 SetMissionTask 0 ;
+ship GetByKeyName m21brother3 SetMissionTask 0 ;
+ship GetByKeyName m21brother1 SetAIQuestStatus 2 ;
+ship GetByKeyName m21brother2 SetAIQuestStatus 2 ;
+ship GetByKeyName m21brother3 SetAIQuestStatus 2 ;
+game ResetShipEnemyList 1 ;
+
+log 114 ;
+End

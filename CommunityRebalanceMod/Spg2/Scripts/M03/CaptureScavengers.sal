@@ -1,0 +1,46 @@
+/* quest related */
+int questCond = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipExist = 0 ;
+
+mainquest GetById 17 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage Quest_17_Check_Success! ;
+	ship GetByKeyName m03scavenger1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m03scavenger1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m03scavenger2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m03scavenger2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	/* if both ships destroyed */
+	if shipCond1 != 0 && shipCond2 != 0
+		PrintMessage Scavengers_destroyed! ;
+		mainquest GetById 17 SetSolve 1 ;
+		mainquest GetById 17 DeleteObjective 1 ;
+		mainquest GetById 18 SetAcquire 1 ;
+		derelict GetByKeyName m03DER SetMark 1 ;
+		derelict GetByKeyName m03DER SetMissionTask 7 ;
+		derelict GetByKeyName m03DER SetDestructible 1 ;
+		log 16 ;
+		/* check if part already in cargo */
+		mainquest GetById 18 GetSolve questCond ;
+		if questCond == 1
+			mainquest GetById 19 SetAcquire 1 ;
+			derelict GetByKeyName m03DER SetMark 0 ;
+			derelict GetByKeyName m03DER SetMissionTask -1 ;
+			waypoint GetByKeyName m03marker SetMark 1 ;
+			waypoint GetByKeyName m03marker SetMissionTask 4 ;
+			log 17 ;
+		endif
+	endif
+	
+endif
+
+End

@@ -1,0 +1,53 @@
+/* shut down Avalon derelict before needed */
+int questCond = 0 ;
+mainquest GetById 6 GetAcquire questCond ;
+if questCond == 0
+	derelict GetByKeyName avalonDER SetEnabled 0 ;
+else
+	derelict GetByKeyName avalonDER SetEnabled 1 ;
+endif
+
+
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_144_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_144_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_144_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 14 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_144_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_144_1 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

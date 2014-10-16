@@ -1,0 +1,70 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+ship GetPlayer SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> player */
+int objectType = 0 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 60.0 ;
+camera SetType 5 objectType NONE rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+dialogue Spg2\Dialogues\M07\D02.dia ;
+
+pause 7.0 ;
+
+/* <CAMERA 2> */
+
+/* <CAMERA 3> */
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+
+ship GetPlayer SetInvulnerable 0 ;
+
+game SetControlEnabled 1 ;
+
+End

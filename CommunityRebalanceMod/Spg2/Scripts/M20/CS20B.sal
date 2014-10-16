@@ -1,0 +1,89 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+ship GetPlayer SetInvulnerable 1 ;
+ship GetByKeyName m20kuzhevSHP SetInvulnerable 1 ;
+ship GetByKeyName m20protect1 SetInvulnerable 1 ;
+ship GetByKeyName m20protect2 SetInvulnerable 1 ;
+
+float3 posClearmont ;
+float3 posPlayer ;
+float3 posAdd = 400.0 50.0 0.0 ;
+float3 posKuzhev ;
+float3 posProtect1 ;
+float3 posProtect2 ;
+station GetByKeyName clearmontSTA GetPosition posClearmont ;
+math posPlayer = posClearmont + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+posAdd = 1200.0 0.0 0.0 ;
+math posKuzhev = posClearmont + posAdd ;
+ship GetByKeyName m20kuzhevSHP SetPosition posKuzhev ;
+posAdd = 0.0 0.0 20.0 ;
+math posProtect1 = posKuzhev + posAdd ;
+ship GetByKeyName m20protect1 SetPosition posProtect1 ;
+posAdd = 0.0 0.0 -20.0 ;
+math posProtect2 = posKuzhev + posAdd ;
+ship GetByKeyName m20protect2 SetPosition posProtect2 ;
+ship GetPlayer VectorTo posClearmont ;
+ship GetByKeyName m20kuzhevSHP VectorTo posClearmont ;
+ship GetByKeyName m20protect1 VectorTo posClearmont ;
+ship GetByKeyName m20protect2 VectorTo posClearmont ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> kuzhev */
+int objectType = 1 ;
+float rotStart = 0.6 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 90.0 ;
+camera SetType 5 objectType m20kuzhevSHP rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+pause 3.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+ship GetPlayer SetInvulnerable 0 ;
+ship GetByKeyName m20kuzhevSHP SetInvulnerable 0 ;
+ship GetByKeyName m20protect1 SetInvulnerable 0 ;
+ship GetByKeyName m20protect2 SetInvulnerable 0 ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+script Spg2\Scripts\M20\EndCSb.sal ;
+
+game SetControlEnabled 1 ;
+
+End

@@ -1,0 +1,38 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 74 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 74 SetSolve 1 ;
+	mainquest GetById 74 DeleteObjective 1 ;
+	mainquest GetById 75 SetAcquire 1 ;
+	ship GetByKeyName m11samoaSHP SetEnabled 1 ;
+	ship GetByKeyName m11sanctuary1 SetEnabled 1 ;
+	
+	ship GetByKeyName m11samoaSHP SetFriendFoe 3 ;
+	ship GetByKeyName m11sanctuary1 SetFriendFoe 3 ;
+	
+	ship GetByKeyName m11samoaSHP SetMark 1 ;
+	ship GetByKeyName m11sanctuary1 SetMark 1 ;
+	
+	ship GetByKeyName m11samoaSHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m11sanctuary1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m11sanctuary1 ForceStop 0 ;
+	ship GetByKeyName m11samoaSHP ForceStop 0 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	script Spg2\Scripts\M11\CS11B.sal ;
+	
+	/* timer */
+	float time = 120.0 ; 	
+	float direction = -1.0 ;
+	int textLine = 1290 ;
+	int hintLine = 1291 ;
+	game AddTimer m11timer2 Spg2\Scripts\M11\FourMinTimer.sal Spg2\Scripts\M11\FourMinTimer.sal time direction textLine hintLine ;
+endif
+End

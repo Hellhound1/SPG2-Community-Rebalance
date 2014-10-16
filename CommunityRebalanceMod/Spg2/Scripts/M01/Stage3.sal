@@ -1,0 +1,5 @@
+PrintMessage M01_Stage3.sal ;
+waypoint GetByKeyName m01markerB SetMark 1 ;
+waypoint GetByKeyName m01markerB SetMissionTask 4 ;
+
+End

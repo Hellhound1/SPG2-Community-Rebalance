@@ -1,0 +1,31 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 81 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 81 SetSolve 1 ;
+	mainquest GetById 81 DeleteObjective 1 ;
+	mainquest GetById 82 SetAcquire 1 ;
+	
+	game SetQuestMode 1 ;
+	
+	waypoint GetByKeyName m13aWp SetMark 0 ;
+	waypoint GetByKeyName m13aWp SetMissionTask -1 ;
+	game SetControlEnabled 0 ;
+	/* iskoristiti m13bTRI kao Mission Area */
+	ship GetByKeyName m13imp1 SetEnabled 1 ;
+	ship GetByKeyName m13imp2 SetEnabled 1 ;
+	ship GetByKeyName m13imp1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m13imp2 SetAIQuestStatus 1 ;
+	int hpRel1 = 5 ;
+	int hpRel2 = 5 ;
+	ship GetByKeyName m13imp1 SetHPRel hpRel1 ;
+	ship GetByKeyName m13imp2 SetHPRel hpRel2 ;
+	ship GetPlayer SetInvulnerable 1 ;
+	dialogue Spg2\Dialogues\M13\D02.dia ;
+endif
+End

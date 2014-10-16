@@ -1,0 +1,46 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M15_COMPLETED ;
+
+int questCond = 0 ;
+mainquest GetById 112 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 112 SetSolve 1 ;
+	/* mainquest GetById 112 DeleteObjective 1 ; */
+	mainquest GetById 113 SetAvailable 1 ;
+	waypoint GetByKeyName m15aWp SetMark 0 ;
+	waypoint GetByKeyName m15aWp SetMissionTask -1 ;
+	ship GetByKeyName m15brother1 SetEnabled 0 ;
+	ship GetByKeyName m15brother2 SetEnabled 0 ;
+	ship GetByKeyName m15brother3 SetEnabled 0 ;
+	ship GetByKeyName m15brother4 SetEnabled 0 ;
+	ship GetByKeyName m15brother5 SetEnabled 0 ;
+	ship GetByKeyName m15protect1 SetEnabled 0 ;
+	ship GetByKeyName m15protect2 SetEnabled 0 ;
+	ship GetByKeyName m15kuzhevSHP SetEnabled 0 ;
+	
+	mainmissionpanel 94 ;
+	
+	game SetQuestMode 0 ;
+
+	/* -^-REWARD-^- */
+	player AddExp 35200 ;
+	player AddReputation 100 ;
+	player AddCredits 320000 ;
+	script Spg2\Scripts\BlueprintAward.sal ;
+
+	/* -^-MISSION COMPLETE-^- */
+	int titleLine = 183 ;
+	int textLine1 = 1553 ;
+	int textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+	
+	
+	
+endif
+End

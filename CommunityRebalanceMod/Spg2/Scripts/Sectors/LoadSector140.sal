@@ -1,0 +1,96 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName amp140 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName amp140 CallEvent OnActivate ;
+else
+	structure GetByKeyName amp140 CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 19 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art32 CallEvent OnActivate ;
+	structure GetByKeyName art32 SetCanRepair 0 ;
+else
+	structure GetByKeyName art32 CallEvent OnDeactivate ;
+	structure GetByKeyName art32 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_140_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_140_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_140_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_140_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_140_4 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_140_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_140_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_140_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_140_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_140_4 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_140_5 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_140_6 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

@@ -1,0 +1,25 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage UlazUTrigger ;
+int condition = 0 ;
+mainquest GetById 117 GetAcquire condition ;
+if condition == 1	
+
+	mainquest GetById 117 SetSolve 1 ;
+	mainquest GetById 117 DeleteObjective 1 ;
+	mainquest GetById 118 SetAcquire 1 ;
+	game SetControlEnabled 0 ;
+	game SetQuestMode 1 ;
+	
+	ship GetPlayer SetInvulnerable 1 ;
+	
+	waypoint GetByKeyName m17marker SetMark 0 ;
+	waypoint GetByKeyName m17marker SetMissionTask -1 ;
+	dialogue Spg2\Dialogues\M17\D01.dia ;
+endif
+
+End

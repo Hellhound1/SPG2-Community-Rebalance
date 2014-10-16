@@ -1,0 +1,54 @@
+/* quest check */
+int questCond = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipExist = 0 ;
+mainquest GetById 12 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m02pirateA Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m02pirateA GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m02pirateB Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m02pirateB GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			mainquest GetById 12 SetSolve 1 ;
+			mainquest GetById 12 DeleteObjective 1 ;
+			mainquest GetById 13 SetAcquire 1 ;
+			
+			/*
+			float3 PcPos = 0.0 0.0 0.0 ;
+			waypoint GetByKeyName m02PcPos GetPosition PcPos ;
+			ship GetPlayer SetPosition PcPos ;
+			*/
+			
+			/*
+			float3 raffalePos = 0.0 0.0 0.0 ;
+			waypoint GetByKeyName m02raffalePos GetPosition raffalePos ;
+			ship GetByKeyName m02raffaleSHP SetPosition raffalePos ;
+			*/
+			/* quest ship AI flag to true, ships go passive */
+			int aiState = 1 ;
+			ship GetByKeyName m02raffaleSHP SetAIQuestStatus aiState ;
+			
+			game ResetShipEnemyList 1 ;
+			
+			/* disable questMode */
+			game SetQuestMode 0 ;
+			
+			game SetControlEnabled 0 ;
+			dialogue Spg2\Dialogues\M02\D02.dia ;
+		endif
+	endif	
+endif
+
+End

@@ -1,0 +1,13 @@
+int questCond = 0 ;
+mainquest GetById 53 GetAcquire questCond ;
+if questCond == 1
+	structure GetByKeyName m09satB CallEvent OnDeactivate ;
+endif
+
+questCond = 0 ;
+mainquest GetById 54 GetAcquire questCond ;
+if questCond == 1
+	structure GetByKeyName m09satC CallEvent OnDeactivate ;
+endif
+
+End

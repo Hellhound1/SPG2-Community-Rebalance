@@ -1,0 +1,17 @@
+Colum:	6			
+Id	Name	Schem	File	Background	SavePicture
+0	Iolia	Spg2\Models\Planets\Iolia\schem.dds	Spg2\Models\Planets\Iolia\Planet_Iolia.asb	Spg2\Textures\Planets\Iolia\IoliaBackground.dds	Spg2\Textures\Planets\Iolia\IoliaSave.dds
+1	Nyx	Spg2\Models\Planets\Nyx\schem.dds	Spg2\Models\Planets\Nyx\Planet_Nyx.asb	Spg2\Textures\Planets\Nyx\NyxBackground.dds	Spg2\Textures\Planets\Nyx\NyxSave.dds
+2	Sora	Spg2\Models\Planets\Sora\schem.dds	Spg2\Models\Planets\Sora\Planet_Sora.asb	Spg2\Textures\Planets\Sora\SoraBackground.dds	Spg2\Textures\Planets\Sora\SoraSave.dds
+3	Eanakai	Spg2\Models\Planets\Eanakai\schem.dds	Spg2\Models\Planets\Eanakai\Planet_Eanakai.asb	Spg2\Textures\Planets\Eanakai\EanakaiBackground.dds	Spg2\Textures\Planets\Eanakai\EanakaiSave.dds
+4	Trinity	Spg2\Models\Planets\Trinity\schem.dds	Spg2\Models\Planets\Trinity\Planet_Trinity.asb	Spg2\Textures\Planets\Trinity\TrinityBackground.dds	Spg2\Textures\Planets\Trinity\TrinitySave.dds
+5	Carthagena	Spg2\Models\Planets\Carthagena\schem.dds	Spg2\Models\Planets\Carthagena\Planet_Carthagena.asb	Spg2\Textures\Planets\Carthagena\CarthagenaBackground.dds	Spg2\Textures\Planets\Carthagena\CarthagenaSave.dds
+6	Corrion	Spg2\Models\Planets\Corrion\schem.dds	Spg2\Models\Planets\Corrion\Planet_Corrion.asb	Spg2\Textures\Planets\Corrion\CorrionBackground.dds	Spg2\Textures\Planets\Corrion\CorrionSave.dds
+7	Baeldor	Spg2\Models\Planets\Baeldor\schem.dds	Spg2\Models\Planets\Baeldor\Planet_Baeldor.asb	Spg2\Textures\Planets\Baeldor\BaeldorBackground.dds	Spg2\Textures\Planets\Baeldor\BaeldorSave.dds
+8	Pyros	Spg2\Models\Planets\Porphyria\schem.dds	Spg2\Models\Planets\Porphyria\Planet_Porphyria.asb	Spg2\Textures\Planets\Prophyria\PyrosBackground.dds	Spg2\Textures\Planets\Prophyria\PyrosSave.dds
+9	Hogosha	Spg2\Models\Planets\Hogosha\schem.dds	Spg2\Models\Planets\Hogosha\Planet_Hogosha.asb	Spg2\Textures\Planets\Hogosha\HogoshaBackground.dds	Spg2\Textures\Planets\Hogosha\HogoshaSave.dds
+10	Korkyra	Spg2\Models\Planets\Korkyra\schem.dds	Spg2\Models\Planets\Korkyra\Planet_Korkyra.asb	Spg2\Textures\Planets\Korkyra\KorkyraBackground.dds	Spg2\Textures\Planets\Korkyra\KorkyraSave.dds
+11	Thauria	Spg2\Models\Planets\Thauria\schem.dds	Spg2\Models\Planets\Thauria\Planet_Thauria.asb	Spg2\Textures\Planets\Thauria\ThauriaBackground.dds	Spg2\Textures\Planets\Thauria\ThauriaSave.dds
+12	Fairuz	Spg2\Models\Planets\Fairuz\schem.dds	Spg2\Models\Planets\Fairuz\Planet_Fairuz.asb	Spg2\Textures\Planets\Fairuz\FairuzBackground.dds	Spg2\Textures\Planets\Fairuz\FairuzSave.dds
+13	Sun	Spg2\Models\Planets\Fairuz\schem.dds	Spg2\Models\Sun\sun.asb	Spg2\Textures\Planets\Fairuz\FairuzBackground.dds	Spg2\Textures\Planets\Fairuz\FairuzSave.dds
+14	Mercury	Spg2\Models\Planets\Fairuz\schem.dds	Spg2\Models\Planets\Mercury\Planet_Mercury.asb	Spg2\Textures\Planets\Fairuz\FairuzBackground.dds	Spg2\Textures\Planets\Fairuz\FairuzSave.dds

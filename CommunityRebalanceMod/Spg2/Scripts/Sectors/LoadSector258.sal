@@ -1,0 +1,90 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName sat258 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName sat258 CallEvent OnActivate ;
+else
+	structure GetByKeyName sat258 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName mining258 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining258 CallEvent OnActivate ;
+else
+	structure GetByKeyName mining258 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName gas258 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas258 CallEvent OnActivate ;
+else
+	structure GetByKeyName gas258 CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_258_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_258_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_258_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_258_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_258_4 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_258_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_258_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_258_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_258_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_258_4 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

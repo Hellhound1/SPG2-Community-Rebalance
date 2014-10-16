@@ -1,0 +1,4 @@
+waypoint GetByKeyName M17Bwp SetMark 1 ;
+waypoint GetByKeyName M17Bwp SetMissionTask 4 ;
+
+End

@@ -1,0 +1,27 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 51 SetSolve 1 ;
+mainquest GetById 51 DeleteObjective 1 ;
+
+mainquest GetById 52 SetAcquire 1 ;
+/*
+mainquest GetById 53 SetAcquire 1 ;
+mainquest GetById 54 SetAcquire 1 ;
+*/
+game SetControlEnabled 1 ;
+waypoint GetByKeyName m09markerSatA SetMark 1 ;
+/*
+waypoint GetByKeyName m09markerSatB SetMark 1 ;
+waypoint GetByKeyName m09markerSatC SetMark 1 ;
+*/
+waypoint GetByKeyName m09markerSatA SetMissionTask 4 ;
+/*
+waypoint GetByKeyName m09markerSatB SetMissionTask 4 ;
+waypoint GetByKeyName m09markerSatC SetMissionTask 4 ;
+*/
+log 50 ;
+End

@@ -1,0 +1,37 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+PrintMessage [LGM]_ENTERED_M19TriA ;
+
+int questCond = 0 ;
+mainquest GetById 128 GetAcquire questCond ;
+if questCond == 1
+	
+	game SetQuestMode 1 ;
+
+	mainquest GetById 128 SetSolve 1 ;
+	mainquest GetById 128 DeleteObjective 1 ;
+	mainquest GetById 129 SetAcquire 1 ;
+	waypoint GetByKeyName m19marker SetMark 0 ;
+	waypoint GetByKeyName m19marker SetMissionTask -1 ;
+	
+	ship GetByKeyName m19ridleyASHP SetEnabled 1 ;
+	ship GetByKeyName m19kuzhevASHP SetEnabled 1 ;
+	ship GetByKeyName m19protect1 SetEnabled 1 ;
+	ship GetByKeyName m19protect2 SetEnabled 1 ;
+	ship GetByKeyName m19protect3 SetEnabled 1 ;
+	
+	ship GetByKeyName m19ridleyASHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m19kuzhevASHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m19protect1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m19protect2 SetAIQuestStatus 1 ;
+	ship GetByKeyName m19protect3 SetAIQuestStatus 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	game SetControlEnabled 0 ;
+	script Spg2\Scripts\M19\CS19A.sal ;
+endif
+End

@@ -1,0 +1,129 @@
+/*
+-------
+Script by: LGM Games, 2014  
++triggered when player passes a Freelance mission
+0.int parent quest reputation
+1.int parent quest type
+2.int parent quest faction (issued the quest)
+*/
+
+/* save global variables into local */
+int qRep = 0 ;
+int varRepSlot = 0 ;
+scriptvar GetValue int varRepSlot qRep ;
+int qType = 0 ;
+int varTypeSlot = 1 ;
+scriptvar GetValue int varTypeSlot qType ;
+int facParent = 0 ;
+int varFacSlot = 2 ;
+scriptvar GetValue int varFacSlot facParent ;
+
+int repBase = 0 ;
+
+/* Assassination */
+if qType == 0
+	repBase = 20 ;
+endif
+/* Capture */
+if qType == 1
+	repBase = 20 ;
+endif
+/* Patrol */
+if qType == 2
+	repBase = 20 ;
+endif
+/* Science */
+if qType == 3
+	repBase = 10 ;
+endif
+/* Rescue */
+if qType == 4
+	repBase = 15 ;
+endif
+/* Maintenance */
+if qType == 5
+	repBase = 15 ;
+endif
+/* Ferry */
+if qType == 6
+	repBase = 10 ;
+endif
+/* Taxi */
+if qType == 7
+	repBase = 10 ;
+endif
+/* Station assault */
+if qType == 8
+	repBase = 40 ;
+endif
+/* Station defense */
+if qType == 9
+	repBase = 40 ;
+endif
+/* Convoy escort */
+if qType == 10
+	repBase = 40 ;
+endif
+/* Convoy raid */
+if qType == 11
+	repBase = 40 ;
+endif
+/* smuggle */
+if qType == 12
+	repBase = 25 ;
+endif
+/* prospecting */
+if qType == 13
+	repBase = 10 ;
+endif
+
+int repChange = 0 ;
+
+/* --| TERRITORIAL |-- */
+/* Iolian Pact & Mycaena */
+if facParent < 2
+	math repChange = repBase * 1 ;
+endif
+/* Nyxian consortium */
+if facParent == 2
+	math repChange = repBase * -1 ;
+endif
+/* Traders association <-> Trinity Free States */
+if facParent > 2 && facParent < 8
+	math repChange = repBase * 1 ;
+endif
+/* Directorate & Empire */
+if facParent > 8 && facParent < 10
+	math repChange = repBase * -1 ;
+endif
+/* Baeldor Republic <-> Hub */
+if facParent > 9 && facParent < 17
+	math repChange = repBase * 1 ;
+endif
+/* Triad */
+if facParent == 17
+	math repChange = repBase * -1 ;
+endif
+/* LaGarde Province */
+if facParent == 18
+	math repChange = repBase * 1 ;
+endif
+/* Porphyria */
+if facParent > 52
+	math repChange = repBase * 1 ;
+endif
+
+/* --| COMPANY |-- */
+if facParent > 18 && facParent < 37
+	math repChange = repBase * 1 ;
+endif
+
+/* --| OUTLAW |-- */
+if facParent > 36 && facParent < 53
+	math repChange = repBase * -1 ;
+endif
+
+int returnValueSlot = 0 ;
+scriptvar SetValue int returnValueSlot repChange ;
+
+End

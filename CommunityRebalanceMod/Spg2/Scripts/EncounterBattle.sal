@@ -1,0 +1,40 @@
+/*
+-------
+Script by: LGM Games , 2014
+-------
+1. check region and redirect to other scripts
+->separated into blocks of 20 region scripts due to limit of number of variables per script
+*/
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 0
+	int regionId = 0 ;
+	region GetId regionId ;
+	PrintMessageVar Encounter_Battle: INT regionId ;
+
+	if regionId < 20
+		PrintMessage EncounterBattleA ;
+		script Spg2\Scripts\Regions\EncounterBattleA.sal ;
+	endif
+
+	if regionId > 19 && regionId < 40
+		PrintMessage EncounterBattleB ;
+		script Spg2\Scripts\Regions\EncounterBattleB.sal ;
+	endif
+
+	if regionId > 39 && regionId < 60
+		PrintMessage EncounterBattleC ;
+		script Spg2\Scripts\Regions\EncounterBattleC.sal ;
+	endif
+
+	if regionId > 59 && regionId < 80
+		PrintMessage EncounterBattleD ;
+		script Spg2\Scripts\Regions\EncounterBattleD.sal ;
+	endif
+
+	if regionId > 79
+		PrintMessage EncounterBattleE ;
+		script Spg2\Scripts\Regions\EncounterBattleE.sal ;
+	endif
+endif
+End

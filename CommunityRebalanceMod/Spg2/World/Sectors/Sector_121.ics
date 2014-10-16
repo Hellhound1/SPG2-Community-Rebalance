@@ -1,0 +1,244 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky3.amb
+}	
+Structure:	
+{	
+	ModelId:	7
+	Position:	5575.47	-54.36	40535.93
+	Rotation:	0.03	-2.29	0.00
+	KeyName:	gas121
+	Name:	Gas_collector
+	NameId:	83
+	FactionId:	6
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	0.44
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\NebulaCollector\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\NebulaCollector\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport21.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	34
+	Position:	6695.86	-3334.20	40909.18
+	Rotation:	0.00	0.00	0.00
+	KeyName:	art34
+	Name:	Artefact_vault
+	NameId:	291
+	FactionId:	6
+	Hull:	10000.00
+	Destructible:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnPulse:	Spg2\Models\Structures\Artefact\OnPulse.sal
+		OnActivate:	Spg2\Models\Structures\Artefact\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\Artefact\deactivation.sal
+		OnScan:	Spg2\Models\Structures\Artefact\OnScan.sal
+		OnTransport:	Spg2\Models\Structures\Artefact\OnTransport.sal
+		OnHack:	Spg2\Models\Structures\Artefact\OnHack.sal
+		OnEnter:	Spg2\Models\Structures\Artefact\OnEnter.sal
+		OnExit:	Spg2\Models\Structures\Artefact\OnExit.sal
+		OnHP75:	Spg2\Models\Structures\Artefact\OnHP75.sal
+		OnHP50:	Spg2\Models\Structures\Artefact\OnHP50.sal
+		OnHP25:	Spg2\Models\Structures\Artefact\OnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	53
+	Position:	9243.13	-266.00	41108.16
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_121_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	4
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	54
+	Position:	8070.77	31.00	43193.79
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_121_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	5
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	55
+	Position:	6285.54	804.00	44695.04
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_121_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	6
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	56
+	Position:	4485.78	514.00	43494.78
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_121_3
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	0
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	5
+	Position:	5184.12	83.00	44357.85
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_121_0
+	Name:	Plasma_pulsar
+	NameId:	91
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\PlasmaPulsar\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	6
+	Position:	7637.14	-323.00	43778.36
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_121_1
+	Name:	Sensor_scrambler
+	NameId:	92
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	7
+	Position:	6127.69	2074.19	43038.52
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_121_2
+	Name:	Shield_dampener
+	NameId:	93
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	8
+	Position:	4023.96	1727.44	40745.22
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_121_3
+	Name:	Transport_destabilizer
+	NameId:	94
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	5641.68	-920.09	39327.79
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_121_4
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector121.sal
+}	

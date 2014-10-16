@@ -1,0 +1,39 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+mainquest GetById 147 SetSolve 1 ;
+mainquest GetById 148 SetAcquire 1 ;
+
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+
+ship GetByKeyName m21alien1 SetFriendFoe 2 ;
+ship GetByKeyName m21alien2 SetFriendFoe 2 ;
+ship GetByKeyName m21alien3 SetFriendFoe 2 ;
+ship GetByKeyName m21alien4 SetFriendFoe 2 ;
+platform GetByKeyName m21voltra SetFriendFoe 2 ;
+
+ship GetByKeyName m21alien1 SetAIQuestStatus 2 ;
+ship GetByKeyName m21alien2 SetAIQuestStatus 2 ;
+ship GetByKeyName m21alien3 SetAIQuestStatus 2 ;
+ship GetByKeyName m21alien4 SetAIQuestStatus 2 ;
+platform GetByKeyName m21voltra SetAIQuestStatus 2 ;
+
+ship GetByKeyName m21alien1 SetMark 1 ;
+ship GetByKeyName m21alien2 SetMark 1 ;
+ship GetByKeyName m21alien3 SetMark 1 ;
+ship GetByKeyName m21alien4 SetMark 1 ;
+platform GetByKeyName m21voltra SetMark 1 ;
+
+ship GetByKeyName m21alien1 SetMissionTask 0 ;
+ship GetByKeyName m21alien2 SetMissionTask 0 ;
+ship GetByKeyName m21alien3 SetMissionTask 0 ;
+ship GetByKeyName m21alien4 SetMissionTask 0 ;
+platform GetByKeyName m21voltra SetMissionTask 0 ;
+
+game ResetShipEnemyList 1 ;
+
+log 115 ;
+End

@@ -1,0 +1,36 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+PrintMessage CLEARMONT_TRANSPORT ;
+
+int questCond = 0 ;
+mainquest GetById 136 GetAcquire questCond ;
+if questCond == 1
+
+	PrintMessage CLEARMONT_TRANSPORT_CHECK_PASSED ;
+
+	mainquest GetById 136 SetSolve 1 ;
+	mainquest GetById 136 DeleteObjective 1 ;
+	mainquest GetById 137 SetAcquire 1 ;
+	
+	ship GetByKeyName m20kuzhevSHP SetEnabled 1 ;
+	ship GetByKeyName m20kuzhevSHP SetDestructible 0 ;
+	ship GetByKeyName m20protect1 SetEnabled 1 ;
+	ship GetByKeyName m20protect2 SetEnabled 1 ;
+	
+	ship GetByKeyName m20kuzhevSHP SetFriendFoe 1 ;
+	ship GetByKeyName m20protect1 SetFriendFoe 1 ;
+	ship GetByKeyName m20protect2 SetFriendFoe 1 ;
+	
+	ship GetByKeyName m20kuzhevSHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m20protect1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m20protect2 SetAIQuestStatus 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	script Spg2\Scripts\M20\CS20B.sal ;
+
+endif
+End

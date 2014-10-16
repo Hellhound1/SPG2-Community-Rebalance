@@ -1,0 +1,94 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName gas192A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas192A CallEvent OnActivate ;
+else
+	structure GetByKeyName gas192A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName gas192B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas192B CallEvent OnActivate ;
+else
+	structure GetByKeyName gas192B CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName gas192C GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas192C CallEvent OnActivate ;
+else
+	structure GetByKeyName gas192C CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 29 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art20 CallEvent OnActivate ;
+	structure GetByKeyName art20 SetCanRepair 0 ;
+else
+	structure GetByKeyName art20 CallEvent OnDeactivate ;
+	structure GetByKeyName art20 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_192_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_192_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_192_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_192_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_192_4 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_192_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_192_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_192_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_192_3 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+End

@@ -1,0 +1,74 @@
+/* globalevent log */
+globalevent AddLog eventId placeType factionId eventDur commId modifier titleLine textLine ;
+
+
+int plac = 3 ; /* place type Id; what type of place the event affects */
+/*
+	GLOBAL = 0
+	REGION = 1
+	SECTOR = 2
+	PLANET = 3
+	STATION = 4
+	TGATE = 5
+	RIFTWAY = 6
+	FACTION = 7
+*/
+
+WorldEvents
+->link these event scripts into world.ics
+OnCreate:
+OnPulse60:		-script triggered every 60 seconds / every minute
+OnPulse300:	-script triggered every 300 seconds / 5 minutes
+OnPulse900:	-script triggered every 900 seconds / 15 minutes
+
+------------------------------------
+retreive info on pulse status
+globalevent GetPulse60Counter var ;
+globalevent GetPulse300Counter var ;
+globalevent GetPulse900Counter var ;
+------------------------------------
+Activate globalevent through scripts
+int id = 0 ; /* event type ID */
+/*
+	0	Resource_price_increase
+	1	Resource_price_reduction
+	2	Tgate_shutdown
+	3	Station_lockdown
+	4	Riftway_shutdown
+	5	Cease_fire_signed
+	6	War_breaks_out
+	7	Planetary_quarantine
+	8	Pirate_activity_increase
+	9	Pirate_activity_decrease
+	10	System_price_increase
+	11	System_price_decrease
+	12	Company_raises_prices
+	13	Company_lowers_prices
+	14	Embargo
+	15	Embargo_dropped
+*/
+int plac = 3 ; /* place type Id; what type of place the event affects */
+/*
+	GLOBAL = 0
+	REGION = 1
+	SECTOR = 2
+	PLANET = 3
+	STATION = 4
+	TGATE = 5
+	RIFTWAY = 6
+	FACTION = 7
+*/
+int placId = 6 ; /* Id of the place the event affects */
+float dur = 60.0 ; /* event duration in seconds */
+int modObj = 14 ; /* object to be modified */
+float modVal = 0.2 ; /* value of the modification; percentage */
+globalevent Set id plac placId dur modObj modVal ;
+
+------------------------------------
+
+Shutting down a globalevent before timer runs out
+
+int id = 0 ;
+int plac = 3 ;
+int placId = 6;
+globalevent Reset id plac placId ;

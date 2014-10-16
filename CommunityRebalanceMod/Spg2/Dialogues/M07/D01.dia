@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	4
+	Text:	56
+	Voice:	Spg2\Sound\Voice\steiger\56.wav
+	Duration:	19.459
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\DiaEndEmpty.sal
+}

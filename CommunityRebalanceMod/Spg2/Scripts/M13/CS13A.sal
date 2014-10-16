@@ -1,0 +1,76 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetByKeyName m13ridleySHP ForceStop 0 ;
+ship GetByKeyName m13ridleySHP SetPTE 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posHub ;
+float3 posPlayer ;
+float3 posRidley ;
+float3 posAdd ;
+structure GetByKeyName netHub153 GetPosition posHub ;
+posAdd = 230.0 0.0 0.0 ;
+math posRidley = posHub + posAdd ;
+posAdd = 30.0 -5.0 0.0 ;
+math posPlayer = posRidley + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m13ridleySHP SetPosition posRidley ;
+ship GetPlayer VectorTo posRidley ;
+ship GetByKeyName m13ridleySHP VectorTo posPlayer ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> ridley */
+int objectType = 1 ;
+float rotStart = 3.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 60.0 ;
+camera SetType 5 objectType m13ridleySHP rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+int miscLine = 1125 ;
+float duration = 5.0 ;
+screen ShowText miscLine duration ;
+
+pause 4.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+dialogue Spg2\Dialogues\M13\D01.dia ;
+
+End

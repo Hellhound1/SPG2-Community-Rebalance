@@ -1,0 +1,65 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+if mission is active, trigger mission fail script
+*/
+int questCond = 0 ;
+
+/* m18areaAouter */
+questCond = 0 ;
+mainquest GetById 124 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m18areaAouter */
+questCond = 0 ;
+mainquest GetById 125 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m18areaAouter */
+questCond = 0 ;
+mainquest GetById 126 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m18areaAouter */
+questCond = 0 ;
+mainquest GetById 127 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m22areaAouter */
+questCond = 0 ;
+mainquest GetById 153 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m22areaAouter */
+questCond = 0 ;
+mainquest GetById 154 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m22areaAouter */
+questCond = 0 ;
+mainquest GetById 155 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m22areaAouter */
+questCond = 0 ;
+mainquest GetById 156 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+End

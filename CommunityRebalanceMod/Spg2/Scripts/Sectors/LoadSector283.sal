@@ -1,0 +1,80 @@
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_283_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_283_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_283_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 14 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_283_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_283_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_283_2 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+/* 
+Lens Stage1 operational until MQ110 is solved
+Lens Stage2 used only during Mission15 to show opening
+Lens Stage3 used after MQ110 is solved 
+*/
+
+structure GetByKeyName lens1 SetEnabled 0 ;
+structure GetByKeyName lens2 SetEnabled 0 ;
+structure GetByKeyName lens3 SetEnabled 0 ;
+
+int questCond = 0 ;
+
+mainquest GetById 110 GetSolve questCond ;
+if questCond != 1
+	PrintMessage	Quest_110_NOT_SOLVED ;
+	structure GetByKeyName lens1 SetEnabled 1 ;
+endif
+
+mainquest GetById 110 GetSolve questCond ;
+if questCond == 1
+	PrintMessage	Quest_110_SOLVED ;
+	structure GetByKeyName lens3 SetEnabled 1 ;
+endif
+
+mainquest GetById 138 GetSolve questCond ;
+if questCond == 1
+	PrintMessage	Quest_138_SOLVED ;
+	station GetByKeyName clearmontSTA SetEnabled 0 ;
+endif
+
+platform GetByKeyName clearmontPlatform SetEnabled 0 ;
+platform GetByKeyName m15mothership SetEnabled 0 ;
+
+End

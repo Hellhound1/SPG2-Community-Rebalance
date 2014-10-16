@@ -1,0 +1,64 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 219 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 220 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+int questCond = 0 ;
+mainquest GetById 155 GetAcquire questCond ;
+if questCond == 1
+	
+	mainquest GetById 155 SetSolve 1 ;
+	mainquest GetById 155 DeleteObjective 1 ;
+	mainquest GetById 156 SetAcquire 1 ;
+	
+	/* pacify platforms so they don't attack the player */
+	platform GetByKeyName m18platform1 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform2 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform3 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform4 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform5 SetAIQuestStatus 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	ship GetPlayer SetInvulnerable 1 ;
+	
+	script Spg2\Scripts\M22\CS22G.sal ;
+	
+endif
+End

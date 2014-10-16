@@ -1,0 +1,65 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName repair277 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName repair277 CallEvent OnActivate ;
+else
+	structure GetByKeyName repair277 CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_277_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_277_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_277_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 14 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_277_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_277_1 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+int questCond = 0 ;
+mainquest GetById 148 GetSolve questCond ;
+if questCond == 0
+	structure GetByKeyName catapultDamaged SetEnabled 0 ;
+	platform GetByKeyName collector1 SetEnabled 0 ;
+	platform GetByKeyName collector2 SetEnabled 0 ;
+	platform GetByKeyName collector3 SetEnabled 0 ;
+	platform GetByKeyName collector4 SetEnabled 0 ;
+	platform GetByKeyName collector5 SetEnabled 0 ;
+	platform GetByKeyName m22mothership SetEnabled 0 ;
+else
+	structure GetByKeyName catapult SetEnabled 0 ;
+endif
+
+End

@@ -1,0 +1,19 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+ship GetByKeyName m21brother1 SetEnabled 1 ;
+ship GetByKeyName m21brother2 SetEnabled 1 ;
+ship GetByKeyName m21brother3 SetEnabled 1 ;
+ship GetByKeyName m21brother1 SetAIQuestStatus 1 ;
+ship GetByKeyName m21brother2 SetAIQuestStatus 1 ;
+ship GetByKeyName m21brother3 SetAIQuestStatus 1 ;
+ship GetByKeyName m21brother1 SetVeteran 1 ;
+ship GetByKeyName m21brother2 SetVeteran 1 ;
+ship GetByKeyName m21brother3 SetVeteran 1 ;
+
+/* position Ridley */
+script Spg2\Scripts\M21\CS21C.sal ;
+End

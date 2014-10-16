@@ -1,0 +1,38 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questcond ;
+mainquest GetById 128 GetAcquire questcond ;
+if questcond == 0
+	mainquest GetById 127 DeleteObjective 1 ;
+	log 104 ;
+	mainquest GetById 128 SetAcquire 1 ;
+endif
+
+waypoint GetByKeyName m19marker SetMark 1 ;
+waypoint GetByKeyName m19marker SetMissionTask 4 ;
+
+/* check if player already inside first mission trigger */
+float triggerSize = 1000.0 ;
+float3 triggerPos = 0.0 0.0 0.0 ;
+float3 playerPos = 0.0 0.0 0.0 ;
+float distance = 0.0 ;
+trigger GetByKeyName m19aTRI GetRadius triggerSize ;
+ship GetPlayer GetPosition playerPos ;
+trigger GetByKeyName m19aTRI GetPosition triggerPos ;
+math distance = Distance triggerPos playerPos ;
+
+/* check if docked */
+int stationCheck = 0 ;
+int returnValueSlot = 0 ;
+scriptvar GetValue int returnValueSlot stationCheck ;
+
+if distance <= triggerSize && stationCheck == 0
+	game HideStarchart 1 ;
+	script Spg2\Scripts\M19\EnterTriM19A.sal ;
+endif
+
+End

@@ -1,0 +1,417 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky3.amb
+}	
+Spaceship:	
+{	
+	ModelId:	47
+	Position:	38166.95	0.00	53393.56
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	14
+	FactionId:	40
+	Class:	5
+	Skills:	0
+	Level:	6
+	Profession:	2
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m05galahadSHP
+	Name:	Galahad
+	CaptainName:	Jeremy_Coop
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M05\DisableGalahad.sal
+		OnTransport:	Spg2\Scripts\M05\BoardGalahad.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	11
+	Position:	37946.74	0.00	56070.11
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	9
+	FactionId:	6
+	Class:	8
+	Skills:	0
+	Level:	50
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m05kuzhevSHP
+	Name:	Anathema
+	CaptainName:	Dmitry_Kuzhev
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	37856.52	0.00	55929.19
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	10
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m05protect1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	25
+	Position:	41034.68	0.00	53972.76
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	5
+	Skills:	0
+	Level:	20
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m05brother1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	43
+	Position:	41121.30	0.00	53951.71
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	6
+	Skills:	0
+	Level:	20
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m05brother2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	50
+	Position:	41004.92	0.00	54043.97
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	7
+	Skills:	0
+	Level:	20
+	Profession:	1
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m05brother3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	9
+	Position:	41123.89	-504.00	53553.73
+	Rotation:	0.00	-1.29	0.00
+	KeyName:	m05syndSTA
+	Name:	Atargatis
+	NameId:	136
+	FactionId:	40
+	Hull:	15000.00
+	Destructible:	1
+	PulseTime:	0.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M05\AtargatisOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\RepairFacility\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\RepairFacility\deactivation.sal
+		OnScan:	Spg2\Scripts\M15\Empty.sal
+		OnTransport:	Spg2\Scripts\M15\Empty.sal
+		OnHack:	Spg2\Scripts\M15\Empty.sal
+		OnEnter:	Spg2\Scripts\M15\Empty.sal
+		OnExit:	Spg2\Scripts\M15\Empty.sal
+		OnHP75:	Spg2\Scripts\M15\Empty.sal
+		OnHP50:	Spg2\Scripts\M15\Empty.sal
+		OnHP25:	Spg2\Scripts\M15\Empty.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	10
+	Position:	37338.68	740.00	53952.25
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_146_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	3
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	11
+	Position:	38151.46	788.00	51556.51
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_146_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	4
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	12
+	Position:	40641.53	-669.00	51373.49
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_146_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	5
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	13
+	Position:	40179.53	238.00	52588.69
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_146_3
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	6
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	14
+	Position:	41237.91	702.00	54608.30
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_146_4
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	0
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	36609.50	-345.00	53226.30
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_146_0
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	1
+	Position:	40913.51	457.00	51758.04
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_146_1
+	Name:	Engine_dampener
+	NameId:	87
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	2
+	Position:	40523.12	1000.00	55359.71
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_146_2
+	Name:	Eye_of_storm
+	NameId:	88
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\EyeOfStorm\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	38215.11	0.00	53395.92
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m05bTRI
+	Type:	1
+	Radius:	698.40
+	PulseTime:	-0.13
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M05\EnterTriM05B.sal
+}	
+}	
+Trigger:	
+{	
+	Position:	37898.51	0.00	55972.14
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m05aTRI
+	Type:	1
+	Radius:	506.30
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M05\EnterTriM05A.sal
+}	
+}	
+Trigger:	
+{	
+	Position:	40339.87	0.00	53520.05
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m05AREA
+	Type:	1
+	Radius:	3000.00
+	PulseTime:	1.00
+Events:	
+{	
+OnExit:	Spg2\Scripts\M05\LeaveArea.sal
+}	
+}	
+Waypoint:	
+{	
+	Position:	40568.75	0.00	53674.25
+	Rotation:	-0.05	1.78	0.00
+	KeyName:	m05kuzhevPosWp
+	Name:	m05kuzhevPosWp
+	Type:	3
+}	
+Waypoint:	
+{	
+	Position:	40630.41	0.00	53407.49
+	Rotation:	-0.09	1.02	0.00
+	KeyName:	m05protectPosWp
+	Name:	m05protectPosWp
+	Type:	3
+}	
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector146.sal
+}	

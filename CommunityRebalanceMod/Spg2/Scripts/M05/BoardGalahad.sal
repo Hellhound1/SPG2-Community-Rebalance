@@ -1,0 +1,35 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage Galahad_boarded! ;
+
+/* save pos to vars for later use */
+float3 kuzhevPos = 0.0 0.0 0.0 ;
+float3 protectPos = 0.0 0.0 0.0 ;
+waypoint GetByKeyName m05kuzhevPosWp GetPosition kuzhevPos ;
+waypoint GetByKeyName m05protectPosWp GetPosition protectPos ;
+
+int questCond = 0 ;
+mainquest GetById 33 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage Quest_33_Check_Success! ;
+	mainquest GetById 33 SetSolve 1 ;
+	mainquest GetById 33 DeleteObjective 1 ;
+	mainquest GetById 34 SetAcquire 1 ;
+	game SetControlEnabled 0 ;
+	ship GetByKeyName m05kuzhevSHP SetPosition kuzhevPos ;
+	ship GetByKeyName m05protect1 SetPosition protectPos ;
+	ship GetByKeyName m05galahadSHP SetInvulnerable 0 ;
+	ship GetByKeyName m05galahadSHP SetMissionTask -1 ;
+	
+	/* add quest item */
+	int itemId = 7 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	dialogue Spg2\Dialogues\M05\D03.dia ;
+endif
+End

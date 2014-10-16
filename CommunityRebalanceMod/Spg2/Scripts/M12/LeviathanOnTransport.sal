@@ -1,0 +1,15 @@
+int questCond = 0 ;
+mainquest GetById 78 GetAcquire questCond ;
+if questCond == 1
+	/* timer */
+	float time = 5.0 ;
+	float direction = -1.0 ;
+	int textLine = 1288 ;
+	int hintLine = 1289 ;
+	
+	structure GetByKeyName leviathanSTR SetMissionTask -1 ;
+	
+	game AddTimer m12timer1 Spg2\Scripts\M12\OneMinTimer.sal Spg2\Scripts\M12\OneMinTimer.sal time direction textLine hintLine ;
+endif
+
+End

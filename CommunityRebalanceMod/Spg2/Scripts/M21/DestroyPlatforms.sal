@@ -1,0 +1,95 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 217 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 218 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+/* M21 quest part */
+int questCond = 0 ;
+mainquest GetById 143 GetAcquire questCond ;
+if questCond == 1
+	
+	int platformCond = 0 ;
+	int platformCondAll = 0 ;
+	
+	platform GetByKeyName starpointPlatform1 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	platform GetByKeyName starpointPlatform2 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	platform GetByKeyName starpointPlatform3 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	platform GetByKeyName starpointPlatform4 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	platform GetByKeyName starpointPlatform5 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	platform GetByKeyName starpointPlatform6 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	platform GetByKeyName starpointPlatform7 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	platform GetByKeyName starpointPlatform8 GetCondition platformCond ;
+	if platformCond != 0
+		math platformCondAll ++ ;
+	endif
+	
+	if platformCondAll == 8
+		mainquest GetById 143 SetSolve 1 ;
+		mainquest GetById 143 DeleteObjective 1 ;
+		mainquest GetById 144 SetAcquire 1 ;
+		
+		script Spg2\Scripts\M21\PlatformsAreDead.sal ;
+		
+		log 113 ;
+		dialogue Spg2\Dialogues\M21\D03.dia ;
+	endif
+	
+endif
+End

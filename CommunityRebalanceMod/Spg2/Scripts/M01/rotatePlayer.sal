@@ -1,0 +1,11 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+float3 rotation = 0.0 0.0 0.0 ;
+waypoint GetByKeyName m01PcPosBGoTo GetRotation rotation ;
+ship GetPlayer SetRotation rotation ;
+
+End

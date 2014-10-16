@@ -1,0 +1,72 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+
+mainquest GetById 126 GetAcquire questCond ;
+if questCond == 1
+	ship GetByKeyName m18nexus1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m18nexus1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m18nexus2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m18nexus2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m18nexus3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m18nexus3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				mainquest GetById 126 SetSolve 1 ;
+			endif
+		endif
+	endif
+	
+	int questCond1 = 0 ;
+	mainquest GetById 126 GetSolve questCond1 ;
+	int questCond2 = 0 ;
+	mainquest GetById	125 GetSolve questCond2 ;
+	
+	if questCond1 == 1 && questCond2 == 1
+		mainquest GetById 127 SetSolve 1 ;
+		/* mainquest GetById 127 DeleteObjective 1 ; */
+		mainquest GetById 128 SetAvailable 1 ;
+		/* disable MissionArea */
+		ship GetByKeyName m18ridley SetEnabled 0 ;
+		ship GetByKeyName m18baeldor1 SetEnabled 0 ;
+		log 103 ;
+		
+		game SetQuestMode 0 ;
+
+		/* -^-REWARD-^- */
+		player AddExp 52600 ;
+		player AddReputation 100 ;
+		player AddCredits 380000 ;
+		script Spg2\Scripts\AwardHeavyWeapon.sal ;
+
+		/* -^-MISSION COMPLETE-^- */
+		int titleLine = 183 ;
+		int textLine1 = 1553 ;
+		int textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		
+		dialogue Spg2\Dialogues\M18\D02.dia ;
+	endif
+	
+endif
+
+End

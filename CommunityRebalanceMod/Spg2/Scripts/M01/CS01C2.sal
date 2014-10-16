@@ -1,0 +1,107 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* shut down manual controls */
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer ForceStop 0 ;
+
+game SetQuestMode 1 ;
+
+/* start FadeToBlack */
+float time = 0.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+
+/* turn off HUD */
+game ShowAllPanels 0 ;
+/* CS lines */
+screen ShowLine 1 ;
+
+/* Cutscene camera start */
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* actor initial state */
+float3 playerPos = 26676.82 85.62 67276.09 ;
+ship GetPlayer AlignToPlaneZ 0 ;
+float3 playerDir = 25736.82 85.62 67616.09 ;
+ship GetPlayer SetPosition playerPos ;
+ship GetPlayer VectorTo playerDir ;
+
+float3 galahadPos = 0.0 0.0 0.0 ;
+float3 offset = 10.0 0.0 -20.0 ;
+math galahadPos = playerPos + offset ;
+
+ship GetByKeyName m01galahadSHP SetPosition galahadPos ;
+ship GetByKeyName m01galahadSHP SetEnabled 1 ;
+ship GetByKeyName m01galahadSHP SetPTE 0 ;
+ship GetByKeyName m01galahadSHP ForceStop 0 ;
+ship GetByKeyName m01galahadSHP SetAIQuestStatus 1 ;
+ship GetByKeyName m01galahadSHP VectorTo playerPos ;
+
+/* camera rotation -> galahadSHP + zoomIn */
+int objectType = 1 ;
+float rotationStart = -4.2 ; 
+float rotationSpeed = 0.08 ;
+float verticalStart = 2.4 ;
+float verticalOffset = 8.0 ;
+float verticalSpeed = -0.04 ;
+float cameraDistance = 20.0 ;
+camera SetType 9 objectType m01galahadSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+time = 0.6 ;
+camera FadeFromColor black time ;
+pause 0.7 ;
+
+dialogue Spg2\Dialogues\M01\D04.dia ;
+
+pause 8.0 ;
+
+/* fade out end */
+time = 0.6 ;
+camera FadeToColor black time ;
+pause 0.7 ;
+camera FadeFromColor black time ;
+/* CS lines */
+screen ShowLine 0 ;
+
+/* Cutscene camera end */
+camera SetDefault ;
+camera SetCSCamera 0 ;
+
+/* turn on HUD */
+
+game ShowAllPanels 1 ;
+
+/*
+GoTo radi kak spada, al ne mogu brod zaustavit iz PTEa da ga pozicioniram kamo zelim
+*/
+
+/*
+float3 pos ;
+waypoint GetByKeyName m01markerB GetPosition pos ;
+ship GetByKeyName m01galahadSHP GoTo pos ;
+*/
+
+ship GetByKeyName m01galahadSHP SetEnabled 0 ;
+
+pause 1.0 ;
+
+game SetQuestMode 0 ;
+
+/* start dialogue */
+
+/* shut down manual controls */
+game SetControlEnabled 1 ;
+
+pause 5.0 ;
+tutorial 9 ;
+
+End

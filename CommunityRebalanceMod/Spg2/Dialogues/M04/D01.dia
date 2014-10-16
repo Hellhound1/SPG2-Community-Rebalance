@@ -1,0 +1,39 @@
+Dialogue:
+{
+	Portrait:	32
+	Text:	25
+	Voice:	Spg2\Sound\Voice\jackson\25.wav
+	Duration:	13.300
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	26
+	Voice:	Spg2\Sound\Voice\adrian\26.wav
+	Duration:	1.893
+}
+Dialogue:
+{
+	Portrait:	32
+	Text:	27
+	Voice:	Spg2\Sound\Voice\jackson\27.wav
+	Duration:	15.390
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	28
+	Voice:	Spg2\Sound\Voice\adrian\28.wav
+	Duration:	2.204
+}
+Dialogue:
+{
+	Portrait:	32
+	Text:	29
+	Voice:	Spg2\Sound\Voice\jackson\29.wav
+	Duration:	15.390
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M04\EndDia01.sal
+}

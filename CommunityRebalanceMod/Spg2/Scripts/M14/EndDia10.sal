@@ -1,0 +1,19 @@
+mainquest GetById 104 SetSolve 1 ;
+mainquest GetById 104 DeleteObjective 1 ;
+
+float triggerSize = 1000.0 ;
+float3 triggerPos = 0.0 0.0 0.0 ;
+float3 playerPos = 0.0 0.0 0.0 ;
+float distance = 0.0 ;
+trigger GetByKeyName m14EarthTriE GetRadius triggerSize ;
+ship GetPlayer GetPosition playerPos ;
+trigger GetByKeyName m14EarthTriE GetPosition triggerPos ;
+math distance = Distance triggerPos playerPos ;
+
+if distance <= triggerSize
+	game HideStarchart 1 ;
+	script Spg2\Scripts\M14\EnterTriEarthE.sal ;
+endif
+
+End
+	

@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	27
+	Text:	14
+	Voice:	Spg2\Sound\Voice\farrow\14.wav
+	Duration:	3.800
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\DiaEndEmpty.sal
+}

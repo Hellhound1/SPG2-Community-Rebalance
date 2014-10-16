@@ -1,0 +1,34 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* script activates after 5 minute timer runs out */
+
+int shipExist = 0 ;
+int questCond = 0 ;
+mainquest GetById 59 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 59 SetSolve 1 ;
+	mainquest GetById 59 DeleteObjective 1 ;
+	mainquest GetById 60 SetAcquire 1 ;
+	
+	ship GetByKeyName m09rev3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m09rev3 SetEnabled 0 ;
+	endif
+	
+	ship GetByKeyName m09rev4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m09rev4 SetEnabled 0 ;
+	endif
+	
+	/* add quest item */
+	int itemId = 9 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	script Spg2\Scripts\M09\CS09B.sal ;
+endif
+End

@@ -1,0 +1,54 @@
+/* main script part */
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int platform1Cond = 1 ;
+int platform2Cond = 1 ;
+int platform3Cond = 1 ;
+int structCond = 1 ;
+int questCond = 0 ;
+
+mainquest GetById 40 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage Quest_40_Check_Success! ;
+	
+	/* Get hostiles condition */
+	ship GetByKeyName m06direct1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m06direct1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	platform GetByKeyName m06platform1 GetEnabled platform1Cond ;
+	platform GetByKeyName m06platform2 GetEnabled platform2Cond ;
+	platform GetByKeyName m06platform3 GetEnabled platform3Cond ;
+	structure GetByKeyName m06dirSTR GetEnabled structCond ;
+	
+	PrintMessageVar PLATFORM1: INT platform1Cond ;
+	PrintMessageVar PLATFORM2: INT platform2Cond ;
+	PrintMessageVar PLATFORM3: INT platform3Cond ;
+	PrintMessageVar STRUCTURE: INT structCond ;
+	PrintMessageVar SHIP: INT shipCond1 ;
+	
+	/* check if hostiles are dead */
+	if shipCond1 != 0
+		if platform1Cond == 0
+			if platform2Cond == 0
+				if platform3Cond == 0
+					if structCond == 0
+						mainquest GetById 40 SetSolve 1 ;
+						mainquest GetById 40 DeleteObjective 1 ;
+						mainquest GetById 41 SetAcquire 1 ;
+						game SetControlEnabled 1 ;
+						structure GetByKeyName m06dirSTR SetMark 0 ;
+						PrintMessage EVERYTHING_DESTROYED! ;
+						dialogue Spg2\Dialogues\M06\D03.dia ;
+					endif
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

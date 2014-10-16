@@ -1,0 +1,7 @@
+/*
+-------
+Script by: LGM Games  
++intentionally empty OnScan script for derelicts
+*/
+PrintMessage Derelict_OnScan_script_DEFAULT! ;
+End

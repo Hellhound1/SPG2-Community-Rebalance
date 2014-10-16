@@ -1,0 +1,12 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+activates special panel to choose between campaign and freeroam
+*/
+
+PrintMessage START_Choice.sal ;
+
+campaignchoice 0 ;
+
+End

@@ -1,0 +1,413 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+float radius = 0.0 ;
+ship GetParent GetRadius radius ;
+float sizeStart = 0.0 ;
+math sizeStart = radius / 8 ;
+float sizeEndInterm = 0.0 ;
+math sizeEndInterm = radius / 8 ;
+float sizeEnd = 0.0 ;
+math sizeEnd = sizeEndInterm + 0.5 ;
+float sizeSpark = 0.0 ;
+math sizeSpark = radius / 32 ;
+float sizeSparkFinal = 0.0 ;
+math sizeSparkFinal = radius / 3 ;
+float sizeDebris = 0.0 ;
+math sizeDebris = radius / 123 ;
+float sizeDebrisFinal = 0.0 ;
+math sizeDebrisFinal = radius / 37 ;
+
+/* particle explosion IDs depending on ship size */
+int asbId = 39 ;
+int fogId = 68 ;
+int flashId = 30 ;
+if radius > 0.01 && radius < 10.01
+	math asbId = Rnd 36 38 ;
+	fogId = 68 ;
+	math flashId = Rnd 27 29 ;
+endif
+if radius > 10.01 && radius < 20.01
+	math asbId = Rnd 39	41 ;
+	fogId = 69 ;
+	math flashId = Rnd 30 32 ;
+endif
+if radius > 20.01 && radius < 100.01
+	math asbId = Rnd 42	44 ;
+	fogId = 70 ;
+	math flashId = Rnd 33 35 ;
+endif
+
+/* -------- BLOCK 1 -------- */
+
+/* Explosion animation -> Explosion.wds */
+float delay = 0.0 ;
+float3 position = 0 0 0 ;
+float3 diagOffset = 0 0 0 ;
+float3 color = 1.0 1.0 1.0 ;
+float transparency = 0.05 ;
+int id = 34 ;
+int sizeSort = 0 ;
+float duration = 1.0 ;
+float rndOffset = 0.0 ;
+int blend = 1 ;
+
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+
+/* Fiery debris -> Debris.wds */
+int debrisId = 0 ;
+int number = 20 ;
+float shotTime = 0.2 ;
+float3 norm = 0 0 0 ;
+float arc = 0.0 ;
+float velMin = 15.0 ;
+float velMax = 16.0 ;
+float lifeMin = 1.0 ;
+float lifeMax = 1.5 ;
+int fadeSort = 0 ;
+
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+float lifetime = 1.0 ;
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1A position ;
+
+/* -------- BLOCK 2 -------- */
+
+pause 0.3 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1B position ;
+
+
+/* -------- BLOCK 3 -------- */
+
+pause 0.5 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1C position ;
+
+
+/* -------- BLOCK 4 -------- */
+
+pause 0.4 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1D position ;
+
+
+/* -------- BLOCK 5 -------- */
+
+pause 0.4 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1E position ;
+
+/* -------- BLOCK 6 -------- */
+
+pause 0.6 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1A position ;
+
+/* -------- BLOCK 7 -------- */
+
+pause 0.4 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1C position ;
+
+/* -------- BLOCK 8 -------- */
+
+pause 0.3 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1B position ;
+
+/* -------- BLOCK 9 -------- */
+
+pause 0.6 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1D position ;
+
+/* -------- BLOCK FINAL -------- */
+
+pause 0.1 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 34 37 ;
+ship GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d explosion1B position ;
+
+/* -------- FINAL BANG -------- */
+
+ship GetParent GetPosition position ;
+/* firey final */
+lifeMin = 4.0 ;
+lifeMax = 6.0 ;
+velMin = 5 ;
+velMax = 10 ;
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSparkFinal lifeMin lifeMax fadeSort ;
+
+/* metal final */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 10 20 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebrisFinal lifeMin lifeMax fadeSort ;
+
+/* CAMERA SHAKE */
+int sort = 1 ;
+int type = 1 ;
+float power = 0.5 ;
+duration = 0.6 ;
+delay = 0.0 ;
+ship GetParent GetPosition position ;
+ship GetParent GetRadius radius ;
+
+camera Shake sort type power duration delay position radius ;
+
+
+/* -------- FLASH FINAL & DELETE -------- */
+
+/* adjust flash position according to camera */
+float3 posCamera = 0 0 0 ;
+float3 e_posCC = 0 0 0 ;
+float3 posShip = 0 0 0 ;
+ship GetParent GetPosition posShip ;
+ship GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+math position = posShip + posCamera ;
+
+/* flashId particle set at the beginning of script */
+ship GetParent GetPosition position ;
+assembly delay position flashId lifetime ;
+/* fogId particle set at the beginning of script */
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float shipDelDelay = 0.5 ;
+ship GetParent Delete shipDelDelay ;
+
+/* Log output */
+PrintMessage SHIP_DESTROYED! ;
+
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+
+mainquest GetById 126 GetAcquire questCond ;
+if questCond == 1
+	ship GetByKeyName m18nexus1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m18nexus1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m18nexus2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m18nexus2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m18nexus3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m18nexus3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				mainquest GetById 126 SetSolve 1 ;
+			endif
+		endif
+	endif
+	
+	int questCond1 = 0 ;
+	mainquest GetById 126 GetSolve questCond1 ;
+	int questCond2 = 0 ;
+	mainquest GetById	125 GetSolve questCond2 ;
+	
+	if questCond1 == 1 && questCond2 == 1
+		mainquest GetById 127 SetSolve 1 ;
+		/* mainquest GetById 127 DeleteObjective 1 ; */
+		mainquest GetById 128 SetAvailable 1 ;
+		/* disable MissionArea */
+		ship GetByKeyName m18ridley SetEnabled 0 ;
+		ship GetByKeyName m18baeldor1 SetEnabled 0 ;
+		log 103 ;
+		
+		game SetQuestMode 0 ;
+
+		/* -^-REWARD-^- */
+		player AddExp 52600 ;
+		player AddReputation 100 ;
+		player AddCredits 380000 ;
+		script Spg2\Scripts\AwardHeavyWeapon.sal ;
+
+		/* -^-MISSION COMPLETE-^- */
+		int titleLine = 183 ;
+		int textLine1 = 1553 ;
+		int textLine2 = -1 ;
+		screen ShowWarnings titleLine textLine1 textLine2 ;
+		
+		dialogue Spg2\Dialogues\M18\D02.dia ;
+	endif
+	
+endif
+
+End

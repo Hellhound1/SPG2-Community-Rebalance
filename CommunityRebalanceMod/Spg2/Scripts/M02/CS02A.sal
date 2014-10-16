@@ -1,0 +1,84 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* shut down manual controls */
+game SetControlEnabled 0 ;
+
+/* actor initial state */
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* start FadeToBlack */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+
+pause 1.0 ;
+
+/* turn off HUD */
+game ShowAllPanels 0 ;
+/* CS lines */
+screen ShowLine 1 ;
+
+/* Cutscene camera start */
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+
+
+time = 1.0 ;
+camera FadeFromColor black time ;
+
+/* camera rotation -> Raffale */
+int objectType = 1 ;
+float rotationStart = 2.40 ;
+float rotationSpeed = 0.16 ;
+float verticalStart = 2.4 ;
+float verticalOffset = 15.0 ;
+float verticalSpeed = 0.03 ;
+float cameraDistance = 240.0 ;
+camera SetType 5 objectType m02raffaleSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+
+
+int miscLine = 1115 ;
+float duration = 3.5 ;
+screen ShowText miscLine duration ;
+
+pause 3.5 ;
+
+dialogue Spg2\Dialogues\M02\D01.dia ;
+
+rotationStart = 2.96 ;
+rotationSpeed = 0.32 ;
+cameraDistance = 180 ;
+
+camera SetType 5 objectType m02raffaleSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+float zoomTime = 4.5 ; 
+float zoomAmount = 60.0 ; 
+camera SetZoom 0 zoomTime zoomAmount ;
+
+pause 4.5 ; /* set proper duration based on dialog duration */
+
+/* fade out end */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+camera FadeFromColor black time ;
+/* CS lines */
+screen ShowLine 0 ;
+
+/* Cutscene camera end */
+camera SetDefault ;
+camera SetCSCamera 0 ;
+
+/* turn on HUD */
+game ShowAllPanels 1 ;
+
+script Spg2\Scripts\M02\EndCSa.sal ;
+
+End

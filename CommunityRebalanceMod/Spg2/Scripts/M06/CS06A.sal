@@ -1,0 +1,130 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* <START BLOCK> */
+game SetControlEnabled 0 ;
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+float3 positionSteiger ;
+float3 rotation = 0.0 0.0 0.0 ;
+/*
+waypoint GetByKeyName m06steigerAWp GetPosition positionSteiger ;
+*/
+positionSteiger = 33582.25 0.0 64098.28 ;
+
+float3 playeroffset = 0.0 5.0 45.0 ;
+float3 positiontaskforce1 ;
+float3 positiontaskforce2 ;
+float3 positionPlayer ;
+float3 taskforce1offset = 20.0 5.0 -20 ;
+float3 taskforce2offset = -20.0 5.0 -20 ;
+float3 offsetRot = 0.0 3.14 0.0 ;
+
+ship GetByKeyName m06steigerASHP SetPosition positionSteiger ;
+
+float3 steigerRot ;
+float3 taskforce1Rot ;
+float3 taskforce2Rot ;
+float3 playerRot ;
+math steigerRot = rotation + offsetRot ;
+math taskforce1Rot = rotation + offsetRot ;
+math taskforce2Rot = rotation + offsetRot ;
+math playerRot = rotation - offsetRot ;
+
+math positionPlayer =  positionSteiger + playeroffset ;
+math positiontaskforce1 = positionSteiger + taskforce1offset ;
+math positiontaskforce2 = positionSteiger + taskforce2offset ;
+
+
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+float speed = 0.0 ;
+ship GetByKeyName m06steigerASHP SetAIQuestStatus 1 ;
+ship GetByKeyName m06taskforceA1 SetAIQuestStatus 1 ;
+ship GetByKeyName m06taskforceA2 SetAIQuestStatus 1 ;
+ship GetByKeyName m06steigerASHP SetSpeed speed ;
+ship GetByKeyName m06taskforceA1 SetSpeed speed ;
+ship GetByKeyName m06taskforceA2 SetSpeed speed ;
+ship GetByKeyName m06steigerASHP SetPTE 0 ;
+ship GetByKeyName m06taskforceA1 SetPTE 0 ;
+ship GetByKeyName m06taskforceA2 SetPTE 0 ;
+
+ship GetByKeyName m06steigerASHP SetRotation steigerRot; ;
+ship GetByKeyName m06taskforceA1 SetRotation taskforce1Rot ;
+ship GetByKeyName m06taskforceA2 SetRotation taskforce2Rot ;
+ship GetByKeyName m06taskforceA1 SetPosition positiontaskforce1 ;
+ship GetByKeyName m06taskforceA2 SetPosition positiontaskforce2 ;
+
+
+
+ship GetPlayer SetRotation playerRot ;
+ship GetPlayer SetPosition positionPlayer ;
+
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> steiger */
+
+int objectType = 1 ;
+float rotStart = 3.14 ;
+float rotSpeed = 0.20 ;
+float vertStart = 4.0 ;
+float vertOffset = 18.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 100.0 ;
+float vertStartB = 0.0 ;
+
+camera SetType 5 objectType m06steigerASHP rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ; 
+
+float zoomAmount = 50.0 ; 
+camera SetZoom 0 time zoomAmount ;
+
+float duration = 3.5 ;
+int miscLine = 1118 ;
+screen ShowText miscLine duration ;
+
+pause 1.0 ;
+
+dialogue Spg2\Dialogues\M06\D01.dia ;
+ 
+pause 18.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+
+game SetControlEnabled 1 ;
+
+/*
+mainquest GetById 38 SetAcquire 1 ; 
+*/
+/*
+game SetControlEnabled 1 ;
+*/
+End

@@ -1,0 +1,9 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage EndCSd_skripta ;
+dialogue Spg2\Dialogues\M09\D08.dia ;
+End

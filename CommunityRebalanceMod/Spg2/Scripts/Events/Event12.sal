@@ -1,0 +1,29 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: Company raises prices
+-------
++randomize facId, eventDur, modifier
++addLog + addNews
+*/
+
+/* trigger event */
+int eventId = 12 ;
+int placeType = 7 ;
+int factionId = 19 ;
+float eventDur = 60.0 ;
+int modObj = 0 ;
+float modifier = 0.2 ;
+int titleLine = 968 ;
+int textLine = 901 ;
+math textLine = Rnd 901 903 ;
+
+math factionId = Rnd 19 36 ;
+math eventDur = Rnd 600.0 1200.0 ;
+math modifier = Rnd 0.05 0.40 ;
+globalevent Set eventId placeType factionId eventDur modObj modifier titleLine textLine ;
+
+/* add log and trigger news */
+globalevent AddLog eventId placeType factionId modObj modifier titleLine textLine ;
+
+End

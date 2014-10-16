@@ -1,0 +1,39 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 73 SetSolve 1 ;
+mainquest GetById 73 DeleteObjective 1 ;
+mainquest GetById 74 SetAcquire 1 ;
+
+ship GetByKeyName m11brother3 SetEnabled 1 ;
+ship GetByKeyName m11brother4 SetEnabled 1 ;
+
+ship GetByKeyName m11brother3 SetMark 1 ;
+ship GetByKeyName m11brother4 SetMark 1 ;
+
+ship GetByKeyName m11brother3 SetFriendFoe 2 ;
+ship GetByKeyName m11brother4 SetFriendFoe 2 ;
+ship GetByKeyName m11brother3 SetAIQuestStatus 2 ;
+ship GetByKeyName m11brother4 SetAIQuestStatus 2 ;
+
+game ResetShipEnemyList 1 ;
+
+ship GetByKeyName m11terakonSHP SetEnabled 0 ;
+
+ship GetByKeyName m11ridleySHP SetMissionTask 13 ;
+ship GetByKeyName m11terakonSHP SetMissionTask 13 ;
+ship GetByKeyName m11ridleySHP SetAIQuestStatus 1 ;
+ship GetByKeyName m11terakonSHP SetAIQuestStatus 1 ;
+
+log 65 ;
+/* timer */
+float time = 120.0 ; 
+float direction = -1.0 ;
+int textLine = 1290 ;
+int hintLine = 1291 ;
+game AddTimer m11timer1 Spg2\Scripts\M11\TwoMinTimer.sal Spg2\Scripts\M11\TwoMinTimer.sal time direction textLine hintLine ;
+
+End

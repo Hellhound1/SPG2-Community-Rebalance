@@ -1,0 +1,72 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posPlayer ;
+float3 posAdd = -1500.0 300.0 -1000.0 ;
+float3 posCatapult ;
+float3 posRidley ;
+structure GetByKeyName catapultDamaged GetPosition posCatapult ;
+math posPlayer = posCatapult + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetPlayer VectorTo posCatapult ;
+posAdd = -40.0 0.0 20.0 ;
+math posRidley = posPlayer + posAdd ;
+ship GetByKeyName m22ridleyB SetPosition posRidley ;
+ship GetByKeyName m22ridleyB VectorTo posCatapult ;
+
+dialogue Spg2\Dialogues\M22\D03.dia ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+int objectType = 6 ;
+float rotationStart = 3.4 ;
+float rotationSpeed = -0.03 ; 
+float verticalStart = 1.4 ;
+float verticalOffset = 12.0 ;
+float verticalSpeed = 0.04 ;
+float cameraDistance = 2000.0 ;
+camera SetType 5 objectType catapultDamaged rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;  
+
+pause 20.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+script Spg2\Scripts\M22\EndCSc.sal ;
+
+game SetControlEnabled 1 ;
+
+End

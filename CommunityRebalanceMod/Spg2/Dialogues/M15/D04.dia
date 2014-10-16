@@ -1,0 +1,25 @@
+Dialogue:
+{
+	Portrait:	9
+	Text:	165
+	Voice:	Spg2\Sound\Voice\kuzhev\165.wav
+	Duration:	5.201
+}
+Dialogue:
+{
+	Portrait:	31
+	Text:	166
+	Voice:	Spg2\Sound\Voice\scott\166.wav
+	Duration:	7.44
+}
+Dialogue:
+{
+	Portrait:	10
+	Text:	167
+	Voice:	Spg2\Sound\Voice\ridley\167.wav
+	Duration:	4.2
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M15\EndDia04.sal
+}

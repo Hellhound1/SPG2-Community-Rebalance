@@ -1,0 +1,29 @@
+Dialogue:
+{
+	Portrait:	5
+	Text:	174
+	Voice:	Spg2\Sound\Voice\figueroa\174.wav
+	Duration:	11.045
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	175
+	Voice:	Spg2\Sound\Voice\adrian\175.wav
+	Duration:	9.78
+}
+Dialogue:
+{
+	Portrait:	5
+	Text:	176
+	Voice:	Spg2\Sound\Voice\figueroa\176.wav
+	Duration:	40.0
+	Line:	10.76	0
+	Line:	12.01	190
+	Line:	12.96	380
+	Line:	4.07	572
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M17\EndDia01.sal
+}

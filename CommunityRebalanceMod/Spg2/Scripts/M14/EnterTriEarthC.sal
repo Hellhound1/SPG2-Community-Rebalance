@@ -1,0 +1,81 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 98 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 98 SetSolve 1 ;
+	mainquest GetById 98 DeleteObjective 1 ;
+	mainquest GetById 99 SetAcquire 1 ;
+	
+	waypoint GetByKeyName m14EarthMarker6 SetMark 0 ;
+	waypoint GetByKeyName m14EarthMarker6 SetMissionTask -1 ;
+	
+	ship GetByKeyName m14mercuraA SetEnabled 1 ;
+	ship GetByKeyName m14mercuraB SetEnabled 1 ;
+	ship GetByKeyName m14mercuraC SetEnabled 1 ;
+	ship GetByKeyName m14mercuraD SetEnabled 1 ;
+	
+	ship GetByKeyName m14resistanceA SetEnabled 1 ;
+	ship GetByKeyName m14resistanceB SetEnabled 1 ;
+	ship GetByKeyName m14resistanceA SetBoardable 0 ;
+	ship GetByKeyName m14resistanceB SetBoardable 0 ;
+	
+	ship GetByKeyName m14dormantA SetEnabled 1 ;
+	ship GetByKeyName m14dormantB SetEnabled 1 ;
+	ship GetByKeyName m14dormantC SetEnabled 1 ;
+	ship GetByKeyName m14dormantA SetBoardable 0 ;
+	ship GetByKeyName m14dormantB SetBoardable 0 ;
+	ship GetByKeyName m14dormantC SetBoardable 0 ;
+	
+	ship GetByKeyName m14mercuraA SetMark 1 ;
+	ship GetByKeyName m14mercuraB SetMark 1 ;
+	ship GetByKeyName m14mercuraC SetMark 1 ;
+	ship GetByKeyName m14mercuraD SetMark 1 ;
+	ship GetByKeyName m14mercuraA SetMissionTask 0 ;
+	ship GetByKeyName m14mercuraB SetMissionTask 0 ;
+	ship GetByKeyName m14mercuraC SetMissionTask 0 ;
+	ship GetByKeyName m14mercuraD SetMissionTask 0 ;
+	ship GetByKeyName m14mercuraA SetFriendFoe 2 ;
+	ship GetByKeyName m14mercuraB SetFriendFoe 2 ;
+	ship GetByKeyName m14mercuraC SetFriendFoe 2 ;
+	ship GetByKeyName m14mercuraD SetFriendFoe 2 ;
+	
+	float3 playerPos ;
+	ship GetPlayer GetPosition playerPos ;
+	float3 res1offset = 20.0 0.0 -50.0 ;
+	float3 res2offset = -20.0 0.0 -50.0 ;
+	float3 res1pos ;
+	float3 res2pos ;
+	math res1pos = playerPos + res1offset ;
+	math res2pos = playerPos + res2offset ;
+	ship GetByKeyName m14resistanceA SetPosition res1pos ;
+	ship GetByKeyName m14resistanceB SetPosition res2pos ;
+	
+	ship GetByKeyName m14resistanceA SetFriendFoe 1 ;
+	ship GetByKeyName m14resistanceB SetFriendFoe 1 ;
+	/* Set dormant ships to neutral */
+	ship GetByKeyName m14dormantA SetFriendFoe 0 ;
+	ship GetByKeyName m14dormantB SetFriendFoe 0 ;
+	ship GetByKeyName m14dormantC SetFriendFoe 0 ;
+	
+	ship GetByKeyName m14dormantA SetAIQuestStatus 1 ;
+	ship GetByKeyName m14dormantB SetAIQuestStatus 1 ;
+	ship GetByKeyName m14dormantC SetAIQuestStatus 1 ;
+	
+	ship GetByKeyName m14resistanceA SetAIQuestStatus 2 ;
+	ship GetByKeyName m14resistanceB SetAIQuestStatus 2 ;
+	
+	ship GetByKeyName m14mercuraA SetAIQuestStatus 2 ;
+	ship GetByKeyName m14mercuraB SetAIQuestStatus 2 ;
+	ship GetByKeyName m14mercuraC SetAIQuestStatus 2 ;
+	ship GetByKeyName m14mercuraD SetAIQuestStatus 2 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+endif
+End

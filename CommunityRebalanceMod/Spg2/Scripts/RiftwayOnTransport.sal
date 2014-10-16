@@ -1,0 +1,13 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default Hub OnTransport script
++used automatically if no override script supplied in object parameters
+-------
+*/
+/*
+Transport
+	+NEMA
+*/
+
+End

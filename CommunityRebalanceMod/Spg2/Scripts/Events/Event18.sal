@@ -1,0 +1,29 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: Anomaly activity decreased
+-------
++randomize regId, eventDur
++addLog + addNews
+*/
+
+/* trigger event */
+int eventId = 18 ;
+int placeType = 1 ;
+int regionId = 16 ;
+float eventDur = 60.0 ;
+int modObj = 0 ;
+float modifier = 0.0 ;
+int titleLine = 978 ;
+int textLine = 1 ;
+math regionId = Rnd 0 94 ;
+math modifier = Rnd 1.5 4.0 ;
+math eventDur = Rnd 600.0 1200.0 ;
+math textLine = Rnd 1022 1025 ;
+
+globalevent Set eventId placeType regionId eventDur modObj modifier titleLine textLine ;
+
+/* add log and trigger news */
+globalevent AddLog eventId placeType regionId eventDur modObj modifier titleLine textLine ;
+
+End

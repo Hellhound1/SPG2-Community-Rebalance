@@ -1,0 +1,16 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 22 SetSolve 1 ;
+mainquest GetById 22 DeleteObjective 1 ;
+mainquest GetById 23 SetAcquire 1 ;
+ship GetByKeyName m04sionASHP SetEnabled 0 ;
+waypoint GetByKeyName m04aWp SetMark 1 ;
+waypoint GetByKeyName m04aWp SetMissionTask 4 ;
+log 20 ;
+game SetControlEnabled 1 ;
+game SetQuestMode 0 ;
+End

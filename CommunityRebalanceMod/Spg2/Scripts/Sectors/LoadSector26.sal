@@ -1,0 +1,130 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName mining26 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining26 CallEvent OnActivate ;
+else
+	structure GetByKeyName mining26 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName prison26 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName prison26 CallEvent OnActivate ;
+else
+	structure GetByKeyName prison26 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName repair26 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName repair26 CallEvent OnActivate ;
+else
+	structure GetByKeyName repair26 CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 5 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art43 CallEvent OnActivate ;
+	structure GetByKeyName art43 SetCanRepair 0 ;
+else
+	structure GetByKeyName art43 CallEvent OnDeactivate ;
+	structure GetByKeyName art43 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 4 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_4 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_5 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_6 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_7 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_8 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_26_9 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_26_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_26_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_26_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_26_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_26_4 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_26_5 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

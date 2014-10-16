@@ -1,0 +1,114 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+ship GetPlayer SetInvulnerable 1 ;
+ship GetByKeyName m05kuzhevSHP SetInvulnerable 1 ;
+ship GetByKeyName m05protect1 SetInvulnerable 1 ;
+ship GetByKeyName m05brother1 SetInvulnerable 1 ;
+ship GetByKeyName m05brother2 SetInvulnerable 1 ;
+ship GetByKeyName m05brother3 SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> player */
+int objectType = 1 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 60.0 ;
+camera SetType 5 objectType m05kuzhevSHP rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+dialogue Spg2\Dialogues\M05\D04.dia ;
+
+pause 3.0 ;
+
+objectType = 6 ;
+rotStart = 2.4 ;
+rotSpeed = 0.16 ;
+vertStart = 2.4 ;
+vertOffset = 12.0 ;
+vertSpeed = 0.06 ;
+camDistance = 200.0 ;
+
+camera SetType 5 objectType m05syndSTA rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+pause 4.5 ;
+
+dialogue Spg2\Dialogues\M05\D05.dia ;
+
+objectType = 1 ;
+rotStart = 2.4 ;
+rotSpeed = 0.08 ;
+vertStart = 2.4 ;
+vertOffset = 12.0 ;
+vertSpeed = 0.06 ;
+camDistance = 60.0 ;
+
+ship GetByKeyName m05brother1 SetFriendFoe 2 ;
+ship GetByKeyName m05brother2 SetFriendFoe 2 ;
+ship GetByKeyName m05brother3 SetFriendFoe 2 ;
+ship GetByKeyName m05brother1 SetAIQuestStatus 2 ;
+ship GetByKeyName m05brother2 SetAIQuestStatus 2 ;
+ship GetByKeyName m05brother3 SetAIQuestStatus 2 ; 
+ship GetByKeyName m05brother1 SetCloak 0 ;
+ship GetByKeyName m05brother2 SetCloak 0 ;
+ship GetByKeyName m05brother3 SetCloak 0 ;	
+
+camera SetType 5 objectType m05brother1 rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+pause 7.5 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+
+ship GetPlayer SetInvulnerable 0 ;
+ship GetByKeyName m05kuzhevSHP SetInvulnerable 0 ;
+ship GetByKeyName m05protect1 SetInvulnerable 0 ;
+ship GetByKeyName m05brother1 SetInvulnerable 0 ;
+ship GetByKeyName m05brother2 SetInvulnerable 0 ;
+ship GetByKeyName m05brother3 SetInvulnerable 0 ;
+
+game SetControlEnabled 1 ;
+
+/* STAVITI PAUSE ILI DELAY */
+
+End

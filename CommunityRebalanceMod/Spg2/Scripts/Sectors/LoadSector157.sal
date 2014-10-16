@@ -1,0 +1,68 @@
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_157_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_157_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_157_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_157_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_157_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_157_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_157_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_157_4 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+/* quest related */
+structure GetByKeyName m10placeholder SetEnabled 0 ;
+platform GetByKeyName m10hubSTR SetEnabled 0 ;
+structure GetByKeyName m10hubTemp SetEnabled 0 ;
+
+int questCond = 0 ;
+mainquest GetById 69 GetSolve questCond ;
+if questCond == 1
+	platform GetByKeyName m10hubSTR SetEnabled 1 ;
+endif
+
+End

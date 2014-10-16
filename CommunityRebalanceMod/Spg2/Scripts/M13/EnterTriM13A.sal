@@ -1,0 +1,21 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 79 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 79 SetSolve 1 ;
+	mainquest GetById 79 DeleteObjective 1 ;
+	mainquest GetById 80 SetAcquire 1 ;
+	game SetControlEnabled 0 ;
+	ship GetByKeyName m13ridleySHP SetEnabled 1 ;
+	ship GetByKeyName m13ridleySHP SetAIQuestStatus 1 ;
+	waypoint GetByKeyName m13marker SetMark 0 ;
+	waypoint GetByKeyName m13marker SetMissionTask -1 ;
+	script Spg2\Scripts\M13\CS13A.sal ;
+	game SetQuestMode 1 ;
+endif
+End

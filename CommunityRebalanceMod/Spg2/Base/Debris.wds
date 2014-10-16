@@ -1,0 +1,84 @@
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Sparks\spark.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Sparks\Spark1\spark.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Sparks\Spark2\spark.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Sparks\Spark3\spark.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Sparks\Spark4\spark.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Sparks\Spark5\spark.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Sparks\Spark6\spark.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Rubble\rubble1.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Rubble\rubble2.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Rubble\rubble3.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Rubble\rubble4.asb
+	}
+}
+Debris:
+{
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ModelSpecialEffect\Rubble\rubble5.asb
+	}
+}

@@ -1,0 +1,79 @@
+/* quest related */
+int questCond = 0 ;
+mainquest GetById 148 GetAcquire questCond ;
+PrintMessageVar QUEST_148: INT questCond ;
+if questCond == 1
+	
+	int shipExist = 0 ;
+	int shipCond1 = 2 ;
+	int shipCond2 = 2 ;
+	int shipCond3 = 2 ;
+	int shipCond4 = 2 ;
+	int voltraCond = 2 ;
+	
+	ship GetByKeyName m21alien1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m21alien2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m21alien3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	ship GetByKeyName m21alien4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien4 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	platform GetByKeyName m21voltra GetCondition voltraCond ;
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				if shipCond4 != 0
+					if voltraCond != 0
+						mainquest GetById 148 SetSolve 1 ;
+						mainquest GetById 148 DeleteObjective 1 ;
+						mainquest GetById 149 SetAvailable 1 ;
+						ship GetByKeyName ridleySHP SetEnabled 0 ;
+						ship GetByKeyName kuzhevSHP SetEnabled 0 ;
+						log 116 ;
+						
+						dialogue Spg2\Dialogues\M21\D06.dia ;						
+						
+						game SetQuestMode 0 ;
+
+						/* -^-REWARD-^- */
+						player AddExp 70600 ;
+						player AddReputation 100 ;
+						player AddCredits 440000 ;
+						script Spg2\Scripts\BlueprintAward.sal ;
+
+						/* -^-MISSION COMPLETE-^- */
+						int titleLine = 183 ;
+						int textLine1 = 1553 ;
+						int textLine2 = -1 ;
+						screen ShowWarnings titleLine textLine1 textLine2 ;
+					endif
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

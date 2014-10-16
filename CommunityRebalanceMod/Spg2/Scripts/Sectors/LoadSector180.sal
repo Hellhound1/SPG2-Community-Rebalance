@@ -1,0 +1,83 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName gas180A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas180A CallEvent OnActivate ;
+else
+	structure GetByKeyName gas180A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName gas180B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas180B CallEvent OnActivate ;
+else
+	structure GetByKeyName gas180B CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 27 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art21 CallEvent OnActivate ;
+	structure GetByKeyName art21 SetCanRepair 0 ;
+else
+	structure GetByKeyName art21 CallEvent OnDeactivate ;
+	structure GetByKeyName art21 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_180_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_180_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_180_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_180_3 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 7 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_180_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_180_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_180_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_180_3 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

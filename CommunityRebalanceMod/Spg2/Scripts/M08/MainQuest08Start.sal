@@ -1,0 +1,19 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+game HideStarchart 1 ;
+int questcond ;
+mainquest GetById 45 GetAcquire questcond ;
+if questcond == 0
+	mainquest GetById 44 DeleteObjective 1 ;
+	log 44 ;	
+	log 45 ;
+	mainquest GetById 45 SetAcquire 1 ;
+endif
+
+waypoint GetByKeyName m08marker SetMark 1 ;
+waypoint GetByKeyName m08marker SetMissionTask 4 ;
+dialogue Spg2\Dialogues\M08\D01.dia ;
+End

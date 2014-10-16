@@ -1,0 +1,68 @@
+/*
++check quest status 
+	+if quest is still active, spawn aliens in the vicinity to attack player
+	+add short cutscene to show aliens decloaking or arriving via tdrive
+	+if quest is not solved, start new silent timer
+*/
+
+int questCond = 0 ;
+mainquest GetById 104 GetSolve questCond ;
+if questCond == 1
+	game CancelTimer m14Timer 0 ;
+else
+	game SetQuestMode 1 ;
+	/* SPAWN ALIEN ATTACKERS */
+	float3 spawnPos1 = 0.0 0.0 0.0 ;
+	float3 spawnPos2 = 0.0 0.0 0.0 ;
+	float3 spawnPos3 = 0.0 0.0 0.0 ;
+	float3 posAdd1 = 600.0 0.0 400.0 ;
+	float3 posAdd2 = 670.0 20.0 350.0 ;
+	float3 posAdd3 = 700.0 -20.0 450.0 ;
+	float3 positionPlayer = 0.0 0.0 0.0 ;
+	ship GetPlayer GetPosition positionPlayer ;
+	math spawnPos1 = positionPlayer + posAdd1 ;
+	math spawnPos2 = positionPlayer + posAdd2 ;
+	math spawnPos3 = positionPlayer + posAdd3 ;
+	
+	int factionId = 2 ;
+	int shipId = 0 ;
+	int spawnType = 0 ; /* region-based */
+	
+	int checkExist = 0 ;
+	ship GetByKeyName alienAttacker1 Exist checkExist ;
+	if checkExist != 1
+		shipAdd alienAttacker1 spawnType spawnPos1 factionId shipId ;
+		ship GetByKeyName alienAttacker1 AttackPlayer ;
+		ship GetByKeyName alienAttacker1 SetAIQuestStatus 2 ;
+		ship GetByKeyName alienAttacker1 SetFriendFoe 2 ;
+		ship GetByKeyName alienAttacker1 SetVeteran 1 ;
+		ship GetByKeyName alienAttacker1 SetHPRel 200 ;
+	endif
+	ship GetByKeyName alienAttacker2 Exist checkExist ;
+	if checkExist != 1
+		shipAdd alienAttacker2 spawnType spawnPos1 factionId shipId ;
+		ship GetByKeyName alienAttacker2 AttackPlayer ;
+		ship GetByKeyName alienAttacker2 SetAIQuestStatus 2 ;
+		ship GetByKeyName alienAttacker2 SetFriendFoe 2 ;
+		ship GetByKeyName alienAttacker2 SetVeteran 1 ;
+		ship GetByKeyName alienAttacker2 SetHPRel 200 ;
+	endif
+	ship GetByKeyName alienAttacker3 Exist checkExist ;
+	if checkExist != 1
+		shipAdd alienAttacker3 spawnType spawnPos1 factionId shipId ;
+		ship GetByKeyName alienAttacker3 AttackPlayer ;
+		ship GetByKeyName alienAttacker3 SetAIQuestStatus 2 ;
+		ship GetByKeyName alienAttacker3 SetFriendFoe 2 ;
+		ship GetByKeyName alienAttacker3 SetVeteran 1 ;
+		ship GetByKeyName alienAttacker3 SetHPRel 200 ;
+	endif
+
+	float time = 30.0 ;
+	float direction = -1.0 ;
+	int textLine = 1290 ;
+	int hintLine = 1291 ;
+	game AddTimer m14Timer Spg2\Scripts\M14\AlienTimer.sal Spg2\Scripts\M14\AlienTimer.sal time direction textLine hintLine ;
+	game ShowTimer m14Timer 0 ;
+endif
+
+End

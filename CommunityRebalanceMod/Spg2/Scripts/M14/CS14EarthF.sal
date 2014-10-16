@@ -1,0 +1,153 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 rotReset = 0.0 0.0 0.0 ;
+ship GetPlayer SetRotation rotReset ;
+float3 posStarpoint ;
+structure GetByKeyName starpoint GetPosition posStarpoint ;
+float3 posAdd = -250.0 0.0 0.0 ;
+float3 posPlayer ;
+math posPlayer = posStarpoint + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetPlayer VectorTo posStarpoint ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> player */
+int objectType = 0 ;
+float rotStart = 1.56 ;
+float rotSpeed = 0.03 ;
+float vertStart = -1.0 ;
+float vertOffset = 4.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 50.0 ;
+camera SetType 5 objectType NONE rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+time = 2.0 ; 
+float zoomAmount = 160.0 ; 
+camera SetZoom 0 time zoomAmount ;
+
+pause 2.0 ;
+
+/* particle effect IDs depending on ship size */
+float shipRadius = 1.0 ;
+ship GetPlayer GetRadius shipRadius ;
+
+int tunnelId = 211 ;
+int flashId = 210 ;
+if shipRadius > 0.01 && shipRadius < 10.01
+	tunnelId = 211 ;
+endif
+if shipRadius > 10.01 && shipRadius < 20.01
+	tunnelId = 212 ;
+endif
+if shipRadius > 20.01 && shipRadius < 100.01
+	tunnelId = 213 ;
+endif
+
+/* equipment asb -> FreeModel.wds */
+int retId = 0 ;
+float delay = 0.0 ;
+float3 position = 0.0 0.0 0.0 ;
+float lifetime = 2.3 ;
+assemblyex Create retId delay position tunnelId lifetime ;
+
+/* Initial mesh state */
+float interpolation = 2.0 ;
+float transparency = 0.0 ;
+int state = 0 ;
+int sort = 1 ;
+assemblyex GetParticle retId 0 SetVisible state interpolation delay ;
+assemblyex GetParticle retId 1 SetVisible state interpolation delay ;
+
+pause 0.1 ;
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posFlash = 0.0 0.0 0.0 ;
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipRadius ;
+math posCamera = e_posCC * 0.6 ;
+ship GetPlayer GetPosition position ;
+math posFlash = position + posCamera ;
+
+lifetime = 2.0 ;
+assembly delay posFlash flashId lifetime ;
+
+pause 0.7 ;
+
+interpolation = 1.0 ;
+transparency = 1.0 ;
+state = 1 ;
+sort = 1 ;
+assemblyex GetParticle retId 0 SetVisible state interpolation delay ;
+assemblyex GetParticle retId 1 SetVisible state interpolation delay ;
+
+pause 0.1 ;
+
+/* shutting down */
+transparency = 0.0 ;
+interpolation = 1.0 ;
+delay = 0.0 ;
+state = 0 ;
+sort = 1 ;
+assemblyex GetParticle retId 0 SetVisible state interpolation delay ;
+assemblyex GetParticle retId 1 SetVisible state interpolation delay ;
+
+/* END BLOCK */
+/*
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+game SetControlEnabled 1 ;
+ship GetPlayer SetInvulnerable 0 ;
+*/
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+/*
+pause 1.0 ;
+*/
+
+ship GetPlayer SetInvulnerable 0 ;
+
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+
+game SetQuestMode 0 ;
+float3 positionNew = 65950.16 -1585.22 61173.54 ;
+player SetPosition 2 positionNew ;
+
+End

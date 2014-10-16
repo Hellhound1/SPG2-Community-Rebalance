@@ -1,0 +1,34 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M09_COMPLETED ;
+
+mainquest GetById 65 SetSolve 1 ;
+/* mainquest GetById 65 DeleteObjective 1 ; */
+mainquest GetById 66 SetAvailable 1 ;
+ship GetByKeyName m09ridleySHP SetEnabled 0 ;
+
+log 57 ;
+game SetControlEnabled 1 ;
+
+mainmissionpanel 59 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 10600 ;
+player AddReputation 100 ;
+player AddCredits 200000 ;
+script Spg2\Scripts\AwardHeavyWeapon.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

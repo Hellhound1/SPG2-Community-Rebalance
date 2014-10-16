@@ -1,0 +1,45 @@
+/*
+-------
+Script by: LGM Games , 2014
++OnDestroy structure script
+-------
+1. check region and redirect to other scripts
+->separated into blocks of 20 region scripts due to limit of number of variables per script
+*/
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 0
+	int regionId = 0 ;
+	region GetId regionId ;
+	PrintMessageVar Structure_OnDestroy: INT regionId ;
+
+	int parentFaction = 0 ;
+	structure GetParent GetFaction parentFaction ;
+	PrintMessageVar ParentStructureFaction: INT parentFaction ;
+
+	if regionId < 20
+		PrintMessage structureOnDestroyA ;
+		script Spg2\Scripts\Regions\StructureOnDestroyA.sal ;
+	endif
+
+	if regionId > 19 && regionId < 40
+		PrintMessage structureOnDestroyB ;
+		script Spg2\Scripts\Regions\StructureOnDestroyB.sal ;
+	endif
+
+	if regionId > 39 && regionId < 60
+		PrintMessage structureOnDestroyC ;
+		script Spg2\Scripts\Regions\StructureOnDestroyC.sal ;
+	endif
+
+	if regionId > 59 && regionId < 80
+		PrintMessage structureOnDestroyD ;
+		script Spg2\Scripts\Regions\StructureOnDestroyD.sal ;
+	endif
+
+	if regionId > 79
+		PrintMessage structureOnDestroyE ;
+		script Spg2\Scripts\Regions\StructureOnDestroyE.sal ;
+	endif
+endif
+End

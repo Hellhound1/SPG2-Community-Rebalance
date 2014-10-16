@@ -1,0 +1,1338 @@
+Godspeed!
+Our fleet reached planet Trinity in order to pick up our cargo. Father has been strangely nervous the entire trip. I've never seen him like this before. For God sakes, it's only a routine trade-meet. He is so concerned for the timeline of the delivery, that he's sending me alone to arrange the handover while he takes care of the rest. I'm the last to object to that. I'm not a kid anymore and it started to annoy me how little he trusts me.
+Travel to planet Trinity
+Destroy pirates
+Trinity landing
+Land on planet Trinity
+Departure
+Leave planet Trinity
+Return to Avalon
+Scan the Avalon
+Scan the wreck of Avalon for anything useful
+Encrypted data stream
+My mission will soon reveal the true magnitude of events that are unfolding in Gemini far from everyone's eyes. How could we be so blind? It was always here, in front of us! Still, there is yet time to avert the disaster, if we play this right. I just need one final piece of the puzzle...But I don't know how much time I have. They've been on to me for weeks now and it's only a matter of time when they make their move. I knew my actions would eventually provoke action, but I need a bit more time.<\n>To my son, Adrian...If you are reading this message, it means I have run out of time already and it is up to you to finish my work. Forgive me for keeping secrets, but it was for you own good. I've spent almost my entire life surrounded by war and death and I just wanted something better for you. Now, you must take my burden and my place, for everything is at stake here. Everything. You have enough training and I know you have more than enough courage. All you need to know is stored in heavily encrypted data cores divided on all ships in the fleet. Find all of them and then you'll be able to decrypt them. Then you'll know the way ahead. And son, I'm sorry I won't be there for you. There are only a handful of people I could trust. Find them! Scientist Elenor Ridley, captain Bertrand Steiger, Xavier Morse, Jared Hunt and general Paul Demetrius will surely help you. Some of them may already be gone, but that is the only help I can give you. Godspeed and Adrian, finish this... Maybe destiny chose you for this task with a reason...
+What a catastrophe...When I was on Trinity, my father was viciously attacked and killed by God knows who. When I returned, they were all gone. To make things worse seems father knew this might happen and I was sent away to Trinity to be spared from what is to come. I'm shaken and angry and so helpless. Father left me an automated message in case this happens...
+Goodbye father...
+My father left me with a task... a task he hid from me it seems for years. I'm torn between pursuing his assassins for revenge and doing what he wanted me to do. ... But if his suspicions are correct, the two tasks are one in the same. I will revenge you father! <\n><\n>I should start searching for the other ships from my father's fleet. Gemini Protectorate sent me the coordinates to the Raffale. I should start there.
+The search begins
+Gemini Protectorate successfully traced one of the missing ships from my father's entourage: the Raffale. Its current location is deep inside an asteroid field on the edge of Trinity territory. It is imperative to intercept it and obtain its data core in order to start piecing together my father's true mission.
+Finding the Raffale
+Reach Raffale's last known coordinates
+Destroy hostiles
+Another data core found
+We have reached Raffale and helped captain Farrow fight off some pirates. In return, he gave us the data core we have been searching for without any problem. In fact, he seemed quite scared having it onboard. Moreover, we've gained information on possible location of third ship: the Yukon.
+One less to go
+Captain Samuel Farrow provided useful information about whereabouts of another ship that is carrying data core - the Yukon. Her commander Kobe Tagachi has some friends on Plymouth shipyard, and since Yukon is heavily damaged during assault on Gabriel Faulkner, it is very possible captain Tagachi would go exactly there to conduct all the extensive repairs.
+Rendezvous at Plymouth
+Travel to Plymouth shipyard
+Helping hand
+Obtain a fuel casing from the nearby junkyard
+No junk for free
+Destroy the scavengers
+Salvage the fuel cell
+Salvage the necessary fuel cell from the derelict
+As already expected, securing parts for captain Tagachi was not as simple as it seemed. A group of scavengers tried to prevent me from taking anything from junkyard. I've dealt with them.
+Job well done
+Return to captain Tagachi
+A step closer
+Captain Tagachi received the needed parts, we received another data core and we're one step closer to solving this mystery.
+Nordhorn passage
+Scouts from Gemini Protectorate reported another ship from original Faulkner's group has appeared near Masada battle fortress. It is the Scion, commanded by ex-military specialist Noah Jackson. His business at Masada is unknown at this point, but it is reported the Scion is frequently moving around.
+Travel to Masada
+Go to Nordhorn passage
+Rendezvous with captain Jackson near Nordhorn Passage
+We have found the Sion and captain Jackson has an intact data core, but hasn't got the "time" to comply with my requests. He offers me to accompany him to a mission for Mycaena and when we complete it, I can take the core. Anyway, the mission includes escorting a convoy carrying sensitive materials to Nordhorn Outpost in Iolia. Currently, T-Gates are offline and the convoy will navigate through Nordhorn Passage, frequently visited by Anarchists.
+Pirates!
+Destroy the attacking Anarchist ships
+Into the breach
+Go to deeper into Nordhorn Passage and secure the convoy
+After reaching Nordhorn Passage, heavy fighting was already under way. We had to help captain Jackson save what's left of the convoy. During the battle the Sion was badly damaged and we have to prevent this from becoming a complete failure.
+Eliminate the Anarchists
+Notify Jackson
+Spoils of war
+We have secured another data core from captain Jackson, so that's one less to search for.
+Two-faced
+Following our several successful operations, Admiral Dmitry Kuzhev of the Gemini Protectorate contacted us personally. He displayed great interest in my father's research and our progress in obtaining all parts of his mysterious data. And now, he offers additional help in locating the last remaining ship containing Faulkner's data core: the Galahad. After following me on my first mission, captain Coop vanished and there was no trace of him or his ship ever since. Kuzhev seems to believe he has the possible location of Galahad and he plans to act on his own, but our presence is advised.
+Rendezvous with Kuzhev
+Travel to Promethean
+Admiral Dmitry Kuzhev:<\n>Judging by the information I was presented, you, young captain Faulkner, performed admirably in your first missions. I've had the honor of working with your father and it seems you will stand up to his reputation. There is no need to explain you how important your father's research could be for the Protectorate and it is my intention to help you complete your task. Gabriel left our former League and decided to pursue his goals on his own, but he always remained a trusted ally and I'm sure he intended to use his knowledge for the benefit of all, including Gemini Protectorate. In that respect, we'll help you finish what you've started. I'm aware you are now in possession of five data cores. Last one is presumably on Galahad and we suspect where he might be. Join me in Promethean.
+Intercept and contact Galahad
+Betrayal
+Disable the Galahad
+I've intercepted the Galahad in Promethean, but Coop refused to hand over the data core. He intended to sell it to the highest bidder; the Syndicate most likely...
+Board the Galahad
+Questionable decisions
+Destroy Syndicate outpost
+We have disabled captain Coop's ship and secured the last data core, but admiral Kuzhev was relentless and ordered a full attack against the station in order to eliminate Syndicate ships that attacked the Protectorate. I'm surprised by his aggressiveness. Perhaps there lies the reason why my father and Kuzhev went separate ways some time ago?
+Leave the area
+Gut feeling
+Although it wasn't necessary, Kuzhev obliterated the Syndicate outpost. Just when we thought it is over, multiple ships de-cloaked and charged on us. Kuzhev ordered me to withdraw with the data cores while he tackles the attackers, but there was something familiar about those ships... their energy signatures are oddly similar to the bastards who attacked my father...
+Personal log
+Father's associates
+My father was a good man, and what happened to him will not go unpunished. I will never forget! First step is now accomplished; I have secured all of the data cores which contain my father's research from couple of years back. Majority of files are still heavily encrypted, but several personal logs mention a designated decipher protocol. Only two people had it. Gabriel was one. The other was planted in the computer core of the Damocles, a legendary ship of general Paul Demetrius. The Avalon is now destroyed, and the only chance of decrypting the data is finding the Damocles, but how? It was supposedly destroyed years ago during the final battle of the second Gemini war. And yet, my father's logs indicate he was in contact with his previous associates from Gemini League: Elenor Ridley, Bertrand Steiger and Xavier Morse. It seems not all of them are convinced Demetrius is dead. Apparently, they helped my father in his investigation and they were certain there is something else to the imperial invasion and the strange course it took in the years that followed. What is even stranger, father really did know who might attack him. He referred to them as "the Brotherhood", and it seemed as if he intentionally waited for them to make a move. The mysterious group was a part of his investigation, and he had to flush them out to verify some of his theories on them. I'm beginning to understand my quest will be much more than revenge. If my father's research is correct, far greater matters are at stake here, and I must see this to the end, regardless of the cost. My father's associates, his inner circle of trusted individuals, are the only ones that are able to help me now...
+Old friends
+Travel to Gladius Group HQ in Trinity
+Now that we have obtained all of Faulkner's data cores, the next step is to put it into perspective. Former high ranking League officers and Gabriel Faulkner's closest allies are likely to be of help here. Commander Bertrand Steiger should be easy to trace. His unique and battle-zealous personality makes him very "noticeable". Since the end of the second war, Steiger has been known to be working closely with the Gladius group.
+Tag along
+Meet up with Gladius fleet in Directorate territory
+We've found Steiger. He was just embarking on a mission against the Directorate and asked us to tag along.
+Venting frustration
+Destroy Directorate ships and installations
+Man of few words
+Steiger knew what I wanted all the time. Seems he was just testing me, but already decided to help me. He sent me useful data logs and instructions. He is obviously either not a man of many words, or is afraid to talk over the commlink too much.<\n><\n>Bertrand Steiger:<\n>I know of you, young Faulkner. Gabriel mentioned you often. He always said you'll finish our job if we fail. Today, I just wanted to see for myself if you have the stomach for war, because if you continue in your father's footsteps, there will be blood... By now you are aware what Gabriel and the rest of us were working on. The Empire didn't invade Gemini just to check on us. If they halted their offensive operations, there must be a damn good reason for it.  The Brotherhood appeared at the same time as the mperials did and they are probably somehow connected. The Brotherhood relies heavily on cloak technology and constant movement, but from rare reports we gathered, it is likely they are not a friend of the Empire. Your next task must be to find Xavier Morse. Our group separated after your father was killed to prevent Brotherhood from getting to all of us at the same time. I'll be in contact and help you as I can. The Brotherhood is not an enemy you should take lightly...
+Jailbreak
+Commander Steiger has found the location of Xavier Morse, military specialist and former trooper Chief on Captain Jared Hunt's ship, first aide to general Demetrius. Morse was captured by the Directorate and is currently held in on a prison station near the Empire-Directorate border. Good old prison break is next on our agenda. Steiger insists it is not an impossible mission and that the timing is excellent. Empire launched another campaign to crush the Directorate. In their eyes, Directorate's loss of Gemini in the independence war was a betrayal that could not go unpunished. Directorate is on the verge of collapse and we can use the chaos to rescue Morse.
+Shackles
+Travel to Directorate prison
+Set Morse free
+Transport troops to the prison
+Erasing memories
+Destroy the prison station
+Upon arrival at the prison, Steiger was already involved in a battle between Imperial and Directorate forces. He appeared enthusiastic in the face of this weird situation with both his "favorite" enemies in front of his guns fighting each other. That skirmish allowed us to search the prison and save Xavier Morse. We'll finish off the prison while we're here.
+Friend of a friend
+We managed to rescue Morse from the prison. A no-small thanks goes to Steiger for that. Incidentally, I had a front-row seat to see his famous rage... or madness depends on how one looks at it.
+Access granted
+Xavier Morse proved to be a truly useful source of information. He worked with my father on discovering the true goals of Imperial tactics in Gemini. Before that he served as officer on one of the ships in fleet of general Paul Demetrius. Morse claims Demetrius wasn't killed during battle at Starpoint. Allegedly, his ship, the Damocles was badly damaged and wasn't able to break through Imperial lines, but instead used the chaos of battle to mask its trace and travel in the opposite direction, through Starpoint right into Imperial mainspace! In the months following the end of war, Morse joined the group Gabriel Faulkner assembled to investigate unusual behavior of the imperial invasion fleet. His commander, Jared Hunt, took his ship and rest of the crew on a secret mission to discover the fate of general Demetrius and wasn't heard of since.  Meanwhile, Morse offered his services as a military specialist to different groups and factions who in time allowed him to travel around entire Gemini and get valuable information. It was he who first discovered the existence of the mysterious Brotherhood and the fact they don't originate from Gemini but used the battle at Starpoint to slip into the system unnoticed. Xavier is not surprised Brotherhood could be responsible for the killing of my father, since his efforts were aimed at revealing true intentions of Empire and Brotherhood, as well as their mutual relations. Contacting Dr. Elenor Ridley is crucial. Her advanced ship was able to go to locations that were inaccessible to others, but locating her could be a problem...
+Credentials needed
+Travel to Yxaril waste depot in the Wasteland
+Morse has a friend on Yxaril station in Wasteland, a friend with shady past. He can secure papers to enter Nexus Perimeter, guarded and restricted space surrounding new Nexus territory. New in sense of it being filled with paranoia and isolated from rest of Gemini. Nexus is our first step in reaching dr. Ridley, since she worked for them for many years.
+Securing position
+Eliminate MultiOps assassins near the marked waypoint
+Paranoid much?
+Pickup the forged papers left in a cargo container near ruined Tesla station
+Credentials received
+We have secured the forged papers to freely enter Nexus Perimeter. Price was eliminating a group of assassins, but I really don't think anybody will miss them.
+Cat and mouse
+Nexus space is probably the best place to seek any hint about Dr. Ridley and her ship the Archimedes. Now that we have clear papers that grant us entrance into Perimeter, we can start our search. Morse suggested visiting Fidelity outpost first. Dr. Ridley had many friends there during her employment for Nexus and Dr. Scott. However, we'll have to be careful since these days Dr. Ridley is regarded as an outlaw by the official Nexus government.
+Best place to start looking
+Go to Fidelity station in Nexus Perimeter
+Play along
+Repair three Nexus relay satellites
+Morse has found a way to sift through Nexus intel discreetly. We have accepted a mission to repair Nexus relay equipment and while we do that, he will tap into their comm-array and seek any relevant data.
+Redemption
+Travel to designated location in Will o' the Wisp
+Next destination will be Will o' the Wisp. Morse has found information regarding Nexus vessel "Redemption". Looks like Ridley's disappearance had made Thomas Scott very angry. Nexus leadership thinks she betrayed them and stole their technology. They have prepared their first ship with the latest stasis and cloak tech; a replica of Ridley's Archimedes and sent it to track Ridley down. Will o' the Wisp was the first stop on their way.
+Nimov's in trouble
+Defend Shinova
+Good Samaritan
+Defend Shinova for 3 minutes
+Upon arrival in the Will o' the Wisp, we realized we have just missed Redemption. It was here only a short time before a merchant vessel commanded by captain Nimov came under attack by revenant ships. We agreed to defend the freighter in exchange for Redemption's flight plan captain Nimov "accidentally" downloaded from it.
+Closing in
+Travel to Stasis ground one
+With captain Nimov's "borrowed" flight plan we'll have no problem tracking down the Redemption. Its plan is to perform several test near Stasis Ground One, cluster of strongest anomalies where dr. Ridley executed her first successful rift extractions.
+Lurking around
+Destroy Revenant ships
+Redemption was destroyed in Stasis Ground One by a group of revenants. We'll dispose of the hostiles to look through the wreckage in peace.
+Sifting through debris
+Search the derelict of the Redemption
+Ridley on-board
+After handling a group of hostile revenants, we have boarded the Redemption and found out they actually traced down Dr. Ridley before they were destroyed by the same revenants they extracted. Her ship was also recently at Stasis Ground One, it seems. Morse activated redundant Gemini League transmission protocols, familiar to Dr. Ridley and her allies. That finally lured her out. She is surprised to see us, but readily accepted to help. She seems like a brave and determined woman, but somewhat cautious. I guess it's understandable.
+Dr. Elenor Ridley
+The moment Elenor Ridley was found, things started to come together. Her ship, the Archimedes, equipped with the latest technology advancements and modified beyond belief was able to see and hear more than any other vessel in my father's fleet. Cloaking device, secondary shields and still experimental jumpdrive system allowed Dr. Ridley to delve further into Faulkner's suspicions. She learned that Imperial forces never found the remains of general Demetrius or his flagship and it was truly possible he is still alive. Also, her experience with stasis technology enabled her to track down Brotherhood at least to some extent. Ridley knew positively that the Brotherhood is hostile to the Empire and in fact they were at war even before they both came to Gemini. After arrival in this system, the mysterious Brotherhood went underground and stayed off the radar most of the times. On the rare occasions they did appear, it was either to attack imperial ships or raid science expeditions either for technology or equipment. Indeed, only two things seemed to interest them: harassing the Empire and collecting advanced technology. Coincidence or not, the majority of Brotherhood raids took place in areas adjacent to imperial borders or that of the Iolian Pact, most notably in the vicinity of Lens. Interestingly according to Dr. Ridley, the true purpose of Lens and its possible hidden meaning was at the core of my father's investigation. Data cores we have collected are likely to contain findings about just that, but deciphering the data could take some effort. Ridley thinks it's possible, but she needs help from her colleagues in Hub.
+Deciphering the secret
+Travel to Gods Wrath
+Dr. Ridley contacted us with instructions to meet her and several Hub vessels in God's Wrath sector. There, an attempt is underway to perform one of the largest stasis extraction ever tried, the extraction of an entire space station. The Ion storm in the region will likely cause trouble too. We'll have to provide protection since this experiment is taking place in disputed territory claimed by Stiletto as well as Hub. Once we accomplish the task, Ridley and Hub personnel will brainstorm in an attempt to replicate Faulkner's decipher protocol and finally access the data cores.
+Keep the doc safe
+Destroy Stiletto attackers
+Boarding the station
+Transport troops and seize the station
+A step forward
+Ridley and Hub scientists have successfully managed to perform their mammoth extraction in Gods Wrath while we had a bit of a skirmish with the Stiletto. Ridley promised me to work on the deciphering.
+Another setback
+Travel to planet Hogosha
+Bad news came from Ridley. She's not able to decipher the data without putting it in jeopardy. Unfortunately, the only way to safely unlock the cores is to obtain one of the original "keys". That means we'll have to search for the Damocles which, if not destroyed, is somewhere on the other side of the Starpoint... and that means we are in for a world of hurt. If we are to survive the trip through thick Imperial defense lines, we'll need a very good plan and a bucket load lot of luck. Dr. Ridley has something in mind and the very first step is to secure a current tactical plan and positions of imperial navy and defenses around Starpoint. There's a merchant residing on Hogosha in Sanctuary who was licensed to travel and work within Imperial territory. He is ready to sell us the navigational data around Starpoint.
+Brotherhood!
+Fight off Brotherhood attack
+Watch my back
+Defend Ridley until her drive is operational
+Time to leave
+Leave Sanctuary
+Our mission near Hogosha was almost amusing. While dealing with the merchant we've been looking for, we got under attack by the Brotherhood... several times and then also by Sanctuary defense force since any combat, including self-defense is apparently illegal in that area. I must say, for a peace-loving society, their ships have respectable firepower.
+Probing the beast
+Travel to the site of abandoned Leviathan in Porphyria
+Second step in our risky endeavor beyond Starpoint is organized by Xavier Morse. Placement of Imperial defenses around Starpoint, shown in the acquired data suggests high dependence on strong automated platforms. Morse believes that is the proverbial Achilles heel. He could be able to hack into imperial defense grid and "confuse" the automated defenses for a short period of time, just enough for one ship to slip through Starpoint. To accomplish that, Morse must get his hands on any version of the Imperial security grid. The most accessible Imperial piece of the hardware is the wreck of the gargantuan Leviathan, drifting in Porphyria. After being destroyed in the opening stage of the new Imperial invasion, the Leviathan has since then been used only as a cover for smugglers and sporadic pirate raids.
+Providing security
+Stay near Leviathan until Morse is done with recon and destroy any hostile vessels
+Step by step
+Morse obtained an Imperial security node from the Leviathan. That should give us the edge we need.
+We hear you
+Rendezvous with Ridley at the marked coordinates
+With basic parts of imperial security code, Dr. Ridley created a computer virus that can tap into operational security grid and create mayhem. It's time to deploy the virus directly to its target and for that we require a powerful long range network grid. Just like the one Holocom built throughout the entire system. The most appropriate place to do this is Holocom installation in the Wasp nebula. Its proximity to Imperial space makes it ideal. Ridley will meet us there.
+Intercept the patrol
+Show of force
+Destroy damaged Imperial ships
+Final step
+The virus has been planted. Its effectiveness remains to be seen of course. Just planting it in the Holocom network wasn't enough, but it was necessary to provoke Imperial forces to use their secure grid and expose it. That ensured our first direct confrontation with the Empire. I have a feeling it's only the first of many.
+Giant leap
+Rendezvous with the Archimedes at the designated coordinates
+Time to put our plan into action. Our mission is to reach and enter Starpoint. Dr. Ridley sent final details of this operation. Initially, she will use the hacked security network to transmit numerous simultaneous reports to Imperial command notifying them of impending Baeldor incursion. Hopefully, that will lure some of the elite forces away from the Starpoint. The Archimedes' special jump-drive is vital in this mission. Ridley has been working on it for several years and it is relatively safe... for one ship. It works on similar principles as the T-Drive, but its range is vastly greater; Ridley claims even unlimited. Ridley modified it so we can piggy-back on the Archimedes and jump right near our main objective. If everything works out as planned, we'll emerge directly in sector Zero and avoid a large chunk if Imperial territory and defenses. The good doctor will then hack into and disable the automated defense grid positioned around the structure. We have to make a run for the Starpoint when that happens.
+Enter Starpoint
+Arrival at Salazar
+Go to Salazar battlestation
+Well, we got to the other side in one piece. Ridley's virus worked and our ship survived the barrage from Imperial cruisers. But, what we came across on the other side was shocking. There is no Empire on the other side! The Empire seems to be obliterated. No ships, no bases, no planetary cities, nothing... just destruction... I almost felt sorry for a moment. What force could have done this? What else will we find on this side of the gate?<\n><\n>Morse scanned the local surroundings and found energy fluctuations coming from the general direction of Salazar battlestation.
+Meet the resistance
+Travel to the provided coordinates
+An empire lost
+Imperial mainspace isn't what we expected. Destruction brought by an unknown enemy swept through the Empire. Captain James O'Neill, former lieutenant in the Imperial navy now leads a small group of humans keen on fighting off the enemy. His followers survived the brutal attack from an alien race known as the A'Shriari. His desperate resistance sporadically receives help from the Imperial Gemini colony and he was hoping we were only a recon unit of a much larger Imperial fleet. The truth revealed to us is dire. A'Shriari invaded three years ago from the Orion colonies and quickly brought the Empire to its knees. Their advantage doesn't come from technology, weapons or sheer numbers. Their unique telepathic abilities however do make all the difference and allows them to almost instantly adapt their tactics to any adversary. Mighty Imperial fleets crumbled one by one and planets fell in their wake after relentless orbital bombardment. What remained of the Imperial fleet scattered across the system or made one last attempt to reach the newly reopened Gemini star system where for some reason, as Captain O'Neill explains, the aliens didn't follow them. That part is intriguing in its own right, but our task here is to find the Damocles, not fight the A'Shriari. The remaining humans learned to scrape what was left in the Solar system and divided into several groups of scavengers or freedom fighters as they like to be called. After the majority of the alien forces withdrew, the groups started fighting each other for the dwindling supplies...
+Running errands
+Go to designated waypoints and look for supplies
+Imperial mainspace isn't what we expected. Destruction brought by an unknown enemy swept through the Empire. Captain James O'Neill, former lieutenant in the Imperial navy now leads a small group of humans keen on fighting off the enemy. His followers survived the brutal attack from an alien race known as the A'Shriari. His desperate resistance sporadically receives help from the Imperial Gemini colony and he was hoping we were only a recon unit of a much larger Imperial fleet. The truth revealed to us is dire. A'Shriari invaded three years ago from the Orion colonies and quickly brought the Empire to its knees. Their advantage doesn't come from technology, weapons or sheer numbers. Their unique telepathic abilities however do make all the difference and allows them to almost instantly adapt their tactics to any adversary. Mighty Imperial fleets crumbled one by one and planets fell in their wake after relentless orbital bombardment. What remained of the Imperial fleet scattered across the system or made one last attempt to reach the newly reopened Gemini star system where for some reason, as Captain O'Neill explains, the aliens didn't follow them. That part is intriguing in its own right, but our task here is to find the Damocles, not fight the A'Shriari. The remaining humans learned to scrape what was left in the Solar system and divided into several groups of scavengers or freedom fighters as they like to be called. After the majority of the alien forces withdrew, the groups started fighting each other for the dwindling supplies...
+Deliver supplies to rebel hideout
+Elimination
+Travel to Huntworth shipyard and eliminate Mercury opposition
+Search for Damocles
+Go to Bastilla Academy and look for the Damocles
+Earth opposition leader James O'Neill provided data and possible location of the Damocles; after we did a couple of missions for him and bolstering his opposition movement of course.
+Getting data
+Transport troops to the Damocles and get the decipher protocols
+We have found the Damocles at last, but unfortunately with it came the proof of great general Paul Demetrius' death as well. We can't stand around here idly for too long. The A'Shriari might sniff us out.
+Reach Starpoint
+Once more out of the breach
+Reach the marked coordinates
+After leaving the wreck of the Damocles, the aliens spotted us and we barely escaped. These creatures are fierce opponents. Determined and organized.
+The return home
+Our return to Gemini was a bit rough. Luckily, Brotherhood accidentally gave us just the diversion we needed. They assaulted Imperial forces in the open for the first time and they have one of those imperial Leviathan-like monstrosities in their possession. We used the total chaos to reach the Archimedes.
+The A'Shriari
+Dr. Ridley was at last able to decipher data cores from both Faulkner and Demetrius. What they had discovered in combination is truly shocking. The new Imperial invasion of Gemini wasn't an invasion at all; it was in fact an evacuation and complete relocation of military and government structure away from Imperial mainspace and Earth. Years ago, Imperial High command initiated a secret genetic program "Evolution X" in the colonies of the Orion system where the first clues of an alien race, now known as the A'Shriari were discovered. Goal was to breed a new race of humans that could harvest the psyonic abilities similar to those of the alien civilization. Several years into the program, the Empire used the new "evolved" army to crush the rebellion in the Orion colonies. The victory was so overwhelming that soon, in only a matters of months, hybrid military units went rogue and started a war of their own in order to get rid of their Imperial masters since they themselves are a "better, enhanced" version of humanity. Answer from the Empire was brutal as expected. Project was discarded and almost the entire military might of the Empire was dispatched to hunt down and destroy any trace of the hybrids. That however didn't go as expected. The hybrids were amazingly adaptable and resilient opponents and had the support from the Orion planets. In the end, two years since the bloody war began, A'Shriari aliens came back to defend the hybrids who they saw as their own. From that point on, the Empire was on constant retreat.
+Imperial agenda
+The Empire's last chance of survival was to find a way to disable or block A'shriari and hybrid psyonic abilities. That chance appeared in the Gemini system. Colonial Directorate in Gemini, during their reign in the system, investigated unique anomalies that appeared throughout Gemini space; the same anomalies that started appearing in dramatically greater numbers in the aftermath of the first Gemini war and the Starpoint incident. Empire had that data from ships that retreated from Gemini. It was clear there were some natural or unnatural forces in Gemini that would likely block any alien ability to use their psyonic abilities. Further investigation was impossible at that time since the Starpoint was closed for more than two decades. Once Starpoint was reopened at the end of the second Gemini war, the Empire now on the brink on destruction by the A'Shriari, quickly issued a full retreat. The idea was to move what's left of Imperial might into Gemini where the aliens wouldn't be able to use their main strategic advantage. Then figure out what is blocking the A'Shriari abilities and find a way to duplicate it in preparation for a counterattack on mainspace.
+The Brotherhood
+General Demetrius discovered the origins of the mysterious "Brotherhood" group my father was so interested in. They are members of the hybrid army that infiltrated Gemini along with the Imperial forces in an attempt to discover what is preventing them from using their psyonic abilities. Their mission was to eliminate that and enable the A'Shriari to invade Gemini and finish off the Empire. Faulkner, on the other side, succeeded to learn what both the Empire and the Brotherhood wanted. The source of a strange field that prevents A'Shriari from wielding their abilities in Gemini is a mysterious structure in the Iolian Pact - the Lens. That structure has been present since the time of the first Gemini colonies and it was long thought that the Lens is simply an abandoned Imperial project.
+Revelation
+The Lens
+Travel to Clearmont station in Iolian space
+We are now aware of the importance of the Lens. Ridley suggests we try to get more information on it. There is a research facility, Clearmont near Lens that is occupied by Hub scientists who are licensed by Iolian Pact to investigate that strange installation. We should meet there and see if we can get additional data...
+Greetings, I'm Thomas Scott...
+Defeat Nexus vessels
+...and I bring presents
+Defeat another Nexus assault
+Our mission has been interrupted by Nexus vessels. They claimed all the data we gathered belong to them and were ready to fight us over them. Kuzhev arrived to provide assistance and right on time since more Nexus ships arrived quickly.
+Retreat
+Leave the area
+Ridley partially evacuated Clearmont which is under heavy assault of Brotherhood. It seems they are also aware of its importance.
+Dawn of war
+Make your way to Masada station in Mycaena
+Ever since our return from beyond Starpoint, events have been unfolding faster and faster. Brotherhood was the first to make a move. They are now aware that Lens and its secrets are the key to what they are looking for, but they also knew the Empire will know that soon. Before anybody had the chance to react, Brotherhood seized control over Clearmont and Lens in an attempt to secure research results already achieved. On the other hand, secret of Imperial demise was also out in the open now and they had to react fast. And they did by sending elite forces to drive the finally disclosed Brotherhood away from the Lens. All-out war was about to start...<\n><\n>Imperial forces are on the move. Most likely target is the Lens. First battles are taking place near Hadrian Wall where last remnants of the Directorate are trying to mount a resistance. Allies of the Empire are also quick to open new battlefields. Nyxian military, as expected of those two faced traitors, crossed the border and are advancing towards Masada station in attempt to secure their own interests. Admiral Kuzhev will lead Protectorate forces against the Empire in the Veynor cluster, while we are to meet up with a small task force dispatched to help defend Masada in Mycaena. If Masada falls, Nyxian forces will join imperial fleet and create a strong united front.
+Defend Masada
+Destroy incoming Nyx fleet
+First victory
+Battle at Masada was a battle won hard. Captain Steiger along with the Gladius group mercenaries proved very capable in inflicting heavy losses that forced enemy forces to retreat. Massive firepower of the Masada fortress also proved to be an impenetrable obstacle for the invaders once again.
+Lines are broken
+Travel to planet Baeldor and meet with Carlos Figueroa
+Our defense of Masada was for now successful. Nyxian forces suffered heavy losses and are stopped for the time being. Kuzhev, on the other hand, faced with elite imperial offensive group, was forced to withdraw from Veynor cluster. Dr. Ridley urged the admiral to divert Protectorate units and retake Lens, but he refused. He is certain the Empire wants to conquer all of Gemini now and stopping them is of the highest priority. In addition, a new front is now opened on the Nexus-Baeldor border. Surprisingly, Nexus staged several incursions deep into Baeldor space using their Catapult installation. It is a mystery why Nexus sided with the Empire at this point, but if Kuzhev is to bring Figueroa and his Baeldor military to our side, the Nexus problem must be dealt with first...
+Break through the perimeter
+Destroy targeted relay satellites in Nexus Perimeter
+Carlos Figueroa, leader of Baeldor Republic, has sent us to punch a hole in Nexus security grid by destroying several perimeter nodes. That will then be used to bring in more forces and take out the Catapult that Nexus uses to deliver ships deep into Baeldor territory
+The way is clear
+We've destroyed several Nexus perimeter nodes. Baeldor attack fleets will now be able to storm Nexus territory.
+Catapult this!
+Rendezvous with Baeldor forces near Catapult in Nexus space
+Now that Nexus security grid has been damaged, Baeldor must move fast to exploit that. Task force is already assembled and en route to Catapult. It is likely those scientific freaks have more surprises in store and to ensure the damn thing is disabled, Dr. Ridley is coming along. She was part of the original Scott's team back when Catapult project was initiated. Our mission is to provide muscle while Ridley sabotages the installation. Destruction of the Catapult is the last resort, since it could be put to good use once Nexus hopefully turns away from radicalization Scott is forcing...
+Destoy Catapult guardposts
+Destroy Nexus defense fleet
+Catapult disabled
+Raid on the Catapult went well. Using our protection, Ridley disabled enough of its systems to render it inoperable for the time being. Immediate danger to Baeldor has been removed and Figueroa is now ready to turn his forces against the Empire.
+Tide is turning
+Join Protectorate fleet in Trinity
+War seems to be turning in our favor. Figueroa convinced the baronies of Baeldor Republic to support Protectorate effort against the Empire. United fleet crossed the border and engaged Empire in a series of clashes. With most of the elite Imperial forces involved in battles in Iolia and Mycaena, Baeldor advanced significantly, offering important relief to Protectorate operations under admiral Kuzhev's command. Meantime, Imperial Grand Admiral Cavurian fought his way to the Lens and forced the Brotherhood to retreat into the neighboring Serpent region. Driven by desire to deal a fatal blow to the organization that was among the responsible for the destruction of the Empire in mainspace, Cavurian followed them blindly. Admiral Kuzhev saw that as the perfect opportunity to set a trap for them. Protectorate and allied fleet is amassing in Trinity...
+Empire hunter
+Destroy every imperial ship in the area
+Killed the serpent
+A decisive battle took place today in the Serpent. Kuzhev insisted that the entire combined force of the Protectorate and allies intercepts the Imperial forces. Ridley and I tried to convince him that Lens should be our objective in order to complete my father's research and secure Gemini from possible alien invasion, Kuzhev declined. He was driven by such hatred for the Empire and the desire to annihilate them... At times he sounded almost crazy...
+Lure of the lens
+Meet with Ridley at Nordhorn outpost
+After victory in the Serpent Admiral Kuzhev finally agreed to spare some ships and allowed Ridley and me to return and seize control of the Lens and station Clearmont. Imperial defenses should be weakened and demoralized by now. Elenor's and Kuzhev's ships are waiting for me near Nordhorn outpost in Iolia.
+The Seraphim
+Destroy Imperial defenses
+Destroy Imperial defenses around Lens and Clearmont, including Cavurian's flagship the Seraphim.
+Taking Clearmont
+Transport troopers to Clearmont
+Imperial defenses near Lens were stronger than anticipated. Remnants of their battered fleet from the Serpent withdrew there and offered fierce resistance. Cavurian and his entourage transported to Clearmont. Morse volunteered to transport aboard and clear the Imperials out.
+Aggression extraordinaire
+Admiral Kuzhev's aggression almost messed up our mission again. After defeating imperial defenses, we've boarded Clearmont station, but that stubborn maniac suddenly arrived and issued the order to blow up the station just because Cavurian took refuge on it. Before escaping the doomed station, my team set up a direct link and we tried to grab as much data as we could remotely.
+At an empire's end
+Join Ridley in District Gama
+All of Gemini is aware by now that the Empire is a dying beast. Every faction and group not directly allied to them is on the move trying to grab something, territory, supplies or infrastructure. It is almost tragic to observe how once mighty organization is being mutilated at every step. Protectorate forces are organizing one final push, right into the heart of the Empire. The goal is to defeat surviving Imperial forces in sector Zero and establish full control over Starpoint. Kuzhev wants a fast killing strike in order to prevent any possible surprises, like the one the Directorate did at the end of the first Gemini war when they caused the entire Starpoint incident, rather than lose it...<\n><\n>Admiral Kuzhev disclosed the tactical plan for assault on Starpoint. Moments before the attack begins, Ridley will use her jumpdrive and take our ship and the Archimedes to close proximity of the Starpoint. There, we're to destroy the defenses as soon as possible, while Kuzhev and the Protectorate fleet advance and destroy defending ships. Ridley is waiting for us in District Gama, now held by Protectorate military...
+Tearing down the defenses
+Destroy all guardposts near Starpoint
+Mop-up
+Destroy incoming Imperial ships
+Vendetta
+Destroy Brotherhood ships
+The mighty Empire is destroyed, but it is not yet time to celebrate. It is time to take care of the few loose ends. A number of Brotherhood ships have decloaked. I WILL have my revenge now!
+Not in my back yard
+Destroy invading aliens
+Some satisfaction
+After a hard battle, we've won the day. The Empire is at its knees... but what thrills me the most is that I've taken revenge on my father's killers... and their alien masters...
+Closure
+Join Ridley's Archimedes in Nexus Perimeter
+The Empire is finished and their forces surrendered. To our surprise, victory didn't mean the end of the war. First, A'Shriari aliens invaded Gemini but were beaten back. Reasons for their attack are still a mystery. They had to be aware the Lens remained functional and that we can fight them. In addition, Admiral Kuzhev demanded the surrender of imperial allies, Nyx and Nexus too. Protectorate military already began operations against both of them. I'm starting to think Kuzhev is going too far. Didn't we have enough of war?<\n><\n>Baeldor transmitted emergency distress call from Nexus space. Their third attack fleet was in a mission of securing Catapult area when Brotherhood's damaged Mothership ambushed them and annihilated more than half of the fleet. Baeldor commander claims the Mothership worked together with Nexus forces. How can that be? Why would Scott turn to the Brotherhood? Kuzhev is preparing a fleet to reach the combat zone, and we will join them immediately...
+Intercepted by Nexus
+Destroy Nexus ships
+Unfinished business
+Reach the Catapult
+Sever the links
+Destroy the conduits connecting the Mothership to the Catapult
+Checkmate
+Destroy the Mothership
+Peace in our time
+The destruction of the Mothership marked the end of Brotherhood incursion in Gemini. My father's killers were killed themselves. And yet, watching the destruction of the monstrosity brought little peace to my soul. Slowly I realized the burden resting on my father's shoulders. His duty was duty to all of Gemini and his mission was to ensure future to all our people... I have doubts if our actions followed that path in the right manner. The Empire is gone, but the war continues and I fear little will change in the ways of human nature. Gemini Protectorate is on the rise, but again through violence and force. Are we destined to repeat the mistakes of our past? Beyond Starpoint, the A'Shriari await and what will they think of the victors from Gemini? Are we a new hope or a reincarnation of the old ways? Demetrius died trying to prove we could be something better; Empire perished trying to preserve what we were... but, I believe the challenges to come will answer that question once and for all...
+Secrets of Aethera
+Aethera is the most isolated region in the entire Gemini system. The vast and dense nebula spans across almost half of Porphyria. The sheer number of powerful anomalies and highly erratic deadly discharges caused by the strange nebula make this area almost impossible to travel. Several years ago, NeoPhysics scientists investigated the region and established a research facility in an abandoned Nexus installation called Kepler, in the middle of Aethera. Soon after NeoPhysics started their work in Aethera, all hell broke loose. Series of rift detonations shook Aethera and the number of anomalies multiplied quickly. Nexus officially denied any connection to the research taking place on Kepler and withdrew all personnel from Porphyria. The destiny of Kepler station isn't clear to this day. Except the so-called Ghosts and rare audacious traders, no one travels through Aethera anymore. Standard shields are simply not strong enough to withstand the violent disturbances. But lately, reports surfaced that Kepler station still exists. Moreover rumors suggest NeoPhysics team developed some amazing technology during their long isolation in the nebula. More than a few expeditions were sent into Aethera to verify that, but none came back...
+Hell is spreading
+Join mercenary forces in the defense of the Sakkara refinery
+Porphyria officials have transmitted a distress call asking for outside help in dealing with a local problem. The Aethera nebula started to spread recently and planet Pyros is in immediate danger. One of the refineries near Aethera, Sakkara, is already lost to the spreading anomalous region. Ghost ships appeared immediately as the nebula enveloped the refinery. Ghosts are "phased" ships that were under the prolonged influence of the Aethera anomalies and pose a great threat because of the ability to phase in and out of normal space. Standard weapons systems cannot lock on accurately and that makes any fight against them pretty much one sided. All willing mercenaries and freelancers are asked to join the effort to defend Sakkara outpost...
+Ghost in the machine
+Destroy Ghost attackers
+Sakkara is safe
+I've reached Sakkara just in time to help the station. They were under heavy attack by those "Ghosts". They really are hard to hit. It seems I was the only ship that survived the slaughter.
+License to live
+Meet Clayton Elling in Maelstrom and the purchase shield enhancer blueprints
+Porphyria has sent reinforcements and supplies to the Sakkara outpost, but as long as the station is enveloped by the Aethera, the final outcome is uncertain. Finding a way to prevent the spreading of Aethera is priority one and that means someone must travel right in the middle of that nebula. Right now, that would be a suicide mission, but there might be a way. IonTech Corporation has been researching the perilous Maelstrom region for years and harsh conditions found there could prove to be helpful in dealing with Aethera. They might be able to upgrade shield emitters enough to travel through Aethera in relative safety. Porphyria organized a meeting in the Maelstrom, near IonTech headquarters, the Dortmund station. Clayton Elling, member of IonTech R&D division, is ready to sell blueprints for shield enhancers, but for no less than hefty 150,000 credits...
+Defense is the best defense
+I got the shield enhancer that should make it possible for me to enter deeper into Aethera. Hopefully I'll be able to get this investigation going again.
+Evidence gathering
+Travel to Aethera and confirm the existence of Kepler station
+With the shield enhancer in place, our chance of surviving the harsh environment of Aethera is now acceptable and real investigation can begin. First task will be to enter the very heart of the nebula and seek clues about the destiny of Kepler station. Beware of Ghost ships and also remember that new shields offer higher level of protection against anomalies, but are not indestructible...
+Storm the station
+Transport troopers to Kepler station
+Ghosts are about
+Eliminate Ghost ships
+Data gathered
+We've successfully retrieved data from Kepler. Preliminary results show the station was running normally all this time, if we can call Aethera normal. Tia Camire should be able to tell us more once she goes through the stations' records.
+Broadcast
+Travel to Kepler station in Aethera
+Data evaluation from the Kepler facility has been completed with some amazing results. NeoPhysics teams were responsible for disaster that struck Aethera. Their effort was concentrated on building a huge generator that was supposed to harvest energy discharges of the volatile Aethera region and then use it to power a stasis superfield. In essence, that technology should be able to throw an entire sector in some sort of field such as cloak field. If they had succeeded, shielding technology would get a significant boost. It would sky-rocket in a matter of weeks. The experiment backfired and what they got instead was a series of uncontrolled subspace detonations that dramatically expanded the already existing disturbances. The weirdest thing of all was that most of NeoPhysics personnel seem to have survived the tragedy probably thanks to the enhanced shielding mounted on the majority of their vessels prior to even entering Aethera. In the aftermath of the blasts, scientists evacuated Kepler station and covered themselves using sustainable cloak systems. None of the areas surrounding Aethera reported any increase of arriving NeoPhysics ships, so it is safe to assume they remained hidden inside the affected area. Your next move will be to return to Kepler station and transmit a false signal from it saying it is under NeoPhysics control again. Hopefully it might lure some of their "lurking" scientists into the open.
+The great pretender
+Send a team to the station and fabricate the transmission
+Ghosts, ghosts everywhere
+Destroy Ghost ships
+Dr. Stephen Reading
+The faked signal really did lure some members of NeoPhysics team to us. The erm... "intriguing" Dr. Stephen Reading does have an idea how to repair situation in Aethera, but he needs some shard ore in order to modify some gizmo needed to shut down huge generator on Kepler station. I'll notify Sakkara and continue from there.
+Mining operandi
+Join Porphyrian mining expedition in Sea of Sorrow
+Porphyria officials have promoted Lieutenant Tia Camire, former head of Sakkara station, to commander of Aethera operations. She studied the report from our last mission with Dr. Reading and decided to play along with NeoPhysics, at least for now. It is visible she holds no love for those scientists, but does not wish to disclose more details at this point. Pure shard ore requested by Dr. Reading will be collected by two Porphyrian mining vessels already sent to the Sea of Sorrow. Our mission will be to protect them. Shard ore is very valuable and can be found only in a very dangerous area where hospitality is an unknown word. Two mining ships sent to collect shard ore will wait for us there, cloaked until our arrival.
+I'm the muscle
+Defend Porphyrian mining ships
+Defend Porphyrian mining ships while they collect sufficient amount of shard ore
+We've got the ore
+The Shard ore is ready. I've made sure they could work in peace. A local fanatical group, the Shard, had something against our presence there, but we managed to defeat them.
+Double agent
+Return to dr. Reading near Kepler station
+Commander Tia Camire made some research concerning NeoPhysics scientists and their previous endeavors. It seems they were under contract for MultiOps Industries to develop large scale stasis devices for military and intelligence purposes. That raises concerns, because MultiOps invested heavily in the project and they do not forget debts. The disaster in Aethera is likely a direct result of this military research and pressure from MultiOps to finish the work as fast and as cheap as possible. Porphyria is now worried if NeoPhysics interest to remedy the problem is genuine, or just an attempt to continue their research and fulfill the MultiOps contract. For now, your mission is to proceed to Kepler station and continue cooperation with Dr. Reading.
+Protecting Kepler
+Protect Kepler Station
+Kepler is off-line
+Dr. Reading and his team succeeded in shutting down Kepler generator and restoring Aethera to previous size.
+Purification
+Travel to Kepler station
+NeoPhysics personnel have shut down the generator on Kepler. Aethera has been restored to previous state, and spreading of disturbances has stopped. Commander Tia Camire is not pleased however. Now that all ships can pass through Aethera with greater chance of survival, she sent a couple of recon vessels to monitor the activities on Kepler and evidence discovered made her furious. NeoPhysics scientists and Dr. Reading immediately resumed work on their original research. As we speak, attempts to restart a modified generator are under way. Commander Camire is now determined to stop all research by NeoPhysics permanently. Our mission is to join Porphyrian task force and try to convince Dr. Reading into abandoning his dangerous project by any means necessary.
+The hard way
+Destroy all NeoPhysics and MultiOps vessels
+Job well done
+NeoPhysics scientists refused to abandon research in Aethera. Maybe they were just too arrogant or too scared of MultiOps. Or perhaps it was just Dr. Reading's insanity that drove them... Whatever the case, commander Tia Camire finally issued the order to remove NeoPhysics from Aethera by force.
+Justified
+Travel to Prosperity station
+The Anarchists have been forced into a corner recently. Military actions against them are being launched around the clock. Desperate and battered, they offered a very high reward for a skilled mercenary willing to embark on a very dangerous mission. The Mission is to travel to planet Iolia and plant an explosive device on Prosperity freeport. Then, travel to Spire station in Sanctuary and plant another device there. Prosperity freeport is a main trade point for all trade convoys crossing Anarchist space, while Spire is a diplomatic stronghold of politicians that constantly pass resolutions calling for a final blow against the Anarchists and their goals. If both targets are struck, a clear message will be sent that the Anarchists would not go down easily...
+Primary target
+Transport to Prosperity and plant the explosive
+Moving on
+Go to Spire station
+Elimination
+Eliminate security force
+Secondary target
+Board Spire
+Is it justified?
+Encrypted transmission:<\n>Nice work. This will give them a clear message. ... A word of warning; if you mention this to anyone, you won't live to see another day...
+Ecocide
+Clear out the waypoints
+Genos group from Murky waters seeks brave freelancers to help their cause. Union contractors are entering deep into Genos influenced territory in search for wealthy asteroid fields and locations for their mining facilities. Driven only by profit, contractors conduct operations with no respect for enviroment or safety of local population. Genos are not willing to tolerate such behaviour. Your mission will be to strike hard at Union mining outposts and hunt down research and mining vessels in Genos held space.
+For mother nature
+Excellent work. Gemini thanks you mercenary.
+Sacrifice
+Travel to Triton Academy
+Admiral Kuzhev will attend the annual Triton Academy graduate ceremony. It is the largest and most advanced military academy in Gemini. In honor of the ocasion, the best and the brightest  of the Protectorate new captains will display their abilities in a military exercise near Triton. Kuzhev prepared a surprise for his elite captains. They are very capable but also young and arrogant. Your mission is to face the winner of those exercises, in a battle with live weapons. If you are the one to live, other Protectorate captains will see they still have a lot to learn. Kuzhev understands how barbaric this method can appear, but he believes there can be no compromise in building a new, powerful Protectorate fleet.
+Pride is your downfall
+Defeat Protectorate commander
+Clarity
+I've done what Kuzhev asked of me... I killed that young graduate. I think I finally realize why my father chose a different path, one as far away from Kuzhev as possible.
+Allied obligations
+Go to the first patrol waypoint
+Nyx has been allied to the Empire since their return to Gemini. Consortium strongly believes it is only a matter of time before Imperial might unites the entire system under a single rule once again and therefore there is no point to support any other course of action. Now this alliance has to be materialized. The Empire is pounding the Directorate without mercy and the destruction of the organization that the Empire holds responsible for losing control over Gemini is currently of the highest priority. Main military operations inside Directorate space are conducted by Imperial fleets and Nyx is called upon to hunt down escaping Directorate vessels in the Necalli region. Since main Nyxian forces are being prepared for another assault on the Last Ditch Rogues, this request from the Empire is being redirected to mercenaries.  Your mission will be to run a patrol through Necalli and destroy any Directorate ships taking refuge there.
+Directorate on horizon
+Destroy Directorate ships
+Next waypoint
+Proceed to the second patrol waypoint
+More Directorate
+Destroy Directorate ships
+Obligations fulfilled
+Job done. We've cleared the patrol route of any Directorate vessels we encountered.
+Waste disposal
+Go to Wasteland
+Fenicia, the largest trade organization in Gemini requires a long term agreement with the Wasteland. Wastelanders are however attempting to force Fenicia into signing a very damaging and expensive contract. Nyx has stepped in and decided to help Fenicia in getting far better terms of agreement, for a certain fee of course. Your mission will be to enter the Wasteland region and pick a fight with the local security force. Realizing that angering Fenician traders means also angering a powerful Nyxian force, might make them more "flexible" in negotiations...
+In my sights
+Destroy Wasteland patrol fleet
+Proving a point
+We've dealt the Wastelanders a blow they won't soon forget. They aren't so safe in their eradiated zone as they believed.
+Collector
+Travel to Maelstrom and join HUB scientists
+Hub scientists are trying to deploy a special collector in Maelstrom, developed to be very effective in collecting ionizing gas from that volatile region. However, Stilleto raiders already prevented several attempts to complete the mission. Scientists are now offering handsome compensation for protection of their team that will place the Collector...
+Protection
+Protect HUB team while they deploy the Collector
+All done!
+We've successfully protected the hub science detachment. I'm sure they'll have more work for us.
+Essential parts
+Travel to Orissa tradeport in Attilas Whip
+Hub scientists are completing their Collector installation in Gods Wrath. Only one vital part remains to be installed, a specially manufactured radiation amplitude separator or RAS. That component has been produced by Kyoto research facility, but was stolen in a Stilleto raid in the Attilas Whip. It is imperative to retake the component before it is permanently lost on the black market. Your target is a ship named Aramis, last seen near Orissa tradeport. Locate the ship, disable it, take the RAS and deliver it to the construction site...
+Aramis under scrutiny
+Disable the Aramis
+I need the RAS
+Transport to the Aramis and take the RAS component
+Delivery!
+Deliver RAS component to Hub team near Collector in Maelstrom
+RAS in good hands
+We've delivered the RAS system as requested. The science show can continue normally now.
+Seeking an ally
+Travel to mission waypoint in the Hollow sector
+Trinity Free States are on an important crossroads. Its territorial span is too large to be well secured and the situation in Gemini is far from peaceful. Trinity is attempting to be politically neutral, but without a strong military it is a only matter of time before enemies decide to "redistribute" Trinity's territory and wealth. Governing council however, refuses to turn to militarization and buildup of army. They believe it would negate all the values Free States are founded upon. Solution is to find an ally with sufficient strength to guarantee Trinity's safety. Council decided to approach the Gemini Protectorate. Admiral Kuzhev is willing to sign an official alliance, but first Trinity must prove its worth. Protectorate understands only strength and dedication and that is what Trinity will display. Vanquis pirates have been attacking Trinity convoys for months. Their goal is to sever the connection between Orenhelm Prefecture and rest of Free States. Your mission is to show our future allies that Trinity is ready to act and defend its interests. Go to the Hollow region and rescue our trade convoy currently being held hostage.
+You're not welcome here
+Destroy all Vanquis ships guarding the Trinity convoy
+Showcase
+This was a good show of force. The Vanquis will think twice before attacking another Trinity convoy.
+Treaty
+Rendezvous with Trinity representatives in the Hollow
+Strong action against Vanquis pirates has drawn Protectorate attention as intended. Admiral Kuzhev will sign a mutual protection pact with Trinity. Your mission is to protect Free States representatives en route to Qoseir station in the Protectorate. Join them in the Vanquis held region and escort them safely to Qoseir.
+Protect the representatives
+Ensure the representatives reach Qoseir safely
+Eliminate opposition
+Destroy Vanquis pirates
+Everybody's safe
+We've escorted the representatives to the safety of the Protectorate.
+Shard power
+Travel to mission waypoint in Sea of sorrow
+Union has requested help in the Sea of Sorrow. Several vessels with modified mining equipment have been sent to the local asteroid fields. Their task is to test and establish the best and safest possible way to mine valuable shard ore in the area. It is a perilous endeavor since shard asteroids have an unusual property to phase in and out of normal space. In addition, a group called the Shard is constantly attacking any ship passing through the region. They are local inhabitants of that part of space and have an almost religious understanding of the shards. Your mission is to secure three Union ships while they conduct their mining tests.
+Destroy attackers
+Eliminate Shard attackers
+Moving on
+Proceed to the next waypoint
+More hostiles
+Destroy hostile Shard ships
+Boarding the Shard
+Board damaged Shard vessel and obtain phasing detector
+Return to Union
+Return phase detector to the Union commander
+Power to the people
+We provided protection for Union mission in Sea of Sorrow. Additionally, our raid on another Shard group secured phasing detector requested by Union commander.
+Collecting wealth
+Obtain 30 units of shard ore and deliver them to Salem station
+Union's research of shard asteroids is advancing well, but their largest Salem facility needs a new supply of raw shard material. Your mission will be to enter a dangerous Sea of Sorrow area once again and gather a load of shard ore. Beware of hostile attacks in this contested part of space.
+Collected and delivered
+All done! We've delivered the ore to Cavanaugh. He seemed genuinely pleased.
+Protecting investments
+Find the Trafalgar
+There is another urgent request from Union command. Shard mining technology has been perfected and it has already been sold to Hub scientists. Union vessel the Trafalgar was en route to deliver the package to New Sagittarius station in Hub space, but was attacked and hijacked by the Shard. The delivery of Union systems cannot be delayed, so another shipment is already prepared for Hub. Your mission however is to track down the Trafalgar somewhere in the Paw region and destroy it. Allowing our technology to remain in the hands of a third party is unacceptable. Eliminate our vessel and destroy any Shard ship tampering with it as well.
+Get rid of them all
+Destroy the Trafalgar and the local Shard detachment
+Gotcha!
+Mission successful! We cleared the area of the Shard. The Trafalgar is also a thing of the past.
+Stand your ground
+Travel to Fidelity outpost in Nexus Perimeter
+Nexus Fidelity outpost in Perimeter has been under heavy attacks from Revenants for weeks. Station is still standing, but barely and urgent help is needed to defend it until it is repaired and reinforced. Nexus rarely asks for outside assistance and this could be a good opportunity to earn both credits and get a closer look at this strange faction.
+Stand firm
+Help defend the installation
+Fidelity defended
+We've helped in defending Fidelity from the Revenants. Perhaps nexus will be more willing to extend hospitality in the future.
+Rise of the machines
+Travel to Da Vinci station and pick up one of the cyborg prototypes
+Dr. Thomas Scott, leader of Nexus announced that all tests on cyborg prototypes were finished with excellent results. First prototype was dr. Scott himself, basically engineered after his almost fatal injuries in the battles of the second Gemini war. DaVinci military research division already began preparations to use cyborgs for military purposes. Your mission will be to transport one of the prototypes from DaVinci station to Advanced Arms In. HQ. Baeldor Republic will probably do everything in their power to stop this project, so be on your guard.
+Cyborg at the door
+Deliver cyborg prototype to Advanced Arms HQ
+Baeldor in the way
+Eliminate Baeldor attackers
+Dock approved
+Dock with Advanced Arms HQ station and deliver your cargo
+All done!
+Despite Baeldor's honest effort to stop us, we've successfully delivered our package to the target station. Nexus should be pleased.
+Error
+Travel to Charos outpost
+Cyborg technology developed by Nexus has a serious error. Looks like it all worked fine on small number of prototypes, but larger scale production revealed some serious flaws. Advanced Arms division reported problems with the entire first series. Engineered to serve as auxiliary security of Nexus space facilities, cyborgs extended their jurisdiction and initiated actions on their own. Already, a dozen incidents occurred, from hacking into Nexus security grid to launching attacks against Baeldor patrols on the other side of the border. Nexus is not interested in a large confrontation with Baeldor at this time and these actions must be stopped. Advanced Arms attempted to shut down the entire project temporarily, but cyborgs saw that as treason of Nexus interests and resisted. Your mission will be to establish control over Advanced Arms far outpost, Charos and eliminate any vessels controlled by the renegade cyborgs.
+Purgatory
+Purge the area of cyborgs by any means necessary
+Cyborgs are gone
+The area is clear of any cyborg activity. The Nexus sure does have an interesting way of dealing with problems...
+Fresh meat
+Intercept transport convoy near Panama tradeport in Outerlands
+It is well known the Triad is running all their business from Lunaee station. And they pay well... very well. One of their businesses is offering "physical and emotional refreshment " to customers from all over Gemini. And that service demands workers. Your mission is to secure new "volunteers" for the Triad. The best way is to visit the Outerlands. Total lack of law and state organization there will prevent problems later on. There is a small convoy near Panama tradeport in the Outerlands. Attack the convoy and board ships. It is reasonable to assume they are packed with people eager for work...
+The disabler
+Disable and board ships in convoy
+Volunteers
+"Volunteers" are on board and ready to begin their new careers on Lunaee station.
+Reducing the threat
+Reach the facility
+Triad operations from Lunaee station are in serious danger. Pirates from the Outerlands started to organize themselves in larger groups, posing a significant risk for Lunaee. It is time for a preemptive strike and to deliver a clear message. Your goal will be to destroy a small pirate outpost in in the Triangle dust cloud along with any defense force. That should ease the pressure on Lunaee for some time...
+Destroy the facility
+Destroy the facility
+Success!
+Success! The facility lies in ruins.
+Recession avoided
+Join mercenary force near Falkland station in Outerlands
+Recent efforts to reduce the threat from Outerlands have had a bad result. Attacks against Triad interests have increased dramatically and the response must be equally dramatic. Your mission will be to lead a full scale attack against Falkland station. Every single operation at Lunaee depends on our reputation as a safe haven for business, legal and illegal, and our ability to guarantee safety and discretion. Failure to ensure that would prove fatal for Lunaee. Spies report there is a large pirate group amassing there, commanded by Saleh Madera, notorious criminal wanted in dozen sectors. Destruction of this force will surely throw these pirate attempts back in disarray. Task force of the best mercenaries money can buy will offer assistance on this mission.
+Destroy Falkland
+Destroy Falkland station and all nearby hostiles
+Falkland is out of the picture
+This was a fight Outerlands will not soon forget. Falkland station lies in ruins and their task force is in pieces. A great victory for the Triad!
+Smuggling paradise
+Go to the first waypoint
+Syndicate is offering reward for any capable freelance ship willing to help in their fight against LaGarde Province. Most lucrative trade route between Gheb and Zoemin outposts is under constant attacks by LaGarde forces. They are attempting to reduce contraband smuggling along that route, but since it brings a lot of funds to Syndicate, pirates will not spare any effort to protect it. Your mission will be to patrol the entire route and eradicate any intruding LaGarde ships.
+Intruders
+Destroy LaGarde intruders
+Next waypoint
+Proceed to next waypoint
+Patrol over
+Our patrol is finished. The Syndicate should be quite pleased with our performance.
+Show of force
+Join Syndicate fleet near Phoenix outpost
+Trade routes inside Syndicate controlled space have been secured, but LaGarde Province won't give up that easily. Another mission is needed to show LaGarde leadershipthat Syndicate can also bite. Taking LaGarde territory is a too optimistic goal, but inflicting significant losses in a single skirmish should do the trick. Your mission is to take command of a small Syndicate fleet and launch an assault directly into LaGarde space. Timing for such an action is perfect. LaGarde is preparing a task force to cross into Directorate territory. That task force, currently positioned near Phoenix outpost, is your target. Engage them and destroy them.
+Eliminate LaGarde ships
+Phoenix in ashes
+The raid was a major success. It went better than anticipated. We managed to destroy the entire LaGarde task force.
+Grand prix
+Travel to Memphis station
+Successful raids against LaGarde Province gave Syndicate some time to reorganize. But, recent skirmishes drained Syndicate treasury significantly and it is time to turn attention back to business and earn some credits... quickly. Adjacent to Syndicate controlled space is Grand Prix installation where race spectacles are being held. Those events are very popular in Gemini and a lot of money is involved. Syndicate has signed in a team for the next event and victory is imperative. To help that, other participants should experience... technical problems. Your mission will be to travel to Memphis station where competing ships are being prepared, and "tweak" them. Just transport our people across to each of the rival ships and they will know what to do. Watch out for Trinity security force near the station.
+Pimp my ride
+Board marked ships
+Time to go
+Leave the area
+Winner ensured
+I don't think the Syndicate will have any problems winning the upcoming Grand Prix race.
+Line broken
+Go to the designated coordinates
+The Syndicate ordered a large amount of engine components from SupraTravel. Cargo is to be delivered from Maniwaki outpost to Zoemin station via Riftway through Syndicate space. Now, this deal will be moderately lucrative, but there is a way to make it fantastically lucrative. Your mission is to intercept cargo convoy while passing the Riftway in Syndicate territory, attack freighters and force them to drop out of Riftway. Then transport our people to cargo vessels and they will navigate them to our bases. Watch out for possible escort ships, and eliminate them. If you are successful, Syndicate will get the needed components free of charge and your cut will be generous.
+Breaking the line
+Disable the Riftway calibrator
+I'm taking this
+Capture both freighters
+All mine!
+We've captured both freighters. Syndicate ships were obviously close by waiting. They could have assisted us, but I guess that would just be too much...
+Struggle of heroes
+Join Last Ditch Rogues at Gilgamesh
+Gilgamesh station in Last Ditch is a well-known foothold of the Last Ditch Rogues, a rag-tag band of ex-military and outlaw "elements". It is also famous for being one of the strongest Gemini League strongholds during the last Gemini war. It was later abandoned and then retaken by pirates, but a lot of former League officers still call Gilgamesh their home. Benedict Salazar, for all intents and purposes the leader of the Rogues, is offering a reward for any mercenaries willing to assist them in fending off Nyxian attempts at conquering the region.
+Defensive positions!
+Defend Gilgamesh station at all cost
+Safe for now
+Gilgamesh is safe for now. I don't know what Salazar is planning, but he has to do something big. The Consortium won't just give up.
+Old archives
+Travel to Tesla ruins in Wasteland
+Last Ditch rogues offer reward for another task. Recent raids in Nyxian space secured enough material and supplies to rebuild and upgrade their main Gilgamesh station. Easiest and fastest way to do that is by using original blueprints of installation. They can be found at another old League base of operations, Tesla station. The site is these days known as Tesla ruins located in the Wasteland. Area is highly contaminated and dangerous and your mission is to reach what is left of the station, board it and find engineering plans for Gilgamesh.
+Searching
+Send troopers to destroyed Tesla
+Blueprints
+We've taken what we could find on Tesla ruins. I'm not sure it will be enough to get Salazar started, but who knows.
+Veterans in action
+Rendezvous with Last Ditch forces near wormhole in Last Ditch
+Every time Nyx launches an attack, the Rogues respond with a counterattack. It is important to show they are not defeated and there is also a more simple reason for i: supplies. Your mission will be to join this counterattack. This time Commander Salazar prepared a very bold plan to strike deep inside enemy territory, at the Caridad factory complex. If successful, this raid could ensure enough supplies and technology for many months ahead. Expect heavy opposition.
+Go to Caridad
+Cross into Nyx territory and proceed to Caridad station
+Destroy fleet
+Destroy defense fleet
+Supplies taken
+Another success. Although his plans might seem suicidal, it seems he knows very well what his men are capable of.
+Civil war
+Travel to Maelstrom and pick up the agents
+Baeldor government is seeking outside help to secure law and order within its borders. Different baronies of the Baeldor Republic used the turmoil of the last Gemini war and seized larger autonomy from central government. Now, growing strength of certain baronies caused problems within smaller provinces of the Republic. Carlos Figueroa, leader the Republic has a hard task of keeping the state together and avoiding a civil war at the same time. Your mission will be to undermine the power of the Maginot barony which refuses to help its neighboring Helmsford barony defend against sporadic skirmishes with the Empire. Maginot prefers to wait until Helmsford is weakened enough to be forced to kneel for help and accept any term set by their Maginot "saviors". Travel to Maelstrom and pick up agents from Figueroa. Then, use a nearby wormhole to approach Ganymede tradeport. There, Baeldor agents will plant controversial data proving that Maginot officials conspire with the Empire to weaken the rival barony. If Maginot security reacts, dispose of them.
+Back door
+Use Maelstrom wormhole
+Ganymede
+Dock with Ganymede and deliver the agents
+Out the door
+Leave Ganymede
+Maginot line
+Destroy Maginot security ships
+Bye bye
+Leave the area
+Subterfuge
+Our mission was hopefully successful, though we won't know immediately. We did encounter some resistance, but as far as Ganymede is concerned, we were simple pirates... our agents made sure their sensor logs say that.
+Second front
+Travel to Saskatchewan station in Cloud Nine
+Another opportunity to ease pressure on Helmsford barony has opened. Group from Cloud Nine, known as the Niners, launched operations against the Wasteland. Niners' largest outpost Saskatchewan is currently undefended. Your mission will be to raid the station and frame Nexus for it. No support is available for this mission, for no Baeldor ship must be connected with the attack. Hopefully, Niners' attention will then turn to Nexus and that will ease pressure on Helmsford. Your mission is to directly attack undefended Saskatchewan station, board it and plant false sensor readings, blaming Nexus for the attack.
+Clearing the path
+Destroy the stations defenses
+Planting data
+Board the station
+Should work
+That's it. If everything goes well, Helmsford will now have an easier time.
+Peace talks
+Travel to planet Corrion
+Finally, some equilibrium has been achieved between the two rival baronies of Baeldor Republic: Maginot and Helmsford. They both agree to negotiate a treaty and arrange future cooperation within the Republic. Envoys from both sides will meet on planet Corrion and to avoid buildup of rival forces in this delicate moment, your mission will be to lead a neutral security force for this meeting. Beware that intelligence agency reports the Empire could try to disrupt the conference. Imperial commanders are happy with the Republic remaining in disarray like it is now.
+Imperials incoming
+Defeat incoming Imperial ships
+Let's get along
+The political conference was interrupted by an Imperial fleet. It's a good thing Baeldor had reliable intel so we could stop the attack in time.
+Joint ops
+Join Baeldor force in District Alpha
+Peace talks between the Baeldor baronies were successful. Imperial raid failed to disrupt signing of the agreement, but succeeded in angering the now united baronies. Representatives from all provinces of the Republic now demand action. Baeldor will try to transfer border skirmishes into Imperial territory now. It will also be a good practice for new Baeldor unity. Your mission will be to join this operation and be the first to witness your own success from previous efforts. Baeldor expedition will expect you arrival in District Alpha. Attack Anatolia defense station and inflict as many losses to Imperial ships as you can.
+Anatolia
+Go to Anatolia station
+Destroy Imperials
+Destroy Imperial ships
+Eliminate as many Imperial ships as you can before reinforcements are brought in.
+Time to go
+Leave imperial space
+Imps beware!
+Our raid on Anatolia was successful. We've shown them they can't mess with Baeldor.
+Construction work
+Travel to construction site in GSE territory
+Gemini Space Engineering started construction of a large trade depot near New Delhi shipyard. The area is also contested by Syndicate pirates. Your mission is to protect the construction site against Syndicate incursions.
+On the defense
+Defeat Syndicate raiders
+Good riddance
+GSE construction site is safe. Syndicate usurpers have been destroyed.
+Supplies
+Defend GSE convoy from pirate raiders
+Construction of GSE trade depot in disputed territory is progressing well, but Syndicate is still causing problems. The threat will be greatly diminished once defensive guardposts are in place and that is your next mission. Cargo convoy is en route to the site carrying components to assemble the much needed guardposts. Your task is to patrol the area and defend the convoy until all preparations are done and the guardposts are deployed.
+Pirates be damned!
+Destroy incoming raiders
+Caravan
+Defend GSE convoy from pirate raiders
+Pirates be damned!
+Destroy incoming raiders
+Caravan
+Defend GSE convoy from pirate raiders
+Convoy reached safety
+The convoy reached their target location in one piece.
+Our work is done
+Go to Promethean
+New GSE trade depot, Iadera Negra is finally completed and will become operational within hours. However, Syndicate pirates still believe it is possible to eliminate the installation. Intel shows they have amassed a large force and plan to attack during the opening celebration. Your mission will be to conduct a preemptive strike in their space and prevent them from executing their vicious plan.
+Fleet assault
+Annihilate the assembled Syndicate fleet
+Job done
+We've thwarted the Syndicate's plans for GSE. I doubt they'll be launching any attacks any time soon.
+Trade route
+Go to Montreal station
+A very lucrative contract came up for the GSE. Officials from planet Pyros in Porphyria placed an order for a dozen industrial power cores. GSE produced those cores and your mission will be to deliver it to planet Pyros. Industrial energy cores are very valuable and will draw attention, so an ambush is probable, if not before, then upon arriving on Pyros, just before delivering the cargo.
+Cargo pick-up
+Dock with Montreal and pick up industrial power cores
+Onward to Pyros
+Leave Montreal station and travel to planet Pyros
+Head-smash
+Destroy attacking pirates
+Delivery on schedule
+Deliver GSE merchandise to planet Pyros
+Power cores delivered
+Planet Pyros received the large shipment from GSE. Delivery was 100%% successful.
+Give it here
+Travel to HeraCorp testing grounds in Trojan Basin
+MultiOps Industries is working hard to enhance various ship systems and offer best possible equipment solutions for both civilian and military purposes. Demand in Gemini is at an all-time high, given the fact that larger conflicts are expected sooner or later. MultiOps main rival, HeraCorp is doing the same thing and had some notable advances lately. Your mission will be to infiltrate HeraCorp testing grounds in Trojan Basin and interrupt ongoing test. Expect several ships of various types conducting experiments of modifications on sensor and navigational systems. Functionality level of those vessels is unknown, but it is possible to encounter a certain degree of resistance. Board marked ships and obtain blueprints of new systems. Witnesses are not desired so eliminate possible escort vessels.
+HeraCorp escort
+Destroy HeraCorp escort ships
+Blueprints grab
+Board inoperative test vessels and seize blueprints
+Here it is...
+That's it. We've got all the data we could get our hands on in such a short time frame. MultiOps should better be happy this this... and I better be happy with the reward.
+Test failed
+Intercept the Galileo test ship
+MultiOps spies reported HeraCorp research division had completed a new stasis field generator that theoretically could sustain cloak field for a very long period of time. A single ship has been equipped with the prototype and is testing it for potential clients. Your mission will be to destroy the test ship and make it look like the test failed miserably.  Intercept the test ship on the designated coordinates and destroy it. A known stasis anomaly in the vicinity should put off any investigation. They will detect strong stasis residue and ship remains and that should lead them to believe the tragedy occurred due to malfunctioning generator prototype, probably linked to the anomaly. At least we hope that will be the case. A word of warning though, the vessel is commanded by a very experienced captain.
+Destroy the Galileo
+Galileo burns
+The Galileo has been destroyed. HeraCorp will be significantly set back by this.
+Revenge
+Go to Cardiff outpost
+Despite the effort to conceal our actions, HeraCorp learned of MultiOps involvement in the sabotage of Galileo. Their reaction was a vicious raid against one of our outposts, Cardiff. Your mission is to recapture the outpost and eliminate any remaining mercenary hostiles nearby.
+Merc go away!
+Annihilate the mercenary fleet
+Retake Cardiff
+Transport Troopers to Cardiff and retake it
+Can't touch this...
+HeraCorp stooges were wiped out and Cardiff is back under MultiOps control.
+Contraband
+Reach the seized convoy
+Recently, Nyxian military seized a large MultiOps convoy under suspicion of transporting contraband. Convoy is now being detained near Monaco outpost in borderland Consortium territory. You must proceed there with haste and destroy every single freighter from our own convoy. That loss will be easier to swallow than allowing Nyxian military to inspect those ships and learn what was really transported by the convoy.
+Destroy MultiOps convoy
+Destroy MultiOps convoy
+Leave the area
+Secrets are safe
+MultiOps will be pleased to find out their dirty secrets are safe. The potentially incriminating convoy has been destroyed.
+Talawan raid
+Travel to Land of despair and intercept the convoy
+Korkyran military has been fighting tough battles in Heraclean Stretch for months and they are offering reward for assistance in their effort to crush the Thaurian rebellion. First task is to intercept a large convoy of freighters headed for Heraclean Stretch. Thaurian command is using this civilian convoy to transfer crucial military supplies to their outposts on the battlefield. Destroy every freighter in this convoy and possible armed escort.
+Annihilate the Thaurian convoy
+Convoy eliminated
+Dealing with Thaurian convoy wasn't too difficult. Freighters were weakly armed, and their escort wasn't too dangerous either. But, the existence of armed Thaurian escort at least confirmed Korkyran claims that "Talawan" was indeed a military supply convoy.
+Making them blind
+Destroy the marked satellites
+Next step in aiding Korkyran military efforts is a surgical strike against an array of their listening posts. Thauria has placed many satellites throughout Heraclean Stretch front and Korkyran command wants a least some of them taken out before larger fleet deployment can begin. This mission takes place in a very hot area, so opposition is likely to be extensive.
+Blind as a bat
+Mission successful. We've punched a sizeable hole in Thaurian sensor grid.
+Valuable friend
+Meet Arbiter Derrick near planet Korkyra
+Our continuous effort to help Korkyran campaign has caught an eye of high ranking officials in their military. Judicator Derrick wants to meet us near planet Korkyra to discuss further plans.
+Reaching the prison
+Reach Thaurian prison in Belerophont asteroid field
+Our next task in Korkyran civil war is to free several military commanders from Thaurian prison in the Belerophont asteroid field.
+Destroy defenders
+Destroy Thaurian defenders near prison station
+Gettin' the boyz
+Board the Thaurian prison station
+They're home
+Rescuing Korkyran personnel went well. Undercover agents sent by Derrick helped us with the surprise attack on Thaurian defenses and boarding the prison.
+Surveillance
+Rendezvous with the Colunga near the wormhole in Crysalys
+Preparations for a major Korkyran assault are almost done. Just one more thing is needed: new surveillance data on Thaurian military deployment. Korkyran recon ships have already been dispatched, but haven't reported back. Mission is to rendezvous with intelligence vessel Colunga and complete its task.
+Going to Colunga
+Transport your troops to the Colunga
+Keep an eye out
+Keep your position and survive for five minutes
+Going away
+Leave the area
+Surveillance done
+Colunga was destroyed by the time we got to her. Morse used the frequencies acquired from the wreck of the surveillance vessel to tap into Thaurian tactical transmissions. Thaurian commander Lehmann intercepted our effort and confronted us immediately, but we got away in time.
+Where are thou going Walt?
+Join Korkyran forces near Ares outpost
+The time for a decisive strike has come. Arbiter Derrick is leading the Korkyran fleet into Heraclean Stretch to confront Arbiter Lehmann's forces. Battle will take place near Ares outpost, the strongest Thaurian defense position in the region. Korkyran military offered us to take part in this strike.
+Eliminate Thaurian ships
+Eliminate Thaurian ships
+Find Walter
+Follow Walter Lehmann and destroy him
+In custody
+Deliver Walter Lehmann to Arbiter Derrick
+Endgame
+Judicator Derrick's forces obliterated Thaurian defenses on and around Ares station. We, on the other hand, succeeded in capturing Walter Lehmann himself and brought him to Derrick to face trial. Hopefully this will help end this bloody civil war.
+Assassination
+Destroy all marked ships
+[CaptainName] wanted dead or alive! [FactionName] willing to pay compensation.
+Capture
+Capture marked ship
+Wanted alive for questioning! [FactionName] offers reward for the capture of a local freelancer.
+Patrol
+Go through all patrol waypoints
+[FactionName] is looking for freelancers willing to patrol their territory. Pirate activity has been on the rise and we need able captains to assist us for compensation.
+Science
+Scan the marked anomaly
+[FactionName] is interested in acquiring detailed information on a local anomaly. Mission is to reach the waypoint and scan the anomaly.
+Rescue
+Assist the marked ship. (Destroy nearby hostiles)
+S.O.S. Ship stranded in the region. Assistance required.
+Maintenance
+Use your repair beam on the marked structure. (Context menu)
+Compensation offered for maintenance and repair of a local facility.
+Ferry
+Bring the requested cargo to the marked station
+Local station in need of supplies. Handsome reward offered for bringing the supplies.
+Taxi
+Take the VIP to the marked destination
+VIP in need of safe and quick transport. Willing parties will be compensated.
+Station assault
+Destroy the marked station
+Enemy installation was detected in the region. The mission is to reach the facility and destroy it.
+Station defense
+Protect the station by destroying all attackers
+Local station under attack! Need immediate assistance! Assistance will be rewarded.
+Convoy escort
+Protect the convoy as it makes its trade run
+[FactionName] is hiring mercenaries to protect their convoy as it passes through the region. Interested parties should contact Freelance commission.
+Convoy raid
+Destroy or capture marked ships.
+A convoy is passing through the region. The goal of the raid is to take down as many of the freighters as possible before they jump out of the sector.
+Smuggle
+Avoid security ships and smuggle the cargo to the marked location
+We need someone to take some less-than-legal cargo to the intended destination. Interested?
+Prospecting
+Destroy the required number of asteroids in the marked field
+[FactionName] needs prospectors! We're expanding our mining operations and are willing to pay handsomely to any freelancer who can provide more detailed information on the composition of the local asteroids.
+Deadly attack in Trinity Free States
+Unknown group of hostiles attacked civilian convoy in Trinity space. Several deaths are reported, including Gabriel Faulkner, well known former commander of the Gemini League. Authorities are still investigating the circumstances surrounding this tragic event.
+New incident in Trinity space
+Security sources in Trinity Free States reported another violent confrontation within its borders. There is no information regarding possible casualties, but witnesses place the son of recently killed Gabriel Faulkner at the scene. Whether this incident is a sign of new prolonged tensions or just a random event remains to be seen.
+Fighting in Nordhorn Passage
+Heavy fighting is reported throughout Nordhorn Passage. This busy trade line is known to be a frequent scene of raids and attacks by Anarchists. Authorities have dispatched security forces immediately, but travelling in that area is still not advised until further notice.
+Anti-pirate operations in Promethean
+Sources from Gemini Protectorate confirmed their involvement in a large scale operation against the Syndicate in Promethean. There were a few dozen deaths and one outpost has been destroyed. Protectorate claims they were forced into action by Syndicate provocations, but question remains if such brutal response was needed at this point.
+Rumors of war in Trinity
+Speculations have surfaced that Trinity Free States are on the brink of war. It is impossible to confirm such information, but the fact is Trinity has recently become a focal point of heightened tensions and armed skirmishes that include various political elements. The latest incident where Directorate was targeted, was started by Gladius group mercenaries, also stationed in Trinity. Analysts are not sure why the usually peaceful Trinity, is linked to this surge of violence, but some connect it to recent warming of relations between Trinity Free States and Gemini Protectorate.
+Convicts escape Directorate prison
+In the past couple of weeks, Imperial forces have stepped up their offensive against the Directorate. The government of the Directorate is now obviously at the verge of collapse, while state security is dismantling. One of the largest prison stations under Directorate control was attacked by Gladius mercenaries, which led to almost a hundred convicts being, among which Xavier Morse, hero to some and criminal to others. Morse was serving a twenty year sentence for murder, espionage and terrorist activity. Current whereabouts are unknown, but he is considered armed and dangerous.
+Revenant problem emerging again
+The Trade Association issued a warning to merchant vessels to avoid navigating through Will o' the Wisp area at this point. After a period of decreased activity by the local group called Revenants, number of their appearances is on the rise again. It is not yet known if there is any connection between surge of revenant activity and new Nexus stasis technology being tested in the same area. Nexus leader, Dr. Thomas Scott, remains silent on this subject and given the isolation Nexus is advocating, we can hardly expect any independent confirmation on this matter.
+Disturbances in Godswrath
+Volatile region of Maelstrom is witnessing another wave of skirmishes in the last couple of days. It is impossible to release any details at this point, but unconfirmed reports suggest involvement of another famous figure, Dr. Elenor Ridley, former member of Nexus and a brilliant young scientist who has been missing from the public for the better part of the last few years. Since Dr. Ridley is already a third renowned person from time of Gemini League to appear lately, question arises if all this activity is somehow linked.
+Sanctuary report admits security breach
+Sanctuary security force issued an official public notification that there was a violation of sanctuary law in the vicinity of planet Hogosha. Small group considered to be tied to the Protectorate, clashed with a little-known group referred to only as the Brotherhood. Both sides have been engaged and either destroyed or forced to leave Sanctuary space, all in accordance with Sanctuary law. Analysts continue to follow this story, worrying it might be further proof of a new aggressive Protectorate policy.
+Leviathan causes new clashes
+Sporadic fighting broke out near the site of the destroyed Leviathan. This area saw more than a few clashes in recent years. Numerous pirate and smuggling groups attempted to use the gigantic derelict as a hiding place or base of operations and recent fighting might be just another skirmish between those groups. But, this confrontation, like many others in the last few weeks, does have a touch of mystery after all. Allegedly, Protectorate operatives were seen in the vicinity of the Leviathan just moments before fighting began. Investigation is still under way.
+Holocom admits security breach
+Holocom Inc. released a public statement acknowledging security breach by unknown perpetrators. Holocom claims there is no damage to sensitive transmissions and military protocols, but warns that functionality of their communication grid will remain limited for a couple of days. Full investigation of this sabotage is under way.
+Empire loses control of Starpoint?
+Reports from multiple sources suggest major developments near Starpoint in the Imperial territory. Allegedly heavy fighting broke out near Starpoint. It is difficult to confirm any of these reports, but news of emergency redeployment of Imperial forces from their borders closer to Starpoint are definitely confirmed. It is impossible to establish responsibility for incursion, but it represents a radical new moment in Gemini relations. No one has ever attacked the Empire so openly and boldly. Many fear that Imperial retaliation will be fast and deadly and that the Cavurian treaty itself might be in jeopardy.
+Turning point for Gemini
+More concerning news are coming in from Imperial Mandate. Fighting near Starpoint decreased just for a short time and then restarted with great ferocity. Situation is still very confusing, but involvement of Protectorate elements and large Brotherhood presence are definitely confirmed, as well as an unprecedented panic in the Imperial navy. All civilian traffic through affected areas has been suspended and curfew is in effect.
+Clearmont evacuated
+Clearmont research station has been completely evacuated after a series of Nexus attacks. The reason for such aggressive Nexus stance is still a mystery, but it definitely represents a further alienation and militarization of a once peaceful organization.
+Brotherhood reveals itself
+Mysterious organization known only as the Brotherhood, after years in hiding, recently began large and public operations in Gemini. From the terrorist attack that left former Gemini League officer Gabriel Faulkner dead, to a recent raid on the Starpoint, Brotherhood permanently increased its presence and involvement all over the star system. Their latest act of aggression was seizing control of Clearmont station.
+War is declared!
+Though expected, this is a very sad moment for Gemini. Several years of uneasy peace have come to an end. Massive Imperial assault into Hadrian wall region has been confirmed. Reports are also coming in acknowledging Nyxian action against Mycaena sovereignty. It is only a matter of time before the entire system is pulled into the as well. Admiral Dmitry Kuzhev of the Gemini Protectorate already accused the Empire of breaching the peace treaty and called for the creation of a broad Gemini coalition to counter this threat.
+Nexus is entering the war?
+Baeldor officials accused Nexus command of terrorist attacks, claiming Nexus ships used their newly developed Catapult installation to launch a series of covert raids deep behind Baeldor borders. Analysts are speculating if this is a first sign of Nexus siding with the Empire. If it is, the future looks very grim for the Protectorate. Meantime, Baeldor command is relocating the 6th fleet from relatively calm Imperial border to the Nexus border.
+Protectorate seeking alliance?
+Unnamed sources from Korkyra confirmed the Protectorate asked for Korkyran assistance on several key fronts. Office of Arbiter Derrick stated they fully stand with Admiral Kuzhev's decision to actively engage forces of the Empire, but cannot spare any military units at this point due to tensions with the Thaurian rebel forces.
+Baeldor Republic prepares to invade Nexus
+Baeldor Republic Council, led by Carlos Figueroa, officially requested help from Gemini Protectorate in dealing with the increasing threat from Nexus. Small Protectorate task force already crossed to this new hotspot and engaged Nexus targets in the Perimeter. Correspondents agree this move by Baeldor is expected and logical since the Republic openly supported the Coalition. Unusual is only the fact Nexus is on the other side of this alliance, unlike the situation during the last Gemini war.
+Masada repels invasion
+Mycaenian heavy military complex Masada repelled a full scale assault launched by the Consortium. With the help of the Protectorate and its allies, the mighty fortress resisted once again and proved its reputation as an undefeated bastion. Sources at the scene of battle reported Nyxian fleet suffered dramatic losses before withdrawing to Nyxian territory. Successful defense of Masada will definitely boost morale of the anti-imperial Coalition in Gemini and secure the flank of the Protectorate forces before seriously standing up to the Empire.
+Empire advances beyond Hadrian wall
+Imperial main armada led by Admiral Cavurian swiftly finished extensive operations near Hadrian wall and eliminated any remaining Directorate resistance. Cavurian's fleet is already moving quickly towards the Lens. Most likely target is Clearmont station and Brotherhood forces entrenched there. The determination of Imperial command to hunt down and destroy the Brotherhood is highly unexpected. There is simply no logical reason to waste so many resources pursuing an elusive enemy without territory, while at the same time more powerful factions are actively engaged in forming strong alliances on Imperial borders. Regardless, Admiral Cavurian is a proven military genius and his strategy, though not easy to understand, just might prove to be a victorious one.
+Nexus Catapult sabotaged!
+Spokesman for Dr. Thomas Scott officially confirmed news that the Catapult installation has been sabotaged. The Catapult was the latest proud achievement of Nexus scientists, completed just a few weeks ago. It was built to harvest the power of stasis anomalies on a great scale and allow ships to be "catapulted" over huge distances. Spokesman said this installation would be offline for weeks or months and also immediately accused the Protectorate for the sabotage. He offered proof that Dr. Elenor Ridley, former member of the Nexus and original team that started the Catapult project years ago, was one of the operatives that carried out the entire operation for the Protectorate. Gemini Protectorate hasn't commented on the accusations so far, but officials from Baeldor Republic have admitted a role in this action, saying it was a legitimate military strike against a target that launched raids inside their borders.
+Overwhelming victory for Gemini resistance
+Reports are coming in indicating Imperial forces have been badly beaten in the Serpent region. Admiral Kuzhev led the Protectorate and allied forces in a decisive assault against the drained Imperial fleet that previously defeated the Brotherhood at Clearmont and hunted them all the way into Serpent. Witnesses described the battle as the most intense in this war so far. Empire lost more than two thirds of its elite battle group and it is questionable whether they can recover from this blow. Moreover, due to the fact that Baeldor also recently opened a new battlefield against the Empire on its borders, one must wonder if this is the beginning of the end for the Empire in Gemini.
+Days of the Empire are numbered?
+Content of top secret military meeting between Protectorate, Baeldor, Trinity and Mycaena has surfaced recently. Admiral Kuzhev presented staggering results of a classified operation conducted at Starpoint and beyond, in imperial mainspace: Empire is at the verge of collapse! On the other side of Starpoint, Empire has been almost eradicated after a few years of bloody war against a rebellion from the Orion system and invasion of a strange alien race known as the A'Shriari. Admiral Kuzhev insisted this is the turning point and the best chance to strike at the Empire in full strength. They have no more reinforcements or logistics outside of Gemini and if the Gemini factions unite, death of Empire could be possible indeed. This exclusive information is verified through multiple sources from inside Protectorate intelligence, but identities of the agents cannot be revealed for security purposes.
+Aliens already in Gemini?
+After still unconfirmed news about the existence of an alien race beyond Starpoint surfaced, another, even more incredible story emerged. Aliens are already in Gemini! Unidentified structure in Iolian space, the Lens, is supposedly somehow linked to those aliens and their scouts have been here for years investigating and preparing for their future arrival. The story sounds far-fetched, but offers plausible explanation for many recent events: Protectorate's interest in the Lens and Clearmont, Brotherhood's raid on the same target and finally illogical Imperial offensive against the Brotherhood instead of fortifying its weakened positions. Whatever the case, this war is sure to bring many more surprises in the days to come.
+Coalition takes Gemini
+Confirmed or unconfirmed, news of imperial armageddon had an incredible impact on the course of the war. Almost all factions in Gemini, even those neutral so far, have joined the war and final push against the Empire. Imperial lines are falling apart rapidly. Last information suggests battles have reached the very center of the Imperial Mandate. Admiral Kuzhev said this is the endgame. There will be no retreat and no mercy for oppressors and called once again for every capable man in Gemini to join the battle.
+Alien existence confirmed!
+Unconfirmed reports given by witnesses from battle at Starpoint claim several unknown alien vessels arrived through the Starpoint for a short while during the on-going fighting. If true, this news could change everything. Past investigation of the Lens installation in Gemini as well as Imperial research in the remote Orion system already suggested the possible existence of intelligent species other than humans, but it was always speculation. Is this the final confirmation? If so, what would they want from us?
+Empire surrendered!
+This day will be remembered for generations. All remaining Imperial forces that didn't flee through the Starpoint accepted unconditional surrender. Admiral Kuzhev and the forces of Gemini Protectorate will keep temporary control over the Starpoint, while all Imperial forces are to be disarmed and taken to detention camps. The war is over!
+The war continues?
+New statement was issued from the office of Grand Admiral Dmitry Kuzhev. In the interest of preserving lasting peace and stability in Gemini, military operations of Gemini Protectorate and its allies will not be suspended until Nyx and Nexus also surrender unconditionally. Statement comes as a cold shower to all those who expected that war and destruction are now behind us. In addition, Protectorate will establish a task force to further investigate the existence and whereabouts of the Brotherhood and the mysterious A'Shriari.
+[HeroName] spotted!
+[HeroName] found dead!
+Hunt down and kill him.
+Hunt down and kill her.
+[RegionName]: Well-known criminal Quinton Gombos has been spotted travelling through the region. People are advised to be careful until he is finally apprehended.
+Nyxian authorities claim the death of outlaw Quinton Gombos has been confirmed beyond any doubt.
+[RegionName]: Nexus security claims notorious thief Deedra Salee has been spotted in the region. Licensed bounty hunters are warned against intrusion into nexus territory without official passport.
+Under somewhat mysterious circumstances, a known criminal Deedra Salee has been fatally injured. Both Nexus and Baeldor denied any involvement in assassination, but praise the end of the hated thief.
+[RegionName]: Leena Rinner, renegade veteran military captain, has reportedly been seen in the area. She is wanted by Korkyran and Thaurian authorities for treason. Captain Rinner is considered armed and extremely dangerous.
+Leena Rinner has been killed during a skirmish with unknown attackers. No one claimed responsibility yet.
+[RegionName]: Vicious pirate and mass murderer Thaddeus Malen was seen in the area. Security forces reported several fatalities while attempting to make an arrest. Malen and his group escaped capture, but presumably remain in the region.
+Thaddeus Malen was finally executed in a short but deadly strike. It is still unknown whether the action was carried out by local security or an unknown bounty hunter.
+[RegionName]: Several witnesses claim sightings of Keira Iredale, former scientist charged for causing a fatal incident that resulted in dozens of deaths recently.
+Body of Keira Iredale has been discovered today. Notorious scientist thus evaded standing trial for her crimes, but many people are relieved by this news.
+[RegionName]: Gladius Group recon squadron tracked down renegade agent Raphael Slotnick. He is considered a priority threat and his elimination will be rewarded.
+Imperial rogue agent Raphael Slotnick has been taken out at last. It is yet unknown  by whose hand Slotnick had perished.
+[RegionName]: Convicted spy Kano Saichi visited several of his associates in the region. MultiOps raised the reward for his capture in hope he won't escape again.
+Kano Saichi, middle-man in recent high profile industrial espionage scandal, surprisingly turned up dead today. Investigation is still underway.
+[RegionName]: Protectorate spies have reportedly cornered terrorist Sarah Coon in the sector. Search is still in progress, but security officials say her arrest is a matter of time.
+Sarah Coon, anti-Protectorate fighter was killed during an isolated fight. Protectorate praise the death of, as they call her, dangerous terrorist but deny it was a result of their operation.
+[RegionName]: Patrick Sansone, dangerous criminal and drug dealer was seen in the area. Sansone is linked with dozens of attacks against civilians and destruction of property.
+Hated criminal, murderer and smuggler Patrick Sansone was found dead alongside members of his inner circle. Though he won't stand trial for his disgusting crimes, his death is great news for all decent citizens.
+[RegionName]: General Curtis Champion continues his new career as high profile terrorist. Innocent civilians in the area are added to his long list of victims. No bounty hunters still dare to confront him and military operations were also unsuccessful so far.
+Notorious terrorist Curtis Champion finally met his end today. His dead body has been publicly displayed as proof he is no longer a threat. Gemini citizens are thankful to the unknown hero that ended Champion's bloody spree.
+Diplomatic convoy transporting Baeldor and Union officials was attacked by unknown mercenaries near Spire station. Sanctuary security reported no casualties were noted and a counterattack was fast and successful.
+Negotiations between Mycaena and Nyx regarding free travel of civilians failed.
+Hamid Manneki wins his third in a row title at Grand Prix.
+New Sagittarius station in Hub space will be fitted with new communications array as Holocom announces the lucrative business contract.
+Huge blast rips through the Reunion storage facility in Trojan Basin. Security reported seven people were killed and investigators still cannot confirm if this was an accident or a malicious terrorist attack.
+United Korkyra civilian organization initiates another campaign to bring Thaurian and Korkyran representatives together in another attempt to end the bloody civil war.
+Iolian security commander announces MultiOps will withdraw from plans to build a military outpost in Nordhorn Passage. Relentless attacks by Anarchists made the construction impossible and all plans are suspended until security situation improves.
+Pirates from Last Ditch claim responsibility for assassination of Nyxian military officer last week near Fenicia.
+Commander of Fenicia trade station announces signing of treaty with Nyxian Consortium. Treaty will provide special trade benefits for Nyx companies, while Nyx agrees to ensure the future safety of Fenicia.
+Gladius group mercenaries signed an agreement with Gemini Protectorate. With this new agreement, Protectorate will accept cadets from Gladius group and educate them in the same way as their own candidates.
+Rumors appeared that Trinity Free States government is ready to begin negotiations with Porphyrian officials regarding possible future alliance.
+Another science expedition has been lost in the Aethera region. This is the fourth similar incident this year in which lives were lost, but scientific interest in this isolated and dangerous place is still at an all-time high.
+Outbreak of Hirkonian flu swept planet Corrion. Tens of thousands are reported infected. Travelers are warned against visiting the planet until situation is improved. Full quarantine is still not imposed, but caution is advised.
+Security officials from planet Fairuz announced the end of military operations against crime syndicate connected to drug smugglers from the Triangle region. Union claims complete victory after last criminal encampment near Baquus city was cleared by military.
+SupraTravel contingency team repaired Riftway accelerators on route 088, passing through Sentchuk Barony. Travel is again available and unrestricted.
+HeraCorp released details of last month's weapons test in Aristes Belt. Detonated projectile carried multiphase isotron device, controversial subatomic warhead that is designed to target planetary surfaces. HeraCorp claims all security measures were taken and no permanent pollution was detected.
+Terrible collision between two freightliners caused havoc today in Genoa Passage. Malfunctioning navigation system on one of the vessels is the probable cause of the accident that left fifteen crewmen dead and dozens more seriously injured.
+Seismologists on planet Pyros observed dramatic increase in volcanic activity near the planet's poles. Citizens are urged to leave the most dangerous areas and remain calm until new details are revealed.
+Nexus court sentenced Dr. Alexander Sloan, renowned Hub scientist, to 30 years in prison for espionage and treason. Sloan previously managed Nexus research division for advanced materials. When he declared his intention to leave Nexus, he was accused of stealing research results and delivering them to his new associates.
+Archeologist Marianne Hallmark, leading authority on the mysterious Gemini artifacts research, stunned the public with another bold statement. She claims recent findings in Iolian space definitely confirm theory of intelligent alien life in Gemini prior to arrival of humans.
+Sanctuary military warns pirate groups from adjacent sectors that serious armed response is imminent unless raids on civilian convoys aren't stopped immediately. Threat is likely to be aimed at the Stoners group, as they are held responsible for multiple incursions in Sanctuary space during recent weeks.
+Nyxian military fleet announced plans to step up design and production of new carrier class vessels. Many of their local commanders expressed the need for that kind of weapon in order to bolster their capability of staging prolonged operations in areas without sufficient number of logistical bases, such as the restless Last Ditch region.
+Latest social survey data estimated total Gemini population at 8.5 billion, around 200 million less than displayed in the last data Colonial Directorate acquired before Gemini wars began. The decrease is attributed to casualties of war, drop in birth rate, missing people in stasis anomalies following Starpoint incident and twenty year-long closure of Starpoint wormhole that prevented any immigration from the rest of the Empire.
+Population of planet Carthagena reached one million for the first time since the apocalyptic destruction more than twenty five years ago that swept its surface. Before Starpoint incident, Carthagena was a flourishing planet with more than 100 million citizens. Experts say this is a good sign, but further improvement is unlikely due to drastically worse living environment inherited after the tragedy.
+Aethera spreading
+Porphyrian officials ordered high alert status for entire border region with Aethera. Vast and powerful disturbance began to spread in recent hours. Sakkara station has already been enveloped and damaged. Evacuation is underway and emergency teams assembled in the vicinity.
+Probe into Aethera
+Government on planet Pyros quickly assembled a special task force to probe into Aethera region and investigate the reason for its sudden deadly spread. Details are still unavailable, but it will be interesting how this mission will develop since Aethera is almost impossible to travel through.
+Kepler station (re)discovered
+Porphyrian investigation team successfully penetrated Aethera nebula and discovered that a forgotten science station Kepler is still standing in the center of the region. Sources from Sakkara station explained that expedition ships were equipped with highly modified shield systems that can withstand the damage from Aethera.
+Aethera contained!
+Commander Tia Camire, supervisor of Porphyrian operations in Aethera, issued an official statement saying that crisis in the Aethera region has been resolved. Expedition team isolated the reason that caused disturbances to start spreading and eliminated it. Statement doesn't mention what exact role NeoPhysics scientists from Kepler station  had in everything, but witnesses reported there was a heavy battle at the end where Porphyrian expedition force engaged large numbers of NeoPhysics vessels. Aethera has now receded to its original size, but due to high levels of deadly radiation, still remains a very dangerous area to travel.
+[FactionName] faces resource shortage. [CommodityName] in high demand, prices skyrocket!
+[FactionName] depletes stockpiles. [CommodityName] in short supply, prices increased!
+[FactionName] announces resource estimate. [CommodityName] needed, prices go up!
+[FactionName] storage depots filled. [CommodityName]  gets reduced price.
+[FactionName] reports full stockpiles. [CommodityName] prices plummet.
+[FactionName] enforces embargo. [CommodityName] becomes contraband.
+[FactionName] introduces trade restrictions. [CommodityName] sales forbidden.
+[FactionName] drops embargo. [CommodityName] no longer illegal.
+[FactionName] reaches trade deal. [CommodityName] sales allowed.
+[FactionName] removes trade ban. [CommodityName] is again legal.
+[RegionName] is cut off! T-Gate undergoing repairs.
+[RegionName] suffers severed travel lines. T-Gate offline
+[RegionName] drops in isolation. T-Gate navigation software compromised.
+[RegionName] rejoices. Traffic through T-Gate returns to normal.
+[RegionName] resumes normal travel routine. T-Gate system back in green status.
+[RegionName] finally established full T-Gate capability. All traffic flows as usual.
+[StationName] is closed off due to serious disease outbreak.
+[StationName] shuts down all operations after critical power core failure.
+[StationName] is under full quarantine after isolating unknown dangerous virus sample.
+[StationName] is under lockdown following a deadly terrorist attack.
+[StationName] suspends business as a result of serious security breach.
+[StationName] is no longer under lockdown. Business returns to normal.
+[StationName] contains latest crisis. All services are enabled.
+[StationName] overcomes difficulties. Operations resumed normally.
+[StationName] announces all logistical and trade business is now restored to normal status.
+[RegionName] encounters traffic problems. Riftway undergoing overhaul.
+[RegionName] begins detailed inspection of Riftway. Travel problems inevitable.
+[RegionName] undergoes a thorough security sweep of Riftway. All traffic slowed down.
+[RegionName] returns to normal. Riftway reactivated.
+[RegionName] resumes normal traffic. Riftway problems are taken care of.
+[RegionName] enjoys unrestricted travel again. Riftway status corrected.
+[PlanetName] under complete lockdown. Local security closes planet off due to quarantine.
+[PlanetName] thrown in isolation as a result of intense pollution with deadly toxins.
+[PlanetName] suspends all services until large security crackdown is completed.
+[PlanetName] halts all operations due to global planetary weather disturbance.
+[PlanetName] reopened again. Life slowly returns to normal.
+[PlanetName] resumes everyday business. All restrictions lifted.
+[PlanetName] removes landing ban. Operations back in business.
+[PlanetName] opens services to all. Recent problems are history.
+[FactionName] announces high demand for ship systems. Prices increase.
+[FactionName] places huge order for ship systems. Prices skyrocket as a result.
+[FactionName] reports dramatic shortage of ship systems and trade prices jumped instantly.
+[FactionName] weakens demand for ship systems. Prices plunge fast.
+[FactionName] retreats from a trade deal on ship systems. Move causes sharp price fall.
+[FactionName] fails to find new suppliers for industry. Ship systems value drop follows.
+[FactionName] suddenly drops demand for ship systems. Prices follow trend.
+[CompanyName] raises prices of its products due to very high demand and limited availability.
+[CompanyName] announces increase in prices of its products following sharp jump in orders.
+[CompanyName] praises new contracts signed recently. Prices of its products rise steadily.
+[CompanyName] announces price drop on its products for marketing purposes. Analysts speculate company might be in trouble.
+[CompanyName] admits financial troubles. Prices of its products fall fast.
+[CompanyName] agrees to temporary halt production on its products due to weak demand on market. Prices drop anyway.
+[RegionName]: Pirate activity increased!
+[RegionName]: Number of pirate attacks on the raise!
+[RegionName]: Pirate raids spirals up!
+[RegionName]: Risk alert issued due to increased pirate presence!
+[RegionName]: Pirate incursions grow by the hour!
+[RegionName]: Pirate activity decreased!
+[RegionName]: Security crackdown succeeds. Pirate activity declining!
+[RegionName]: Number of pirate raids shrinks!
+[RegionName]: Pirates lose initiative. Number of attacks drop!
+[RegionName]: Threat of military action caused pirate threat to diminish!
+[RegionName]: Ion storm causing havoc!
+[RegionName]: Massive Ion storm sweeps through the area!
+[RegionName]: Sensors detect ion storm. Caution is advised!
+[RegionName]: Ion storm relentlessly bashes the area!
+[RegionName]: Development of Ion storm reported!
+[RegionName]: Higher rate of anomaly appearances detected!
+[RegionName]: Disturbance caused by sudden anomalies on the increase!
+[RegionName]: A.M.P. warns of increase in anomaly sightings!
+[RegionName]: Anomaly monitoring stations detect surge in anomaly detection!
+Nexus science council marked 6th anniversary of first successful stasis rift extraction
+Six years ago, Nexus research team led by brilliant young scientist Dr. Elenor Ridley, successfully performed first ever stasis rift extraction. Ridley conducted research of stasis anomalies for years before and concluded that appearances known as stasis rift caused material objects to be displaced from normal space and time, but weren't necessarily destroyed in the process. Following discovery, she finally constructed a device that was able to pinpoint exact locations of individual rifts and stabilize the anomaly permanently. Once stabilized, rift anomalies released captured objects back into normal space. Using this new technology, Dr. Ridley extracted her first target, captain in the fleet of Gemini League, Jared Hunt. This achievement proved Ridley's theories to be correct. Captain Hunt, trapped inside a stasis rift for more than twenty years, had no idea what happened in the meantime. He was the same age he was on the day the rift caught him, and he was sure only a few moments have passed. Similar situations later repeated with all other "extractees", known as revenants. First successful use of technology based on stasis rift research opened up an entire new field of science. In the months and years that followed, additional uses were found for this technology, like stasis cloaking device, Jumpdrive, or experimental device for deep space travel currently being installed on the Nexus Catapult facility.
+SupraTravel unveils prototype design of new Riftway harmonic stabilizer, exactly 20 years after first T-Gate was constructed
+SupraTravel, licensed to maintain and develop T-Gate and Riftway installations, continues to upgrade technology that allows safe and fast travel through Gemini. The company was responsible for setting up first the useable T-Gate, exactly twenty years ago. It marked the beginning of fast in-system transportation, revolutionary technology that brought all parts of Gemini closer and initiated a new era of trade and social development. Since then, dozens of T-Gates were constructed and some areas were connected via Riftways. New harmonic stabilizers introduced now should help sustain more stable Riftways and avoid frequent interruptions on most congested trade lines.
+Trinity Free States celebrate three years of sovereignty, a day when three Prefectures broke free of Directorate control and signed mutual defense pact
+At the end of the second Gemini war, Colonial Directorate suffered heavy losses and started to lose control of the territory it seized previously. In addition, Imperial forces that came back through Starpoint also turned against the Directorate and diminished their strength further. Three Prefectures acted on this opportunity and decided to break free of Directorate control. Independent factions of Gemini were either badly beaten in the war or entangled in local civil struggles and had shown no interest in helping any of these Prefectures. For that reason Orenhelm, Cromwell and Degran Prefectures signed a mutual defense pact. A year later, this pact welcomed another Prefecture, Vorten as a member in a new state officially named Trinity Free States.
+Three years ago Thaurian Alliance launched first operations against Korkyran government in civil war that still rages today
+At the end of second Gemini war, Korkyran officials confirmed Christopher Derrick as their new Grand Arbiter. One of his opponents, judicator Walter Lehmann, was furious for losing the title he thought he was entitled to and began an open rebellion with his supporters. Lehmann was certain Derrick's policy of cooperation with other factions would weaken the proud and strong Korkyran military tradition and vouched to prevent it. Civil war that caused Korkyra to split in half continues to this day. Lehmann, unable to defeat Arbiter Derrick, proclaimed a new state on almost half or the Korkyran territory, Thaurian Alliance, and separated from the central government completely. Two sides are today set firm in a checkmate and despite battles raging in Heraclean Stretch every day, neither side is even remotely close to victory.
+Masada battle station marked four years since construction. The never-conquered Masada stands as a living proof of outstanding engineering
+Masada battle station was originally planned by Gemini League engineers, but construction site was abandoned following the faction's demise after the first Gemini war. MultiOps Industries continued the construction, but constant pirate raids and Nyx incursions delayed the plans once again. During the second Gemini war, partially completed station served as a shelter for refugees pouring in from Last Ditch sector. Masada was viciously attacked several times and massacres were committed, mostly by Nyxian forces. A new group emerged: Mycaena that worked hard to prevent future attacks. They gathered all available resources from nearby battlefields and used knowledge of dozens of scientists and engineers among the refugees to finally complete the station. Final result was the famous Masada battlestation, largest and most powerful of all battlestations in the system. It was so strong it repelled three Nyx invasions on its own and pirates became too afraid to even travel near it. Mycaena eventually established a sovereign territory in sectors adjacent to Masada. Today, Mycaena is a small, but tough faction, known by its strict law and security, and their main symbol, Masada battlestation, remains undefeated and proud.
+Anniversary of Solomon peace talks, important turning point in the second Gemini war
+Solomon peace talks, held at the Solomon battlestation station during the second Gemini war, were the last attempt to reach a peaceful agreement between the warring sides. Conference failed miserably as it became a place of the largest ever assassination attempt. The "resurrected" Directorate used this conference to reveal its intentions and plunge the entire system into total war for the second time. Solomon peace talks were in fact the very last meeting of Gemini leaders in such roles. At the end of the war, Gemini changed dramatically. All major factions lost a great portion of their influence, many small factions were established and the Empire was again firmly entrenched in the middle of the system. In a way, Solomon conference was the last display of power among the mighty and independent Gemini factions.
+Anniversary of the first settlement on planet Carthagena; a day that marked the beginning of Gemini colonization
+First settlement on the surface of planet Carthagena, New Phoenix, was established by TerraCon Industries, powerful Imperial Corporation that came to Gemini alongside the initial military expedition. New Phoenix was also the first human settlement ever built in Gemini. In time, the settlement became a flourishing city of more than ten million citizens. At the end of the first Gemini war, Carthagena was the first to suffer from the effects of the Starpoint incident. New Phoenix, along with all urban centers on the planet, was completely annihilated. Tragedy was so unexpected and apocalyptic that no evacuation took place and the death toll was almost absolute. New Phoenix never recovered and although some citizens returned to Carthagena recently, the abandoned site of the first Gemini settlement remains a silent reminder of both the greatest and the darkest days in Gemini history.
+Three years ago, Hub scientists separated from Nexus and established a new neutral faction
+When the second Gemini war ended, Nexus leader Thomas Scott was certain his colleagues paid a way too high price for the war that left them only problems. Scott himself was badly injured twice. In the aftermath, Scott decided Nexus would be better off alone. New Nexus was significantly more isolated, aggressive and militarized. No travel was allowed without special license from Nexus Command and ties to other factions were weak at best. Following his new policy, Scott's Nexus, originally a scientific organization, started investing mostly in military technology or any advancement that could be used as a tactical advantage. Large civilian research division, Hub, couldn't accept this new course and abandoned Nexus to establish a separate faction and territory away from Scott's influence.
+A year ago Union launched "Giant leap", military operation to pacify Outerlands region, one of the most expensive failures in Gemini military history
+The Union, mostly oriented to trade and industry, wanted to assimilate the vast Outerlands region for a long time. When Lunaee station was opened, and the Triad started to function as a fully operational territory, Union felt threatened and finally launched a military campaign to subdue the outlaw territories and make use of their resources. Surprisingly, pirate groups, freelancers and mercenaries that dwelled in the targeted region proved a very resilient opponent. Union's military strike, codename "Giant leap" came across fierce resistance that combined veteran soldiers, crazy pirates and determined freelancers. Union fleet was humiliated and forced to withdraw in panic after only two weeks of fighting. Consequently, groups from the Outerlands advanced and invaded Union space. After some successes and plundering, they were stopped by Union's defenses and returned home. "Giant leap" remained a symbol of military action organized and led so badly that Union still hasn't recovered from it. The Outerlands were never invaded again.
+Hub scientist gather at Clearmont station and initiate research of mysterious structure named the Lens
+Two years ago Hub scientists gathered onboard Clearmont station and initiated an extensive research of the mysterious Lens structure. This structure has been present in Gemini from the times of early colonization. There's no data on who built it or why. First expeditions discovered the Lens is made from a completely unknown material. Also, the structure had no apparent purpose and in time public interest for it diminished. Occasionally, theories emerged linking Lens to either top secret Imperial projects, though none were ever confirmed. In that respect, Hub's effort to conduct a serious and thorough scientific investigation of the Lens is definitely welcomed and could finally reveal answers so many people are waiting for.
+War... pain... destruction... death... My life seems like a never-ending storm of eluding expectations. Whatever battle we win, there is always another one to follow... Great General Paul Demetrius took us close, so damn close to the promise of final peace and freedom... Rebuilding Gemini after the Starpoint disaster and repeated annihilation of the Colonial Directorate gave us hope that our long journey might finally be over, but evil rose once again and smashed our dream for the second time... Cruel destiny or just another display of human tendency to destroy everything they supposedly strive to achieve? I'm not sure any more, but I do know my soul is so tired from struggle. Still, I cannot give up, not now... All of my years are now lost in the chaos of war and most of my friends are long gone. That will not change... but my son deserves a better future. Our hated Empire has been restored in some parts of Gemini since Starpoint was reopened and we all live in fear once again.
+Do we have the strength to stand up to them? Do we have the will to rise again? Gemini is divided more than ever, the League is gone and there is no hero in sight that could unite us this time. I feel my strength diminishing, but there is one last thing I must do... find at least a glimpse of hope. Man can survive war, but no one can survive the loss of hope. All the efforts I made since leaving Gemini League restored a small portion of that hope. Search for the surviving leaders of the League unveiled some shocking secrets; secrets that just might be enough to spark hope Gemini needs so badly. I strongly believe Empire's return to Gemini had different reasons than simple conquest. I remember well how they operate and how brutal their military machinery can be. Sheer fact we are still here proves something is different now. My investigation will soon be over and we'll know what the true goal of the Empire is. But I feel time is short, as I suspect our little expedition has been under surveillance for weeks now. One way or another, we must prepare for new challenges, one that will decide the shape of Gemini future, maybe even our very existence...
+Lens
+Hub scientists began research of the Lens many years ago. It was interesting for its weird design and mysterious purpose. Eventually, they discovered it was made of a material unknown to them or to any faction in Gemini, or the Empire. Their hypothesis was that it could actually be alien in origin. Hub personnel attempted to find a way to open it, or damage it, but to no success. The real twist happened after Starpoint was reopened. With the arrival of the Brotherhood and the Empire, the Lens appeared to behave differently, almost like it was activated in some way. Waves of strange inter-dimensional energy were unleashed in regular patterns; energy that had no visible effect on anything in Gemini. But that was exactly what my father had learned: the purpose of this energy. It was to sever the psyonic link existing between beings like the A'Shriari and their hybrid brethren. The Empire also knew the aliens' unique abilities would be useless in Gemini, but had no idea exactly why. That is why they withdrew to this system and instead of total conquest, worked day and night to discover the origin of the energy. If they were able to duplicate its source, it would be possible to disable the aliens' abilities anywhere. On the other hand, the Brotherhood's intention was just the opposite. It was to determine the exact source of the inhibitor energy and shut it down for good. If they accomplish that, the A'Shriari would be able to invade Gemini unchallenged and put an end to the Empire permanently. While the annihilation of the Empire would hardly be a sad moment for Gemini, question was would the aliens stop there? Would they leave or wage war on the rest of humanity as well? Now that the Lens has been secured and Clearmont destroyed, what remains is to find out what knowledge had the Brotherhood obtained from the doomed station? And what do they intend to do with it?
+Proceed to the marked waypoint
+Mission successful!
+Anchor to pick up the cargo.
+Anchor on the designated location to deliver the cargo.
+Anchor to pick up the VIP.
+Anchor on the designated location to deliver the VIP.
+Commodity price increase
+Commodity price returns to normal
+Commodity price decrease
+News laws bring new contraband
+Contraband legalization passes into legislation
+Riftway back online
+Riftway goes dark
+Station under lockdown
+Space station resumes business
+Ship system price increase
+Ship system price returns to nominal value
+Ship system price drop
+Company increases prices on all goods
+Company resets prices to standard
+Company lowers prices on its goods
+Piracy on the rise
+Pirate activity returns to normal
+Civilians rejoice! Pirate activity at an all-time low
+A freak Ion storm appears
+Ion Storm passes
+Anomalous activity on the rise
+Anomalous readings return to standard margins
+Number of anomalies drops significantly
+Alien incursion detected
+Miner activity increased
+Trader activity on the rise
+War breaks out
+Peace treaty signed
+Occupation
+Damages are being calculated as a freak Ion storm dissipates.
+Miners flee from region
+Traders' exodus
+[CommodityName] prices return to normal margins.
+[FactionName] sends word system price fluctuation is over. Prices return to standard values.
+[CompanyName] official announcement: Prices of goods return within standard margins.
+[RegionName]: Unnamed officials reveal pirate activity within usual parameters once more.
+[RegionName]: Ion storm releases grip on the region. Local government vows to reimburse damages.
+Scientists announce anomalous activity back to normal again. [RegionName] back to nominal values.
+[RegionName] is under alien attack! Local military responds with force.
+Alien threat is real! [RegionName] dispatches its defense fleets.
+[RegionName] on high alert. Alien incursion detected!
+Miners rejoice! [RegionName] under miner "occupation".
+[RegionName] viewed as the new "gold mine". Miners flock in large numbers.
+[RegionName]: Local government voices concerns on the high natural resource exploitation rate following the rise of issued mining charters.
+[RegionName] sees increased traffic. Traders from all over Gemini coming to the region.
+[RegionName] "under siege" by traders from all around the star system, lured by potential high profit.
+[RegionName]: Governor revels in potential profits. Trading on the rise.
+[RegionName]: Miners leave region in great numbers. "Too much competition", they claim.
+[RegionName]: Officials claim they are not responsible for miners leaving the area, but local economy might suffer regardless.
+[RegionName] sees a significant drop-off in approved mining charters. Region no longer interesting for prospecting.
+[RegionName]: Traders avoid region. Rumors claim rampant piracy is the reason.
+[RegionName]: Local officials baffled as traders avoid the region. Profits going down the drain.
+[RegionName]: Trading affected by piracy. "Traffic is lower than usual", claims unnamed official.
+[FactionName] – [FactionName] borders heat up as war between two factions breaks out.
+War ensues! [FactionName] – [FactionName] at each other's throats.
+[FactionName] and [FactionName] are officially at war! Battles erupt along their borders.
+[FactionName] and [FactionName] sign peace treaty. Conflicts suspended.
+War ends as [FactionName] and [FactionName] sign peace treaty.
+[FactionName] and [FactionName] at peace! All combat operations halted.
+[RegionName] occupied! [FactionName] takes control of the region.
+[FactionName] occupies new territory. [RegionName] switches allegiance.
+[RegionName] taken over. [FactionName] claims victory!
+Anchor to pick up the contraband cargo.
+Anchor on the designated location to deliver the contraband cargo.
+T-Gate offline!
+Planet under lockdown by local authorities!
+[RegionName]: Monitoring stations report an all-time low in anomalous readings.
+[RegionName]: Significant drop in anomalous activity reported.
+[RegionName]: A.M.P. area scans show less anomalies are appearing.
+[RegionName]: Lower anomalous activity than usual. Area safer for travels.
+[RegionName]: Local security reports Archer "Doubleback" McGinty, a well-known fugitive, was spotted in the region. Civilians are advised to stay away if the outlaw is noticed, and if possible to contact local authorities.
+Gemini news network and G-Twatter social media is brimming with news that the the dreaded pirate Archer "Doubleback" McGinty is reported dead. We’re still waiting for official confirmation, but the bounty on his head has reportedly been claimed already.
+[RegionName]: Local news reels are brimming with reports of Elizabeth Arthur, also known as "The Red Queen". She was supposedly seen in the region.
+The Red Queen is no more! Reports are still being checked, but it seems the reign of Elizabeth Arthur, aka The Red Queen, has ended with her demise after a gruesome battle with a bounty hunter.
+[RegionName]: Local authorities issued a warning to all civilians in the region. Kate Hammerhill, a well-known fugitive from the law was spotted in the region.
+Korkyran officials claim that the infamous captain Hammerhill is confirmed as K.I.A. That concludes the decade-long search for the outlaw. Issued bounty reward might still be disputed, as our high-ranking Korkyran officials claim.
+[RegionName]: Mercadier de Molay spotted in the region. Security warning issued.
+Bounty for Mercadier de Molay has been paid out, reports claim. Official report states that he’s been found and killed by a freelance bounty hunter. Full details are not known yet, but eye witnesses claim the final battle is one to be remembered.
+[RegionName]: General security warning issued. Malcheor Valandil is reported roaming the region.
+Security officials released an official report, claiming a long-time fugitive, Malcheor Valandil, has been found dead. If the report is confirmed, it would be a severe blow to the reputation of the Gladius Group, since it is rumored that Valandil found its demise at the hands of an unsanctioned freelancer.
+[RegionName]: Notorious captain Jack Blade was seen in the region. Authorities advise against confronting him. Instead contact security to deal with the threat.
+Jack Blade, whose infamy grew to legendary levels in the recent years, is reported as killed in action. Details of the report are not yet disclosed, but it was suggested by unnamed high-ranking officials, that a bounty hunter claimed the reward.
+With Torrent Drive or T-Drive ships can travel at faster than light speeds by effectively reducing the ship's relativistic mass. This is achieved by generating a field of negative mass around the ship to counteract the ship's mass increase when approaching/exceeding light speed.<\n><\n>This field is generated by the technique of "Torrent particle stream". The highly charged plasma particles are rapidly (near instantly) accelerated generating increased mass in front of them and negative mass behind them. Such particles are then rapidly decelerated again "releasing" positive mass field in front of them and negative mass field behind. When sufficient amount of such particles is accelerated/decelerated the field is strong enough to affect the ship's relativistic mass.<\n><\n>The concept of negative mass has historically been long debated, and a technique of generating such mass was searched for, but a breakthrough has been achieved only when concept of matter, space and energy wasn't thought of as separate things but the same entity and only our perception of them was different.<\n><\n>When great amount of negative mass field is generated, the ship's relativistic mass is sufficiently decreased for it to achieve light and faster than light speeds. But the ship can only maintain those speed for limited time. At faster than light speeds a stress on a ship is great and because of that T-Drive is advised to be used cautiously, executing smaller jump ranges. The T-Drive charges are designed to limit stress on a ship but that also means smaller jump range. Multiple charges can be used but it is not advised.<\n><\n>Even though it's limitations, the T-Drive is one of humanity's greatest achievements because it opened a way for exploring new worlds, new systems and new possibilities.<\n><\n>The Torrent particle stream is invented and a proprietary patent of LGM group, subsidiary of which is also SupraTravel company.
+Activate the next mission via the Starchart
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]

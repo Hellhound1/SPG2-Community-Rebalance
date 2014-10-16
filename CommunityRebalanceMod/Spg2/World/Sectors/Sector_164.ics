@@ -1,0 +1,385 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky3.amb
+}	
+Spaceship:	
+{	
+	ModelId:	22
+	Position:	27265.94	0.00	61783.38
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	46
+	Class:	3
+	Skills:	0
+	Level:	1
+	Profession:	2
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m01pirate
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M01\DestroyPirates.sal
+		OnCapture:	Spg2\Scripts\M01\CapturePirates.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	31
+	Position:	27299.36	0.00	62058.32
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	7
+	Class:	3
+	Skills:	0
+	Level:	1
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m01trinity
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	49
+	Position:	27063.56	0.00	59274.00
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	12
+	FactionId:	6
+	Class:	7
+	Skills:	0
+	Level:	50
+	Profession:	3
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m01avalonSHP
+	Name:	Avalon
+	CaptainName:	Gabriel_Faulkner
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	47
+	Position:	27114.03	0.00	59274.80
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	14
+	FactionId:	6
+	Class:	5
+	Skills:	0
+	Level:	5
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m01galahadSHP
+	Name:	Galahad
+	CaptainName:	Jeremy_Coop
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	53
+	Position:	27098.58	0.00	59235.84
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	32
+	FactionId:	6
+	Class:	3
+	Skills:	0
+	Level:	5
+	Profession:	0
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m01sionSHP
+	Name:	Sion
+	CaptainName:	Tyrone_Jackson
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	23
+	Position:	27054.06	0.00	59235.01
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	27
+	FactionId:	6
+	Class:	4
+	Skills:	0
+	Level:	5
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m01raffaleSHP
+	Name:	Raffale
+	CaptainName:	Samuel_Farrow
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	54
+	Position:	27133.11	0.00	59233.79
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	18
+	FactionId:	6
+	Class:	4
+	Skills:	0
+	Level:	5
+	Profession:	0
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m01yukonSHP
+	Name:	Yukon
+	CaptainName:	Kobe_Tagachi
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	9
+	Position:	24935.71	627.04	63748.02
+	Rotation:	-0.01	2.55	0.00
+	KeyName:	resCen164
+	Name:	Remote_research_center
+	NameId:	98
+	FactionId:	7
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnPulse:	Spg2\Models\Structures\ResearchCenter\OnPulse.sal
+		OnActivate:	Spg2\Models\Structures\ResearchCenter\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\ResearchCenter\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport25.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	17
+	Position:	27265.00	-164.00	61883.00
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_164_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	6
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	3
+	Position:	23822.14	123.00	62203.66
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_164_0
+	Name:	Grappling_disperser
+	NameId:	89
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	4
+	Position:	26175.70	184.00	64206.35
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_164_1
+	Name:	Hyper-resonance
+	NameId:	90
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	5
+	Position:	25831.39	82.00	58234.84
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_164_2
+	Name:	Plasma_pulsar
+	NameId:	91
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\PlasmaPulsar\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	27110.14	0.00	59096.14
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m01aTRI
+	Type:	1
+	Radius:	2500.00
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M01\MainQuest01Start.sal
+OnExit:	Spg2\Scripts\M01\ExitTriM01A.sal
+}	
+}	
+Waypoint:	
+{	
+	Position:	27106.70	0.00	59120.40
+	Rotation:	-0.03	-0.34	0.00
+	KeyName:	m01avalonPosWpA
+	Name:	m01avalonPosWpA
+	Type:	3
+}	
+Waypoint:	
+{	
+	Position:	27143.21	-2.88	59101.40
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m01yukonPosWpA
+	Name:	m01yukonPosWpA
+	Type:	3
+}	
+Waypoint:	
+{	
+	Position:	27132.09	1.42	59129.77
+	Rotation:	0.04	-0.00	0.00
+	KeyName:	m01raffalePosWpA
+	Name:	m01raffalePosWpA
+	Type:	3
+}	
+Waypoint:	
+{	
+	Position:	27080.84	0.69	59096.33
+	Rotation:	0.08	-0.00	0.00
+	KeyName:	m01sionPosWpA
+	Name:	m01sionPosWpA
+	Type:	3
+}	
+Waypoint:	
+{	
+	Position:	27078.74	-3.70	59140.84
+	Rotation:	-0.04	0.00	0.00
+	KeyName:	m01galahadPosWpA
+	Name:	m01galahadPosWpA
+	Type:	3
+}	
+Waypoint:	
+{	
+	Position:	27267.54	0.00	61414.50
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m01PcPosA
+	Name:	m01PcPosA
+	Type:	3
+}	
+Waypoint:	
+{	
+	Position:	27113.05	0.00	59047.73
+	Rotation:	0.00	0.00	0.00
+	KeyName:	gameStartPos
+	Name:	gameStartPos
+	Type:	3
+}	
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector164.sal
+}	

@@ -1,0 +1,37 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questFinalCond = 0 ;
+mainquest GetById 122 GetAcquire questFinalCond ;
+
+PrintMessage EnterTriggerD ;
+int questCond = 0 ;
+mainquest GetById 121 GetSolve questCond ;
+if questCond == 0 && questFinalCond == 1
+	PrintMessage EnterTriggerD_ConditionMet ;
+	
+	game SetQuestMode 1 ;
+	
+	mainquest GetById 121 SetAcquire 1 ;
+	
+	waypoint GetByKeyName M17Dwp SetMark 0 ;
+	waypoint GetByKeyName M17DBwp SetMissionTask -1 ;
+	
+	structure GetByKeyName m17node8 SetEnabled 1 ;
+	structure GetByKeyName m17node8 SetMark 1 ;
+	structure GetByKeyName m17node8 SetMissionTask 0 ;
+	structure GetByKeyName m17node8 SetFriendFoe 2 ;
+	structure GetByKeyName m17node8 SetDestructible 1 ;
+	
+	ship GetByKeyName m17nexus3a SetEnabled 1 ;
+	
+	ship GetByKeyName m17nexus3a SetFriendFoe 2 ;
+	ship GetByKeyName m17nexus3a SetAIQuestStatus 2 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+endif
+End

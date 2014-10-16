@@ -1,0 +1,11 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+activated on mission fail or abandon
+	+linked through QuestMain.wdt
+*/
+
+game ShowPanel 0 0 ;
+
+End

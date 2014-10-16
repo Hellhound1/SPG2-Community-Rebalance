@@ -1,0 +1,30 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+
+questCond = 0 ;
+mainquest GetById 88 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 88 SetSolve 1 ;
+	mainquest GetById 88 DeleteObjective 1 ;
+	mainquest GetById 89 SetAcquire 1 ;
+	script Spg2\Scripts\M14\CS14EarthA.sal ;
+endif
+
+/* ================================ */
+
+questCond = 0 ;
+mainquest GetById 104 GetSolve questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	
+	mainquest GetById 105 SetAcquire 1 ;
+	script Spg2\Scripts\M14\CS14EarthF.sal ;
+endif
+
+End

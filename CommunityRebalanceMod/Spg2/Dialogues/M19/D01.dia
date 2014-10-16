@@ -1,0 +1,53 @@
+Dialogue:
+{
+	Portrait:	9
+	Text:	187
+	Voice:	Spg2\Sound\Voice\kuzhev\187.wav
+	Duration:	11.459
+}
+Dialogue:
+{
+	Portrait:	10
+	Text:	188
+	Voice:	Spg2\Sound\Voice\ridley\188.wav
+	Duration:	8.142
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	189
+	Voice:	Spg2\Sound\Voice\adrian\189.wav
+	Duration:	4.723
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	190
+	Voice:	Spg2\Sound\Voice\kuzhev\190.wav
+	Duration:	25.931
+}
+Dialogue:
+{
+	Portrait:	10
+	Text:	191
+	Voice:	Spg2\Sound\Voice\ridley\191.wav
+	Duration:	10.883
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	192
+	Voice:	Spg2\Sound\Voice\adrian\192.wav
+	Duration:	9.625
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	193
+	Voice:	Spg2\Sound\Voice\kuzhev\193.wav
+	Duration:	29.986
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M19\EndDia01.sal
+}

@@ -1,0 +1,11 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: War
+-------
++get inactive wars
+	+randomize facId1, facId2, eventDur
+	+addLog + addNews
+*/
+
+End

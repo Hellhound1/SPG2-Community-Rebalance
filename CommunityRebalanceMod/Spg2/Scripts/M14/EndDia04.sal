@@ -1,0 +1,16 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 91 SetSolve 1 ;
+mainquest GetById 91 DeleteObjective 1 ;
+mainquest GetById 92 SetAcquire 1 ;
+waypoint GetByKeyName m14EarthMarker2 SetMark 1 ;
+waypoint GetByKeyName m14EarthMarker2 SetMissionTask 4 ;
+ship GetByKeyName m14phoenixA SetEnabled 0 ;
+game SetControlEnabled 1 ;
+log 77 ;
+game SetQuestMode 0 ;
+End

@@ -1,0 +1,31 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 139 SetSolve 1 ;
+/* mainquest GetById 139 DeleteObjective 1 ; */
+mainquest GetById 140 SetAvailable 1 ;
+ship GetByKeyName m20ridleyB SetEnabled 0 ;
+ship GetByKeyName m20kuzhevSHP SetEnabled 0 ;
+ship GetByKeyName m20protect1 SetEnabled 0 ;
+ship GetByKeyName m20protect2 SetEnabled 0 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 64600 ;
+player AddReputation 100 ;
+player AddCredits 420000 ;
+script Spg2\Scripts\AwardHeavyWeaponU.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+storypanel 9 ;
+
+End

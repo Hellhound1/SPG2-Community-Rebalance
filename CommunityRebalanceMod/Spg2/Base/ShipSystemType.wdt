@@ -1,0 +1,5 @@
+Colum:	7				
+Id	Name	BaseId	IconFile	IconColumn	PriceColumn	NameColumn
+0	Light_weapon	11	18	19	4	1
+1	Heavy_weapon	8	4	4	3	1
+2	Fighter	32	3	4	2	1

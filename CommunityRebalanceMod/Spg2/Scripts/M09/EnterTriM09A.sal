@@ -1,0 +1,18 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 50 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 50 SetSolve 1 ;
+	mainquest GetById 50 DeleteObjective 1 ;
+	mainquest GetById 51 SetAcquire 1 ;
+	waypoint GetByKeyName m09marker SetMark 0 ;
+	waypoint GetByKeyName m09marker SetMissionTask -1 ;
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M09\D01.dia ;
+endif
+End

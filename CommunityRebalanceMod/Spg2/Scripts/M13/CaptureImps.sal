@@ -1,0 +1,51 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+
+mainquest GetById 83 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m13imp1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m13imp1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m13imp2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m13imp2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	if shipCond != 0
+		if shipCond2 != 0
+			
+			mainquest GetById 83 SetSolve 1 ;
+			/* mainquest GetById 83 DeleteObjective 1 ; */
+			mainquest GetById 84 SetAvailable 1 ;
+			log 73 ;
+			dialogue Spg2\Dialogues\M13\D03.dia ;
+			
+			game SetQuestMode 0 ;
+
+			/* -^-REWARD-^- */
+			player AddExp 25400 ;
+			player AddReputation 100 ;
+			player AddCredits 280000 ;
+			script Spg2\Scripts\AwardLightWeaponU.sal ;
+
+			/* -^-MISSION COMPLETE-^- */
+			int titleLine = 183 ;
+			int textLine1 = 1553 ;
+			int textLine2 = -1 ;
+			screen ShowWarnings titleLine textLine1 textLine2 ;
+			
+		endif
+	endif
+	
+endif
+
+End

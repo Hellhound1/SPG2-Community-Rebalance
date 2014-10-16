@@ -1,0 +1,34 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+PrintMessage Usao_u_TriM09C ;
+int questCond = 0 ;
+mainquest GetById 61 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage Usao_u_TriM09C_Prosao_QuestCheck ;
+	game SetQuestMode 1 ;
+	mainquest GetById 61 SetSolve 1 ;
+	mainquest GetById 61 DeleteObjective 1 ;
+	mainquest GetById 62 SetAcquire 1 ;
+	mainquest GetById 63 SetAcquire 1 ;
+	derelict GetByKeyName redemptionDER SetEnabled 1 ;
+	derelict GetByKeyName redemptionDER SetDestructible 0 ;
+	ship GetByKeyName m09rev5 SetEnabled 1 ;
+	ship GetByKeyName m09rev6 SetEnabled 1 ;
+	waypoint GetByKeyName m09bWp SetMark 0 ;
+	waypoint GetByKeyName m09bWp SetMissionTask -1 ;
+	ship GetByKeyName m09rev5 SetMark 1 ;
+	ship GetByKeyName m09rev6 SetMark 1 ;
+	ship GetByKeyName m09rev5 SetMissionTask 0 ;
+	ship GetByKeyName m09rev6 SetMissionTask 0 ;
+	ship GetByKeyName m09rev5 SetFriendFoe 2 ;
+	ship GetByKeyName m09rev6 SetFriendFoe 2 ;
+	ship GetByKeyName m09rev5 SetAIQuestStatus 2 ;
+	ship GetByKeyName m09rev6 SetAIQuestStatus 2 ;
+	game ResetShipEnemyList 1 ;
+	log 55 ;
+	script Spg2\Scripts\M09\CS09C.sal ;
+endif
+End

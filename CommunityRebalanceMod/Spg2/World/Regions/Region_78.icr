@@ -1,0 +1,481 @@
+NamePosition:	29338.82	0.00	110384.50
+MinimumLevel:	1
+MaximumLevel:	15
+MainFaction:
+{
+	Faction:	41
+	Ships:		
+	{	
+		22	23	24
+	}
+}
+Faction:
+{
+	Faction:	0
+	Ships:		
+	{	
+		22	23	24
+	}
+}
+Faction:
+{
+	Faction:	1
+	Ships:		
+	{	
+		43
+	}
+}
+Faction:
+{
+	Faction:	2
+	Ships:		
+	{	
+		18	19	20	21
+	}
+}
+Faction:
+{
+	Faction:	18
+	Ships:		
+	{	
+		40	55
+	}
+}
+Faction:
+{
+	Faction:	52
+	Ships:
+	{
+		12	51
+	}
+}
+RandomMission:
+{
+	Waypoint:	0	18778.31	-9.00	120436.13
+	Waypoint:	0	20808.18	-75.00	118652.34
+	Waypoint:	0	18294.20	440.00	116692.70
+	Waypoint:	0	21001.77	-975.00	115868.16
+	Waypoint:	0	22868.32	-78.00	118328.02
+	Waypoint:	0	15918.17	995.00	121837.59
+	Waypoint:	0	12636.06	-176.00	123479.80
+	Waypoint:	0	12858.97	-306.00	120730.00
+	Waypoint:	0	24273.07	313.00	121842.42
+	Waypoint:	0	28385.53	508.00	123484.38
+	Waypoint:	0	27755.03	-588.00	121006.26
+	Waypoint:	0	26730.41	-256.00	119379.06
+	Waypoint:	0	25607.59	-792.00	115726.42
+	Waypoint:	0	28566.36	-718.00	114635.10
+	Waypoint:	0	27012.13	291.00	112751.52
+	Waypoint:	0	25657.08	-727.00	111848.30
+	Waypoint:	0	34220.42	-704.00	112657.90
+	Waypoint:	0	31868.71	404.00	112361.73
+	Waypoint:	0	31062.75	-883.00	109818.84
+	Waypoint:	0	33566.36	-977.00	108495.77
+	Waypoint:	0	35853.98	-261.00	110234.30
+	Waypoint:	0	38520.09	106.00	113195.09
+	Waypoint:	0	39285.54	514.00	116590.28
+	Waypoint:	0	41043.82	920.00	114782.77
+	Waypoint:	0	39770.89	-772.00	114549.20
+	Waypoint:	0	27940.75	220.00	109019.19
+	Waypoint:	0	25499.38	-556.00	108558.41
+	Waypoint:	0	27362.59	540.00	106252.39
+	Waypoint:	0	25744.10	-393.00	104700.78
+	Waypoint:	0	28121.99	411.00	104059.12
+	Waypoint:	0	31980.60	-905.00	97757.91
+	Waypoint:	0	31828.35	-294.00	95451.09
+	Waypoint:	0	34832.56	-903.00	95696.52
+	Waypoint:	0	33229.73	-870.00	93648.82
+	Waypoint:	0	38183.88	-547.00	93538.94
+	Waypoint:	0	39711.63	-797.00	91651.74
+	Waypoint:	0	41818.82	-256.00	93263.38
+	Waypoint:	0	42028.04	803.00	90462.44
+	Waypoint:	0	37996.07	647.00	89474.31
+	Waypoint:	0	29196.27	-350.00	99116.48
+	Waypoint:	0	26442.66	-18.00	99739.18
+	Waypoint:	0	25230.15	255.00	96913.57
+	Waypoint:	0	23627.21	475.00	99046.61
+	Waypoint:	0	27115.20	-259.00	101351.44
+	Waypoint:	5	gas264
+	Waypoint:	5	amp265
+	Waypoint:	5	sat284
+	Waypoint:	5	mining284A
+	Waypoint:	5	mining284B
+	Waypoint:	5	mining304
+	Waypoint:	5	gas306
+	Waypoint:	5	amp322
+	Waypoint:	5	gas323A
+	Waypoint:	5	gas323B
+	Waypoint:	6	blackfootSTA
+	Waypoint:	6	masauriSTA
+	Waypoint:	6	kholmSTA
+	Waypoint:	6	erynSTA
+	Waypoint:	7	blackfootSTA
+	Waypoint:	7	masauriSTA
+	Waypoint:	7	kholmSTA
+	Waypoint:	7	erynSTA
+	Waypoint:	12	blackfootSTA
+	Waypoint:	12	masauriSTA
+	Waypoint:	12	kholmSTA
+	Waypoint:	12	erynSTA
+}
+InitialSetup:																																				
+{																																				
+	Security:	0																																		
+	Military:	4																																		
+	Trader:	5																																		
+}																																				
+Encounters:																																				
+{																																				
+	Density:	11																																		
+	SpawnList:																																			
+	{																																			
+		Spawn:	10	2	11	10	6	10	11	2	10	10	2	8	8	3	7	10	11	10	2	10	9	8	11	12	7	1	10	11	10	2	4	10	2	10
+	}																																			
+	SpawnList:																																			
+	{																																			
+		Level:	10																																	
+		Spawn:	10	2	11	10	6	10	11	2	10	10	5	8	8	3	7	10	11	10	2	10	9	8	11	12	7	1	10	11	10	5	4	10	2	10
+	}																																			
+	Security:
+	{
+		Faction:	41
+		Waypoint:		25297.42	0.00	124344.01
+		Waypoint:		27854.35	0.00	123865.74
+		Waypoint:		24873.14	0.00	121720.13
+		Waypoint:		26847.21	0.00	121459.58
+		Waypoint:		29522.90	0.00	121592.73
+		Waypoint:		25252.01	0.00	119674.68
+		Waypoint:		28134.69	0.00	119672.96
+		Waypoint:		18268.43	0.00	120377.90
+		Waypoint:		21076.41	0.00	120409.08
+		Waypoint:		17133.08	0.00	118440.05
+		Waypoint:		20163.23	0.00	118144.38
+		Waypoint:		22971.75	0.00	118031.94
+		Waypoint:		18450.10	0.00	115887.18
+		Waypoint:		21136.85	0.00	115844.39
+		Waypoint:		12058.15	0.00	124442.27
+		Waypoint:		14763.73	0.00	123879.70
+		Waypoint:		10739.20	0.00	121892.13
+		Waypoint:		13626.86	0.00	121738.95
+		Waypoint:		16425.09	0.00	121533.02
+		Waypoint:		11999.49	0.00	120076.20
+		Waypoint:		14930.24	0.00	119744.38
+		Waypoint:		38264.00	0.00	116413.77
+		Waypoint:		40623.23	0.00	116399.45
+		Waypoint:		37431.11	0.00	114087.82
+		Waypoint:		39509.36	0.00	113977.59
+		Waypoint:		41888.19	0.00	113912.16
+		Waypoint:		38127.50	0.00	112322.37
+		Waypoint:		41231.22	0.00	112251.85
+		Waypoint:		31643.54	0.00	113112.65
+		Waypoint:		34182.45	0.00	112891.84
+		Waypoint:		30226.05	0.00	110531.93
+		Waypoint:		32336.10	0.00	110545.70
+		Waypoint:		35184.11	0.00	110592.61
+		Waypoint:		31380.92	0.00	108061.71
+		Waypoint:		34215.99	0.00	108249.02
+		Waypoint:		25319.57	0.00	116625.42
+		Waypoint:		27808.48	0.00	116365.61
+		Waypoint:		24210.97	0.00	114107.56
+		Waypoint:		26341.08	0.00	114122.69
+		Waypoint:		29265.18	0.00	114019.19
+		Waypoint:		24919.48	0.00	112281.48
+		Waypoint:		27742.17	0.00	112413.89
+		Waypoint:		25166.62	0.00	109144.57
+		Waypoint:		28235.36	0.00	109070.30
+		Waypoint:		23793.10	0.00	107646.48
+		Waypoint:		26365.40	0.00	106706.93
+		Waypoint:		29141.46	0.00	106488.92
+		Waypoint:		24881.65	0.00	104635.53
+		Waypoint:		28522.45	0.00	104672.40
+		Waypoint:		31858.90	0.00	97867.33
+		Waypoint:		34502.05	0.00	97624.81
+		Waypoint:		30736.12	0.00	95660.34
+		Waypoint:		32577.27	0.00	95250.47
+		Waypoint:		35638.57	0.00	95584.80
+		Waypoint:		31444.40	0.00	92778.08
+		Waypoint:		34640.46	0.00	93101.04
+		Waypoint:		25270.79	0.00	101198.52
+		Waypoint:		27404.84	0.00	101087.89
+		Waypoint:		23941.00	0.00	99158.63
+		Waypoint:		26702.92	0.00	99280.63
+		Waypoint:		29466.20	0.00	99690.88
+		Waypoint:		24921.99	0.00	97346.16
+		Waypoint:		27753.37	0.00	96548.24
+		Waypoint:		38370.16	0.00	93806.80
+		Waypoint:		41029.86	0.00	93704.28
+		Waypoint:		37270.45	0.00	91710.83
+		Waypoint:		39715.94	0.00	91801.50
+		Waypoint:		42162.06	0.00	91165.66
+		Waypoint:		37691.35	0.00	89168.88
+		Waypoint:		40674.34	0.00	89130.71
+	}
+	Military:
+	{
+		Faction:	41
+		Waypoint:		25297.42	0.00	124344.01
+		Waypoint:		27854.35	0.00	123865.74
+		Waypoint:		24873.14	0.00	121720.13
+		Waypoint:		26847.21	0.00	121459.58
+		Waypoint:		29522.90	0.00	121592.73
+		Waypoint:		25252.01	0.00	119674.68
+		Waypoint:		28134.69	0.00	119672.96
+		Waypoint:		18268.43	0.00	120377.90
+		Waypoint:		21076.41	0.00	120409.08
+		Waypoint:		17133.08	0.00	118440.05
+		Waypoint:		20163.23	0.00	118144.38
+		Waypoint:		22971.75	0.00	118031.94
+		Waypoint:		18450.10	0.00	115887.18
+		Waypoint:		21136.85	0.00	115844.39
+		Waypoint:		12058.15	0.00	124442.27
+		Waypoint:		14763.73	0.00	123879.70
+		Waypoint:		10739.20	0.00	121892.13
+		Waypoint:		13626.86	0.00	121738.95
+		Waypoint:		16425.09	0.00	121533.02
+		Waypoint:		11999.49	0.00	120076.20
+		Waypoint:		14930.24	0.00	119744.38
+		Waypoint:		38264.00	0.00	116413.77
+		Waypoint:		40623.23	0.00	116399.45
+		Waypoint:		37431.11	0.00	114087.82
+		Waypoint:		39509.36	0.00	113977.59
+		Waypoint:		41888.19	0.00	113912.16
+		Waypoint:		38127.50	0.00	112322.37
+		Waypoint:		41231.22	0.00	112251.85
+		Waypoint:		31643.54	0.00	113112.65
+		Waypoint:		34182.45	0.00	112891.84
+		Waypoint:		30226.05	0.00	110531.93
+		Waypoint:		32336.10	0.00	110545.70
+		Waypoint:		35184.11	0.00	110592.61
+		Waypoint:		31380.92	0.00	108061.71
+		Waypoint:		34215.99	0.00	108249.02
+		Waypoint:		25319.57	0.00	116625.42
+		Waypoint:		27808.48	0.00	116365.61
+		Waypoint:		24210.97	0.00	114107.56
+		Waypoint:		26341.08	0.00	114122.69
+		Waypoint:		29265.18	0.00	114019.19
+		Waypoint:		24919.48	0.00	112281.48
+		Waypoint:		27742.17	0.00	112413.89
+		Waypoint:		25166.62	0.00	109144.57
+		Waypoint:		28235.36	0.00	109070.30
+		Waypoint:		23793.10	0.00	107646.48
+		Waypoint:		26365.40	0.00	106706.93
+		Waypoint:		29141.46	0.00	106488.92
+		Waypoint:		24881.65	0.00	104635.53
+		Waypoint:		28522.45	0.00	104672.40
+		Waypoint:		31858.90	0.00	97867.33
+		Waypoint:		34502.05	0.00	97624.81
+		Waypoint:		30736.12	0.00	95660.34
+		Waypoint:		32577.27	0.00	95250.47
+		Waypoint:		35638.57	0.00	95584.80
+		Waypoint:		31444.40	0.00	92778.08
+		Waypoint:		34640.46	0.00	93101.04
+		Waypoint:		25270.79	0.00	101198.52
+		Waypoint:		27404.84	0.00	101087.89
+		Waypoint:		23941.00	0.00	99158.63
+		Waypoint:		26702.92	0.00	99280.63
+		Waypoint:		29466.20	0.00	99690.88
+		Waypoint:		24921.99	0.00	97346.16
+		Waypoint:		27753.37	0.00	96548.24
+		Waypoint:		38370.16	0.00	93806.80
+		Waypoint:		41029.86	0.00	93704.28
+		Waypoint:		37270.45	0.00	91710.83
+		Waypoint:		39715.94	0.00	91801.50
+		Waypoint:		42162.06	0.00	91165.66
+		Waypoint:		37691.35	0.00	89168.88
+		Waypoint:		40674.34	0.00	89130.71
+	}
+	Pirate:
+	{
+		Faction:	2
+		Waypoint:		25297.42	0.00	124344.01
+		Waypoint:		27854.35	0.00	123865.74
+		Waypoint:		24873.14	0.00	121720.13
+		Waypoint:		26847.21	0.00	121459.58
+		Waypoint:		29522.90	0.00	121592.73
+		Waypoint:		25252.01	0.00	119674.68
+		Waypoint:		28134.69	0.00	119672.96
+		Waypoint:		18268.43	0.00	120377.90
+		Waypoint:		21076.41	0.00	120409.08
+		Waypoint:		17133.08	0.00	118440.05
+		Waypoint:		20163.23	0.00	118144.38
+		Waypoint:		22971.75	0.00	118031.94
+		Waypoint:		18450.10	0.00	115887.18
+		Waypoint:		21136.85	0.00	115844.39
+		Waypoint:		12058.15	0.00	124442.27
+		Waypoint:		14763.73	0.00	123879.70
+		Waypoint:		10739.20	0.00	121892.13
+		Waypoint:		13626.86	0.00	121738.95
+		Waypoint:		16425.09	0.00	121533.02
+		Waypoint:		11999.49	0.00	120076.20
+		Waypoint:		14930.24	0.00	119744.38
+		Waypoint:		38264.00	0.00	116413.77
+		Waypoint:		40623.23	0.00	116399.45
+		Waypoint:		37431.11	0.00	114087.82
+		Waypoint:		39509.36	0.00	113977.59
+		Waypoint:		41888.19	0.00	113912.16
+		Waypoint:		38127.50	0.00	112322.37
+		Waypoint:		41231.22	0.00	112251.85
+		Waypoint:		31643.54	0.00	113112.65
+		Waypoint:		34182.45	0.00	112891.84
+		Waypoint:		30226.05	0.00	110531.93
+		Waypoint:		32336.10	0.00	110545.70
+		Waypoint:		35184.11	0.00	110592.61
+		Waypoint:		31380.92	0.00	108061.71
+		Waypoint:		34215.99	0.00	108249.02
+		Waypoint:		25319.57	0.00	116625.42
+		Waypoint:		27808.48	0.00	116365.61
+		Waypoint:		24210.97	0.00	114107.56
+		Waypoint:		26341.08	0.00	114122.69
+		Waypoint:		29265.18	0.00	114019.19
+		Waypoint:		24919.48	0.00	112281.48
+		Waypoint:		27742.17	0.00	112413.89
+		Waypoint:		25166.62	0.00	109144.57
+		Waypoint:		28235.36	0.00	109070.30
+		Waypoint:		23793.10	0.00	107646.48
+		Waypoint:		26365.40	0.00	106706.93
+		Waypoint:		29141.46	0.00	106488.92
+		Waypoint:		24881.65	0.00	104635.53
+		Waypoint:		28522.45	0.00	104672.40
+		Waypoint:		31858.90	0.00	97867.33
+		Waypoint:		34502.05	0.00	97624.81
+		Waypoint:		30736.12	0.00	95660.34
+		Waypoint:		32577.27	0.00	95250.47
+		Waypoint:		35638.57	0.00	95584.80
+		Waypoint:		31444.40	0.00	92778.08
+		Waypoint:		34640.46	0.00	93101.04
+		Waypoint:		25270.79	0.00	101198.52
+		Waypoint:		27404.84	0.00	101087.89
+		Waypoint:		23941.00	0.00	99158.63
+		Waypoint:		26702.92	0.00	99280.63
+		Waypoint:		29466.20	0.00	99690.88
+		Waypoint:		24921.99	0.00	97346.16
+		Waypoint:		27753.37	0.00	96548.24
+		Waypoint:		38370.16	0.00	93806.80
+		Waypoint:		41029.86	0.00	93704.28
+		Waypoint:		37270.45	0.00	91710.83
+		Waypoint:		39715.94	0.00	91801.50
+		Waypoint:		42162.06	0.00	91165.66
+		Waypoint:		37691.35	0.00	89168.88
+		Waypoint:		40674.34	0.00	89130.71
+	}
+	Skirmish:
+	{
+		Faction:	41
+		Enemy:	0
+		Enemy:	1
+		Enemy:	2
+		Enemy:	18
+		Waypoint:		25297.42	0.00	124344.01
+		Waypoint:		27854.35	0.00	123865.74
+		Waypoint:		24873.14	0.00	121720.13
+		Waypoint:		26847.21	0.00	121459.58
+		Waypoint:		29522.90	0.00	121592.73
+		Waypoint:		25252.01	0.00	119674.68
+		Waypoint:		28134.69	0.00	119672.96
+		Waypoint:		18268.43	0.00	120377.90
+		Waypoint:		21076.41	0.00	120409.08
+		Waypoint:		17133.08	0.00	118440.05
+		Waypoint:		20163.23	0.00	118144.38
+		Waypoint:		22971.75	0.00	118031.94
+		Waypoint:		18450.10	0.00	115887.18
+		Waypoint:		21136.85	0.00	115844.39
+		Waypoint:		12058.15	0.00	124442.27
+		Waypoint:		14763.73	0.00	123879.70
+		Waypoint:		10739.20	0.00	121892.13
+		Waypoint:		13626.86	0.00	121738.95
+		Waypoint:		16425.09	0.00	121533.02
+		Waypoint:		11999.49	0.00	120076.20
+		Waypoint:		14930.24	0.00	119744.38
+		Waypoint:		38264.00	0.00	116413.77
+		Waypoint:		40623.23	0.00	116399.45
+		Waypoint:		37431.11	0.00	114087.82
+		Waypoint:		39509.36	0.00	113977.59
+		Waypoint:		41888.19	0.00	113912.16
+		Waypoint:		38127.50	0.00	112322.37
+		Waypoint:		41231.22	0.00	112251.85
+		Waypoint:		31643.54	0.00	113112.65
+		Waypoint:		34182.45	0.00	112891.84
+		Waypoint:		30226.05	0.00	110531.93
+		Waypoint:		32336.10	0.00	110545.70
+		Waypoint:		35184.11	0.00	110592.61
+		Waypoint:		31380.92	0.00	108061.71
+		Waypoint:		34215.99	0.00	108249.02
+		Waypoint:		25319.57	0.00	116625.42
+		Waypoint:		27808.48	0.00	116365.61
+		Waypoint:		24210.97	0.00	114107.56
+		Waypoint:		26341.08	0.00	114122.69
+		Waypoint:		29265.18	0.00	114019.19
+		Waypoint:		24919.48	0.00	112281.48
+		Waypoint:		27742.17	0.00	112413.89
+		Waypoint:		25166.62	0.00	109144.57
+		Waypoint:		28235.36	0.00	109070.30
+		Waypoint:		23793.10	0.00	107646.48
+		Waypoint:		26365.40	0.00	106706.93
+		Waypoint:		29141.46	0.00	106488.92
+		Waypoint:		24881.65	0.00	104635.53
+		Waypoint:		28522.45	0.00	104672.40
+		Waypoint:		31858.90	0.00	97867.33
+		Waypoint:		34502.05	0.00	97624.81
+		Waypoint:		30736.12	0.00	95660.34
+		Waypoint:		32577.27	0.00	95250.47
+		Waypoint:		35638.57	0.00	95584.80
+		Waypoint:		31444.40	0.00	92778.08
+		Waypoint:		34640.46	0.00	93101.04
+		Waypoint:		25270.79	0.00	101198.52
+		Waypoint:		27404.84	0.00	101087.89
+		Waypoint:		23941.00	0.00	99158.63
+		Waypoint:		26702.92	0.00	99280.63
+		Waypoint:		29466.20	0.00	99690.88
+		Waypoint:		24921.99	0.00	97346.16
+		Waypoint:		27753.37	0.00	96548.24
+		Waypoint:		38370.16	0.00	93806.80
+		Waypoint:		41029.86	0.00	93704.28
+		Waypoint:		37270.45	0.00	91710.83
+		Waypoint:		39715.94	0.00	91801.50
+		Waypoint:		42162.06	0.00	91165.66
+		Waypoint:		37691.35	0.00	89168.88
+		Waypoint:		40674.34	0.00	89130.71
+	}
+	Assassins:
+	{
+		Faction:	52
+	}
+	Science:
+	{
+	}
+	Salvage:
+	{
+	}
+	Looters:
+	{
+	}
+	Anomaly:
+	{
+	}
+}
+Music:
+{
+	Standard:
+	{
+		music_genesis
+		music_things
+		music_darkmoon
+		music_meta
+		music_solaris
+		music_ambientDrones
+		music_Assorted
+		music_AwaitingNews
+		music_DigitalForest
+		music_SpaceTune
+		music_VastEmptyness
+	}
+	Combat:
+	{
+		music_DangerousPursuit
+		music_FilmScoreChase
+		music_Outbreak
+		music_PiratesSearching
+		music_WarDrums
+		music_battle_drums_1
+	}
+}

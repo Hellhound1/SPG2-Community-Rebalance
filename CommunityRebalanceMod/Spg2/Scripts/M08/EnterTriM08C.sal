@@ -1,0 +1,14 @@
+int questCond = 0 ;
+mainquest GetById 49 GetAcquire questCond ;
+if questCond == 1
+	/* mark forged papers container */
+	waypoint GetByKeyName m08bWp SetMark 0 ;
+	waypoint GetByKeyName m08bWp SetMissionTask -1 ;
+	
+	game SetQuestMode 1 ;
+	
+	platform GetByKeyName m08Container SetMark 1 ;
+	platform GetByKeyName m08Container SetMissionTask 12 ;
+endif
+
+End

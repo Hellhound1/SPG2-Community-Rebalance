@@ -1,0 +1,30 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage TRI_M04A_Entered! ;
+int questCond = 0 ;
+mainquest GetById 21 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage TRI_M04A_Check_Success! ;
+	/* enable questMode */
+	game SetQuestMode 1 ;
+	mainquest GetById 21 SetSolve 1 ;
+	mainquest GetById 21 DeleteObjective 1 ;
+	mainquest GetById 22 SetAcquire 1 ;
+	game SetControlEnabled 0 ;
+	ship GetByKeyName m04sionASHP SetEnabled 1 ;
+	ship GetByKeyName m04sionASHP SetBoardable 0 ;
+	/* quest ship AI flag to true, ships go passive */
+	int aiState = 1 ;
+	ship GetByKeyName m04sionASHP SetAIQuestStatus aiState ;
+	game ResetShipEnemyList 1 ;
+	/* position player */
+	/* position Sion */
+	waypoint GetByKeyName m04marker SetMark 0 ;
+	waypoint GetByKeyName m04marker SetMissionTask -1 ;
+	dialogue Spg2\Dialogues\M04\D01.dia ;
+endif
+End

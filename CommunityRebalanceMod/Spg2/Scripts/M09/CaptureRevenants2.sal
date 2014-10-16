@@ -1,0 +1,47 @@
+/* quest related */
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int questCond = 0 ;
+mainquest GetById 62 GetAcquire questCond ;
+if questCond == 1
+
+	ship GetByKeyName m09rev5 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m09rev5 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m09rev6 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m09rev6 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+		
+			mainquest GetById 62 SetSolve 1 ;
+			mainquest GetById 62 DeleteObjective 1 ;
+			derelict GetByKeyName redemptionDER SetMark 1 ;
+			derelict GetByKeyName redemptionDER SetMissionTask 6 ;
+			log 56 ;
+			
+			/* if redemption already salvaged or scanned */
+			mainquest GetById 63 GetSolve questCond ;
+			if questCond == 1
+				mainquest GetById 64 SetAcquire 1 ;
+				derelict GetByKeyName redemptionDER SetMark 0 ;
+				derelict GetByKeyName redemptionDER SetMissionTask -1 ;
+				derelict GetByKeyName redemptionDER SetDestructible 1 ;
+				game SetControlEnabled 0 ;
+				dialogue Spg2\Dialogues\M09\D07.dia ;
+			endif
+			
+		endif
+	endif
+	
+endif
+
+End

@@ -1,0 +1,78 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 39 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 39 SetSolve 1 ;
+	mainquest GetById 39 DeleteObjective 1 ;
+	mainquest GetById 40 SetAcquire 1 ;
+	
+	game SetQuestMode 1 ;
+	ship GetByKeyName m06steigerBSHP SetEnabled 1 ;
+	ship GetByKeyName m06taskforceB1 SetEnabled 1 ;
+	ship GetByKeyName m06taskforceB2 SetEnabled 1 ;
+	ship GetByKeyName m06direct1 SetEnabled 1 ;
+	platform GetByKeyName m06platform1 SetEnabled 1 ;
+	platform GetByKeyName m06platform2 SetEnabled 1 ;
+	platform GetByKeyName m06platform3 SetEnabled 1 ;
+	structure GetByKeyName m06dirSTR SetEnabled 1 ;
+	
+	ship GetPlayer SetInvulnerable 1 ;
+	ship GetByKeyName m06steigerBSHP SetInvulnerable 1 ;
+	ship GetByKeyName m06taskforceB1 SetInvulnerable 1 ;
+	ship GetByKeyName m06taskforceB2 SetInvulnerable 1 ;
+	/*
+	platform GetByKeyName m06platform1 SetInvulnerable 1 ;
+	platform GetByKeyName m06platform2 SetInvulnerable 1 ;
+	platform GetByKeyName m06platform3 SetInvulnerable 1 ;
+	*/
+	
+	ship GetByKeyName m06direct1 SetInvulnerable 1 ;
+	ship GetByKeyName m06steigerBSHP SetBoardable 0 ;
+	ship GetByKeyName m06taskforceB1 SetBoardable 0 ;
+	ship GetByKeyName m06taskforceB2 SetBoardable 0 ;
+	
+
+	
+	waypoint GetByKeyName m06aWp SetMark 0 ;
+	ship GetByKeyName m06direct1 SetMark 1 ;
+	platform GetByKeyName m06platform1 SetMark 1 ;
+	platform GetByKeyName m06platform2 SetMark 1 ;
+	platform GetByKeyName m06platform3 SetMark 1 ;
+	structure GetByKeyName m06dirSTR SetMark 1 ;
+	
+	waypoint GetByKeyName m06aWp SetMissionTask -1 ;
+	ship GetByKeyName m06direct1 SetMissionTask 0 ;
+	platform GetByKeyName m06platform1 SetMissionTask 0 ;
+	platform GetByKeyName m06platform2 SetMissionTask 0 ;
+	platform GetByKeyName m06platform3 SetMissionTask 0 ;
+	structure GetByKeyName m06dirSTR SetMissionTask 0 ;
+	
+	ship GetByKeyName m06steigerBSHP SetAIQuestStatus 2 ;
+	ship GetByKeyName m06taskforceB1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m06taskforceB2 SetAIQuestStatus 2 ;
+	ship GetByKeyName m06direct1 SetAIQuestStatus 2 ;
+	platform GetByKeyName m06platform1 SetAIQuestStatus 2 ;
+	platform GetByKeyName m06platform2 SetAIQuestStatus 2 ;
+	platform GetByKeyName m06platform3 SetAIQuestStatus 2 ;
+	structure GetByKeyName m06dirSTR SetAIQuestStatus 2 ;
+	
+	ship GetByKeyName m06direct1 SetFriendFoe 2 ;
+	platform GetByKeyName m06platform1 SetFriendFoe 2 ;
+	platform GetByKeyName m06platform2 SetFriendFoe 2 ;
+	platform GetByKeyName m06platform3 SetFriendFoe 2 ;
+	structure GetByKeyName m06dirSTR SetFriendFoe 2 ;
+	ship GetByKeyName m06steigerBSHP SetFriendFoe 1 ;
+	ship GetByKeyName m06taskforceB1 SetFriendFoe 1 ;
+	ship GetByKeyName m06taskforceB2 SetFriendFoe 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	log 38 ;
+	script Spg2\Scripts\M06\CS06B.sal ;
+endif
+End

@@ -1,0 +1,13 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+ship GetByKeyName m19ridleyASHP SetEnabled 0 ;
+ship GetByKeyName m19kuzhevASHP SetEnabled 0 ;
+ship GetByKeyName m19protect1 SetEnabled 0 ;
+ship GetByKeyName m19protect2 SetEnabled 0 ;
+ship GetByKeyName m19protect3 SetEnabled 0 ;
+
+End

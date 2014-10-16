@@ -1,0 +1,21 @@
+ship GetByKeyName m21alien1 SetEnabled 1 ;
+ship GetByKeyName m21alien2 SetEnabled 1 ;
+ship GetByKeyName m21alien3 SetEnabled 1 ;
+ship GetByKeyName m21alien4 SetEnabled 1 ;
+platform GetByKeyName m21voltra SetEnabled 1 ;
+
+ship GetByKeyName m21alien1 SetFriendFoe 2 ;
+ship GetByKeyName m21alien2 SetFriendFoe 2 ;
+ship GetByKeyName m21alien3 SetFriendFoe 2 ;
+ship GetByKeyName m21alien4 SetFriendFoe 2 ;
+platform GetByKeyName m21voltra SetFriendFoe 2 ;
+
+ship GetByKeyName m21alien1 SetAIQuestStatus 1 ;
+ship GetByKeyName m21alien2 SetAIQuestStatus 1 ;
+ship GetByKeyName m21alien3 SetAIQuestStatus 1 ;
+ship GetByKeyName m21alien4 SetAIQuestStatus 1 ;
+platform GetByKeyName m21voltra SetAIQuestStatus 1 ;
+
+game ResetShipEnemyList 1 ;
+
+End

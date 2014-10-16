@@ -1,0 +1,5 @@
+mainmissionpanel 44 ;
+
+ship GetByKeyName m07steigerSHP SetEnabled 0 ;	
+
+End

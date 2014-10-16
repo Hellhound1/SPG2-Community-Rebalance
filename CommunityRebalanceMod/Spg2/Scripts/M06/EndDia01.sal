@@ -1,0 +1,19 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 38 SetSolve 1 ;
+mainquest GetById 38 DeleteObjective 1 ;
+mainquest GetById 39 SetAcquire 1 ;
+waypoint GetByKeyName m06aWp SetMark 1 ;
+waypoint GetByKeyName m06aWp SetMissionTask 4 ;
+ship GetPlayer SetInvulnerable 0 ;
+ship GetByKeyName m06steigerASHP SetEnabled 0 ;
+ship GetByKeyName m06taskforceA1 SetEnabled 0 ;
+ship GetByKeyName m06taskforceA2 SetEnabled 0 ;
+game SetControlEnabled 1 ;
+game SetQuestMode 0 ;
+log 37 ;
+End

@@ -1,0 +1,271 @@
+/*
+Script by: LGM Games  
++used automatically if no override script supplied in object parameters
+-------
++experience
+	+extra Exp ifEngineer
++special events
+	+Revenant_spawned_OnScan_anomaly!
+	+EMP_blast_OnScan_anomaly! 
+		+Energy surge one-liner
+	+Radiation_discharge_OnScan_anomaly!
+		+Energy surge one-liner
+	+Hyperspace_translocation_OnScan_anomaly!
+	+ShipSystem_accident_OnScan_anomaly!
+	+Data_stream_sold_to_Hub
+	+Mine_spawn
+	+Relocated
+	+Derelict spawn
+	+Energy boost
+	+Hull repair
++disable anomaly after scan
+*/
+
+PrintMessage SCR_ANOMALY_SCANNED ;
+
+/* |---------------- EXPERIENCE ----------------| */
+int expBase = 50 ;
+int expAdd = 0 ;
+int experience = 50 ;
+int expClass = 0 ;
+
+/* additional exp rewarded per experience level */
+int level = 0 ;
+player GetLevel level ;
+math expAdd = 10 * level ;
+math expClass = expBase + expAdd ;
+
+/* exp reward increased if character class is Engineer */
+int class = 0 ;
+player GetCharacterClass class ;
+if class == 1
+	math experience = expClass * 2 ;
+else
+	math experience = expClass * 1 ;
+endif
+
+/* add final exp reward */
+player AddExp experience ;
+
+/* |---------------- EXPERIENCE ----------------| */
+
+/* |---------------- CREDITS ----------------| */
+/* if player has special license, credits are rewarded */
+int licenseId = 13 ;
+int status = 0 ;
+player GetLicense licenseId status ;
+if status == 1
+	int award = 1000 ;
+	player AddCredits award ;
+endif
+/* |---------------- CREDITS ----------------| */
+
+/* |---------------- BLUEPRINT ----------------| */
+/* blueprint award - dependency on ship level and character class */
+int pcLevel = 1 ;
+player GetLevel pcLevel ;
+int maxBpChance = 50 ;
+if pcLevel < 21
+	maxBpChance = 50 ;
+	if class == 1
+		maxBpChance = 45 ;
+	endif
+endif
+if pcLevel > 20 && pcLevel < 51
+	maxBpChance = 40 ;
+	if class == 1
+		maxBpChance = 40 ;
+	endif
+endif
+if pcLevel > 50
+	maxBpChance = 30 ;
+	if class == 1
+		maxBpChance = 35 ;
+	endif
+endif
+
+int bpChance = 0 ;
+math bpChance = Rnd 1 maxBpChance ;
+
+if bpChance == 1
+	script Spg2\Scripts\BlueprintAward.sal ;
+endif
+/* |---------------- BLUEPRINT ----------------| */
+
+/* |---------------- MICRO-EVENTS ----------------| */
+
+int event = 0 ;
+math event = Rnd 1 20 ;
+
+/* virtual shockwave variables */
+int vSort = 0 ;
+float3 vPos = 0.0 0.0 0.0 ;
+anomaly GetParent GetPosition vPos ;
+float radius = 100.0 ;
+anomaly GetParent GetRadius radius ;
+float radiusFactor = 0.5 ;
+math radiusFactor = Rnd 0.5 1.5 ;
+float vRadius = 1000.0 ;
+math vRadius = radius * radiusFactor ;
+float vLifetime = 0.5 ;
+float damagePerLevel = 20.0 ;
+float damageInterim = 10.0 ;
+int playerLevel = 1 ;
+player GetLevel playerLevel ;
+math damageInterim = damagePerLevel * playerLevel ;
+float vDamage = 20.0 ;
+float damageFactor = 0.5 ;
+math damageFactor = Rnd 0.75 1.25 ;
+math vDamage = damageInterim * damageFactor ;
+int affectFriendly = 0 ;
+float vChance = 1.0 ;
+
+/* visible shockwave variables */
+float sDelay = 0.0 ;
+float3 sColor = 0.1 0.1 0.1 ;
+int shapeId = 0 ;
+int sTextureId = 3 ;
+float sRadiusStart = 0.0 ;
+float sRadiusEnd = 1000.0 ;
+float sLifetime = 2.0 ;
+float sDistortion = 0.1 ;
+float sRefraction = 0.1 ;
+float yScale = 1.0 ;
+int fadeType = 0 ;
+
+if event == 1
+	PrintMessage Revenant_spawned_OnScan_anomaly! ;
+	script Spg2\Scripts\SpawnRevenants.sal ;
+endif
+
+if event == 2
+	PrintMessage EMP_blast_OnScan_anomaly! ;
+	/* create blast */
+	vSort = 4 ; /* EMP damage */
+	affectFriendly = 1 ;
+	virtualshockwave vSort vPos vRadius vLifetime vDamage affectFriendly ;
+
+	/* visual shockwave blast */
+	sColor = 0.1 0.1 0.7 ;
+	sTextureId = 0 ;
+	shockwave sDelay vPos sColor shapeId sTextureId sRadiusStart sRadiusEnd sLifetime sDistortion sRefraction yScale fadeType ;
+	
+	/* show notification or play VO */
+	
+endif
+
+if event == 3
+	PrintMessage Radiation_discharge_OnScan_anomaly! ;
+	/* create blast */
+	vSort = 5 ; /* radiation damage */
+	affectFriendly = 1 ;
+	virtualshockwave vSort vPos vRadius vLifetime vDamage affectFriendly ;
+
+	/* visual shockwave blast */
+	sColor = 0.15 0.07 0.03 ;
+	sTextureId = 0 ;
+	shockwave sDelay vPos sColor shapeId sTextureId sRadiusStart sRadiusEnd sLifetime sDistortion sRefraction yScale fadeType ;
+	
+	/* show notification or play VO */
+	
+endif
+
+if event == 4
+	PrintMessage Hyperspace_translocation_OnScan_anomaly! ;
+	/* hyperspace translocation */
+	sColor = 0.3 0.05 0.37 ;
+	sTextureId = 6 ;
+	/* show notification or play VO */
+endif
+
+if event == 5
+	PrintMessage ShipSystem_Shutdown_blast_OnScan_anomaly! ;
+	/* chance of system shutdown blast */
+	int shutdownChance = 1 ;
+	math shutdownChance = Rnd 1 5 ;
+	if shutdownChance == 1
+		vSort = 7 ; /* system shutdown */
+		int vSystemId = 0 ;
+		math vSystemId = Rnd 0 10 ; /* random ship system pick from ShipSystems.wdt */
+		vChance = 1.0 ;
+		virtualshockwave vSort vPos vRadius vLifetime vSystemId vChance affectFriendly ;
+	endif
+	
+	/* visual shockwave blast */
+	sColor = 0.35 0.03 0.07 ;
+	sTextureId = 6 ;
+	shockwave sDelay vPos sColor shapeId sTextureId sRadiusStart sRadiusEnd sLifetime sDistortion sRefraction yScale fadeType ;
+	
+	/* show notification or play VO */
+	
+endif
+
+if event == 6
+	PrintMessage Energy_blast_OnScan_anomaly! ;
+	/* create blast */
+	vSort = 1 ; /* energy damage */
+	affectFriendly = 1 ;
+	virtualshockwave vSort vPos vRadius vLifetime vDamage affectFriendly ;
+	/* visual shockwave blast */
+	sColor = 0.03 0.17 0.13 ;
+	sTextureId = 1 ;
+	shockwave sDelay vPos sColor shapeId sTextureId sRadiusStart sRadiusEnd sLifetime sDistortion sRefraction yScale fadeType ;
+	/* show notification or play VO */
+endif
+
+if event == 7
+	PrintMessage Gravity_blast_OnScan_anomaly! ;
+	/* create blast */
+	vSort = 6 ; /* gravity blast */
+	affectFriendly = 1 ;
+	float vStrength = 1.0 ;
+	math vStrength = Rnd 0.5 2.0 ;
+	virtualshockwave vSort vPos vRadius vLifetime vStrength affectFriendly ;
+	/* visual shockwave blast */
+	sColor = 0.25 0.1 0.03 ;
+	sTextureId = 6 ;
+	shockwave sDelay vPos sColor shapeId sTextureId sRadiusStart sRadiusEnd sLifetime sDistortion sRefraction yScale fadeType ;
+	/* show notification or play VO */
+endif
+
+if event == 8
+	PrintMessage TrooperKill_blast_OnScan_anomaly! ;
+	/* create blast */
+	/* show notification or play VO */
+endif
+
+if event == 9
+	PrintMessage Phased_blast_OnScan_anomaly! ;
+	/* create blast */
+	vSort = 9 ; /* phased damage */
+	affectFriendly = 1 ;
+	virtualshockwave vSort vPos vRadius vLifetime vDamage affectFriendly ;
+	/* visual shockwave blast */
+	sColor = 0.45 0.15 0.15 ;
+	sTextureId = 1 ;
+	shockwave sDelay vPos sColor shapeId sTextureId sRadiusStart sRadiusEnd sLifetime sDistortion sRefraction yScale fadeType ;
+	/* show notification or play VO */
+endif
+
+if event == 10
+	PrintMessage decloak_blast_OnScan_anomaly! ;
+	/* create blast */
+	vSort = 0 ; /* decloak blast */
+	affectFriendly = 1 ;
+	vChance = 1.0 ;
+	math vChance = Rnd 0.25 1.0 ;
+	virtualshockwave vSort vPos vRadius vLifetime vChance affectFriendly ;
+	/* visual shockwave blast */
+	sColor = 0.45 0.1 0.13 ;
+	sTextureId = 2 ;
+	shockwave sDelay vPos sColor shapeId sTextureId sRadiusStart sRadiusEnd sLifetime sDistortion sRefraction yScale fadeType ;
+	/* show notification or play VO */
+endif
+
+/* |---------------- MICRO-EVENTS ----------------| */
+
+pause 1.0 ;
+
+anomaly GetParent SoftDisable 1 ;
+
+End

@@ -1,0 +1,370 @@
+/*
+-------
+Script by: LGM Games  
++loop through complete blueprints and flag them as purchasable on parent station
+-------
+*/
+
+/* DECLARE VARIABLES FOR LATER USE */
+int itemId = 0 ;
+int itemCount = 0 ;
+int enhSort = 0 ;
+int enhId = 0 ;
+int sysSort = 0 ;
+int sysId = 0 ;
+int equipId = 0 ;
+int offId = 0 ;
+int offOnList = 0 ;
+
+/* check propulsion enhancements [64,66,68] */
+itemId = 64 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 1 ;
+	enhId = 27 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 66 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 1 ;
+	enhId = 28 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 68 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 1 ;
+	enhId = 29 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check hangar enhancements [70,72,74] */
+itemId = 70 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 8 ;
+	enhId = 24 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 72 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 8 ;
+	enhId = 25 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 74 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 8 ;
+	enhId = 26 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check grappler enhancements [76,78,80] */
+itemId = 76 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 5 ;
+	enhId = 24 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 78 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 5 ;
+	enhId = 25 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 80 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 5 ;
+	enhId = 26 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check sensors enhancements [82,84,86] */
+itemId = 82 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 2 ;
+	enhId = 24 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 84 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 2 ;
+	enhId = 25 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 86 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 2 ;
+	enhId = 26 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check shield enhancements [88,90,92] */
+itemId = 88 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 3 ;
+	enhId = 42 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 90 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 3 ;
+	enhId = 43 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 92 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 3 ;
+	enhId = 44 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check power core enhancements [94,96,98] */
+itemId = 94 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 0 ;
+	enhId = 24 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 96 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 0 ;
+	enhId = 25 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 98 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 0 ;
+	enhId = 26 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check transporter enhancements [100,102,104] */
+itemId = 100 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 4 ;
+	enhId = 27 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 102 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 4 ;
+	enhId = 28 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 104 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 4 ;
+	enhId = 29 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check cloak enhancements [106,108,110] */
+itemId = 106 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 9 ;
+	enhId = 24 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 108 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 9 ;
+	enhId = 25 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+itemId = 110 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	enhSort = 9 ;
+	enhId = 26 ;
+	openStation SetEnhancement enhSort enhId ;
+endif
+
+/* check fighter wings [112,114,116] */
+itemId = 112 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 2 ;
+	sysId = 15 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 114 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 2 ;
+	sysId = 16 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 116 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 2 ;
+	sysId = 17 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+/* check equipment [118,120,122,124,126] */
+itemId = 118 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	equipId = 20 ;
+	openStation SetEquipmentCount equipId itemCount ;
+endif
+
+itemId = 120 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	equipId = 28 ;
+	openStation SetEquipmentCount equipId itemCount ;
+endif
+
+itemId = 122 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	equipId = 29 ;
+	openStation SetEquipmentCount equipId itemCount ;
+endif
+
+itemId = 124 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	equipId = 30 ;
+	openStation SetEquipmentCount equipId itemCount ;
+endif
+
+itemId = 126 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	equipId = 31 ;
+	openStation SetEquipmentCount equipId itemCount ;
+endif
+
+/* check light weapon [128,130,132,134,136] */
+itemId = 128 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 0 ;
+	sysId = 76 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 130 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 0 ;
+	sysId = 77 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 132 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 0 ;
+	sysId = 78 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 134 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 0 ;
+	sysId = 79 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 136 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 0 ;
+	sysId = 80 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+/* check heavy weapon [138,140,142,144,146] */
+itemId = 138 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 1 ;
+	sysId = 39 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 140 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 1 ;
+	sysId = 40 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 142 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 1 ;
+	sysId = 41 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 144 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 1 ;
+	sysId = 42 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+itemId = 146 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	sysSort = 1 ;
+	sysId = 43 ;
+	openStation SetShipSystem sysSort sysId itemCount ;
+endif
+
+/* check android officer [148] */
+itemId = 148 ;
+player GetQuestItemCount itemId itemCount ;
+if itemCount > 0
+	offId = 344 ;
+	openStation SetOfficer offId ;
+endif
+
+End

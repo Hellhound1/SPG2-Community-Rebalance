@@ -1,0 +1,26 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 1 ;
+
+mainquest GetById 137 SetSolve 1 ;
+mainquest GetById 138 SetAcquire 1 ;
+
+ship GetByKeyName m20kuzhevSHP SetAIQuestStatus 2 ;
+ship GetByKeyName m20protect1 SetAIQuestStatus 2 ;
+ship GetByKeyName m20protect2 SetAIQuestStatus 2 ;
+ship GetPlayer SetInvulnerable 0 ;
+platform GetByKeyName clearmontPlatform SetDestructible 1 ;
+platform GetByKeyName clearmontPlatform SetAIQuestStatus 2 ;
+platform GetByKeyName clearmontPlatform SetFriendFoe 2 ;
+
+platform GetByKeyName clearmontPlatform SetMark 1 ;
+platform GetByKeyName clearmontPlatform SetMissionTask 0 ;
+
+game ResetShipEnemyList 1 ;
+
+/* ForceAttack- Kuzhev=>Clearmont */
+End

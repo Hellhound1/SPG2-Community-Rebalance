@@ -1,0 +1,25 @@
+Dialogue:
+{
+	Portrait:	4
+	Text:	171
+	Voice:	Spg2\Sound\Voice\steiger\171.wav
+	Duration:	10.269
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	172
+	Voice:	Spg2\Sound\Voice\adrian\172.wav
+	Duration:	6.695
+}
+Dialogue:
+{
+	Portrait:	4
+	Text:	173
+	Voice:	Spg2\Sound\Voice\steiger\173.wav
+	Duration:	12.829
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M16\EndDia02.sal
+}

@@ -1,0 +1,34 @@
+/*
+-------
+Script by: LGM Games, 2014
++check if player is at least level 5
++check if player has over 1,000 Credits
+	+reduce Credit balance (1%-15%)
+	+notification and/or one-liner
+*/
+
+int level = 0 ;
+player GetLevel level ;
+if level > 4
+	/* calculation */
+	int creditsCurrent = 0 ;
+	int percentage = 1 ;
+	int creditsFactor = 0 ;
+	int creditsStolen = 0 ;
+	int creditsNew = 0 ;
+	player GetCredits creditsCurrent ;
+	
+	if creditsCurrent > 1000
+		math percentage = Rnd 1 15 ;
+		math creditsFactor = percentage * 100 ;
+		math creditsStolen = creditsCurrent / creditsFactor ;
+		math creditsNew = creditsCurrent - creditsStolen ;
+		player SetCredits creditsNew ;
+	endif
+
+	int titleId = 1224 ;
+	int textId = 1225 ;
+	screen ShowWarningsEx 18 titleId textId creditsStolen ;
+endif
+
+End

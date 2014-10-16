@@ -1,0 +1,62 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+
+mainquest GetById 116 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m16nyx6 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx6 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m16nyx7 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx7 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m16nyx8 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx8 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				mainquest GetById 116 SetSolve 1 ;
+				/* mainquest GetById 116 DeleteObjective 1 ; */
+				log 96 ;			
+				
+				ship GetByKeyName m16steigerSHP SetAIQuestStatus 1 ;
+				ship GetByKeyName m16gladius1 SetAIQuestStatus 1 ;
+				ship GetByKeyName m16gladius2 SetAIQuestStatus 1 ;						
+
+				/* -^-REWARD-^- */
+				player AddExp 40700 ;
+				player AddReputation 100 ;
+				player AddCredits 340000 ;
+				script Spg2\Scripts\AwardLightWeapon3.sal ;
+
+				/* -^-MISSION COMPLETE-^- */
+				int titleLine = 183 ;
+				int textLine1 = 1553 ;
+				int textLine2 = -1 ;
+				screen ShowWarnings titleLine textLine1 textLine2 ;
+				
+				dialogue Spg2\Dialogues\M16\D02.dia ;
+			endif
+		endif
+	endif
+	
+endif
+
+End

@@ -1,0 +1,98 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName prison190 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName prison190 CallEvent OnActivate ;
+else
+	structure GetByKeyName prison190 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar190A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar190A CallEvent OnActivate ;
+else
+	structure GetByKeyName solar190A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar190B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar190B CallEvent OnActivate ;
+else
+	structure GetByKeyName solar190B CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar190C GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar190C CallEvent OnActivate ;
+else
+	structure GetByKeyName solar190C CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar190D GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar190D CallEvent OnActivate ;
+else
+	structure GetByKeyName solar190D CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar190E GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar190E CallEvent OnActivate ;
+else
+	structure GetByKeyName solar190E CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName solar190F GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName solar190F CallEvent OnActivate ;
+else
+	structure GetByKeyName solar190F CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_190_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_190_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_190_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 14 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_190_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_190_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_190_2 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

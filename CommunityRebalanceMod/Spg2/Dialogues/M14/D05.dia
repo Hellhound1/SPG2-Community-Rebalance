@@ -1,0 +1,43 @@
+Dialogue:
+{
+	Portrait:	13
+	Text:	134
+	Voice:	Spg2\Sound\Voice\oneill\134.wav
+	Duration:	27.52
+	Line:	13.75	0
+	Line:	13.75	267
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	135
+	Voice:	Spg2\Sound\Voice\adrian\135.wav
+	Duration:	2.451
+}
+Dialogue:
+{
+	Portrait:	13
+	Text:	136
+	Voice:	Spg2\Sound\Voice\oneill\136.wav
+	Duration:	25.54
+	Line:	12.77	0
+	Line:	12.77	195
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	137
+	Voice:	Spg2\Sound\Voice\adrian\137.wav
+	Duration:	1.394
+}
+Dialogue:
+{
+	Portrait:	13
+	Text:	138
+	Voice:	Spg2\Sound\Voice\oneill\138.wav
+	Duration:	4.80
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M14\EndDia05.sal
+}

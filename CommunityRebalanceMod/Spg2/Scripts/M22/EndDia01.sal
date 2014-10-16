@@ -1,0 +1,27 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+mainquest GetById 150 SetSolve 1 ;
+mainquest GetById 150 DeleteObjective 1 ;
+mainquest GetById 151 SetAcquire 1 ;
+ship GetByKeyName m22nexusA1 SetMark 1 ;
+ship GetByKeyName m22nexusA2 SetMark 1 ;
+ship GetByKeyName m22nexusA3 SetMark 1 ;
+ship GetByKeyName m22nexusA1 SetFriendFoe 2 ;
+ship GetByKeyName m22nexusA2 SetFriendFoe 2 ;
+ship GetByKeyName m22nexusA3 SetFriendFoe 2 ;
+ship GetByKeyName m22ridleyA SetFriendFoe 1 ;
+game ResetShipEnemyList 1 ;
+ship GetByKeyName m22nexusA1 SetMissionTask 0 ;
+ship GetByKeyName m22nexusA2 SetMissionTask 0 ;
+ship GetByKeyName m22nexusA3 SetMissionTask 0 ;
+ship GetByKeyName m22nexusA1 SetAIQuestStatus 2 ;
+ship GetByKeyName m22nexusA2 SetAIQuestStatus 2 ;
+ship GetByKeyName m22nexusA3 SetAIQuestStatus 2 ;
+ship GetByKeyName m22ridleyA SetAIQuestStatus 2 ;
+game SetControlEnabled 1 ;
+/* MissionArea */
+log 118 ;
+End

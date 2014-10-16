@@ -1,0 +1,35 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 149 GetAcquire questCond ;
+if questCond == 1
+
+	game SetQuestMode 1 ;
+	mainquest GetById 149 SetSolve 1 ;
+	mainquest GetById 149 DeleteObjective 1 ;
+	mainquest GetById 150 SetAcquire 1 ;
+	waypoint GetByKeyName m22marker SetMark 0 ;
+	waypoint GetByKeyName m22marker SetMissionTask -1 ;
+	ship GetByKeyName m22ridleyA SetEnabled 1 ;
+	ship GetByKeyName m22ridleyA SetBoardable 0 ;
+	ship GetByKeyName m22ridleyA SetDestructible 0 ;
+	ship GetByKeyName m22nexusA1 SetEnabled 1 ;
+	ship GetByKeyName m22nexusA2 SetEnabled 1 ;
+	ship GetByKeyName m22nexusA3 SetEnabled 1 ;
+	ship GetByKeyName m22ridleyA SetFriendFoe 1 ;	
+	ship GetByKeyName m22nexusA1 SetFriendFoe 1 ;
+	ship GetByKeyName m22nexusA2 SetFriendFoe 1 ;
+	ship GetByKeyName m22nexusA3 SetFriendFoe 1 ;
+	game ResetShipEnemyList 1 ;
+	ship GetByKeyName m22ridleyA SetAIQuestStatus 1 ;	
+	ship GetByKeyName m22nexusA1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m22nexusA2 SetAIQuestStatus 1 ;
+	ship GetByKeyName m22nexusA3 SetAIQuestStatus 1 ;
+	script Spg2\Scripts\M22\CS22A.sal ;
+
+endif
+End

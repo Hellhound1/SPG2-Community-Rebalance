@@ -1,0 +1,36 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 16 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 16 SetSolve 1 ;
+	mainquest GetById 16 DeleteObjective 1 ;
+	mainquest GetById 17 SetAcquire 1 ;
+	/* in case item is picked up during combat */
+	mainquest GetById 18 SetAcquire 1 ;
+	waypoint GetByKeyName m03aWp SetMark 0 ;
+	waypoint GetByKeyName m03aWp SetMissionTask -1 ;
+
+	derelict GetByKeyName m03DER SetEnabled 1 ;
+	derelict GetByKeyName m03DER SetDestructible 0 ;
+	ship GetByKeyName m03scavenger1 SetEnabled 1 ;
+	ship GetByKeyName m03scavenger2 SetEnabled 2 ;
+	ship GetByKeyName m03scavenger1 SetMark 1 ;
+	ship GetByKeyName m03scavenger2 SetMark 1 ;
+	ship GetByKeyName m03scavenger1 SetMissionTask 0 ;
+	ship GetByKeyName m03scavenger2 SetMissionTask 0 ;
+	
+	ship GetByKeyName m03scavenger1 SetFriendFoe 2 ;
+	ship GetByKeyName m03scavenger2 SetFriendFoe 2 ;
+	log 15 ;
+	game ResetShipEnemyList 1 ;
+	
+	ship GetByKeyName m03scavenger1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m03scavenger2 SetAIQuestStatus 2 ;
+	
+endif
+End

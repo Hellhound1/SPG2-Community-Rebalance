@@ -1,0 +1,88 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 217 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 218 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+
+/* main script part */
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int platform1Cond = 2 ;
+int platform2Cond = 2 ;
+int platform3Cond = 2 ;
+int structCond = 1 ;
+int questCond = 0 ;
+
+mainquest GetById 40 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage Quest_40_Check_Success! ;
+	
+	/* Get hostiles condition */
+	ship GetByKeyName m06direct1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m06direct1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	platform GetByKeyName m06platform1 GetCondition platform1Cond ;
+	platform GetByKeyName m06platform2 GetCondition platform2Cond ;
+	platform GetByKeyName m06platform3 GetCondition platform3Cond ;
+	structure GetByKeyName m06dirSTR GetEnabled structCond ;
+	
+	/* check if hostiles are dead */
+	if shipCond1 != 0
+		if platform1Cond != 0
+			if platform2Cond != 0
+				if platform3Cond != 0
+					if structCond == 0
+						mainquest GetById 40 SetSolve 1 ;
+						mainquest GetById 40 DeleteObjective 1 ;
+						mainquest GetById 41 SetAcquire 1 ;
+						game SetControlEnabled 1 ;
+						structure GetByKeyName m06dirSTR SetMark 0 ;
+						dialogue Spg2\Dialogues\M06\D03.dia ;
+					endif
+				endif
+			endif
+		endif
+	endif
+	
+endif
+End

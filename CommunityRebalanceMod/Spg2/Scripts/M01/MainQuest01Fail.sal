@@ -1,0 +1,37 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+activated on mission fail or abandon
+	+linked through QuestMain.wdt
+*/
+
+/* nullify quest flags */
+mainquest GetById 1 SetAvailable 1 ;
+mainquest GetById 1 SetSolve 0 ;
+mainquest GetById 2 SetSolve 0 ;
+mainquest GetById 3 SetSolve 0 ;
+mainquest GetById 4 SetSolve 0 ;
+mainquest GetById 5 SetSolve 0 ;
+mainquest GetById 6 SetSolve 0 ;
+mainquest GetById 7 SetSolve 0 ;
+mainquest GetById 8 SetSolve 0 ;
+mainquest GetById 9 SetSolve 0 ;
+mainquest GetById 1 SetAcquire 0 ;
+mainquest GetById 2 SetAcquire 0 ;
+mainquest GetById 3 SetAcquire 0 ;
+mainquest GetById 4 SetAcquire 0 ;
+mainquest GetById 5 SetAcquire 0 ;
+mainquest GetById 6 SetAcquire 0 ;
+mainquest GetById 7 SetAcquire 0 ;
+mainquest GetById 8 SetAcquire 0 ;
+mainquest GetById 9 SetAcquire 0 ;
+
+/* nullify actors */
+ship GetByKeyName m01avalonSHP Delete 0.0 ;
+ship GetByKeyName m01galahadSHP Delete 0.0 ;
+ship GetByKeyName m01sionSHP Delete 0.0 ;
+ship GetByKeyName m01raffaleSHP Delete 0.0 ;
+ship GetByKeyName m01yukonSHP Delete 0.0 ;
+
+End

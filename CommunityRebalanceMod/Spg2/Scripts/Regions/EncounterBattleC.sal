@@ -1,0 +1,167 @@
+/*
+-------
+Script by: LGM Games  
++chance of spawning battle encounter
++several specific regions have much higher chance of spawning battles
+*/
+
+int spawnType = 0 ;
+int profession = 0 ;
+int factionFriendly ;
+int leaderFriend ;
+int followerFriend ;
+int factionEnemy ;
+int leaderEnemy ;
+int followerEnemy ;
+int shipYFriendly ;
+int shipYEnemy ;
+
+/* SPAWN NUMBERS */
+int count = 4 ;
+
+/* SPAWN POSITIONS */
+float3 posCentral ;
+ship GetPlayer GetPosition posCentral ;
+float3 spawnFriendly ;
+float3 spawnEnemy ;
+float3 posAdd1 = 0.0 30.0 350.0 ;
+float3 posAdd2 = 0.0 -30.0 -350.0 ;
+math spawnFriendly = posCentral + posAdd1 ;
+math spawnEnemy = posCentral + posAdd2 ;
+
+factionFriendly = 0 ;
+int regionId = 0 ;
+int chanceMax = 15 ;
+int chance ;
+
+/* REGION BASED PARAMETERS */
+region GetId regionId ;
+if regionId == 40
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+	chanceMax = 6 ;
+endif
+if regionId == 41
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 1 ;
+	chanceMax = 6 ;
+endif
+if regionId == 42
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 1 ;
+endif
+if regionId == 43
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 1 ;
+endif
+if regionId == 44
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+endif
+if regionId == 45
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+endif
+if regionId == 46
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 3 ;
+endif
+if regionId == 47
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 5 ;
+endif
+if regionId == 48
+	shipYFriendly = 4 ;
+	factionEnemy = 4 ;
+	shipYEnemy = 5 ;
+	chanceMax = 6 ;
+endif
+if regionId == 49
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 3 ;
+endif
+if regionId == 50
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 5 ;
+	chanceMax = 6 ;
+endif
+if regionId == 51
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 5 ;
+endif
+if regionId == 52
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 2 ;
+endif
+if regionId == 53
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 4 ;
+endif
+if regionId == 54
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 4 ;
+endif
+if regionId == 55
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 4 ;
+endif
+if regionId == 56
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 4 ;
+	chanceMax = 6 ;
+endif
+if regionId == 57
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 4 ;
+endif
+if regionId == 58
+	shipYFriendly = 4 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 2 ;
+endif
+if regionId == 59
+	shipYFriendly = 4 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 2 ;
+endif
+
+math chance = Rnd 1 chanceMax ;
+if chance == 1
+	int fleetExist ;
+	fleet GetByKeyName FLT_Enemy Exist fleetExist ;
+	if fleetExist == 0
+		math leaderEnemy = Rnd 0 shipYEnemy ;
+		math followerEnemy = Rnd 0 shipYEnemy ;
+		math count = Rnd 1 4 ;
+		fleetAdd FLT_Enemy spawnType spawnEnemy factionEnemy leaderEnemy followerEnemy profession count ;
+	endif
+
+	pause 3.0 ;
+
+	fleet GetByKeyName FLT_Friend Exist fleetExist ;
+	if fleetExist == 0
+		math leaderFriend = Rnd 0 shipYFriendly ;
+		math followerFriend = Rnd 0 shipYFriendly ;
+		math count = Rnd 1 4 ;
+		fleetAdd FLT_Friend spawnType spawnFriendly factionFriendly leaderFriend followerFriend profession count ;
+	endif
+endif
+
+End

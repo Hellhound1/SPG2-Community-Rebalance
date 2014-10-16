@@ -1,0 +1,33 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_TrinityUndock.sal ;
+
+/* check quest condition */
+int questCond = 0 ;
+mainquest GetById 5 GetAcquire questCond ;
+if questCond == 1
+
+	/* set mainquest 5 solve flag to true */
+	mainquest GetById 5 SetSolve 1 ;
+	mainquest GetById 5 DeleteObjective 1 ;
+	/* set mainquest 6 acquire flag to true */
+	mainquest GetById 6 SetAcquire 1 ;
+	/* set mainquest marker on waypoint */
+	waypoint GetByKeyName m01markerB SetMark 1 ;
+	waypoint GetByKeyName m01markerB SetMissionTask 4 ;
+	/* enable log ID 5 */
+	log 5 ;
+	/* initiate dialogue */
+	/*
+	dialogue Spg2\Dialogues\M01\D04.dia ;
+	*/
+	script Spg2\Scripts\M01\CS01C2.sal ;
+endif
+
+PrintMessage END_TrinityUndock.sal ;
+
+End

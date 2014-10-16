@@ -1,0 +1,38 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+
+mainquest GetById 72 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m11brother1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11brother1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m11brother2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11brother2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			
+			mainquest GetById 72 SetSolve 1 ;
+			mainquest GetById 72 DeleteObjective 1 ;
+			mainquest GetById 73 SetAcquire 1 ;
+			ship GetByKeyName m11ridleySHP SetAIQuestStatus 1 ;
+			ship GetByKeyName m11terakonSHP SetAIQuestStatus 1 ;
+			dialogue Spg2\Dialogues\M11\D02.dia ;
+			
+		endif
+	endif
+	
+endif
+
+End

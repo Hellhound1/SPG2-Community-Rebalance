@@ -1,0 +1,29 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage ENTER_M11_TRI_A ;
+
+int questCond = 0 ;
+mainquest GetById 70 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	PrintMessage TRI_M11_QUEST_CHECK ;
+	mainquest GetById 70 SetSolve 1 ;
+	mainquest GetById 70 DeleteObjective 1 ;
+	mainquest GetById 71 SetAcquire 1 ;
+	/* iskoristiti m11aTRI kao MissionArea */
+	ship GetByKeyName m11terakonSHP SetEnabled 1 ;
+	ship GetByKeyName m11ridleySHP SetEnabled 1 ;	
+	ship GetByKeyName m11terakonSHP SetBoardable 0 ;
+	ship GetByKeyName m11ridleySHP SetBoardable 0 ;
+	ship GetByKeyName m11terakonSHP SetAIQuestStatus 3 ;
+	ship GetByKeyName m11ridleySHP SetAIQuestStatus 3 ;
+	ship GetByKeyName m11ridleySHP SetCloakInstant 1 ;
+	waypoint GetByKeyName m11marker SetMark 0 ;
+	waypoint GetByKeyName m11marker SetMissionTask -1 ;
+	script Spg2\Scripts\M11\CS11A.sal ;
+endif
+End

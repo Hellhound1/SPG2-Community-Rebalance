@@ -1,0 +1,17 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 68 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 68 SetSolve 1 ;
+	mainquest GetById 68 DeleteObjective 1 ;
+	mainquest GetById 69 SetAcquire 1 ;
+	platform GetByKeyName m10hubSTR SetMark 0 ;
+	platform GetByKeyName m10hubSTR SetMissionTask -1 ;
+	dialogue Spg2\Dialogues\M10\D03.dia ;
+endif
+End

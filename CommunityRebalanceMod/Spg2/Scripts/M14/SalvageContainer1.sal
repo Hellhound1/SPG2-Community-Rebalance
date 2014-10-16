@@ -1,0 +1,28 @@
+int questCond = 0 ;
+mainquest GetById 94 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 94 SetSolve 1 ;
+	mainquest GetById 94 DeleteObjective 1 ;
+	
+	game SetQuestMode 0 ;
+	
+	derelict GetParent SetMark 0 ;
+	derelict GetParent SetMissionTask -1 ;
+	
+	/* add quest item */
+	int itemId = 14 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	int questCond2 = 0 ;
+	int questCond3 = 0 ;
+	mainquest GetById 95 GetSolve questCond2 ;
+	mainquest GetById 96 GetSolve questCond3 ;
+	
+	if questCond2 == 1 && questCond3 == 1
+		script Spg2\Scripts\M14\CollectLoot.sal ;
+	endif
+	
+endif
+
+End

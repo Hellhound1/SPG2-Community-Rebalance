@@ -1,0 +1,20 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+ship GetByKeyName m11samoaSHP SetAIQuestStatus 2 ;
+ship GetByKeyName m11sanctuary1 SetAIQuestStatus 2 ;
+
+
+game ResetShipEnemyList 1 ;
+
+ship GetByKeyName m11terakonSHP SetEnabled 0 ;
+
+ship GetByKeyName m11ridleySHP SetMissionTask 13 ;
+ship GetByKeyName m11terakonSHP SetMissionTask 13 ;
+ship GetByKeyName m11ridleySHP SetAIQuestStatus 1 ;
+ship GetByKeyName m11terakonSHP SetAIQuestStatus 1 ;
+
+End

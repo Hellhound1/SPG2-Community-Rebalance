@@ -1,0 +1,11 @@
+
+/* avalon derelict state */
+	
+derelict GetByKeyName avalonDER SetMark 1 ;
+derelict GetByKeyName avalonDER SetDestructible 0 ;
+derelict GetByKeyName avalonDER SetMissionTask 6 ;
+
+/* activate log with ID 6 */
+log 6 ;
+
+End

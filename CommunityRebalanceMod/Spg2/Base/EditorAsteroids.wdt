@@ -1,0 +1,23 @@
+Colum:	6				
+Id	Name	IconFile	IconId	AsbFile	MapRowId
+0	Necalli	Spg2\Textures\GUI\asteroids.dds	0	Spg2\Models\Asteroids\Necalli\field.ast	0
+1	Crysalys	Spg2\Textures\GUI\asteroids.dds	19	Spg2\Models\Asteroids\Crysalys\field.ast	1
+2	Talgarno	Spg2\Textures\GUI\asteroids.dds	2	Spg2\Models\Asteroids\Talgarno\field.ast	2
+3	Sea_of_sorrow	Spg2\Textures\GUI\asteroids.dds	3	Spg2\Models\Asteroids\SeaOfSorrow\field.ast	3
+4	Ice_1	Spg2\Textures\GUI\asteroids.dds	4	Spg2\Models\Asteroids\Ice1\field.ast	4
+5	Ice_2	Spg2\Textures\GUI\asteroids.dds	5	Spg2\Models\Asteroids\Ice2\field.ast	4
+6	Ice_3	Spg2\Textures\GUI\asteroids.dds	6	Spg2\Models\Asteroids\Ice3\field.ast	4
+7	Ice_4	Spg2\Textures\GUI\asteroids.dds	7	Spg2\Models\Asteroids\Ice4\field.ast	4
+8	Standard_1	Spg2\Textures\GUI\asteroids.dds	8	Spg2\Models\Asteroids\Standard1\field.ast	5
+9	Standard_2	Spg2\Textures\GUI\asteroids.dds	9	Spg2\Models\Asteroids\Standard2\field.ast	5
+10	Standard_3	Spg2\Textures\GUI\asteroids.dds	10	Spg2\Models\Asteroids\Standard3\field.ast	5
+11	Standard_4	Spg2\Textures\GUI\asteroids.dds	11	Spg2\Models\Asteroids\Standard4\field.ast	5
+12	Standard_5	Spg2\Textures\GUI\asteroids.dds	12	Spg2\Models\Asteroids\Standard5\field.ast	5
+13	Standard_6	Spg2\Textures\GUI\asteroids.dds	13	Spg2\Models\Asteroids\Standard6\field.ast	5
+14	Standard_7	Spg2\Textures\GUI\asteroids.dds	14	Spg2\Models\Asteroids\Standard7\field.ast	5
+15	Standard_8	Spg2\Textures\GUI\asteroids.dds	15	Spg2\Models\Asteroids\Standard8\field.ast	5
+16	Standard_9	Spg2\Textures\GUI\asteroids.dds	16	Spg2\Models\Asteroids\Standard9\field.ast	5
+17	Standard_10	Spg2\Textures\GUI\asteroids.dds	17	Spg2\Models\Asteroids\Standard10\field.ast	5
+18	Standard_11	Spg2\Textures\GUI\asteroids.dds	18	Spg2\Models\Asteroids\Standard11\field.ast	5
+19	Lava	Spg2\Textures\GUI\asteroids.dds	19	Spg2\Models\Asteroids\Magma\field.ast	6
+20	Radiated	Spg2\Textures\GUI\asteroids.dds	1	Spg2\Models\Asteroids\Radiated\field.ast	7

@@ -1,0 +1,14 @@
+int questCond = 0 ;
+mainquest GetById 106 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 106 SetSolve 1 ;
+	mainquest GetById 106 DeleteObjective 1 ;
+	mainquest GetById 107 SetAcquire 1 ;
+	ship GetByKeyName m14ridleyC SetEnabled 1 ;
+	ship GetByKeyName m14ridleyC SetAIQuestStatus 1 ;
+	game ResetShipEnemyList 1 ;
+	script Spg2\Scripts\M14\CS14C.sal ;
+endif
+
+End

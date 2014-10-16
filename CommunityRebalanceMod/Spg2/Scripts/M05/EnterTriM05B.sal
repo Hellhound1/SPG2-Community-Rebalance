@@ -1,0 +1,22 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 30 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 30 SetSolve 1 ;
+	mainquest GetById 30 DeleteObjective 1 ;
+	mainquest GetById 31 SetAcquire 1 ;
+	ship GetByKeyName m05galahadSHP SetEnabled 1 ;
+	ship GetByKeyName m05galahadSHP SetInvulnerable 1 ;
+	ship GetByKeyName m05galahadSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m05galahadSHP SetFriendFoe 0 ;
+	waypoint GetByKeyName m05aWp SetMark 0 ;
+	waypoint GetByKeyName m05aWp SetMissionTask -1 ;
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M05\D02.dia ;
+endif
+End

@@ -1,0 +1,18 @@
+ship GetByKeyName m01pirate SetMissionTask 0 ;
+
+-1	RemoveMarker
+0	Destroy
+1	Disable
+2	Capture
+3	Anchor
+4	Go To
+5	Follow
+6	Scan
+7	Salvage
+8	Mine
+9	Collect
+10	Rescue
+11	Repair
+12	Transport
+13	Defend
+14	Stay close

@@ -1,0 +1,30 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+if mission is active, trigger mission fail script
+*/
+int questCond = 0 ;
+
+/* m04areaBouter */
+questCond = 0 ;
+mainquest GetById 24 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m04areaBouter */
+questCond = 0 ;
+mainquest GetById 25 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+/* m04areaCouter */
+questCond = 0 ;
+mainquest GetById 26 GetAcquire questCond ;
+if questCond == 1
+	game ShowPanel 0 0 ;
+endif
+
+End

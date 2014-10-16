@@ -1,0 +1,2395 @@
+txt	
+Version:	1000
+ScenarioKeyname:	ORIGCMPA
+ScenarioSort:	0
+Name:	Campaign
+Intro:	Intro
+Log:	0
+Description:	It_has_been_two_years_since_the_end_of_the_second_Gemini_war,_and_the_situation_in_the_war-torn_system_is_further_from_resolution_than_ever_before._The_collection_of_freedom_fighters_named_the_Gemini_League_is_now_reduced_to_a_small_group,_with_no_power_or_influence,_after_losing_their_leaders.<\n><\n>The_Empire_meanwhile,_has_used_the_re-opened_Starpoint_to_occupy_the_once_renegade_Gemini_sector_-_and_beyond.<\n><\n>Play_the_Starpoint_Gemini_2_campaign._Find_out_the_background_of_the_Gemini_conflict_and_how_it_plays_out,_or_if_you_want_to,_you_can_always_roam_the_star_system_freely_and_continue_the_storyline_whenever_you_feel_like_it.
+World:	
+{	
+	CurrentSector:	164
+	Heroes:	
+	{
+		HeroesEnabled:	1
+	}
+}	
+Camera:	
+{	
+	CameraSort:	0
+	Distance:	9.00
+}
+Player:	
+{	
+	Name:	Adrian_Faulkner
+	Skills:	2	1	0	0	0	0	1	0	0	0	0	1	0	0	0	0	1	0	0	0	0
+	Credits:	15000
+	Experience:	0
+	Reputation:	150
+	Ship:	
+	{	
+		Id:	40
+		CustomBannersId:	76
+		CustomColorBanners:	0.99	0.57	0.10	1.00
+		CustomColorName:	1.00	0.57	0.07	1.00
+		CustomFontName:	0
+		CustomColorDecals:	1.00	0.64	0.05	1.00
+		CustomPaintTint:	1.00	1.00	1.00	1.00
+		CustomGlossiness:	0.00
+		CustomReflection:	0.00
+		Position:	27113.00	0.00	59047.00
+		Orientation:	-0.26	-3.02	0.15
+		Rotation:	-0.90	0.00	0.44	0.00	-0.02	1.01	-0.07	0.00	-0.43	-0.06	-0.90	0.00	0.00	0.00	0.00	1.00
+		Name:	T.A.U.R.U.S.
+		Hull:	720.00
+		PowerToEngines:	0
+		Troopers:	22
+		Enhancements:		-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1	-1
+		PrimaryWeapons:	
+		{	
+			Battery:	
+			{	
+				Sort:	0
+				Turrets:	0
+				Weapon:	0
+			}	
+			Battery:	
+			{	
+				Sort:	1
+				Turrets:	0
+				Weapon:	0
+			}	
+			Battery:	
+			{	
+				Sort:	2
+				Turrets:	3
+				Weapon:	24
+			}	
+			Battery:	
+			{	
+				Sort:	3
+				Turrets:	0
+				Weapon:	0
+			}	
+		}	
+		SecundaryWeapons:	
+		{	
+			Launcher:	
+			{	
+				Sort:	2
+				Weapon:	11
+				Ammo:	8
+			}	
+		}	
+		Hangar:	
+		{	
+		}
+	}	
+	EquipmentMount: 1 2 3	1 5 3	1 8 3	1 18 3	
+	MainQuests:	300
+	0	0	0	1
+	1	0	0	0
+	2	0	0	0
+	3	0	0	0
+	4	0	0	0
+	5	0	0	0
+	6	0	0	0
+	7	0	0	0
+	8	0	0	0
+	9	0	0	0
+	10	0	0	0
+	11	0	0	0
+	12	0	0	0
+	13	0	0	0
+	14	0	0	0
+	15	0	0	0
+	16	0	0	0
+	17	0	0	0
+	18	0	0	0
+	19	0	0	0
+	20	0	0	0
+	21	0	0	0
+	22	0	0	0
+	23	0	0	0
+	24	0	0	0
+	25	0	0	0
+	26	0	0	0
+	27	0	0	0
+	28	0	0	0
+	29	0	0	0
+	30	0	0	0
+	31	0	0	0
+	32	0	0	0
+	33	0	0	0
+	34	0	0	0
+	35	0	0	0
+	36	0	0	0
+	37	0	0	0
+	38	0	0	0
+	39	0	0	0
+	40	0	0	0
+	41	0	0	0
+	42	0	0	0
+	43	0	0	0
+	44	0	0	0
+	45	0	0	0
+	46	0	0	0
+	47	0	0	0
+	48	0	0	0
+	49	0	0	0
+	50	0	0	0
+	51	0	0	0
+	52	0	0	0
+	53	0	0	0
+	54	0	0	0
+	55	0	0	0
+	56	0	0	0
+	57	0	0	0
+	58	0	0	0
+	59	0	0	0
+	60	0	0	0
+	61	0	0	0
+	62	0	0	0
+	63	0	0	0
+	64	0	0	0
+	65	0	0	0
+	66	0	0	0
+	67	0	0	0
+	68	0	0	0
+	69	0	0	0
+	70	0	0	0
+	71	0	0	0
+	72	0	0	0
+	73	0	0	0
+	74	0	0	0
+	75	0	0	0
+	76	0	0	0
+	77	0	0	0
+	78	0	0	0
+	79	0	0	0
+	80	0	0	0
+	81	0	0	0
+	82	0	0	0
+	83	0	0	0
+	84	0	0	0
+	85	0	0	0
+	86	0	0	0
+	87	0	0	0
+	88	0	0	0
+	89	0	0	0
+	90	0	0	0
+	91	0	0	0
+	92	0	0	0
+	93	0	0	0
+	94	0	0	0
+	95	0	0	0
+	96	0	0	0
+	97	0	0	0
+	98	0	0	0
+	99	0	0	0
+	100	0	0	0
+	101	0	0	0
+	102	0	0	0
+	103	0	0	0
+	104	0	0	0
+	105	0	0	0
+	106	0	0	0
+	107	0	0	0
+	108	0	0	0
+	109	0	0	0
+	110	0	0	0
+	111	0	0	0
+	112	0	0	0
+	113	0	0	0
+	114	0	0	0
+	115	0	0	0
+	116	0	0	0
+	117	0	0	0
+	118	0	0	0
+	119	0	0	0
+	120	0	0	0
+	121	0	0	0
+	122	0	0	0
+	123	0	0	0
+	124	0	0	0
+	125	0	0	0
+	126	0	0	0
+	127	0	0	0
+	128	0	0	0
+	129	0	0	0
+	130	0	0	0
+	131	0	0	0
+	132	0	0	0
+	133	0	0	0
+	134	0	0	0
+	135	0	0	0
+	136	0	0	0
+	137	0	0	0
+	138	0	0	0
+	139	0	0	0
+	140	0	0	0
+	141	0	0	0
+	142	0	0	0
+	143	0	0	0
+	144	0	0	0
+	145	0	0	0
+	146	0	0	0
+	147	0	0	0
+	148	0	0	0
+	149	0	0	0
+	150	0	0	0
+	151	0	0	0
+	152	0	0	0
+	153	0	0	0
+	154	0	0	0
+	155	0	0	0
+	156	0	0	0
+	157	0	0	0
+	158	0	0	0
+	159	0	0	0
+	160	0	0	0
+	161	0	0	0
+	162	0	0	0
+	163	0	0	0
+	164	0	0	0
+	165	0	0	0
+	166	0	0	0
+	167	0	0	0
+	168	0	0	0
+	169	0	0	0
+	170	0	0	0
+	171	0	0	0
+	172	0	0	0
+	173	0	0	0
+	174	0	0	0
+	175	0	0	0
+	176	0	0	0
+	177	0	0	0
+	178	0	0	0
+	179	0	0	0
+	180	0	0	0
+	181	0	0	0
+	182	0	0	0
+	183	0	0	0
+	184	0	0	0
+	185	0	0	0
+	186	0	0	0
+	187	0	0	0
+	188	0	0	0
+	189	0	0	0
+	190	0	0	0
+	191	0	0	0
+	192	0	0	0
+	193	0	0	0
+	194	0	0	0
+	195	0	0	0
+	196	0	0	0
+	197	0	0	0
+	198	0	0	0
+	199	0	0	0
+	200	0	0	0
+	201	0	0	0
+	202	0	0	0
+	203	0	0	0
+	204	0	0	0
+	205	0	0	0
+	206	0	0	0
+	207	0	0	0
+	208	0	0	0
+	209	0	0	0
+	210	0	0	0
+	211	0	0	0
+	212	0	0	0
+	213	0	0	0
+	214	0	0	0
+	215	0	0	0
+	216	0	0	0
+	217	0	0	0
+	218	0	0	0
+	219	0	0	0
+	220	0	0	0
+	221	0	0	0
+	222	0	0	0
+	223	0	0	0
+	224	0	0	0
+	225	0	0	0
+	226	0	0	0
+	227	0	0	0
+	228	0	0	0
+	229	0	0	0
+	230	0	0	0
+	231	0	0	0
+	232	0	0	0
+	233	0	0	0
+	234	0	0	0
+	235	0	0	0
+	236	0	0	0
+	237	0	0	0
+	238	0	0	0
+	239	0	0	0
+	240	0	0	0
+	241	0	0	0
+	242	0	0	0
+	243	0	0	0
+	244	0	0	0
+	245	0	0	0
+	246	0	0	0
+	247	0	0	0
+	248	0	0	0
+	249	0	0	0
+	250	0	0	0
+	251	0	0	0
+	252	0	0	0
+	253	0	0	0
+	254	0	0	0
+	255	0	0	0
+	256	0	0	0
+	257	0	0	0
+	258	0	0	0
+	259	0	0	0
+	260	0	0	0
+	261	0	0	0
+	262	0	0	0
+	263	0	0	0
+	264	0	0	0
+	265	0	0	0
+	266	0	0	0
+	267	0	0	0
+	268	0	0	0
+	269	0	0	0
+	270	0	0	0
+	271	0	0	0
+	272	0	0	0
+	273	0	0	0
+	274	0	0	0
+	275	0	0	0
+	276	0	0	0
+	277	0	0	0
+	278	0	0	0
+	279	0	0	0
+	280	0	0	0
+	281	0	0	0
+	282	0	0	0
+	283	0	0	0
+	284	0	0	0
+	285	0	0	0
+	286	0	0	0
+	287	0	0	0
+	288	0	0	0
+	289	0	0	0
+	290	0	0	0
+	291	0	0	0
+	292	0	0	0
+	293	0	0	0
+	294	0	0	0
+	295	0	0	0
+	296	0	0	0
+	297	0	0	0
+	298	0	0	0
+	299	0	0	0	
+	SideQuests:	300
+	0	0	0	0
+	1	0	0	0
+	2	0	0	0
+	3	0	0	0
+	4	0	0	0
+	5	0	0	0
+	6	0	0	0
+	7	0	0	0
+	8	0	0	0
+	9	0	0	0
+	10	0	0	0
+	11	0	0	0
+	12	0	0	0
+	13	0	0	0
+	14	0	0	0
+	15	0	0	0
+	16	0	0	0
+	17	0	0	0
+	18	0	0	0
+	19	0	0	0
+	20	0	0	0
+	21	0	0	0
+	22	0	0	0
+	23	0	0	0
+	24	0	0	0
+	25	0	0	0
+	26	0	0	0
+	27	0	0	0
+	28	0	0	0
+	29	0	0	0
+	30	0	0	0
+	31	0	0	0
+	32	0	0	0
+	33	0	0	0
+	34	0	0	0
+	35	0	0	0
+	36	0	0	0
+	37	0	0	0
+	38	0	0	0
+	39	0	0	0
+	40	0	0	0
+	41	0	0	0
+	42	0	0	0
+	43	0	0	0
+	44	0	0	0
+	45	0	0	0
+	46	0	0	0
+	47	0	0	0
+	48	0	0	0
+	49	0	0	0
+	50	0	0	0
+	51	0	0	0
+	52	0	0	0
+	53	0	0	0
+	54	0	0	0
+	55	0	0	0
+	56	0	0	0
+	57	0	0	0
+	58	0	0	0
+	59	0	0	0
+	60	0	0	0
+	61	0	0	0
+	62	0	0	0
+	63	0	0	0
+	64	0	0	0
+	65	0	0	0
+	66	0	0	0
+	67	0	0	0
+	68	0	0	0
+	69	0	0	0
+	70	0	0	0
+	71	0	0	0
+	72	0	0	0
+	73	0	0	0
+	74	0	0	0
+	75	0	0	0
+	76	0	0	0
+	77	0	0	0
+	78	0	0	0
+	79	0	0	0
+	80	0	0	0
+	81	0	0	0
+	82	0	0	0
+	83	0	0	0
+	84	0	0	0
+	85	0	0	0
+	86	0	0	0
+	87	0	0	0
+	88	0	0	0
+	89	0	0	0
+	90	0	0	0
+	91	0	0	0
+	92	0	0	0
+	93	0	0	0
+	94	0	0	0
+	95	0	0	0
+	96	0	0	0
+	97	0	0	0
+	98	0	0	0
+	99	0	0	0
+	100	0	0	0
+	101	0	0	0
+	102	0	0	0
+	103	0	0	0
+	104	0	0	0
+	105	0	0	0
+	106	0	0	0
+	107	0	0	0
+	108	0	0	0
+	109	0	0	0
+	110	0	0	0
+	111	0	0	0
+	112	0	0	0
+	113	0	0	0
+	114	0	0	0
+	115	0	0	0
+	116	0	0	0
+	117	0	0	0
+	118	0	0	0
+	119	0	0	0
+	120	0	0	0
+	121	0	0	0
+	122	0	0	0
+	123	0	0	0
+	124	0	0	0
+	125	0	0	0
+	126	0	0	0
+	127	0	0	0
+	128	0	0	0
+	129	0	0	0
+	130	0	0	0
+	131	0	0	0
+	132	0	0	0
+	133	0	0	0
+	134	0	0	0
+	135	0	0	0
+	136	0	0	0
+	137	0	0	0
+	138	0	0	0
+	139	0	0	0
+	140	0	0	0
+	141	0	0	0
+	142	0	0	0
+	143	0	0	0
+	144	0	0	0
+	145	0	0	0
+	146	0	0	0
+	147	0	0	0
+	148	0	0	0
+	149	0	0	0
+	150	0	0	0
+	151	0	0	0
+	152	0	0	0
+	153	0	0	0
+	154	0	0	0
+	155	0	0	0
+	156	0	0	0
+	157	0	0	0
+	158	0	0	0
+	159	0	0	0
+	160	0	0	0
+	161	0	0	0
+	162	0	0	0
+	163	0	0	0
+	164	0	0	0
+	165	0	0	0
+	166	0	0	0
+	167	0	0	0
+	168	0	0	0
+	169	0	0	0
+	170	0	0	0
+	171	0	0	0
+	172	0	0	0
+	173	0	0	0
+	174	0	0	0
+	175	0	0	0
+	176	0	0	0
+	177	0	0	0
+	178	0	0	0
+	179	0	0	0
+	180	0	0	0
+	181	0	0	0
+	182	0	0	0
+	183	0	0	0
+	184	0	0	0
+	185	0	0	0
+	186	0	0	0
+	187	0	0	0
+	188	0	0	0
+	189	0	0	0
+	190	0	0	0
+	191	0	0	0
+	192	0	0	0
+	193	0	0	0
+	194	0	0	0
+	195	0	0	0
+	196	0	0	0
+	197	0	0	0
+	198	0	0	0
+	199	0	0	0
+	200	0	0	0
+	201	0	0	0
+	202	0	0	0
+	203	0	0	0
+	204	0	0	0
+	205	0	0	0
+	206	0	0	0
+	207	0	0	0
+	208	0	0	0
+	209	0	0	0
+	210	0	0	0
+	211	0	0	0
+	212	0	0	0
+	213	0	0	0
+	214	0	0	0
+	215	0	0	0
+	216	0	0	0
+	217	0	0	0
+	218	0	0	0
+	219	0	0	0
+	220	0	0	0
+	221	0	0	0
+	222	0	0	0
+	223	0	0	0
+	224	0	0	0
+	225	0	0	0
+	226	0	0	0
+	227	0	0	0
+	228	0	0	0
+	229	0	0	0
+	230	0	0	0
+	231	0	0	0
+	232	0	0	0
+	233	0	0	0
+	234	0	0	0
+	235	0	0	0
+	236	0	0	0
+	237	0	0	0
+	238	0	0	0
+	239	0	0	0
+	240	0	0	0
+	241	0	0	0
+	242	0	0	0
+	243	0	0	0
+	244	0	0	0
+	245	0	0	0
+	246	0	0	0
+	247	0	0	0
+	248	0	0	0
+	249	0	0	0
+	250	0	0	0
+	251	0	0	0
+	252	0	0	0
+	253	0	0	0
+	254	0	0	0
+	255	0	0	0
+	256	0	0	0
+	257	0	0	0
+	258	0	0	0
+	259	0	0	0
+	260	0	0	0
+	261	0	0	0
+	262	0	0	0
+	263	0	0	0
+	264	0	0	0
+	265	0	0	0
+	266	0	0	0
+	267	0	0	0
+	268	0	0	0
+	269	0	0	0
+	270	0	0	0
+	271	0	0	0
+	272	0	0	0
+	273	0	0	0
+	274	0	0	0
+	275	0	0	0
+	276	0	0	0
+	277	0	0	0
+	278	0	0	0
+	279	0	0	0
+	280	0	0	0
+	281	0	0	0
+	282	0	0	0
+	283	0	0	0
+	284	0	0	0
+	285	0	0	0
+	286	0	0	0
+	287	0	0	0
+	288	0	0	0
+	289	0	0	0
+	290	0	0	0
+	291	0	0	0
+	292	0	0	0
+	293	0	0	0
+	294	0	0	0
+	295	0	0	0
+	296	0	0	0
+	297	0	0	0
+	298	0	0	0
+	299	0	0	0
+}	
+Sectors:	
+{	
+	SectorsNo:	340
+	Sector:	
+	{	
+		Id:	0
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	1
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	2
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	3
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	4
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	5
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	6
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	7
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	8
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	9
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	10
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	11
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	12
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	13
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	14
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	15
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	16
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	17
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	18
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	19
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	20
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	21
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	22
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	23
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	24
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	25
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	26
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	27
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	28
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	29
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	30
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	31
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	32
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	33
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	34
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	35
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	36
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	37
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	38
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	39
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	40
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	41
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	42
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	43
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	44
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	45
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	46
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	47
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	48
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	49
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	50
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	51
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	52
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	53
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	54
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	55
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	56
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	57
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	58
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	59
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	60
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	61
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	62
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	63
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	64
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	65
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	66
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	67
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	68
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	69
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	70
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	71
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	72
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	73
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	74
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	75
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	76
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	77
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	78
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	79
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	80
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	81
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	82
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	83
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	84
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	85
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	86
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	87
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	88
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	89
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	90
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	91
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	92
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	93
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	94
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	95
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	96
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	97
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	98
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	99
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	100
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	101
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	102
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	103
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	104
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	105
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	106
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	107
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	108
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	109
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	110
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	111
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	112
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	113
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	114
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	115
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	116
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	117
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	118
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	119
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	120
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	121
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	122
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	123
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	124
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	125
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	126
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	127
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	128
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	129
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	130
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	131
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	132
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	133
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	134
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	135
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	136
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	137
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	138
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	139
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	140
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	141
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	142
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	143
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	144
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	145
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	146
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	147
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	148
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	149
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	150
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	151
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	152
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	153
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	154
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	155
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	156
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	157
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	158
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	159
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	160
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	161
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	162
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	163
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	164
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	165
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	166
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	167
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	168
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	169
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	170
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	171
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	172
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	173
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	174
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	175
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	176
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	177
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	178
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	179
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	180
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	181
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	182
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	183
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	184
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	185
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	186
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	187
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	188
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	189
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	190
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	191
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	192
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	193
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	194
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	195
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	196
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	197
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	198
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	199
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	200
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	201
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	202
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	203
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	204
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	205
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	206
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	207
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	208
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	209
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	210
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	211
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	212
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	213
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	214
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	215
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	216
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	217
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	218
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	219
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	220
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	221
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	222
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	223
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	224
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	225
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	226
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	227
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	228
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	229
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	230
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	231
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	232
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	233
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	234
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	235
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	236
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	237
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	238
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	239
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	240
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	241
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	242
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	243
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	244
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	245
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	246
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	247
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	248
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	249
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	250
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	251
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	252
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	253
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	254
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	255
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	256
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	257
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	258
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	259
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	260
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	261
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	262
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	263
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	264
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	265
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	266
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	267
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	268
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	269
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	270
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	271
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	272
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	273
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	274
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	275
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	276
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	277
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	278
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	279
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	280
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	281
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	282
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	283
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	284
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	285
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	286
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	287
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	288
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	289
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	290
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	291
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	292
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	293
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	294
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	295
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	296
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	297
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	298
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	299
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	300
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	301
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	302
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	303
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	304
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	305
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	306
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	307
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	308
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	309
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	310
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	311
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	312
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	313
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	314
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	315
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	316
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	317
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	318
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	319
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	320
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	321
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	322
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	323
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	324
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	325
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	326
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	327
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	328
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	329
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	330
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	331
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	332
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	333
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	334
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	335
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	336
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	337
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	338
+		FOW:	1
+	}	
+	Sector:	
+	{	
+		Id:	339
+		FOW:	1
+	}	
+}

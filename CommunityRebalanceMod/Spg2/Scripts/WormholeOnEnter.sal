@@ -1,0 +1,35 @@
+/*
+-------
+Script by: LGM Games, 2014
++default Wormhole OnEnter script
+-------
++chance to jump to wrong wormhole
+	+destination wormhole is chosen at random
+	+wrong destination jump can only start happening after player reaches level 10
+*/
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 0
+	int level = 0 ;
+	player GetLevel level ;
+	if level > 9
+		int chance = 0 ;
+		math chance = Rnd 1 10 ;
+		if chance == 10
+			int pick = 0 ;
+			math pick = Rnd 0 58 ;
+			int current = 0 ;
+			wormhole GetParent GetObjectId current ;
+			if pick == current
+				math pick = Rnd 0 58 ;
+			endif
+			if pick == current
+				math pick = Rnd 0 58 ;
+			endif
+			if pick != current
+				wormhole GetParent SetWrongJump pick ;
+			endif
+		endif
+	endif
+endif
+End

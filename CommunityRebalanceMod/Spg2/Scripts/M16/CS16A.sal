@@ -1,0 +1,84 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posPlayer ;
+float3 posSteiger ;
+float3 posGladius1 ;
+float3 posGladius2 ;
+float3 posMasada ;
+float3 posAdd ;
+station GetByKeyName masadaSTA GetPosition posMasada ;
+posAdd = 400.0 0.0 0.0 ;
+math posSteiger = posMasada + posAdd ;
+posAdd = 0.0 0.0 30.0 ;
+math posGladius1 = posSteiger + posAdd ;
+posAdd = 0.0 0.0 -30.0 ;
+math posGladius2 = posSteiger + posAdd ;
+posAdd = 50.0 0.0 0.0 ;
+math posPlayer = posSteiger + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m16steigerSHP SetPosition posSteiger ;
+ship GetByKeyName m16gladius1 SetPosition posGladius1 ;
+ship GetByKeyName m16gladius2 SetPosition posGladius2 ;
+ship GetPlayer VectorTo posSteiger ;
+ship GetByKeyName m16steigerSHP VectorTo posPlayer ;
+ship GetByKeyName m16gladius1 VectorTo posPlayer ;
+ship GetByKeyName m16gladius2 VectorTo posPlayer ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> masada */
+int objectType = 5 ;
+float rotStart = 2.8 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 500.0 ;
+camera SetType 5 objectType masadaSTA rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+int miscLine = 1131 ;
+float duration = 6.0 ;
+screen ShowText miscLine duration ;
+
+pause 5.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+script Spg2\Scripts\M16\EndCSa.sal ;
+
+End

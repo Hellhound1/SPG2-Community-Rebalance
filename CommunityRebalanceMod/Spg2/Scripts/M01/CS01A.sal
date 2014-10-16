@@ -1,0 +1,188 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* --- startCS block begin --- */
+/* shut down manual controls */
+game SetControlEnabled 0 ;
+
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* start FadeToBlack */
+float time = 0.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+/*  pause 0.0 ; */
+/* turn off HUD */
+game ShowAllPanels 0 ;
+/* CS lines */
+screen ShowLine 1 ;
+
+/* --- startCS block finish --- */
+
+/* set actors position and rotation */
+float3 position = 0.0 0.0 0.0 ;
+float3 rotation = 0.0 0.0 0.0 ;
+float3 trinityPos ;
+planet GetByKeyName trinityPLA GetPosition trinityPos ;
+waypoint GetByKeyName m01avalonPosWpA GetPosition position ;
+waypoint GetByKeyName m01avalonPosWpA GetRotation rotation ;
+float3 avalonOffset = 0.0 0.0 0.0 ;
+math position = position + avalonOffset ;
+ship GetByKeyName m01avalonSHP SetPosition position ;
+ship GetByKeyName m01avalonSHP SetInvulnerable 1 ;
+/*
+float3 avalonRot = 0.0 -0.2 0.0 ;
+*/
+float3 avalonRot = 0.0 0.0 0.0 ;
+ship GetByKeyName m01avalonSHP SetRotation avalonRot ;
+ship GetByKeyName m01avalonSHP VectorTo trinityPos ;
+
+
+waypoint GetByKeyName m01yukonPosWpA GetPosition position ;
+waypoint GetByKeyName m01yukonPosWpA GetRotation rotation ;
+ship GetByKeyName m01yukonSHP SetPosition position ;
+float3 raffaleRot = -0.1 -0.3 0.0 ;
+ship GetByKeyName m01yukonSHP SetRotation raffaleRot ;
+ship GetByKeyName m01yukonSHP SetInvulnerable 1 ;
+
+waypoint GetByKeyName m01raffalePosWpA GetPosition position ;
+waypoint GetByKeyName m01avalonPosWpA GetRotation rotation ;
+float3 raffalePos ;
+float3 raffaleOffset = 15.0 0.0 0.0 ;
+math raffalePos = position + raffaleOffset ;
+ship GetByKeyName m01raffaleSHP SetPosition raffalePos ;
+ship GetByKeyName m01raffaleSHP SetRotation rotation ;
+ship GetByKeyName m01raffaleSHP SetInvulnerable 1 ;
+
+waypoint GetByKeyName m01sionPosWpA GetPosition position ;
+waypoint GetByKeyName m01sionPosWpA GetRotation rotation ;
+ship GetByKeyName m01sionSHP SetPosition position ;
+ship GetByKeyName m01sionSHP SetRotation rotation ;
+ship GetByKeyName m01sionSHP SetInvulnerable 1 ;
+
+waypoint GetByKeyName m01galahadPosWpA GetPosition position ;
+waypoint GetByKeyName m01galahadPosWpA GetRotation rotation ;
+float3 galahadPos ;
+float3 galahadOffset = 0.0 10.0 -20.0 ;
+math galahadPos = position + galahadOffset ;
+ship GetByKeyName m01galahadSHP SetPosition galahadPos ;
+ship GetByKeyName m01galahadSHP SetRotation rotation ;
+ship GetByKeyName m01galahadSHP SetInvulnerable 1 ;
+
+waypoint GetByKeyName gameStartPos GetPosition position ;
+waypoint GetByKeyName gameStartPos GetRotation rotation ;
+float3 playerPos ;
+float3 playerOffset = -15.0 -5.0 57.0 ;
+math playerPos = position + playerOffset ;
+ship GetPlayer SetPosition playerPos ;
+
+float3 playerRot = 0.0 0.0 0.0 ;
+ship GetPlayer SetRotation playerRot ;
+
+float3 offsetRot = -0.1 -0.1 0.0 ;
+ship GetPlayer GetRotation playerRot ;
+math playerRot = playerRot + offsetRot ;
+ship GetPlayer SetRotation playerRot ;
+
+
+/* Cutscene camera start */
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+
+time = 0.5 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* camera rotation -> Planet Trinity */
+int objectType = 7 ;
+float rotationStart = 1.85 ;
+float rotationSpeed = 0.03 ;
+float verticalStart = 0.37 ;
+float verticalOffset = 500.0 ;
+float verticalSpeed = 0.06 ;
+float cameraDistance = 4520 ;
+camera SetType 5 objectType trinityPLA rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+pause 0.7 ;
+int miscLine = 615 ;
+float duration = 8.5 ;
+screen ShowText miscLine duration ;
+
+pause 7.5 ;
+
+
+time = 0.5 ;
+camera FadeToColor black time ;
+pause 0.5 ;
+camera FadeFromColor black time ;
+
+/* camera rotation -> avalon + zoomIn */
+objectType = 1 ;
+rotationStart = -0.25 ;
+rotationSpeed = 0.03 ;
+verticalStart = 0.0 ;
+verticalOffset = 50.0 ;
+verticalSpeed = 0.11 ;
+cameraDistance = 300.0 ; 
+camera SetType 5 objectType m01avalonSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+miscLine = 616 ;
+duration = 5.5 ;
+screen ShowText miscLine duration ;
+
+/* camera zoom in on avalon */
+float zoomTime = 5.5 ;
+float zoomAmount = 60.0 ;
+camera SetZoom 0 zoomTime zoomAmount ;
+pause 5.0 ;
+
+time = 0.5 ;
+camera FadeToColor black time ;
+pause 0.5 ;
+
+rotationStart = 0.11 ;
+rotationSpeed = 0.20 ;
+verticalSpeed = 0.01 ;
+cameraDistance = 60.0 ;
+verticalStart = 0.5 ;
+camera SetType 5 objectType m01avalonSHP rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+
+zoomTime = 6.7 ;
+zoomAmount = 40.0 ;
+camera SetZoom 0 zoomTime zoomAmount ;
+
+camera FadeFromColor black time ;
+pause 0.7 ;
+
+dialogue Spg2\Dialogues\M01\D01.dia ;
+pause 6.0 ; 
+
+/* Cutscene camera end */
+camera SetType 0 ;
+zoomTime = 0.0 ;
+zoomAmount = 40.0 ;
+camera SetZoom 0 zoomTime zoomAmount ;
+
+/* --- endCS block begin --- */
+/* fade to and from black */
+zoomTime = 3.5 ;
+zoomAmount = 11.0 ;
+camera SetZoom 0 zoomTime zoomAmount ;
+
+pause 3.5 ;
+
+/* --- endCS block finish --- */
+/* initiate script */
+
+script Spg2\Scripts\M01\EndCSa.sal ;
+
+
+End

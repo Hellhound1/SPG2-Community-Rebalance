@@ -1,0 +1,97 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 108 GetAcquire questCond ;
+if questCond == 1
+
+	game SetQuestMode 1 ;
+
+	mainquest GetById 108 SetSolve 1 ;
+	mainquest GetById 108 DeleteObjective 1 ;
+	mainquest GetById 109 SetAcquire 1 ;
+	waypoint GetByKeyName m15marker SetMark 0 ;
+	waypoint GetByKeyName m15marker SetMissionTask -1 ;
+	/* MissionArea */
+	ship GetByKeyName m15ridleySHP SetEnabled 1 ;
+	ship GetByKeyName m15ridleySHP SetDestructible 0 ;
+	ship GetByKeyName m15nexus1 SetEnabled 1 ;
+	ship GetByKeyName m15nexus2 SetEnabled 1 ;
+	ship GetByKeyName m15nexus1 SetInvulnerable 1 ;
+	ship GetByKeyName m15nexus2 SetInvulnerable 1 ;
+	
+	ship GetByKeyName m15ridleySHP SetFriendFoe 0 ;
+	ship GetByKeyName m15nexus1 SetFriendFoe 2 ;
+	ship GetByKeyName m15nexus2 SetFriendFoe 2 ;
+	
+	ship GetByKeyName m15ridleySHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m15nexus1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m15nexus2 SetAIQuestStatus 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	game SetControlEnabled 0 ;
+	
+	script Spg2\Scripts\M15\CS15A.sal ;
+endif
+
+/* TRIGGER REUSED FOR M20 */
+questCond = 0 ;
+mainquest GetById 134 GetAcquire questCond ;
+if questCond == 1
+	
+	mainquest GetById 134 SetSolve 1 ;
+	mainquest GetById 135 SetAcquire 1 ;
+	
+	game SetQuestMode 1 ;
+	
+	station GetByKeyName clearmontSTA SetEnabled 0 ;
+	platform GetByKeyName clearmontPlatform SetEnabled 1 ;
+	platform GetByKeyName clearmontPlatform SetDestructible 0 ;
+	platform GetByKeyName clearmontPlatform SetFriendFoe 2 ;
+	platform GetByKeyName clearmontPlatform SetHP 30000.0 ;
+	
+	ship GetByKeyName m20ridleyB SetEnabled 1 ;
+	ship GetByKeyName m20ridleyB SetDestructible 0 ;
+	ship GetByKeyName m20seraphim SetEnabled 1	;
+	ship GetByKeyName m20imp1 SetEnabled 1	;
+	ship GetByKeyName m20imp2 SetEnabled 1	;
+	ship GetByKeyName m20imp3 SetEnabled 1	;
+	ship GetByKeyName m20imp4 SetEnabled 1	;
+	
+	waypoint GetByKeyName m15marker SetMark 0 ;
+	waypoint GetByKeyName m15marker SetMissionTask -1 ;
+	ship GetByKeyName m20seraphim SetMark 1	;
+	ship GetByKeyName m20imp1 SetMark 1	;
+	ship GetByKeyName m20imp2 SetMark 1	;
+	ship GetByKeyName m20imp3 SetMark 1	;
+	ship GetByKeyName m20imp4 SetMark 1	;
+	
+	ship GetByKeyName m20seraphim SetMissionTask 0 ;
+	ship GetByKeyName m20imp1 SetMissionTask 0 ;
+	ship GetByKeyName m20imp2 SetMissionTask 0 ;
+	ship GetByKeyName m20imp3 SetMissionTask 0 ;
+	ship GetByKeyName m20imp4 SetMissionTask 0 ;
+	
+	ship GetByKeyName m20ridleyB SetFriendFoe 1 ;
+	ship GetByKeyName m20seraphim SetFriendFoe 2 ;
+	ship GetByKeyName m20imp1 SetFriendFoe 2 ;
+	ship GetByKeyName m20imp2 SetFriendFoe 2 ;
+	ship GetByKeyName m20imp3 SetFriendFoe 2 ;
+	ship GetByKeyName m20imp4 SetFriendFoe 2 ;
+	
+	ship GetByKeyName m20ridleyB SetAIQuestStatus 1 ;
+	ship GetByKeyName m20seraphim SetAIQuestStatus 2 ;
+	ship GetByKeyName m20imp1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m20imp2 SetAIQuestStatus 2 ;
+	ship GetByKeyName m20imp3 SetAIQuestStatus 2 ;
+	ship GetByKeyName m20imp4 SetAIQuestStatus 2 ;
+	
+	game ResetShipEnemyList 1 ;
+
+endif
+
+End

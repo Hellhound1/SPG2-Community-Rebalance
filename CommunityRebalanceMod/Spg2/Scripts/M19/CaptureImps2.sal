@@ -1,0 +1,83 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+int shipCond4 = 2 ;
+int shipCond5 = 2 ;
+
+mainquest GetById 131 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m19imp6 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp6 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp7 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp7 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp8 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp8 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp9 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp9 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp10 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp10 GetCondition shipCond5 ;
+	else
+		shipCond5 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				if shipCond4 != 0
+					if shipCond5 != 0
+					
+						mainquest GetById 131 SetSolve 1 ;
+						/* mainquest GetById 131 DeleteObjective 1 ; */
+						mainquest GetById 132 SetAvailable 1 ;
+						log 106 ;											
+						
+						dialogue Spg2\Dialogues\M19\D02.dia ;
+						
+						game SetQuestMode 0 ;
+
+						/* -^-REWARD-^- */
+						player AddExp 58600 ;
+						player AddReputation 100 ;
+						player AddCredits 400000 ;
+						script Spg2\Scripts\BlueprintAward.sal ;
+
+						/* -^-MISSION COMPLETE-^- */
+						int titleLine = 183 ;
+						int textLine1 = 1553 ;
+						int textLine2 = -1 ;
+						screen ShowWarnings titleLine textLine1 textLine2 ;
+					
+					endif
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

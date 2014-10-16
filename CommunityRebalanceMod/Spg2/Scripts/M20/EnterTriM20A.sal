@@ -1,0 +1,29 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 132 GetAcquire questCond ;
+if questCond == 1
+	
+	game SetQuestMode 1 ;
+	
+	mainquest GetById 132 SetSolve 1 ;
+	mainquest GetById 132 DeleteObjective 1 ;
+	mainquest GetById 133 SetAcquire 1 ;
+	
+	game SetControlEnabled 0 ;
+	waypoint GetByKeyName m20marker SetMark 0 ;
+	waypoint GetByKeyName m20marker SetMissionTask -1 ;
+	
+	ship GetByKeyName m20ridleyA SetEnabled 1 ;
+	ship GetByKeyName m20ridleyA SetFriendFoe 1 ;
+	ship GetByKeyName m20ridleyA SetAIQuestStatus 1 ;
+	game ResetShipEnemyList 1 ;
+	
+	script Spg2\Scripts\M20\CS20D.sal ;
+	
+endif
+End

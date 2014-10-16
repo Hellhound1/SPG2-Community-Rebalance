@@ -1,0 +1,13 @@
+Colum:	4		
+Id	Name	Rank	TurretPrice
+0	Fighter	0	1000
+1	Freighter	2	40000
+2	Freightliner	5	65000
+3	Gunship	0	50000
+4	Corvette	1	65000
+5	Frigate	2	80000
+6	Destroyer	4	85000
+7	Cruiser	5	95000
+8	Battleship	6	105000
+9	Dreadnought	7	125000
+10	Carrier	8	130000

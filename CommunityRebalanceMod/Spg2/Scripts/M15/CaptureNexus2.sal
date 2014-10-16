@@ -1,0 +1,77 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+int shipCond4 = 2 ;
+
+mainquest GetById 111 GetAcquire questCond ;
+if questCond == 1
+	ship GetByKeyName m15nexus3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m15nexus3 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m15nexus4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m15nexus4 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	ship GetByKeyName m15nexus5 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m15nexus5 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	ship GetByKeyName m15nexus6 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m15nexus6 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				if shipCond4 != 0
+					mainquest GetById 111 SetSolve 1 ;
+					mainquest GetById 111 DeleteObjective 1 ;
+					ship GetByKeyName m15brother1 SetEnabled 1 ;
+					ship GetByKeyName m15brother2 SetEnabled 1 ;
+					ship GetByKeyName m15brother3 SetEnabled 1 ;
+					ship GetByKeyName m15brother4 SetEnabled 1 ;
+					ship GetByKeyName m15brother5 SetEnabled 1 ;
+					platform GetByKeyName m15mothership SetEnabled 1 ;
+					float platformTransp = 0.0 ;
+					float platformInterp = 0.0 ;
+					float platformDelay = 0.0 ;
+					platform GetByKeyName m15mothership GetMesh 6 SetTransparent platformTransp platformInterp platformDelay ;
+					ship GetByKeyName m15brother1 SetFriendFoe 2 ;
+					ship GetByKeyName m15brother2 SetFriendFoe 2 ;
+					ship GetByKeyName m15brother3 SetFriendFoe 2 ;
+					ship GetByKeyName m15brother4 SetFriendFoe 2 ;
+					ship GetByKeyName m15brother5 SetFriendFoe 2 ;
+					/*
+					ship GetByKeyName m15ridleySHP SetDestructible 1 ;
+					*/
+					
+					ship GetByKeyName m15brother1 SetAIQuestStatus 1 ;
+					ship GetByKeyName m15brother2 SetAIQuestStatus 1 ;
+					ship GetByKeyName m15brother3 SetAIQuestStatus 1 ;
+					ship GetByKeyName m15brother4 SetAIQuestStatus 1 ;
+					ship GetByKeyName m15brother5 SetAIQuestStatus 1 ;
+					platform GetByKeyName m15mothership SetAIQuestStatus 1 ;
+					
+					game ResetShipEnemyList 1 ;
+					script Spg2\Scripts\M15\CS15C.sal ;
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

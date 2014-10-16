@@ -1,0 +1,57 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 219 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 220 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+/* QUEST */
+
+int questCond = 0 ;
+mainquest GetById 138 GetAcquire questCond ;
+if questCond == 1
+	log 110 ;
+	mainquest GetById 138 SetSolve 1 ;
+	mainquest GetById 139 SetAcquire 1 ;
+	ship GetByKeyName m20ridleyB SetAIQuestStatus 1 ;
+	ship GetByKeyName m20kuzhevSHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m20protect1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m20protect2 SetAIQuestStatus 1 ;
+	game ResetShipEnemyList 1 ;
+	script Spg2\Scripts\M20\CS20C.sal ;
+endif
+End

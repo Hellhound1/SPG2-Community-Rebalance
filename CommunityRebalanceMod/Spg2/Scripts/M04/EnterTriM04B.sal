@@ -1,0 +1,106 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage TRI_M04B_Entered! ;
+/* entering trigger for the first time on mission 04 */
+
+int aiState = 1 ;
+int questCond = 0 ;
+mainquest GetById 23 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage TRI_M04B_1st_Entry_Check! ;
+	
+	game SetQuestMode 1 ;
+	
+	mainquest GetById 23 SetSolve 1 ;
+	mainquest GetById 23 DeleteObjective 1 ;
+	mainquest GetById 24 SetAcquire 1 ;
+	waypoint GetByKeyName m04aWp SetMark 0 ;
+	waypoint GetByKeyName m04aWp SetMissionTask -1 ;
+	/* koristiti m04bTRI za MissionArea */
+	ship GetByKeyName m04sionBSHP SetEnabled 1 ;
+	ship GetByKeyName m04sionBSHP SetDestructible 0 ;
+	ship GetByKeyName m04anarchist1 SetEnabled 1 ;
+	ship GetByKeyName m04anarchist2 SetEnabled 1 ;
+	ship GetByKeyName m04anarchist3 SetEnabled 1 ;
+	ship GetByKeyName m04convoy1 SetEnabled 1 ;
+	ship GetByKeyName m04convoy2 SetEnabled 1 ;
+	
+	ship GetByKeyName m04sionBSHP SetBoardable 0 ;
+	ship GetByKeyName m04convoy1 SetBoardable 0 ;
+	ship GetByKeyName m04convoy2 SetBoardable 0 ;
+	
+	ship GetByKeyName m04sionBSHP SetInvulnerable 1 ;
+	ship GetByKeyName m04anarchist1 SetInvulnerable 1 ;
+	ship GetByKeyName m04anarchist2 SetInvulnerable 1 ;
+	ship GetByKeyName m04anarchist3 SetInvulnerable 1 ;
+	ship GetByKeyName m04convoy1 SetInvulnerable 1 ;
+	ship GetByKeyName m04convoy2 SetInvulnerable 1 ;
+	
+	aiState = 2 ;
+	ship GetByKeyName m04sionBSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m04convoy1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m04convoy2 SetAIQuestStatus 1 ;
+	ship GetByKeyName m04anarchist1 SetAIQuestStatus aiState ;
+	ship GetByKeyName m04anarchist2 SetAIQuestStatus aiState ;
+	ship GetByKeyName m04anarchist3 SetAIQuestStatus aiState ;
+	
+	ship GetByKeyName m04anarchist1 SetMark 1 ;
+	ship GetByKeyName m04anarchist2 SetMark 1 ;
+	ship GetByKeyName m04anarchist3 SetMark 1 ;
+	ship GetByKeyName m04anarchist1 SetMissionTask 0 ;
+	ship GetByKeyName m04anarchist2 SetMissionTask 0 ;
+	ship GetByKeyName m04anarchist3 SetMissionTask 0 ;
+	log 21 ;
+	
+	ship GetByKeyName m04anarchist1 SetFriendFoe 2 ;
+	ship GetByKeyName m04anarchist2 SetFriendFoe 2 ;
+	ship GetByKeyName m04anarchist3 SetFriendFoe 2 ;
+	ship GetByKeyName m04convoy1 SetFriendFoe 1 ;
+	ship GetByKeyName m04convoy2 SetFriendFoe 1 ;
+	ship GetByKeyName m04sionBSHP SetFriendFoe 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	
+	/* Start cutscene */
+	script Spg2\Scripts\M04\CS04A.sal ;
+endif
+
+/* on return from second part of mission */
+
+int questCond2 = 0 ;
+mainquest GetById 27 GetAcquire questCond2 ;
+if questCond2 == 1
+	PrintMessage TRI_M04B_2nd_Entry_Check! ;
+	mainquest GetById 27 SetSolve 1 ;
+	mainquest GetById 27 DeleteObjective 1 ;
+	mainquest GetById 28 SetAcquire 1 ;
+	ship GetByKeyName m04sionBSHP SetEnabled 1 ;
+	ship GetByKeyName m04convoy1 SetEnabled 1 ;
+	ship GetByKeyName m04convoy2 SetEnabled 1 ;
+	ship GetByKeyName m04convoy3 SetEnabled 0 ;
+	ship GetByKeyName m04sionBSHP SetBoardable 0 ;
+	ship GetByKeyName m04convoy1 SetBoardable 0 ;
+	ship GetByKeyName m04convoy2 SetBoardable 0 ;
+	ship GetByKeyName m04convoy3 SetBoardable 0 ;
+	aiState = 1 ;
+	ship GetByKeyName m04sionBSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m04convoy1 SetAIQuestStatus aiState ;
+	ship GetByKeyName m04convoy2 SetAIQuestStatus aiState ;
+	ship GetByKeyName m04convoy3 SetAIQuestStatus aiState ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	waypoint GetByKeyName m04aWp SetMark 0 ;
+	waypoint GetByKeyName m04aWp SetMissionTask -1 ;
+	log 25 ;
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M04\D05.dia ;
+	
+endif
+
+End

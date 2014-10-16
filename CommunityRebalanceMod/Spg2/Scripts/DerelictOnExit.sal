@@ -1,0 +1,7 @@
+/*
+-------
+Script by: LGM Games  
++intentionally empty OnExit script for derelicts
+*/
+PrintMessage Derelict_OnExit_script_DEFAULT! ;
+End

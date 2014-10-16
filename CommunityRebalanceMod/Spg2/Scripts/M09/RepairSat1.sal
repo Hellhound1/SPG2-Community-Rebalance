@@ -1,0 +1,75 @@
+/*
+-------
+Script by: LGM Games, 2013  
++structure activation script
++placed by default in the OnActivate event of a structure
+-------
+1.disable damage particles [1,2,3,4,5,6]
+2.set hull to structure 60%
+3.enable holo models [1,2,3,4,5,6]
+4.enable standard particles [0]
+5.set condition to 1 (online)
+*/
+
+/* BLOCK 1 start */
+int state = 0 ;
+float interpolation = 1 ;
+float delay1 = 0.0 ;
+float delay2 = 0.3 ;
+float delay3 = 0.8 ;
+structure GetParent GetParticle 1 SetVisible state interpolation delay1 ;
+structure GetParent GetParticle 2 SetVisible state interpolation delay1 ;
+structure GetParent GetParticle 3 SetVisible state interpolation delay2 ;
+structure GetParent GetParticle 4 SetVisible state interpolation delay2 ;
+structure GetParent GetParticle 5 SetVisible state interpolation delay3 ;
+structure GetParent GetParticle 6 SetVisible state interpolation delay3 ;
+/* BLOCK 1 end */
+
+/* BLOCK 2 start */
+int hullPercentage = 100 ;
+structure GetParent SetHPRel hullPercentage ;
+/* BLOCK 2 end */
+
+/* BLOCK 3 start */
+float transparency = 1.0 ;
+interpolation = 1.0 ;
+delay1 = 0.0 ;
+delay2 = 0.5 ;
+delay3 = 0.9 ;
+structure GetParent GetMesh 1 SetTransparent transparency interpolation delay1 ;
+structure GetParent GetMesh 2 SetTransparent transparency interpolation delay2 ;
+structure GetParent GetMesh 3 SetTransparent transparency interpolation delay3 ;
+structure GetParent GetMesh 4 SetTransparent transparency interpolation delay3 ;
+structure GetParent GetMesh 5 SetTransparent transparency interpolation delay1 ;
+structure GetParent GetMesh 6 SetTransparent transparency interpolation delay2 ;
+/* BLOCK 3 end */
+
+/* BLOCK 4 start */
+state = 1 ;
+interpolation = 1 ;
+float delay = 0.0 ;
+structure GetParent GetParticle 0 SetVisible state interpolation delay ;
+/* BLOCK 4 end */
+
+/* BLOCK 5 start */
+structure GetParent SetCondition 0 ;
+/* BLOCK 5 end */
+
+/* check mq52 and solve it */
+int questCond = 0 ;
+mainquest GetById 52 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 52 SetSolve 1 ;
+	mainquest GetById 52 DeleteObjective 1 ;
+	
+	mainquest GetById 53 SetAcquire 1 ;	
+	waypoint GetByKeyName m09markerSatB SetMark 1 ;
+	waypoint GetByKeyName m09markerSatB SetMissionTask 4 ;
+	
+	game SetQuestMode 0 ;
+	
+	structure GetByKeyName m09satA SetMark 0 ;
+	structure GetByKeyName m09satA SetMissionTask -1 ;
+endif
+
+End

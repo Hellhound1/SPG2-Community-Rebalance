@@ -1,0 +1,72 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 130 GetAcquire questCond ;
+if questCond == 1
+
+	mainquest GetById 130 SetSolve 1 ;
+	mainquest GetById 130 DeleteObjective 1 ;
+	mainquest GetById 131 SetAcquire 1 ;
+	
+	game SetQuestMode 1 ;
+	
+	waypoint GetByKeyName m19aWp SetMark 0 ;
+	waypoint GetByKeyName m19aWp SetMissionTask -1 ;
+	
+	ship GetByKeyName m19ridleyBSHP SetEnabled 1 ;
+	ship GetByKeyName m19kuzhevBSHP SetEnabled 1 ;
+	ship GetByKeyName m19ridleyBSHP SetDestructible 0 ;
+	ship GetByKeyName m19kuzhevBSHP SetDestructible 0 ;
+	ship GetByKeyName m19protect4 SetEnabled 1 ;
+	ship GetByKeyName m19protect5 SetEnabled 1 ;
+	ship GetByKeyName m19protect6 SetEnabled 1 ;
+	ship GetByKeyName m19imp1 SetEnabled 1 ;
+	ship GetByKeyName m19imp2 SetEnabled 1 ;
+	ship GetByKeyName m19imp3 SetEnabled 1 ;
+	ship GetByKeyName m19imp4 SetEnabled 1 ;
+	ship GetByKeyName m19imp5 SetEnabled 1 ;
+	
+	ship GetByKeyName m19imp1 SetMark 1 ;
+	ship GetByKeyName m19imp2 SetMark 1 ;
+	ship GetByKeyName m19imp3 SetMark 1 ;
+	ship GetByKeyName m19imp4 SetMark 1 ;
+	ship GetByKeyName m19imp5 SetMark 1 ;
+	ship GetByKeyName m19imp1 SetMissionTask 0 ;
+	ship GetByKeyName m19imp2 SetMissionTask 0 ;
+	ship GetByKeyName m19imp3 SetMissionTask 0 ;
+	ship GetByKeyName m19imp4 SetMissionTask 0 ;
+	ship GetByKeyName m19imp5 SetMissionTask 0 ;
+	
+	
+	ship GetByKeyName m19ridleyBSHP SetFriendFoe 1 ;
+	ship GetByKeyName m19kuzhevBSHP SetFriendFoe 1 ;
+	ship GetByKeyName m19protect4 SetFriendFoe 1 ;
+	ship GetByKeyName m19protect5 SetFriendFoe 1 ;
+	ship GetByKeyName m19protect6 SetFriendFoe 1 ;
+	
+	ship GetByKeyName m19imp1 SetFriendFoe 2 ;
+	ship GetByKeyName m19imp2 SetFriendFoe 2 ;
+	ship GetByKeyName m19imp3 SetFriendFoe 2 ;
+	ship GetByKeyName m19imp4 SetFriendFoe 2 ;
+	ship GetByKeyName m19imp5 SetFriendFoe 2 ;
+	
+	ship GetByKeyName m19ridleyBSHP SetAIQuestStatus 2 ;
+	ship GetByKeyName m19kuzhevBSHP SetAIQuestStatus 2 ;
+	ship GetByKeyName m19protect4 SetAIQuestStatus 2 ;
+	ship GetByKeyName m19protect5 SetAIQuestStatus 2 ;
+	ship GetByKeyName m19protect6 SetAIQuestStatus 2 ;
+	ship GetByKeyName m19imp1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m19imp2 SetAIQuestStatus 2 ;
+	ship GetByKeyName m19imp3 SetAIQuestStatus 2 ;
+	ship GetByKeyName m19imp4 SetAIQuestStatus 2 ;
+	ship GetByKeyName m19imp5 SetAIQuestStatus 2 ;
+	
+	game ResetShipEnemyList 1 ;
+	/* iskoristiti m19bTRI kao MissionArea */
+	
+endif
+End

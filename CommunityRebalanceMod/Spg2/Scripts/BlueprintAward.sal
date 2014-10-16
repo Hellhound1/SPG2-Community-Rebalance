@@ -1,0 +1,89 @@
+/*
+-------
+Script by: LGM Games  
++blueprint award script
+-------
++randomize blueprintId and add one to player
++make four randomization passes to increase chance of gaining a part for a blueprint you already have
++push notification
++run BlueprintAssemble script
+*/
+
+int itemId = 0 ;
+int itemCount = 0 ;
+int modulo = 0 ;
+
+/* first randomization pass  */
+math itemId = Rnd 63 147 ;
+math modulo = itemId mod 2 ;
+if modulo == 0
+	math itemId ++ ;
+endif
+
+/* second randomization pass to increase chance of getting something you already have */
+player GetQuestItemCount itemId itemCount ;
+if itemCount == 0
+	math itemId = Rnd 63 147 ;
+	math modulo = itemId mod 2 ;
+	if modulo == 0
+		math itemId ++ ;
+	endif
+endif
+
+/* third randomization pass to increase chance of getting something you already have */
+player GetQuestItemCount itemId itemCount ;
+if itemCount == 0
+	math itemId = Rnd 63 147 ;
+	math modulo = itemId mod 2 ;
+	if modulo == 0
+		math itemId ++ ;
+	endif
+endif
+
+/* fourth randomization pass to increase chance of getting something you already have */
+player GetQuestItemCount itemId itemCount ;
+if itemCount == 0
+	math itemId = Rnd 63 147 ;
+	math modulo = itemId mod 2 ;
+	if modulo == 0
+		math itemId ++ ;
+	endif
+endif
+
+/*
+Exclude until checked
+	ST-Drive 117
+	S-R nanobots 119
+
+Exclude until implemented at a later date as planned
+	Disabler torpedo 121
+	EMP Torpedo 123
+	S-R Salvage beacon 125
+*/
+
+if itemId != 117
+	if itemId != 119
+		if itemId != 121
+			if itemId != 123
+				if itemId != 125
+		
+					player GetQuestItemCount itemId itemCount ;
+					math itemCount ++ ;
+					player SetQuestItemCount itemId itemCount ;
+
+					/* NOTIFICATION */
+					int titleId = 1277 ;
+					int textId1 = 1278 ;
+					int textId2 = -1 ;
+					screen ShowWarnings titleId textId1 textId2 ;
+
+					/* run assemble script to check if any blueprint is completed */
+					script Spg2\Scripts\BlueprintAssemble.sal ;
+					
+				endif
+			endif
+		endif
+	endif
+endif
+
+End

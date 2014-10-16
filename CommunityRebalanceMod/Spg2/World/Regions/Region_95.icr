@@ -1,0 +1,103 @@
+NamePosition:	112455.0	0.0	50031.0
+MinimumLevel:	20
+MaximumLevel:	50
+MainFaction:
+{
+	Faction:	9
+	Ships:		
+	{	
+		13	14	15	16	17
+	}
+}
+Faction:
+{
+	Faction:	8
+	Ships:		
+	{	
+		13	14	15	16	17
+	}
+}
+Faction:
+{
+	Faction:	52
+	Ships:
+	{
+		12	51
+	}
+}
+RandomMission:
+{
+}
+InitialSetup:																																				
+{
+	Security:	0																																		
+	Military:	0																																		
+	Trader:	0																																																																				
+}																																				
+Encounters:																																				
+{																																				
+	Density:	0
+	SpawnList:																																			
+	{																																			
+	}																																																																						
+	Security:
+	{
+	}
+	Military:
+	{
+	}
+	Pirate:
+	{
+	}
+	Skirmish:
+	{
+	}
+	Battle:
+	{
+	}
+	Assassins:
+	{
+		Faction:	52
+	}
+	Science:
+	{
+	}
+	Salvage:
+	{
+	}
+	Looters:
+	{
+	}
+	Anomaly:
+	{
+	}
+	Trader:
+	{
+	}
+}
+Music:
+{
+	Standard:
+	{
+		music_genesis
+		music_things
+		music_darkmoon
+		music_meta
+		music_solaris
+		music_ambientDrones
+		music_Assorted
+		music_AwaitingNews
+		music_DigitalForest
+		music_SpaceTune
+		music_VastEmptyness
+	}
+	Combat:
+	{
+		music_DangerousPursuit
+		music_FilmScoreChase
+		music_Outbreak
+		music_PiratesSearching
+		music_WarDrums
+		music_battle_drums_1
+	}
+}

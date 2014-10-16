@@ -1,0 +1,18 @@
+Colum:	9							
+Id	PortraitsRow	Biography	StartSector	ShipFile	Level	Price	SeenText	DeadText
+0	23	363	288	Spg2\Heroes\QuintonGombos.txt	35	2000000	803	804
+1	8	364	295	Spg2\Heroes\DeedraSalee.txt	25	750000	805	806
+2	19	365	183	Spg2\Heroes\LeenaRinner.txt	20	500000	807	808
+3	29	366	78	Spg2\Heroes\ThaddeusMalen.txt	30	1500000	809	810
+4	17	367	54	Spg2\Heroes\KeiraIredale.txt	40	2700000	811	812
+5	24	368	231	Spg2\Heroes\RaphaelSlotnick.txt	45	3000000	813	814
+6	16	369	240	Spg2\Heroes\KanoSaichi.txt	50	3500000	815	816
+7	28	370	100	Spg2\Heroes\SarahCoon.txt	50	3800000	817	818
+8	22	371	36	Spg2\Heroes\PatrickSansone.txt	60	4000000	819	820
+9	7	372	233	Spg2\Heroes\CurtisChampion.txt	70	4500000	821	822
+10	37	567	295	Spg2\Heroes\ArcherMcGinty.txt	70	4600000	1026	1027
+11	38	568	107	Spg2\Heroes\ElizabethArthur.txt	70	4700000	1028	1029
+12	39	569	45	Spg2\Heroes\KateHammerhill.txt	70	4700000	1030	1031
+13	40	570	128	Spg2\Heroes\MercadierDeMolay.txt	70	4800000	1032	1033
+14	41	571	275	Spg2\Heroes\MalcheorValandil.txt	70	5000000	1034	1035
+15	42	572	299	Spg2\Heroes\JackBlade.txt	70	5000000	1036	1037

@@ -1,0 +1,75 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky10.amb
+}	
+Spaceship:	
+{	
+	ModelId:	35
+	Position:	51423.29	926.19	56796.84
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	2
+	Skills:	0
+	Level:	45
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m14phoenixA
+	Name:	Phoenix
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	37
+	Position:	51423.29	926.19	56196.84
+	Rotation:	-0.11	-1.11	0.00
+	KeyName:	salazarSTR
+	Name:	Salazar
+	NameId:	-1
+	FactionId:	0
+	Hull:	100000.00
+	Destructible:	0
+	PulseTime:	1.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnActivate:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnDeactivate:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnScan:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnTransport:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnHack:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnEnter:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnExit:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnHP75:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnHP50:	Spg2\Scripts\M14\SalazarEmpty.sal
+		OnHP25:	Spg2\Scripts\M14\SalazarEmpty.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	51423.29	926.19	56196.84
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m14EarthTriA
+	Type:	1
+	Radius:	1000.00
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M14\EnterTriEarthA.sal
+}	
+}	
+Events:	
+{	
+}	

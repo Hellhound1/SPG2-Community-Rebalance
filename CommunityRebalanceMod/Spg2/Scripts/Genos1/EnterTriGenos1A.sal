@@ -1,0 +1,16 @@
+int questCond = 0 ;
+sidequest GetById 7 GetAcquire questCond ;
+if questCond == 1
+	sidequest GetById 7 SetSolve 1 ;
+	sidequest GetById 8 SetAcquire 1 ;
+	ship GetByKeyName genosMiningSHP1 SetEnabled 1 ;
+	ship GetByKeyName genosMiningSHP2 SetEnabled 1 ;
+	globalobject GetByKeyName genosLoc1WP SetMark 0 ;
+	globalobject GetByKeyName genosMiningSHP1 SetMark 2 ;
+	globalobject GetByKeyName genosMiningSHP2 SetMark 2 ;
+	game SetFriendFoe 1 ;
+	ship GetByKeyName genosMiningSHP1 SetFriendFoe 2 ;
+	ship GetByKeyName genosMiningSHP2 SetFriendFoe 2 ;
+	/* enable MissionArea */
+endif
+End

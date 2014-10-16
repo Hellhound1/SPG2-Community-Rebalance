@@ -1,0 +1,10 @@
+Dialogue:
+{
+	Portrait:	9
+	Text:	36
+	Duration:	12
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M05\EndDia01.sal
+}

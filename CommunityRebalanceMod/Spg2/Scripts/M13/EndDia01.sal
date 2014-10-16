@@ -1,0 +1,17 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 80 SetSolve 1 ;
+mainquest GetById 80 DeleteObjective 1 ;
+mainquest GetById 81 SetAcquire 1 ;
+game SetControlEnabled 1 ;
+waypoint GetByKeyName m13aWp SetMark 1 ;
+waypoint GetByKeyName m13aWp SetMissionTask 4 ;
+ship GetByKeyName m13ridleySHP SetEnabled 0 ;
+log 71 ;
+
+game SetQuestMode 0 ;
+End

@@ -1,0 +1,94 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+int shipCond4 = 2 ;
+int shipCond5 = 2 ;
+
+mainquest GetById 131 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m19imp1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp4 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	ship GetByKeyName m19imp5 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m19imp5 GetCondition shipCond5 ;
+	else
+		shipCond5 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				if shipCond4 != 0
+					if shipCond5 != 0
+					
+						ship GetByKeyName m19imp6 SetEnabled 1 ;
+						ship GetByKeyName m19imp7 SetEnabled 1 ;
+						ship GetByKeyName m19imp8 SetEnabled 1 ;
+						ship GetByKeyName m19imp9 SetEnabled 1 ;
+						ship GetByKeyName m19imp10 SetEnabled 1 ;
+						
+						ship GetByKeyName m19imp6 SetFriendFoe 2 ;
+						ship GetByKeyName m19imp7 SetFriendFoe 2 ;
+						ship GetByKeyName m19imp8 SetFriendFoe 2 ;
+						ship GetByKeyName m19imp9 SetFriendFoe 2 ;
+						ship GetByKeyName m19imp10 SetFriendFoe 2 ;
+						
+						ship GetByKeyName m19imp6 SetAIQuestStatus 2 ;
+						ship GetByKeyName m19imp7 SetAIQuestStatus 2 ;
+						ship GetByKeyName m19imp8 SetAIQuestStatus 2 ;
+						ship GetByKeyName m19imp9 SetAIQuestStatus 2 ;
+						ship GetByKeyName m19imp10 SetAIQuestStatus 2 ;
+						
+						ship GetByKeyName m19imp6 SetMark 1 ;
+						ship GetByKeyName m19imp7 SetMark 1 ;
+						ship GetByKeyName m19imp8 SetMark 1 ;
+						ship GetByKeyName m19imp9 SetMark 1 ;
+						ship GetByKeyName m19imp10 SetMark 1 ;
+						
+						ship GetByKeyName m19imp6 SetMissionTask 0 ;
+						ship GetByKeyName m19imp7 SetMissionTask 0 ;
+						ship GetByKeyName m19imp8 SetMissionTask 0 ;
+						ship GetByKeyName m19imp9 SetMissionTask 0 ;
+						ship GetByKeyName m19imp10 SetMissionTask 0 ;
+						
+						game ResetShipEnemyList 1 ;
+					
+					endif
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

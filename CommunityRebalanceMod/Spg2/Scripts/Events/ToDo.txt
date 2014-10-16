@@ -1,0 +1,168 @@
+OnGlobalEvent60.sal
+	+intentionally left empty
+
+OnGlobalEvent300.sal
+	CHANCE TO TRIGGER EVENT [1,20]
+	+	0	Resource_price_increase
+				+randomize facId, commId, modifier, eventDur
+				+addLog & addNews
+	+	1	Resource_price_reduction
+				+randomize facId, commId, modifier, eventDur
+				+addLog & addNews
+	+	2	Tgate_shutdown
+				+randomize TGate, eventDur
+				+getRegion to pass into news
+				+addLog + addNews
+	+	3	Station_lockdown
+				+randomize Station, eventDur
+				+addLog + addNews
+		4	Riftway_shutdown
+				+randomize Riftway, eventDur
+				+getRegion to pass into news
+				+addLog + addNews
+		5	Cease_fire_signed
+				+get active wars
+					+randomize facId1, facId2, eventDur
+					+addLog + addNews
+		6	War_breaks_out
+				+get inactive wars
+					+randomize facId1, facId2, eventDur
+					+addLog + addNews
+	+	7	Planetary_quarantine
+				+randomize Planet, eventDur
+				+addLog + addNews
+	+	8	Pirate_activity_increase
+				+randomize facId, eventDur
+				+addLog + addNews
+	+	9	Pirate_activity_decrease
+				+randomize facId, eventDur
+				+addLog + addNews
+	+	10	System_price_increase
+				+randomize facId, eventDur
+				+addLog + addNews
+	+	11	System_price_decrease
+				+randomize facId, eventDur
+				+addLog + addNews
+	+	12	Company_raises_prices
+				+randomize facId, eventDur, modifier
+				+addLog + addNews
+	+	13	Company_lowers_prices
+				+randomize facId, eventDur, modifier
+				+addLog + addNews
+		14	Embargo
+				+ignore active embargoes
+				+randomize facId, commId, eventDur
+				+addLog & addNews
+		15	Embargo_dropped
+				+getEmbargoes
+				+facId, commId, eventDur
+				+addLog & addNews
+		16	Ion_storm_starts
+				+get active ion storms
+				+randomize regId, eventDur
+				+addLog + addNews
+	+	17	Anomaly_activity_increased
+				+randomize regId, eventDur
+				+addLog + addNews
+	+	18	Anomaly_activity_decreased
+				+randomize regId, eventDur
+				+addLog + addNews
+		19	Alien_incursion
+				+randomize regId, eventDur
+				+addLog + addNews
+	+	20	Miner_activity_increased
+				+randomize regId, eventDur
+				+addLog + addNews
+	+	21	Miner_activity_decreased
+				+randomize regId, eventDur
+				+addLog + addNews
+	+	22	Trader_activity_increased
+				+randomize regId, eventDur
+				+addLog + addNews
+	+	23	Trader_activity_decreased
+				+randomize regId, eventDur
+				+addLog + addNews
+		24	Occupation?
+	
+OnGlobalEvent900.sal
+	CHANCE TO TRIGGER EVENT [1,15]
+		0	Resource_price_increase
+				+randomize facId, commId, modifier, eventDur
+				+addLog & addNews
+		1	Resource_price_reduction
+				+randomize facId, commId, modifier, eventDur
+				+addLog & addNews
+		2	Tgate_shutdown
+				+randomize TGate, eventDur
+				+getRegion to pass into news
+				+addLog + addNews
+		3	Station_lockdown
+				+randomize Station, eventDur
+				+addLog + addNews
+		4	Riftway_shutdown
+				+randomize Riftway, eventDur
+				+getRegion to pass into news
+				+addLog + addNews
+		5	Cease_fire_signed
+				+get active wars
+					+randomize facId1, facId2, eventDur
+					+addLog + addNews
+		6	War_breaks_out
+				+get inactive wars
+					+randomize facId1, facId2, eventDur
+					+addLog + addNews
+		7	Planetary_quarantine
+				+randomize Planet, eventDur
+				+addLog + addNews
+		8	Pirate_activity_increase
+				+randomize facId, eventDur
+				+addLog + addNews
+		9	Pirate_activity_decrease
+				+randomize facId, eventDur
+				+addLog + addNews
+		10	System_price_increase
+				+randomize facId, eventDur
+				+addLog + addNews
+		11	System_price_decrease
+				+randomize facId, eventDur
+				+addLog + addNews
+		12	Company_raises_prices
+				+randomize facId, eventDur, modifier
+				+addLog + addNews
+		13	Company_lowers_prices
+				+randomize facId, eventDur, modifier
+				+addLog + addNews
+		14	Embargo
+				+ignore active embargoes
+				+randomize facId, commId, eventDur
+				+addLog & addNews
+		15	Embargo_dropped
+				+getEmbargoes
+				+facId, commId, eventDur
+				+addLog & addNews
+		16	Ion_storm_starts
+				+get active ion storms
+				+randomize regId, eventDur
+				+addLog + addNews
+		17	Anomaly_activity_increased
+				+randomize regId, eventDur
+				+addLog + addNews
+		18	Anomaly_activity_decreased
+				+randomize regId, eventDur
+				+addLog + addNews
+		19	Alien_incursion
+				+randomize regId, eventDur
+				+addLog + addNews
+		20	Miner_activity_increased
+				+randomize regId, eventDur
+				+addLog + addNews
+		21	Miner_activity_decreased
+				+randomize regId, eventDur
+				+addLog + addNews
+		22	Trader_activity_increased
+				+randomize regId, eventDur
+				+addLog + addNews
+		23	Trader_activity_decreased
+				+randomize regId, eventDur
+				+addLog + addNews
+		24	Occupation?

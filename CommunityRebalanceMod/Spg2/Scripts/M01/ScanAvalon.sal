@@ -1,0 +1,42 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+float3 position = 0.0 0.0 0.0 ;
+int questCond = 0 ;
+mainquest GetById 8 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 8 SetSolve 1 ;
+	mainquest GetById 8 DeleteObjective 1 ;
+	mainquest GetById 9 SetAcquire 1 ;
+	derelict GetByKeyName avalonDER SetMark 0 ;
+	derelict GetByKeyName avalonDER SetMissionTask -1 ;
+	derelict GetByKeyName avalonDER SetDestructible 1 ;
+	ship GetByKeyName spearheadSHP SetEnabled 1 ;
+	ship GetByKeyName marrakeshSHP SetEnabled 1 ;
+	
+	/* add quest item */
+	int itemId = 2 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	/* AI partially passive, but accepts GoTo */
+	ship GetByKeyName spearheadSHP SetAIQuestStatus 3 ;
+	ship GetByKeyName spearheadSHP SetFriendFoe 1 ;
+	waypoint GetByKeyName m01spearheadGoTo GetPosition position ;
+	ship GetByKeyName spearheadSHP GoToScript position Spg2\Scripts\M01\rotateSpearhead.sal ;
+	
+	ship GetByKeyName marrakeshSHP SetAIQuestStatus 3 ;
+	ship GetByKeyName marrakeshSHP SetFriendFoe 1 ;
+	waypoint GetByKeyName m01marrakeshGoTo GetPosition position ;
+	ship GetByKeyName marrakeshSHP GoToScript position Spg2\Scripts\M01\rotateMarrakesh.sal ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	log 7 ;
+	
+	script Spg2\Scripts\M01\CS01E.sal ;
+endif
+End

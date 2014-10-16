@@ -1,0 +1,54 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+int shipCond4 = 2 ;
+
+mainquest GetById 99 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m14mercuraA Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m14mercuraA GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m14mercuraB Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m14mercuraB GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	ship GetByKeyName m14mercuraC Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m14mercuraC GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	ship GetByKeyName m14mercuraD Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m14mercuraD GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	if shipCond1 != 0 && shipCond2 != 0
+		if shipCond3 != 0 && shipCond4 != 0
+			mainquest GetById 99 SetSolve 1 ;
+			mainquest GetById 99 DeleteObjective 1 ;
+			mainquest GetById 100 SetAcquire 1 ;
+			ship GetByKeyName m14resistanceA SetEnabled 0 ;
+			ship GetByKeyName m14resistanceB SetEnabled 0 ;
+			script Spg2\Scripts\M14\CS14EarthC.sal ;
+			/* skip one mainquestId intentionally */
+			mainquest GetById 100 SetSolve 1 ;
+			mainquest GetById 100 DeleteObjective 1 ;
+			mainquest GetById 101 SetAcquire 1 ;
+			game SetControlEnabled 0 ;
+		endif
+	endif
+endif
+
+End

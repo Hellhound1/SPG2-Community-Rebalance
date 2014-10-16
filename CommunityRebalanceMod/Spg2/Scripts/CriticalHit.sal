@@ -1,0 +1,48 @@
+/*
+-------
+Script by: LGM Games, 2013  
++critical hit explosion script
++scalable; depends on frustum size
+*/
+
+float radius = 0.0 ;
+ship GetParent GetRadius radius ;
+
+/* particle explosion IDs depending on ship size */
+int asbId = 154 ;
+if radius > 0.01 && radius < 10.01
+	math asbId = Rnd 154 156 ;
+endif
+if radius > 10.01 && radius < 20.01
+	math asbId = Rnd 157 159 ;
+endif
+if radius > 20.01 && radius < 100.01
+	math asbId = Rnd 160 162 ;
+endif
+
+/* Particles -> FreeModel.wds */
+float lifetime = 1.0 ;
+float delay = 0.0 ;
+float3 position = 0.0 0.0 0.0 ;
+ship GetParent GetRndPosition position ;
+assembly delay position asbId lifetime ;
+
+/* Fiery debris -> Debris.wds */
+float sizeSpark = 0.0 ;
+math sizeSpark = radius / 32 ;
+int debrisId = 0 ;
+math debrisId = Rnd 0 6 ;
+int number = 20 ;
+math number = Rnd 10 30 ;
+float shotTime = 0.2 ;
+float3 norm = 0 0 0 ;
+float arc = 0.0 ;
+float velMin = 15.0 ;
+float velMax = 16.0 ;
+float lifeMin = 1.0 ;
+float lifeMax = 1.5 ;
+int fadeSort = 1 ;
+
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+
+End

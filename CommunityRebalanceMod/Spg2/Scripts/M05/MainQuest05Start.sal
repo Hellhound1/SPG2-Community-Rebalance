@@ -1,0 +1,22 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+
+int questcond ;
+mainquest GetById 29 GetAcquire questcond ;
+if questcond == 0
+	mainquest GetById 28 DeleteObjective 1 ;
+	log 26 ;	
+	log 27 ;
+	mainquest GetById 29 SetAcquire 1 ;
+endif
+
+waypoint GetByKeyName m05marker SetMark 1 ;
+waypoint GetByKeyName m05marker SetMissionTask 4 ;
+
+storypanel 1 ;
+
+End

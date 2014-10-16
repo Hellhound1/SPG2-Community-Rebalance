@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	1
+	Text:	217
+	Voice:	Spg2\Sound\Voice\adrian\217.wav
+	Duration:	3.112
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M21\EndDia02.sal
+}

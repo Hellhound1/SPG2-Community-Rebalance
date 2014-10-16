@@ -1,0 +1,71 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+
+mainquest GetById 110 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m15nexus1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m15nexus1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m15nexus2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m15nexus2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			mainquest GetById 110 SetSolve 1 ;
+			mainquest GetById 110 DeleteObjective 1 ;
+			mainquest GetById 111 SetAcquire 1 ;
+			ship GetByKeyName m15kuzhevSHP SetEnabled 1 ;
+			ship GetByKeyName m15kuzhevSHP SetDestructible 0 ;
+			ship GetByKeyName m15protect1 SetEnabled 1 ;
+			ship GetByKeyName m15protect2 SetEnabled 1 ;
+			ship GetByKeyName m15nexus3 SetEnabled 1 ;
+			ship GetByKeyName m15nexus4 SetEnabled 1 ;
+			ship GetByKeyName m15nexus5 SetEnabled 1 ;
+			ship GetByKeyName m15nexus6 SetEnabled 1 ;
+			
+			ship GetByKeyName m15kuzhevSHP SetFriendFoe 1 ;
+			ship GetByKeyName m15protect1 SetFriendFoe 1 ;
+			ship GetByKeyName m15protect2 SetFriendFoe 1 ;
+			ship GetByKeyName m15nexus3 SetFriendFoe 2 ;
+			ship GetByKeyName m15nexus4 SetFriendFoe 2 ;
+			ship GetByKeyName m15nexus5 SetFriendFoe 2 ;
+			ship GetByKeyName m15nexus6 SetFriendFoe 2 ;
+			
+			ship GetByKeyName m15nexus3 SetMark 1 ;
+			ship GetByKeyName m15nexus4 SetMark 1 ;
+			ship GetByKeyName m15nexus5 SetMark 1 ;
+			ship GetByKeyName m15nexus6 SetMark 1 ;
+			
+			ship GetByKeyName m15nexus3 SetMissionTask 0 ;
+			ship GetByKeyName m15nexus4 SetMissionTask 0 ;
+			ship GetByKeyName m15nexus5 SetMissionTask 0 ;
+			ship GetByKeyName m15nexus6 SetMissionTask 0 ;
+			
+			ship GetByKeyName m15nexus3 SetAIQuestStatus 1 ;
+			ship GetByKeyName m15nexus4 SetAIQuestStatus 1 ;
+			ship GetByKeyName m15nexus5 SetAIQuestStatus 1 ;
+			ship GetByKeyName m15nexus6 SetAIQuestStatus 1 ;
+			ship GetByKeyName m15kuzhevSHP SetAIQuestStatus 1 ;
+			ship GetByKeyName m15protect1 SetAIQuestStatus 1 ;
+			ship GetByKeyName m15protect2 SetAIQuestStatus 1 ;
+			
+			game ResetShipEnemyList 1 ;
+			
+			dialogue Spg2\Dialogues\M15\D02.dia ;
+		endif
+	endif
+	
+endif
+
+End

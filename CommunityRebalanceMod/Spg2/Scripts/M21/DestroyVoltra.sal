@@ -1,0 +1,116 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 219 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 220 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+/* quest related */
+int questCond = 0 ;
+mainquest GetById 148 GetAcquire questCond ;
+PrintMessageVar QUEST_148: INT questCond ;
+if questCond == 1
+	
+	int shipExist = 0 ;
+	int shipCond1 = 2 ;
+	int shipCond2 = 2 ;
+	int shipCond3 = 2 ;
+	int shipCond4 = 2 ;
+	
+	ship GetByKeyName m21alien1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m21alien2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m21alien3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	ship GetByKeyName m21alien4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21alien4 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				if shipCond4 != 0
+					mainquest GetById 148 SetSolve 1 ;
+					/* mainquest GetById 148 DeleteObjective 1 ; */
+					mainquest GetById 149 SetAvailable 1 ;
+					ship GetByKeyName ridleySHP SetEnabled 0 ;
+					ship GetByKeyName kuzhevSHP SetEnabled 0 ;
+					log 116 ;
+					
+					dialogue Spg2\Dialogues\M21\D06.dia ;
+					
+					game SetQuestMode 0 ;
+
+					/* -^-REWARD-^- */
+					player AddExp 70600 ;
+					player AddReputation 100 ;
+					player AddCredits 440000 ;
+					script Spg2\Scripts\BlueprintAward.sal ;
+
+					/* -^-MISSION COMPLETE-^- */
+					int titleLine = 183 ;
+					int textLine1 = 1553 ;
+					int textLine2 = -1 ;
+					screen ShowWarnings titleLine textLine1 textLine2 ;
+					
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

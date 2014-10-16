@@ -1,0 +1,146 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+/* SPECIAL - DO NOT REMOVE */
+ship GetByKeyName m11brother1 SetEnabled 1 ;
+ship GetByKeyName m11brother2 SetEnabled 1 ;
+ship GetByKeyName m11brother1 SetAIQuestStatus 1 ;
+ship GetByKeyName m11brother2 SetAIQuestStatus 1 ;
+ship GetByKeyName m11ridleySHP SetFriendFoe 1 ;
+ship GetByKeyName m11terakonSHP SetFriendFoe 1 ;
+
+ship GetByKeyName m11brother1 SetCloakInstant 1 ;
+ship GetByKeyName m11brother2 SetCloakInstant 1 ;
+
+float3 posPlayer ;
+float3 posTerakon ;
+float3 posRidley ;
+float3 posBrother1 ;
+float3 posBrother2 ;
+float3 posAdd ;
+float3 posMarker ;
+waypoint GetByKeyName m11marker GetPosition posMarker ;
+posAdd = 120.0 0.0 0.0 ;
+math posRidley = posMarker + posAdd ;
+posAdd = 0.0 0.0 -120.0 ;
+math posTerakon = posMarker + posAdd ;
+posAdd = 0.0 0.0 30.0 ;
+math posPlayer = posMarker + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m11terakonSHP SetPosition posTerakon ;
+ship GetByKeyName m11ridleySHP SetPosition posRidley ;
+ship GetPlayer VectorTo posMarker ;
+ship GetByKeyName m11terakonSHP VectorTo posPlayer ;
+ship GetByKeyName m11ridleySHP VectorTo posPlayer ;
+float3 terakonGoTo ;
+float3 ridleyGoTo ;
+posAdd = -10.0 0.0 0.0 ;
+math terakonGoTo = posMarker + posAdd ;
+posAdd = -20.0 0.0 0.0 ;
+math ridleyGoTo = posMarker + posAdd ;
+ship GetByKeyName m11terakonSHP GoTo terakonGoTo ;
+ship GetByKeyName m11ridleySHP GoTo ridleyGoTo ;
+ship GetByKeyName m11ridleySHP SetPTE 0 ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> terakon */
+int objectType = 0 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 60.0 ;
+camera SetType 5 objectType NONE rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+int miscLine = 1123 ;
+float duration = 4.0 ;
+screen ShowText miscLine duration ;
+
+pause 3.0 ;
+
+dialogue Spg2\Dialogues\M11\D01.dia ;
+
+ship GetByKeyName m11ridleySHP SetCloak 0 ;
+
+pause 3.0 ;
+
+/* <CAMERA 3> */
+/* rotation -> brotherhood */
+objectType = 1 ;
+rotStart = 2.4 ;
+rotSpeed = 0.08 ;
+vertStart = 2.4 ;
+vertOffset = 12.0 ;
+vertSpeed = 0.06 ;
+camDistance = 30.0 ;
+camera SetType 5 objectType m11brother1 rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+ship GetByKeyName m11brother1 SetCloakInstant 0 ;
+ship GetByKeyName m11brother2 SetCloakInstant 0 ;
+ship GetByKeyName m11brother1 SetFriendFoe 2 ;
+ship GetByKeyName m11brother2 SetFriendFoe 2 ;
+ship GetByKeyName m11brother1 SetAIQuestStatus 2 ;
+ship GetByKeyName m11brother2 SetAIQuestStatus 2 ;
+ship GetByKeyName m11brother1 AttackPlayer ;
+ship GetByKeyName m11brother2 AttackPlayer ;
+
+ship GetByKeyName m11terakonSHP SetAIQuestStatus 1 ;
+ship GetByKeyName m11ridleySHP SetAIQuestStatus 1 ;
+
+game ResetShipEnemyList 1 ;
+
+ship GetPlayer SetInvulnerable 1 ;
+ship GetByKeyName m11brother1 SetInvulnerable 1 ;
+ship GetByKeyName m11brother2 SetInvulnerable 1 ;
+ship GetByKeyName m11terakonSHP SetInvulnerable 1 ;
+ship GetByKeyName m11ridleySHP SetInvulnerable 1 ;
+
+pause 3.0 ;
+
+
+
+
+
+/* END BLOCK */
+/*
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+*/
+/*
+game SetControlEnabled 1 ;
+*/
+pause 0.5 ;
+script Spg2\Scripts\M11\EndCSa.sal ;
+
+End

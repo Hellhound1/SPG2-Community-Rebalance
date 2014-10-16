@@ -1,0 +1,13 @@
+pause 0.5 ;
+
+ship GetByKeyName m15nexus3 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus4 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus5 SetAIQuestStatus 2 ;
+ship GetByKeyName m15nexus6 SetAIQuestStatus 2 ;
+ship GetByKeyName m15kuzhevSHP SetAIQuestStatus 2 ;
+ship GetByKeyName m15protect1 SetAIQuestStatus 2 ;
+ship GetByKeyName m15protect2 SetAIQuestStatus 2 ;
+
+script Spg2\Scripts\M15\CS15B.sal ;
+
+End

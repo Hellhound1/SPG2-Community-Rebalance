@@ -1,0 +1,41 @@
+/*
+-------
+Script by: LGM Games  
++Random OnEnter derelict trigger script
++each derelict has an automatic trigger (size=300) linked to it
++chance of spawning "protectors"
+-------
+1. spawn ships around station
+2. check region and redirect to other scripts
+->separated into blocks of 20 region scripts due to limit of number of variables per script
+*/
+
+PrintMessage OnEnter_STATION_Script! ;
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 0
+	int regionId = 0 ;
+	region GetId regionId ;
+	PrintMessageVar StationOnEnterRegion: INT regionId ;
+
+	if regionId < 20
+		script Spg2\Scripts\Regions\StationOnEnterA.sal ;
+	endif
+
+	if regionId > 19 && regionId < 40
+		script Spg2\Scripts\Regions\StationOnEnterB.sal ;
+	endif
+
+	if regionId > 39 && regionId < 60
+		script Spg2\Scripts\Regions\StationOnEnterC.sal ;
+	endif
+
+	if regionId > 59 && regionId < 80
+		script Spg2\Scripts\Regions\StationOnEnterD.sal ;
+	endif
+
+	if regionId > 79
+		script Spg2\Scripts\Regions\StationOnEnterE.sal ;
+	endif
+endif
+End

@@ -1,0 +1,46 @@
+platform GetByKeyName m18platform1 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform2 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform3 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform4 SetAIQuestStatus 2 ;
+platform GetByKeyName m18platform5 SetAIQuestStatus 2 ;
+ship GetByKeyName m22ridleyB SetAIQuestStatus 2 ;
+ship GetByKeyName m22kuzhev SetAIQuestStatus 2 ;
+ship GetByKeyName m22protect1 SetAIQuestStatus 2 ;
+ship GetByKeyName m22protect2 SetAIQuestStatus 2 ;
+ship GetByKeyName m22nexusB1 SetAIQuestStatus 2 ;
+ship GetByKeyName m22nexusB2 SetAIQuestStatus 2 ;
+ship GetByKeyName m22nexusB3 SetAIQuestStatus 2 ;
+ship GetByKeyName m22nexusB4 SetAIQuestStatus 2 ;
+ship GetByKeyName m22brother1 SetAIQuestStatus 2 ;
+ship GetByKeyName m22brother2 SetAIQuestStatus 2 ;
+ship GetByKeyName m22brother3 SetAIQuestStatus 2 ;
+platform GetByKeyName m22mothership SetAIQuestStatus 2 ;
+
+ship GetByKeyName m22ridleyB SetFriendFoe 1 ;
+ship GetByKeyName m22kuzhev SetFriendFoe 1 ;
+ship GetByKeyName m22protect1 SetFriendFoe 1 ;
+ship GetByKeyName m22protect2 SetFriendFoe 1 ;
+ship GetByKeyName m22nexusB1 SetFriendFoe 2 ;
+ship GetByKeyName m22nexusB2 SetFriendFoe 2 ;
+ship GetByKeyName m22nexusB3 SetFriendFoe 2 ;
+ship GetByKeyName m22nexusB4 SetFriendFoe 2 ;
+ship GetByKeyName m22brother1 SetFriendFoe 2 ;
+ship GetByKeyName m22brother2 SetFriendFoe 2 ;
+ship GetByKeyName m22brother3 SetFriendFoe 2 ;
+platform GetByKeyName m22mothership SetFriendFoe 2 ;
+
+platform GetByKeyName m18platform1 SetFriendFoe 2 ;
+platform GetByKeyName m18platform2 SetFriendFoe 2 ;
+platform GetByKeyName m18platform3 SetFriendFoe 2 ;
+platform GetByKeyName m18platform4 SetFriendFoe 2 ;
+platform GetByKeyName m18platform5 SetFriendFoe 2 ;
+
+platform GetByKeyName collector1 SetFriendFoe 2 ;
+platform GetByKeyName collector2 SetFriendFoe 2 ;
+platform GetByKeyName collector3 SetFriendFoe 2 ;
+platform GetByKeyName collector4 SetFriendFoe 2 ;
+platform GetByKeyName collector5 SetFriendFoe 2 ;
+
+game ResetShipEnemyList 1 ;
+	
+End

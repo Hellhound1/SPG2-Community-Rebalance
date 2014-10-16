@@ -1,0 +1,81 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName gas121 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas121 CallEvent OnActivate ;
+else
+	structure GetByKeyName gas121 CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 16 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art34 CallEvent OnActivate ;
+	structure GetByKeyName art34 SetCanRepair 0 ;
+else
+	structure GetByKeyName art34 CallEvent OnDeactivate ;
+	structure GetByKeyName art34 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_121_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_121_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_121_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_121_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_121_4 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 7 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_121_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_121_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_121_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_121_3 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

@@ -1,0 +1,12 @@
+int questCond = 0 ;
+sidequest GetById 9 GetAcquire questCond ;
+if questCond == 1
+	sidequest GetById 9 SetSolve 1 ;
+	sidequest GetById 10 SetAcquire 1 ;
+	/* enable mining facility */
+	/* enable defense platforms */
+	game SetFriendFoe 1 ;
+	/* SetFoe miningFacility */
+	/* enable MissionArea */
+endif
+End

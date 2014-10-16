@@ -1,0 +1,545 @@
+/*
+-------
+Script by: LGM Games  
++blueprint check and assemble
+-------
++check each QuestItemCount
++if number is adequate, remove blueprint stack and add finished blueprint
++push notification
+*/
+
+int itemId = 0 ;
+int itemCount = 0 ;
+int itemCountNew = 0 ;
+int itemIdComplete = 0 ;
+int itemCountComplete = 0 ;
+int sthAssembled = 0 ;
+
+int i ;
+/* 5-PIECE BLUEPRINTS */
+itemId = 63 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 65 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 67 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 69 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 71 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 73 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 75 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 77 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 79 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 81 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 83 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 85 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 87 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 89 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 91 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 93 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 95 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 97 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 99 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 101 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 103 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 105 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 107 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 109 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 111 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 113 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 115 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 4 step -5
+	math itemCountNew = i - 5 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+/* 10-PIECE BLUEPRINTS */
+itemId = 117 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 119 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 121 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 123 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 125 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 127 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 129 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 131 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 133 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 135 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 137 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 139 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 141 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 143 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+itemId = 145 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 9 step -10
+	math itemCountNew = i - 10 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+/* 20-PIECE BLUEPRINTS */
+itemId = 147 ;
+player GetQuestItemCount itemId itemCount ;
+for i = itemCount > 19 step -20
+	math itemCountNew = i - 20 ;
+	player SetQuestItemCount itemId itemCountNew ;
+	math itemIdComplete = itemId + 1 ;
+	player GetQuestItemCount itemIdComplete itemCountComplete ;
+	math itemCountComplete ++ ;
+	player SetQuestItemCount itemIdComplete itemCountComplete ;
+	math sthAssembled ++ ;
+endfor
+
+/* NOTIFICATION */
+if sthAssembled > 0
+	int titleId = 1275 ;
+	int textId = 1276 ;
+	screen ShowWarningsEx 18 titleId textId sthAssembled ;
+endif
+
+End

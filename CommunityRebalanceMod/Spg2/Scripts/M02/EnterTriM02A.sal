@@ -1,0 +1,54 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage M02A_Trigger_Entered ;
+/* check quest */
+int questCond = 0 ;
+mainquest GetById 11 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage M02A_Trigger_Check_Success ;
+	mainquest GetById 11 SetSolve 1 ;
+	mainquest GetById 11 DeleteObjective 1 ;
+	mainquest GetById 12 SetAcquire 1 ;
+	log 11 ;
+	
+	/* enable questMode */
+	game SetQuestMode 1 ;
+	
+	/* set mission segment actors */
+	ship GetByKeyName m02raffaleSHP SetEnabled 1 ;	
+	/* UKLONITI NEUNISTIVOST I POSTAVITI FAIL SKRIPTE */
+	ship GetByKeyName m02pirateA SetEnabled 1 ;
+	ship GetByKeyName m02pirateB SetEnabled 1 ;
+	ship GetByKeyName m02pirateA SetMark 1 ;
+	ship GetByKeyName m02pirateB SetMark 1 ;
+	ship GetByKeyName m02pirateA SetMissionTask 0 ;
+	ship GetByKeyName m02pirateB SetMissionTask 0 ;
+	
+	ship GetByKeyName m02raffaleSHP SetInvulnerable 1 ;
+	ship GetByKeyName m02raffaleSHP SetVeteran 1 ;
+	ship GetByKeyName m02raffaleSHP SetHPRel 500 ;
+	ship GetByKeyName m02raffaleSHP SetBoardable 0 ;
+	ship GetByKeyName m02pirateA SetInvulnerable 1 ;
+	ship GetByKeyName m02pirateB SetInvulnerable 1 ;
+	/* game SetFriendFoe 1 ; */
+	int aiState = 2;
+	ship GetByKeyName m02raffaleSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m02pirateA SetAIQuestStatus aiState ;
+	ship GetByKeyName m02pirateB SetAIQuestStatus aiState ;
+	
+	ship GetByKeyName m02raffaleSHP SetFriendFoe 1 ;
+	ship GetByKeyName m02pirateA SetFriendFoe 2 ;
+	ship GetByKeyName m02pirateB SetFriendFoe 2 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	waypoint GetByKeyName m02marker SetMark 0 ;
+	waypoint GetByKeyName m02marker SetMissionTask -1 ;
+	/* autosave */
+	script Spg2\Scripts\M02\CS02A.sal ;
+endif
+End

@@ -1,0 +1,95 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+ship GetPlayer SetInvulnerable 1 ;
+ship GetByKeyName m10ridleySHP SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+float3 posStructure ;
+float3 posPlayer ;
+float3 posRidley ;
+float3 posHub ;
+float3 posAdd ;
+platform GetByKeyName m10hubSTR GetPosition posStructure ;
+posAdd = 150.0 0.0 0.0 ;
+math posRidley = posStructure + posAdd ;
+posAdd = 0.0 0.0 150.0 ;
+math posHub = posStructure + posAdd ;
+posAdd = 200.0 0.0 0.0 ;
+math posPlayer = posStructure + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m10ridleySHP SetPosition posRidley ;
+ship GetByKeyName m10hub1 SetPosition posHub ;
+ship GetByKeyName m10ridleySHP VectorTo posStructure ;
+ship GetByKeyName m10hub1 VectorTo posStructure ;
+ship GetPlayer VectorTo posStructure ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> platform */
+int objectType = 17 ;
+float rotStart = 3.4 ;
+float rotSpeed = -0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 220.0 ;
+camera SetType 5 objectType m10hubSTR rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+ship GetByKeyName m10ridleySHP StopRepairObject ;
+ship GetByKeyName m10hub1 StopRepairObject ;
+
+/* EXTRACT FROM PHASE SHIFT EFFECT */
+structure GetByKeyName m10hubTemp SetEnabled 1 ;
+structure GetByKeyName m10hubTemp CallEvent OnActivate ;
+
+pause 3.0 ;
+
+structure GetByKeyName m10hubTemp SetEnabled 0 ;
+platform GetByKeyName m10hubSTR SetEnabled 1 ;
+
+dialogue Spg2\Dialogues\M10\D02.dia ;
+
+pause 10.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+script Spg2\Scripts\M10\EndCSb.sal ;
+
+game SetControlEnabled 1 ;
+
+End

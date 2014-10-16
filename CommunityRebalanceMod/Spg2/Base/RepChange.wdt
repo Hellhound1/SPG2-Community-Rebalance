@@ -1,0 +1,8 @@
+Colum:	5			
+Id	Name	Territorial	Company	Outlaw
+0	ContrabandAccept	-5	0	5
+1	ContrabandDecline	-10	-5	10
+2	StationIrritate	-15	-10	15
+3	AttackFriend	-5	-5	5
+4	DestroyEnemy	-15	-5	10
+5	PlanetSmuggle	-10	-10	10

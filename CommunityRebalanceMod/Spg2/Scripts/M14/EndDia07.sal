@@ -1,0 +1,14 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+game SetQuestMode 0 ;
+mainquest GetById 101 SetSolve 1 ;
+mainquest GetById 101 DeleteObjective 1 ;
+mainquest GetById 102 SetAcquire 1 ;
+waypoint GetByKeyName m14EarthMarker7 SetMark 1 ;
+waypoint GetByKeyName m14EarthMarker7 SetMissionTask 4 ;
+game SetControlEnabled 1 ;
+log 82 ;
+End

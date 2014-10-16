@@ -1,0 +1,12 @@
+Colum:	6			
+Id	Name	File	IconFile	IconId	DescLine
+0	Displacement	Spg2\Models\Anomalies\Displacement\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	0	327
+1	Engine_dampener	Spg2\Models\Anomalies\EngineDampener\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	1	324
+2	Eye_of_storm	Spg2\Models\Anomalies\EyeOfStorm\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	2	329
+3	Grappling_disperser	Spg2\Models\Anomalies\GrapplingDisp\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	3	323
+4	Hyper-resonance	Spg2\Models\Anomalies\HyperResonance\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	4	326
+5	Plasma_pulsar	Spg2\Models\Anomalies\PlasmaPulsar\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	5	328
+6	Sensor_scrambler	Spg2\Models\Anomalies\SensorScrambler\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	6	321
+7	Shield_dampener	Spg2\Models\Anomalies\ShieldDampener\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	7	325
+8	Transport_destabilizer	Spg2\Models\Anomalies\TransDestabilizer\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	8	322
+9	Rift_anomaly	Spg2\SpecialEffect\Skills\Rift\anomaly.ano	Spg2\Textures\GUI\anomalies.dds	0	347

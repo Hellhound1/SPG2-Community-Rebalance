@@ -1,0 +1,1769 @@
+FreeModel:
+{
+	ModelId:	0
+	Assembly:	
+	{
+		Name:	Spg2\Models\FreeModels\AsteroidSmoke\AsteroiSmoke.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	1
+	Assembly:	
+	{
+		Name:	Spg2\Models\FreeModels\AsteroidSmoke\AsteroiSmokeMid.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	2
+	Assembly:	
+	{
+		Name:	Spg2\Models\FreeModels\AsteroidSmoke\AsteroiSmokeBig.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	3
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Mongoose\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	4
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Revery\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	5
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Bandicoot\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	6
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Hammer\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	7
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Jackrabbit\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	8
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Corona\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	9
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Judgement\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	10
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Mohawk\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	11
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Serapheen\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	12
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Nosferatu\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	13
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Renegade\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	14
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Singularity\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	15
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Lancer\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	16
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Pulverizer\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	17
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Sentinel\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	18
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Quasar\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	19
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Blazar\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	20
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Nomad\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	21
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Icarus\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	22
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Polaris\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	23
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Equitar\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	24
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\Reaper\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	25
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\CruiserBoom.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	26
+	Assembly:
+	{
+		Name:	Spg2\Models\FreeModels\AsteroidSmoke\RefractionBlast.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	27
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom1A.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	28
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom1B.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	29
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom1C.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	30
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom2A.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	31
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom2B.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	32
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom2C.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	33
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom3A.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	34
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom3B.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	35
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom3C.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	36
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion1\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	37
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion2\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	38
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion3\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	39
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion1\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	40
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion2\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	41
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion3\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	42
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion1\Burst3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	43
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion2\Burst3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	44
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Explosion3\Burst3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	45
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\PlasmaBooster\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	46
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\BeamManipulation\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	47
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Railgunner\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	48
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\HeavyHitter\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	49
+	Assembly:	
+	{
+		Name:	Spg2\Models\AAP\AAP.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	50
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict1\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	51
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict1\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	52
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict1\Burst3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	53
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict1\BurstFog.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	54
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict1\BurstFog2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	55
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict1\BurstFog3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	56
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict2\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	57
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict2\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	58
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict2\Burst3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	59
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict2\BurstFog.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	60
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict2\BurstFog2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	61
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict2\BurstFog3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	62
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict3\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	63
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict3\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	64
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict3\Burst3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	65
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict3\BurstFog.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	66
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict3\BurstFog2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	67
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\ExplosionDerelict3\BurstFog3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	68
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom1Fog.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	69
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom2Fog.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	70
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Boom\Boom3Fog.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	71
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	72
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	73
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstSize3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	74
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	75
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	76
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	77
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ShieldHit\Burst1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	78
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ShieldHit\Burst2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	79
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ShieldHit\Burst3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	80
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Tactics\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	81
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Retaliate\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	82
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Defender\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	83
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Piloting\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	84
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Scanning\scan.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	85
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Hack\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	86
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Energize\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	87
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Enforce\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	88
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Rift\skill.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	89
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Maintenance\maintenance.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	90
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Magma_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	91
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Magma_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	92
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Magma_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	93
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Magma_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	94
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Magma_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	95
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Magma_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	96
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Necalli_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	97
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Necalli_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	98
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Necalli_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	99
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Necalli_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	100
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Necalli_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	101
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Necalli_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	102
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Radiated_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	103
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Radiated_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	104
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Radiated_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	105
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Radiated_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	106
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Radiated_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	107
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Radiated_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	108
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Shard_Crysalis_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	109
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Shard_Crysalis_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	110
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Shard_Crysalis_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	111
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Shard_Crysalis_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	112
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Shard_Crysalis_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	113
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Shard_Crysalis_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	114
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Talgarno_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	115
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Talgarno_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	116
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Talgarno_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	117
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Talgarno_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	118
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Talgarno_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	119
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Talgarno_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	120
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\LevelUp\levelUp.asb
+	}
+}
+
+FreeModel:
+{
+	ModelId:	121
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Cloak\Cloak1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	122
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Cloak\Cloak2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	123
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Cloak\Cloak3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	124
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Ice2_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	125
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Ice2_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	126
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\Burst_Ice2_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	127
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Ice2_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	128
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Ice2_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	129
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AsteroidEffects\BurstFog_Ice2_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	130
+	Assembly:	
+	{
+		Name:	Spg2\Models\Special\SETH\SETH.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	131
+	Assembly:	
+	{
+		Name:	Spg2\Models\Structures\Artefact\artefact.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	132
+	Assembly:	
+	{
+		Name:	Spg2\Models\Special\OrpheusMine\OrpheusMine.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	133
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\HullIntegrityField\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	134
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\AtlasDefenseSystem\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	135
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\SpeedBooster\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	136
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ShieldBooster\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	137
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\DamageAmplifier\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	138
+	Assembly:	
+	{
+		Name:	Spg2\Models\Misc\Waypoint\waypoint.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	139
+	Assembly:	
+	{
+		Name:	Spg2\Models\Misc\Waypoint\waypoint.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	140
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ScavengerBots\Nanos_Size1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	141
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ScavengerBots\Nanos_Size2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	142
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ScavengerBots\Nanos_Size3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	143
+	Assembly:	
+	{
+		Name:	Spg2\Models\Misc\Waypoint\waypoint.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	144
+	Assembly:	
+	{
+		Name:	Spg2\Models\Misc\Waypoint\waypoint.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	145
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\EquViralTorpedo\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	146
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\EquBoreholeTorpedo\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	147
+	Assembly:	
+	{
+		Name:	Spg2\Weapons\EquShardTorpedo\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	148
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\EmpDF\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	149
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\EnergyDF\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	150
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\PlasmaDF\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	151
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\ProjectileDF\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	152
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\RadiationDF\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	153
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\BoreholeTorpedo\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	154
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitA1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	155
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitB1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	156
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitC1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	157
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitA2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	158
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitB2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	159
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitC2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	160
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitA3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	161
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitB3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	162
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CriticalHit\CriticalHitC3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	163
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireA1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	164
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireB1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	165
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireC1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	166
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaA1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	167
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaB1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	168
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaC1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	169
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeA1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	170
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeB1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	171
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeC1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	172
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireA2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	173
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireB2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	174
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireC2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	175
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaA2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	176
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaB2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	177
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaC2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	178
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeA2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	179
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeB2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	180
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeC2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	181
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireA3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	182
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireB3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	183
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\FireC3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	184
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaA3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	185
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaB3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	186
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PlasmaC3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	187
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeA3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	188
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeB3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	189
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Damages\PowerCoreFumeC3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	190
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Skills\Rift\rift_flash.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	191
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Rift\rift_1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	192
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Rift\rift_2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	193
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\Skills\Rift\rift_3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	194
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\JunkyardEffects\Burst_Size1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	195
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\JunkyardEffects\Burst_Size2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	196
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\JunkyardEffects\Burst_Size3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	197
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\JunkyardEffects\Residue_Size1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	198
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\JunkyardEffects\Residue_Size2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	199
+	Assembly:	
+	{
+		Name:	Spg2\SpecialEffect\JunkyardEffects\Residue_Size3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	200
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\BiometricShield\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	201
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\CloakDisruptor\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	202
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\PowerPack\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	203
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\NebulaCollector\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	204
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\PhaseShift\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	205
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\ScavengerBots\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	206
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\RepairBots\assembly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	207
+	Assembly:
+	{
+		Name:	Spg2\Models\Special\OrpheusMine\OrpheusBoom.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	208
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\Explosions\Collision\Collision.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	209
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\PlanarShockwave\shockwave.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	210
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\TDriveFlash\TDriveFlash.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	211
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\TDriveFlash\TDriveTunnel_Size1.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	212
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\TDriveFlash\TDriveTunnel_Size2.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	213
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\TDriveFlash\TDriveTunnel_Size3.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	214
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\NebulaCollecting\nebulaCollecting.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	215
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\RiftspaceVortex\RiftspaceVortexFlash.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	216
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\RiftspaceVortex\RiftspaceVortexAnomaly.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	217
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\PlatformExplosion\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	218
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\PlatformExplosion\BurstFog.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	219
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\StationExplosion\Burst.asb
+	}
+}
+FreeModel:
+{
+	ModelId:	220
+	Assembly:
+	{
+		Name:	Spg2\SpecialEffect\StationExplosion\BurstFog.asb
+	}
+}

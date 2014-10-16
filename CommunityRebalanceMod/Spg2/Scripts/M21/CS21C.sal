@@ -1,0 +1,67 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+float3 posPlayer ;
+float3 posRidley ;
+float3 posAdd ;
+ship GetPlayer GetPosition posPlayer ;
+posAdd = 40.0 0.0 0.0 ;
+math posRidley = posPlayer + posAdd ;
+ship GetByKeyName m21ridleyB SetPosition posRidley ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> brotherhood */
+int objectType = 1 ;
+float rotationStart = 2.4 ;
+float rotationSpeed = 0.08 ;
+float verticalStart = 2.4 ;
+float verticalOffset = 12.0 ;
+float verticalSpeed = 0.06 ;
+float cameraDistance = 25.0 ;
+camera SetType 5 objectType m21brother1 rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ; 
+
+pause 3.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+script Spg2\Scripts\M21\EndCSc.sal ;
+
+game SetControlEnabled 1 ;
+
+End

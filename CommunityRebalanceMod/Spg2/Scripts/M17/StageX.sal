@@ -1,0 +1,24 @@
+int questCond1 = 1 ;
+int questCond2 = 1 ;
+int questCond3 = 1 ;
+
+mainquest GetById 119 GetSolve questCond1 ;
+mainquest GetById 120 GetSolve questCond2 ;
+mainquest GetById 121 GetSolve questCond3 ;
+
+if questCond1 == 0
+waypoint GetByKeyName M17Bwp SetMark 1 ;
+waypoint GetByKeyName M17Bwp SetMissionTask 4 ;
+endif
+
+if questCond2 == 0
+waypoint GetByKeyName M17Cwp SetMark 1 ;
+waypoint GetByKeyName M17Cwp SetMissionTask 4 ;
+endif
+
+if questCond3 == 0
+waypoint GetByKeyName M17Dwp SetMark 1 ;
+waypoint GetByKeyName M17Dwp SetMissionTask 4 ;
+endif
+
+End

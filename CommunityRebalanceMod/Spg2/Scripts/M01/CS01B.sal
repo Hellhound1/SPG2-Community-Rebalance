@@ -1,0 +1,107 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+/* start FadeToBlack */
+float time = 0.6 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 0.6 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+ship GetByKeyName m01pirate SetPTE 0 ;
+ship GetByKeyName m01pirate ForceStop 0 ;
+
+/* turn off HUD */
+game ShowAllPanels 0 ;
+
+/* Cutscene camera start */
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* actor initial state */
+float3 pcPos = 0.0 0.0 0.0 ;
+waypoint GetByKeyName m01PcPosA GetPosition pcPos ;
+ship GetPlayer SetPosition pcPos ;
+float3 pirateOffset = 0.0 0.0 800.0 ;
+float3 piratePos ;
+waypoint GetByKeyName m01PcPosA GetPosition piratePos ;
+math piratePos = piratePos + pirateOffset ;
+ship GetByKeyName m01pirate SetPosition piratePos ;
+ship GetByKeyName m01pirate VectorTo pcPos ;
+
+ship GetByKeyName m01pirate SetAIQuestStatus 2 ;
+game ResetShipEnemyList 1 ;
+
+/* Camera 1 */
+int objectType = 0 ;
+float verticalStartA = 5.0 ;
+int focusObjType = 1 ;
+float verticalStartB = 0.0 ;
+
+float3 playerPos ;
+ship GetPlayer GetPosition playerPos ;
+ship GetByKeyName m01pirate GetPosition piratePos ;
+
+
+float cameraDistance = 50.0 ;
+/*
+float cameraDistance ;
+math cameraDistance = Distance playerPos piratePos ;
+math cameraDistance = cameraDistance + 20.0 ;
+*/
+camera SetType 6 objectType NONE verticalStartA focusObjType m01pirate verticalStartB cameraDistance ;
+
+/* CS lines */
+screen ShowLine 1 ;
+pause 0.2 ;
+
+time = 0.6 ;
+camera FadeFromColor black time ;
+pause 0.6 ;
+
+/* initiate dialogue */
+dialogue Spg2\Dialogues\M01\D02.dia ;
+
+float zoomTime = 3.6 ; 
+float zoomAmount = 13.0 ; 
+camera SetZoom 0 zoomTime zoomAmount ;
+
+pause 6.649 ;
+
+/* fade out end */
+time = 0.6 ;
+camera FadeToColor black time ;
+pause 0.6 ;
+
+/* CS lines */
+screen ShowLine 0 ;
+
+/* turn on HUD */
+game ShowAllPanels 1 ;
+
+/* Cutscene camera end */
+camera SetDefault ;
+camera SetCSCamera 0 ;
+pause 0.2 ;
+
+camera FadeFromColor black time ;
+pause 0.7 ;
+
+ship GetByKeyName m01pirate SetMark 1 ;
+ship GetByKeyName m01pirate SetMissionTask 0 ;
+
+/* set ships to vulnerable */
+ship GetByKeyName m01pirate SetInvulnerable 0 ;
+
+game SetControlEnabled 1 ;
+
+tutorial 10 ;
+
+End

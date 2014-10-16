@@ -1,0 +1,42 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M08_COMPLETED ;
+
+int questCond = 0 ;
+mainquest GetById 49 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 49 SetSolve 1 ;
+	/* mainquest GetById 49 DeleteObjective 1 ; */
+	mainquest GetById 50 SetAvailable 1 ;
+	platform GetByKeyName m08Container SetMark 0 ;
+	
+	log 48 ;
+	
+	game SetQuestMode 0 ;
+	
+	/* add quest item */
+	int itemId = 8 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	mainmissionpanel 49 ;
+	
+	/* -^-REWARD-^- */
+	player AddExp 7900 ;
+	player AddReputation 100 ;
+	player AddCredits 180000 ;
+	script Spg2\Scripts\AwardHeavyWeapon.sal ;
+
+	/* -^-MISSION COMPLETE-^- */
+	int titleLine = 183 ;
+	int textLine1 = 1553 ;
+	int textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+	
+endif
+End

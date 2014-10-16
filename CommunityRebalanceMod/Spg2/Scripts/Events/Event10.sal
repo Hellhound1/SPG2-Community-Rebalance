@@ -1,0 +1,37 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: System price increased
+-------
++randomize facId, eventDur
++addLog + addNews
+*/
+
+/* trigger event */
+int eventId = 10 ;
+int placeType = 7 ;
+int factionId = 6 ;
+float eventDur = 60.0 ;
+int modObj = 0 ;
+float modifier = 0.2 ;
+int titleLine = 965 ;
+int textLine = 894 ;
+math textLine = Rnd 894 896 ;
+
+int result = 1 ;
+math result = Rnd 1 2 ;
+if result == 1
+	math factionId = Rnd 0 18 ;
+endif
+if result == 2
+	math factionId = Rnd 37 53 ;
+endif
+
+math eventDur = Rnd 600.0 1200.0 ;
+math modifier = Rnd 0.01	0.10 ;
+globalevent Set eventId placeType factionId eventDur modObj modifier titleLine textLine ;
+
+/* add log and trigger news */
+globalevent AddLog eventId placeType factionId modObj modifier titleLine textLine ;
+
+End

@@ -1,0 +1,18 @@
+Dialogue:
+{
+	Portrait:	12
+	Text:	0
+	Voice:	Spg2\Sound\Voice\gabriel\0.wav
+	Duration:	11.688
+}
+Dialogue:
+{
+	Portrait:	0
+	Text:	1
+	Voice:	Spg2\Sound\Voice\adrian\1.wav
+	Duration:	6.137
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M01\EndDia01.sal
+}

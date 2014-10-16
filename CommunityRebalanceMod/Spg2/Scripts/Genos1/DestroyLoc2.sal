@@ -1,0 +1,57 @@
+/*  explosion */
+float e_delay = 0.0 ;
+float3 e_pos = 0 0 0 ;
+float3 e_dpos = 0 0 0 ;
+float3 e_col = 1 1 1 ;
+float e_transp = 1.0 ;
+int e_id = 3 ;
+float e_sizeSt = 30.0 ;
+float e_sizeEn = 75.0 ;
+int e_sizeSo = 0 ;
+float e_lifetime = 0.6 ;
+float e_rndoffset = 0.0 ;
+int e_blend = 0 ;
+structure GetParent GetPosition e_pos ;
+explosion e_delay e_pos e_dpos e_col e_transp e_id e_sizeSt e_sizeEn e_sizeSo e_lifetime e_rndoffset e_blend ;
+
+e_sizeSt = 60.0 ;
+e_sizeEn = 100.0 ;
+e_delay = 0.2 ;
+explosion e_delay e_pos e_dpos e_col e_transp e_id e_sizeSt e_sizeEn e_sizeSo e_lifetime e_rndoffset e_blend ;
+
+e_sizeSt = 40.0 ;
+e_sizeEn = 60.0 ;
+e_rndoffset = 10.0 ;
+e_delay = 0.2 ;
+explosion e_delay e_pos e_dpos e_col e_transp e_id e_sizeSt e_sizeEn e_sizeSo e_lifetime e_rndoffset e_blend ;
+
+e_rndoffset = 6.0 ;
+e_dpos = 6 6 6 ;
+e_sizeSt = 20.0 ;
+e_sizeEn = 40.0 ;
+e_delay = 0.3 ;
+e_lifetime = 0.4 ;
+explosion e_delay e_pos e_dpos e_col e_transp e_id e_sizeSt e_sizeEn e_sizeSo e_lifetime e_rndoffset e_blend ;
+
+e_dpos = -6 -6 -6 ;
+explosion e_delay e_pos e_dpos e_col e_transp e_id e_sizeSt e_sizeEn e_sizeSo e_lifetime e_rndoffset e_blend ;
+/* disable object */
+float structDelDelay = 0.35 ;
+structure GetParent Delete structDelDelay ;
+/* --- */
+
+int questCond = 0 ;
+sidequest GetById 10 GetAcquire questCond ;
+if questCond == 1
+	/* check miningFac and defense platforms */
+		int structCond = 1 ;
+		structure GetByKeyName genosMiningFac GetEnabled structCond ;
+		if structCond == 0
+			sidequest GetById 10 SetSolve 1 ;
+			globalobject GetByKeyName genosMiningFac SetMark 0 ;
+			/* disable MissionArea */
+			log 125 ; /* KRIVI LOG */
+			/* ADD REWARD */
+		endif
+endif
+End

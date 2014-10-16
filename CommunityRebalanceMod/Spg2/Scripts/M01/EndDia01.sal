@@ -1,0 +1,77 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_EndDia01.sal ;
+/* enable HUD and player controls */
+/*
+game ShowAllPanels 1 ;
+game SetControlEnabled 1 ;
+*/
+
+/* set mainquest 1 solve flag to active */
+/*
+mainquest GetById 1 SetSolve 1 ;
+mainquest GetById 1 DeleteObjective 1 ;
+*/
+/* set mainquest 2 acquire flag to active */
+/*
+mainquest GetById 2 SetAcquire 1 ;
+*/
+/* activate logs 0 & 1 */
+/*
+log 0 ;
+log 1 ;
+*/
+/* activate mainquest marker on planet Trinity */
+/*
+planet GetByKeyName trinityPLA SetMark 1 ;
+*/
+
+
+float time = 0.0 ;
+float3 black = 0.0 0.0 0.0 ;
+
+time = 0.6 ;
+camera FadeToColor black time ;
+pause 0.6 ;
+
+screen ShowLine 0 ;
+/*
+pause 0.5 ;
+*/
+
+game ShowAllPanels 1 ;
+
+camera SetDefault ;
+camera SetCSCamera 0 ;
+
+pause 0.2 ;
+game SetQuestMode 1 ;
+
+camera FadeFromColor black time ;
+pause 0.6 ;
+
+
+game SetControlEnabled 1 ;
+
+/* set mainquest 1 solve flag to active */
+mainquest GetById 1 SetSolve 1 ;
+
+/* set mainquest 2 acquire flag to active */
+mainquest GetById 2 SetAcquire 1 ;
+
+
+/* activate logs 0 & 1 */
+log 0 ;
+log 1 ;
+/* activate mainquest marker on planet Trinity */
+planet GetByKeyName trinityPLA SetMark 1 ;
+planet GetByKeyName trinityPLA SetMissionTask 4 ;
+
+tutorial Enable 1 ;
+tutorial 8 ;
+
+End

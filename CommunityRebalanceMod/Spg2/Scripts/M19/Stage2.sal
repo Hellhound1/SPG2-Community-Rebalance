@@ -1,0 +1,4 @@
+waypoint GetByKeyName m19aWp SetMark 1 ;
+waypoint GetByKeyName m19aWp SetMissionTask 4 ;
+
+End

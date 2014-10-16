@@ -1,0 +1,46 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_TrinityDock.sal ;
+/* check quest condition */
+int questCond = 0 ;
+mainquest GetById 4 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage TrinityLand_QuestCond_Passed ;
+	/* set mainquest 4 solve flag to true */
+	mainquest GetById 4 SetSolve 1 ;
+	mainquest GetById 4 DeleteObjective 1 ;
+	/* set mainquest 5 acquire flag to true */
+	mainquest GetById 5 SetAcquire 1 ;
+	/* disable quest ships */
+	ship GetByKeyName m01avalonSHP SetEnabled 0 ;
+	ship GetByKeyName m01sionSHP SetEnabled 0 ;
+	ship GetByKeyName m01raffaleSHP SetEnabled 0 ;
+	ship GetByKeyName m01yukonSHP SetEnabled 0 ;
+	/* enable log ID 4 */
+	log 4 ;
+	/* remove mainquest marker from planet Trinity */
+	planet GetByKeyName trinityPLA SetMark 0 ;
+	planet GetByKeyName trinityPLA SetMissionTask -1 ;
+	/* show notification */
+	
+	PrintMessage Pokreni_NOTIFICATION! ;
+	
+	int titleLine = 811 ;
+	int textLine1 = 812 ;
+	int textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+	
+	PrintMessage NOTIFICATION_passed! ;
+	
+	/* add quest item */
+	int itemId = 0 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;	
+	
+endif
+PrintMessage END_TrinityDock.sal ;
+End

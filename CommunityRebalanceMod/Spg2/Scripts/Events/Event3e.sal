@@ -1,0 +1,141 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: Station lockdown
+-------
++randomize Station, eventDur
++addLog + addNews
+*/
+
+/* trigger event */
+int eventId = 3 ;
+int placeType = 4 ;
+int placeId = -1 ;
+float eventDur = 60.0 ;
+int modObj = 0 ;
+float modVal = 0.0 ;
+math eventDur = Rnd 600.0 1200.0 ;
+int titleLine = 963 ;
+int textLine = 871 ;
+math textLine = Rnd 871 875 ;
+
+int result = 121 ;
+math result = Rnd 121 149 ;
+if result == 121
+	globalevent Set eventId placeType placeId keresSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId keresSTA modObj modVal titleLine textLine ;
+endif
+if result == 122
+	globalevent Set eventId placeType placeId davinciSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId davinciSTA modObj modVal titleLine textLine ;
+endif
+if result == 123
+	globalevent Set eventId placeType placeId astralisSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId astralisSTA modObj modVal titleLine textLine ;
+endif
+if result == 124
+	globalevent Set eventId placeType placeId erynSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId erynSTA modObj modVal titleLine textLine ;
+endif
+if result == 125
+	globalevent Set eventId placeType placeId monacoSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId monacoSTA modObj modVal titleLine textLine ;
+endif
+if result == 126
+	globalevent Set eventId placeType placeId gilgameshSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId gilgameshSTA modObj modVal titleLine textLine ;
+endif
+if result == 127
+	globalevent Set eventId placeType placeId tigrisSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId tigrisSTA modObj modVal titleLine textLine ;
+endif
+if result == 128
+	globalevent Set eventId placeType placeId duquesneSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId duquesneSTA modObj modVal titleLine textLine ;
+endif
+if result == 129
+	globalevent Set eventId placeType placeId cairnSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId cairnSTA modObj modVal titleLine textLine ;
+endif
+if result == 130
+	globalevent Set eventId placeType placeId calystoSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId calystoSTA modObj modVal titleLine textLine ;
+endif
+if result == 131
+	globalevent Set eventId placeType placeId primroseSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId primroseSTA modObj modVal titleLine textLine ;
+endif
+if result == 132
+	globalevent Set eventId placeType placeId hallifaxSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId hallifaxSTA modObj modVal titleLine textLine ;
+endif
+if result == 133
+	globalevent Set eventId placeType placeId theronellSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId theronellSTA modObj modVal titleLine textLine ;
+endif
+if result == 134
+	globalevent Set eventId placeType placeId saphoSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId saphoSTA modObj modVal titleLine textLine ;
+endif
+if result == 135
+	globalevent Set eventId placeType placeId gaiaSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId gaiaSTA modObj modVal titleLine textLine ;
+endif
+if result == 136
+	globalevent Set eventId placeType placeId pentaSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId pentaSTA modObj modVal titleLine textLine ;
+endif
+if result == 137
+	globalevent Set eventId placeType placeId taurangaSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId taurangaSTA modObj modVal titleLine textLine ;
+endif
+if result == 138
+	globalevent Set eventId placeType placeId rigaSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId rigaSTA modObj modVal titleLine textLine ;
+endif
+if result == 139
+	globalevent Set eventId placeType placeId falklandSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId falklandSTA modObj modVal titleLine textLine ;
+endif
+if result == 140
+	globalevent Set eventId placeType placeId reunionSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId reunionSTA modObj modVal titleLine textLine ;
+endif
+if result == 141
+	globalevent Set eventId placeType placeId alexandriaSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId alexandriaSTA modObj modVal titleLine textLine ;
+endif
+if result == 142
+	globalevent Set eventId placeType placeId tychoSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId tychoSTA modObj modVal titleLine textLine ;
+endif
+if result == 143
+	globalevent Set eventId placeType placeId kharovskSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId kharovskSTA modObj modVal titleLine textLine ;
+endif
+if result == 144
+	globalevent Set eventId placeType placeId niigataSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId niigataSTA modObj modVal titleLine textLine ;
+endif
+if result == 145
+	globalevent Set eventId placeType placeId holocomhqSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId holocomhqSTA modObj modVal titleLine textLine ;
+endif
+if result == 146
+	globalevent Set eventId placeType placeId salemSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId salemSTA modObj modVal titleLine textLine ;
+endif
+if result == 147
+	globalevent Set eventId placeType placeId goaSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId goaSTA modObj modVal titleLine textLine ;
+endif
+if result == 148
+	globalevent Set eventId placeType placeId lunaeSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId lunaeSTA modObj modVal titleLine textLine ;
+endif
+if result == 149
+	globalevent Set eventId placeType placeId heracorphqSTA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId heracorphqSTA modObj modVal titleLine textLine ;
+endif
+
+End

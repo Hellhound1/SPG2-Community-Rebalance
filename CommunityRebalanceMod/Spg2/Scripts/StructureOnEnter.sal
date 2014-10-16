@@ -1,0 +1,9 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default structure OnEnter script
++used automatically if no override script supplied in object parameters
+-------
+*/
+
+End

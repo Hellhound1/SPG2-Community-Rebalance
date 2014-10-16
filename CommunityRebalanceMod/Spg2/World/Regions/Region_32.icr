@@ -1,0 +1,181 @@
+NamePosition:	52731.0	0.0	83899.0
+MinimumLevel:	15
+MaximumLevel:	35
+MainFaction:
+{
+	Faction:	8
+	Ships:		
+	{	
+		74	75
+	}
+}
+Faction:
+{
+	Faction:	9
+	Ships:		
+	{	
+		13	14	15	16	17
+	}
+}
+Faction:
+{
+	Faction:	41
+	Ships:		
+	{	
+		22	23	24
+	}
+}
+Faction:
+{
+	Faction:	52
+	Ships:
+	{
+		12	51
+	}
+}
+Contraband:
+{
+	Commodities:	4
+	38	45	99	100
+}
+RandomMission:
+{
+	Waypoint:	6	eanakaiPLA
+	Waypoint:	7	eanakaiPLA
+	Waypoint:	12	eanakaiPLA
+	Waypoint:	13	64934.19	0.00	82667.46
+	Waypoint:	13	66438.64	0.00	83955.70
+	Waypoint:	13	68240.39	0.00	84585.05
+	Waypoint:	13	66854.45	0.00	83288.09
+}
+InitialSetup:																																				
+{																																				
+	Security:	4																																		
+	Military:	3																																		
+	Trader:	6																																		
+}																																				
+Encounters:																																				
+{																																				
+	Density:	6																																		
+	SpawnList:																																			
+	{																																			
+		Spawn:	11	2	11	10	10	2	1	11	2	11	8	8	8	7	11	7	11	4	11	0	2	2	6	8	10	11	2	3	4	4	1	2	11	10
+	}																																			
+	SpawnList:																																			
+	{																																			
+		Level:	10																																	
+		Spawn:	11	2	11	10	10	2	1	11	2	11	8	8	8	7	11	7	11	4	11	0	2	2	6	8	10	11	2	3	4	4	1	2	11	10
+	}																																			
+	Security:
+	{
+		Faction:	8
+		Waypoint:		51427.64	0.00	86551.48
+		Waypoint:		53492.86	0.00	86441.05
+		Waypoint:		55051.99	0.00	85393.03
+		Waypoint:		55428.46	0.00	84029.41
+		Waypoint:		54732.05	0.00	82159.93
+		Waypoint:		52845.80	0.00	81153.17
+		Waypoint:		49922.21	0.00	84274.51
+		Waypoint:		50752.82	0.00	81846.11
+	}
+	Military:
+	{
+		Faction:	8
+		Waypoint:		51427.64	0.00	86551.48
+		Waypoint:		53492.86	0.00	86441.05
+		Waypoint:		55051.99	0.00	85393.03
+		Waypoint:		55428.46	0.00	84029.41
+		Waypoint:		54732.05	0.00	82159.93
+		Waypoint:		52845.80	0.00	81153.17
+		Waypoint:		49922.21	0.00	84274.51
+		Waypoint:		50752.82	0.00	81846.11
+	}
+	Pirate:
+	{
+		Faction:	41
+		Waypoint:		51427.64	0.00	86551.48
+		Waypoint:		53492.86	0.00	86441.05
+		Waypoint:		55051.99	0.00	85393.03
+		Waypoint:		55428.46	0.00	84029.41
+		Waypoint:		54732.05	0.00	82159.93
+		Waypoint:		52845.80	0.00	81153.17
+		Waypoint:		49922.21	0.00	84274.51
+		Waypoint:		50752.82	0.00	81846.11
+	}
+	Skirmish:
+	{
+		Faction:	8
+		Enemy:	9
+		Enemy:	41
+		Waypoint:		51427.64	0.00	86551.48
+		Waypoint:		53492.86	0.00	86441.05
+		Waypoint:		55051.99	0.00	85393.03
+		Waypoint:		55428.46	0.00	84029.41
+		Waypoint:		54732.05	0.00	82159.93
+		Waypoint:		52845.80	0.00	81153.17
+		Waypoint:		49922.21	0.00	84274.51
+		Waypoint:		50752.82	0.00	81846.11
+	}
+	Assassins:
+	{
+		Faction:	52
+	}
+	Science:
+	{
+	}
+	Salvage:
+	{
+	}
+	Looters:
+	{
+	}
+	Anomaly:
+	{
+	}
+	Miner:
+	{
+		Faction:	8
+		Waypoint:		64934.19	0.00	82667.46
+		Waypoint:		66438.64	0.00	83955.70
+		Waypoint:		68240.39	0.00	84585.05
+		Waypoint:		66854.45	0.00	83288.09
+	}
+	Trader:
+	{
+		Faction:	8
+		Waypoint:		51427.64	0.00	86551.48
+		Waypoint:		53492.86	0.00	86441.05
+		Waypoint:		55051.99	0.00	85393.03
+		Waypoint:		55428.46	0.00	84029.41
+		Waypoint:		54732.05	0.00	82159.93
+		Waypoint:		52845.80	0.00	81153.17
+		Waypoint:		49922.21	0.00	84274.51
+		Waypoint:		50752.82	0.00	81846.11
+	}
+}
+Music:
+{
+	Standard:
+	{
+		music_genesis
+		music_things
+		music_darkmoon
+		music_meta
+		music_solaris
+		music_ambientDrones
+		music_Assorted
+		music_AwaitingNews
+		music_DigitalForest
+		music_SpaceTune
+		music_VastEmptyness
+	}
+	Combat:
+	{
+		music_DangerousPursuit
+		music_FilmScoreChase
+		music_Outbreak
+		music_PiratesSearching
+		music_WarDrums
+		music_battle_drums_1
+	}
+}

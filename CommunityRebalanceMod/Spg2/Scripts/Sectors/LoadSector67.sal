@@ -1,0 +1,75 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName sat67 GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName sat67 CallEvent OnActivate ;
+else
+	structure GetByKeyName sat67 CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName gas67A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas67A CallEvent OnActivate ;
+else
+	structure GetByKeyName gas67A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName gas67B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName gas67B CallEvent OnActivate ;
+else
+	structure GetByKeyName gas67B CallEvent OnDeactivate ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 25 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_67_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_67_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_67_2 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 7 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_67_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_67_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_67_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_67_3 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

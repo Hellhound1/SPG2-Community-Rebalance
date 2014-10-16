@@ -1,0 +1,89 @@
+int questCond = 0 ;
+
+questCond = 0 ;
+mainquest GetById 87 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 87 SetSolve 1 ;
+	mainquest GetById 87 DeleteObjective 1 ;
+	mainquest GetById 88 SetAcquire 1 ;
+	script Spg2\Scripts\M14\CSEnterStarpoint.sal ;
+endif
+
+/* ===================================== */
+
+questCond = 0 ;
+mainquest GetById 105 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 105 SetSolve 1 ;
+	mainquest GetById 105 DeleteObjective 1 ;
+	mainquest GetById 106 SetAcquire 1 ;
+	waypoint GetByKeyName m14cWp SetMark 1 ;
+	waypoint GetByKeyName m14cWp SetMissionTask 4 ;
+	ship GetByKeyName m21Imp1 SetEnabled 1 ;
+	ship GetByKeyName m21Imp2 SetEnabled 1 ;
+	ship GetByKeyName m21Imp3 SetEnabled 1 ;
+	ship GetByKeyName m21Imp4 SetEnabled 1 ;
+	ship GetByKeyName m21Imp5 SetEnabled 1 ;
+	ship GetByKeyName m21brother1 SetEnabled 1 ;
+	ship GetByKeyName m21brother2 SetEnabled 1 ;
+	ship GetByKeyName m21brother3 SetEnabled 1 ;
+	ship GetByKeyName m21alien1 SetEnabled 1 ;
+	ship GetByKeyName m21alien2 SetEnabled 1 ;
+	ship GetByKeyName m21alien3 SetEnabled 1 ;
+	ship GetByKeyName m21alien4 SetEnabled 1 ;
+	platform GetByKeyName m14mothership SetEnabled 1 ;
+	platform GetByKeyName m14mothership SetDestructible 0 ;
+	
+	ship GetByKeyName m21Imp1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21Imp2 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21Imp3 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21Imp4 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21Imp5 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21brother1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21brother2 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21brother3 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21alien1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21alien2 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21alien3 SetAIQuestStatus 2 ;
+	ship GetByKeyName m21alien4 SetAIQuestStatus 2 ;
+	platform GetByKeyName m14mothership SetAIQuestStatus 2 ;
+	
+	ship GetByKeyName m21Imp1 SetFriendFoe 3 ;
+	ship GetByKeyName m21Imp2 SetFriendFoe 3 ;
+	ship GetByKeyName m21Imp3 SetFriendFoe 3 ;
+	ship GetByKeyName m21Imp4 SetFriendFoe 3 ;
+	ship GetByKeyName m21Imp5 SetFriendFoe 3 ;
+	ship GetByKeyName m21brother1 SetFriendFoe 2 ;
+	ship GetByKeyName m21brother2 SetFriendFoe 2 ;
+	ship GetByKeyName m21brother3 SetFriendFoe 2 ;
+	ship GetByKeyName m21alien1 SetFriendFoe 2 ;
+	ship GetByKeyName m21alien2 SetFriendFoe 2 ;
+	ship GetByKeyName m21alien3 SetFriendFoe 2 ;
+	ship GetByKeyName m21alien4 SetFriendFoe 2 ;
+	platform GetByKeyName m14mothership SetFriendFoe 2 ;
+	
+	platform GetByKeyName starpointPlatform1 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform2 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform3 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform4 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform5 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform6 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform7 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform8 SetAIQuestStatus 2 ;
+	platform GetByKeyName starpointPlatform1 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform2 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform3 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform4 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform5 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform6 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform7 SetFriendFoe 2 ;
+	platform GetByKeyName starpointPlatform8 SetFriendFoe 2 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	log 86 ;
+	script Spg2\Scripts\M14\CS14B.sal ;
+endif
+
+End

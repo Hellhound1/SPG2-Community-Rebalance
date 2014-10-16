@@ -1,0 +1,12 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/*
+mainquest GetById 38 SetAcquire 1 ;
+game SetControlEnabled 0 ;
+dialogue Spg2\Dialogues\M06\D01.dia ;
+*/
+End

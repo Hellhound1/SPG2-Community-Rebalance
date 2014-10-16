@@ -1,0 +1,228 @@
+/*
+-------
+Script by: LGM Games , 2014
+-------
++calculates landing fee value and forwards it to the Planetary customs panel
+*/
+
+PrintMessage Calculate_landing_fee. ;
+
+int feeFinal = 0 ;
+int variableSlot = 0 ;
+int feeClass ;
+int feeBase = 500 ;
+int feeAlign ;
+
+/* check planet owner faction alignment */
+int factionId ;
+planet GetParent GetFaction factionId ;
+int alignment ;
+player GetAlign factionId alignment ;
+if alignment == 1
+	feeAlign = 0 ;
+else
+	/* check player reputation */
+	int reputation ;
+	player GetReputation reputation ;
+	if factionId == 0
+		/* Iolia */
+		if reputation > -250 && reputation <= 250
+			feeAlign = 5000 ;
+		endif
+		if reputation > 250 && reputation <= 750
+			feeAlign = 4000 ;
+		endif
+		if reputation > 750 && reputation <= 1250
+			feeAlign = 3000 ;
+		endif
+		if reputation > 1250 && reputation <= 1750
+			feeAlign = 2000 ;
+		endif
+		if reputation > 1750
+			feeAlign = 1000 ;
+		endif
+	endif
+	if factionId == 2
+		/* Nyx */
+	endif
+	if factionId == 5
+		/* Sora */
+		if reputation > 300 && reputation <= 700
+			feeAlign = 10000 ;
+		endif
+		if reputation > 700 && reputation <= 1100
+			feeAlign = 7500 ;
+		endif
+		if reputation > 1100 && reputation <= 1500
+			feeAlign = 5000 ;
+		endif
+		if reputation > 1900 && reputation <= 2300
+			feeAlign = 2500 ;
+		endif
+	endif
+	if factionId == 8
+		/* Eanakai */
+	endif
+	if factionId == 7
+		/* Trinity */
+		if reputation > 0 && reputation <= 350
+			feeAlign = 2500 ;
+		endif
+		if reputation > 350 && reputation <= 700
+			feeAlign = 2000 ;
+		endif
+		if reputation > 700 && reputation <= 1050
+			feeAlign = 1500 ;
+		endif
+		if reputation > 1400 && reputation <= 1750
+			feeAlign = 1000 ;
+		endif
+		if reputation > 1750
+			feeAlign = 500 ;
+		endif
+	endif
+	if factionId == 9
+		/* Carthagena */
+	endif
+	if factionId == 10
+		/* Corrion || Baeldor */
+		if reputation > -100 && reputation <= 400
+			feeAlign = 7000 ;
+		endif
+		if reputation > 400 && reputation <= 900
+			feeAlign = 5500 ;
+		endif
+		if reputation > 900 && reputation <= 1400
+			feeAlign = 4000 ;
+		endif
+		if reputation > 1400 && reputation <= 1900
+			feeAlign = 2500 ;
+		endif
+		if reputation > 1900
+			feeAlign = 1000 ;
+		endif
+	endif
+	if factionId == 53
+		/* Pyros */
+		if reputation > -500 && reputation <= 0
+			feeAlign = 12000 ;
+		endif
+		if reputation > 0 && reputation <= 500
+			feeAlign = 10000 ;
+		endif
+		if reputation > 500 && reputation <= 1000
+			feeAlign = 8000 ;
+		endif
+		if reputation > 1000 && reputation <= 1500
+			feeAlign = 6000 ;
+		endif
+		if reputation > 1500
+			feeAlign = 4000 ;
+		endif
+	endif
+	if factionId == 15
+		/* Hogosha */
+		if reputation > -800 && reputation <= -200
+			feeAlign = 5000 ;
+		endif
+		if reputation > -200 && reputation <= 400
+			feeAlign = 4000 ;
+		endif
+		if reputation > 400 && reputation <= 1000
+			feeAlign = 3000 ;
+		endif
+		if reputation > 1000 && reputation <= 1600
+			feeAlign = 2000 ;
+		endif
+		if reputation > 1600
+			feeAlign = 1000 ;
+		endif
+	endif
+	if factionId == 11
+		/* Korkyra */
+		if reputation > 0 && reputation <= 400
+			feeAlign = 8000 ;
+		endif
+		if reputation > 400 && reputation <= 800
+			feeAlign = 6000 ;
+		endif
+		if reputation > 800 && reputation <= 1200
+			feeAlign = 4000 ;
+		endif
+		if reputation > 1200 && reputation <= 1600
+			feeAlign = 2000 ;
+		endif
+		if reputation > 1600
+			feeAlign = 500 ;
+		endif
+	endif
+	if factionId == 13
+		/* Thauria */
+	endif
+	if factionId == 14
+		/* Fairuz */
+		if reputation > -500 && reputation <= -50
+			feeAlign = 10000 ;
+		endif
+		if reputation > -50 && reputation <= 400
+			feeAlign = 8000 ;
+		endif
+		if reputation > 400 && reputation <= 850
+			feeAlign = 6000 ;
+		endif
+		if reputation > 850 && reputation <= 1300
+			feeAlign = 4000 ;
+		endif
+		if reputation > 1300
+			feeAlign = 2000 ;
+		endif
+	endif
+	
+endif
+
+int class ;
+ship GetPlayer GetClass class ;
+math feeClass = feeBase * class ;
+/* exceptions */
+if class == 1
+	/* freighter */
+	feeClass = 1500 ;
+endif
+if class == 2
+	/* freightliner */
+	feeClass = 3000 ;
+endif
+
+PrintMessageVar FACTION_ID: INT factionId ;
+PrintMessageVar ALIGNMENT: INT alignment ;
+PrintMessageVar FEE_ALIGN: INT feeAlign ;
+PrintMessageVar FEE_CLASS: INT feeClass ;
+
+/* calculate final fee */
+math feeFinal = feeAlign + feeClass ;
+
+PrintMessageVar FEE_FINAL: INT feeFinal ;
+
+if factionId == 2
+	/* check license */
+	int licenseId = 2 ;
+	int status = 0 ;
+	player GetLicense licenseId status ;
+	if status == 1
+		math feeFinal = feeFinal * 0 ;
+	endif
+endif
+
+/* if on quest, landing is free of charge */
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 1
+	math feeFinal = feeFinal * 0 ;
+endif
+
+PrintMessageVar FEE_FINAL_AFTER_LICENSE: INT feeFinal ;
+
+/* set landing fee accordingly */
+scriptvar SetValue int variableSlot feeFinal ;
+
+End

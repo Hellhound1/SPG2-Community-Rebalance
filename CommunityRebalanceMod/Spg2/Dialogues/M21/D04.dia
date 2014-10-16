@@ -1,0 +1,39 @@
+Dialogue:
+{
+	Portrait:	9
+	Text:	219
+	Voice:	Spg2\Sound\Voice\kuzhev\219.wav
+	Duration:	16.307
+}
+Dialogue:
+{
+	Portrait:	34
+	Text:	220
+	Voice:	Spg2\Sound\Voice\morse\220.wav
+	Duration:	2.55
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	221
+	Voice:	Spg2\Sound\Voice\adrian\221.wav
+	Duration:	3.091
+}
+Dialogue:
+{
+	Portrait:	9
+	Text:	222
+	Voice:	Spg2\Sound\Voice\kuzhev\222.wav
+	Duration:	5.834
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	223
+	Voice:	Spg2\Sound\Voice\adrian\223.wav
+	Duration:	3.29
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M21\EndDia04.sal
+}

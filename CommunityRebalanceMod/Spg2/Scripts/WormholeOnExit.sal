@@ -1,0 +1,147 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default Wormhole OnExit script
++used automatically if no override script supplied in object parameters
+-------
+*/
+/*
+	+experience
+		+extraExp if Engineer
+	+if noPerk
+		+reduce Trooper count [5-25%]
+		+reduce Ship hull [5-15%]
+	+5% chance to drop out in the wrong location
+	+chance to cause any of the adverse effects
+		+check if Perk is active to reduce chance of accident
+	+push notification
+	+randomly choose an encounter to occur
+*/
+
+/* |---------------- EXPERIENCE ----------------| */
+int expBase = 150 ;
+int expAdd = 0 ;
+int experience = 50 ;
+int expClass = 0 ;
+
+/* additional exp rewarded per experience level */
+int level = 0 ;
+player GetLevel level ;
+math expAdd = 10 * level ;
+math expClass = expBase + expAdd ;
+
+/* exp reward increased if character class is Engineer */
+int class = 0 ;
+player GetCharacterClass class ;
+if class == 1
+	math experience = expClass * 2 ;
+else
+	math experience = expClass * 1 ;
+endif
+
+/* add final exp reward */
+player AddExp experience ;
+/* |---------------- EXPERIENCE ----------------| */
+
+/* |---------------- KILL TROOPERS ----------------| */
+int troopersOld = 0 ;
+int troopersNew = 0 ;
+int troopersKilled = 0 ;
+ship GetPlayer GetTroopersNo troopersOld ;
+
+int trooperDeathChance = 0 ;
+math trooperDeathChance = Rnd 1 10 ;
+if trooperDeathChance == 1
+	if troopersOld == 0
+		troopersKilled = 0 ;
+	else
+		math troopersKilled = Rnd 1 10 ;
+		math troopersNew = troopersOld - troopersKilled ;
+		if troopersNew < 0
+			troopersNew = 0 ;
+		endif
+		math troopersKilled = troopersOld - troopersNew ;
+		int troopersKilledFinal = 0 ;
+		math troopersKilledFinal = troopersKilled * -1 ;
+		ship GetPlayer SetTroopersNo troopersNew ;
+	endif
+endif
+
+/* |---------------- KILL TROOPERS ----------------| */
+
+/* |---------------- DAMAGE HULL ----------------| */
+float hullOld = 0.0 ;
+ship GetPlayer GetHP hullOld ;
+float hullMax = 0.0 ;
+ship GetPlayer GetHPMax hullMax ;
+
+int hullLostPercent = 1 ;
+math hullLostPercent = Rnd 1 15 ;
+float hullLostFactor = 1.0 ;
+math hullLostFactor = 100 * hullLostPercent ;
+float hullLost = 0.0 ;
+math hullLost = hullMax / hullLostFactor ;
+
+float hullNew = 0.0 ;
+math hullNew = hullOld - hullLost ;
+
+if hullNew < 0.0
+	hullNew = 0.0 ;
+endif
+
+ship GetPlayer SetHP hullNew ;
+
+float hullLostReal = 0.0 ;
+math hullLostReal = hullOld - hullNew ;
+
+float hullLostFinal = 0.0 ;
+math hullLostFinal = hullLostReal * -1.0 ;
+
+/* |---------------- DAMAGE HULL ----------------| */
+
+/* |---------------- WRONG LOCATION ----------------| */
+int wrongLoc = 0 ;
+int arrivedFrom = 0 ;
+wormhole GetParent GetWrongJump arrivedFrom ;
+if arrivedFrom != -1
+	wrongLoc = 1 ;
+endif
+/* |---------------- WRONG LOCATION ----------------| */
+
+/* |---------------- ACCIDENT ----------------| */
+int accidentId = 0 ;
+int accidentChance = 1 ;
+int accidentHigh = 10 ;
+/* check perk to increase accidentHigh if necessary */
+math accidentChance = Rnd 1 accidentHigh ;
+if accidentChance == 1
+	math accidentId = Rnd 0 8 ; /* randomly pick accident from accidents.wdt */
+	/* fire off accident */
+endif 
+/* |---------------- ACCIDENT ----------------| */
+
+/* |---------------- PUSH NOTIFICATION ----------------| */
+if troopersKilledFinal < 0 && hullLostFinal < 0.0
+	screen ShowWarningsEx 16 troopersKilledFinal hullLostFinal wrongLoc ;
+endif
+/* |---------------- PUSH NOTIFICATION ----------------| */
+
+pause 5.0 ;
+
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 0
+	/* |---------------- ENCOUNTER CHOICE ----------------| */
+	int choice ;
+	math choice = Rnd 1 3 ;
+	if choice == 1
+		script Spg2\Scripts\CargoLooters.sal ;
+	endif
+	if choice == 2
+		script Spg2\Scripts\EncounterBattle.sal ;
+	endif
+	if choice == 3
+		script Spg2\Scripts\AmbushHeadhunters.sal ;
+	endif
+endif
+End

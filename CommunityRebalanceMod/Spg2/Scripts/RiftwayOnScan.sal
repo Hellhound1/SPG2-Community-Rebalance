@@ -1,0 +1,15 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default Hub OnScan script
++used automatically if no override script supplied in object parameters
+-------
+*/
+/*
+Scan
+	+experience
+		+extraExp ifEngineer
+	+open Info panel
+*/
+
+End

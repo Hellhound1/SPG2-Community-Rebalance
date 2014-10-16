@@ -1,0 +1,28 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 107 SetSolve 1 ;
+/* mainquest GetById 107 DeleteObjective 1 ; */
+mainquest GetById 108 SetAvailable 1 ;
+ship GetByKeyName m14ridleyC SetEnabled 0 ;
+waypoint GetByKeyName m14cWp SetMark 0 ;
+waypoint GetByKeyName m14cWp SetMissionTask -1 ;
+log 87 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 30100 ;
+player AddReputation 100 ;
+player AddCredits 300000 ;
+script Spg2\Scripts\BlueprintAward.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+End

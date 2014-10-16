@@ -1,0 +1,16 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+
+ship GetByKeyName m04sionBSHP SetInvulnerable 0 ;
+ship GetByKeyName m04sionBSHP SetDestructible 0 ;
+ship GetByKeyName m04anarchist1 SetInvulnerable 0 ;
+ship GetByKeyName m04anarchist2 SetInvulnerable 0 ;
+ship GetByKeyName m04anarchist3 SetInvulnerable 0 ;
+ship GetByKeyName m04convoy1 SetInvulnerable 0 ;
+ship GetByKeyName m04convoy2 SetInvulnerable 0 ;
+
+End

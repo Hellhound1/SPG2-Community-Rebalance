@@ -1,0 +1,380 @@
+/*
+-------
+Script by: LGM Games, 2013  
++cargo looters script
++chance to spawn outlaws that want to loot player's cargo hold
+	+calculate chance based on region and value of commodities in cargo hold
+		->higher cargo value = higher chance
+		->more dangerous regions = higher chance
+		+one-liner [392,396]
+	+chance to spawn friendlies to assist
+		+chance depends on player's reputation with the faction in control of the region
+			->better standing = higher chance
+			+one-liner [387,391]
+*/
+
+PrintMessage CargoLooters.sal ;
+
+int playerLevel = 0 ;
+player GetLevel playerLevel ;
+if playerLevel > 3
+
+	/* calculate chance based on cargo value */
+	int chanceValue = 0 ;
+	int cargoValue = 0 ;
+	int itemValSingle = 0 ;
+	int itemValStack = 0 ;
+	int itemCount = 0 ;
+	int itemId = 0 ;
+	int columnPrice = 6 ;
+	int i = 0 ;
+	int maxComm = 102 ;
+
+	for i =  0 < maxComm step 1
+		player GetCommoditiesCount itemId itemCount ;
+		math itemValSingle = base Commodities itemId columnPrice ;
+		math itemValStack = itemValSingle * itemCount ;
+		math cargoValue = cargoValue + itemValStack ;
+		math itemId ++ ;
+	endfor
+
+	if cargoValue >= 0 && cargoValue < 2000
+		chanceValue = 20 ;
+	endif
+
+	if cargoValue > 1999 && cargoValue < 5000
+		chanceValue = 15 ;
+	endif
+
+	if cargoValue > 4999 && cargoValue < 10000
+		chanceValue = 10 ;
+	endif
+
+	if cargoValue > 9999 && cargoValue < 20000
+		chanceValue = 5 ;
+	endif
+
+	if cargoValue > 19999
+		chanceValue = 1 ;
+	endif
+
+	/* calculate chance based on region faction alignment */
+	int chanceRegion = 0 ;
+	int alignment = 0 ;
+	int regionId = 0 ;
+	region GetId regionId ;
+	region GetAlign alignment ;
+
+	if alignment == 0
+		/* if region is neutral */
+		chanceRegion = 5 ;
+	endif
+
+	if alignment == 1
+		/* if region is friendly */
+		chanceRegion = 10 ;
+	endif
+
+	if alignment == 2
+		/* if region is hostile */
+		chanceRegion = 1 ;
+	endif
+
+	int chanceFinal = 0 ;
+	math chanceFinal = chanceValue + chanceRegion ;
+
+	int triggerHostiles = 0 ;
+	math triggerHostiles = Rnd 0 chanceFinal ;
+
+	if triggerHostiles == 0
+
+		/* SHIP SPAWN PARAMETERS */
+		int spawnType = 0 ; /* region-based */
+		int factionId = 0 ;
+		int shipId = 0 ;
+		int shipX = 0 ; /* local region faction ship ID min | always stays the same  */
+		int shipY = 0 ; /* local region faction ship ID max | changes depending on region and faction */
+		int number = 0 ;
+		math number = Rnd 1 3 ; /* random chance for multiple ships to appear */
+		/* define 3 spawn positions */
+		float3 spawnPos1 = 0.0 0.0 0.0 ;
+		float3 spawnPos2 = 0.0 0.0 0.0 ;
+		float3 spawnPos3 = 0.0 0.0 0.0 ;
+		float3 posAdd1 = 1000.0 0.0 400.0 ;
+		float3 posAdd2 = 1100.0 20.0 350.0 ;
+		float3 posAdd3 = 1200.0 -20.0 450.0 ;
+		float3 positionPlayer = 0.0 0.0 0.0 ;
+		ship GetPlayer GetPosition positionPlayer ;
+		math spawnPos1 = positionPlayer + posAdd1 ;
+		math spawnPos2 = positionPlayer + posAdd2 ;
+		math spawnPos3 = positionPlayer + posAdd3 ;
+		/* define spawn one-liner dialog */
+		int dialogHostile = 397 ;
+		math dialogHostile = Rnd 397 399 ;
+		float dialogDur = 5.0 ;
+		int dialogFac = 0 ;
+		/* helper parameters */
+		int shipIdAlly = 0 ;
+		int shipYAlly = 0 ;
+		float3 spawnPosHelp1 = 0.0 0.0 0.0 ;
+		float3 spawnPosHelp2 = 0.0 0.0 0.0 ;
+		float3 posAddHelp1 = -1000.0 0.0 -400.0 ;
+		float3 posAddHelp2 = -1100.0 20.0 -350.0 ;
+		math spawnPosHelp1 = positionPlayer + posAddHelp1 ;
+		math spawnPosHelp2 = positionPlayer + posAddHelp2 ;
+		int dialogFacAlly = 0 ;
+			
+		/* assign region based parameters */
+		if regionId == 20
+			factionId = 1 ;
+			shipY = 4 ;
+			dialogFac = 1051 ;
+			dialogFacAlly = 1006 ;
+			shipYAlly = 1 ;
+		endif
+
+		if regionId == 21
+			factionId = 2 ;
+			shipY = 4 ;
+			dialogFac = 1051 ;
+			dialogFacAlly = 1006 ;
+			shipYAlly = 1 ;
+		endif
+
+		if regionId == 22
+			factionId = 4 ;
+			shipY = 3 ;
+			dialogFac = 1037 ;
+			dialogFacAlly = 1007 ;
+			shipYAlly = 2 ;
+		endif
+		
+		if regionId == 23
+			factionId = 4 ;
+			shipY = 3 ;
+			dialogFac = 1037 ;
+			dialogFacAlly = 1007 ;
+			shipYAlly = 2 ;
+		endif
+
+		if regionId == 24
+			factionId = 5 ;
+			shipY = 3 ;
+			dialogFac = 1037 ;
+			dialogFacAlly = 1007 ;
+			shipYAlly = 2 ;
+		endif
+
+		if regionId == 25
+			factionId = 4 ;
+			shipY = 4 ;
+			dialogFac = 1040 ;
+			dialogFacAlly = 1007 ;
+			shipYAlly = 2 ;
+		endif
+		
+		if regionId == 26
+			factionId = 4 ;
+			shipY = 4 ;
+			dialogFac = 1040 ;
+			dialogFacAlly = 1007 ;
+			shipYAlly = 2 ;
+		endif
+		
+		if regionId == 27
+			factionId = 4 ;
+			shipY = 4 ;
+			dialogFac = 1040 ;
+			dialogFacAlly = 1007 ;
+			shipYAlly = 2 ;
+		endif
+
+		if regionId == 28
+			factionId = 2 ;
+			shipY = 4 ;
+			dialogFac = 1040 ;
+			dialogFacAlly = 1018 ;
+			shipYAlly = 1 ;
+		endif
+
+		if regionId == 29
+			factionId = 2 ;
+			shipY = 4 ;
+			dialogFac = 1041 ;
+			dialogFacAlly = 1018 ;
+			shipYAlly = 1 ;
+		endif
+
+		if regionId == 30
+			factionId = 2 ;
+			shipY = 2 ;
+			dialogFac = 1041 ;
+			dialogFacAlly = 1008 ;
+			shipYAlly = 1 ;
+		endif
+		
+		if regionId == 31
+			factionId = 2 ;
+			shipY = 2 ;
+			dialogFac = 1041 ;
+			dialogFacAlly = 1008 ;
+			shipYAlly = 1 ;
+		endif
+		
+		if regionId == 32
+			factionId = 2 ;
+			shipY = 2 ;
+			dialogFac = 1041 ;
+			dialogFacAlly = 1008 ;
+			shipYAlly = 1 ;
+		endif
+
+		if regionId == 33
+			factionId = 0 ;
+			shipY = 1 ;
+			dialogFac = 1008 ;
+			dialogFacAlly = 1008 ;
+			shipYAlly = 1 ;
+		endif
+
+		if regionId == 34
+			factionId = 1 ;
+			shipY = 3 ;
+			dialogFac = 1044 ;
+			dialogFacAlly = 1004 ;
+			shipYAlly = 5 ;
+		endif
+
+		if regionId == 35
+			factionId = 2 ;
+			shipY = 3 ;
+			dialogFac = 1044 ;
+			dialogFacAlly = 1004 ;
+			shipYAlly = 5 ;
+		endif
+
+		if regionId == 36
+			factionId = 1 ;
+			shipY = 3 ;
+			dialogFac = 1044 ;
+			dialogFacAlly = 1004 ;
+			shipYAlly = 5 ;
+		endif
+		
+		if regionId == 37
+			factionId = 1 ;
+			shipY = 3 ;
+			dialogFac = 1044 ;
+			dialogFacAlly = 1009 ;
+			shipYAlly = 4 ;
+		endif
+
+		if regionId == 38
+			factionId = 1 ;
+			shipY = 1 ;
+			dialogFac = 1008 ;
+			dialogFacAlly = 1009 ;
+			shipYAlly = 4 ;
+		endif
+		
+		if regionId == 39
+			factionId = 1 ;
+			shipY = 1 ;
+			dialogFac = 1008 ;
+			dialogFacAlly = 1009 ;
+			shipYAlly = 4 ;
+		endif
+		
+		/* ----- SPAWN LOOTERS ----- */
+		int checkExist = 0 ;
+		ship GetByKeyName looter1 Exist checkExist ;
+		if checkExist != 1
+			PrintMessage Spawn_looter1! ;
+			math shipId = Rnd shipX shipY ;
+			shipAdd looter1 spawnType spawnPos1 factionId shipId ;
+			ship GetByKeyName looter1 AttackPlayer ;
+		endif
+		
+		if number > 1
+			ship GetByKeyName looter2 Exist checkExist ;
+			if checkExist != 1
+				PrintMessage Spawn_looter2! ;
+				math shipId = Rnd shipX shipY ;
+				shipAdd looter2 spawnType spawnPos2 factionId shipId ;
+				ship GetByKeyName looter2 AttackPlayer ;
+			endif
+		endif
+		
+		if number == 3
+			ship GetByKeyName looter3 Exist checkExist ;
+			if checkExist != 1
+				PrintMessage Spawn_looter3! ;
+				math shipId = Rnd shipX shipY ;
+				shipAdd looter3 spawnType spawnPos3 factionId shipId ;
+				ship GetByKeyName looter3 AttackPlayer ;
+			endif
+		endif
+
+		/* one-liner dialogue */
+		factdialogue dialogFac dialogHostile dialogDur ;
+		
+		
+		/* SPAWN HELPERS */
+		int numberOfHelpers = 0 ;
+		int chanceAlly = 0 ;
+		
+		if alignment == 0
+			/* main faction is neutral => spawnChance = 30% | spawn 1 helper */
+			numberOfHelpers = 1 ;
+			chanceAlly = 5 ;
+		endif
+
+		if alignment == 1
+			/* main faction is friendly => spawnChance = 74% | spawn 2 helpers */
+			numberOfHelpers = 2 ;
+			chanceAlly = 2 ;
+		endif
+		
+		if alignment == 2
+			/* main faction is hostile => spawnChance = 0 */
+			numberOfHelpers = 0 ;
+			chanceAlly = 10 ;
+		endif
+		
+		factionId = 0 ;
+		int triggerFriendly = 0 ;
+		math triggerFriendly = Rnd 1 chanceAlly ;
+		if triggerFriendly == 1
+			
+			if numberOfHelpers > 0
+			ship GetByKeyName helper1 Exist checkExist ;
+				if checkExist != 1
+					PrintMessage Spawn_helper1! ;
+					math shipIdAlly = Rnd shipX shipYAlly ;
+					shipAdd helper1 spawnType spawnPosHelp1 factionId shipIdAlly ;
+				endif
+			endif
+			
+			if numberOfHelpers > 1
+				ship GetByKeyName helper2 Exist checkExist ;
+				if checkExist != 1
+					PrintMessage Spawn_helper2! ;
+					math shipIdAlly = Rnd shipX shipYAlly ;
+					shipAdd helper2 spawnType spawnPosHelp2 factionId shipIdAlly ;
+				endif
+			endif
+			
+			/* one-liner dialogue */
+			if numberOfHelpers > 0
+				int dialogHelper = 0 ;
+				math dialogHelper = Rnd 387 391 ;
+				factdialogue dialogFacAlly dialogHelper dialogDur ;
+			endif
+		
+		endif
+		
+	endif
+	
+endif
+
+End

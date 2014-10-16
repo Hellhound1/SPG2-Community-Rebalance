@@ -1,0 +1,60 @@
+Dialogue:
+{
+	Portrait:	21
+	Text:	93
+	Voice:	Spg2\Sound\Voice\samoa\93.wav
+	Duration:	8.000
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	94
+	Voice:	Spg2\Sound\Voice\adrian\94.wav
+	Duration:	4.373
+}
+Dialogue:
+{
+	Portrait:	21
+	Text:	95
+	Voice:	Spg2\Sound\Voice\samoa\95.wav
+	Duration:	4.500
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	96
+	Voice:	Spg2\Sound\Voice\adrian\96.wav
+	Duration:	2.540
+}
+Dialogue:
+{
+	Portrait:	21
+	Text:	97
+	Voice:	Spg2\Sound\Voice\samoa\97.wav
+	Duration:	2.710
+}
+Dialogue:
+{
+	Portrait:	10
+	Text:	98
+	Voice:	Spg2\Sound\Voice\ridley\98.wav
+	Duration:	5.302
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	99
+	Voice:	Spg2\Sound\Voice\adrian\99.wav
+	Duration:	1.739
+}
+Dialogue:
+{
+	Portrait:	10
+	Text:	100
+	Voice:	Spg2\Sound\Voice\ridley\100.wav
+	Duration:	8.718
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M11\EndDia02.sal
+}

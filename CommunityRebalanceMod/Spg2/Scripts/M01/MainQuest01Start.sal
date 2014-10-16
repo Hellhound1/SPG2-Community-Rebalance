@@ -1,0 +1,52 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+/* start when inside mission area trigger m01aAREA */
+
+int questCond = 0 ;
+mainquest GetById 1 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage MQ1_acquire_chk_TRUE ;
+	PrintMessage Started_M01 ;
+	/* shut down tutorials */
+	tutorial Enable 0 ;
+	/* enable questMode */
+	game SetQuestMode 1 ;
+	
+	/* enable M01 ships */
+	ship GetByKeyName m01avalonSHP SetEnabled 1 ;
+	ship GetByKeyName m01galahadSHP SetEnabled 1 ;
+	ship GetByKeyName m01sionSHP SetEnabled 1 ;
+	ship GetByKeyName m01raffaleSHP SetEnabled 1 ;
+	ship GetByKeyName m01yukonSHP SetEnabled 1 ;
+	ship GetByKeyName m01avalonSHP SetBoardable 0 ;
+	ship GetByKeyName m01galahadSHP SetBoardable 0 ;
+	ship GetByKeyName m01sionSHP SetBoardable 0 ;
+	ship GetByKeyName m01raffaleSHP SetBoardable 0 ;
+	ship GetByKeyName m01yukonSHP SetBoardable 0 ;
+	
+	/* quest ship AI flag to true, ships go passive */
+	int aiState = 1 ;
+	ship GetByKeyName m01avalonSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m01galahadSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m01sionSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m01raffaleSHP SetAIQuestStatus aiState ;
+	ship GetByKeyName m01yukonSHP SetAIQuestStatus aiState ;	
+	
+	/* FriendFoe */
+	ship GetByKeyName m01avalonSHP SetFriendFoe 1 ;
+	ship GetByKeyName m01galahadSHP SetFriendFoe 1 ;
+	ship GetByKeyName m01sionSHP SetFriendFoe 1 ;
+	ship GetByKeyName m01raffaleSHP SetFriendFoe 1 ;
+	ship GetByKeyName m01yukonSHP SetFriendFoe 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	/* Start cutscene */
+	script Spg2\Scripts\M01\CS01A.sal ;
+endif
+
+End

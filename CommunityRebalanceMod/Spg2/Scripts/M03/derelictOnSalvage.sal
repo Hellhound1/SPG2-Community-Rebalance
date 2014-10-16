@@ -1,0 +1,19 @@
+mainquest GetById 18 SetSolve 1 ;
+mainquest GetById 18 DeleteObjective 1 ;
+/* add quest item */
+int itemId = 4 ;
+int amount = 1 ;
+player AddQuestItemCount itemId amount ;
+
+int questCond = 0 ;
+mainquest GetById 17 GetSolve questCond ;
+if questCond == 1
+	mainquest GetById 19 SetAcquire 1 ;
+	derelict GetByKeyName m03DER SetMark 0 ;
+	derelict GetByKeyName m03DER SetMissionTask -1 ;
+	waypoint GetByKeyName m03marker SetMark 1 ;
+	waypoint GetByKeyName m03marker SetMissionTask 4 ;
+	log 17 ;
+endif
+
+End

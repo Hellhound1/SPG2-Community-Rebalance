@@ -1,0 +1,87 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+/* start FadeToBlack */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+
+pause 1.0 ;
+
+/* turn off HUD */
+game ShowAllPanels 0 ;
+/* CS lines */
+screen ShowLine 1 ;
+pause 0.7 ;
+
+/* Cutscene camera start */
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* actor initial state */
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+
+time = 1.0 ;
+camera FadeFromColor black time ;
+
+/* camera target -> player->spearhead + zoomIn */
+int objectType = 0 ;
+float verticalStartA = 5.0 ;
+int focusObjType = 1 ;
+float verticalStartB = 0.0 ;
+float cameraDistance = 80.0 ;
+
+camera SetType 6 objectType NONE verticalStartA focusObjType spearheadSHP verticalStartB cameraDistance ;
+
+/* camera zoom in on spearheadSHP */
+time = 2.3 ;
+float zoomAmount = 40.0 ;
+camera SetZoom 0 time zoomAmount ;
+
+pause 2.0 ;
+
+/* camera target -> player->marrakesh + zoomIn */
+objectType = 0 ;
+verticalStartA = 5.0 ;
+focusObjType = 1 ;
+verticalStartB = 0.0 ;
+cameraDistance = 65.0 ;
+
+camera SetType 6 objectType NONE verticalStartA focusObjType marrakeshSHP verticalStartB cameraDistance ;
+
+/* camera zoom in on marrakeshSHP */
+time = 2.3 ;
+zoomAmount = 25.0 ;
+camera SetZoom 0 time zoomAmount ;
+
+pause 2.0 ;
+
+/* fade out end */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+camera FadeFromColor black time ;
+/* CS lines */
+screen ShowLine 0 ;
+
+/* Cutscene camera end */
+camera SetDefault ;
+camera SetCSCamera 0 ;
+
+/* turn on HUD */
+game ShowAllPanels 1 ;
+
+pause 0.7 ;
+
+PrintMessage Slijedi_EndCSe ;
+/* initiate script */
+script Spg2\Scripts\M01\EndCSe.sal ;
+
+End

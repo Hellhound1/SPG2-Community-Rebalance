@@ -1,0 +1,126 @@
+/*
+-------
+Script by: LGM Games, 2014 
++default station OnUndock script
++chance for an event to happen
+-------
++chance dependency on player level?
++chance for a number of events to happen
+	+outlaws appear 								=> cutscene
+	+friendlies appear 								=> cutscene
+	+battle starts around the station 					=> cutscene
+	+troopers killed/deserted/held in custody 			=> notification/one-liner
+	+ion storm appears 								=> cutscene & notification
+	+officer injured 									=> notification
+	+officer assassinated 								=> notification or one-liner
+	+bounty hunters appear 							=> one-liner
+	+pirate headhunters appear 						=> one-liner
+	+ship system sabotage 							=> cutscene & notification
+	+equipment theft 								=> notification
+	+commodity theft 								=> notification
+	+credit account theft 							=> notification
+	+garage ship sabotage 							=> notification
+	+artefact coordinates offer for money VS fake		=> panel
+	+special derelict coordinates for money VS fake 	=> panel
+	+special trade route info for money VS fake 		=> panel
+	+station coordinates for money VS fake 			=> panel
+*/
+
+int questMode = 0 ;
+game GetQuestMode questMode ;
+if questMode == 0
+	/* chance dependency on player level? */
+	int event = 1 ;
+	int chanceMax = 60 ;
+	math event = Rnd 1 chanceMax ;
+	if event == 1
+		PrintMessage SCR_StationUndock:_Spawn:_Outlaws! ;
+		script Spg2\Scripts\OnUndock\SpawnOutlawsA.sal ;
+	endif
+
+	if event == 2
+		PrintMessage SCR_StationUndock:_Spawn:_Friendlies! ;
+		script Spg2\Scripts\OnUndock\SpawnFriendliesA.sal ;
+	endif
+
+	if event == 3
+		PrintMessage SCR_StationUndock:_Spawn:_Battle! ;
+		script Spg2\Scripts\OnUndock\SpawnBattleA.sal ;
+	endif
+
+	if event == 4
+		PrintMessage SCR_StationUndock:_Troopers_lost! ;
+		script Spg2\Scripts\OnUndock\TroopersLost.sal ;
+	endif
+
+	if event == 5
+		PrintMessage SCR_StationUndock:_Ion_storm! ;
+		script Spg2\Scripts\OnUndock\IonStorm.sal ;
+	endif
+
+	if event == 6
+		PrintMessage SCR_StationUndock:_Officer_injured! ;
+		script Spg2\Scripts\OnUndock\OfficerInjured.sal ;
+	endif
+
+	if event == 7
+		PrintMessage SCR_StationUndock:_Officer_Assassinated! ;
+		script Spg2\Scripts\OnUndock\OfficerKilled.sal ;
+	endif
+
+	if event == 8
+		PrintMessage SCR_StationUndock:_Spawn:_Bounty_hunters! ;
+		script Spg2\Scripts\OnUndock\SpawnBountyHuntersA.sal ;
+	endif
+
+	if event == 9
+		PrintMessage SCR_StationUndock:_Spawn:_Outlaw_headhunters! ;
+		script Spg2\Scripts\OnUndock\SpawnHeadhuntersA.sal ;
+	endif
+
+	if event == 10
+		PrintMessage SCR_StationUndock:_Sabotage:_Ship_system! ;
+		script Spg2\Scripts\OnUndock\SabotageShipSystem.sal ;
+	endif
+
+	if event == 11
+		PrintMessage SCR_StationUndock:_Theft:_Equipment! ;
+		script Spg2\Scripts\OnUndock\TheftEquipment.sal ;
+	endif
+
+	if event == 12
+		PrintMessage SCR_StationUndock:_Theft:_Commodity! ;
+		script Spg2\Scripts\OnUndock\TheftCommodity.sal ;
+	endif
+
+	if event == 13
+		PrintMessage SCR_StationUndock:_Theft:_Credits! ;
+		script Spg2\Scripts\OnUndock\TheftCredits.sal ;
+	endif
+
+	if event == 14
+		PrintMessage SCR_StationUndock:_Sabotage:_Garage_ship! ;
+		script Spg2\Scripts\OnUndock\SabotageGarageShip.sal ;
+	endif
+
+	if event == 15
+		PrintMessage SCR_StationUndock:_Offer:_Artefact! ;
+		script Spg2\Scripts\OnUndock\OfferArtefact.sal ;
+	endif
+
+	if event == 16
+		PrintMessage SCR_StationUndock:_Offer:_Derelict! ;
+		script Spg2\Scripts\OnUndock\OfferDerelict.sal ;
+	endif
+
+	if event == 17
+		PrintMessage SCR_StationUndock:_Offer:_Trade_route! ;
+		script Spg2\Scripts\OnUndock\OfferTradeRoute.sal ;
+	endif
+
+	if event == 18
+		PrintMessage SCR_StationUndock:_Offer:_Station! ;
+		script Spg2\Scripts\OnUndock\OfferStationPosition.sal ;
+	endif
+endif
+End

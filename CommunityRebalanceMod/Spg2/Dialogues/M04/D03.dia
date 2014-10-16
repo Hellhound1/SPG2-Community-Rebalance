@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	32
+	Text:	31
+	Voice:	Spg2\Sound\Voice\jackson\31.wav
+	Duration:	15.310
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\DiaEndEmpty.sal
+}

@@ -1,0 +1,98 @@
+/* handle initial structure status */
+int structCond = 0 ;
+structure GetByKeyName mining259A GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining259A CallEvent OnActivate ;
+else
+	structure GetByKeyName mining259A CallEvent OnDeactivate ;
+endif
+
+structure GetByKeyName mining259B GetCondition structCond ;
+if structCond == 0
+	structure GetByKeyName mining259B CallEvent OnActivate ;
+else
+	structure GetByKeyName mining259B CallEvent OnDeactivate ;
+endif
+
+int artefactState = 0 ;
+artifacts GetById 39 GetSolve artefactState ;
+if artefactState == 1
+	structure GetByKeyName art16 CallEvent OnActivate ;
+	structure GetByKeyName art16 SetCanRepair 0 ;
+else
+	structure GetByKeyName art16 CallEvent OnDeactivate ;
+	structure GetByKeyName art16 SetCanRepair 1 ;
+endif
+
+/* START anomaly randomization */
+
+int A = 1 ;
+int B = 15 ;
+int C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_259_0 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_259_1 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_259_2 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_259_3 SetEnabledEx 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	anomaly GetByKeyName ANO_259_4 SetEnabledEx 1 ;
+endif
+
+/* END anomaly randomization */
+
+/* START derelict randomization */
+
+A = 1 ;
+B = 3 ;
+C = 1 ;
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_259_0 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_259_1 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_259_2 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_259_3 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_259_4 SetEnabled 1 ;
+endif
+
+math C = Rnd A B ;
+if C == 1
+	derelict GetByKeyName DER_259_5 SetEnabled 1 ;
+endif
+
+/* END derelict randomization */
+
+End

@@ -1,0 +1,21 @@
+/* enable manual controls */
+game SetControlEnabled 1 ;
+
+ship GetByKeyName m02raffaleSHP SetInvulnerable 0 ;
+ship GetByKeyName m02raffaleSHP SetDestructible 0 ;	
+ship GetByKeyName m02pirateA SetInvulnerable 0 ;
+ship GetByKeyName m02pirateB SetInvulnerable 0 ;
+
+/* return AI state to normal */
+/*
+int aiState = 2 ;
+ship GetByKeyName m02raffaleSHP SetAIQuestStatus aiState ;
+ship GetByKeyName m02pirateA SetAIQuestStatus aiState ;
+ship GetByKeyName m02pirateB SetAIQuestStatus aiState ;
+
+ship GetByKeyName m02raffaleSHP SetFriendFoe 1 ;
+ship GetByKeyName m02pirateA SetFriendFoe 2 ;
+ship GetByKeyName m02pirateB SetFriendFoe 2 ;
+*/
+
+End

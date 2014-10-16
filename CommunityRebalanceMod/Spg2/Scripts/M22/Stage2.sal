@@ -1,0 +1,12 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+activated on mission fail or abandon
+	+linked through QuestMain.wdt
+*/
+
+waypoint GetByKeyName m18marker SetMark 1 ;
+waypoint GetByKeyName m18marker SetMissionTask 4 ;
+
+End

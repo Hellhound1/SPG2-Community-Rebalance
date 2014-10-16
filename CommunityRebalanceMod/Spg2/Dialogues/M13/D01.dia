@@ -1,0 +1,39 @@
+Dialogue:
+{
+	Portrait:	10
+	Text:	111
+	Voice:	Spg2\Sound\Voice\ridley\111.wav
+	Duration:	9.000
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	112
+	Voice:	Spg2\Sound\Voice\adrian\112.wav
+	Duration:	4.524
+}
+Dialogue:
+{
+	Portrait:	10
+	Text:	113
+	Voice:	Spg2\Sound\Voice\ridley\113.wav
+	Duration:	10.615
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	114
+	Voice:	Spg2\Sound\Voice\adrian\114.wav
+	Duration:	3.54
+}
+Dialogue:
+{
+	Portrait:	10
+	Text:	115
+	Voice:	Spg2\Sound\Voice\ridley\115.wav
+	Duration:	17.871
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M13\EndDia01.sal
+}

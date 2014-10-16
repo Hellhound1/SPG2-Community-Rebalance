@@ -1,0 +1,22 @@
+/*
+-------
+Script by: LGM Games, 2014 
++randomly choose an encounter to occur
++further chances are calculated in each encounter script
+-------
+*/
+PrintMessage TGate_OnExit.sal ;
+
+int choice ;
+math choice = Rnd 1 3 ;
+if choice == 1
+	script Spg2\Scripts\CargoLooters.sal ;
+endif
+if choice == 2
+	script Spg2\Scripts\EncounterBattle.sal ;
+endif
+if choice == 3
+	script Spg2\Scripts\AmbushHeadhunters.sal ;
+endif
+
+End

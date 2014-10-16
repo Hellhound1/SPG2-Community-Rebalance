@@ -1,0 +1,17 @@
+Colum:	4		
+Id	Name	TitleLine	TextLine
+0	Engine_malfunction	971	983
+1	Power_core_malfunction	972	984
+2	Sensors_malfunction	973	985
+3	Weapon_battery_malfunction	976	989
+4	Grappler_malfunction	1010	1015
+5	Transporter_malfunction	1011	1016
+6	Hangar_malfunction	1012	1017
+7	Cloaking_field_malfunction	1013	1018
+8	Shield_emitter_malfunction	1014	1019
+9	T-Drive_Mis-jump	860	988
+10	Explosion_in_crew_quarters	974	986
+11	Officer_injury	975	987
+12	Officer_leaves_service	977	980
+13	Mercenary_leaves_service	978	981
+14	Mercenary_turncoat	979	982

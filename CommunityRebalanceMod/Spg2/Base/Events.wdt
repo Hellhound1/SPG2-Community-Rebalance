@@ -1,0 +1,27 @@
+Colum:	7					
+Id	Name	Texture	X	Y	W	H
+0	Resource_price_increase	Spg2\Icons\GlobalEvents.dds	0	52	0	52
+1	Resource_price_reduction	Spg2\Icons\GlobalEvents.dds	64	116	0	52
+2	Tgate_shutdown	Spg2\Icons\GlobalEvents.dds	128	180	0	52
+3	Station_lockdown	Spg2\Icons\GlobalEvents.dds	192	244	0	52
+4	Riftway_shutdown	Spg2\Icons\GlobalEvents.dds	256	308	0	52
+5	Cease_fire_signed	Spg2\Icons\GlobalEvents.dds	320	372	0	52
+6	War_breaks_out	Spg2\Icons\GlobalEvents.dds	384	436	0	52
+7	Planetary_quarantine	Spg2\Icons\GlobalEvents.dds	448	500	0	52
+8	Pirate_activity_increase	Spg2\Icons\GlobalEvents.dds	0	52	64	116
+9	Pirate_activity_decrease	Spg2\Icons\GlobalEvents.dds	64	116	64	116
+10	System_price_increase	Spg2\Icons\GlobalEvents.dds	128	180	64	116
+11	System_price_decrease	Spg2\Icons\GlobalEvents.dds	192	244	64	116
+12	Company_raises_prices	Spg2\Icons\GlobalEvents.dds	256	308	64	116
+13	Company_lowers_prices	Spg2\Icons\GlobalEvents.dds	320	372	64	116
+14	Embargo	Spg2\Icons\GlobalEvents.dds	384	436	64	116
+15	Embargo_dropped	Spg2\Icons\GlobalEvents.dds	448	500	64	116
+16	Ion_storm_starts	Spg2\Icons\GlobalEvents.dds	0	52	128	180
+17	Anomaly_activity_increased	Spg2\Icons\GlobalEvents.dds	64	116	128	180
+18	Anomaly_activity_decreased	Spg2\Icons\GlobalEvents.dds	128	180	128	180
+19	Alien_incursion	Spg2\Icons\GlobalEvents.dds	192	244	128	180
+20	Miner_activity_increased	Spg2\Icons\GlobalEvents.dds	256	308	128	180
+21	Miner_activity_decreased	Spg2\Icons\GlobalEvents.dds	320	372	128	180
+22	Trader_activity_increased	Spg2\Icons\GlobalEvents.dds	384	436	128	180
+23	Trader_activity_decreased	Spg2\Icons\GlobalEvents.dds	448	500	128	180
+24	Occupation	Spg2\Icons\GlobalEvents.dds	0	52	192	244

@@ -1,0 +1,18 @@
+int questCond = 0 ;
+mainquest GetById 90 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	game SetControlEnabled 0 ;
+	mainquest GetById 90 SetSolve 1 ;
+	mainquest GetById 90 DeleteObjective 1 ;
+	mainquest GetById 91 SetAcquire 1 ;
+	ship GetByKeyName m14phoenixA SetEnabled 1 ;
+	ship GetByKeyName m14phoenixA SetFriendFoe 1 ;
+	ship GetByKeyName m14phoenixA SetAIQuestStatus 1 ;
+	waypoint GetByKeyName m14EarthMarker1 SetMark 0 ;
+	waypoint GetByKeyName m14EarthMarker1 SetMissionTask -1 ;
+	game ResetShipEnemyList 1 ;
+	script Spg2\Scripts\M14\CS14EarthB.sal ;
+endif
+
+End

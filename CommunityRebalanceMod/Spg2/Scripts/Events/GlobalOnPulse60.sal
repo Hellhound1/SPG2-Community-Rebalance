@@ -1,0 +1,57 @@
+/*
+-------
+Script by: LGM Games, 2014 
++default WorldOnPulse60 script
++triggered every minute
++chance of triggering a trade-related global event
+-------
++check *.txt file in local folder for details on global events
+*/
+
+/* run global event */
+int chance1 = 1 ;
+int chance2 = 3 ;
+int chance = 1 ;
+math chance = Rnd chance1 chance2 ;
+PrintMessageVar EventChance: INT chance ;
+
+if chance == 1
+
+	int eventChoice1 = 0 ;
+	int eventChoice2 = 5 ;
+	int event = 0 ;
+	math event = Rnd eventChoice1 eventChoice2 ;
+
+	if event == 0
+		PrintMessage RunEvent:_Commodity_Price_Increased! ;
+		script Spg2\Scripts\Events\Event0.sal ;
+	endif
+	
+	if event == 1
+		PrintMessage RunEvent:_Commodity_Price_Decreased! ;
+		script Spg2\Scripts\Events\Event1.sal ;
+	endif
+	
+	if event == 2
+		PrintMessage RunEvent:_System_price_increased! ;
+		script Spg2\Scripts\Events\Event10.sal ;
+	endif
+	
+	if event == 3
+		PrintMessage RunEvent:_System_price_decreased! ;
+		script Spg2\Scripts\Events\Event11.sal ;
+	endif
+	
+	if event == 4
+		PrintMessage RunEvent:_Company_prices_go_up! ;
+		script Spg2\Scripts\Events\Event12.sal ;
+	endif
+	
+	if event == 5
+		PrintMessage RunEvent:_Company_prices_go_down! ;
+		script Spg2\Scripts\Events\Event13.sal ;
+	endif
+
+endif
+
+End

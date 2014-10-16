@@ -1,0 +1,22 @@
+Dialogue:
+{
+	Portrait:	15
+	Text:	12
+	Voice:	Spg2\Sound\Voice\hoffman\12.wav
+	Duration:	31.000
+	Line:	16.300	0
+	Line:	15.0	240
+}
+Dialogue:
+{
+	Portrait:	36
+	Text:	13
+	Voice:	Spg2\Sound\Voice\hernandez\13.wav
+	Duration:	20.568
+	Line:	10.110	0
+	Line:	9.0	173
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M01\Choice.sal
+}

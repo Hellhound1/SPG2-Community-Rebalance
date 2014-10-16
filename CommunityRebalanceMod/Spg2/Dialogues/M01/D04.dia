@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	14
+	Text:	4
+	Voice:	Spg2\Sound\Voice\coop\4.wav
+	Duration:	7.800
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\DiaEndEmpty.sal
+}

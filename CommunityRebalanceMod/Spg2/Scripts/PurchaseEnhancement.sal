@@ -1,0 +1,272 @@
+/*
+-------
+Script by: LGM Games  
++triggered when player purchases any enhancement on a station or planet
++complete blueprint removed from inventory on purchase
+-------
+0. scriptVar id of the enhancement sort
+1. scriptVar id of the enhancement
+*/
+
+PrintMessage PURCHASE_ENHANCEMENT_SCRIPT_TRIGGERED ;
+
+int varSortSlot = 0 ;
+int varIdSlot = 1 ;
+int enhSort = 0 ;
+int enhId = 0 ;
+
+scriptvar GetValue int varSortSlot enhSort ;
+scriptvar GetValue int varIdSlot enhId ;
+
+int itemId = 0 ;
+int itemCount = 0 ;
+
+/* PROPULSION */
+if enhSort == 1
+	if enhId == 27
+		itemId = 64 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 28
+		itemId = 66 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 29
+		itemId = 68 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+/* HANGAR */
+if enhSort == 8
+	if enhId == 24
+		itemId = 70 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 25
+		itemId = 72 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 26
+		itemId = 74 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+/* GRAPPLER */
+if enhSort == 5
+	if enhId == 24
+		itemId = 76 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 25
+		itemId = 78 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 26
+		itemId = 80 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+/* SENSORS */
+if enhSort == 2
+	if enhId == 24
+		itemId = 82 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 25
+		itemId = 84 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 26
+		itemId = 86 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+/* SHIELD */
+if enhSort == 3
+	if enhId == 42
+		itemId = 88 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 43
+		itemId = 90 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 44
+		itemId = 92 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+/* POWER CORE */
+if enhSort == 0
+	if enhId == 24
+		itemId = 94 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 43
+		itemId = 96 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 44
+		itemId = 98 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+/* TRANSPORTER */
+if enhSort == 4
+	if enhId == 27
+		itemId = 100 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 28
+		itemId = 102 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 29
+		itemId = 104 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+/* CLOAK */
+if enhSort == 9
+	if enhId == 24
+		itemId = 106 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 25
+		itemId = 108 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+	if enhId == 26
+		itemId = 110 ;
+		player GetQuestItemCount itemId itemCount ;
+		math itemCount = itemCount - 1 ;
+		player SetQuestItemCount itemId itemCount ;
+		if itemCount < 1
+			openStation RemoveEnhancement enhSort enhId ;
+		endif
+	endif
+endif
+
+End

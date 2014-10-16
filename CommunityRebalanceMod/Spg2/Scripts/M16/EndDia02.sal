@@ -1,0 +1,13 @@
+ship GetByKeyName m16steigerSHP SetEnabled 0 ;
+ship GetByKeyName m16gladius1 SetEnabled 0 ;
+ship GetByKeyName m16gladius2 SetEnabled 0 ;
+
+mainmissionpanel 97 ;
+
+mainquest GetById 117 SetAvailable 1 ;
+
+game SetControlEnabled 1 ;
+
+game SetQuestMode 0 ;
+
+End

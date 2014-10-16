@@ -1,0 +1,408 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
++scalable; depends on frustum size
++used for random, non-quest related derelicts
++light loot
+-------
+SIZE DEPENDANT PARAMETERS
+	sizeStart 		- explosion; 1/8 of frustum
+	sizeEnd 		- explosion; 1/8 of frustum + 0.5
+	sizeSpark 		- sparks, initial; 1/32 of frustum
+	sizeSparkFinal 	- sparks, final; 1/3 of frustum
+	sizeDebris 		- debris, initial; 1/123 of frustum
+	sizeDebrisFinal 	- debris, final; 1/37 of frustum
+*/
+
+float radius = 0.0 ;
+derelict GetParent GetRadius radius ;
+float sizeStart = 0.0 ;
+math sizeStart = radius / 8 ;
+float sizeEndInterm = 0.0 ;
+math sizeEndInterm = radius / 8 ;
+float sizeEnd = 0.0 ;
+math sizeEnd = sizeEndInterm + 0.5 ;
+float sizeSpark = 0.0 ;
+math sizeSpark = radius / 32 ;
+float sizeSparkFinal = 0.0 ;
+math sizeSparkFinal = radius / 3 ;
+float sizeDebris = 0.0 ;
+math sizeDebris = radius / 123 ;
+float sizeDebrisFinal = 0.0 ;
+math sizeDebrisFinal = radius / 37 ;
+
+/* particle explosion IDs depending on derelict size */
+int asbId = 50 ;
+int fogId = 53 ;
+int flashId = 30 ;
+if radius > 0.01 && radius < 10.01
+	math asbId = Rnd 50	52 ;
+	math fogId = Rnd 53	55 ;
+	math flashId = Rnd 27 29 ;
+endif
+if radius > 10.01 && radius < 20.01
+	math asbId = Rnd 56	58 ;
+	math fogId = Rnd 59	61 ;
+	math flashId = Rnd 30 32 ;
+endif
+if radius > 20.01 && radius < 100.01
+	math asbId = Rnd 62	64 ;
+	math fogId = Rnd 65	67 ;
+	math flashId = Rnd 33 35 ;
+endif
+
+/* -------- BLOCK 1 -------- */
+
+/* Explosion animation -> Explosion.wds */
+float delay = 0.0 ;
+float3 position = 0 0 0 ;
+float3 diagOffset = 0 0 0 ;
+float3 color = 1.0 1.0 1.0 ;
+float transparency = 0.05 ;
+int id = 34 ;
+int sizeSort = 0 ;
+float duration = 1.0 ;
+float rndOffset = 0.0 ;
+int blend = 1 ;
+
+math id = Rnd 10	11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+
+/* Fiery debris -> Debris.wds */
+int debrisId = 0 ;
+int number = 20 ;
+float shotTime = 0.2 ;
+float3 norm = 0 0 0 ;
+float arc = 0.0 ;
+float velMin = 15.0 ;
+float velMax = 16.0 ;
+float lifeMin = 1.0 ;
+float lifeMax = 1.5 ;
+int fadeSort = 0 ;
+
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+float lifetime = 1.0 ;
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small4 position ;
+/* Fog particles -> FreeModel.wds */
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* -------- BLOCK 2 -------- */
+
+pause 0.3 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small3 position ;
+
+
+/* -------- BLOCK 3 -------- */
+
+pause 0.5 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small2 position ;
+
+
+/* -------- BLOCK 4 -------- */
+
+pause 0.4 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small1 position ;
+
+
+/* -------- BLOCK 5 -------- */
+
+pause 0.4 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small6 position ;
+
+/* -------- BLOCK 6 -------- */
+
+pause 0.6 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small5 position ;
+
+/* -------- BLOCK 7 -------- */
+
+pause 0.4 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small4 position ;
+
+/* -------- BLOCK 8 -------- */
+
+pause 0.3 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small3 position ;
+
+/* -------- BLOCK 9 -------- */
+
+pause 0.6 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small2 position ;
+
+/* -------- BLOCK FINAL -------- */
+
+PrintMessage SHIP_DESTROY_F0 ;
+
+pause 0.1 ;
+/* Explosion animation -> Explosion.wds */
+math id = Rnd 10 11 ;
+derelict GetParent GetRndPosition position ;
+explosion delay position diagOffset color transparency id sizeStart sizeEnd sizeSort duration rndOffset blend ;
+/* Fiery debris -> Debris.wds */
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSpark lifeMin lifeMax fadeSort ;
+/* Metal debris -> Debris.wds */
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebris lifeMin lifeMax fadeSort ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* sound */
+sound3d expl_small1 position ;
+
+/* -------- FINAL BANG -------- */
+
+PrintMessage SHIP_DESTROY_F1 ;
+
+derelict GetParent GetPosition position ;
+/* firey final */
+lifeMin = 4.0 ;
+lifeMax = 6.0 ;
+velMin = 5 ;
+velMax = 10 ;
+fadeSort = 1 ;
+math debrisId = Rnd 0 6 ;
+math number = Rnd 10 30 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeSparkFinal lifeMin lifeMax fadeSort ;
+
+/* metal final */
+fadeSort = 3 ;
+math debrisId = Rnd 7 11 ;
+math number = Rnd 15 25 ;
+debris delay debrisId number shotTime position norm arc velMin velMax sizeDebrisFinal lifeMin lifeMax fadeSort ;
+
+/* CAMERA SHAKE */
+int sort = 1 ;
+int type = 0 ;
+float power = 0.5 ;
+duration = 0.6 ;
+delay = 0.0 ;
+derelict GetParent GetPosition position ;
+derelict GetParent GetRadius radius ;
+
+camera Shake sort type power duration delay position radius ;
+
+/* -------- FLASH FINAL & DELETE -------- */
+
+/* adjust flash position according to camera */
+float3 posCamera = 0 0 0 ;
+float3 e_posCC = 0 0 0 ;
+float3 posShip = 0 0 0 ;
+derelict GetParent GetPosition posShip ;
+derelict GetParent GetRadius derelictSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * derelictSize ;
+math posCamera = e_posCC * 0.6 ;
+math position = posShip + posCamera ;
+
+/* flashId set at the beginning of script */
+derelict GetParent GetPosition position ;
+assembly delay position flashId lifetime ;
+
+/* sound */
+sound3d expl_big1 position ;
+
+/* damage blast in radius */
+int vSort = 2 ; /* projectile damage */
+float3 vPos = 0.0 0.0 0.0 ;
+derelict GetParent GetPosition vPos ;
+float vRadius = 100.0 ;
+float radiusFactor = 4.0 ;
+math radiusFactor = Rnd 3.0 6.0 ;
+math vRadius = radius * radiusFactor ;
+float vLifetime = 0.5 ;
+float vDamage = 500.0 ;
+/* damage amount depends on derelict radius */
+float factor = 1.0 ;
+math factor = Rnd 1.5 3.0 ;
+math vDamage = radius * factor ;
+
+int affectFriendly = 0 ;
+virtualshockwave vSort vPos vRadius vLifeTime vDamage affectFriendly ;
+
+/* chance of additional radiation damage that depends on derelict radius */
+int radChance = 1 ;
+math radChance = Rnd 1 5 ;
+if radChance == 1
+	vSort = 5 ;
+	math factor = Rnd 1.0 2.5 ;
+	math vDamage = radius * factor ;
+	virtualshockwave vSort vPos vRadius vLifeTime vDamage affectFriendly ;
+endif
+
+/* derelict disable */
+pause 0.5 ;
+derelict GetParent SetEnabled 0 ;
+
+/* loot drop */
+derelict GetParent DropResource 1 ;
+
+/* blueprint award - dependency on ship level */
+int playerLevel = 1 ;
+player GetLevel playerLevel ;
+int maxBpChance = 40 ;
+if playerLevel < 21
+	maxBpChance = 40 ;
+endif
+if playerLevel > 20 && playerLevel < 51
+	maxBpChance = 30 ;
+endif
+if playerLevel > 50
+	maxBpChance = 20 ;
+endif
+
+int bpChance = 0 ;
+math bpChance = Rnd 1 maxBpChance ;
+
+if bpChance == 1
+	script Spg2\Scripts\BlueprintAward.sal ;
+endif
+
+/* Log output */
+PrintMessage Derelict_destroyed! ;
+
+End

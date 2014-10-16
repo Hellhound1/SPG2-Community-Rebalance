@@ -1,0 +1,1579 @@
+Ship
+Station
+Planet
+Wormhole
+T-Gate
+Riftway
+Riftway calibrator
+Defense platform
+Hangar platform
+Guardpost
+Asteroid field
+Junkyard
+Nebula
+Waypoint
+Derelict
+Anomaly
+Power core
+Propulsion
+Transporter
+Grappler
+Shield generator
+Sensors
+Hangar
+Cloak field
+Light battery
+Heavy battery
+Light weapon
+Heavy weapon
+License
+Equipment
+Quest item
+Quest items
+Ship system
+Turret
+Enhancement
+Achievement
+Achievements
+Officer class
+Alignment
+Faction type
+Faction
+Factions
+Fighters
+Shield
+Skill
+Skills
+Skill bonuses
+Legal
+Contraband
+Primary systems
+BREAKING NEWS
+HISTORY
+MARKETPLACE
+REWARD:
+OBJECTIVE:
+LOCATION:
+DESCRIPTION:
+LEVEL UP!
+RANK INCREASED!
+CONFLICTING CONTROLS!
+Sell your goods before purchasing new ship!
+MISSION FAILED!
+LEAVING MISSION AREA!
+MERCENARY LEFT YOUR SERVICE!
+OFFICER LEFT YOUR SERVICE!
+OFFICER INJURED!
+INSUFFICIENT FUNDS!
+STARCHART
+CAPTAIN INFO
+FLEET
+SKILLS AND PERKS
+CAPTAIN'S LOG
+MENU
+PERSONAL
+CLASS
+LEVEL
+EXPERIENCE
+SHIP NAME
+ALIGNMENT
+CREDITS
+BONUSES
+LAWFUL
+OUTLAW
+OK
+FINANCES
+CURRENT MONTH INCOME
+CURRENT MONTH EXPENSES
+EST. MONTH BALANCE
+LICENSES
+TRADE
+FREELANCE
+REWARDS
+OFFICERS
+FLEET
+PURCHASES
+MAINTENANCE
+OTHER
+STATISTICS
+ACHIEVEMENTS
+SHIPS
+SHIP CLASS
+STATISTICS
+HULL
+CARGO
+TROOPERS
+RESISTANCE
+SHIP CLASS
+CAPTAIN
+CLASS
+TOUGHNESS
+COST PER MONTH
+DISMISS
+NOTE: You can hire new mercenaries on stations or planets!
+SYSTEMS
+NOTE: You can only MOUNT ship systems while in DRYDOCK!
+Manufacturer
+Damage type
+Projectile speed
+EQUIPMENT
+MOUNT
+UNMOUNT
+Avg. Price
+NOTE: Click the MOUNT button and select the QUICKBAR slot to equip!
+ITEMS
+LICENSES
+NOTE: Becoming hostile with faction granting the license, revokes the license!
+CARGO
+CARGO HOLD
+TYPE
+STATUS
+VALUE
+QUANTITY
+DESCRIPTION
+MARK
+Set waypoint
+CONTRABAND
+BEST KNOWN PRICE
+Qty
+NOTE: Licenses and global events may affect the value!
+DROP
+Jettison selected
+OFFICERS
+Cr/month
+Dismiss your officer
+SPECIAL
+In sickbay
+SKILLS
+Energy cost
+SKILLPOINTS
+RESET
+Reset changes
+CANCEL
+Accept changes
+PERKS
+GENERAL
+FAMILIARITIES
+MAIN
+SIDE
+FREELANCE
+INFO
+ALL
+ACTIVE ONLY
+FOLLOW MISSION
+TUTORIALS
+Left-click to activate
+REGIONS
+FACTIONS
+REPUTATION
+Remove waypoint
+Unknown
+FREELANCE
+Recommended level
+Accept mission?
+ABANDON
+FACTION
+NOTE: You can only have one FREELANCE mission active at a time!
+MAIN MISSION
+ACCEPT
+COMPOSITION
+Planetary customs fee
+Name
+PLANET
+SIDE MISSION
+MISSION COMPLETED
+MISSION FAILED
+STATION
+STRUCTURE
+Exp
+REPUTATION
+ALL
+YOUR REPUTATION
+ALLIED
+NEUTRAL
+HOSTILE
+MERC
+DEMOLISH
+GRAPPLE
+LOOT
+WARNING: Out of grappling range!
+YOUR TROOPS
+TARGET TROOPS
+CAPTURED
+SEND TROOPS
+RETREAT YOUR TROOPS
+YOUR SHIP
+CAPTURED
+TRANSFER
+TRANSFER ALL
+LOOT
+LOOT ALL
+DOUBLE-CLICK: buy/sell/transfer single commodity
+SHIFT+LEFT CLICK: buy/sell/transfer an entire commodity stack
+If you wish to buy/sell/transfer a specific quantity of a certain commodity, use BUY/SELL/TRANSFER button to bring up a QUANTITY SLIDER
+CAPTURED SHIP COMPARISON
+CAPTURED SHIP
+MANUFACTURER
+WARNING: Cannot smuggle while grappling a vessel!
+WHAT WOULD YOU LIKE TO DO WITH THE CAPTURED VESSEL?
+SELL
+TRANSFER COMMAND
+COMPARE
+Sell the captured ship
+Sell your own ship and transfer command to the captured vessel
+Compare the two vessels
+PLANETARY CUSTOMS
+LANDING FEE
+SMUGGLING CHANCE
+LAND
+SMUGGLE
+NOTE: If caught when trying to smuggle, landing will be aborted and you will get a penalty!
+WARNING: Cannot dock with enemy faction!
+WARNING: You have been detected! Staying in orbit!
+Pay the fee and land
+Attempt smuggling
+INFO
+SCAN
+GO TO
+FIRE AT WILL
+CLOAK
+LAUNCH FIGHTERS
+SCAVENGER NANOBOTS
+REGION
+POWER TO ENGINES
+COLLECT ALL
+HAIL
+BOARDING
+MARK TARGET
+TARGET SYSTEMS
+TARGET LIGHT BATTERIES
+TARGET HEAVY BATTERIES
+GRAPPLE
+FOLLOW
+ANCHOR
+WING
+USE
+SHIPYARD
+DRYDOCK
+TRADER
+HIRING
+NEWS
+LEAVE
+LOADOUT
+ENHANCEMENTS
+INSTALLED
+ENHANCEMENTS AVAILABLE
+INSTALL
+UNINSTALL
+To ENHANCE a system, LEFT-CLICK on a desired system to browse for available ENHANCEMENTS!
+When docked, your crew AUTOMATICALLY REPAIRS ship systems to full HP, unless the turrets or enhancements are destroyed and lost forever!
+N/A
+SELL
+SELL ALL
+BUY
+DOUBLE-CLICK: sell/buy single system
+SHIFT+LEFT CLICK: sell/buy an entire system stack
+If you wish to sell a specific quantity, use SELL button to bring up a QUANTITY SLIDER
+To MOUNT an EQUIPMENT, open your FLEET/EQUIPMENT panel on your right console
+Enhancements
+Turrets
+Fuel
+Avg. Dmg
+AMMO
+MOUNT
+UNMOUNT
+REARM
+To MOUNT a system, left-click on the desired system icon and choose between your own systems in your storage, or buy and switch with a new one from the drydock
+To add turrets to your battery, left-click on the desired light battery slot, and click ADD TURRETS button
+To rearm your heavy battery, left-click on the desired heavy battery slot, and click REARM button
+MAX TURRETS
+REPAIR HULL
+REARM
+Repairs your hull
+Rearms all heavy batteries
+CREW
+MERCS
+ENLIST
+AVAILABLE
+OFFICERS AVAILABLE
+HIRE
+Hire troopers
+Are you sure you wish to dismiss officer?
+Are you sure you wish to hire officer?
+WARNING: Not enough credits!
+NO
+YES
+MERCS HIRED
+MERCS AVAILABLE
+NOTE: CHIEF PETTY OFFICER rank - 1 merc for hire
+LIEUTENANT Rank - 2 mercs for hire
+Are you sure you want to hire merc?
+Are you sure you want to dismiss merc?
+DOUBLE-CLICK on a MERC to quick DISMISS/HIRE
+OWNED LICENSES
+DOUBLE-CLICK: quick buy a license
+Red X mark shows an INACTIVE license - you get no bonuses from it until your ALIGNMENT changes accordingly
+NEWS
+PURCHASE
+COMPARE
+Are you sure you wish to purchase this ship?
+RANK PREREQUISITE
+YOUR SHIP VALUE
+CLOSE
+CONTINUE CAMPAIGN
+FREEROAM
+WARNING: YOU WILL NOT BE ABLE TO CONTINUE THE STORY!
+ANTI-RAD COST
+DURATION
+REPAIR COST
+TRAVEL COST
+TRAVEL
+Your position
+CHOOSE YOUR DESTINATION
+CONTINUE
+SAVE GAME
+LOAD GAME
+OPTIONS
+CREDITS
+QUIT TO MAIN MENU
+EXIT GAME
+Are you sure you wish to quit to main menu?
+CHOOSE A SLOT TO SAVE
+PLAYING TIME
+BACK
+NEW SAVE FILE
+AUTOSAVE
+Are you sure you wish to overwrite the existing save file?
+QUIT TO DESKTOP?
+MODS
+CHOOSE A GAME TO LOAD
+MOD LIST
+NEXT
+WARNING: Although easy to implement and user-friendly to create, MODS are NOT OFFICIAL parts of Starpoint Gemini 2, and as such LGM Games does not guarantee the game's stability for mod users. We recommend BACKING UP your SAVE FILES and downloading only TRUSTED MODS.
+CHOOSE SCENARIO
+CAMPAIGN
+FREEROAM
+ENTER CALLSIGN
+ENTER SHIP NAME
+CHOOSE DIFFICULTY
+EASY
+NORMAL
+HARD
+ENEMIES ARE 40% WEAKER
+AN HONEST PLAYTHROUGH
+ENEMIES ARE 50% STRONGER
+CHOOSE YOUR BANNER
+CHOOSE CLASS
+START
+DON'T SHOW TRAINING TIPS
+HUD - BASIC
+Lower left console shows your ship's schematics and switches to Energy distribution when hovering the mouse over it.
+Central console features the Skills quickbar and the Power indicator below it.
+The Equipment quickbar holds four slots filled via the Fleet (Equipment panel).
+Hull indicator - hover the mouse over it for detailed information.
+Speed indicator - hover the mouse over it for detailed information.
+Experience level and Experience indicator, Rank, Time indicator.
+Radar to show your immediate surroundings.
+Upper right console to access the Starchart (<Cffff00ff><ST_Starchart><C>), Captain info (<Cffff00ff><ST_Captain_Info><C>), Fleet panel (<Cffff00ff><ST_Fleet><C>), Skills and Perks (<Cffff00ff><ST_Skills_&_Perks><C>), Captain's log (<Cffff00ff><ST_Captain's_Log><C>) and the Options menu (<Cffff00ff><ST_Menu><C>).
+Context menu is opened up with the <Cffff00ff><ST_Context_Menu_(Toggle)><C> button.
+Tactical overlay is toggled with the <Cffff00ff><ST_Tactical_Overlay><C> button.
+Quick action button (<Cffff00ff><ST_Quick_Action><C>) appears when an action is advised.
+The Dialogue panel opens up automatically when a dialogue starts.
+Targeting reticle shows where you're aiming and some elementary info on your light (energy) and heavy weapons (reload).
+Target lock & quick target scan shows what you've locked on and information on the object. The quick target scan disappears after a short while, but reappears if your Tactical Overlay is active (<Cffff00ff><ST_Tactical_Overlay><C>)
+HUD - SHIP SCHEMATICS
+Follow the status of your ship as well as all of its on-board systems on your ship's SCHEMATICS.
+Hover over individual system icon to get detailed info on each system.
+The status of each of your 4 shields (front, rear, left, right) is shown around your ship's schematic image.
+HUD - ENERGY DISTRIBUTION
+The ship schematics switches to the Energy distribution panel when hovering the mouse over it.
+You can redistribute power between various ship aspects: Propulsion, Shields, Weapons, depending on your current needs.
+The default status is even distribution between the three (33% each).
+HUD - CENTRAL CONSOLE
+The center of the console is reserved for the HULL INDICATOR that shows you how your ship is holding Hull-wise
+The SPEED INDICATOR shows you how much you're pushing your Propulsion. Increase Speed with <Cffff00ff><ST_Accelerate><C> and decrease Speed with <Cffff00ff><ST_Decelerate><C>.
+The three bars on the bottom are: POWER INDICATOR that shows how much Power you have left to use to activate Skills
+The EXPERIENCE BAR shows how much Experience is needed to increase in Level
+The TIME BAR indicates how much Time is left before the next month. This is important for recurring expenses (Officers, Mercenaries).
+The QUICK ACTION button (<Cffff00ff><ST_Quick_Action><C>) changes depending on what action is most suited for the current situation. Alternatively, you can always use the Context menu (<Cffff00ff><ST_Context_Menu_(Toggle)><C>) buttons.
+WARNING ICONS appear above the Skills quickbar. Individual icons will appear when necessary.
+CAMERA MODES and CONTROL MODES INDICATORS appear above the Equipment quickbar.
+TURRET VIEW (<Cffff00ff><ST_Turret_View><C>) allows a full 360 degrees view around  your ship making it possible to fire from all of your ship's batteries. Alternatively you can switch between different camera modes with the <Cffff00ff><ST_Switch_Camera><C> button.
+CURSOR FLIGHT/SELECT (<Cffff00ff><ST_Cursor_Flight_/_Select><C>) toggles control from MOUSE STEERING to MOUSE SELECTING, hence allowing you to SELECT AND USE your HUD commands.
+CARGO and TROOPER INDICATORS also appear above the Equipment quickbar.
+Whenever Cargo hold status and Trooper count change, these indicators will appear to show you the new status.
+HUD - RADAR
+The Radar, located in the bottom right of the screen shows your immediate surroundings. Object colors depend on the object's alignment towards you.
+Use the Mousewheel to zoom the radar display in and out.
+HUD - UPPER RIGHT CONSOLE
+Use the buttons on the UPPER RIGHT CONSOLE to access other important game screens. From top to bottom they are: Starchart (<Cffff00ff><ST_Starchart><C>), Captain info (<Cffff00ff><ST_Captain_Info><C>), Fleet panel (<Cffff00ff><ST_Fleet><C>), Skills and Perks (<Cffff00ff><ST_Skills_&_Perks><C>), Captain's log (<Cffff00ff><ST_Captain's_Log><C>) and the Options menu (<Cffff00ff><ST_Menu><C>).
+The small TUTORIAL button (shaped like a question mark), provides access to the tutorials screen where you can read through any of the Tutorials when needed.
+HUD - CONTEXT MENU (<Cffff00ff><ST_Context_Menu_(Toggle)><C>)
+Toggle the Context Menu by pressing the <Cffff00ff><ST_Context_Menu_(Toggle)><C> button.
+CONTEXT MENU allows only certain actions depending on what kind of object is targeted (station, ship, T-Gate, loot drop, no target...).
+If some actions are not available for the targeted object, corresponding buttons become grayed out or in some cases they can be exchanged with other actions.
+Status of the target's shields is shown in the center of the context menu. A bar represents each of the shields (front, rear, left, right).
+Note the POWER TO ENGINES button (<Cffff00ff><ST_Power_to_Engines_(Toggle)><C>) in the lower left portion. Power to Engines mode will help you travel faster, but bear in mind that while in PTE mode, you CANNOT FIRE YOUR WEAPONS!
+HUD - TACTICAL OVERLAY
+Toggle the Tactical overlay displayed around your ship by pressing the <Cffff00ff><ST_Tactical_Overlay><C> button.
+Various important information regarding your ship and specifically your ship's systems is shown on the Tactical overlay including: Shield status, Light weapon battery energy, Heavy weapon reload...
+MOVEMENT & COMBAT
+To TURN LEFT press <Cffff00ff><ST_Turn_Left><C><\n>To TURN RIGHT press <Cffff00ff><ST_Turn_Right><C>
+To PITCH UP press <Cffff00ff><ST_Pitch_Up><C><\n>To PITCH DOWN press <Cffff00ff><ST_Pitch_Down><C>
+To ROLL LEFT press <Cffff00ff><ST_Roll_Left><C><\n>To ROLL RIGHT press <Cffff00ff><ST_Roll_Right><C>
+To ACCELERATE use <Cffff00ff><ST_Accelerate><C><\n>To DECELERATE use <Cffff00ff><ST_Decelerate><C>
+Alternatively, if CURSOR FLIGHT is active (<Cffff00ff><ST_Cursor_Flight_/_Select><C>) move the mouse around the screen to turn your ship in the desired direction
+CURSOR FLIGHT/SELECT (<Cffff00ff><ST_Cursor_Flight_/_Select><C>) toggles control from MOUSE STEERING to MOUSE SELECTING, hence allowing you to SELECT AND USE your HUD commands.
+TURRET VIEW (<Cffff00ff><ST_Turret_View><C>) allows a full 360 degrees view around  your ship making it possible to fire from all of your ship's batteries. Alternatively you can switch between different camera modes with the <Cffff00ff><ST_Switch_Camera><C> button.
+Campaign
+Secrets of Aethera
+LOW
+MEDIUM
+HIGH
+STATIONS AND PLANETS
+Speed:
+Hull:
+Level:
+Rank:
+Day:
+Commodity
+Toggle event markers
+Open Bounty board
+ADD TURRET
+ENERGY
+PROJECTILE
+PLASMA
+EMP
+RADIATION
+SOAK
+SHIP
+PRICE
+IN HOLD
+ON SALE
+CAMPAIGN CHOICE
+COMMODITIES
+MANEUVERABILITY
+AUDIO
+VIDEO
+CONFIG
+NEW GAME
+CONTROLS
+APPLY CHANGES
+JUMP
+Hitpoints
+Firewall
+Pre-launch
+Wings
+Range
+Overload
+Cloak strength
+Cloak stability
+Capacity
+Deflection
+Strength
+Recharge
+Reboot
+Biometric
+Sensor radius
+Detection
+Speed
+Maneuverability
+Power to engines
+Power
+Feedback
+Avg. Damage
+Rate of fire
+Energy cost
+Battery energy
+Turrets
+Reload
+Ammo
+Blast radius
+SPEED
+SHIP TO BUY
+WAYPOINT
+You'll lose all unsaved progress...
+No Crafts in Wing
+Sort
+Crafts
+Battery cooldown
+Power refill
+No Heavy weapons on Battery
+Beam
+Railgun
+Plasma cannon
+Shockwave
+Missile
+Fusion torpedo
+To fire LIGHT weapons (uses battery energy) press <Cffff00ff><ST_Fire_Light_Weapons><C>.
+To fire HEAVY weapons (uses ammo, requires TARGET LOCK: <Cffff00ff><ST_Target_Lock><C>) press <Cffff00ff><ST_Fire_Heavy_Weapons><C>.
+There are FRONT, REAR, LEFT and RIGHT batteries, each battery consists of at least one turret.
+Also, there are 2 BATTERY TYPES - LIGHT and HEAVY, each of them holds corresponding weapon type (light turrets or heavy punchers).
+Use the Fire at will command (<Cffff00ff><ST_Fire_at_Will_(Toggle)><C>) to command your weapon batteries to autonomously choose targets and fire at them if they are in range and firing arc. Be careful, as stronger opponents might require a more concentrated firepower and that is best achieved by manually aiming and firing.
+Target your nearest enemy by pressing the <Cffff00ff><ST_Target_Nearest_Enemy><C> button and clear target lock with the <Cffff00ff><ST_Clear_Target><C>.
+CAMERA & CONTROL MODES
+Use the <Cffff00ff><ST_Switch_Camera><C> shortcut to switch between camera modes.
+Normal camera follows your ship, while Turret view allows full 360 degrees view around the ship. Turret view is especially useful when commanding large ships with weapon turrets placed all around the ship.
+Use the <Cffff00ff><ST_Cursor_Flight_/_Select><C> shortcut to switch between two control modes.
+Selection mode allows you to click on the HUD buttons with the mouse, while Targeting mode links your ship movement to your mouse cursor. While in Targeting mode, you steer the ship with the mouse.
+TARGETING RETICLE
+Depending on the situation and what it's hovering over, the cursor can change its shape. While hovering over space in the main viewport it changes into the TARGETING RETICLE. 
+Along with showing you where your turrets are aiming, the targeting reticle also shows you the status of your weapons. Power levels of your currently active weapon battery is shown on the LEFT of the reticle, while reload of your currently active heavy weapon battery is shown on the RIGHT. Heavy weapons can ONLY be fired on a LOCKED ON target!
+The targeting reticle changes color depending on the alignment of the object it is hovering over. It turns RED over ENEMIES.
+TARGET LOCK & QUICK TARGET SCAN
+To lock on a target, hover the cursor over the object and press the Target lock button <Cffff00ff><ST_Target_Lock><C>.
+The TARGET LOCK becomes visible with all its useful data on the targeted object. Available data depends on the type of the targeted object, but for ships as your most frequent enemy they are as follows:
+The HULL bar shows how much damage the ship can take before exploding.
+The SHIELDS bar shows the general status of all of its four shields. For a detailed "per-shield" info, check the Context menu while the ship is locked on.
+Distance tells you how far the object is.
+Experience level gives you a general idea of the objects overall strength.
+Special status warns you if the locked on object is a Veteran or Hero. This is important mainly for ships. Be wary of Veterans and especially Heroes. They are much more powerful than their standard counterparts.
+Quick target scan opens up alongside the targeted ship that shows a more detailed overview of the target's status (shields, threat level...).
+A small icon will appear on the target lock to indicate whether the object is specifically marked as target for your mercenaries and fighters.
+More useful targeting shortcuts:<\n>Clear target lock: <Cffff00ff><ST_Clear_Target><C><\n>Target nearest hostile: <Cffff00ff><ST_Target_Nearest_Enemy><C><\n>Target previous object: <Cffff00ff><ST_Target_Previous_Object><C><\n>Target next object: <Cffff00ff><ST_Target_Next_Object><C><\n>Target previous hostile object: <Cffff00ff><ST_Target_Previous_Enemy><C><\n>Target next hostile object: <Cffff00ff><ST_Target_Next_Enemy><C><\n>
+CAPTAIN INFO - PERSONAL (<Cffff00ff><ST_Captain_Info><C>)
+The Captain info panel provides basic information on you as the captain: Experience, Credits, Level, Rank...
+No:
+Price:
+The bottom of the panel is reserved for all bonuses currently applied to your ship. This section gets more populated as you progress further in the game.
+CAPTAIN INFO - FINANCES
+The Finances tab shows your current Credit balance, detailed profits and expenditures. Previous months can also be accessed.
+The left side of the panel shows your income.
+The right side shows expenses.
+The middle shows the current balance. The image changes depending on whether you're in the positive or negative balance.
+CAPTAIN INFO - REPUTATION
+The Reputation panel shows you your current standing with various Gemini factions.
+Use the filter buttons on top to view the Reputation list with certain criteria (faction type, alignment to player).
+The vertical line is your alignment line. You can easily see where you stand with a faction.
+GREEN = ALLIED
+BLUE = NEUTRAL
+RED = HOSTILE
+Current location
+YOU MUST RESTART THE GAME FOR THE CHANGES TO TAKE EFFECT!
+DELETE SAVED GAME
+DELETE
+ACTIVATE MOD
+DEACTIVATE MOD
+Author
+Description
+JETTISON
+REPAIR
+DESTROY
+PERKPOINTS
+GARAGE
+SALVAGED SHIP
+You have towed in a new vessel. What is your next order?
+Sell the ship for scraps!
+Send it to the garage!
+AVAILABLE SPACE
+Are you sure you want to transfer command to this vessel?
+NOTICES
+Troopers to be released from service:
+Extra cargo to be sold:
+AVAILABLE FOR HIRE
+TERRITORIAL
+COMPANIES
+Visit your garage
+Your garage is empty!
+IN GARAGE
+No Troopers available!
+Out of Transport range!
+Ship already captured!
+Out of Grappler range!
+REPORT
+GIVE
+TAKE
+TAKE ALL
+BOARDING SUCCESSFUL
+SITUATION REPORT
+CASUALTIES
+TROOPERS REMAINING IN SERVICE
+YOU
+ENEMY
+What is your next order Captain?
+QUICK-LOOT
+Cannot activate Grappler while in PTE!
+Cannot activate Transporter while in PTE!
+NAME
+RANK
+REWARD
+INFORMATION
+LAST KNOWN LOCATION
+BOUNTY BOARD
+GEMINI SYSTEM'S MOST WANTED
+Price:
+Salary:
+Cargo hold is empty!
+No items in inventory!
+No ship systems in inventory!
+INITIAL SCAN
+THREAT:
+PURCHASE TO GARAGE
+NAVIGATION
+TACTICAL
+ENGINEERING
+No officer? Hire officers on stations and planets to fill key positions on our ship!
+Trinity Free States - In the vicinity of planet Trinity
+Fleet T857/1 - Captain Gabriel Faulkner in command
+Target out of range!
+No target!
+Equipment must cool down first!
+No Hull damage detected!
+Shields already at maximum!
+Power levels at maximum!
+FRONT
+BACK
+LEFT
+RIGHT
+No licenses in inventory!
+FIRE AT WILL - PARTIAL
+FIRE AT WILL - FULL
+ENERGY TRANSFER
+OUT OF RANGE
+Wing in hangar.
+IN HANGAR
+Wing refueling for takeoff.
+REFUELING
+Wing defending carrier.
+DEFENDING
+Wing refueling.
+REFUELING
+Wing landing on carrier.
+LANDING
+Wing returning to carrier for refuel.
+RET. FOR REFUEL
+Wing attacking target.
+ATTACKING
+FIGHTER
+INTERCEPTOR
+BOMBER
+Your alignment makes all the difference when interacting with factions (buy/sell prices, being allowed to purchase ships or ship systems, being allowed to purchase faction licenses...)
+FLEET - SHIPS PANEL (<Cffff00ff><ST_Fleet><C>)
+The left side of the panel shows your current ship and its loadout.
+The right side is reserved to list ship statistics.
+FLEET - SYSTEMS PANEL
+The left side shows all the ship systems you have in your system inventory.
+Select a System on the left to get detailed info on the right side.
+System inventory is NOT limited! You can carry as many Systems as you want to.
+FLEET - EQUIPMENT PANEL
+The left side shows all the Equipment you currently have on-board.
+Select an Equipment on the left to get detailed info on the right side.
+To MOUNT Equipment on a quickbar slot, select it in the list, select the slot on the right side and click MOUNT.
+To clear a slot of any Equipment, select the filled quickbar slot and click UNMOUNT.
+FLEET - CARGO PANEL
+Look over the cargo you're currently hauling via this panel.
+Select a commodity on the left to get detailed info on the right side.
+Two buttons on the right side give you the option to either JETTISON the commodity into space, or DESTROY it completely.
+FLEET - OFFICERS PANEL
+This panel shows your currently hired officers. Hover over each one to view detailed information (salaries and bonuses). You can also dismiss an Officer via this panel.
+The SPECIAL slot is reserved for special characters that may accompany you from time to time.
+STATION & PLANET MAIN INTERFACE
+Stations and planets are safe havens in Gemini. Here you can take a break from the dangers that lurk in space.
+Every time you ANCHOR on a station, or land on a planet, your game is AUTOSAVED.
+You can also SAVE through the MENU on the right console, but ONLY WHEN LANDED.
+Gemini News Network reel constantly rolls at the top of the screen to show various news happening around Gemini (historic news, commodity prices, bounty information...)
+Use the SHIPYARD to compare your ship with available ships and if you so desire, purchase new ships.
+The DRYDOCK is the only place where you can fully upgrade your ship by purchasing new ship systems or by enhancing them in various ways. You can also upgrade your light weapon batteries by adding new turrets, purchase ammunition for your heavy weapons and buy additional usable equipment.
+If you're more into bartering than fighting, check the local TRADER to buy or sell commodities.
+The NEWS section shows you the latest happenings around Gemini as well as historic data.
+HIRING section gives the opportunity to employ new officers on key positions of your ship. Officers provide passive bonuses, but be careful; they expect regular salary.
+The GARAGE button takes you to your personal Garage where you can store multiple ships for later use.
+STATION - SHIPYARD
+Purchase new ships in the SHIPYARD.
+Look over the ships available for purchase on the AVAILABLE TAB.
+Compare your current ship with the one selected through the COMPARE tab.
+The STATISTICS and SYSTEMS tabs provide more details on the ships.
+Your current ship's price (reduced to 20% of its default value) is also calculated in the transaction.
+Ship systems are transferred to the newly purchased ships automatically. Cargo is also transferred as much as possible. Excess cargo is automatically sold.
+Alternatively you can purchase a new ship directly into your garage.
+DRYDOCK - SHIP
+The left side of the panel shows a holographic model of your current ship, while the right side shows more detailed info.
+Use the REPAIR HULL button to repair your ship's Hull. Price is shown on mouse hover.
+DRYDOCK - LOADOUT TAB
+The left side of the panel shows your current ship's weapons loadout.
+The right side can be switched to show either your own system inventory so you can mount systems from your inventory, or it can show what the station/planet has to offer for purchase.
+Click on a weapon mount, select a weapon on the right-handed list and click the MOUNT button to install the system. Purchasing directly from the station will automatically install the system on-board.
+If you're purchasing a new system onto an already filled weapon slot, the old system is automatically transferred to your system inventory.
+To UNMOUNT a weapon from a slot, select the slot, and click the UNMOUNT button.
+The last button changes depending on what type of system is selected. Light weapons allow ADDITIONAL TURRETS to be purchased by clicking on the ADD TURRET button, while Heavy weapons allow AMMO to be purchased for the selected weapon.
+DRYDOCK - ENHANCEMENTS TAB
+The left side of the panel shows your ship's various systems and already installed Enhancements, while the right side features Enhancements available for purchase.
+To install an Enhancement, select a system on the left, choose an Enhancement on the right-handed list and click the MOUNT button. Price will automatically be deducted.
+The right-handed list is filtered to show only Enhancements for the selected system type (if the Shield generator is selected, only Shield Enhancements will be shown).
+If a system is enhanced, it will be indicated by a small rectangular icon joined with the system icon.
+Hovering the mouse over a System or Enhancement provides detailed information on the item.
+DRYDOCK - SYSTEMS TAB
+The Systems tab features two lists. The left side shows your own System inventory, while the right-side features Systems available for purchase.
+This tab is primarily for making purchases and sales "in bulk" and for selling excess systems.
+Hover over the small triangular icon in the bottom right of the panel for additional helpful information.
+DRYDOCK - EQUIPMENT TAB
+The Equipment tab features two lists. The left side shows the Equipment you currently own, while the right-side features Equipment available for purchase.
+Use the buttons on the bottom of the panel to make sales/purchases of the selected Equipment.
+Hovering the mouse over an Equipment shows detailed information.
+Hover over the small triangular icon in the bottom right of the panel for additional helpful information.
+STATION - TRADER
+For those interested in making riches by trading, visiting this panel will happen often.
+The left side shows the commodities in your Cargo hold, while the right side shows Commodities available for purchase.
+Use the buttons on the bottom of the panel to make sales/purchase of the selected Commodities.
+Hover over the small triangular icon in the bottom right of the panel for additional helpful information.
+STATION - NEWS
+The NEWS section shows you the latest happenings around Gemini as well as historic data.
+Browse this section to get valuable information regarding ongoing global events and last known location of captains wanted dead or alive.
+HIRING - CREW
+This panel is used for two important purposes: Hiring Officers and replenishing your Troopers.
+Every station/planet has a limited supply of available Troopers (replenished over time).
+You can hire up to three officers, each on his/her corresponding function (Tactical, Engineering, Navigation) and each bring their own set of special bonuses. The bonuses remain active for as long as the providing officer is onboard.
+Officers come with an initial cost as well as monthly pay. If you run out of funds and can't pay your Officers salaries, they will LEAVE!
+STATION - GARAGE
+You can store multiple ships in your garage for later use (to transfer command or sell the ship).
+The left side is reserved for a list of your stored ships, while the right side shows detailed info on the selected ship.
+Much like the SHIPYARD panel, the GARAGE also features the COMPARE tab to compare the selected ship with your current ship.
+Use the STATISTICS and SYSTEMS tabs to change what information you're looking over.
+Transfer command to the selected ship by pressing the TRANSFER COMMAND button.
+STARCHART
+The Starchart (<Cffff00ff><ST_Starchart><C>) shows the entire Gemini star system (the part you explored).
+Left-click anywhere on the starchart to open up the action menu (place waypoint, issue Go to and Anchor command, Get info on an object...)
+Press and hold the right mouse button and drag the mouse to pan the Starchart.
+Use the mousewheel to zoom in and out.
+The circular panel in the top right provides additional Starchart actions. You can drag the panel around the screen if it gets in the way.
+Toggle the different map overlays to have an overview of your standing in the different Gemini regions or to toggle showing some aspects of the Starchart (asteroid fields, nebulas, T-Gates and their links...).
+The Remove waypoint button clears the placed waypoint.
+Bounty board opens up the same-named panel where you can check the various infamous captains you can hunt down for profit and special rewards.
+If you want to find yourself some work, ALWAYS CHECK YOUR STARCHART, since here is all you'll ever need to browse and locate, accept or abandon a MISSION.
+Simply left-click on a mission icon to open up its information panel where you can ACCEPT a mission.
+Depending on your actions, different Freelance missions will become available on your starchart.
+BOUNTY BOARD
+Check out the Bounty board to get an overview of the various captains with bounties on their heads. They are wanted by factions for various reasons and hunting them down can grant you lucrative and special rewards.
+The left side is the list of all known bounties.
+Select a bounty on the left to get the detailed info on the right side.
+To get the latest info on the whereabouts of the wanted captains, check the Gemini News Network bulletins on stations and planets.
+ALIGN TO PLANE
+SCAVENGING DERELICTS
+Occasionally you can find derelicts floating in space. You can loot these by simply firing at them and destroying them.
+Alternatively you can use the Scavenger swarm equipment. This will provide more loot.
+ACCESSING THE T-GATE GRID
+Hyperspace torrent gates can be found in all high-traffic areas of Gemini. Anchor on a Tgate to use it. Each Tgate jump comes with a Credit cost.
+USING STRUCTURES
+Various structures in Gemini can be used by anchoring on them. Automated repair stations can for example repair your ship's hull for a price.
+MINING ASTEROIDS
+Shoot at asteroids to break them apart. Valuable ore will then be dropped. You can collect this ore and sell it on stations or planets for profit.
+Using Borehole discharge or similar equipment provides more loot.
+RIFTWAY "SURFING"
+Riftways are hyperspace lanes laid across Gemini. Fly inside a Riftway to gain increased speed.
+USING T-DRIVE
+T-Drive is a special piece of equipment you can place in your equipment quick-bar. Clicking on the T-Drive opens up the Starchart where you can set your destination. Jump distance is automatically calculated depending on the number of T-Drive charges you currently have. Click on the destination to initiate T-Drive jump.
+BOARDING & CAPTURING SHIPS
+BOARDING a ship is done through the CONTEXT MENU (<Cffff00ff><ST_Context_Menu_(Toggle)><C>) when a ship is targeted.
+By LEFT-CLICKING on the BOARDING icon, you commence the boarding action and send your troopers via transporter to the targeted vessel.
+A small SIDE OVERVIEW opens up on your right where you can see how boarding is playing out. Here you can SEND OVER ADDITIONAL TROOPS, depending on your TRANSPORTER system efficiency or order a FULL RETREAT.
+When boarding succeeds, the target is captured. The ship is rendered INACTIVE and its icon on the small right-hand panel is checked.
+To lock on a captured ship, you can also LEFT-CLICK its CAPTURED icon on your right.
+After you've captured a ship, you can exercise your rights on it (when targeted) through the CONTEXT MENU, be that LOOT, DEMOLISH or GRAPPLE a ship and tow it to a nearby station or planet to sell it or store in your garage.
+OBJECT & QUEST MARKERS
+Objects within your sensor radius are marked with object markers.
+Color of the object marker depends on the object's alignment towards you (hostile = red)
+Quest objects are specially marked for easier recognition depending on mission type (main, side, freelance).
+MISSIONS & MISSION OBJECTIVES
+This is a MISSION WAYPOINT. It helps you find your mission objectives in space.
+You can review your missions in your CAPTAIN'S LOG screen (<Cffff00ff><ST_Captain's_Log><C>) and render any of them ACTIVE, which makes its waypoint visible on your HUD.
+Objectives of a mission you're currently FOLLOWING are shown on your HUD
+You can also select a mission on your starchart and it is immediately being FOLLOWED
+MERCENARIES
+Mercenary ships can be hired on stations and planets to accompany you on your travels. Beside the hiring fee, mercenaries also require monthly salaries. Be sure to have enough Credits to pay salaries to you hired mercenaries as they will leave your service if they don't get paid. Or worse, they could decide to beat their payment from you.
+SKILLS PANEL
+The Skills panel provides a convenient way to look over and more importantly upgrade your Skills the way you want to.
+Spend Skill points you've gained by leveling-up or as rewards for quests and achievements, by clicking on the skill modifiers located below each skill.
+Hover the mouse over a Skill modifier to see its benefits.
+Activating additional modifiers increases how much Power the skill requires for activation.
+Skills can only be reset on stations Spire and Tortuga bay, but it will cost you!
+PERKS PANEL
+Perks are special passive bonuses you can activate and upgrade by spending Perk points.
+Perk points are received when gaining a new Rank, and also as special rewards for quests and achievements.
+Hover the mouse over a Perk to see its benefits.
+Space can sometimes become quite disorienting. Use the Align to plane (<Cffff00ff><ST_Align_with_Plane><C>) holo-projection to help you navigate through space. Pressing Align to plane button gives the order to your crew to automatically align your ship according to the star system plane. Along with showing you the general  directions the holo-projection also shows planar orientation and vertical offset from the star system zero "elevation".
+Use the REARM button to fill your Heavy weapons ammunition (all heavy weapon batteries).
+LAUNCHING FIGHTERS
+Some ships have a hangar with up to three fighter wing slots.
+Fighter wings can be purchased on stations and planets via the DRYDOCK -> LOADOUT panel.
+Fighter are launched by pressing the Launch all fighters button (<Cffff00ff><ST_Launch_All_(Toggle)><C>) on the Context menu (<Cffff00ff><ST_Context_Menu_(Toggle)><C>)
+Alternatively, you can launch individual fighter wings by pressing the appropriate button on the Context menu (<Cffff00ff><ST_Context_Menu_(Toggle)><C>) or the shortcuts:<\n>Launch wing one: <Cffff00ff><ST_Launch_Wing_1_(Toggle)><C><\n>Launch wing two: <Cffff00ff><ST_Launch_Wing_2_(Toggle)><C><\n>Launch wing three: <Cffff00ff><ST_Launch_Wing_3_(Toggle)><C>
+Once launched, fighter wings remain on mission until their mission is cancelled or they get destroyed.
+The small panels that appear on the left side of the HUD, show status of each of your wings "on mission".
+If ALL fighter crafts in a wing get destroyed, you MUST purchase a completely new fighter wing on a station or planet. Otherwise, the wing gets repaired over time or when anchored.
+You can also see how much fuel each of your wings has left on the Context Menu (<Cffff00ff><ST_Context_Menu_(Toggle)><C>). When the bar on each icon is green it shows how much fuel they have left before they must return to your ship. When the bar is ORANGE, it shows refueling status.
+CUSTOMIZE
+YOUR LOGO
+SHIP NAME
+DECALS TINT
+PAINT TINT
+COLOR
+GLOSSINESS RANGE
+REFLECTION
+CARGO PICKUP
+Cargo picked up and stored in cargo hold. You're ready to return to the Avalon.
+Activate the next mission via the Starchart
+APPLY
+OPACITY
+LIGHTNESS
+SCANNING
+ALREADY SCANNED
+MISSION CANCELED
+CARGO LOADED
+VIP ON BOARD
+GRAPPLER PROBLEM
+Grappled ship too far!
+Grappled ship suddenly explode!
+BOARDING FAILED
+Ship too far!
+Your Troopers are lost!
+No more troopers!
+An officer has abandoned your service due to lack of finances!
+HERO ANNIHILATED
+You've annihilated a hero!
+SMUGGLING FAILED
+Your smuggling attempt failed and you're banished from the planet!
+SECURITY RESPONSE
+You've decided NOT to jettison the cargo which means you can expect retaliation soon.
+ITEM RECEIVED
+Item received and stored in the cargo hold.
+LOG UPDATED
+Personal log updated. Check the Captain's log for details.
+PASSENGER ON BOARD
+Passenger escorted to the bridge.
+Start the next mission through the Starchart.
+Restart the mission through the Starchart.
+ANOMALY ENCOUNTERED
+Your sensors are picking up an anomaly nearby.
+RIFTWAY ENTERED
+You've entered a Riftway. Navigate through it to keep the speed boost.
+LEAVING RIFTWAY
+You've dropped out of a Riftway. Speed returning to normal.
+HERO IN THE VICINITY
+Long range sensors are picking up a ship designation of wanted ship. Check the Starchart or the Bounty board for details.
+HERO ANNIHILATED
+You've killed a wanted captain. Bounty reward added to your Credit account.
+STRUCTURE SEVERELY DAMAGED
+You've severely damaged a structure. Security forces alerted.
+WORMHOLE
+You've passed through a Wormhole. Report:
+T-DRIVE JUMP SUCCESSFUL
+T-Drive jump executed with pinpoint precision.
+TDRIVE MIS-JUMP
+TDrive jump unsuccessful. Navigation reports we have mis-jumped.
+STRUCTURE HACKED
+TEAM TRANSPORTED
+STRUCTURE SCANNED
+T-GATE HACKED
+RIFTWAY HACKED
+SATELLITE HACKED
+NAV BUOY HACKED
+AUTOMATED REPAIR FACILITY HACKED
+ANTI-RADIATION CHARGER HACKED
+NEBULA COLLECTOR HACKED
+REMOTE MINING FACILITY HACKED
+SOLAR FARM HACKED
+REMOTE RESEARCH CENTER HACKED
+NETWORK HUB HACKED
+JUNK RECLAIMER HACKED
+PRISON HACKED
+A.M.P. HACKED
+T-GATE SEVERELY DAMAGED
+RIFTWAY CALLIBRATOR SEVERELEY DAMAGED
+RELAY SATELLITE SEVERELY DAMAGED
+NAV BUOY SEVERELY DAMAGED
+AUTOMATED REPAIR FACILITY SEVERELY DAMAGED
+ANTI-RADIATION CHARGER SEVERELY DAMAGED
+NEBULA COLLECTOR SEVERELY DAMAGED
+REMOTE MINING FACILITY SEVERELY DAMAGED
+SOLAR FARM SEVERELY DAMAGED
+REMOTE RESEARCH CENTER SEVERELY DAMAGED
+NETWORK HUB SEVERELY DAMAGED
+JUNK RECLAIMER SEVERELY DAMAGED
+PRISON SEVERELY DAMAGED
+A.M.P. SEVERELY DAMAGED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+TEAM TRANSPORTED
+T-GATE SCANNED
+RIFTWAY CALLIBRATOR SCANNED
+WORMHOLE SCANNED
+RELAY SATELLITE SCANNED
+NAV BUOY SCANNED
+AUTOMATED REPAIR FACILITY SCANNED
+ANTI-RADIATION CHARGER SCANNED
+NEBULA COLLECTOR SCANNED
+REMOTE MINING FACILITY SCANNED
+SOLAR FARM SCANNED
+REMOTE RESEARCH CENTER SCANNED
+NETWORK HUB SCANNED
+JUNK RECLAIMER SCANNED
+PRISON SCANNED
+A.M.P. SCANNED
+ANOMALY SCANNED
+Structure shutting down due to severe damage. Local security alerted.
+Target suffered massive damage. Security forces are on the way.
+Structure forcefully deactivated. Security en route.
+Target mainframe deactivated. Structure shutting down.
+Stolen data rerouted to the black market for sale.
+Local navigation data logged into ship's mainframe.
+Mainframe hacked. Target cargo jettisoned into space; ready for looting.
+Away team tampers with the structure. Cargo jettisoned into space; ready for looting.
+Spec-Ops managed to shut down the structure. They are returning to ship.
+Operatives report success. Streaming data directly to the black market for sale.
+Scanned info sold through the Gemini Network.
+T-Gate jump price temporarily reduced.
+Riftway segment shut down.
+Repair price temporarily reduced.
+Anti-radiation price temporarily reduced.
+Stolen data reveals location of a wanted ship.
+Tapping into solar farm mainframe. Syphoning power.
+A.M.P. destabilization might cause ripples in space-time. High chance of anomalies appearing in the vicinity.
+Prison shut-down in progress. Local security and outlaws might become interested.
+Local mining operation destabilized. Ore prices become volatile.
+Local gas collecting operation destabilized. Gas prices become volatile.
+SECURITY SCAN
+Your ship has been scanned revealing contraband on-board!
+Contraband in your cargo hold:
+Reputation change:
+Fine cost:
+Decline and prepare for attack!
+Jettison cargo, pay fine and you're free to go.
+"Captain, we've scanned your cargo hold and found contraband. Stop your ship and jettison the contraband or face consequences!"
+PIRATE HOLD-UP
+An outlaw has taken interest in your belongings!
+Wanted cargo:
+Reputation change:
+Reward for destroying the outlaw:
+Decline and prepare for attack!
+Jettison cargo and start running away!
+"Those are some nifty little things you got there cap'n. I just might let you leave if you leave them behind."
+REPAIRS COMPLETE
+Automated repair facility wishes you luck on your travels!
+ANTI-RADIATION CHARGE APPLIED
+You are temporarily immune to radiation damage. Good luck!
+SECURITY ALERT
+You've entered a new region where local politicians label these commodities as illegal:
+RESET SKILLS AND PERKS
+For a cost you can reset your Skills and Perks
+SKILLS TO RESET:
+RESET PRICE:
+PERKS TO RESET:
+ENGINE MALFUNCTION
+POWER CORE MALFUNCTION
+SENSORS MALFUNCTION
+EXPLOSION IN CREW QUARTERS
+OFFICER INJURY
+WEAPON BATTERY MALFUNCTION
+OFFICER LEAVES SERVICE
+MERCENARY LEAVES SERVICE
+MERCENARY TURNCOAT
+Not paying officer usually results in them leaving. This one left anyway.
+A mercenary has left your service abruptly. Apparently not getting a pay-check got his crew angry...
+A mercenary decided to jump on you throat to get his salary. Prepare for combat!
+Problem in the propulsion system prevents us from reaching our maximum speed.
+Serious malfunction detected in the power core! Energy is wasted.
+Defect detected in the sensor grid! Repair crews are eliminating the glitch.
+Explosive decompression in crew quarters! Crew members reported missing.
+Officer has suffered an injury and will be in the infirmary for the time being.
+T-Drive malfunction! Jump exit coordinates do not match target.
+Power drop in weapon battery detected! Engineers dispatched.
+GEMINI NEWS NETWORK
+Gemini News Network is buzzing with news. Check the local station for the latest headlines!
+SMUGGLING SUCCESS
+Tactical reports you've been scanned by the local security forces, but they found nothing; not even that contraband in your cargo hold.
+TAG
+LOW
+MEDIUM
+HIGH
+EXTREME
+ATTACK BONUS
+DEFENSE BONUS
+SABOTAGE
+SYSTEM DISABLED
+ENERGY DRAIN
+AMMO DESTROYED
+CARGO DROP
+Blueprint
+SCAN REPORT
+Composition:
+Loot:
+GRAPPLER MALFUNCTION
+TRANSPORTER MALFUNCTION
+HANGAR MALFUNCTION
+CLOAKING FIELD MALFUNCTION
+SHIELD EMITTER MALFUNCTION
+Engineering detected problems with the Grappler. Running diagnostics.
+Our Transporter is not working properly. Repairs are under way.
+Deck commander reports problems in the Hangar bay. They are on top of it.
+Cloaking field generator shut down. Repair crews dispatched.
+Shield emitter deactivated. Running diagnostics and sending repair crews.
+CARGO MANIFEST
+Object scans reveal the following cargo:
+Return to the Mission area in time or forfeit the mission!
+Artefact vault
+Retrieve artefact
+Artefacts retrieved:
+ARTEFACT RETRIEVAL
+Artefact retrieved and stored in the cargo hold. Artefacts retrieved:
+MISSION INFO
+FACTION:
+ITEM
+PREVIOUS
+READ
+Do you wish to APPLY your changes?
+You need to restart the game for some changes to take effect.
+WING
+FUEL
+Evasion
+Accuracy
+ITEM NAME
+CARGO
+Are you sure you want to DELETE this save file?
+DATE:
+REVIEW
+BACK (ESC)
+WARNING: CONFLICTING CONTROLS!
+WARNING: APPLY CHANGES!
+Hull already at 100%
+Power already at 100%
+Target out of range
+No target
+Not enough charges
+Charges used:
+Localized effect prevents using T-Drive
+Only one platform deployable at a time
+Mission failed! Convoy destroyed.
+GLOBAL LIST
+CHECK ALL
+ORES
+CONSUMABLES
+COMPONENTS
+GASES
+MATERIALS
+PRODUCTS
+BEST BUY
+BEST SELL
+EVENTS
+CREDITS:
+BEST KNOWN BUYING PRICES
+BEST KNOWN SELLING PRICES
+See location on Starchart
+DISTANCE
+BEST BUY/SELL DATABASE
+Right-click to access Best Buy/Sell Database
+DECLINE
+Unmount from slot and transfer to storage
+Save changes?
+Revert changes?
+Are you sure you wish to TRADE IN your current ship with the new one?
+Price difference:
+Are you sure you wish to purchase new ship and STORE it into the GARAGE?
+Purchase a system from the station and automatically install it onto your ship. The current system is stored in your ship.
+Remove system from slot and store in your ship
+Purchase Enhancement for selected system
+Remove Enhancement from selected system
+Are you sure you wish to sell the selected ship?
+Are you sure you wish to transfer to the selected ship?
+For a fee you can purchase nano-drones that create an anti-radiation shielding for both your hull and your on-board personnel rendering them immune to radiation. When their limited power is exhausted, they shut down and simply disintegrate.
+For a fee, A.R.F. can send out advanced automated drones to repair your vessel.
+Don't show this warning anymore.
+Access tutorials via the tutorial list panel in the top right "?"
+Destroy
+Disable
+Capture
+Anchor
+Go to
+Follow
+Scan
+Salvage
+Mine
+Collect
+CONVOY STATUS
+CONVOY ESCORT
+CONVOY RAID
+Convoy ships destroyed:
+PROSPECTING
+Asteroids destroyed:
+Player wanted level:
+Wanted level:
+Wanted by:
+Reward for capture:
+Reward for assassination:
+Bounty hunters
+Outlaws
+WARNING
+At the edge of Trinity space...
+In the vicinity of Plymouth Shipyard
+The Galahad, under the command of captain Jeremy Coop
+Bertrand Steiger, commander of local Gladius group operations
+Deep in Directorate territory...
+Inside the Will o' the Wisp
+The Archimedes, under the command of the legendary Dr. Elenor Ridley
+God's Wrath... the Maelstrom... also known as the Devil's playground...
+Sanctuary space, in the vicinity of planet Hogosha
+The wreckage of the Leviathan, in Porphyrian territory
+Wasp nebula, in Sentchuk barony
+Sol system - Imperial mainspace, in relative proximity to planet Earth
+Battlestation Salazar - or what is left of it...
+Bastille Naval Academy
+Sector Zero - Gemini starpoint
+Clearmont station - Iolian Pact territory
+Mycenaean space - Battlestation Masada
+Somewhere in Baeldor Republic - Admiral Carlos Figueroa
+Nexus catapult - Deep inside Nexus territory
+Trinity Free States - Protectorate attack fleet under the command of Admiral Dmitry Kuzhev
+Nordhorn outpost in Iolian Pact territory
+Imperial District Gamma
+Move mod up
+Move mod down
+Load order
+Installed mods
+Available mods
+Downloaded mods
+Not installed mods
+Install mod
+Remove mod
+Uninstall mod
+Move up
+Move down
+Rescue
+Anomaly prevents Grappler use
+Anomaly prevents Transporter use
+Repair
+Fine:
+Reputation:
+Credits
+Must be within 300 to scan.
+HERO
+CHARGES:
+CONTRABAND LOADED
+WARNING: Losing or selling the cargo being transferred WILL result in mission failure!
+Delivery cargo not in cargo hold:
+Too many Freelance missions active at the same time. Solve or forfeit a Freelance mission first.
+Dock denied. Target is hostile!
+Acceleration
+PTE temporarily disrupted!
+PTE reinitialized and can be used again!
+Not enough Credits.
+Higher Rank required.
+Encrypted data stream
+Data cores
+Father's associates
+The Brotherhood
+Doctor Elenor Ridley
+State of the empire
+Orion hybrids
+Secret of the lens
+The Mothership is no more
+Secrets of Aethera
+Exit coordinates unexpected! Wormhole instability caused us to jump out of hyperspace at the wrong location.
+TRIVIAL
+WEAK
+BALANCED
+ALARMING
+DEADLY
+IMPOSSIBLE
+HIT EVADED!
+CRITICAL HIT!
+Cancelled
+Solved
+Failed
+Acquired
+Experience
+GENERAL
+Landing denied! Planet under lockdown!
+Dock denied! Station under lockdown!
+Jump access denied! T-Gate offline!
+Featured_Gemini_News
+Economy_News
+Gemini_News
+Ended
+Over 10 minutes
+Around 10 minutes
+Around 5 minutes
+Soon
+Transport impossible! Target has full Biometric shielding!
+Grappling impossible!
+Hangar slot does not exist.
+Hangar slot empty. Purchase fighter wings on stations and planets.
+TURRET VIEW
+SELECTION MODE
+TARGETING MODE
+TARGET CHASE CAMERA
+GLOSSINESS VALUE
+Boarding Sabotage: Break in cargohold
+Boarding Sabotage: Destroy ammo
+Boarding Sabotage: Drain energy
+Boarding Sabotage: Defense system
+Boarding Sabotage: Critical attack
+Boarding Sabotage: Awesome defense
+TRANSPORT
+ALREADY TRANSPORTED
+Structure already hacked!
+Cannot hack. Structure severely damaged!
+CREDIT ACCOUNT HACKED!
+Your bank Credit account has been hacked! Funds missing:
+TROOPERS LOST
+Local security notified you that some of your Troopers are being held in custody after causing a serious fight and damages to a local bar. Troopers detained:
+Some of your Troopers have been caught up in local riots. Unfortunately, not all got back to the ship. Casualties:
+You need to break combat!
+LAUNCH WING
+RECALL WING
+REFUELING (LAUNCH WING AFTER REFUEL)
+REFUELING (STAY IN HANGAR AFTER REFUEL)
+RETURNING (LAUNCH WING AFTER REFUEL)
+RETURNING (STAY IN HANGAR AFTER REFUEL)
+RETURN TO HANGAR
+Must be within 300 to collect.
+COLLECT
+COLLECTING
+ALREADY COLLECTED
+CARGO THEFT!
+Quartermaster reports some of our cargo is missing from our cargo hold. It seems you've been robbed.
+Open Best buy/sell database
+Tag waypoint
+Show on Starchart
+Commodities on your spaceship
+List of all Commodities
+Best buy list
+Best sell list
+Local price
+Last price
+Distance
+ATTENTION!!!
+Receiving radiation damage
+Receiving EMP damage
+An anomaly is nearby
+Sensors are being scrambled
+Strong gravity pull nearby
+WANTED!!!
+Turret View
+Normal View
+Selection Mode
+Targeting Mode
+Mounted Camera
+SHIP AND PORTRAIT
+CHOOSE PORTRAIT
+SHIP CHOICE
+Enemies deal reduced damage and command ships with less powerful weapons. Usage of skills and special gear is not mandatory.
+Enemies deal normal damage with average and stronger weapons installed. Usage of skills is recommended for harder battles.
+Adversaries will deal great damage and command highly equipped vessels. Using skills and equipment should be considered as a standard approach.
+Please_select_difficulty_setting_for_your_Universe
+Please note that difficulty settings can be changed in-game as well!
+Some of the commodities you've collected are labeled as illegal:
+Enemies are god-like creatures of ultimate destruction. Intense usage of skills and special equipment means the difference between life and death.
+BLUEPRINT ASSEMBLED!
+You've collected enough blueprint pieces to assemble complete schematics. Blueprints assembled:
+BLUEPRINT PIECE ACQUIRED
+You've acquired a piece of a blueprint!
+Protect Shinova
+Time before Shinova completes its repairs
+Protect scientists
+Protect the scientists until the extraction is completed
+CHOOSE CONTROL SCHEME
+Keyboard + mouse (and/or joystick)
+Joystick / Gamepad
+Choose primary control scheme to use on game panels. Selecting Keyboard + mouse means you'll have to use the mouse to navigate the game panels. Choosing Joystick / Gamepad means you'll have to use the joystick or gamepad to navigate the game panels.
+Defend
+Stay close
+Stay close until Morse can get the needed data
+Provide protection
+Protect the Archimedes and the Terakon
+Transport
+MERCS HIRED
+MERCS AVAILABLE
+NOTE:CHIEF PETTY OFICER rank - 1 MERC for hire
+VICE ADMIRAL rank - 2 MERCS for hire
+DOUBLE CLICK on a MERC to quick DISMISS/HIRE
+Are you sure you want to hire this mercenary?
+Are you sure you want to dismiss this mercenary?
+Mercenary
+Mercenary has left your service due to insufficient funds!
+Mercenary has turned against you due to insufficient funds!
+Your mercenary ship has been destroyed!
+Your mercenary ship has been detected!
+Mercenary joins your fleet!
+[NAME] joins your fleet.
+Your mercenary ship has been disabled!
+FLEET
+ORDERS
+FORMATIONS
+TACTICS
+Fire at will
+Capture
+Disable
+Attack marked
+Regroup
+Break  formation
+Line
+Echelon
+V
+Reverse V
+Aggressive
+Neutral
+Defensive
+Support
+DISMISS MERCENARY
+Warning
+Radiation damage
+EMP damage
+Anomalous influence
+Toxic damage
+Injured officer
+Weakened sensors
+Gravity influence
+Extreme temperature
+You are wanted in this area
+Reputation change
+Fine cost
+Decline and prepare for attack!
+Jettison cargo, pay fine and you're free to go
+PLANET INFO
+CARGO MANIFEST
+CARGO ONBOARD
+STATION INFO
+STRUCTURE INFO
+ANOMALY INFO
+Boarding phase
+Structural integrity
+Officers
+Biometric resistance
+Difficulty setting
+Internal defenses
+Invading troopers
+Defending troopers
+Internal defense bonuses
+Invader bonuses
+Defender bonuses
+Chance to successfully capture the ship
+Invader casualties
+Defender casualties
+Remaining defenders
+Remaining invaders
+Invader reserves
+Perks
+Licenses
+Energy transfer management
+Nearby anomalies
+Area effects
+Location
+DATE
+REVIEW
+Installed
+Not installed
+MOVE UP
+MOVE DOWN
+INSTALL MOD
+UNINSTALL MOD
+N/A
+N/a
+ON
+OFF
+LOW
+MEDIUM
+HIGH
+ULTRA
+EASY
+NORMAL
+HARD
+EXTREME
+Default
+Imperial agenda
+Brotherhood end goal
+JOYSTICKXPLUS
+JOYSTICKXMINUS
+JOYSTICKYPLUS
+JOYSTICKYMINUS
+JOYSTICKZPLUS
+JOYSTICKZMINUS
+JOYSTICKXROTPLUS
+JOYSTICKXROTMINUS
+JOYSTICKYROTPLUS
+JOYSTICKYROTMINUS
+JOYSTICKZROTPLUS
+JOYSTICKZROTMINUS
+JOYSTICKBUTTON1
+JOYSTICKBUTTON2
+JOYSTICKBUTTON3
+JOYSTICKBUTTON4
+JOYSTICKBUTTON5
+JOYSTICKBUTTON6
+JOYSTICKBUTTON7
+JOYSTICKBUTTON8
+JOYSTICKBUTTON9
+JOYSTICKBUTTON10
+JOYSTICKBUTTON11
+JOYSTICKBUTTON12
+JOYSTICKBUTTON13
+JOYSTICKBUTTON14
+JOYSTICKBUTTON15
+JOYSTICKBUTTON16
+JOYSTICKBUTTON17
+JOYSTICKBUTTON18
+JOYSTICKBUTTON19
+JOYSTICKBUTTON20
+JOYSTICKBUTTON21
+JOYSTICKBUTTON22
+JOYSTICKBUTTON23
+JOYSTICKBUTTON24
+JOYSTICKBUTTON25
+JOYSTICKBUTTON26
+JOYSTICKBUTTON27
+JOYSTICKBUTTON28
+JOYSTICKBUTTON29
+JOYSTICKBUTTON30
+JOYSTICKBUTTON31
+JOYSTICKBUTTON32
+JOYSTICKPOWA0
+JOYSTICKPOWA1
+JOYSTICKPOWA2
+JOYSTICKPOWA3
+JOYSTICKPOWA4
+JOYSTICKPOWA5
+JOYSTICKPOWA6
+JOYSTICKPOWA6
+ROLLUP
+ROLLDOWN
+MOUSE1
+MOUSE2
+MOUSE3
+MOUSE4
+MOUSE5
+MOUSE6
+MOUSE7
+MOUSE8
+BACK
+TAB
+CLEAR
+RETURN
+LSHIFT
+RSHIFT
+LCONTROL
+RCONTROL
+LMENU
+RMENU
+SPACE
+PRIOR
+NEXT
+END
+HOME
+LEFT
+UP
+RIGHT
+DOWN
+SELECT
+PRINT
+EXECUTE
+SNAPSHOT
+INSERT
+DELETE
+HELP
+NUMPAD0
+NUMPAD1
+NUMPAD2
+NUMPAD3
+NUMPAD4
+NUMPAD5
+NUMPAD6
+NUMPAD7
+NUMPAD8
+NUMPAD9
+NUMPADMULTIPLY
+NUMPADADD
+NUMPADSEPARATOR
+NUMPADSUBTRACT
+NUMPADDECIMAL
+NUMPADDIVIDE
+F1
+F2
+F3
+F4
+F5
+F6
+F7
+F8
+F9
+F10
+F11
+F12
+F13
+F14
+F15
+F16
+F17
+F18
+F19
+F20
+F21
+F22
+F23
+F24
+LESS
+SEMICOLON
+PLUS
+COMMA
+MINUS
+PERIOD
+QUESTIONMARK
+OEM4
+OEM5
+OEM6
+OEM7
+NA
+Current level
+First level
+Next level
+Modifier
+Asteroid
+Collectable
+Captured
+TUTORIAL
+Junk
+Gas Pocket
+VETERAN
+Veteran
+Hero
+WING
+FUEL
+ASTEROID COMPOSITION
+Mission Info:
+Location:
+Faction:
+Dist:
+Activate the next mission via the Starchart
+REMOVE TURRET
+Do you wish to reload this mission?
+RELOAD
+Or continue freeroaming (main campaign is deactivated and cannot be continued!)?
+CONTINUE
+CANNOT SAVE DURING A MISSION
+YOU CAN ONLY SAVE WHILE ANCHORED
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]

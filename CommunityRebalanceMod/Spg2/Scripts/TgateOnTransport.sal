@@ -1,0 +1,18 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default Hub OnTransport script
++used automatically if no override script supplied in object parameters
+-------
+*/
+/*
+TRANSPORT
+	+experience
+		+extraExp ifCommander
+	+chance to deactivate
+		+higher chance ifGunner
+	+reduce reputation
+	+chance to reduce next jump price
+		+higher chance ifCommander
+*/
+End

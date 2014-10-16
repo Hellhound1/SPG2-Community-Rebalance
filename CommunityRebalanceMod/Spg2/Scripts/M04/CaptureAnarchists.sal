@@ -1,0 +1,48 @@
+/* quest related */
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+int questCond = 0 ;
+
+mainquest GetById 24 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage Quest_24_Check_Success! ;
+	/* get hostile ships HP */
+	ship GetByKeyName m04anarchist1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m04anarchist1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m04anarchist2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m04anarchist2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	ship GetByKeyName m04anarchist3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m04anarchist3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	/* check if hostiles are dead */
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				mainquest GetById 24 SetSolve 1 ;
+				mainquest GetById 24 DeleteObjective 1 ;
+				mainquest GetById 25 SetAcquire 1 ;
+				trigger GetByKeyName m04bTRI SetEnabled 0 ; /* MissionArea */
+				waypoint GetByKeyName m04bWp SetMark 1 ;
+				waypoint GetByKeyName m04bWp SetMissionTask 4 ;
+				log 22 ;
+				/* Start cutscene */
+				script Spg2\Scripts\M04\CS04B.sal ;
+			endif
+		endif
+	endif
+endif
+
+End

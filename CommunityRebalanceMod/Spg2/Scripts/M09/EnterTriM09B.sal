@@ -1,0 +1,43 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 56 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 56 SetSolve 1 ;
+	mainquest GetById 56 DeleteObjective 1 ;
+	mainquest GetById 57 SetAcquire 1 ;
+	ship GetByKeyName m09nimovSHP SetEnabled 1 ;
+	ship GetByKeyName m09nimovSHP SetBoardable 0 ;
+	ship GetByKeyName m09rev1 SetEnabled 1 ;
+	ship GetByKeyName m09rev2 SetEnabled 1 ;
+	/* iskoristiti m09bTRI kao MissionArea */
+	
+	ship GetByKeyName m09nimovSHP SetFriendFoe 1 ;
+	ship GetByKeyName m09rev1 SetFriendFoe 2 ;
+	ship GetByKeyName m09rev2 SetFriendFoe 2 ;
+	waypoint GetByKeyName m09aWp SetMark 0 ;
+	waypoint GetByKeyName m09aWp SetMissionTask -1 ;
+	ship GetByKeyName m09rev1 SetMark 1 ;
+	ship GetByKeyName m09rev2 SetMark 1 ;
+	ship GetByKeyName m09rev1 SetMissionTask 0 ;
+	ship GetByKeyName m09rev2 SetMissionTask 0 ;
+	log 52 ;
+	
+	ship GetByKeyName m09nimovSHP SetAIQuestStatus 2 ;
+	ship GetByKeyName m09rev1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m09rev2 SetAIQuestStatus 2 ;
+	
+	ship GetByKeyName m09nimovSHP SetInvulnerable 1 ;
+	ship GetByKeyName m09rev1 SetInvulnerable 1 ;
+	ship GetByKeyName m09rev2 SetInvulnerable 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	script Spg2\Scripts\M09\CS09A.sal ;
+endif
+End

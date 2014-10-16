@@ -1,0 +1,22 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+int questCond = 0 ;
+mainquest GetById 84 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 84 SetSolve 1 ;
+	mainquest GetById 84 DeleteObjective 1 ;
+	mainquest GetById 85 SetAcquire 1 ;
+	ship GetByKeyName m14ridleySHPa SetEnabled 1 ;
+	ship GetByKeyName m14ridleySHPa SetFriendFoe 1 ;
+	ship GetByKeyName m14ridleySHPa SetAIQuestStatus 1 ;
+	game ResetShipEnemyList 1 ;
+	waypoint GetByKeyName m14marker SetMark 0 ;
+	waypoint GetByKeyName m14marker SetMissionTask -1 ;
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M14\D01.dia ;
+endif
+End

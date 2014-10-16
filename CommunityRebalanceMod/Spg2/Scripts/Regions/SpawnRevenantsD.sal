@@ -1,0 +1,194 @@
+/*
+-------
+Script by: LGM Games  
++chance of spawning battle encounter
++several specific regions have much higher chance of spawning battles
+*/
+
+int spawnType = 0 ;
+float3 spawnPos = 0.0 0.0 0.0 ;
+anomaly GetParent GetPosition spawnPos ;
+int factionId = 0 ;
+int shipX = 0 ;
+int shipYFriendly = 0 ;
+int shipYEnemy = 0 ;
+int factionFriendly = 0 ;
+int factionEnemy = 0 ;
+int dialogFac = 1041 ;
+int dialogFacAlly = 1000 ;
+
+int regionId = 0 ;
+
+/* REGION BASED PARAMETERS */
+region GetId regionId ;
+if regionId == 60
+	shipYFriendly = 4 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1050 ;
+	dialogFacAlly = 1013 ;
+endif
+if regionId == 61
+	shipYFriendly = 1 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1040 ;
+	dialogFacAlly = 1012 ;
+endif
+if regionId == 62
+	shipYFriendly = 1 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1050 ;
+	dialogFacAlly = 1012 ;
+endif
+if regionId == 63
+	shipYFriendly = 3 ;
+	factionEnemy = 3 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1040 ;
+	dialogFacAlly = 1053 ;
+endif
+if regionId == 64
+	shipYFriendly = 3 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 4 ;
+	dialogFac = 1040 ;
+	dialogFacAlly = 1053 ;
+endif
+if regionId == 65
+	shipYFriendly = 3 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1049 ;
+	dialogFacAlly = 1053 ;
+endif
+if regionId == 66
+	shipYFriendly = 3 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1049 ;
+	dialogFacAlly = 1053 ;
+endif
+if regionId == 67
+	shipYFriendly = 3 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 3 ;
+	dialogFac = 1049 ;
+	dialogFacAlly = 1014 ;
+endif
+if regionId == 68
+	shipYFriendly = 3 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 3 ;
+	dialogFac = 1038 ;
+	dialogFacAlly = 1014 ;
+endif
+if regionId == 69
+	shipYFriendly = 3 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 3 ;
+	dialogFac = 1048 ;
+	dialogFacAlly = 1014 ;
+endif
+if regionId == 70
+	shipYFriendly = 3 ;
+	factionEnemy = 2 ;
+	shipYEnemy = 3 ;
+	dialogFac = 1048 ;
+	dialogFacAlly = 1048 ;
+endif
+if regionId == 71
+	shipYFriendly = 3 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 6 ;
+	dialogFac = 1047 ;
+	dialogFacAlly = 1017 ;
+endif
+if regionId == 72
+	shipYFriendly = 3 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 6 ;
+	dialogFac = 1047 ;
+	dialogFacAlly = 1017 ;
+endif
+if regionId == 73
+	shipYFriendly = 1 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 5 ;
+	dialogFac = 1042 ;
+	dialogFacAlly = 1016 ;
+endif
+if regionId == 74
+	shipYFriendly = 1 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 5 ;
+	dialogFac = 1047 ;
+	dialogFacAlly = 1016 ;
+endif
+if regionId == 75
+	shipYFriendly = 1 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1049 ;
+	dialogFacAlly = 1015 ;
+endif
+if regionId == 76
+	shipYFriendly = 1 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1049 ;
+	dialogFacAlly = 1015 ;
+endif
+if regionId == 77
+	shipYFriendly = 1 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1049 ;
+	dialogFacAlly = 1015 ;
+endif
+if regionId == 78
+	shipYFriendly = 2 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1041 ;
+	dialogFacAlly = 1041 ;
+endif
+if regionId == 79
+	shipYFriendly = 3 ;
+	factionEnemy = 1 ;
+	shipYEnemy = 2 ;
+	dialogFac = 1037 ;
+	dialogFacAlly = 1037 ;
+endif
+
+int dialogLine = 0 ;
+float dialogDur = 5.0 ;
+int shipId = 0 ;
+int chance = 1 ;
+math chance = Rnd 1 2 ;
+if chance == 1
+	/* spawn hostile revenant */
+	ship GetByKeyName shipRev1 Exist checkExist ;
+	if checkExist != 1
+		PrintMessage Spawn_hostile_Revenant! ;
+		math shipId = Rnd shipX shipYEnemy ;
+		shipAdd shipRev1 spawnType spawnPos factionEnemy shipId ;
+		/* one-liner dialogue */
+		math dialogLine = Rnd 349 358 ;
+		factdialogue dialogFac dialogLine dialogDur ;
+	endif
+else
+	/* spawn friendly revenant */
+	ship GetByKeyName shipRev1 Exist checkExist ;
+	if checkExist != 1
+		PrintMessage Spawn_Friendly_Revenant! ;
+		math shipId = Rnd shipX shipYFriendly ;
+		shipAdd shipRev1 spawnType spawnPos factionFriendly shipId ;
+		/* one-liner dialogue */
+		math dialogLine = Rnd 359 368 ;
+		factdialogue dialogFacAlly dialogLine dialogDur ;
+	endif
+endif
+	
+End

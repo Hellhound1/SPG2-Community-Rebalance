@@ -1,0 +1,39 @@
+Dialogue:
+{
+	Portrait:	14
+	Text:	37
+	Voice:	Spg2\Sound\Voice\coop\37.wav
+	Duration:	3.270
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	38
+	Voice:	Spg2\Sound\Voice\adrian\38.wav
+	Duration:	6.416
+}
+Dialogue:
+{
+	Portrait:	14
+	Text:	39
+	Voice:	Spg2\Sound\Voice\coop\39.wav
+	Duration:	17.160
+}
+Dialogue:
+{
+	Portrait:	1
+	Text:	40
+	Voice:	Spg2\Sound\Voice\adrian\40.wav
+	Duration:	3.595
+}
+Dialogue:
+{
+	Portrait:	14
+	Text:	41
+	Voice:	Spg2\Sound\Voice\coop\41.wav
+	Duration:	5.030
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M05\EndDia02.sal
+}

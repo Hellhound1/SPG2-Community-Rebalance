@@ -1,0 +1,37 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 37 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 37 SetSolve 1 ;
+	mainquest GetById 37 DeleteObjective 1 ;
+	mainquest GetById 38 SetAcquire 1 ;
+	waypoint GetByKeyName m06marker SetMark 0 ;
+	waypoint GetByKeyName m06marker SetMissionTask -1 ;
+	
+	ship GetByKeyName m06steigerASHP SetEnabled 1 ;
+	ship GetByKeyName m06taskforceA1 SetEnabled 1 ;
+	ship GetByKeyName m06taskforceA2 SetEnabled 1 ;
+	
+	ship GetPlayer SetInvulnerable 1 ;
+	ship GetByKeyName m06steigerASHP SetInvulnerable 1 ;
+	ship GetByKeyName m06taskforceA1 SetInvulnerable 1 ;
+	ship GetByKeyName m06taskforceA2 SetInvulnerable 1 ;
+	ship GetByKeyName m06steigerASHP SetBoardable 0 ;
+	ship GetByKeyName m06taskforceA1 SetBoardable 0 ;
+	ship GetByKeyName m06taskforceA2 SetBoardable 0 ;
+	
+	ship GetByKeyName m06steigerASHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m06taskforceA1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m06taskforceA2 SetAIQuestStatus 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	script Spg2\Scripts\M06\CS06A.sal ;
+endif
+End

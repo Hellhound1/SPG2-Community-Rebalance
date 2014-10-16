@@ -1,0 +1,54 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int condition = 0 ;
+mainquest GetById 123 GetAcquire condition ;
+if condition == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 123 SetSolve 1 ;
+	mainquest GetById 123 DeleteObjective 1 ;
+	mainquest GetById 124 SetAcquire 1 ;
+	waypoint GetByKeyName m18marker SetMark 0 ;
+	waypoint GetByKeyName m18marker SetMissionTask -1 ;
+	/* iskoristiti m18aTRI kao MissionArea */
+	ship GetByKeyName m18ridley SetEnabled 1 ;
+	ship GetByKeyName m18baeldor1 SetEnabled 1 ;
+	ship GetByKeyName m18ridley SetDestructible 0 ;
+	ship GetByKeyName m18baeldor1 SetDestructible 0 ;
+	ship GetByKeyName m18nexus1 SetEnabled 1 ;
+	ship GetByKeyName m18nexus2 SetEnabled 1 ;
+	ship GetByKeyName m18nexus3 SetEnabled 1 ;
+	platform GetByKeyName m18platform1 SetEnabled 1 ;
+	platform GetByKeyName m18platform2 SetEnabled 1 ;
+	platform GetByKeyName m18platform3 SetEnabled 1 ;
+	platform GetByKeyName m18platform4 SetEnabled 1 ;
+	platform GetByKeyName m18platform5 SetEnabled 1 ;
+	
+	ship GetByKeyName m18ridley SetAIQuestStatus 1 ;
+	ship GetByKeyName m18baeldor1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m18nexus1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m18nexus2 SetAIQuestStatus 1 ;
+	ship GetByKeyName m18nexus3 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform1 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform2 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform3 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform4 SetAIQuestStatus 1 ;
+	platform GetByKeyName m18platform5 SetAIQuestStatus 1 ;
+	
+	ship GetPlayer SetInvulnerable 1 ;
+	
+	dialogue Spg2\Dialogues\M18\D01.dia ;
+	game SetControlEnabled 0 ;
+endif
+
+
+/* --|MISSION 22|-- */
+mainquest GetById 152 GetAcquire condition ;
+if condition == 1
+	script Spg2\Scripts\M22\EnterTriM22B.sal ;
+endif
+
+End

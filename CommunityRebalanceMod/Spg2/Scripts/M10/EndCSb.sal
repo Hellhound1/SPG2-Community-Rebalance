@@ -1,0 +1,14 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+ship GetPlayer SetInvulnerable 0 ;
+ship GetByKeyName m10ridleySHP SetInvulnerable 0 ;
+
+mainquest GetById 68 SetAcquire 1 ;
+platform GetByKeyName m10hubSTR SetMark 1 ;
+platform GetByKeyName m10hubSTR SetMissionTask 12 ;
+log 61 ;
+End

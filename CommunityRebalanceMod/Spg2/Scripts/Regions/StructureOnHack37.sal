@@ -1,0 +1,11 @@
+/*
+-------
+Script by: LGM Games  
+Script DEPRECATED!
+-------
+*/
+
+PrintMessage Script_DEPRECATED!_Redirected_to_StructureOnHack.sal! ;
+script Spg2\Scripts\StructureOnHack.sal ;
+
+End

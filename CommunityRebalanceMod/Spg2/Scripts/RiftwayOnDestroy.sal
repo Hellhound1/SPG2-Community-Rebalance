@@ -1,0 +1,19 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default Hub OnDestroy script
++used automatically if no override script supplied in object parameters
+-------
+*/
+/*
+Destroy
+	+experience
+		+extraExp ifGunner
+	+deactivate
+	+reduce reputation
+	+draw security
+*/
+
+structure GetParent CallEvent OnDeactivate ;
+
+End

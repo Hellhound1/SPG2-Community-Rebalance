@@ -1,0 +1,36 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+
+mainquest GetById 57 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m09rev1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m09rev1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m09rev2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m09rev2 GetCondition shipCond2 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			mainquest GetById 57 SetSolve 1 ;
+			mainquest GetById 57 DeleteObjective 1 ;
+			mainquest GetById 58 SetAcquire 1 ;
+			game SetControlEnabled 0 ;
+			ship GetByKeyName m09nimovSHP SetFriendFoe 1 ;
+			dialogue Spg2\Dialogues\M09\D04.dia ;
+		endif
+	endif
+	
+endif
+
+End

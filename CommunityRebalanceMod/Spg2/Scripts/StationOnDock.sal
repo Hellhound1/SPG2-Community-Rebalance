@@ -1,0 +1,9 @@
+/*
+-------
+Script by: LGM Games, 2014 
++default station OnUndock script
+*/
+
+script Spg2\Scripts\BlueprintForSale.sal ;
+
+End

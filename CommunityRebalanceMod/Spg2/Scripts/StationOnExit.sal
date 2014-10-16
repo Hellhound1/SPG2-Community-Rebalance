@@ -1,0 +1,12 @@
+/*
+-------
+Script by: LGM Games  
++Random OnExit station trigger script
++each station has an automatic trigger (size=??????) linked to it
+-------
++chance for an event to fire off
+*/
+
+PrintMessage OnExit_STATION_trigger_Script! ;
+
+End

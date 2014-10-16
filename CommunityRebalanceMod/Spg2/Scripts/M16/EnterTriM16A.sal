@@ -1,0 +1,37 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 113 GetAcquire questCond ;
+if questCond == 1
+	
+	game SetQuestMode 1 ;
+
+	mainquest GetById 113 SetSolve 1 ;
+	mainquest GetById 113 DeleteObjective 1 ;
+	mainquest GetById 114 SetAcquire 1 ;
+
+	ship GetByKeyName m16steigerSHP SetEnabled 1 ;
+	ship GetByKeyName m16steigerSHP SetDestructible 0 ;
+	ship GetByKeyName m16gladius1 SetEnabled 1 ;
+	ship GetByKeyName m16gladius2 SetEnabled 1 ;
+
+	ship GetByKeyName m16steigerSHP SetFriendFoe 1 ;
+	ship GetByKeyName m16gladius1 SetFriendFoe 1 ;
+	ship GetByKeyName m16gladius2 SetFriendFoe 1 ;
+	station GetByKeyName masadaSTA SetFriendFoe 1 ;
+	
+	ship GetByKeyName m16steigerSHP SetAIQuestStatus 1 ;
+	ship GetByKeyName m16gladius1 SetAIQuestStatus 1 ;
+	ship GetByKeyName m16gladius2 SetAIQuestStatus 1 ;
+	
+	game ResetShipEnemyList 1 ;
+	
+	waypoint GetByKeyName m04marker SetMark 0 ;
+	waypoint GetByKeyName m04marker SetMissionTask -1 ;
+	script Spg2\Scripts\M16\CS16A.sal ;
+endif
+End

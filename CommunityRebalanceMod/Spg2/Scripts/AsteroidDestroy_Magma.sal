@@ -1,0 +1,120 @@
+float radius = 0 ;
+float3 ePos = 1 2 3 ;
+float3 position = 1 2 3 ;
+float3 e_posC = 1 2 3 ;
+float3 e_posCC = 1 2 3 ;
+asteroid GetParent GetPosition position ;
+asteroid GetParent GetRadius radius ;
+
+/* sound */
+int soundChoice = 1 ;
+math soundChoice = Rnd 1 7 ;
+if soundChoice == 1
+	sound3d expl_asteroid1 position ;
+endif
+if soundChoice == 2
+	sound3d expl_asteroid2 position ;
+endif
+if soundChoice == 3
+	sound3d expl_asteroid3 position ;
+endif
+if soundChoice == 4
+	sound3d expl_asteroid4 position ;
+endif
+if soundChoice == 5
+	sound3d expl_ast4 position ;
+endif
+if soundChoice == 6
+	sound3d expl_ast5 position ;
+endif
+if soundChoice == 7
+	sound3d expl_ast6 position ;
+endif
+
+/* get position between asteroid and camera to hide asteroid deletion */
+camera VectorTo e_posC ;
+math e_posCC = e_posC * radius ;
+math e_posC = e_posCC * 0.6 ;
+math ePos = position + e_posC ;
+
+/* MAIN TEXTURE EXPLOSION */
+float eDelay = 0.0 ;
+float3 eDPos = 0 0 0 ;
+float3 eCol = 1 1 1 ;
+float eTransp = 1.0 ;
+int eId = 11 ;
+float eSizeStart = 7.0 ;
+math esizeStart = radius * 1.2 ;
+float eSizeEnd = 8.0 ;
+math eSizeEnd = radius * 1.6 ;
+int eSizeSort = 3 ;
+float eLifetime = 1.0 ;
+float eRndOffset = 0.0 ;
+int eBlend = 0 ;
+/*
+explosion eDelay ePos eDPos eCol eTransp eId eSizeStart eSizeEnd eSizeSort eLifetime eRndOffset eBlend ;
+*/
+float delDelay = 0.4 ;
+asteroid GetParent Delete delDelay ;
+
+/* particle explosion IDs depending on asteroid size */
+int asbId = 90 ;
+int fogId = 93 ;
+
+if radius > 0.00 && radius < 30.01
+	asbId = 90 ;
+	fogId = 93 ;
+endif
+if radius > 30.0 && radius < 70.01
+	asbId = 91 ;
+	fogId = 94 ;
+endif
+if radius > 70.0
+	asbId = 92 ;
+	fogId = 95 ;
+endif
+
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+float lifeFog = 4.0 ;
+/* Particles -> FreeModel.wds */
+assembly delay position asbId lifetime ;
+/* Fog particles -> FreeModel.wds */
+assembly delay position fogId lifeFog ;
+
+/* CAMERA SHAKE */
+int sort = 1 ;
+int type = 0 ;
+float power = 0.5 ;
+float duration = 0.6 ;
+
+camera Shake sort type power duration delay position radius ;
+
+/* damage blast in radius */
+int vSort = 2 ; /* projectile damage */
+float3 vPos = 0.0 0.0 0.0 ;
+asteroid GetParent GetPosition vPos ;
+float vRadius = 100.0 ;
+float radiusFactor = 4.0 ;
+math radiusFactor = Rnd 5.0 10.0 ;
+math vRadius = radius * radiusFactor ;
+float vLifetime = 0.5 ;
+float vDamage = 500.0 ;
+/* damage amount depends on asteroid radius */
+float damageFactor = 0.10 ;
+
+int damageChance = 1 ;
+
+math damageChance = Rnd 1 4 ;
+if damageChance == 1
+	math damageFactor = Rnd 0.75 1.20 ;
+else
+	math damageFactor = Rnd 0.50 1.00 ;
+endif
+
+math vDamage = radius * damageFactor ;
+
+int affectFriendly = 0 ;
+virtualshockwave vSort vPos vRadius vLifetime vDamage affectFriendly ;
+
+End

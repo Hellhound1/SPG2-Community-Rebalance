@@ -1,0 +1,25 @@
+/*
+-------
+Script by: LGM Games  
++triggered when player hires any officer on a station or planet
++complete blueprint removed from inventory on purchase
+-------
+0. scriptVar id of the hired officer
+*/
+
+PrintMessage PURCHASE_OFFICER_SCRIPT_TRIGGERED ;
+
+int variableSlot = 0 ;
+int officerId = 0 ;
+scriptvar GetValue int variableSlot officerId ;
+
+if officerId == 344
+	int itemId = 148 ;
+	int itemCount = 0 ;
+	player GetQuestItemCount itemId itemCount ;
+	math itemCount = itemCount - 1 ;
+	openStation RemoveOfficer officerId ;
+	player SetQuestItemCount itemId itemCount ;
+endif
+
+End

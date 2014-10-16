@@ -1,0 +1,21 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
++when revenant ship drops to 50% hull, reinforcements arrive
+*/
+
+ship GetByKeyName m09rev4 SetEnabled 1 ;
+ship GetByKeyName m09rev4 SetMark 1 ;
+ship GetByKeyName m09rev4 SetFriendFoe 2 ;
+ship GetByKeyName m09rev4 SetAIQuestStatus 2 ;
+game ResetShipEnemyList 1 ;
+
+/* one-liner dialogue */
+int dialogFac = 1043 ;
+int dialogLine = 392 ;
+math dialogLine = Rnd 392 396 ;
+float dialogDur = 5.0 ;
+factdialogue dialogFac dialogLine dialogDur ;
+
+End

@@ -1,0 +1,33 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond = 2 ;
+
+mainquest GetById 48 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m08assassin1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m08assassin1 GetCondition shipCond ;
+	else
+		shipCond = 2 ;
+	endif
+	
+	if shipCond != 0
+		mainquest GetById 48 SetSolve 1 ;
+		mainquest GetById 48 DeleteObjective 1 ;
+		mainquest GetById 49 SetAcquire 1 ;
+		
+		game SetQuestMode 0 ;
+		
+		/* mark forged papers container */
+		waypoint GetByKeyName m08bWp SetMark 1 ;
+		waypoint GetByKeyName m08bWp SetMissionTask 4 ;
+		log 47 ;
+		script Spg2\Scripts\M08\CS08A.sal ;
+		/* Enable large MissionArea!!!!!!!!! */
+	endif
+	
+endif
+
+End

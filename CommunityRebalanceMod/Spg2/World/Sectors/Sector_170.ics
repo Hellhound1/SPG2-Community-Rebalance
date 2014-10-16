@@ -1,0 +1,887 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky5.amb
+}	
+Spaceship:	
+{	
+	ModelId:	59
+	Position:	66644.34	-1600.00	60639.70
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	10
+	FactionId:	16
+	Class:	7
+	Skills:	0
+	Level:	20
+	Profession:	0
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m14ridleyB
+	Name:	Archimedes
+	CaptainName:	Elenor_Ridley
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	16
+	Position:	65772.20	-1400.00	60323.84
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	9
+	Skills:	0
+	Level:	43
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21Imp1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	16
+	Position:	65811.03	-1400.00	60281.08
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	9
+	Skills:	0
+	Level:	45
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21Imp2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	15
+	Position:	65731.73	-1400.00	60274.85
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	7
+	Skills:	1
+	Level:	42
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21Imp3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	14
+	Position:	65791.11	-1400.00	60233.06
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	5
+	Skills:	2
+	Level:	42
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21Imp4
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	13
+	Position:	65754.29	-1400.00	60233.56
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	4
+	Skills:	2
+	Level:	44
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21Imp5
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	59
+	Position:	66515.34	-1450.00	59898.57
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	16
+	Class:	7
+	Skills:	1
+	Level:	44
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21ridleyB
+	Name:	Archimedes
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	66145.56	-1350.00	60340.09
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	2
+	Level:	41
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21brother1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyBrotherhood.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureBrotherhood.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	66116.14	-1350.00	60320.44
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	1
+	Level:	42
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21brother2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyBrotherhood.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureBrotherhood.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	66165.41	-1350.00	60312.14
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	2
+	Level:	43
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21brother3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyBrotherhood.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureBrotherhood.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	51
+	Position:	65887.36	-1500.00	60764.53
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	2
+	Level:	44
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21alien1
+	Name:	Unknown
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyAliens.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureAliens.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	52
+	Position:	65910.00	-1500.00	60756.93
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	0
+	Level:	42
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21alien2
+	Name:	Unknown
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyAliens.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureAliens.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	52
+	Position:	65864.40	-1500.00	60745.85
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	2
+	Level:	43
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21alien3
+	Name:	Unknown
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyAliens.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureAliens.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	51
+	Position:	65889.12	-1500.00	60741.51
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	0
+	Level:	45
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21alien4
+	Name:	Unknown
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyAliens.sal
+		OnCapture:	Spg2\Scripts\M21\CaptureAliens.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	11
+	Position:	65831.40	-1200.00	59623.46
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	8
+	Skills:	0
+	Level:	48
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21kuzhev
+	Name:	Anathema
+	CaptainName:	Dmitry_Kuzhev
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	65667.48	-1200.00	59605.51
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	45
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21protectA
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	65853.05	-1200.00	59526.10
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	45
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m21protectB
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	21
+	Position:	65950.16	-1585.22	61173.54
+	Rotation:	0.06	-0.34	0.00
+	KeyName:	starpoint
+	Name:	Starpoint
+	NameId:	-1
+	FactionId:	9
+	Hull:	100000.00
+	Destructible:	0
+	PulseTime:	-1.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\Starpoint\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\Starpoint\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport45.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	7
+	Position:	64472.20	-203.24	57943.30
+	Rotation:	0.00	-1.18	0.00
+	KeyName:	gas170
+	Name:	Gas_collector
+	NameId:	83
+	FactionId:	9
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnActivate:	Spg2\Models\Structures\NebulaCollector\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\NebulaCollector\deactivation.sal
+		OnScan:	Spg2\Scripts\StructureOnScan.sal
+		OnTransport:	Spg2\Scripts\Regions\StructureOnTransport45.sal
+		OnHack:	Spg2\Scripts\StructureOnHack.sal
+		OnEnter:	Spg2\Scripts\StructureOnEnter.sal
+		OnExit:	Spg2\Scripts\StructureOnExit.sal
+		OnHP75:	Spg2\Scripts\StructureOnHP75.sal
+		OnHP50:	Spg2\Scripts\StructureOnHP50.sal
+		OnHP25:	Spg2\Scripts\StructureOnHP25.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	34
+	Position:	66355.44	0.00	58697.06
+	Rotation:	0.00	0.00	0.00
+	KeyName:	art26
+	Name:	Artefact_vault
+	NameId:	291
+	FactionId:	9
+	Hull:	10000.00
+	Destructible:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\StructureOnDestroy.sal
+		OnPulse:	Spg2\Models\Structures\Artefact\OnPulse.sal
+		OnActivate:	Spg2\Models\Structures\Artefact\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\Artefact\deactivation.sal
+		OnScan:	Spg2\Models\Structures\Artefact\OnScan.sal
+		OnTransport:	Spg2\Models\Structures\Artefact\OnTransport.sal
+		OnHack:	Spg2\Models\Structures\Artefact\OnHack.sal
+		OnEnter:	Spg2\Models\Structures\Artefact\OnEnter.sal
+		OnExit:	Spg2\Models\Structures\Artefact\OnExit.sal
+		OnHP75:	Spg2\Models\Structures\Artefact\OnHP75.sal
+		OnHP50:	Spg2\Models\Structures\Artefact\OnHP50.sal
+		OnHP25:	Spg2\Models\Structures\Artefact\OnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	13
+	Position:	64821.83	-867.00	63079.87
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_170_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	3
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	14
+	Position:	67969.83	89.00	61975.16
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_170_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	4
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	15
+	Position:	65210.96	778.00	59134.75
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_170_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	5
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	6
+	Position:	67647.35	-653.00	62812.65
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_170_0
+	Name:	Sensor_scrambler
+	NameId:	92
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	7
+	Position:	64155.08	-390.00	61496.66
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_170_1
+	Name:	Shield_dampener
+	NameId:	93
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	8
+	Position:	67081.96	422.00	58854.15
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_170_2
+	Name:	Transport_destabilizer
+	NameId:	94
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	66637.24	-1600.00	60669.32
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m14bTRI
+	Type:	1
+	Radius:	453.80
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M14\EnterTriM14B.sal
+}	
+}	
+Trigger:	
+{	
+	Position:	66498.17	-1500.86	59921.28
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m21bTRI
+	Type:	1
+	Radius:	309.70
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M21\EnterTriM21B.sal
+}	
+}	
+Trigger:	
+{	
+	Position:	65950.16	-1585.22	61173.54
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointEntryTri
+	Type:	1
+	Radius:	300.00
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M14\EnterStarpoint.sal
+}	
+}	
+Platform:	
+{	
+	ModelId:	6
+	Position:	66277.73	-1500.00	61781.13
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform1
+	Name:	Guardpost
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	6
+	Position:	66131.03	-1500.00	60772.49
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform2
+	Name:	Guardpost
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	7
+	Position:	65744.02	-1500.00	61714.43
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform3
+	Name:	Hangar_platform
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	7
+	Position:	66488.18	-1500.00	61055.96
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform4
+	Name:	Hangar_platform
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	6
+	Position:	65353.58	-1500.00	61194.38
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform5
+	Name:	Guardpost
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	7
+	Position:	66049.63	-1500.00	60881.52
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform6
+	Name:	Hangar_platform
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	6
+	Position:	65783.59	-1500.00	60762.74
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform7
+	Name:	Guardpost
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	7
+	Position:	66565.86	-1500.00	61447.04
+	Rotation:	0.00	0.00	0.00
+	KeyName:	starpointPlatform8
+	Name:	Hangar_platform
+	NameId:	-1
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyPlatforms.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	17
+	Position:	66056.51	-1500.00	60627.96
+	Rotation:	-0.00	-1.82	0.00
+	KeyName:	m21voltra
+	Name:	Voltra
+	NameId:	296
+	Faction:	52
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M21\DestroyVoltra.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	16
+	Position:	66024.13	-1600.00	60183.54
+	Rotation:	0.04	-1.17	0.00
+	KeyName:	m14mothership
+	Name:	Guardpost
+	NameId:	297
+	Faction:	52
+	LootDrop:	1
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\PlatformOnDestroy.sal
+	}	
+}	
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector170.sal
+}	

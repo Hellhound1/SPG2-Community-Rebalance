@@ -1,0 +1,54 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 103 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 103 SetSolve 1 ;
+	mainquest GetById 103 DeleteObjective 1 ;
+	mainquest GetById 104 SetAcquire 1 ;
+	structure GetByKeyName m14damoclesSTR SetMark 0 ;
+	structure GetByKeyName m14damoclesSTR SetMissionTask -1 ;
+	waypoint GetByKeyName m14EarthMarker8 SetMark 1 ;
+	waypoint GetByKeyName m14EarthMarker8 SetMissionTask 4 ;
+	ship GetByKeyName m14alienA SetEnabled 1 ;
+	ship GetByKeyName m14alienB SetEnabled 1 ;
+	ship GetByKeyName m14alienC SetEnabled 1 ;
+	ship GetByKeyName m14alienD SetEnabled 1 ;
+	ship GetByKeyName m14alienE SetEnabled 1 ;
+	ship GetByKeyName m14alienA SetVeteran 1 ;
+	ship GetByKeyName m14alienB SetVeteran 1 ;
+	ship GetByKeyName m14alienC SetVeteran 1 ;
+	ship GetByKeyName m14alienD SetVeteran 1 ;
+	ship GetByKeyName m14alienE SetVeteran 1 ;
+	script Spg2\Scripts\M14\CS14EarthE.sal ;
+	log 84 ;
+	ship GetByKeyName m14alienA SetFriendFoe 2 ;
+	ship GetByKeyName m14alienB SetFriendFoe 2 ;
+	ship GetByKeyName m14alienC SetFriendFoe 2 ;
+	ship GetByKeyName m14alienD SetFriendFoe 2 ;
+	ship GetByKeyName m14alienE SetFriendFoe 2 ;
+	ship GetByKeyName m14alienA SetHPRel 200 ;
+	ship GetByKeyName m14alienB SetHPRel 200 ;
+	ship GetByKeyName m14alienC SetHPRel 200 ;
+	ship GetByKeyName m14alienD SetHPRel 200 ;
+	ship GetByKeyName m14alienE SetHPRel 200 ;
+	ship GetByKeyName m14alienA SetAIQuestStatus 2 ;
+	ship GetByKeyName m14alienB SetAIQuestStatus 2 ;
+	ship GetByKeyName m14alienC SetAIQuestStatus 2 ;
+	ship GetByKeyName m14alienD SetAIQuestStatus 2 ;
+	ship GetByKeyName m14alienE SetAIQuestStatus 2 ;
+	game ResetShipEnemyList 1 ;
+	
+	float time = 30.0 ;
+	float direction = -1.0 ;
+	int textLine = 1290 ;
+	int hintLine = 1291 ;
+	game AddTimer m14Timer Spg2\Scripts\M14\AlienTimer.sal Spg2\Scripts\M14\AlienTimer.sal time direction textLine hintLine ;
+	game ShowTimer m14Timer 0 ;
+	
+endif
+End

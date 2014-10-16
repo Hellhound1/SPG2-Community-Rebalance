@@ -1,0 +1,175 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default WorldOnPulse900 script
++triggered every 15 minutes
+-------
++check *.txt file in local folder for details
++chance of triggering a global event
++run ambusher script
+-------
++check *.txt file in local folder for details on global events
+*/
+
+/* run global event */
+int chance1 = 1 ;
+int chance2 = 2 ;
+int chance = 1 ;
+math chance = Rnd chance1 chance2 ;
+PrintMessageVar EventChance: INT chance ;
+
+if chance == 1
+
+	int eventChoice1 = 0 ;
+	int eventChoice2 = 23 ;
+	int event = 0 ;
+	math event = Rnd eventChoice1 eventChoice2 ;
+
+	if event == 0
+		PrintMessage RunEvent:_Commodity_Price_Increased! ;
+		script Spg2\Scripts\Events\Event0.sal ;
+	endif
+	
+	if event == 1
+		PrintMessage RunEvent:_Commodity_Price_Decreased! ;
+		script Spg2\Scripts\Events\Event1.sal ;
+	endif
+	
+	if event == 2
+		PrintMessage RunEvent:_TGate_offline! ;
+		script Spg2\Scripts\Events\Event2.sal ;
+	endif
+	
+	if event == 3
+		PrintMessage RunEvent:_Station_lockdown_900! ;
+		/* separated into 5 scripts due to limit of variables per script */
+		int scriptChoice = 0 ;
+		math scriptChoice = Rnd 1 5 ;
+		if scriptChoice == 1
+			PrintMessage Script:_Event3a! ;
+			script Spg2\Scripts\Events\Event3a.sal ;
+		endif
+		if scriptChoice == 2
+			PrintMessage Script:_Event3b! ;
+			script Spg2\Scripts\Events\Event3b.sal ;
+		endif
+		if scriptChoice == 3
+			PrintMessage Script:_Event3c! ;
+			script Spg2\Scripts\Events\Event3c.sal ;
+		endif
+		if scriptChoice == 4
+			PrintMessage Script:_Event3d! ;
+			script Spg2\Scripts\Events\Event3d.sal ;
+		endif
+		if scriptChoice == 5
+			PrintMessage Script:_Event3e! ;
+			script Spg2\Scripts\Events\Event3e.sal ;
+		endif
+	endif
+	
+	if event == 4
+		PrintMessage RunEvent:_Riftway_shutdown! ;
+		script Spg2\Scripts\Events\Event4.sal ;
+	endif
+	
+	if event == 5
+		PrintMessage RunEvent:_Cease_fire! ;
+		script Spg2\Scripts\Events\Event5.sal ;
+	endif
+	
+	if event == 6
+		PrintMessage RunEvent:_War! ;
+		script Spg2\Scripts\Events\Event6.sal ;
+	endif
+	
+	if event == 7
+		PrintMessage RunEvent:_Planet_quarantine! ;
+		script Spg2\Scripts\Events\Event7.sal ;
+	endif
+	
+	if event == 8
+		PrintMessage RunEvent:_Pirate_activity_increased! ;
+		script Spg2\Scripts\Events\Event8.sal ;
+	endif
+	
+	if event == 9
+		PrintMessage RunEvent:_Pirate_activity_decreased! ;
+		script Spg2\Scripts\Events\Event9.sal ;
+	endif
+	
+	if event == 10
+		PrintMessage RunEvent:_System_price_increased! ;
+		script Spg2\Scripts\Events\Event10.sal ;
+	endif
+	
+	if event == 11
+		PrintMessage RunEvent:_System_price_decreased! ;
+		script Spg2\Scripts\Events\Event11.sal ;
+	endif
+	
+	if event == 12
+		PrintMessage RunEvent:_Company_prices_go_up! ;
+		script Spg2\Scripts\Events\Event12.sal ;
+	endif
+	
+	if event == 13
+		PrintMessage RunEvent:_Company_prices_go_down! ;
+		script Spg2\Scripts\Events\Event13.sal ;
+	endif
+	
+	if event == 14
+		PrintMessage RunEvent:_Embargo! ;
+		script Spg2\Scripts\Events\Event14.sal ;
+	endif
+	
+	if event == 15
+		PrintMessage RunEvent:_Embargo_lifted! ;
+		script Spg2\Scripts\Events\Event15.sal ;
+	endif
+	
+	if event == 16
+		PrintMessage RunEvent:_Ion_storm! ;
+		script Spg2\Scripts\Events\Event16.sal ;
+	endif
+	
+	if event == 17
+		PrintMessage RunEvent:_Anomaly_activity_increased! ;
+		script Spg2\Scripts\Events\Event17.sal ;
+	endif
+	
+	if event == 18
+		PrintMessage RunEvent:_Anomaly_activity_decreased! ;
+		script Spg2\Scripts\Events\Event18.sal ;
+	endif
+	
+	if event == 19
+		PrintMessage RunEvent:_Alien_incursion! ;
+		script Spg2\Scripts\Events\Event19.sal ;
+	endif
+	
+	if event == 20
+		PrintMessage RunEvent:_Miner_activity_increased! ;
+		script Spg2\Scripts\Events\Event20.sal ;
+	endif
+	
+	if event == 21
+		PrintMessage RunEvent:_Miner_activity_decreased! ;
+		script Spg2\Scripts\Events\Event21.sal ;
+	endif
+	
+	if event == 22
+		PrintMessage RunEvent:_Trader_activity_increased! ;
+		script Spg2\Scripts\Events\Event22.sal ;
+	endif
+	
+	if event == 23
+		PrintMessage RunEvent:_Trader_activity_decreased! ;
+		script Spg2\Scripts\Events\Event23.sal ;
+	endif
+
+endif
+
+/* run ambushers script */
+script Spg2\Scripts\AmbushHeadhunters.sal ;
+
+End

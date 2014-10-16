@@ -1,0 +1,68 @@
+/*
+-------
+Script by: LGM Games, 2014  
++triggered when player accepts dropping contraband
++calculates appropriate reputation change depending on Faction type and general alignment
++parent of the script is the ship doing the security scan
+*/
+
+/* get parent faction */
+int facParent = 0 ;
+ship GetParent GetFaction facParent ;
+
+/* RepChange base values */
+int repChange = 0 ;
+int repBaseTer = 5 ;
+int repBaseCom = 0 ;
+int repBaseOut = 5 ;
+
+/* --| TERRITORIAL |-- */
+/* Iolian Pact & Mycaena */
+if facParent < 2
+	math repChange = repBaseTer * -1 ;
+endif
+/* Nyxian consortium */
+if facParent == 2
+	math repChange = repBaseTer * 1 ;
+endif
+/* Traders association <-> Trinity Free States */
+if facParent > 2 && facParent < 8
+	math repChange = repBaseTer * -1 ;
+endif
+/* Directorate & Empire */
+if facParent > 8 && facParent < 10
+	math repChange = repBaseTer * 1 ;
+endif
+/* Baeldor Republic <-> Hub */
+if facParent > 9 && facParent < 17
+	math repChange = repBaseTer * -1 ;
+endif
+/* Triad */
+if facParent == 17
+	math repChange = repBaseTer * 1 ;
+endif
+/* LaGarde Province */
+if facParent == 18
+	math repChange = repBaseTer * -1 ;
+endif
+/* Porphyria */
+if facParent > 52
+	math repChange = repBaseTer * -1 ;
+endif
+
+/* --| COMPANY |-- */
+if facParent > 18 && facParent < 37
+	math repChange = repBaseCom * -1 ;
+endif
+
+/* --| OUTLAW |-- */
+if facParent > 36 && facParent < 53
+	math repChange = repBaseOut * 1 ;
+endif
+
+/* FINAL CALCULATION */
+int repAdd = 0 ;
+math repAdd = repChange * 1 ;
+player AddReputation repAdd ;
+
+End

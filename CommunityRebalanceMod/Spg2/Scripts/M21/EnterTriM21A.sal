@@ -1,0 +1,26 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 140 GetAcquire questCond ;
+if questCond == 1
+	
+	game SetQuestMode 1 ;
+	
+	mainquest GetById 140 SetSolve 1 ;
+	mainquest GetById 140 DeleteObjective 1 ;
+	mainquest GetById 141 SetAcquire 1 ;
+	waypoint GetByKeyName m21marker SetMark 0 ;
+	waypoint GetByKeyName m21marker SetMissionTask -1 ;
+	ship GetByKeyName m21ridleyA SetEnabled 1 ;
+	ship GetByKeyName m21ridleyA SetFriendFoe 1 ;
+	ship GetByKeyName m21ridleyA SetAIQuestStatus 1 ;
+	game ResetShipEnemyList 1 ;
+	
+	game SetControlEnabled 0 ;
+	dialogue Spg2\Dialogues\M21\D01.dia ;
+endif
+End

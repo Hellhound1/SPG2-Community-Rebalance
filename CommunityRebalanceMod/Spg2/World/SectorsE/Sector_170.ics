@@ -1,0 +1,95 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky10.amb
+}	
+Spaceship:	
+{	
+	ModelId:	13
+	Position:	67953.15	0.00	57747.49
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	4
+	Skills:	2
+	Level:	21
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m14mercura1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	14
+	Position:	67619.09	0.00	57750.73
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	5
+	Skills:	0
+	Level:	22
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m14mercura2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	1
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	11
+	Position:	67784.13	-362.91	57764.19
+	Rotation:	-2.11	-2.13	0.00
+	KeyName:	m14container1
+	Name:	Container
+	NameId:	-1
+	CargoValue:	1000
+	LootDrop:	0
+	Enable:	0
+	Events:	
+	{	
+		OnSalvage:	Spg2\Scripts\M14\SalvageContainer1.sal
+		OnDestroy:	Spg2\Scripts\M14\DestroyContainer1.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	67784.13	-362.91	57764.19
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m14EarthContainer1
+	Type:	1
+	Radius:	314.00
+	PulseTime:	0.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M14\EnterTriM14EarthCont1.sal
+}	
+}	
+Events:	
+{	
+	OnEnter:	Spg2\Scripts\SectorsE\EnterSector170.sal
+	OnLoad:	Spg2\Scripts\SectorsE\LoadSector170.sal
+}	

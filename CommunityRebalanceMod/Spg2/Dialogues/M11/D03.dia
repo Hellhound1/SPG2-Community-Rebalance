@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	21
+	Text:	101
+	Voice:	Spg2\Sound\Voice\samoa\101.wav
+	Duration:	5.030
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M11\EndDia03.sal
+}

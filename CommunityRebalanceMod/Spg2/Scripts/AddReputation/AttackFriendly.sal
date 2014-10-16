@@ -1,0 +1,89 @@
+/*
+-------
+Script by: LGM Games, 2014  
++triggered when player attacks a friendly vessel
++factors are parent faction and ship class
++parent of the script is the attacked ship
+*/
+
+/* get parent faction */
+int facParent = 0 ;
+ship GetParent GetFaction facParent ;
+
+/* repChange factor depends on ship class */
+int shipClass = 0 ;
+ship GetParent GetClass shipClass ;
+
+if shipClass == 1 
+	shipClass = 5 ;
+endif
+if shipClass == 2
+	shipClass = 9 ;
+endif
+
+/* RepChange base values */
+int repChange = 0 ;
+int repBaseTer = 3 ;
+int repBaseCom = 3 ;
+int repBaseOut = 3 ;
+
+/* --| TERRITORIAL |-- */
+/* Iolian Pact & Mycaena */
+if facParent < 2
+	math repChange = repBaseTer * -1 ;
+	math shipClass = shipClass * -1 ;
+endif
+/* Nyxian consortium */
+if facParent == 2
+	math repChange = repBaseTer * 1 ;
+	math shipClass = shipClass * 1 ;
+endif
+/* Traders association <-> Trinity Free States */
+if facParent > 2 && facParent < 8
+	math repChange = repBaseTer * -1 ;
+	math shipClass = shipClass * -1 ;
+endif
+/* Directorate & Empire */
+if facParent > 8 && facParent < 10
+	math repChange = repBaseTer * 1 ;
+	math shipClass = shipClass * 1 ;
+endif
+/* Baeldor Republic <-> Hub */
+if facParent > 9 && facParent < 17
+	math repChange = repBaseTer * -1 ;
+	math shipClass = shipClass * -1 ;
+endif
+/* Triad */
+if facParent == 17
+	math repChange = repBaseTer * 1 ;
+	math shipClass = shipClass * 1 ;
+endif
+/* LaGarde Province */
+if facParent == 18
+	math repChange = repBaseTer * -1 ;
+	math shipClass = shipClass * -1 ;
+endif
+/* Porphyria */
+if facParent > 52
+	math repChange = repBaseTer * -1 ;
+	math shipClass = shipClass * -1 ;
+endif
+
+/* --| COMPANY |-- */
+if facParent > 18 && facParent < 37
+	math repChange = repBaseCom * -1 ;
+	math shipClass = shipClass * -1 ;
+endif
+
+/* --| OUTLAW |-- */
+if facParent > 36 && facParent < 53
+	math repChange = repBaseOut * 1 ;
+	math shipClass = shipClass * 1 ;
+endif
+
+/* FINAL CALCULATION */
+int repAdd = 0 ;
+math repAdd = repChange + shipClass ;
+player AddReputation repAdd ;
+
+End

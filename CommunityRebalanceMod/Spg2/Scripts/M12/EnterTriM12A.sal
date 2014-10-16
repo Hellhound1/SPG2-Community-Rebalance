@@ -1,0 +1,29 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 77 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 77 SetSolve 1 ;
+	mainquest GetById 77 DeleteObjective 1 ;
+	mainquest GetById 78 SetAcquire 1 ;
+	
+	game SetQuestMode 1 ;
+	
+	/* iskoristiti m12aTRI kao MissionArea */
+	log 68 ;
+	waypoint GetByKeyName m12marker SetMark 0 ;
+	waypoint GetByKeyName m12marker SetMissionTask -1 ;
+	
+	structure GetByKeyName leviathanSTR SetMark 1 ;
+	structure GetByKeyName leviathanSTR SetMissionTask 12 ;
+	
+	game SetControlEnabled 0 ;
+	
+	script Spg2\Scripts\M12\CS12A.sal ;
+	
+endif
+End

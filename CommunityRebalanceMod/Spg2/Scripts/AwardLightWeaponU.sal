@@ -1,0 +1,72 @@
+/*
+-------
+Script by: LGM Games  
++ship system award script
+-------
++randomize ship system Id and award one to player
++push notification
+*/
+
+/* randomly choose between light weapons MKI */
+
+int typeId = 0 ; /* 0 = light weapons | 1 = heavy weapons | 2 = fighter wing */
+int itemId = 0 ; /* randomized, only UNIQUE light weapons */
+int count = 1 ; /* only 1 piece is rewarded */
+
+int choice = 1 ;
+math choice = Rnd 1 18 ;
+if choice == 1
+	itemId = 19 ;
+endif
+if choice == 2
+	itemId = 20 ;
+endif
+if choice == 3
+	itemId = 21 ;
+endif
+if choice == 4
+	itemId = 22 ;
+endif
+if choice == 5
+	itemId = 23 ;
+endif
+if choice == 6
+	itemId = 42 ;
+endif
+if choice == 7
+	itemId = 43 ;
+endif
+if choice == 8
+	itemId = 44 ;
+endif
+if choice == 9
+	itemId = 45 ;
+endif
+if choice == 10
+	itemId = 46 ;
+endif
+if choice == 11
+	itemId = 65 ;
+endif
+if choice == 12
+	itemId = 66 ;
+endif
+if choice == 13
+	itemId = 67 ;
+endif
+if choice == 14
+	itemId = 68 ;
+endif
+if choice == 15
+	itemId = 69 ;
+endif
+
+player AddShipSystemCount typeId itemId count ;
+
+/* NOTIFICATION */
+int titleId = 598 ;
+int textId1 = 32 ;
+int textId2 = -1 ;
+screen ShowWarnings titleId textId1 textId2 ;
+
+End

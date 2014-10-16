@@ -1,0 +1,14 @@
+Colum:	23																					
+Id	Name	Class	PicLarge	X1	Y1	X2	Y2	PicSmall	X1	Y1	X2	Y2	DescriptLine	IconSmallFile	IconX	IconY	IconW	IconH	Duration	Cooldown	Script	Sound
+0	Tactics	0	Spg2\Textures\GUI\Skills.dds	2	195	2	235	Spg2\Icons\skillsIcons.dds	0	70	0	70	351	Spg2\Icons\PrimarySysSmallIcons_small.dds	0	39	0	39	3	120	Spg2\SpecialEffect\Skills\Tactics\activation.sal	target_change
+1	Retaliate	0	Spg2\Textures\GUI\Skills.dds	199	392	2	235	Spg2\Icons\skillsIcons.dds	70	140	0	70	352	Spg2\Icons\PrimarySysSmallIcons_small.dds	48	87	0	39	4	120	Spg2\SpecialEffect\Skills\Retaliate\activation.sal	target_change
+2	Defender	0	Spg2\Textures\GUI\Skills.dds	396	589	2	235	Spg2\Icons\skillsIcons.dds	140	210	0	70	353	Spg2\Icons\PrimarySysSmallIcons_small.dds	96	135	0	39	5	120	Spg2\SpecialEffect\Skills\Defender\activation.sal	target_change
+3	Piloting	0	Spg2\Textures\GUI\Skills.dds	593	786	2	235	Spg2\Icons\skillsIcons.dds	210	280	0	70	354	Spg2\Icons\PrimarySysSmallIcons_small.dds	144	183	0	39	3	120	Spg2\SpecialEffect\Skills\Piloting\activation.sal	target_change
+4	Hack	1	Spg2\Textures\GUI\Skills.dds	2	195	239	472	Spg2\Icons\skillsIcons.dds	280	350	0	70	355	Spg2\Icons\PrimarySysSmallIcons_small.dds	192	231	0	39	3	120	Spg2\SpecialEffect\Skills\Hack\activation.sal	target_change
+5	Rift	1	Spg2\Textures\GUI\Skills.dds	199	392	239	472	Spg2\Icons\skillsIcons.dds	350	420	0	70	356	Spg2\Icons\PrimarySysSmallIcons_small.dds	240	279	0	39	5	120	Spg2\SpecialEffect\Skills\Rift\activation.sal	target_change
+6	Energize	1	Spg2\Textures\GUI\Skills.dds	396	589	239	472	Spg2\Icons\skillsIcons.dds	420	490	0	70	357	Spg2\Icons\PrimarySysSmallIcons_small.dds	288	327	0	39	6	120	Spg2\SpecialEffect\Skills\Energize\activation.sal	target_change
+7	Enforce	1	Spg2\Textures\GUI\Skills.dds	593	786	239	472	Spg2\Icons\skillsIcons.dds	0	70	70	140	358	Spg2\Icons\PrimarySysSmallIcons_small.dds	336	375	0	39	4	120	Spg2\SpecialEffect\Skills\Enforce\activation.sal	target_change
+8	Plasma_booster	2	Spg2\Textures\GUI\Skills.dds	2	195	476	709	Spg2\Icons\skillsIcons.dds	70	140	70	140	359	Spg2\Icons\PrimarySysSmallIcons_small.dds	336	375	0	39	4	120	Spg2\SpecialEffect\Skills\PlasmaBooster\activation.sal	target_change
+9	Beam_manipulation	2	Spg2\Textures\GUI\Skills.dds	199	392	476	709	Spg2\Icons\skillsIcons.dds	140	210	70	140	360	Spg2\Icons\PrimarySysSmallIcons_small.dds	336	375	0	39	4	120	Spg2\SpecialEffect\Skills\BeamManipulation\activation.sal	target_change
+10	Railgunner	2	Spg2\Textures\GUI\Skills.dds	396	589	476	709	Spg2\Icons\skillsIcons.dds	210	280	70	140	361	Spg2\Icons\PrimarySysSmallIcons_small.dds	336	375	0	39	4	120	Spg2\SpecialEffect\Skills\Railgunner\activation.sal	target_change
+11	Heavy_hitter	2	Spg2\Textures\GUI\Skills.dds	593	786	476	709	Spg2\Icons\skillsIcons.dds	280	350	70	140	362	Spg2\Icons\PrimarySysSmallIcons_small.dds	336	375	0	39	4	120	Spg2\SpecialEffect\Skills\HeavyHitter\activation.sal	target_change

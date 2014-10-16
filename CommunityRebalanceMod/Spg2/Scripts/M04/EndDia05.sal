@@ -1,0 +1,40 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M04_COMPLETED ;
+
+game SetControlEnabled 1 ;
+PrintMessage Mission_04_End! ;
+mainquest GetById 28 SetSolve 1 ;
+/* mainquest GetById 28 DeleteObjective 1 ; */
+mainquest GetById 29 SetAvailable 1 ;
+ship GetByKeyName m04sionBSHP SetEnabled 0 ;
+ship GetByKeyName m04convoy1 SetEnabled 0 ;
+ship GetByKeyName m04convoy2 SetEnabled 0 ;
+
+/* add quest item */
+int itemId = 6 ;
+int amount = 1 ;
+player AddQuestItemCount itemId amount ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 1700 ;
+player AddReputation 100 ;
+player AddCredits 100000 ;
+script Spg2\Scripts\AwardHeavyWeapon.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+mainmissionpanel 26 ;
+
+End

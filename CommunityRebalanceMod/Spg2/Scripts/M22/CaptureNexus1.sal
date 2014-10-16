@@ -1,0 +1,53 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+
+mainquest GetById 151 GetAcquire questCond ;
+if questCond == 1
+
+	ship GetByKeyName m22nexusA1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m22nexusA1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m22nexusA2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m22nexusA2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m22nexusA3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m22nexusA3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				
+				game SetQuestMode 0 ;
+				
+				mainquest GetById 151 SetSolve 1 ;
+				mainquest GetById 151 DeleteObjective 1 ;
+				mainquest GetById 152 SetAcquire 1 ;
+				log 119 ;
+				/* reuse m18marker as waypoint */
+				waypoint GetByKeyName m18marker SetMark 1 ;
+				waypoint GetByKeyName m18marker SetMissionTask 4 ;
+				script Spg2\Scripts\M22\CS22B.sal ;
+				
+			endif
+		endif
+	endif
+
+endif
+
+End

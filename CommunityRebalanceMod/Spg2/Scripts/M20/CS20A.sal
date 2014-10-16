@@ -1,0 +1,67 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posClearmont ;
+float3 posAdd = 400.0 50.0 0.0 ;
+float3 posPlayer ;
+station GetByKeyName clearmontSTA GetPosition posClearmont ;
+math posPlayer = posClearmont + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetPlayer VectorTo posClearmont ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> player */
+int objectType = 5 ;
+float rotStart = 0.0 ;
+float rotSpeed = 0.08 ;
+float vertStart = 0.4 ;
+float vertOffset = 6.0 ;
+float vertSpeed = 0.04 ;
+float camDistance = 500.0 ;
+camera SetType 5 objectType clearmontSTA rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+dialogue Spg2\Dialogues\M20\D02.dia ;
+
+pause 8.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+ship GetPlayer SetInvulnerable 0 ;
+platform GetByKeyName clearmontPlatform SetDestructible 1 ;
+
+game SetControlEnabled 1 ;
+
+End

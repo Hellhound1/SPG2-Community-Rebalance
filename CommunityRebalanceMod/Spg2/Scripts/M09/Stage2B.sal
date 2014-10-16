@@ -1,0 +1,5 @@
+
+waypoint GetByKeyName m09markerSatB SetMark 1 ;
+waypoint GetByKeyName m09markerSatB SetMissionTask 4 ;
+
+End

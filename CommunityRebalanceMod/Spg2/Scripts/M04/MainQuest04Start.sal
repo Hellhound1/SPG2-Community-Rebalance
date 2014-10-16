@@ -1,0 +1,39 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage Mission_04_Started! ;
+int questcond ;
+mainquest GetById 21 GetAcquire questcond ;
+if questcond == 0
+	mainquest GetById 20 DeleteObjective 1 ;
+	log 19 ;
+	mainquest GetById 21 SetAcquire 1 ;
+endif
+
+waypoint GetByKeyName m04marker SetMark 1 ;
+waypoint GetByKeyName m04marker SetMissionTask 4 ;
+
+/* check if player already inside first mission trigger */
+float triggerSize = 1000.0 ;
+float3 triggerPos = 0.0 0.0 0.0 ;
+float3 playerPos = 0.0 0.0 0.0 ;
+float distance = 0.0 ;
+trigger GetByKeyName m04aTRI GetRadius triggerSize ;
+ship GetPlayer GetPosition playerPos ;
+trigger GetByKeyName m04aTRI GetPosition triggerPos ;
+math distance = Distance triggerPos playerPos ;
+
+/* check if docked */
+int stationCheck = 0 ;
+int returnValueSlot = 0 ;
+scriptvar GetValue int returnValueSlot stationCheck ;
+
+if distance <= triggerSize && stationCheck == 0
+	game HideStarchart 1 ;
+	script Spg2\Scripts\M04\EnterTriM04A.sal ;
+endif
+
+End

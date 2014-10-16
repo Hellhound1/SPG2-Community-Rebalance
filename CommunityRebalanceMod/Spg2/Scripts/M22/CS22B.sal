@@ -1,0 +1,88 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+float3 posPlayer ;
+float3 posRidley ;
+float3 posAdd ;
+float3 posWp ;
+waypoint GetByKeyName m22marker GetPosition posWp ;
+posAdd = 0.0 0.0 40.0 ;
+math posRidley = posWp + posAdd ;
+posAdd = 40.0 0.0 0.0 ;
+math posPlayer = posRidley + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m22ridleyA SetPosition posRidley ;
+ship GetPlayer VectorTo posWp ;
+ship GetByKeyName m22ridleyA VectorTo posWp ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> ridley */
+int objectType = 1 ;
+float rotationStart = 2.4 ;
+float rotationSpeed = 0.08 ;
+float verticalStart = 2.4 ;
+float verticalOffset = 12.0 ;
+float verticalSpeed = 0.06 ;
+float cameraDistance = 30.0 ;
+camera SetType 5 objectType m22ridleyA rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ;
+/* camera zoom */
+time = 8.1 ; 
+float zoomAmount = 100.0 ; 
+camera SetZoom 0 time zoomAmount ;
+
+dialogue Spg2\Dialogues\M22\D02.dia ;
+
+pause 8.0 ;
+
+/* <CAMERA 2> */
+/* target player -> ridley */
+objectType = 0 ;
+float verticalStartA = 5.0 ;
+int focusObjType = 1 ;
+float verticalStartB = 0.0 ;
+cameraDistance = 150.0 ;
+camera SetType 6 objectType NONE verticalStartA focusObjType m22ridleyA verticalStartB cameraDistance ; 
+
+/* ridley T-Drive */
+
+pause 5.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+ship GetByKeyName m22ridleyA SetEnabled 0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+game SetControlEnabled 1 ;
+
+End

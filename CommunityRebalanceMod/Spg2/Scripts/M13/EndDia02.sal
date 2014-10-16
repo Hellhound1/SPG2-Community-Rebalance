@@ -1,0 +1,22 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 82 SetSolve 1 ;
+mainquest GetById 82 DeleteObjective 1 ;
+mainquest GetById 83 SetAcquire 1 ;
+game SetControlEnabled 1 ;
+log 72 ;
+ship GetPlayer SetInvulnerable 0 ;
+ship GetByKeyName m13imp1 SetMark 1 ;
+ship GetByKeyName m13imp2 SetMark 1 ;
+ship GetByKeyName m13imp1 SetMissionTask 0 ;
+ship GetByKeyName m13imp2 SetMissionTask 0 ;
+ship GetByKeyName m13imp1 SetFriendFoe 2 ;
+ship GetByKeyName m13imp2 SetFriendFoe 2 ;
+ship GetByKeyName m13imp1 SetAIQuestStatus 2 ;
+ship GetByKeyName m13imp2 SetAIQuestStatus 2 ;
+game ResetShipEnemyList 1 ;
+End

@@ -1,0 +1,31 @@
+/*
+-------
+Script by: LGM Games  
++complete blueprint award script
+-------
++randomize complete blueprintId and add one to player
++push notification
+*/
+
+int itemId = 0 ;
+int itemCount = 0 ;
+int modulo = 0 ;
+
+
+math itemId = Rnd 63 147 ;
+math modulo = itemId mod 2 ;
+if modulo == 1
+	math itemId ++ ;
+endif
+
+player GetQuestItemCount itemId itemCount ;
+math itemCount ++ ;
+player SetQuestItemCount itemId itemCount ;
+
+/* NOTIFICATION */
+int sthAssembled = 1 ;
+int titleId = 1275 ;
+int textId = 1276 ;
+screen ShowWarningsEx 18 titleId textId sthAssembled ;
+
+End

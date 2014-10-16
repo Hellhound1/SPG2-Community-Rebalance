@@ -1,0 +1,77 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: Planetary quarantine
+-------
++randomize Planet, eventDur
++addLog + addNews
+*/
+
+/* trigger event */
+int eventId = 7 ;
+int placeType = 3 ;
+int placeId = -1 ;
+float eventDur = 60.0 ;
+int modObj = 0 ;
+float modVal = 0.0 ;
+math eventDur = Rnd 600.0 1200.0 ;
+int titleLine = 1021 ;
+int textLine = 886 ;
+math textLine = Rnd 886 889 ;
+
+int result = 1 ;
+math result = Rnd 1 13 ;
+if result == 1
+	globalevent Set eventId placeType placeId ioliaPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId ioliaPLA modObj modVal titleLine textLine ;
+endif
+if result == 2
+	globalevent Set eventId placeType placeId nyxPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId nyxPLA modObj modVal titleLine textLine ;
+endif
+if result == 3
+	globalevent Set eventId placeType placeId soraPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId soraPLA modObj modVal titleLine textLine ;
+endif
+if result == 4
+	globalevent Set eventId placeType placeId eanakaiPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId eanakaiPLA modObj modVal titleLine textLine ;
+endif
+if result == 5
+	globalevent Set eventId placeType placeId trinityPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId trinityPLA modObj modVal titleLine textLine ;
+endif
+if result == 6
+	globalevent Set eventId placeType placeId carthagenaPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId carthagenaPLA modObj modVal titleLine textLine ;
+endif
+if result == 7
+	globalevent Set eventId placeType placeId corrionPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId corrionPLA modObj modVal titleLine textLine ;
+endif
+if result == 8
+	globalevent Set eventId placeType placeId baeldorPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId baeldorPLA modObj modVal titleLine textLine ;
+endif
+if result == 9
+	globalevent Set eventId placeType placeId pyrosPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId pyrosPLA modObj modVal titleLine textLine ;
+endif
+if result == 10
+	globalevent Set eventId placeType placeId hogoshaPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId hogoshaPLA modObj modVal titleLine textLine ;
+endif
+if result == 11
+	globalevent Set eventId placeType placeId korkyraPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId korkyraPLA modObj modVal titleLine textLine ;
+endif
+if result == 12
+	globalevent Set eventId placeType placeId thauriaPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId thauriaPLA modObj modVal titleLine textLine ;
+endif
+if result == 13
+	globalevent Set eventId placeType placeId fairuzPLA eventDur modObj modVal titleLine textLine ;
+	globalevent AddLog eventId placeType placeId fairuzPLA modObj modVal titleLine textLine ;
+endif
+
+End

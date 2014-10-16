@@ -1,0 +1,24 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 32 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 32 SetSolve 1 ;
+	mainquest GetById 32 DeleteObjective 1 ;
+	mainquest GetById 33 SetAcquire 1 ;
+	log 30 ;
+	
+	int aiState = 1 ;
+	ship GetByKeyName m05galahadSHP SetAIStatus aiState ;
+	ship GetByKeyName m05galahadSHP SetBoardable 1 ;
+	ship GetByKeyName m05galahadSHP SetInvulnerable 1 ;
+	ship GetByKeyName m05galahadSHP SetMissionTask 2 ;
+	
+	ship GetByKeyName enemyship1 SetEnabled 0 ;
+	ship GetByKeyName enemyship2 SetEnabled 0 ;
+endif
+End

@@ -1,0 +1,22 @@
+PrintMessage ENTERED_EARTH_CONT_1 ;
+int questCond = 0 ;
+mainquest GetById 94 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage CONTAINER_1_CHECK_PASS ;
+	game SetQuestMode 1 ;
+	derelict GetByKeyName m14container1 SetEnabled 1 ;
+	waypoint GetByKeyName m14EarthMarker3 SetMark 0 ;
+	waypoint GetByKeyName m14EarthMarker3 SetMissionTask -1 ;
+	derelict GetByKeyName m14container1 SetMark 1 ;
+	derelict GetByKeyName m14container1 SetMissionTask 7 ;
+	derelict GetByKeyName m14container1 SetDestructible 1 ;
+	ship GetByKeyName m14mercura1 SetEnabled 1 ;
+	ship GetByKeyName m14mercura2 SetEnabled 1 ;
+	ship GetByKeyName m14mercura1 SetFriendFoe 2 ;
+	ship GetByKeyName m14mercura2 SetFriendFoe 2 ;
+	ship GetByKeyName m14mercura1 SetAIQuestStatus 2 ;
+	ship GetByKeyName m14mercura2 SetAIQuestStatus 2 ;
+	game ResetShipEnemyList 1 ;
+endif
+
+End

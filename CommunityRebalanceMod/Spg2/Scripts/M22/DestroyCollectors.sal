@@ -1,0 +1,97 @@
+/*
+-------
+Script by: LGM Games, 2013  
++default object detonation script
+*/
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posShip = 0.0 0.0 0.0 ;
+
+platform GetParent GetPosition posShip ;
+platform GetParent GetRadius shipSize ;
+
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipSize ;
+math posCamera = e_posCC * 0.6 ;
+float3 position ;
+math position = posShip + posCamera ;
+
+/* explosion flash */
+int flashId = 217 ;
+float delay = 0.0 ;
+float lifetime = 1.0 ;
+assembly delay position flashId lifetime ;
+
+/* explosion fog */
+int fogId = 218 ;
+float lifeFog = 5.0 ;
+assembly delay position fogId lifeFog ;
+
+/* sound */
+sound3d expl_big5 position ;
+
+/* ship delete */
+float delDelay = 0.5 ;
+platform GetParent Delete delDelay ;
+
+/* Log output */
+PrintMessage PLATFORM_DESTROYED! ;
+
+int questCond = 0 ;
+mainquest GetById 154 GetAcquire questCond ;
+if questCond == 1
+
+	int cond1 = 2 ;
+	int cond2 = 2 ;
+	int cond3 = 2 ;
+	int cond4 = 2 ;
+	int cond5 = 2 ;
+	int count = 0 ;
+	platform GetByKeyName collector1 GetCondition cond1 ;
+	platform GetByKeyName collector2 GetCondition cond2 ;
+	platform GetByKeyName collector3 GetCondition cond3 ;
+	platform GetByKeyName collector4 GetCondition cond4 ;
+	platform GetByKeyName collector5 GetCondition cond5 ;
+	
+	if cond1 != 0
+		math count ++ ;
+	endif
+	if cond2 != 0
+		math count ++ ;
+	endif
+	if cond3 != 0
+		math count ++ ;
+	endif
+	if cond4 != 0
+		math count ++ ;
+	endif
+	if cond5 != 0
+		math count ++ ;
+	endif
+	
+	/* on 1 conduit destroyed */
+	if count == 1
+		dialogue Spg2\Dialogues\M22\D04.dia ;
+	endif
+	
+	/* on 4 conduits destroyed */
+	if count == 4
+		dialogue Spg2\Dialogues\M22\D05.dia ;
+	endif
+	
+	/* on all conduits destroyed */
+	if count == 5
+		mainquest GetById 154 SetSolve 1 ;
+		mainquest GetById 154 DeleteObjective 1 ;
+		mainquest GetById 155 SetAcquire 1 ;
+		platform GetByKeyName m22mothership SetMark 1 ;
+		platform GetByKeyName m22mothership SetMissionTask 0 ;
+		platform GetByKeyName m22mothership SetDestructible 1 ;
+		log 121 ;
+		script Spg2\Scripts\M22\CS22F.sal ;
+	endif
+	
+endif
+End

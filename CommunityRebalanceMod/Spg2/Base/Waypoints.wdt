@@ -1,0 +1,6 @@
+Colum:	5			
+Id	Name	Red	Green	Blue
+0	Main_quest	255	234	0
+1	Side_quest	90	255	0
+2	Random_quest	0	222	255
+3	Position_marker	186	0	255

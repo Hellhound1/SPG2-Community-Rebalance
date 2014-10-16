@@ -1,0 +1,33 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M10_COMPLETED ;
+
+mainquest GetById 69 SetSolve 1 ;
+/* mainquest GetById 69 DeleteObjective 1 ; */
+mainquest GetById 70 SetAvailable 1 ;
+log 62 ;
+ship GetByKeyName m10ridleySHP SetEnabled 0 ;
+ship GetByKeyName m10hub SetEnabled 0 ;
+
+mainmissionpanel 63 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 13700 ;
+player AddReputation 100 ;
+player AddCredits 220000 ;
+script Spg2\Scripts\BlueprintAward.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

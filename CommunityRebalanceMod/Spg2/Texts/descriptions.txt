@@ -1,0 +1,883 @@
+Finish the storyline
+Gather all artefacts
+Destroy 100 asteroids by colliding with them
+Explode in a collision with an asteroid
+Operate a massive carrier
+Control 2 mercenary ships and 3 fighter squadrons at the same time
+Take 5 times the amount of your hull integrity in damage during a single battle
+Destroy an enemy with a turret while facing away from it
+Win a battle with less than 5% hull points remaining
+Destroy an enemy without locking on it
+Destroy an enemy using only missiles
+Destroy an enemy after your ship is destroyed
+Destroy an enemy while he's charging Power to Engines
+Launch at least 20 missiles in a single battle
+Destroy 3 ships within an interval of 15 seconds
+Destroy an enemy with full shields and hull in less than 3 seconds
+Destroy an enemy that destroyed one of your wingmen wihin a 5 second interval
+Win a battle against 3 or more enemies without attacking them
+Destroy a cloaked enemy
+Save an ally with 10% or less health by destroying his attacker
+Destroy an enemy by colliding with them
+Exceed the maximum engine speed by utilizing energy transfer, Power to engines and Speed Booster
+Destroy an enemy using only one turret
+Kill all heroes
+Collide with a planet
+Provoke 10 friendly ships to attack you
+Destroy 100 ships
+Deal 500000 damage points with beam weapons
+Deal 500000 damage points with railguns
+Deal 500000 damage points with plasma cannons
+Mine 500 asteroids
+Read all tutorials
+Do 20 successful smuggling runs on a planet
+Undetected for 5 minutes
+Accumulate 10 million Credits
+Purchase 15 different ships
+Explore the entire Gemini system
+Travel via Power to Engines for at least 5 minutes
+Visit all Gemini planets
+Enhance all ship systems
+Pass through a wormhole
+Destroy 15 veterans
+Destroy a station
+Sabotage a riftway
+Capture a ship
+Deal 50 critical hits
+Use T-Drive
+Solve 20 freelance missions
+Destroy a freightliner
+Loot a derelict
+Self-Extracting Turret Holder is an automated weapons platform used for fortifying your position.
+One-time high energy pulse made to bring down any missile, torpedo or fighter craft.
+Extreme blast radius, devastating force... Leave Orpheus behind and watch the world end.
+Disrupts the ship's engines and shuts down its Power to engines mode.
+From the get-go this guy went on your nerves, but money is scarce and you can't really afford to be picky.
+To use the VIP's words: "I'm not crazy... My mother had me tested." ... Don't trust him though. The tests were inconclusive.
+This person's voice can only be described as shrieking of a wailing banshee on a combination of Riftdust and Hogwash or in one word... delightful.
+Agent Pinkerton needs to get to his destination fast! Go! Go! Go!
+Lil' miss Twin Sunshine would like you to take her to the pageant. You might as well, since you'll get paid.
+Roses are red, Credits are green, the passenger mustn't drop dead so don't be an arsehole.
+I got nothing on this one. She actually seems like a nice person. Treat her with respect and don't vent her out the space toilet please.
+Awwwww... what a nice chap this guy is. Only... he REALLY likes to talk... for AAAAAGES!
+A politically incorrect person with the attitude of a very stubborn ass. Jolly good fun to be around too.
+If he asks "what does that button do" one more time, strangle him.
+The Draft Funk trio are running away from their groupies. Help them or let the horde loose? Ah the decisions I have to make...
+Time to drag some more cargo from point A to point B, huh? Well, as long as the pay is good, who cares, right?
+Ooooooooh CandySaga juicy mint candies. They crush in your mouth.
+Time to kick arse and chew bubblegum... and if this cargo is any indication, you'll have a LOT of gum.
+Special delivery! A one-time offer! A myriad of potions and lotions to ease any pain.
+Enlargement pills. Hmmm... guess I finally found out where they're sending those out from...
+Gemizon order delivery. Someone will be a happy little camper when they get their package.
+Order number 0851-9276 ready for delivery. What is it? Who cares as long as you get paid. Besides, the large "explosive" sign on the box is not your concern.
+The entire discography of Deathblunt enchanted heavy metal band! Waaaaaaaagh!
+Breakable you say? I guess it's completely ok to let the container bounce around the cargo hold.
+I'm almost positive I heard a faint voice originating from one of the crates, but it must be my imagination. I mean, who in their right mind would transport people in crates...
+A strange structure of unknown origin. There is some kind of an artefact at the center of the structure that can perhaps be retrieved.
+This strange item was retrieved from one of those strange structures appearing all over Gemini. Their origin, composition and purpose are yet unknown, but I'll gather them all and when the time is right, sell them for a nice profit. I can always count on art collectors to be interested. What little information my science officer could provide suggests there are 50 of these in existence.
+Problem in the propulsion system prevents us from reaching our maximum speed.
+Serious malfunction detected in the power core! Energy is wasted.
+Defect detected in the sensor grid! Repair crews are eliminating the glitch.
+Explosive decompression in crew quarters! Crew members reported missing.
+Officer has suffered an injury and will be in the infirmary for the time being.
+T-Drive malfunction! Jump exit coordinates do not match target.
+Power drop in weapon battery detected! Engineers dispatched.
+Strong radiation can cause damage directly to ship's Hull!
+EM discharges can severely damage shields and disable ship systems!
+Ion storm discharges can do massive damage to passing ships!
+This needs to be delivered to my father's ship, the Avalon.
+Second part of my father's research data hidden on the Teregud.
+First part of my father's research data hidden on the Avalon.
+Third part of my father's research data hidden on the Raffale.
+This must be delivered to the captain of the Yukon.
+Fourth part of my father's research data hidden on the Yukon.
+Fifth part of my father's research data hidden on the Sion.
+Final part of my father's research hidden on the Galahad.
+These papers grant entry into Nexus Perimeter.
+Redemption's flight plan reveals his mission course.
+Dr. Ridley's report on station extraction experiment.
+Complete Imperial defenses plan at Starpoint.
+Imperial security node from the wreck of the Leviathan.
+Deliver this virus into Holocom relay network grid to tap into all in-system communications.
+Deliver this item to Earth resistance.
+Deliver this item to Earth resistance.
+Deliver this item to Earth resistance.
+Contains decipher protocols that can safely decrypt all of your father's data cores.
+This modified shield design is necessary to have a better chance of surviving inside Aethera.
+Kepler station data recordings for the past months and even years.
+Mission report detailing the entire Aethera mission.
+It goes boom.
+Industrial power cores intended for planet Pyros.
+Radiation amplitude separator wanted by Hub scientists.
+Full construction blueprints of the Gilgamesh station in last Ditch.
+Advanced HeraCorp weapons blueprints and engineering schematics.
+State-of-the-art cyborg prototype intended for Advanced Arms Inc. headquarters.
+A very valuable piece of equipment wanted by the Union.
+Embark_on_the_greatest_adventure_ever_told!_Your_own!_No_more_will_some_strange_NPCs_give_you_quests_you_cannot_decline._Just_remember:_green_is_good,_red_is_baaaad!
+Visit a station or planet to pay for the manufacturing of this item. The item will appear in the appropriate list, available for purchase.
+A good question now would be why on Carthagena would an ambassador be travelling with you and not on official vessels, but hey... the Credits come in handy, so... who gives a...
+Don't touch him! He's super-important!
+Guess you can always use the Red blob of jettisoning if he tries to sell you those frying pans you "simply must have".
+A woman, doing business. If that laser gun is of any indication, you probably don't want to get on her bad side.
+A man, doing business. What kind of business is none of your business. Just get him to where he wants to go.
+He's probably going to try to sell you something. If so, kill him.
+Yaaay! A diplomat travelling "under the radar". And on YOUR ship! You've either done something to be noticed for, or he's into you for other reasons...
+Standard cargo. Nothing you've never seen before.
+Some non-standard trophies like skulls of endangered species and some such. It's better you don't look any further.
+The containers look like they contain nothing but office supplies, but come on... it can't be just that...
+Whoever is sending these, obviously has no problem with showing people what he's into... and there are some strange things here...
+A committee had a meeting. They've talked... A LOT... and someone wrote it down. After taking a peek at the final page, it is obvious they didn't really decide anything.
+Closed and sealed-up with anti-sensor jammers. The perfect kind of cargo is the one with zero liability.
+Weapon range
+Rate of fire
+Shield damage
+Hull damage
+This is a piece of a propulsion enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a hangar enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a grappler enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a sensor enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a shield enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a power core enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a transporter enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a cloak field enhancement blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of a fighter craft blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 5)
+This is a piece of an equipment blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 10)
+This is a piece of a light weapon blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 10)
+This is a piece of a heavy weapon blueprint. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 10)
+This is a piece of an android blueprint. When the blueprint is fully assembled, you'll be able to construct the android to serve you as your officer. (Pieces: 20)
+This is a piece of a blueprint for a corvette class vessel. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 20)
+This is a piece of a blueprint for a cruiser class vessel. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 30)
+This is a piece of a blueprint for a carrier class vessel. When the blueprint is fully assembled, you'll be able to construct it. (Pieces: 40)
+A  propulsion enhancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  hangar enhancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  grappler enhancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  sensors enhancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  shield generator enhancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  power core enhancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  transporter ehnancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  cloak field enhancement blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  fighter wing blueprint, you can construct it on any station for a fee. Blueprint is consumed in the process.
+An equipment  blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  light weapon blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+A  heavy weapon blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+An android officer blueprint. You can construct it on any station for a fee. Blueprint is consumed in the process.
+Detailed design schematics of a corvette class ship. You can construct it on any station for a fee. Blueprint is consumed in the process.
+Detailed design schematics of a cruiser class ship. You can construct it on any station for a fee. Blueprint is consumed in the process.
+Iolian Pact was formed through a mutual agreement of MultiOps and interested independant sectors after the last civil war with a single goal: economic wealth and security through mutual interests of all parties. Iolian Pact is formally a democratic state with the president as head figure, but it is well known that all decisions are made on congresses organized by MultiOps. Currently the presidential position is held by James Woolridge, a well-known industrialist and former CEO of MultiOps Industries.
+Mycaena cluster is a well-known refuge for mercenaries, revenants and former military personnel. Commander Gerrard Fromm, former Directorate admiral holds all power in Mycaena. In the past both Nyx and the Driectorate tried to overtake the region, but both failed when they reached Masada, the most powerful and well-defended station in Gemini. Highly organized tactics and brilliant defense strategies proved to be too tough to beat every time. Seeing as they offer their services as mercenaries, most factions conclude it is better to be on their good side if they ever need to hire them.
+Nyxian Consortium is an alliance of powerful and more importantly very wealthy city states originating on planet Nyx. It is one of the oldest organized states in Gemini, with their history stretching back to the time of the first civil war. After the Empire invaded Gemini, Nyx got involved with them expecting their fast victory, all with the goal to be a part of the new governing structure. Ever since the Empire slowed down and halted their conquest, the relations between Nyx and the Empire have been growing colder.
+Traders Association is a powerful organization of wealthy traders and companies. They posess no military of their own, but hire mercenary groups to protect them and their investments. Their ability to circumvent any trade embargo or supply deficit makes them a very powerful friend to have. In general they don't deal with petty conflicts directly; they just tend to profit from them.
+One man's trash is another man's treasure, it is said. Wastelanders take that very seriously. What started out as a loose guild of dangerous waste disposers ended up as a more or less organized state with the Wasteland region as their foothold. Travelers mostly steer clear of their territory due to the danger of extreme radiation. It is said, though not confirmed, that Wastelanders have contracts with almost all Gemini factions to dispose of their unwanted dangerous waste; contracts worth billions of Credits. They aren't liked by anyone, but tolerated by all except Nexus. Ruins of Tesla station, found in the Wastelands is a point of constant bickering and conflict between the two neighbors.
+Nexus is one of the most secretive and isolated states in Gemini. Thomas Scott, a renowned scientist and fighter for a unified Gemini, is now a reclusive, but authoritative figure in Nexus. What information does come from Nexus speak of radical ideas of pacifying Gemini by any means necessary. That information was never confirmed. One thing is certain, entering Nexus territory without permission never ends well. Disappearance of several hundred ships can be directly linked to the Nexus security force.
+Gemini Protectorate is what is left of the once great Gemini League; a powerful organization that aimed to free Gemini from Imperial oppression and bring peace to all its citizens. Protectorate territory is centered on Freiburg, one of their main strongholds in the last civil war. It is currently led by Dmitry Kuzhev, but rumors say the Protectorate is in peril of being ripped apart by internal power struggle. Such rumors have not yet been confirmed.
+Trinity Free States came to existence as an attempt of several independent sectors to gain strength and influence in the Gemini political scene. Their somewhat pacifistic alignment makes them a very desirable target for rogue elements, which is why Trinity endorsed the Gladius group, the strongest mercenary group in Gemini, to create its headquarters inside Trinity borders. Trinity's main focus is trade and transport, though that is slowly changing as their power grows.
+The Directorate was once the Imperial right hand in Gemini, but has now fallen to be one of its worst enemies. In a world where their former master needs them no longer, the Directorate is slowly but firmly finding its own heading. They have proven to be masters of adaptation. Even surrounded by enemies that greatly exceed them in numbers, they have persisted and managed to form a stable, though totalitarian regime. Political analysts believe the Directorate's on-going war with the Empire will ultimately be their undoing.
+After the Gateway wormhole to the Empire mainspace was reopened, vast Imperial fleets pushed into Gemini, lashing at all those who oppose them. Their advance was fast, but eventually slowed down, though not before they made a significant foothold in the star system. Powerful Gemini factions can only suspect what their final intentions are, but at the moment the Imperial giant stands still in the center of Gemini. The Imperial enclave in Gemini is commanded by Grand Admiral Cavurian. For all intents and purposes, he is the military commander and political leader of Empire in Gemini.
+Baeldor Republic is one of the oldest Gemini factions, originating from the time of the first civil war that ravaged the system. It has undergone major restructuring during the last decade, creating what is today a trilateral democratic federation of three semi-independent baronies. All three share the senate as equals, with the presiding chairman as the spokesman who holds no direct power of decision making, but does have a certain degree of influence. This position has been held by Carlos Figueroa, a distinguished Baeldor military figure, for two consecutive 4 year terms and if it wasn't for him, the Republic would probably be no more. Independence movements in the baronies have been gradually gaining strength and analysts believe it is only a matter of time before the Republic splits.
+In the aftermath of the second Gemini war, strength of the former Korkyran Triumvirate has diminished. Weakened by inner elements, the Triumvirate eventually split in two. Korkyra as the more free-minded, more democratic state and Thaurian Alliance that stayed obsessively true to the basic fundamental ideas of the Triumvirate's autocratic policies. Grand Arbiter still holds the most power in Korkyra, but the state has undergone drastic changes in its political structure. The most important change is that the government is now elected by the people and security forces are no longer arbiter-appointed judicators, but conscripted and volunteered soldiers. War with the Thaurian Alliance still rages across Heraclean stretch and Land of despair; with no end in sight.
+Gemini Space Engineering (GSE) is a corporation employed on all of the largest constructions in Gemini. Almost all post-war structures were constructed by the GSE. The corporation started out as a joint relief effort by the former Korkyran Triumvirate, Gemini League and the newly formed Trinity Free states to aid the ravaged regions of Gemini. After several years, harsh times fell upon the Trimuvirate causing it to split into two and the League to dissipate. The GSE prevailed however by the sheer power of accumulated Credits and connections, but perhaps more importantly... they were too important. Progress of the entire star system depended on quick expansion and construction of spatial behemoths. Only the GSE had the needed production capacity.
+Shortly after judicator Christopher Derrick assumed the position of Grand Arbiter of the Korkyran Triumvirate, he started changing the foundation of the Triumvirate structure, shifting the country from an autocratic, despotic regime to a more open and democratic society. In some parts of the Triumvirate this was hailed, while in others it was scorned. Disgruntled judicators and arbiters led their fleets in an attempt to overthrow Derrick, but ultimately failed. The civil war ended in the secession of Aegis, Korkyran border region, which was to become Thaurian Alliance. The Alliance spread further into Union territory by overtaking the ore-rich Tempest region, and into the Crysalys belt which is still disputed by Porphyria. Thaurian military strength however ensured peace treaties were signed. To this day, Thaurian Alliance wages war with Korkyra, rejecting Grand Arbiter Derrick as the ruler.
+Barely a year after the end of the second Gemini war, the more disgruntled members and leading guild members, separated from the Miners guild and used their significant influence and funds to rally independent sectors under their rule in what was to become the Union. The monopoly the Union enjoys on mineral extraction in their ore-rich territories has granted them a place of power and influence. Politically the Union's organization resembles that of a gigantic corporation, led by two executives. Currently those positions are filled by Helmut Spitz and Vanessa Burton.
+Sanctuary is led by the self-proclaimed peacekeepers of Gemini. Any aggression in Sanctuary space is met with fierce reaction by their formidable security fleet. Other, more distrusting views of the Sanctuary speak of them as diplomatic traders and spies, willing to sell their knowledge of the Gemini factions to the highest bidder.
+There is no stronger brain trust outside of Nexus borders than the Hub. When Nexus commenced its isolationist policy, leaders of the former Gemini League cell from Sagittarius station gave refuge to a large colony of Nexus scientists. From this the Hub was formed. It gradually expanded to occupy its new borders. Nexus however cannot forget their "treason" and rumors of Nexus-funded assassinations in Hub territory have lately been on the rise.
+The Triad is an elusive assortment of drug barons, crime lords and other questionable elements, centered on Lunaee station in the Triangle. The organization started out as collectors of Rift dust, a very powerful and highly addictive drug, exclusively found in the Triangle dust cloud. What makes them particularly interesting is the fact that the Triad is slowly but surely molding itself into an organized state. It is suspected they will attempt to influence local outlaw groups in the Outerlands and if they succeed, they just might become a key player in that part of Gemini; perhaps in all of Gemini.
+LaGarde family from Mycaena supported the rise of Mycaena as an independent faction after second Imperial invasion. After investing heavily in this endeavor, they were assured in their place as new supreme leaders of Mycaena. However, an army of mercenaries, pirates and freelancers they hired realized they could do a lot better on their own. LaGarde family was hunted down. A few members of that proud and well-connected family, led by so called lord James LaGarde, escaped to Trinity and used their wealth to establish a network of well-paid mercenaries and raiders. Eventually they managed to take hold of a small region now known as LaGarde Province.
+MultiOps Industries is probably the most powerful company in Gemini, but even they couldn't turn their heads away from what was going on in the system. New players started to gain ground on them swiftly and like any company, they reorganized and restructured. The result was their alliance with independent sectors to form Iolian Pact which provides them with all the security and boost they needed. Today they are still the leading provider of goods, equipment and ships in Gemini, dwarfing even the Traders Association and Nyxian Consortium in sheer profit.
+Omega Transport can trace its roots back to the first colonies in Gemini. It was the main shipping company in the system. Wars that ravaged Gemini left deep scars, however and the company has not yet recovered, if it ever will. The company's primary goal is to offer an alternative to Mars Shipping monopoly.
+Madeira Constructs is a deep-space construction oriented company, with its headquarters and factories situated in Nyxian space. Their strong ties to the Consortium are believed by many to be a hindering factor to the company's growth.
+As its name implies, Exac Raw Materials primarily deals in mining and refining raw ore and gases. Their vast refineries are able to prepare and ship enormous amounts of materials onto the Gemini market. As is the case with Madeira Constructs, ties to the not-so-beloved Nyxian government are a hindrance, but Exac managed to circumvent that obstacle by signing lucrative deals with the Traders Association.
+Neophysics was created and originally led by the legendary scientist Eleanor Ridley. After a while she resigned her position and left Neophysics to continue her work as a freelance scientist. Her alleged "difference of opinion" from Nexus leaders, specifically Thomas Scott, is rumored to have been the main reason for her leaving the company. Corroborating that story is the fact that Neophysics drastically changed its goals and interests since Dr. Ridley's resignation.
+In an attempt to break down their scientific research into specific fields, Nexus founded several institutes, organized more like companies to carry out individual portions of R&D. Advanced arms Inc. is one of those institutes that specializes in vessel equipment.
+Trinity Armoring Corporation is a government funded company involved in research and development of high-tech weaponry and ship equipment. As Trinity Free States grew in territory, influence and sheer financial power, so did the need to protect all that. TriaCorp was founded to counteract the potential dangers looming on the horizon from all directions.
+Gladius Group rose from the ashes of the Mercenary guild decimated by the Gemini League during the last civil war. Their focus is bounty hunting... and they do it extremely well. Most of the new members are tough veterans from all factions, with years of experience under their belt. Gladius Group is led by Manfred Beck, also known as the Reaper, famous for his daring assassinations which he usually conducted in plain sight.
+Mars shipping has rooted itself in Gemini industry and trade more than any other company. Their reliability and vast shipping fleet, accompanied by their own security forces are all the insurance other parties need to outsource transport duties to Mars shipping.
+Dortmund station situated on the very edge of the Maelstrom region, houses Iontech headquarters. Not surprisingly, their main focus is development of various weapon systems, most of which on contract with the Baeldor government.
+Supratravel is Gemini's leading organization in maintaining T-Gate functionality. Their firm grip on monopoly was strengthened further by the company's major investments in upgrading hyper-travel technology. The Riftway grid is the pinnacle of Supratravel R&D sector.
+AI Robotics started out as a division of the Hub science council, but as time passed and the group grew stronger, they managed to separate from their "masters" and enter the big scene as an important and independent player.
+Versatile is probably the best way to describe Bosseron enterprises. Unlike most companies, this giant has interest in almost all aspects of Gemini life; from food, housing, space construction, weapons manufacturing... If there's Credits to be earned, Bosseron is likely already there, or on the way. Versatility however comes with a price, as the company so far never excelled at any particular field.
+During the last days of the Korkyran Triumvirate a special edict was decreed. This edict was the foundation of Heracorp as government-funded research and development institute. All non-essential technology patents were to be sold off to fund the more advanced ideas. As time passed, Heracorp was partially privatized to allow greater expansion and faster development. To this day, Heracorp remains the main R&D consultant and developer of the Korkyran military.
+Mendoza foodstuff is a young upstart company founded in Thaurian Alliance by a group of free entrepreneurs. Their declared goal is to bring relief to the ever-growing food market in Gemini and more than anything to prevent great food shortages, like the one that happened several years ago when unusually strong solar radiation destroyed or eradiated vast fertile land on more than half the planets in the system.
+Wright chemicals, a leader in the chemical industry sector has always nurtured firm ties with the Thaurian Alliance, proven by the company's HQ in Alliance space. During the last 5 years, Wright chemicals was accused of conducting secret experiments into biological and chemical warfare, supposedly overseen by Thaurian government. No such claims were ever substantiated with credible evidence.
+The Miners Guild lost most of its vast influence after the Union was founded. Out of respect or perhaps only nostalgia, Union leaders allowed the Guild to remain within its borders with only a few stations. Almost everything was confiscated in the name of the Union. The Guild remains true to its original ideas as an organization that provides support to independent miners.
+Holocom Inc. founded its headquarters in Union held territory. There was much speculation as to "why" the company chose that location. Suspicious minds dare speculate the Union paid Holocom so they may control the company and get unhindered access to the vast amount of information circulating Holocom's ever-spreading network of communication satellites.
+Frontier's main goal, as they declared themselves is to overthrow the corrupt Iolian government and expel MultiOps from Iolian Pact. Their heart might be in the right place, but their terrorist activities aren't. Members of the Frontier are wanted for numerous counts of treason, assassination, destruction of government property and terrorism; conveniently they're wanted in Iolian Pact.
+"We have every reason to believe that a key part in Genos behavior, philosophy or agenda is in some way linked to eco-radicalism. For now they are but a nuisance, but in the future they might become a threat if not dealt with accordingly. Let it be known that we cannot let anything stop progress of this great Union." - Union regional commissar in "The Genos threat"
+The elusive Ghosts of the Aethera nebula... Almost as a rule, coming in contact with them is not good. There are only several noted occasions that the Ghosts even responded to hail attempts, only to destroy the caller moments later. The upside is that so far, their ships were never seen outside Aethera. They cling to the area like they need it.
+Syndicate is probably the most organized outlaw group in Gemini. They have connections everywhere even among high ranking officials of the key Gemini factions. It goes so far as one could say they have treaties with the neighboring states to let them in peace... for a cut. One faction however is not likely to give in to bribery. LaGarde Province is their sworn enemy. The Syndicate leaders actually rebelled against the LaGarde family and formed their own organization.
+"Live and let live... and plunder." "Winner takes it all." "Finders keepers." ... These are all cliches that Serpent Anarchists hole as creed. Although they're not a homogenous group, their numbers have drastically increased as of late because many new members decided to join the unruly bunch.
+Atillas Whip is known to be the source of the Stiletto, a reclusive outlaw group continuously linked to assassinations all over Gemini; their base of operations, their numbers and technology... none of that is known for sure. What is known is that they are a formidable opponent.
+The Revenants found their home in the Will O' The Wisp region, right in the Consortium-Nexus crossfire. One could say that would be the end of them, but actually the ongoing war only brings them more "prey". Their raiding parties almost as a rule includes several ships and their battle tactics are a textbook example of military training.
+The Niners are small outlaw group operating inside and from the Cloud Nine nebula. They've been a nuisance to Baeldor Republic for years, but all attempts at eradicating them have failed. They always seem to come back.
+Gemini League, a freedom fighting group that led vast fleets in the last Gemini war against the Directorate and the Consortium used to control Last Ditch region after overtaking it from local pirates. The League splintered into several groups however after the war ended and the result was full circle back to the beginning. Rogues control Last Ditch once more, but this time they even have former League captains as reinforcements.
+The Vanquis are a marginal outlaw formation that is constantly proving to be a nuisance to both Trinity and Gemini Protectorate. Other than raiding small border outposts and passing convoys, they don't seem to have any greater agenda.
+The Hexen group is the ruler of a vast area of Gemini called Outerlands. Several attempts to push them out of play proved to be of no use. Their territory is simply too large and unlike most outlaws, they have a firm grasp of military tactics and logistics; almost like they're being either led by someone with military background, or like they're being taught the military way.
+"...They seem to revere the phased crystal as sacred to an extent and are willing to guard it with their lives. In a way, it is remarkable and mysterious at the same time, since we can't really ascertain where in Gemini the group originated from. Our best guess is that it's not ethnicity that binds the members together, but rather their beliefs and goals, whatever exactly those may be." - Dr. Auren Sottil, official report to the Hub anthropological society
+Although their name suggests otherwise, the Stoners are not an assortment of drug-addicted mindless pirates. Given time and sufficient funding, they'd probably try to organize an official control of Stone Dead region and be acknowledged as one of Gemini states. It is for that goal, the Sanctuary could be funding Stone Dead outlaws, if rumors are to be believed.
+For twelve years Heraclean Stretch has been on the forefront of the Triumvirate war. Korkyra and Thauria have been using the region as the focal point of their battles with countless collateral damage in both infrastructure and civilians. The Heraclean Front rose up from those battle-scarred territories to fend off both sides... and to get something for themselves while doing it.
+During the last Gemini war, Korkyran Triumvirate was uprooted by treasonous puppet rulers. When Judicator Derrick overthrew the corrupt government, some elements of the old regime fled Korkyra and reached what is today known as Red Mist. Official Korkyran policy is that the Raiders are the remnants of that treasonous regime.
+Little is known about this mysterious group. Their existence was confirmed on numerous occasions, but normal, let alone diplomatic relations were never developed. The mystery surrounding their members gave room for outlandish speculation and even conspiracy theories. "The Brotherhood seems like nothing more than a religious cult. They are not a threat, but we should keep one eye open if ever they turn to more extreme behavior." - Leonard Sainz; prominent socio-anthropological expert
+Porphyria rose from the ashes of a ravaged territory, partly covered in the mists of the Occulus nebula, and partly clouded by the Aethera dense nebula. The state owes its existence to the former commanders and personnel of Fontenaux station, destroyed in the last Gemini war. Porphyria suffered extensive damage from stasis occurrences and the effects are still felt. What was once a curse, today proves to be a blessing. Porphyria enjoys its independence, however harsh at times, precisely because large Gemini players believe the hardship of conquering Porphyria greatly outweighs the potential benefits. Porphyria is led by Manuel Espinosa, a charismatic governor of Pyros, who earned the trust of his comrades during the initial organization of Porphyria.
+Solidified water can be found in all regions of Gemini, but it is always in high demand. This ice form can be melted and purified for general use as water.
+Carbon is an essential building block of all known living organisms.
+Fluorine is pale yellow and extremely reactive gas.
+Iodine is mostly used in nutrition, but industrially it is also useful in the production of polymers.
+Sulfur is used to create sulfuric acid; a reagent used in countless industrial processes.
+Phosphorous is heavily used in botany, but it has also found its use in industrial grade explosives.
+Magnesium is used both as metal and in various compounds.
+Copper's physical properties allow it to be used in a wide range of industrial products. It is however quite common in Gemini, and therefore not very pricey.
+Iron is one of the most used materials in mankind's history.
+Silicon is widely used in high-tech production.
+Aluminum is mostly remarkable due to its resistance to corrosion.
+When you can't get gold, look for silver.
+Granite is a common widely occurring type of rock used mostly in planetary construction.
+Much like over the course of human history, gold is still a much coveted precious metal.
+Titanium is one of the most durable elements and it is of no wonder that it is used in the production of TitaNova plates.
+Thorium is a natural radioactive chemical element, but of greater importance for the military industry is its ability to ignite in certain conditions.
+Tellurium is a brittle, mildly toxic, silver-white metalloid used in the production of alloys, solar panels and superconductors.
+Uranium is used in both military and civilian purposes despite the dangers brought by its radioactive property.
+Plutonium has found its way into explosives, fuel and heat sources.
+Diamond is renowned as a material for its superlative physical qualities which makes it ideal in a variety of Gemini industries.
+The special crystalline formation found in the Crysalys belt has found its uses in a wide range of applications, most notably weapon production.
+Shard is a crystalline formation natively found in the Sea of sorrow. Difficult extraction due to its "phased" nature tend to sky-rocket its market price.
+Hydrogen is a colorless, odorless, tasteless, highly combustible gas used in various industries.
+Industrial compounds like ammonia, nitrates and nitric acid all contain nitrogen.
+"I've always wanted to see how long you can live without oxygen." - Klaus "Choker" Reinhaldt
+Among other uses, Helium is used for cooling of superconductor magnets.
+Argon is perfect for industrial processes where high thermal conductivity is not a good thing.
+Neon is a noble gas and the fifth most abundant chemical element in the known universe and its uses are innumerable.
+Xenon is still heavily used in almost any form of laser technology despite the fact that technological advancement is slowly rooting it out.
+Ionized gas can almost exclusively be found in the Maelstrom. It is used in heavy and high-tech industry, more precisely weapon industry.
+"Time to spice things up" can be used in a number of allegorical ways, but in this case it only means to spice up food.
+Sea algae, as its name implies, is harvested from planetary oceans. It offers valuable nutritional value for low costs.
+A number of planets in Gemini have water mass that sustains fish, but due to water quality degradation, fish is gradually becoming more of a luxury than everyday food.
+Cattle ranches are the primary production centers for meat production. After the outbreak of Generak disease that decimated the populace of planet Iolia, careful and meticulous security measures were set in place to ensure quality and health safety.
+Vegetables are an essential part of everyday nutrition, at least for some.
+Crops are a vital product in food production. They are almost exclusively cultivated on Gemini planets.
+"Tasty, quality, affordable - buy Mendoza soyfood. Family comes first."
+Protein bars, although of god-awful taste, are a large source of nutrients for the ever-growing population of Gemini.
+The Tark tree grows only on planet Trinity. The leaves' regenerative properties were discovered almost by accident, as a side-effect of "testing" its hallucinogenic properties.
+Hogoshan brandy, more commonly known as Hogwash is a cheap, but very strong alcoholic drink distilled on planet Hogosha. It is a favorite drink on the majority of Gemini space stations.
+Thaurian weed grows in planet Thauria's polar seas. The weed's high nutritional value and supposed medicinal, or to say it better, "calming" properties make it stand out as Thauria's prime export product.
+Squibbs are oceanic beasts that evolved on planet Fairuz under the influence of the planet's highly toxic and irradiated oceans. Their numerous tentacles have become a source of high nourishment for the local population, but also a delicacy in other parts of Gemini.
+Nyxian ale bears the name of its planet of origin. Its high mineral composition is believed to be connected to the thermal vents on planet Nyx where allegedly all the water for its distillation comes from.
+Vantus is a giant turtle-like animal originating from planet Corrion, in Baeldor. Its eggs are revered as a potent aphrodisiac.
+Ammartan algae is extracted from extreme depths of Korkyra's vast oceans. In the past it was labeled as illegal for its psychedelic properties, but modern refinement methods made it "safe", contributing to its popularity among the younger denizens of Gemini.
+Rift dust can only be found in its natural form in the Triangle nebula, deep in Triad space and is probably their number one export commodity. When inhaled, it causes extreme mood swings shifting from ultimate bliss to utter depression, bordering on suicidal. It is then no wonder Rift Dust is illegal in almost all Gemini territories.
+Wood is almost exclusively produced on planets, naturally mostly from forested areas.
+Standard material produced from animal hides.
+As an iron alloy, steel has been around for centuries. Technological advancement and new materials have drastically reduced the necessity for steel, but it has remained in use as a construction and manufacturing material to this day.
+Aluminum foils are the handy, refined material produced from aluminum. It is used in all basic and advanced industries.
+Industrial polymers are high-quality and versatile industrially produced materials used for countless purposes.
+"I'm rubber... you're glue."
+UniGlass was first developed by MultiOps Corporation as a substitute for outdated translucent materials. Its durability and strength in extreme conditions make it suitable for both architecture and space engineering.
+TitaNova plates first begun as proprietary MultiOps technology, but in time became standard outer plating for any space ship or station.
+Bioplastics was developed in cooperation by a number of powerful Gemini corporations to substitute standard plastics. It is superior in all aspects including environmental friendliness.
+"Can't have good clothes without textile." - unknown source
+Arachos is a giant arachnid-like beast that excretes strands of material akin to silk. The material, when refined becomes lightweight and durable; perfect for use in production of Envirosuits.
+Planet Pyros is the home of the Scarab; a giant fire-resistant beetle whose durable husk is used in the production of protection vests.
+Brunt is a buffalo-like animal native to the planet Iolia's cold steppes. Brunt tusk is luxury commodity. (For more information on buffalo see "Encyclopedia Galactica - Planet Earth extinct fauna")
+Brunt is a buffalo-like animal native to the planet Iolia's cold steppes. Brunt fur is luxury commodity. (For more information on buffalo see "Encyclopedia Galactica - Planet Earth extinct fauna")
+Weapon payload is only as good as its package. These casings ensure your projectiles reach their target.
+CRT, LCD, LED, Plasma screens? That belongs in an antiques museum. This is the age of holographic projectors.
+Times have changed, ages have passed, but explosives are still here... only stronger. Explosives are used for a variety of destructive implementations.
+Infused cores are probably best known for their use in the assembly of beam weapons.
+Crystal matrix is the basis for a wide range of advanced technologies and has already found its way into a number of highly sophisticated patents.
+Gone is the time of standard faulty cables. The Superconductor is here.
+Bio-circuitry is an essential part of any modern computer.
+To build an engine, you got to have parts.
+If the parts aren't good, your vehicle will be a heap of junk. Thankfully, modern industry succeeded in setting some basic standards to ensure a degree of quality.
+Mankind's first victory against the elemental force of gravity was when he first soared into the skies with an airplane. AntiGrav coils get the finishing blow by completely and effortlessly nullifying gravity whenever and wherever necessary.
+People of Gemini are used to better than dust-filled, stale air. Air filters do the trick.
+Photocells are a key part in Solar panel manufacturing.
+Thorium shells are used in the production of railgun weapons.
+Energy cells are the energy source for Beam accelerator weapons.
+Plasma charges are the plasma behind the plasma cannons.
+Thrusters are a vital part of any space faring vessel. They are used in ship production and enable vessels to maneuver around.
+Prefab shelters are the best choice for rapidly expanding population or catastrophe containment.
+Man, woman, child, little green men... they all need clothes. Walking around naked is not usually a mark of a civilized people.
+Although there have been reports and rumors of people conducting sensitive surgical procedures with their bare hands, most doctors agree that using precise surgical equipment should be mandatory.
+Free energy from the suns... Well, not exactly free since someone has to manufacture Solar panels first, then you have to buy them and maintain them... but still... Gemini's twin suns are an important energy source and Solar panels a booming trade.
+Working in a hazardous environment is never a good idea, but it is sometimes necessary. Envirosuits are your best choice when that happens.
+Oxygen recyclers ensure fresh breathable air in enclosed habitats.
+Computers are a standard part of almost any industrial product in Gemini.
+"Bored beyond belief? Thinking about suicide? Never again be drowned in mind-boggling depression! Bosseron Enterprises presents The Boss Hologames ultimate megapack! Downloadable ubergoodies available after purchase."
+"For maximum mining efficiency, real professionals use Mining charges." excerpt from the Miner's recruit handbook published by Miner's guild.
+ATR or All-terrain rover is a light-weight versatile vehicle that finds its use in both military and civilian environments. Light armament can be added for extra Credits.
+This is a standard beige assortment of household furniture.
+Fertilizers supplement nutrients that plants need to grow.
+This is a standard assortment of various inhaled, injected, oral, rectal and other medicines for treatment of mostly common diseases and ailments; nothing illicit what-so-ever.
+Where medicines fail and surgery intervenes, usually something like this comes in handy afterwards: robotic, bionic and other forms of prosthetics.
+Laser sidearm is the most common hand-held range weapon in Gemini. Although in some parts possessing a personal firearm is illegal for civilians, some planets welcome it as common sense.
+Plasma rifles are commonly found in the hands of security forces all around Gemini as well as (un)licensed bounty hunters.
+Heavy weapons are the backbone of military infantry. Their potency however makes them extremely dangerous in the wrong hands and are illegal in most territories in Gemini.
+X900 Personal armor is the latest tech in personal safety. It offers protection from a range of firepower including ballistic, energy and plasma weapons fire.
+Sometimes Oxygen recyclers aren't enough. And sometimes large quantities of oxygen are required in industrial production; whatever the case, tanks filled with oxygen can help.
+Gemini space engineering has become the main station builder in Gemini and tends to manufacture these building blocks to speed up its own construction as well as sell them to others for use in station repairs.
+Even after centuries of development, mankind has not managed to get rid of its reliance on fuel sources, but at least the fuel is synthesized making it abundant.
+It's not the healthiest way, but growing plants in hydroponics pods gives back for all the attention in quantity.
+"Why do the work your utility droid can do for you? Everything goes... except getting your droid to assassinate someone... that's both illegal and wrong." - Charles "If you see me that means you're dead" Halfgood
+Cybernet implants are proprietary Nexus technology developed and produced mainly on planet Sora. The implant enables the user to have direct neural interface with almost any existing technology. It is no surprise then, this product is banned in most territories.
+Shard blades are created by master craftsmen from Tortuga bay. The main "ingredient" is the phased crystal called Shard collected from the Sea of sorrow. The crystal's special properties enable the blade to cut through any existing physical protection making it an ideal weapon for assassins.
+Combat mechs have replaced the now outdated tank vehicles. With only one crew member needed to control the behemoth and the unique ability to pass over any terrain with ease, this is the next big thing in ground combat engagements.
+Sensor scrambler "infects" your sensors making ghost targets appear on your radar.
+Transport destabilizer makes it impossible for the Transporter to create a stable energy stream.
+Grappling dispenser destabilizes and disperses the grappling beam, making it impossible to grapple objects.
+Engine dampener reduces overall Propulsion performance.
+Shield dampener reduces Shield effectiveness.
+Riftspace resonance anomaly destabilizes riftspace, making use of any rift technology (T-Drive, Riftways) impossible.
+Displacement anomaly ruptures space and time, randomly transporting objects to other locations.
+Occasional plasma pulses that inflict massive damage make the Plasma pulsar anomaly very dangerous.
+Eye of storm can usually be found in the vicinity of Ion storms. Its EMP discharge can severely damage any passing vessel.
+The Torrent Gate (T-Gate) system makes it possible to travel instantly to distant regions of Gemini.
+Riftway fast-travel network has been brought to you completely free of charge by SupraTravel. Travel safely... Use SupraTravel.
+This installation is the property of SupraTravel. Any damage, collateral or intentional will be deducted from the offender and enforced by local law enforcement if necessary. Travel safely... Use SupraTravel.
+Feeling adventurous? Hop into the rabbit hole...
+Property of Holocom Inc. Please report any malfunction or damage on this installation to your local authorities or Holocom representative.
+Nav buoys... For those of us that can't find our way around. One might wonder what happens if the buoy gets hacked...
+Enter the inner structure ring to receive on-site repairs.
+Enter the inner structure ring to receive temporary Radiation resistance.
+Hmmm... I wonder what this thing does when scanned...
+Various contractors use these installation to facilitate faster gas collection from Gemini nebulas.
+Remote mining facilities are off-world ore refineries. Perfect for large mining operations.
+Go green! Go solar!
+Remote research centers are absolutely perfect places for conducting dangerous or ethically dubious experiments.
+All local relay satellites reroute their collected data to these centers for further processing.
+Moving forward by using leftovers. Recycling at its best.
+Convicts welcome!
+Anomaly monitoring perimeter is a network of facilities sponsored by Sanctuary built to monitor and warn of any off-the-chart anomalous events.
+No information found.
+The Commander balances between augmenting his own ship and his entire fleet. It is most powerful when accompanied by friendly ships and fighter crafts.
+The Engineer can create dangerous anomalies and hack into enemy ships' mainframes to inflict damage or other negative effects. To utilize all at his disposal, he can also augment his Power output.
+The Gunner excels at direct combat. He augments his light and heavy weaponry to maximize damage on enemies.
+Augment your fleet.
+Enemy hits can cause retaliatory effects on the shooter.
+Augment your ship with defensive effects.
+Augment your ship's movement and accuracy.
+Wreak havoc by hacking into your target's mainframe.
+Create powerful anomalies that weaken and damage your enemies.
+Boost your ship's Power output and distribution to augment your shields and disable your enemies' weapons.
+Augment your weapon systems to have more energy or deal additional damage.
+Boost your Plasma cannons with special effects. (Only affects plasma cannons)
+Enhance your Beam accelerators. (Only affects beam accelerators)
+Augment your Railguns with special effects and added damage. (Only affects railguns)
+Heavy weapons can always hit harder. (Only affects heavy weapons)
+Quinton Gombos is a very famous smuggler. Specializes is illegal weapons and armors. Mostly operates inside Nyx and Mycaenean space. Quinton is the only known person to successfully smuggle an entire destroyer class ship to the surface of planet Nyx. Usually commands a modified freightliner followed by several mercenaries.
+Deedra Salee, a young, but already legendary thief, is wanted by Baeldor, Nexus and Nyx authorities. Deedra travels on a small cloaked ship in search of lucrative contracts or any target of opportunity. In combat, she excels in using small class ships, evasion and complicated maneuvers.
+Leena Rinner is a capable captain of the highest class. Former member of Korkyran military with family ties to members of the Thaurian Alliance. Once rebellion started, Leena refused to pick sides and went her separate way in Trinity Free States. Both Korkyra and Thauria want her dead for treason.
+Thaddeus Malen is a notorious pirate in Gemini. His brutality was so excessive that no pirate group wants to be associated with him. Malen is wanted by all territorial and outlaw factions. A few years ago, Thaddeus organized the assassination of Syndicate leader, but as his attempt to seize control of that organization failed, he fled to the Outerlands. Usually travels in a small fleet surrounded by fighters.
+Keira Iredale is best described as a completely mad renegade scientist. Her illegal experiments caused destruction of a Hub research facility and death of fifty people. Hub wants her arrested and brought to trial, but her skillful use of high-tech equipment on various vessels kept her safe so far. Her ship is known to be seen in the Sea of Sorrow.
+Raphael Slotnick is a former member of the Imperial secret service. Slotnick had friends among Directorate officials and once the Empire decided to eliminate that organization, he went rogue. Extremely dangerous person wanted by the Empire. He was last seen in Imperial District Beta during a surprise attack on a local shipyard.
+Kano Saichi is a former private contractor for MultiOps industries known for refining ship building procedures. When MultiOps, backed by Iolian government, accused him of espionage and confiscated his wealth and technology, Saichi turned to the Anarchists. With their help, he built a small fleet for himself and embarked on a quest to sabotage MultiOps and Iolian interests across the system.
+In the second Gemini war, Sarah Coon was an intelligence officer on Gilgamesh station. After the war, League abandoned Last Ditch and many loyal citizens perished without the League's strong protection. Sarah Coon held Admiral Kuzhev and his new Protectorate responsible, and promised to punish them. Since then, she has been like a ghost attacking Protectorate.
+Patrick Sansone is a former leader of the Stoners; a peculiar character who's completely insane and addicted to rift dust. Sansone was convicted of multiple bombings and attacks against military structures in Baeldor and Sanctuary. Several months ago he escaped from an off-world prison in Sanctuary and traveled to Triad space where he formed a new group that continued to raid civilians and attack easy targets.
+Curtis Champion was a high ranking officer in the Directorate fleet. When the Empire turned against the Directorate, Curtis tried to switch sides and join imperial forces, but he was instead caught and sentenced to life in prison. A skirmish near the prison station allowed him to break free and disappear. His new career then began; a career of indiscriminate war against the entire Gemini.
+Viral torpedo is a chemical weapon designed to kill target's crew and Troopers. Up to 5% of Troopers can be affected.
+Torrent Drive or T-Drive can instantly transport an entire ship to a distant location. Each T-Drive charge has a limited jump range. Longer jumps mean using more charges.
+MO Repairbots repair Hull damage in space (25% over 10 seconds).
+Unity nanodrones repair Hull damage in space (50% over 15 seconds).
+Repair nanobots repair Hull damage in space (80% over 30 seconds).
+Shield booster enhances Shield recharge (400% for 15 seconds).
+Power pack increases power recharge rate (50% for 10 seconds)
+Damage amplifier increases weapon damage output (50% for 10 seconds)
+Speed booster increases maximum speed (75% for 30 seconds)
+Biometric shield defends the ship from unwanted incursions via transporter.
+Energy defense field provides temporary 25% resistance to Energy damage.
+Projectile defense field provides temporary 25% resistance to Projectile damage.
+Plasma defense field provides temporary 25% resistance to Plasma damage.
+EMP defense field provides temporary 25% resistance to EMP damage.
+Radiation defense field provides temporary 25% resistance to Radiation damage.
+Cloak disruptor emits a high energy wave that instantly shuts down all cloak fields in the vicinity.
+Hull integrity field temporarily increases Soak.
+Borehole pulse emits a strong energy shockwave that detonates nearby asteroids. It also provides higher mining yield.
+Scavenger drones swarm the targeted derelict and salvage any useful materials. There is a chance of salvaging an entire ship system.
+This devastating torpedo is created from the Shards mined in the Sea of sorrow. The shard's special properties give the torpedo a chance to phase through target's shields.
+ST-Drive is an enhancement of the T-Drive. This special equipment recharges over time and does not require additional purchases.
+Replicator swarm is an enhancement of the standard Scavenger swarm. These drones have the ability to self-replicate which makes any additional purchases obsolete.
+The Phase shift generator is still in its prototype stage, but it already provides significant benefits. It temporarily gives the user a chance to evade enemy hits, by phasing in and out of normal space.
+System hitpoints
+Ship hull
+Protection from hack attempts
+Cloak harder to detect
+Chance that firing weapons doesn't deactivate cloaking
+Grappler range
+Chance for the Grappler to weaken shields of the grappled object
+Power
+Power recharge rate
+Chance to retaliate against hack attempts
+Speed
+Maneuverability
+Acceleration
+Power to engines charge-up time
+Sensor radius
+Chance to detect cloaked objects
+Shield strength
+Shield recharge
+Energy resistance
+Projectile resistance
+Plasma resistance
+Radiation resistance
+EMP resistance
+Chance to resist transport incursion
+Transporter range
+Transporter capacity
+Chance to deflect incoming transport beams
+Soak
+Mining yield
+Salvage value
+Gas collecting yield
+Ship system repair speed
+Battery energy recharge
+Critical hit chance
+Critical hit damage
+Trooper strength
+T-Drive jump radius
+Size of fleet
+Damage of fleet
+Soak of fleet
+Experience
+Experience gain
+Credits
+Credits per month
+Wormhole damage
+Damage to veterans
+Smuggling chance
+Improved trading prices
+Light weapon damage
+Light weapon accuracy
+Heavy weapon damage
+Heavy weapon accuracy
+Heavy weapon reload speed
+Beam weapon accuracy
+Railgun accuracy
+Plasma cannon accuracy
+Missiles accuracy
+Shockwave accuracy
+Fusion torpedo accuracy
+Beam weapon damage
+Railgun damage
+Plasma cannon damage
+Missiles damage
+Shockwave damage
+Fusion torpedo damage
+Bonus Skill point
+Bonus Perk point
+Weapon range (ONLY affects Beam weapons!)
+Rate of fire (ONLY affects Plasma cannons!)
+Shield damage (ONLY affects Beam weapons!)
+Hull damage (ONLY affects Railguns!)
+Accuracy
+Evasion
+Chance to dodge heavy weapons
+Repair Hull
+Fighter damage
+Fighter HP and Soak
+Additional Radiation damage
+Additional EMP damage
+Blast radius
+Battery energy
+Target weapon energy cost
+Fuel
+Pre-launch
+Reduce affected ship's Speed and Manoeuvrability
+Reduce affected ship's maximum battery energy
+Reduce affected ship's resistances
+Anomaly emits Radiation
+Percentage of damage returned
+Chance to disable weapon
+Chance to slow down attacker
+Chance to recharge weapon batteries
+Chance to cause Critical system failure to attacker
+Drain target's power (% per second)
+Chance to drop target's shields on hit
+Reduce target's troop effectiveness
+Chance to completely shut down target on hit
+Chance the anomaly emits an EM pulse
+Chance incoming hits recharge your power
+Chance to disable weapons of nearby enemies
+Chance to disable weapons on successful hit
+Chance to recharge Power on successful hit
+Chance hit will bounce off the target into nearby enemy (ONLY affects Plasma cannons!)
+Chance to cause residual Radiation damage (ONLY affects Plasma cannons!)
+Chance to emit a powerful EMP discharge (ONLY affects Beam weapons!)
+Chance to fire more shells in a single shot (ONLY affects Railguns!)
+Chance to destroy target's ammo and cause Damage (ONLY affects Railguns!)
+Chance to shoot through Shields (ONLY affects Railguns!)
+Chance to recoup spent ammo
+Chance to deal Damage to all target's shields (ONLY affects Heavy weapons!)
+Percent of dealt Damage repairs player's Hull (ONLY affects Heavy weapons!)
+Chance to fire several Heavy weapon shots with one shot
+Chance to cause slowdown
+Reduce target accuracy and Critical hit chance
+Chance to receive negative status effects
+Chance to reduce target's Evasion and prevent cloaking (ONLY affects Railguns!)
+Chance to resist Critical system failure
+Enter Iolian territory free-of-charge.
+Mycenaean stations offer better prices for all goods.
+Land on planet Nyx free-of-charge.
+Better commodity prices on Free Traders stations.
+Wasteland stations offer better prices for all goods.
+Reduced prices of Nexus equipment.
+Rearm and repair on Protectorate stations free-of-charge.
+Receive Credits for every Vanquis and Syndicate ship you destroy.
+Rearm and repair on Baeldor stations free-of-charge.
+Better prices of Korkyran ship systems.
+Better prices of GSE ships.
+Receive Credits for every Heraclean front and Genos ship you destroy.
+Permission to mine in Union territory.
+Receive Credits for every anomaly you scan.
+Triad stations offer better prices for all goods.
+LaGarde stations offer better prices for all goods.
+Better prices of MultiOps ships.
+Better prices of Advanced Arms Inc. ship systems.
+Better prices of TriaCorp ship systems.
+Receive Credits for every outlaw ship you destroy.
+IonTech stations offer special price for Ionized Gas.
+Use T-Gates free-of-charge.
+Better prices of all AI Robotics goods.
+Better prices of HeraCorp ships.
+Better prices of all ore.
+Repair and rearm on Frontier stations free of charge.
+Receive Credits of every Miners Guild and Union ship you destroy.
+Better prices of all contraband.
+Receive Credits for every Iolian, Mycenaean and Nyx ship you destroy.
+Receive Credits for every Baeldor ship you destroy.
+Better prices of all Gases.
+Rearm and repair on Rogue stations free-of-charge.
+Receive Credits for every Trinity and Protectorate ship you destroy.
+Hexen stations offer better Commodity prices.
+Rearm and repair on Stoners stations free-of-charge.
+Receive Credits for every Korkyran and Thaurian ship you destroy.
+Receive Credits for every Freighter and Freightliner you destroy.
+You can command Gunship size vessels.
+You can command Corvette size vessels.
+You can command Frigate and Freighter size vessels.
+You can hire additional mercenaries into your fleet with ship size up to Frigate.
+You can command Destroyer size vessels.
+You can command Cruiser and Freightliner size vessels.
+You can command Battleship class vessels.
+You can command Dreadnought size vessels.
+You can command Carrier size vessels.
+You can command mercenaries with ship size up to Cruiser.
+You can command mercenaries with ship size up to Dreadnought.
+Evasion for Gunship and Corvette size vessels
+Battery energy for Frigate, Destroyer and Cruiser size vessels
+Maneuverability for Battleship, Dreadnought and Carrier size vessel
+Speed for Freighter and Freightliner size vessels
+Fleet speed and maneuverability
+Chance to evenly distribute weapon energy cost between all weapon batteries
+Name: Archer "Doubleback" Mc'Ginty<\n>Age : Unknown - Approximately mid 30s<\n> Last reported location: Gemini Sector - District Alpha Sector<\n>I am Archer "Doubleback" Mc'Ginty, Pirate of the Gemini star system. I don't remember much of my youth, only that I started working aboard pirate ships out of Tortuga Bay around the age of 12. I found I had an affinity with piloting Cruiser Class starships, especially at high speeds and tights turns. It was on my first mission as pilot of a heap of junk that I earned my name "Doubleback". There is nothing like hiding in an asteroid field and waiting on freighters running contraband to the outer system stations for quick credits; they were always the best prey. With my skills, I could come in from behind, take out there main engines and then "Doubleback" and come in for the kill before the ship crew even knew what hit 'em. This is the tactics I am famous for and utilize to my best ability each and every day whilst in space. I know time is against me and I know I shall not be one of the old pilots telling war stories in Tortuga Bay bar, but this is something I embrace, not fear. For the day shall eventually come when I am no more than matter in space myself. Archer "Doubleback" Mc'Ginty, Pirate Captain of the Lady Jane "I find it rude to laugh, when I have plasma cannons aimed at your head".
+In a universe full of conflict and strife there is always room for another freelancer or mercenary to step in and get their hands dirty. While most only follow the money, Elizabeth has gathered a reputation for being a bit of an idealist mercenary. Often choosing contracts that were more about helping the greater good rather than just lining her pockets. She gained great respect because of this, which in turn did lead to some sizeable contracts and wealth... She very much believes in strength in numbers and following this logic, chooses to command a modified carrier which she painted ruby red. Some say it's to instil fear in her enemies, while others say it just fits her style. No matter what her reasons, it earned her the nickname "The Red Queen".
+A descendant of Admiral Marcus Hammerhill, Kate grew up accustomed to military life and eagerly awaited her opportunity to continue her family legacy as soon as she came of age.<\n>Rising through the ranks with a mixture of tactical intuition and sheer brazenness she found her niche as a destroyer captain, the mixture of firepower and maneuverability matching her fighting and command style perfectly.<\n>In keeping with her family namesake, Kate is infamous for "dropping the hammer" on foes, preferring the heavy punch of railguns and other hard ammo weaponry to devastate foes and soften up larger targets for finishing blows by other vessels.<\n>After losing her wife Jasmine in a raider attack, she has burning hatred for pirates and has been known to sometimes get in over her head and put her ship at questionable risk in relentless pursuit of justice.
+Neither friend nor foe, Mercadier de Molay owes his allegiance to the guy with the biggest bank account second and to himself first. A true opportunist, de Molay ensures you always draw the short stick. Legends of his exploits elicit shock and awe, fear and reverence. One star date he'll reduce a dreadnought to cosmic dust - alone - in his heavily modified gunship for a stockpile of creds and the next he'll lead a daring rescue against blood driven raiders for an outlying mining colony for not more than a ham sandwich. Mercadier's past isn't shrouded in mystery, a jigsaw puzzle to be pieced together bit by bit. Everyone knows Mercadier, his triumphs in past wars - on either side - as well as his penchant for exotic delicacies; everyone knows about his co-pilot, an allegedly bio-mechanical orange "feline" from a back water planet at the edge of the galaxy; and everyone grudgingly knows that Mercadier de Molay is the best damn pilot to ever traverse the stars; but very few know the man himself. And that very few know what de Molay wants them to know: whatever it takes to secure the upper hand.
+Malcheor is the best at what he does and that is getting people where they need to go. It can be into places or out of places, for the right price he can get you there. He grew up on the streets where he learned how to survive, the hard way. Now those skills are used to help those in need, whether it be for money or trade.
+Captain Jack Blade started his career as a freelance pirate slowly making a name for himself throughout Gemini. He met up with a rival pirate leader and after killing him took charge of his new found gang. It was not long after that when his exploits started to become widely known and equally feared among the private trading corporations. He is considered a hero among many for his generous donations to the needy, some even comparing him to the fabled robin hood...
+It_has_been_two_years_since_the_end_of_the_second_Gemini_war,_and_the_situation_in_the_war-torn_system_is_further_from_resolution_than_ever_before._The_collection_of_freedom_fighters_named_the_Gemini_League_is_now_reduced_to_a_small_group,_with_no_power_or_influence,_after_losing_their_leaders.<\n><\n>The_Empire_meanwhile,_has_used_the_re-opened_Starpoint_to_occupy_the_once_renegade_Gemini_sector_-_and_beyond.<\n><\n>Play_the_Starpoint_Gemini_2_campaign._Find_out_the_background_of_the_Gemini_conflict_and_how_it_plays_out,_or_if_you_want_to,_you_can_always_roam_the_star_system_freely_and_continue_the_storyline_whenever_you_feel_like_it.
+Mining doesn't do it for you? You're more into gaseous forms? Fire this off into a gas pocket and let it do its magic.
+Radiation damage per second (Hull percentage)
+EMP damage per second (Shield percentage)
+Drain target's battery energy (% per second)
+Detailed design schematics of a carrier class ship.  You can construct it on any station for a fee. Blueprint is consumed in the process.
+A special kind of tweaked nanobots, eager to start repairing their master's ship. (80% over 10 seconds)
+Fire this baby on the enemy and watch as their ship systems fall apart.
+Enemy shields are getting in the way? No more! Tear down their energy defenses with the EMP torpedo.
+Hauling ships through enemy territory can be a pain. Heck, hauling a ship through friendly territory can be a pain too. Why not let the good folks from SR Salvage (inc.) do it for you? Just punch the beacon on the ship you want hauled and wait a moment...
+Melted beyond recognition. Judging by the average alloy of the vessel... it was not built for combat.
+This unremarkable wreckage is still held together by durable cables.
+It sustained only minor hull damage but was put out of action by a critical blow to life support systems.
+Another civilian vessel. They were probably ambushed by outlaws.
+The hull is warped in various ways. Must have been an anomaly.
+Obliterated. Another shot or two and only dust would remain.
+Scans indicate that it suffered from a power core detonation.
+It is demolished beyond repair. One could probably salvage valuable alloys from it.
+The quality of the alloys has deteriorated due to constant long term exposure to radiation.
+This wreckage doesn't cast any shadows. Most likely due to a fatal malfunction in the phaseshift hardware.
+The hull is disproportionally stretched due to an abrupt plunge out of a Torrent into normal space.
+The state of the hull indicates it was melted by plasma weaponry.
+The hull was cut clean by beam weapons into large fragments.
+Clear signs of a fusion-based detonation on the broadside indicate that it was involved in an all out battle.
+The Best buy / sell database offers an overview of the local planetary and station prices.
+Each station or planet listed in the best buy or best sell list had to be visited beforehand.
+The Local price is the default price on that station or planet.
+The Last price is the last known price at the time of the most recent visit to that station or planet. It could have been modified by events, officers, licenses, perks, etc...
+Distance is equal to the rectilinear distance between your ship's current position and the listed destination.
+Two options in the top right corner allow you to easily locate stations either by centering the screen or setting a waypoint.
+Selecting a commodity filters the list of stations and planets to only those who buy or sell that particular commodity.
+The price listings in the commodity list are unmodified global averages
+With Torrent Drive or T-Drive ship can travel at faster than light speeds by reducing the ship's mass. T-Drive is advised to be used cautiously, executing smaller jump ranges, and thus limiting stress on a ship.
+CORRION - "The water world". Mild atmosphere attracted many colonists to settle here, but vast oceans on this waterworld challenged engineers greatly. Today this peaceful world remains one of the least urbanized, but also most preserved environments in Gemini.
+EANAKAI - "Tropical paradise". This world has only a few landmasses, but dangerous creatures living deep inland prevented serious colonization. Most cities are built in protected coastal areas of the continents. The last three decades have seen most of the cities of this world struggling to rebuild from global super earthquake that caused almost complete devastation.
+FAIRUZ - "Megafactory". Abundance of natural resources made it a perfect place to jump-start an entire Gemini production following the start of serious colonization. Due to its high manufacturing value, Fairuz was also the target of many wars and invasions. Last one was during first Gemini war when Directorate forces conducted sustained orbital bombardment that resulted in global environmental catastrophe. Today, Fairuz is a crippled planet with toxic atmosphere, but still succeeds to maintain the bulk of its industrial production based on imported raw materials.
+KORKYRA - dark and cold planet with very few water surfaces. Korkyra is the homeworld of the former Korkyran Triumvirate. People of Korkyra are a disciplined and proud nation, with unmatched respect for its mighty military and social hierarchy. Cities are huge, modern and functional with no room for beauty or designers' ingenuity. This world has avoided any major destruction throughout Gemini history, since it has established itself as an "impossible" target for decades.
+NYX - Homeworld of the Nyxian Consortium. This green world is covered with massive jungles and rich wildlife. After initial colonization, Nyxian local authorities started a full scale terraforming project aimed to reconfigure the planet to match Earth in its likeness. Project failed but genetic mutation on local wildlife caused increased spread of forests and animals. Today, all urban areas are separated with barriers that require constant maintenance. Human presence outside of these areas is minimal.
+THAURIA - "The barren world". Thauria is the second largest planet in Korkyran territory. It supports human life just barely. Inhabitants are a sturdy, proud people that value military life just like their Korkyran counterparts. For the last several years, this planet has been the center of rebellion against the Korkyran government. During this war, Thauria has been repeatedly besieged and attacked, but remains strong and undefeated.
+TRINITY - "New Earth". Maybe the most perfect planet for human civilization in Gemini. Its early development was hampered by numerous disputes between the local colonist groups. After major colonization began, Imperial forces had to undertake three military operations just to ensure peace and order. This bad start was never caught up with. Today, Trinity is the center of the Trinity Free States and enjoys the longest time of relative peace in recent history.
+IOLIA - "Ice globe". Iolia is the central planet of the Iolian Pact. The planet itself as a major trading and transit hub. Dozens of shady semi-legal groups operate from this world and their activities make Iolia a very unsettling and dangerous place to live in. The most powerful Gemini company, MultiOps, succeeds to maintain order only in several major cities where they established the biggest weapon manufacturing plants in the entire Gemini.
+PYROS - "Hell-pit". Pyros is a world of million volcanoes. Surface is very dangerous and cities are buils in protected domes or underground. Despite all percautions, natural disasters are frequent and Pyros remains most unpopulated planet to this day. Some areas of this world are considered smugglers paradise, but reluctance of any territorial faction to unleash a major military operation offered criminal syndicates a chance to properly entrench themselves for a long period.
+SORA - The Dark-lab". Sora is the homeworld of the Nexus and its appearance follows the philosophy of its rulers to the letter. The planet is in essence one huge scientific hub. Super-modern cities blend together with natural surroundings and all of its resources are used to power the thousands of laboratories and testing sites. The nature of Nexus is secretive and elusive so not much is known about planet surface and its populace, but their paranoia of outsiders led them to the take a more aggressive and militaristic stance.
+CARTHAGENA - "The foothold". Carthagena served as the capital for all Imperial and Directorate institutions. This planet had the perfect atmosphere and environment and was closest to the Starpoint. The result was very rapid urbanization and development. Some called this world "the jewel of Gemini"<\n>At the end of the first Gemini war, tragedy later named "Starpoint incident" obliterated the entire planet. Most of the planet's population was wiped out and all cities destroyed. Slow recolonization started many years after, but just looking at this world today reveals that it will never reach even the fraction of its former glory.
+BAELDOR - Capital of the Baeldor Republic. This highly urbanized planet is the greatest achievement of human colonization in Gemini, and after the destruction of Carthagena, the most densely populated world in the entire system. Great cities of majestic beauty were built to stand as a monument to human success in deep space. Baeldor suffered greatly in both Gemini wars, but the resilient people repeatedly rose from the ashes and rebuilt their dream.
+HOGOSHA - "Thousand sky-cities". The only completely successfully terraformed planet in Gemini. Hogosha was the last planet to be colonized. Rolling green hills and endless waterfalls hide the fact Hogosha was in fact a desert world. For fifty years engineers constructed gigantic flying platforms all over planet. They were in essence terraforming pods. After the process was completed, these platforms were used to house cities for the new colonists. Today, although rather unpopulated, Hogosha stands as the best testament to what humans can achieve even in the worst of environments.
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]
+[LGM_RESERVED]

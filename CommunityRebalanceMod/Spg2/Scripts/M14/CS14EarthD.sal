@@ -1,0 +1,87 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer SetInvulnerable 1 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posDamocles ;
+structure GetByKeyName m14damoclesSTR GetPosition posDamocles ;
+float3 posPlayer ;
+float3 posAdd = 30.0 5.0 0.0 ;
+math posPlayer = posDamocles + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetPlayer VectorTo posDamocles ;
+
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> bastille */
+int objectType = 6 ;
+float rotStart = 1.6 ;
+float rotSpeed = -0.09 ;
+float vertStart = 1.7 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 140.0 ;
+camera SetType 5 objectType bastillaSTR rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+int miscLine = 1128 ;
+float duration = 5.0 ;
+screen ShowText miscLine duration ;
+
+pause 3.0 ;
+
+/* <CAMERA 2> */
+/* rotation -> damocles */
+objectType = 6 ;
+rotStart = -1.6 ;
+rotSpeed = 0.09 ;
+vertStart = 1.7 ;
+vertOffset = 12.0 ;
+vertSpeed = 0.06 ;
+camDistance = 40.0 ;
+camera SetType 5 objectType m14damoclesSTR rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+pause 3.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+/*
+game SetControlEnabled 1 ;
+*/
+ship GetPlayer SetInvulnerable 0 ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+dialogue Spg2\Dialogues\M14\D08.dia ;
+
+End

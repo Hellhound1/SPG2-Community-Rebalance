@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	5
+	Text:	177
+	Voice:	Spg2\Sound\Voice\figueroa\177.wav
+	Duration:	6.443
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\M17\EndDia02.sal
+}

@@ -1,0 +1,27 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+/* 
+	+activated on mission accept on Starchart 
+	+check if player inside mission trigger
+*/
+
+PrintMessage M01StartCheckTrigger.sal ;
+
+float triggerSize = 1000.0 ;
+float3 triggerPos = 0.0 0.0 0.0 ;
+float3 playerPos = 0.0 0.0 0.0 ;
+float distance = 0.0 ;
+trigger GetByKeyName m01aTRI GetRadius triggerSize ;
+ship GetPlayer GetPosition playerPos ;
+trigger GetByKeyName m01aTRI GetPosition triggerPos ;
+math distance = Distance triggerPos playerPos ;
+
+if distance <= triggerSize
+	game HideStarchart 1 ;
+	script Spg2\Scripts\M01\MainQuest01Start.sal ;
+endif
+
+End

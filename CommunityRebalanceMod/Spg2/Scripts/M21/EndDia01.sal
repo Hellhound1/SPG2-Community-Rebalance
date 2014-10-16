@@ -1,0 +1,10 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 141 SetSolve 1 ;
+mainquest GetById 142 SetAcquire 1 ;
+script Spg2\Scripts\M21\CS21A.sal ;
+End

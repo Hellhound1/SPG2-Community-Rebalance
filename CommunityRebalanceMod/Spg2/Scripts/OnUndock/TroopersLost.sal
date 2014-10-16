@@ -1,0 +1,33 @@
+/*
+-------
+Script by: LGM Games, 2014
++check if Troopers are available
+	+reduce Trooper count
+	+notification and/or one-liner
+*/
+
+/* |---------------- KILL TROOPERS ----------------| */
+int troopersOld = 0 ;
+int troopersNew = 0 ;
+int troopersKilled = 0 ;
+ship GetPlayer GetTroopersNo troopersOld ;
+
+if troopersOld == 0
+	troopersKilled = 0 ;
+else
+	math troopersKilled = Rnd 1 20 ;
+	math troopersNew = troopersOld - troopersKilled ;
+	if troopersNew < 0
+		troopersNew = 0 ;
+	endif
+	math troopersKilled = troopersOld - troopersNew ;
+	ship GetPlayer SetTroopersNo troopersNew ;
+endif
+
+if troopersKilled != 0
+	int titleId = 1226 ;
+	int textId = 1227 ;
+	math textId = Rnd 1227 1228 ;
+	screen ShowWarningsEx 18 titleId textId troopersKilled ;
+endif
+End

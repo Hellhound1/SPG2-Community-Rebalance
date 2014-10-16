@@ -1,0 +1,34 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+
+mainquest GetById 74 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m11brother3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11brother3 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	ship GetByKeyName m11brother4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11brother4 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			
+			/* end timer in advance - m11timer1 */
+			game CancelTimer m11timer1 1 ;
+			
+		endif
+	endif
+	
+endif
+
+End

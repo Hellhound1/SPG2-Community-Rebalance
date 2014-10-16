@@ -1,0 +1,51 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+mainquest GetById 31 SetSolve 1 ;
+mainquest GetById 31 DeleteObjective 1 ;
+mainquest GetById 32 SetAcquire 1 ;
+log 29 ;
+
+game SetControlEnabled 1 ;
+/* another mission area??? */
+
+ship GetByKeyName m05galahadSHP SetMark 1 ;
+ship GetByKeyName m05galahadSHP SetMissionTask 1 ;
+
+ship GetByKeyName m05galahadSHP SetInvulnerable 0 ;
+ship GetByKeyName m05galahadSHP SetBoardable 0 ;
+int aiState = 2 ;
+ship GetByKeyName m05galahadSHP SetAIQuestStatus aiState ;
+
+ship GetByKeyName m05galahadSHP SetFriendFoe 2 ;
+
+/*
+int type = 1 ;
+float3 position = 0.0 0.0 0.0 ;
+int faction = 0 ;
+int shipId = 4 ;
+
+ship GetByKeyName m05galahadSHP GetPosition position ;
+
+float3 enemy1offset = 30.0 0.0 30.0 ;
+float3 enemy2offset = -30.0 0.0 30.0 ;
+
+math enemy1pos = position + enemy1offset ;
+math enemy2pos = position + enemy2offset ;
+
+shipAdd enemyship1 type enemy1pos faction shipId ;
+shipAdd enemyship2 type enemy2pos faction shipId ;
+
+ship GetByKeyName enemyship1 SetAIQuestStatus 2 ;
+ship GetByKeyName enemyship2 SetAIQuestStatus 2 ;
+ship GetByKeyName enemyship1 SetFriendFoe 2 ;
+ship GetByKeyName enemyship2 SetFriendFoe 2 ;
+*/
+
+game ResetShipEnemyList 1 ;	
+
+
+End

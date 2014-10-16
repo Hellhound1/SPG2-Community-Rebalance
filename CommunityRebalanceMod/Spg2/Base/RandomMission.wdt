@@ -1,0 +1,16 @@
+Colum:	14												
+Id	Name	NameLine	IconFile	X	Y	W	H	Reward	RewardPerLevel	RewardAddDiff	AmbushAdd	ExperienceMin	ExperienceMax
+0	Assassination	699	Spg2\Icons\logIconsSmall.dds	384	436	192	244	5000	2000	0.25	0.2	0.09	0.11
+1	Capture	702	Spg2\Icons\logIconsSmall.dds	448	500	192	244	5000	2000	0.2	0.2	0.09	0.11
+2	Patrol	705	Spg2\Icons\logIconsSmall.dds	0	52	256	308	5000	2000	0.2	0.2	0.09	0.11
+3	Science	708	Spg2\Icons\logIconsSmall.dds	64	116	256	308	3000	1500	0.2	0.2	0.09	0.11
+4	Rescue	711	Spg2\Icons\logIconsSmall.dds	128	180	256	308	5000	2000	0.2	0.2	0.09	0.11
+5	Maintenance	714	Spg2\Icons\logIconsSmall.dds	192	244	256	308	3000	1500	0.2	0.2	0.09	0.11
+6	Ferry	717	Spg2\Icons\logIconsSmall.dds	256	308	256	308	4000	1500	0.2	0.25	0.09	0.11
+7	Taxi	720	Spg2\Icons\logIconsSmall.dds	320	372	256	308	4000	1500	0.2	0.25	0.09	0.11
+8	Station_assault	723	Spg2\Icons\logIconsSmall.dds	384	436	256	308	5000	2000	0.2	0.2	0.09	0.11
+9	Station_defense	726	Spg2\Icons\logIconsSmall.dds	448	500	256	308	5000	2000	0.2	0.2	0.09	0.11
+10	Convoy_escort	729	Spg2\Icons\logIconsSmall.dds	0	52	320	372	5000	2000	0.2	0.2	0.09	0.11
+11	Convoy_raid	732	Spg2\Icons\logIconsSmall.dds	64	116	320	372	5000	2000	0.2	0.2	0.09	0.11
+12	Smuggle	735	Spg2\Icons\logIconsSmall.dds	128	180	320	372	5000	2000	0.2	0.25	0.09	0.11
+13	Prospecting	738	Spg2\Icons\logIconsSmall.dds	192	244	320	372	5000	2000	0.2	0.2	0.09	0.11

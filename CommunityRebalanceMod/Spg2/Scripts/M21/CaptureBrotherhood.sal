@@ -1,0 +1,46 @@
+/* quest related */
+int questCond = 0 ;
+mainquest GetById 146 GetAcquire questCond ;
+if questCond == 1
+	
+	int shipExist = 0 ;
+	int shipCond1 = 2 ;
+	int shipCond2 = 2 ;
+	int shipCond3 = 2 ;
+	
+	ship GetByKeyName m21brother1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21brother1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m21brother2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21brother2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m21brother3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m21brother3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				mainquest GetById 146 SetSolve 1 ;
+				mainquest GetById 146 DeleteObjective 1 ;
+				mainquest GetById 147 SetAcquire 1 ;
+				script Spg2\Scripts\M21\SpawnAliens.sal ;
+				script Spg2\Scripts\M21\CS21D.sal ;
+			endif
+		endif
+	endif
+	
+endif
+
+End

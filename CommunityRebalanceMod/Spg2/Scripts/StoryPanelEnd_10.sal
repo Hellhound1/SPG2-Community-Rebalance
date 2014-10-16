@@ -1,0 +1,35 @@
+mainquest GetById 156 SetSolve 1 ;
+mainquest GetById 156 DeleteObjective 1 ;
+ship GetByKeyName m22ridleyB SetEnabled 0 ;
+ship GetByKeyName m22kuzhev SetEnabled 0 ;
+ship GetByKeyName m22protect1 SetEnabled 0 ;
+ship GetByKeyName m22protect2 SetEnabled 0 ;
+ship GetByKeyName m22nexus4 SetEnabled 0 ;
+ship GetByKeyName m22nexus5 SetEnabled 0 ;
+ship GetByKeyName m22nexus6 SetEnabled 0 ;
+ship GetByKeyName m22brother1 SetEnabled 0 ;
+ship GetByKeyName m22brother2 SetEnabled 0 ;
+ship GetByKeyName m22brother3 SetEnabled 0 ;
+
+ship GetPlayer SetInvulnerable 0 ;
+
+/* play outro movie */
+game PlayMovie outro ;
+
+log 122 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 76600 ;
+player AddReputation 100 ;
+player AddCredits 500000 ;
+script Spg2\Scripts\BlueprintAwardFull.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = -1 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

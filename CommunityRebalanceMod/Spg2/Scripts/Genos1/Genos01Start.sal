@@ -1,0 +1,5 @@
+sidequest GetById 7 SetAvailable 0 ;
+sidequest GetById 7 SetAcquire 1 ;
+log 124 ;
+globalobject GetByKeyName genosLoc1WP SetMark 2 ;
+End

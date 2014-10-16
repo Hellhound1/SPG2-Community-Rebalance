@@ -1,0 +1,11 @@
+Dialogue:
+{
+	Portrait:	20
+	Text:	68
+	Voice:	Spg2\Sound\Voice\nimov\68.wav
+	Duration:	7.40
+}
+Events:
+{
+	OnDialogueEnd:	Spg2\Scripts\DiaEndEmpty.sal
+}

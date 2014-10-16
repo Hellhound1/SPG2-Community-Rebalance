@@ -1,0 +1,38 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questcond ;
+mainquest GetById 149 GetAcquire questcond ;
+if questcond == 0
+	mainquest GetById 148 DeleteObjective 1 ;
+	log 117 ;
+	mainquest GetById 149 SetAcquire 1 ;
+endif
+
+waypoint GetByKeyName m22marker SetMark 1 ;
+waypoint GetByKeyName m22marker SetMissionTask 4 ;
+
+/* check if player already inside first mission trigger */
+float triggerSize = 1000.0 ;
+float3 triggerPos = 0.0 0.0 0.0 ;
+float3 playerPos = 0.0 0.0 0.0 ;
+float distance = 0.0 ;
+trigger GetByKeyName m22TriA GetRadius triggerSize ;
+ship GetPlayer GetPosition playerPos ;
+trigger GetByKeyName m22TriA GetPosition triggerPos ;
+math distance = Distance triggerPos playerPos ;
+
+/* check if docked */
+int stationCheck = 0 ;
+int returnValueSlot = 0 ;
+scriptvar GetValue int returnValueSlot stationCheck ;
+
+if distance <= triggerSize && stationCheck == 0
+	game HideStarchart 1 ;
+	script Spg2\Scripts\M22\EnterTriM22A.sal ;
+endif
+
+End

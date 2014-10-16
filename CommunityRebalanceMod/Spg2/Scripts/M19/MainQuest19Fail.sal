@@ -1,0 +1,9 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+activated on mission fail or abandon
+	+linked through QuestMain.wdt
+*/
+
+End

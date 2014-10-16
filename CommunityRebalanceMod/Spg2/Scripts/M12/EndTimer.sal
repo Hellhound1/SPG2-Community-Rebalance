@@ -1,0 +1,78 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M12_COMPLETED ;
+
+int shipExist = 0 ;
+int questCond = 0 ;
+mainquest GetById 78 GetAcquire questCond ;
+if questCond == 1
+	
+	mainquest GetById 78 SetSolve 1 ;
+	/* mainquest GetById 78 DeleteObjective 1 ; */
+	mainquest GetById 79 SetAvailable 1 ;
+	
+	ship GetByKeyName m12stoner1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m12stoner1 SetEnabled 0 ;
+		ship GetByKeyName m12stoner1 SetMark 0 ;
+		ship GetByKeyName m12stoner1 SetMissionTask -1 ;
+	endif
+	ship GetByKeyName m12stoner2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m12stoner2 SetEnabled 0 ;
+		ship GetByKeyName m12stoner2 SetMark 0 ;
+		ship GetByKeyName m12stoner2 SetMissionTask -1 ;
+	endif
+	ship GetByKeyName m12stoner3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m12stoner3 SetEnabled 0 ;
+		ship GetByKeyName m12stoner3 SetMark 0 ;
+		ship GetByKeyName m12stoner3 SetMissionTask -1 ;
+	endif
+	ship GetByKeyName m12stoner4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m12stoner4 SetEnabled 0 ;
+		ship GetByKeyName m12stoner4 SetMark 0 ;
+		ship GetByKeyName m12stoner4 SetMissionTask -1 ;
+	endif
+	ship GetByKeyName m12stoner5 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m12stoner5 SetEnabled 0 ;
+		ship GetByKeyName m12stoner5 SetMark 0 ;
+		ship GetByKeyName m12stoner5 SetMissionTask -1 ;
+	endif
+	
+	log 69 ;
+	
+	structure GetByKeyName leviathanSTR SetMark 0 ;
+	
+	dialogue Spg2\Dialogues\M12\D02.dia ;
+	
+	mainmissionpanel 70 ;
+	
+	/* add quest item */
+	int itemId = 12 ;
+	int amount = 1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	game SetQuestMode 0 ;
+
+	/* -^-REWARD-^- */
+	player AddExp 21100 ;
+	player AddReputation 100 ;
+	player AddCredits 260000 ;
+	script Spg2\Scripts\AwardLightWeapon3.sal ;
+
+	/* -^-MISSION COMPLETE-^- */
+	int titleLine = 183 ;
+	int textLine1 = 1553 ;
+	int textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+	
+endif
+End

@@ -1,0 +1,14 @@
+
+int questCond = 0 ;
+mainquest GetById 94 GetAcquire questCond ;
+if questCond == 1
+	derelict GetByKeyName m14container2 SetEnabled 1 ;
+	derelict GetByKeyName m14container2 SetDestructible 0 ;
+endif
+mainquest GetById 94 GetAcquire questCond ;
+if questCond == 1
+	derelict GetByKeyName m14container3 SetEnabled 1 ;
+	derelict GetByKeyName m14container3 SetDestructible 0 ;
+endif
+
+End

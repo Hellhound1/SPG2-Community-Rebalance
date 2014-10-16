@@ -1,0 +1,82 @@
+/*
+-------
+Script by: LGM Games, 2013  
++visible damage particle effects depending on ship size
++getShipRadius
++start effect 1
++start effect 2
++start effect 3 at random
++duration 60-85 seconds
+*/
+
+float radius = 0.0 ;
+ship GetParent GetRadius radius ;
+
+/* activate effect 1 */
+int retId = 0 ;
+float delay = 0.0 ;
+float3 position = 0.0 0.0 0.0 ;
+ship GetParent GetRandomEffectPositionLocal position ;
+
+/* particle effect IDs depending on ship size */
+int asbId = 154 ;
+if radius > 0.01 && radius < 10.01
+	math asbId = Rnd 163 171 ;
+endif
+if radius > 10.01 && radius < 20.01
+	math asbId = Rnd 172 180 ;
+endif
+if radius > 20.01 && radius < 100.01
+	math asbId = Rnd 181 189 ;
+endif
+
+float lifetime = 60.0 ;
+math lifetime = Rnd 60.0 85.0 ;
+assemblyex Create retId delay position asbId lifetime ;
+
+/* activate effect 2 */
+retId = 1 ;
+ship GetParent GetRandomEffectPositionLocal position ;
+
+/* particle effect IDs depending on ship size */
+if radius > 0.01 && radius < 10.01
+	math asbId = Rnd 163 171 ;
+endif
+if radius > 10.01 && radius < 20.01
+	math asbId = Rnd 172 180 ;
+endif
+if radius > 20.01 && radius < 100.01
+	math asbId = Rnd 181 189 ;
+endif
+
+math lifetime = Rnd 60.0 85.0 ;
+assemblyex Create retId delay position asbId lifetime ;
+
+/* randomly activate effect 3 if ship is player */
+
+int isPC = 0 ;
+ship GetParent IsPlayer isPC ;
+if isPC == 1
+	int chance = 1 ;
+	math chance = Rnd 1 3 ;
+	if chance == 1
+		retId = 2 ;
+		ship GetParent GetRandomEffectPositionLocal position ;
+		
+		/* particle effect IDs depending on ship size */
+		if radius > 0.01 && radius < 10.01
+			math asbId = Rnd 163 171 ;
+		endif
+		if radius > 10.01 && radius < 20.01
+			math asbId = Rnd 172 180 ;
+		endif
+		if radius > 20.01 && radius < 100.01
+			math asbId = Rnd 181 189 ;
+		endif
+		
+		math lifetime = Rnd 60.0 85.0 ;
+		assemblyex Create retId delay position asbId lifetime ;
+	endif
+endif
+
+End

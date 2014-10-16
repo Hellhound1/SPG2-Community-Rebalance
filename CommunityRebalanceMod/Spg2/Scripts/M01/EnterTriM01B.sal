@@ -1,0 +1,33 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+PrintMessage START_EnterTriM01B.sal ;
+PrintMessage M01TriB_Entered ;
+int questCond = 0 ;
+mainquest GetById 6 GetAcquire questCond ;
+if questCond == 1
+	PrintMessage TriM01B_QuestCond_Passed ;
+	mainquest GetById 6 SetSolve 1 ;
+	mainquest GetById 6 DeleteObjective 1 ;
+	mainquest GetById 7 SetAcquire 1 ;
+	waypoint GetByKeyName m01markerB SetMark 0 ;
+	waypoint GetByKeyName m01markerB SetMissionTask -1 ;
+	/* activate questMode */
+	game SetQuestMode 1 ;
+	/*
+	ship GetByKeyName m01galahadBSHP SetEnabled 1 ;
+	ship GetByKeyName m01galahadBSHP SetAIQuestStatus 3 ;
+	ship GetByKeyName m01galahadBSHP SetFriendFoe 1 ;
+	*/
+	game ResetShipEnemyList 1 ;
+	
+	/*
+		derelict GetByKeyName avalonDER SetDestructible 0 ;
+	*/
+	script Spg2\Scripts\M01\CS01D.sal ;
+endif
+PrintMessage END_EnterTriM01B.sal ;
+End

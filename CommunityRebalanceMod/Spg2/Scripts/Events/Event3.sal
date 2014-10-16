@@ -1,0 +1,11 @@
+/*
+-------
+Script by: LGM Games, 2013  
++Global event: Station lockdown
+-------
++separated into 5 scripts due to script variable limit
+*/
+
+PrintMessage ERROR:_Deprecated_script_called! ;
+
+End

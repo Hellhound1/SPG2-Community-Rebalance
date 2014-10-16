@@ -1,0 +1,101 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+ship GetPlayer ForceStop 0 ;
+ship GetPlayer SetPTE 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+
+float3 posClearmont ;
+float3 posPlayer ;
+float3 posRidley ;
+float3 posNexus1 ;
+float3 posNexus2 ;
+float3 posAdd ;
+station GetByKeyName clearmontSTA GetPosition posClearmont ;
+posAdd = 250.0 0.0 0.0 ;
+math posRidley = posClearmont + posAdd ;
+posAdd = 300.0 0.0 0.0 ;
+math posPlayer = posClearmont + posAdd ;
+posAdd = 1200.0 0.0 0.0 ;
+math posNexus1 = posClearmont + posAdd ;
+posAdd = 0.0 0.0 30.0 ;
+math posNexus2 = posNexus1 + posAdd ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m15ridleySHP SetPosition posRidley ;
+ship GetByKeyName m15nexus1 SetPosition posNexus1 ;
+ship GetByKeyName m15nexus2 SetPosition posNexus2 ;
+ship GetByKeyName m15ridleySHP VectorTo posClearmont ;
+ship GetPlayer VectorTo posRidley ;
+ship GetByKeyName m15nexus1 VectorTo posClearmont ;
+ship GetByKeyName m15nexus2 VectorTo posClearmont ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotation -> ridley */
+int objectType = 1 ;
+float rotStart = 2.4 ;
+float rotSpeed = 0.08 ;
+float vertStart = 2.4 ;
+float vertOffset = 12.0 ;
+float vertSpeed = 0.06 ;
+float camDistance = 80.0 ;
+camera SetType 5 objectType m15ridleySHP rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+int miscLine = 1130 ;
+float duration = 5.0 ;
+screen ShowText miscLine duration ;
+
+dialogue Spg2\Dialogues\M15\D01.dia ;
+
+pause 12.0 ;
+
+/* <CAMERA 2> */
+/* rotation -> nexus2 */
+objectType = 1 ;
+rotStart = 3.0 ;
+rotSpeed = -0.08 ;
+vertStart = 2.4 ;
+vertOffset = 12.0 ;
+vertSpeed = 0.06 ;
+camDistance = 60.0 ;
+camera SetType 5 objectType m15nexus2 rotStart rotSpeed vertStart vertOffset vertSpeed camDistance ;
+
+pause 3.0 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+/*
+game SetControlEnabled 1 ;
+*/
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+pause 1.0 ;
+dialogue Spg2\Dialogues\M15\D01B.dia ;
+End

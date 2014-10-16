@@ -1,0 +1,17 @@
+int questCond = 0 ;
+mainquest GetById 102 GetAcquire questCond ;
+if questCond == 1	
+	game SetQuestMode 1 ;
+	mainquest GetById 102 SetSolve 1 ;
+	mainquest GetById 102 DeleteObjective 1 ;
+	mainquest GetById 103 SetAcquire 1 ;
+	waypoint GetByKeyName m14EarthMarker7 SetMark 0 ;
+	waypoint GetByKeyName m14EarthMarker7 SetMissionTask -1 ;
+	structure GetByKeyName m14damoclesSTR SetEnabled 1 ;
+	structure GetByKeyName m14damoclesSTR SetMark 1 ;
+	structure GetByKeyName m14damoclesSTR SetMissionTask 12 ;
+	log 83 ;
+	script Spg2\Scripts\M14\CS14EarthD.sal ;
+endif
+
+End

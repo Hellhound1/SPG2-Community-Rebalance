@@ -1,0 +1,127 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+game SetControlEnabled 0 ;
+
+float speed = 0.0 ;
+ship GetPlayer SetSpeed speed ;
+ship GetPlayer SetPTE 0 ;
+ship GetPlayer ForceStop 0 ;
+
+/* <START BLOCK> */
+float time = 1.0 ;
+float3 black = 0.0 0.0 0.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 0 ;
+screen ShowLine 1 ;
+camera SetCSCamera 1 ;
+camera GetDefault ;
+
+/* <ACTORS> */
+float3 posPlayer ;
+float3 posRidley ;
+float3 posAdd ;
+waypoint GetByKeyName m21marker GetPosition posRidley ;
+posAdd = -30.0 0.0 0.0 ;
+math posPlayer = posRidley + posAdd ;
+ship GetByKeyName m21ridleyA SetPosition posRidley ;
+ship GetPlayer SetPosition posPlayer ;
+ship GetByKeyName m21ridleyA VectorTo posPlayer ;
+ship GetPlayer VectorTo posRidley ;
+
+/* <FADE FROM BLACK> */
+time = 1.0 ;
+black = 0.0 0.0 0.0 ;
+camera FadeFromColor black time ;
+
+/* <CAMERA 1> */
+/* rotationCam player */
+int objectType = 0 ;
+float rotationStart = 2.4 ;
+float rotationSpeed = 0.08 ;
+float verticalStart = 2.4 ;
+float verticalOffset = 12.0 ;
+float verticalSpeed = 0.06 ;
+float cameraDistance = 60.0 ;
+camera SetType 5 objectType NONE rotationStart rotationSpeed verticalStart verticalOffset verticalSpeed cameraDistance ; 
+
+int miscLine = 1136 ;
+float duration = 5.0 ;
+screen ShowText miscLine duration ;
+
+pause 3.0 ;
+
+/* script show T-Jump effect bubble or something */
+
+float3 playerGoTo ;
+posAdd = -500.0 0.0 0.0 ;
+math playerGoTo = posPlayer + posAdd ;
+ship GetPlayer GoTo playerGoTo ;
+
+/* particle effect IDs depending on ship size */
+float shipRadius = 1.0 ;
+ship GetPlayer GetRadius shipRadius ;
+
+int tunnelId = 211 ;
+int flashId = 210 ;
+if shipRadius > 0.01 && shipRadius < 10.01
+	tunnelId = 211 ;
+endif
+if shipRadius > 10.01 && shipRadius < 20.01
+	tunnelId = 212 ;
+endif
+if shipRadius > 20.01 && shipRadius < 100.01
+	tunnelId = 213 ;
+endif
+
+/* equipment asb -> FreeModel.wds */
+int retId = 0 ;
+float delay = 0.0 ;
+float3 position = 0.0 0.0 0.0 ;
+float lifetime = 6.0 ;
+assemblyex Create retId delay position tunnelId lifetime ;
+
+pause 1.5 ;
+
+/* TDrive particle effect */
+int retId2 = 1 ;
+delay = 0.0 ;
+position = 0.0 0.0 0.0 ;
+ship GetPlayer GetPosition position ;
+
+/* adjust flash position according to camera */
+float3 posCamera = 0.0 0.0 0.0 ;
+float3 e_posCC = 0.0 0.0 0.0 ;
+float3 posFlash = 0.0 0.0 0.0 ;
+camera VectorTo posCamera ;
+math e_posCC = posCamera * shipRadius ;
+math posCamera = e_posCC * 0.6 ;
+math posFlash = position + posCamera ;
+
+lifetime = 2.0 ;
+assembly delay posFlash flashId lifetime ;
+
+pause 1.5 ;
+
+/* END BLOCK */
+time = 1.0 ;
+camera FadeToColor black time ;
+pause 1.0 ;
+game ShowAllPanels 1 ;
+screen ShowLine 0 ;
+camera SetDefault ;
+camera SetCSCamera 0 ;
+camera FadeFromColor black time ;
+
+/* <TRIGGER SCRIPT OR DIALOG> */
+float3 positionNew = 0.0 0.0 0.0 ;
+waypoint GetByKeyName m21bWp GetPosition positionNew ;
+player SetPosition 1 positionNew ; /* teleport via TDrive */
+
+game SetControlEnabled 1 ;
+
+End

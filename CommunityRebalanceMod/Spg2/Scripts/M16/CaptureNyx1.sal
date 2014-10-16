@@ -1,0 +1,85 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+int shipCond4 = 2 ;
+int shipCond5 = 2 ;
+
+mainquest GetById 115 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m16nyx1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m16nyx2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m16nyx3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	ship GetByKeyName m16nyx4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx4 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	ship GetByKeyName m16nyx5 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m16nyx5 GetCondition shipCond5 ;
+	else
+		shipCond5 = 2 ;
+	endif
+	
+	if shipCond1 != 0
+		if shipCond2 != 0
+			if shipCond3 != 0
+				if shipCond4 != 0
+					if shipCond5 != 0
+						mainquest GetById 115 SetSolve 1 ;
+						mainquest GetById 115 DeleteObjective 1 ;
+						mainquest GetById 116 SetAcquire 1 ;
+
+						ship GetByKeyName m16nyx6 SetEnabled 1 ;
+						ship GetByKeyName m16nyx7 SetEnabled 1 ;
+						ship GetByKeyName m16nyx8 SetEnabled 1 ;
+						
+						ship GetByKeyName m16nyx6 SetFriendFoe 2 ;
+						ship GetByKeyName m16nyx7 SetFriendFoe 2 ;
+						ship GetByKeyName m16nyx8 SetFriendFoe 2 ;
+						
+						ship GetByKeyName m16nyx6 SetAIQuestStatus 2 ;
+						ship GetByKeyName m16nyx7 SetAIQuestStatus 2 ;
+						ship GetByKeyName m16nyx8 SetAIQuestStatus 2 ;
+						
+						game ResetShipEnemyList 1 ;
+						
+						ship GetByKeyName m16nyx6 SetMark 1 ;
+						ship GetByKeyName m16nyx7 SetMark 1 ;
+						ship GetByKeyName m16nyx8 SetMark 1 ;
+						ship GetByKeyName m16nyx6 SetMissionTask 0 ;
+						ship GetByKeyName m16nyx7 SetMissionTask 0 ;
+						ship GetByKeyName m16nyx8 SetMissionTask 0 ;
+					endif
+				endif
+			endif
+		endif
+	endif
+	
+endif
+
+End

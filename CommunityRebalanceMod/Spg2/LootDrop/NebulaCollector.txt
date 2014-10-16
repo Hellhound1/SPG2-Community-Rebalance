@@ -1,0 +1,76 @@
+LootDropPart:
+{
+	Level:	5
+	CommodityLootDropDef:
+	{
+		ValueRange:	2999	3001
+		Commodities:	7	22	23	24	25	26	27	28
+	}
+	EquipmentLootDropDef:
+	{
+		ValueRange:	0	0
+		Equipment:	0
+	}
+	SystemLootDropDef:
+	{
+		ValueRange:	0	0
+		Systems:	0
+	}
+}
+LootDropPart:
+{
+	Level:	10
+	CommodityLootDropDef:
+	{
+		ValueRange:	4999	10001
+		Commodities:	7	22	23	24	25	26	27	28
+	}
+	EquipmentLootDropDef:
+	{
+		ValueRange:	0	0
+		Equipment:	0
+	}
+	SystemLootDropDef:
+	{
+		ValueRange:	0	0
+		Systems:	0
+	}
+}
+LootDropPart:
+{
+	Level:	30
+	CommodityLootDropDef:
+	{
+		ValueRange:	9999	15001
+		Commodities:	7	22	23	24	25	26	27	28
+	}
+	EquipmentLootDropDef:
+	{
+		ValueRange:	0	0
+		Equipment:	0
+	}
+	SystemLootDropDef:
+	{
+		ValueRange:	0	0
+		Systems:	0
+	}
+}
+LootDropPart:
+{
+	Level:	1000
+	CommodityLootDropDef:
+	{
+		ValueRange:	14999	25001
+		Commodities:	7	22	23	24	25	26	27	28
+	}
+	EquipmentLootDropDef:
+	{
+		ValueRange:	0	0
+		Equipment:	0
+	}
+	SystemLootDropDef:
+	{
+		ValueRange:	0	0
+		Systems:	0
+	}
+}

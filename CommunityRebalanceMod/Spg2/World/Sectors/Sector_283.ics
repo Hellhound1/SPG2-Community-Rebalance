@@ -1,0 +1,978 @@
+Ambient:	
+{	
+	FileName:	Spg2\Ambients\Sky7.amb
+}	
+Spaceship:	
+{	
+	ModelId:	59
+	Position:	18510.44	159.80	104395.93
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	10
+	FactionId:	16
+	Class:	7
+	Skills:	0
+	Level:	25
+	Profession:	0
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15ridleySHP
+	Name:	Archimedes
+	CaptainName:	Elenor_Ridley
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	26
+	Position:	19309.73	0.00	104531.27
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	5
+	Class:	6
+	Skills:	0
+	Level:	20
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15nexus1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M15\DestroyNexus1.sal
+		OnCapture:	Spg2\Scripts\M15\CaptureNexus1.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	25
+	Position:	19344.37	0.00	104540.53
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	5
+	Class:	5
+	Skills:	0
+	Level:	21
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15nexus2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M15\DestroyNexus1.sal
+		OnCapture:	Spg2\Scripts\M15\CaptureNexus1.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	27
+	Position:	19794.47	0.00	104797.52
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	5
+	Class:	9
+	Skills:	0
+	Level:	20
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15nexus3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M15\DestroyNexus2.sal
+		OnCapture:	Spg2\Scripts\M15\CaptureNexus2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	26
+	Position:	19878.45	0.00	104760.39
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	5
+	Class:	6
+	Skills:	0
+	Level:	17
+	Profession:	1
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15nexus4
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M15\DestroyNexus2.sal
+		OnCapture:	Spg2\Scripts\M15\CaptureNexus2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	25
+	Position:	19869.74	0.00	104849.81
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	5
+	Class:	5
+	Skills:	0
+	Level:	16
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15nexus5
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M15\DestroyNexus2.sal
+		OnCapture:	Spg2\Scripts\M15\CaptureNexus2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	25
+	Position:	19910.89	0.00	104820.73
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	5
+	Class:	5
+	Skills:	0
+	Level:	15
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15nexus6
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M15\DestroyNexus2.sal
+		OnCapture:	Spg2\Scripts\M15\CaptureNexus2.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	11
+	Position:	17790.21	0.00	103419.08
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	9
+	FactionId:	6
+	Class:	8
+	Skills:	0
+	Level:	25
+	Profession:	1
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15kuzhevSHP
+	Name:	Anathema
+	CaptainName:	Dmitry_Kuzhev
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	17668.97	0.00	103442.01
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	17
+	Profession:	1
+	CombatAI:	2
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15protect1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	17755.87	0.00	103344.21
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	16
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15protect2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	19084.27	307.23	103571.36
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	0
+	Level:	40
+	Profession:	1
+	CombatAI:	4
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15brother1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	19129.76	302.50	103674.37
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	0
+	Level:	40
+	Profession:	1
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15brother2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	19163.59	225.71	103779.95
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	0
+	Level:	40
+	Profession:	1
+	CombatAI:	3
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15brother3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	19302.60	202.82	103858.12
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	0
+	Level:	40
+	Profession:	1
+	CombatAI:	1
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15brother4
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	12
+	Position:	19539.16	238.26	103870.48
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	52
+	Class:	3
+	Skills:	0
+	Level:	40
+	Profession:	1
+	CombatAI:	4
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m15brother5
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	15
+	Position:	18765.28	0.00	104119.53
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	7
+	Skills:	2
+	Level:	36
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20imp1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M20\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M20\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	15
+	Position:	18674.89	0.00	104089.70
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	7
+	Skills:	2
+	Level:	36
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20imp2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M20\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M20\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	14
+	Position:	18745.74	0.00	104066.60
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	5
+	Skills:	1
+	Level:	37
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20imp3
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M20\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M20\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	16
+	Position:	18579.77	0.00	104047.61
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	9
+	Skills:	0
+	Level:	39
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20imp4
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M20\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M20\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	17
+	Position:	18680.42	0.00	104023.05
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	9
+	Class:	10
+	Skills:	0
+	Level:	40
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20seraphim
+	Name:	Seraphim
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M20\DestroyImps.sal
+		OnCapture:	Spg2\Scripts\M20\CaptureImps.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	59
+	Position:	18916.73	0.00	104525.08
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	16
+	Class:	7
+	Skills:	1
+	Level:	39
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20ridleyB
+	Name:	Archimedes
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	11
+	Position:	18650.97	0.00	104267.88
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	8
+	Skills:	0
+	Level:	50
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20kuzhevSHP
+	Name:	Anathema
+	CaptainName:	RND
+	Veteran:	1
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\QuestShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	18631.72	0.00	104221.83
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	46
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20protect2
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Spaceship:	
+{	
+	ModelId:	10
+	Position:	18651.60	0.00	104216.64
+	Rotation:	0.00	0.00	0.00
+	CaptainId:	0
+	FactionId:	6
+	Class:	6
+	Skills:	0
+	Level:	47
+	Profession:	0
+	CombatAI:	0
+	LootDrop:	0
+	CargoValue:	0
+	Enable:	0
+	KeyName:	m20protect1
+	Name:	RND
+	CaptainName:	RND
+	Veteran:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\ShipOnDestroy.sal
+		OnCriticalHit:	Spg2\Scripts\CriticalHit.sal
+		OnHP75:	Spg2\Scripts\ShipOnHP75.sal
+		OnHP50:	Spg2\Scripts\ShipOnHP50.sal
+		OnHP25:	Spg2\Scripts\ShipOnHP25.sal
+	}	
+}	
+Station:	
+{	
+	ModelId:	61
+	Position:	18519.54	-20.31	104621.60
+	Rotation:	0.02	1.07	0.00
+	KeyName:	clearmontSTA
+	Name:	Clearmont
+	NameId:	198
+	FactionId:	19
+	CaptianId:	0
+	MaxCargo:	150
+	MaxTrooper:	50
+	Licenses:	
+	{	
+		16	
+	}	
+	Items:	42
+	500000	0	1	35000	0	1	1000	0	0	5000	0	0	10000	0	0	5000	0	1	500	0	1	3000	0	1	500	0	1	10000	0	1	10000	0	1	10000	0	1	10000	0	1	10000	0	1	10000	0	1	5000	0	1	10000	0	0	1000	0	0	5000	0	0	20000	0	0	100000	0	0	100000	0	0	200000	0	1	200000	0	0	10000	0	0	10000	0	0	10000	0	0	1000	0	0	15000	0	0	10000	0	0	20000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0	50000	0	0
+	Commodities:	102
+	95	0	0	106	0	0	110	0	0	132	0	0	195	0	0	192	0	0	218	0	0	210	0	0	292	0	0	281	0	0	283	0	0	310	0	0	577	0	0	526	0	0	573	0	0	576	0	0	851	0	0	892	0	0	874	0	0	936	0	0	1685	0	0	1848	0	0	98	0	0	153	0	0	337	0	0	433	0	0	574	0	0	858	0	0	1262	0	0	1832	0	0	293	0	0	216	0	0	198	0	0	208	0	0	177	0	0	186	0	0	351	0	0	318	0	0	1070	0	0	1093	0	0	1193	0	0	1679	0	0	1190	0	0	1432	0	0	1604	0	0	1301	0	0	128	0	0	161	0	0	207	0	0	139	0	0	883	0	0	125	0	0	296	0	0	793	0	0	239	0	0	194	0	0	1332	0	0	1376	0	0	1217	0	0	1342	0	0	369	0	0	964	0	0	484	0	0	1735	0	0	2109	0	0	670	0	1	336	0	0	1587	0	0	2398	0	0	2610	0	0	198	0	0	270	0	0	1380	0	0	5966	0	0	1615	0	0	6323	0	0	1092	0	0	640	0	0	516	0	0	1369	0	0	3009	0	0	692	0	0	1651	0	1	1864	0	0	2400	0	0	5452	0	0	1113	0	0	209	0	0	648	0	1	2195	0	1	464	0	0	602	0	0	1605	0	0	3483	0	0	287	0	0	3074	0	0	166	0	0	1400	0	0	4473	0	0	3960	0	0	4058	0	0	6531	0	0
+	EnhancementsNew:	399
+	0	0	15000	0	0	0	1	30000	0	0	0	2	50000	0	1	0	3	15000	0	0	0	4	30000	0	0	0	5	50000	0	1	0	6	15000	0	1	0	7	30000	0	1	0	8	50000	0	0	0	9	15000	0	1	0	10	30000	0	0	0	11	50000	0	1	0	12	15000	0	0	0	13	30000	0	0	0	14	50000	0	1	0	15	15000	0	1	0	16	30000	0	0	0	17	90000	0	0	0	18	15000	0	0	0	19	90000	0	1	0	20	120000	0	1	0	21	15000	0	1	0	22	90000	0	0	0	23	120000	0	1	0	24	150000	0	0	0	25	180000	0	0	0	26	200000	0	0	0	27	200000	0	0	0	28	200000	0	0	0	29	200000	0	0	0	30	200000	0	0	0	31	200000	0	0	0	32	200000	0	0	0	33	200000	0	0	0	34	200000	0	0	0	35	200000	0	0	0	36	200000	0	0	1	0	15000	0	0	1	1	30000	0	1	1	2	50000	0	0	1	3	15000	0	0	1	4	30000	0	0	1	5	50000	0	0	1	6	15000	0	0	1	7	30000	0	0	1	8	50000	0	0	1	9	15000	0	0	1	10	30000	0	1	1	11	50000	0	0	1	12	15000	0	0	1	13	30000	0	0	1	14	50000	0	0	1	15	20000	0	0	1	16	35000	0	1	1	17	70000	0	0	1	18	20000	0	1	1	19	50000	0	0	1	20	90000	0	1	1	21	20000	0	1	1	22	90000	0	1	1	23	120000	0	0	1	24	90000	0	1	1	25	140000	0	0	1	26	160000	0	0	1	27	180000	0	0	1	28	180000	0	0	1	29	180000	0	0	1	30	180000	0	0	1	31	180000	0	0	1	32	180000	0	0	1	33	180000	0	0	1	34	180000	0	0	1	35	180000	0	0	1	36	180000	0	0	1	37	180000	0	0	1	38	180000	0	0	1	39	180000	0	0	2	0	15000	0	0	2	1	30000	0	0	2	2	50000	0	1	2	3	15000	0	1	2	4	30000	0	1	2	5	50000	0	1	2	6	15000	0	0	2	7	30000	0	1	2	8	50000	0	1	2	9	15000	0	1	2	10	30000	0	0	2	11	50000	0	0	2	12	30000	0	0	2	13	50000	0	0	2	14	90000	0	1	2	15	30000	0	0	2	16	50000	0	1	2	17	80000	0	0	2	18	25000	0	0	2	19	90000	0	0	2	20	120000	0	0	2	21	45000	0	0	2	22	85000	0	1	2	23	140000	0	0	2	24	180000	0	0	2	25	180000	0	0	2	26	180000	0	0	2	27	180000	0	0	2	28	180000	0	0	2	29	180000	0	0	2	30	180000	0	0	2	31	180000	0	0	2	32	180000	0	0	2	33	180000	0	0	2	34	180000	0	0	2	35	180000	0	0	2	36	180000	0	0	3	0	15000	0	0	3	1	30000	0	0	3	2	50000	0	1	3	3	15000	0	0	3	4	30000	0	1	3	5	50000	0	0	3	6	15000	0	1	3	7	30000	0	0	3	8	50000	0	1	3	9	15000	0	0	3	10	30000	0	0	3	11	50000	0	0	3	12	15000	0	0	3	13	30000	0	1	3	14	50000	0	0	3	15	15000	0	1	3	16	30000	0	1	3	17	50000	0	1	3	18	15000	0	0	3	19	30000	0	0	3	20	50000	0	1	3	21	15000	0	1	3	22	30000	0	0	3	23	50000	0	0	3	24	15000	0	0	3	25	30000	0	0	3	26	50000	0	1	3	27	15000	0	1	3	28	30000	0	1	3	29	50000	0	0	3	30	40000	0	0	3	31	70000	0	1	3	32	10000	0	0	3	33	35000	0	1	3	34	70000	0	0	3	35	110000	0	0	3	36	35000	0	1	3	37	70000	0	0	3	38	120000	0	0	3	39	50000	0	0	3	40	100000	0	0	3	41	150000	0	1	3	42	200000	0	0	3	43	200000	0	0	3	44	200000	0	0	3	45	200000	0	0	3	46	200000	0	0	3	47	200000	0	0	3	48	200000	0	0	3	49	200000	0	0	3	50	200000	0	0	3	51	200000	0	0	3	52	200000	0	0	3	53	200000	0	0	3	54	200000	0	0	3	55	200000	0	0	3	56	200000	0	0	3	57	200000	0	0	3	58	200000	0	0	3	59	200000	0	0	4	0	15000	0	1	4	1	30000	0	0	4	2	50000	0	1	4	3	15000	0	0	4	4	30000	0	1	4	5	50000	0	1	4	6	15000	0	1	4	7	30000	0	1	4	8	50000	0	1	4	9	15000	0	0	4	10	30000	0	1	4	11	50000	0	1	4	12	15000	0	1	4	13	30000	0	1	4	14	50000	0	0	4	15	25000	0	0	4	16	60000	0	1	4	17	90000	0	0	4	18	30000	0	1	4	19	60000	0	1	4	20	90000	0	0	4	21	50000	0	0	4	22	90000	0	0	4	23	120000	0	1	4	24	50000	0	0	4	25	85000	0	1	4	26	120000	0	0	4	27	180000	0	0	4	28	180000	0	0	4	29	180000	0	0	4	30	180000	0	0	4	31	180000	0	0	4	32	180000	0	0	4	33	180000	0	0	4	34	180000	0	0	4	35	180000	0	0	4	36	180000	0	0	4	37	180000	0	0	4	38	180000	0	0	4	39	180000	0	0	5	0	15000	0	0	5	1	30000	0	0	5	2	50000	0	1	5	3	15000	0	1	5	4	30000	0	1	5	5	50000	0	0	5	6	15000	0	0	5	7	30000	0	0	5	8	50000	0	0	5	9	15000	0	0	5	10	30000	0	1	5	11	50000	0	1	5	12	30000	0	0	5	13	60000	0	0	5	14	90000	0	1	5	15	30000	0	1	5	16	60000	0	1	5	17	90000	0	0	5	18	30000	0	0	5	19	60000	0	1	5	20	90000	0	0	5	21	30000	0	1	5	22	60000	0	0	5	23	120000	0	1	5	24	180000	0	0	5	25	180000	0	0	5	26	180000	0	0	5	27	180000	0	0	5	28	180000	0	0	5	29	180000	0	0	5	30	180000	0	0	5	31	180000	0	0	5	32	180000	0	0	5	33	180000	0	0	5	34	180000	0	0	5	35	180000	0	0	5	36	180000	0	0	6	0	15000	0	1	6	1	50000	0	0	6	2	100000	0	0	6	3	15000	0	0	6	4	50000	0	0	6	5	100000	0	1	6	6	15000	0	1	6	7	50000	0	1	6	8	100000	0	0	6	9	15000	0	0	6	10	50000	0	1	6	11	100000	0	0	6	12	15000	0	0	6	13	50000	0	0	6	14	100000	0	0	6	15	15000	0	0	6	16	50000	0	0	6	17	120000	0	0	6	18	15000	0	0	6	19	50000	0	0	6	20	100000	0	0	6	21	15000	0	1	6	22	50000	0	0	6	23	100000	0	0	6	24	15000	0	0	6	25	50000	0	0	6	26	100000	0	0	6	27	100000	0	0	6	28	100000	0	0	6	29	100000	0	0	6	30	100000	0	0	6	31	100000	0	0	6	32	100000	0	0	6	33	100000	0	0	6	34	100000	0	0	6	35	100000	0	0	6	36	100000	0	0	7	0	15000	0	1	7	1	50000	0	1	7	2	100000	0	0	7	3	15000	0	0	7	4	50000	0	0	7	5	100000	0	0	7	6	15000	0	0	7	7	50000	0	0	7	8	100000	0	0	7	9	15000	0	1	7	10	50000	0	1	7	11	100000	0	1	7	12	15000	0	1	7	13	50000	0	0	7	14	100000	0	0	7	15	15000	0	0	7	16	50000	0	1	7	17	100000	0	1	7	18	15000	0	0	7	19	50000	0	1	7	20	100000	0	1	7	21	15000	0	1	7	22	50000	0	0	7	23	100000	0	0	7	24	15000	0	0	7	25	50000	0	0	7	26	100000	0	0	7	27	100000	0	0	7	28	100000	0	0	7	29	100000	0	0	7	30	100000	0	0	7	31	100000	0	0	7	32	100000	0	0	7	33	100000	0	0	7	34	100000	0	0	7	35	100000	0	0	7	36	100000	0	0	8	0	15000	0	1	8	1	30000	0	1	8	2	50000	0	1	8	3	15000	0	0	8	4	30000	0	0	8	5	50000	0	0	8	6	15000	0	1	8	7	30000	0	0	8	8	50000	0	0	8	9	15000	0	0	8	10	30000	0	0	8	11	50000	0	0	8	12	50000	0	1	8	13	75000	0	1	8	14	110000	0	1	8	15	50000	0	0	8	16	75000	0	1	8	17	110000	0	1	8	18	60000	0	0	8	19	100000	0	1	8	20	140000	0	0	8	21	60000	0	0	8	22	100000	0	0	8	23	140000	0	0	8	24	180000	0	0	8	25	180000	0	0	8	26	180000	0	0	8	27	180000	0	0	8	28	180000	0	0	8	29	180000	0	0	8	30	180000	0	0	8	31	180000	0	0	8	32	180000	0	0	8	33	180000	0	0	8	34	180000	0	0	8	35	180000	0	0	8	36	180000	0	0	9	0	15000	0	0	9	1	30000	0	0	9	2	50000	0	1	9	3	15000	0	0	9	4	30000	0	1	9	5	50000	0	0	9	6	15000	0	1	9	7	30000	0	0	9	8	50000	0	1	9	9	15000	0	1	9	10	30000	0	0	9	11	50000	0	1	9	12	30000	0	1	9	13	60000	0	0	9	14	90000	0	1	9	15	30000	0	0	9	16	60000	0	0	9	17	90000	0	1	9	18	30000	0	1	9	19	60000	0	1	9	20	90000	0	0	9	21	30000	0	1	9	22	60000	0	1	9	23	120000	0	1	9	24	180000	0	0	9	25	180000	0	0	9	26	180000	0	0	9	27	180000	0	0	9	28	180000	0	0	9	29	180000	0	0	9	30	180000	0	0	9	31	180000	0	0	9	32	180000	0	0	9	33	180000	0	0	9	34	180000	0	0	9	35	180000	0	0	9	36	180000	0	0
+	ShipSystemsNew:	188
+	0	0	50990	0	0	0	1	59490	0	1	0	2	132000	0	1	0	3	184500	0	1	0	4	62000	0	0	0	5	133800	0	0	0	6	212000	0	0	0	7	54500	0	0	0	8	116250	0	0	0	9	245000	0	0	0	10	165000	0	0	0	11	296000	0	0	0	12	348000	0	0	0	13	71000	0	0	0	14	136000	0	0	0	15	144000	0	0	0	16	82000	0	0	0	17	125600	0	0	0	18	107300	0	0	0	19	294000	0	0	0	20	410000	0	0	0	21	414500	0	0	0	22	462000	0	0	0	23	513000	0	0	0	24	72500	0	0	0	25	112000	0	0	0	26	145000	0	0	0	27	195000	0	0	0	28	320000	0	0	0	29	534000	0	0	0	30	96000	0	0	0	31	201000	0	0	0	32	303000	0	0	0	33	212500	0	0	0	34	430200	0	0	0	35	567300	0	0	0	36	178400	0	0	0	37	398000	0	0	0	38	624000	0	0	0	39	138000	0	0	0	40	295000	0	0	0	41	465000	0	0	0	42	1215000	0	0	0	43	955000	0	0	0	44	716250	0	0	0	45	878000	0	0	0	46	740000	0	0	0	47	132000	0	0	0	48	164000	0	0	0	49	223000	0	0	0	50	253500	0	0	0	51	272000	0	0	0	52	428400	0	0	0	53	312500	0	0	0	54	365000	0	0	0	55	410000	0	0	0	56	345200	0	0	0	57	445000	0	0	0	58	512000	0	0	0	59	323000	0	0	0	60	285000	0	0	0	61	367300	0	0	0	62	212000	0	0	0	63	280000	0	0	0	64	353500	0	0	0	65	712300	0	0	0	66	628750	0	0	0	67	895000	0	0	0	68	765000	0	0	0	69	1350000	0	0	0	70	153500	0	0	0	71	153500	0	0	0	72	153500	0	0	0	73	99999999	0	0	0	74	99999999	0	0	0	75	99999999	0	0	0	76	635000	0	0	0	77	925000	0	0	0	78	883000	0	0	0	79	915000	0	0	0	80	950000	0	0	0	81	200000	0	0	0	82	200000	0	0	0	83	200000	0	0	0	84	200000	0	0	0	85	200000	0	0	0	86	200000	0	0	0	87	200000	0	0	0	88	200000	0	0	0	89	200000	0	0	0	90	200000	0	0	0	91	200000	0	0	0	92	200000	0	0	0	93	200000	0	0	0	94	200000	0	0	0	95	200000	0	0	0	96	200000	0	0	0	97	200000	0	0	0	98	200000	0	0	0	99	200000	0	0	0	100	200000	0	0	1	0	255150	0	1	1	1	276000	0	1	1	2	330000	0	0	1	3	425000	0	0	1	4	580000	0	0	1	5	660000	0	0	1	6	990000	0	0	1	7	1125000	0	0	1	8	1280000	0	0	1	9	1600000	0	0	1	10	1820000	0	0	1	11	225000	0	0	1	12	283000	0	1	1	13	325000	0	0	1	14	450000	0	0	1	15	595000	0	0	1	16	665000	0	0	1	17	1120000	0	0	1	18	1195000	0	0	1	19	1320000	0	0	1	20	1680000	0	0	1	21	1950000	0	0	1	22	275000	0	0	1	23	286500	0	0	1	24	320000	0	0	1	25	467000	0	0	1	26	610000	0	0	1	27	675000	0	0	1	28	1080000	0	0	1	29	1190000	0	0	1	30	1312000	0	0	1	31	1720000	0	0	1	32	1860000	0	0	1	33	100	0	0	1	34	100	0	0	1	35	100	0	0	1	36	100	0	0	1	37	100	0	0	1	38	100	0	0	1	39	1950000	0	0	1	40	2120000	0	0	1	41	2520000	0	0	1	42	2320000	0	0	1	43	3600000	0	0	1	44	600000	0	0	1	45	600000	0	0	1	46	600000	0	0	1	47	600000	0	0	1	48	600000	0	0	1	49	600000	0	0	1	50	600000	0	0	1	51	600000	0	0	1	52	600000	0	0	1	53	600000	0	0	1	54	600000	0	0	1	55	600000	0	0	1	56	600000	0	0	1	57	600000	0	0	1	58	600000	0	0	2	0	38250	0	0	2	1	49000	0	0	2	2	56500	0	0	2	3	65750	0	0	2	4	60000	0	0	2	5	50850	0	0	2	6	49050	0	0	2	7	55650	0	0	2	8	59250	0	0	2	9	55500	0	0	2	10	64240	0	0	2	11	28300	0	0	2	12	40350	0	0	2	13	50720	0	0	2	14	53500	0	0	2	15	60000	0	0	2	16	60000	0	0	2	17	60000	0	0	2	18	60000	0	0	2	19	60000	0	0	2	20	60000	0	0	2	21	60000	0	0	2	22	60000	0	0	2	23	60000	0	0	2	24	60000	0	0	2	25	60000	0	0	2	26	60000	0	0	2	27	60000	0	0
+	Officers:	385
+	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+	Ships:	116
+	343580	0	0	926720	0	0	2614950	0	0	9572700	0	0	30857100	0	0	332820	0	0	2667996	0	0	14857020	0	0	24478000	0	0	33244050	0	0	6797520	0	0	13734840	0	0	343500	0	0	1101880	0	0	2710110	0	0	10492600	0	0	25076187	0	0	30553575	0	0	2880240	0	0	9112600	0	0	24487812	0	0	24220000	0	0	287200	0	0	950300	0	0	14779800	0	0	2509710	0	0	6666760	0	0	24987000	0	0	2298420	0	0	669840	0	0	4913760	0	0	294520	0	0	2209920	0	0	24242250	0	0	1895000	0	0	15850000	0	0	3960000	0	0	8947950	0	0	12500000	0	0	19850000	0	0	297740	0	0	2551950	0	0	580580	0	0	5858600	0	0	5131880	0	0	8019850	0	0	2618760	0	0	2261190	0	0	9662150	0	0	7626000	0	0	10517750	0	0	343500	0	0	343500	0	0	278110	0	0	784260	0	0	925220	0	0	1986750	0	0	4864960	0	0	5861560	0	0	11293300	0	0	14260020	0	0	13587720	0	0	24880125	0	0	6363560	0	0	29811975	0	0	309510	0	0	985220	0	0	2569680	0	0	9513850	0	0	24493425	0	0	425000	0	0	6445000	0	0	820000	0	0	28550000	0	0	2710110	0	0	10881100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0	100	0	0
+	Events:	
+	{	
+		OnUnDock:	Spg2\Scripts\StationOnUndock.sal
+		OnEnterRadius:	Spg2\Scripts\StationOnEnter.sal
+		OnBuyEquipment:	Spg2\Scripts\PurchaseEquipment.sal
+		OnBuyOfficer:	Spg2\Scripts\PurchaseOfficer.sal
+		OnBuyShipSystem:	Spg2\Scripts\PurchaseSystem.sal
+		OnBuyEnhancement:	Spg2\Scripts\PurchaseEnhancement.sal
+		OnBuyShip:	Spg2\Scripts\PurchaseShip.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	31
+	Position:	19342.55	272.85	104145.29
+	Rotation:	-0.18	0.31	0.00
+	KeyName:	lens3
+	Name:	Lens
+	NameId:	104
+	FactionId:	0
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	2.00
+	Events:	
+	{	
+		OnDestroy:	Spg2\Models\Structures\Lens\Empty.sal
+		OnPulse:	Spg2\Models\Structures\Lens\OnPulse.sal
+		OnActivate:	Spg2\Models\Structures\Lens\Stage3\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\Lens\Stage3\deactivation.sal
+		OnScan:	Spg2\Models\Structures\Lens\Empty.sal
+		OnTransport:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHack:	Spg2\Models\Structures\Lens\Empty.sal
+		OnEnter:	Spg2\Models\Structures\Lens\Empty.sal
+		OnExit:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP75:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP50:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP25:	Spg2\Models\Structures\Lens\Empty.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	29
+	Position:	19342.55	272.85	104145.29
+	Rotation:	-0.18	0.31	0.00
+	KeyName:	lens1
+	Name:	Lens
+	NameId:	104
+	FactionId:	0
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	2.00
+	Events:	
+	{	
+		OnScan:	Spg2\Models\Structures\Lens\Empty.sal
+		OnActivate:	Spg2\Models\Structures\Lens\Stage1\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\Lens\Stage1\deactivation.sal
+		OnScan:	Spg2\Models\Structures\Lens\Empty.sal
+		OnTransport:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHack:	Spg2\Models\Structures\Lens\Empty.sal
+		OnEnter:	Spg2\Models\Structures\Lens\Empty.sal
+		OnExit:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP75:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP50:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP25:	Spg2\Models\Structures\Lens\Empty.sal
+	}	
+}	
+Structure:	
+{	
+	ModelId:	30
+	Position:	19342.55	272.85	104145.29
+	Rotation:	-0.17	0.30	0.00
+	KeyName:	lens2
+	Name:	Lens
+	NameId:	104
+	FactionId:	0
+	Hull:	10000.00
+	Destructible:	1
+	PulseTime:	2.00
+	Events:	
+	{	
+		Spg2\Models\Structures\Lens\Empty.sal
+		OnPulse:	Spg2\Models\Structures\Lens\OnPulse2.sal
+		OnActivate:	Spg2\Models\Structures\Lens\Stage1\activation.sal
+		OnDeactivate:	Spg2\Models\Structures\Lens\Stage1\deactivation.sal
+		OnScan:	Spg2\Models\Structures\Lens\Empty.sal
+		OnTransport:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHack:	Spg2\Models\Structures\Lens\Empty.sal
+		OnEnter:	Spg2\Models\Structures\Lens\Empty.sal
+		OnExit:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP75:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP50:	Spg2\Models\Structures\Lens\Empty.sal
+		OnHP25:	Spg2\Models\Structures\Lens\Empty.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	13
+	Position:	18889.07	-231.00	101498.16
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_283_0
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	0
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	14
+	Position:	22731.55	-419.00	103616.19
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_283_1
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	1
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Derelict:	
+{	
+	ModelId:	15
+	Position:	21367.83	262.00	101498.92
+	Rotation:	0.00	0.00	0.00
+	KeyName:	DER_283_2
+	Name:	Derelict
+	NameId:	85
+	CargoValue:	1000
+	LootDrop:	2
+	Enable:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\DerelictOnDestroy.sal
+		OnEnter:	Spg2\Scripts\DerelictOnEnter.sal
+		OnExit:	Spg2\Scripts\DerelictOnExit.sal
+		OnSalvage:	Spg2\Scripts\DerelictOnSalvage.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	0
+	Position:	17357.94	684.00	102726.17
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_283_2
+	Name:	Displacement
+	NameId:	86
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	1
+	Position:	18737.18	131.00	101010.83
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_283_0
+	Name:	Engine_dampener
+	NameId:	87
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	5.00
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Scripts\AnomalyOnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Anomaly:	
+{	
+	ModelId:	2
+	Position:	20895.37	-270.00	103892.58
+	Rotation:	0.00	0.00	0.00
+	KeyName:	ANO_283_1
+	Name:	Eye_of_storm
+	NameId:	88
+	Radius:	1000.00
+	Enable:	0
+	PulseTime:	1.50
+	Events:	
+	{	
+		OnEnable:	Spg2\Scripts\AnomalyOnEnable.sal
+		OnScan:	Spg2\Scripts\AnomalyOnScan.sal
+		OnEnter:	Spg2\Scripts\AnomalyOnEnter.sal
+		OnExit:	Spg2\Scripts\AnomalyOnExit.sal
+		OnPulse:	Spg2\Models\Anomalies\EyeOfStorm\OnPulse.sal
+		OnInside:	Spg2\Scripts\AnomalyOnInside.sal
+	}	
+}	
+Trigger:	
+{	
+	Position:	18678.94	0.00	104352.33
+	Rotation:	0.00	0.00	0.00
+	KeyName:	m15aTRI
+	Type:	1
+	Radius:	2000.00
+	PulseTime:	1.00
+Events:	
+{	
+OnEnter:	Spg2\Scripts\M15\EnterTriM15A.sal
+OnExit:	Spg2\Scripts\M15\ExitTriM15A.sal
+}	
+}	
+Platform:	
+{	
+	ModelId:	16
+	Position:	19362.02	294.36	103624.96
+	Rotation:	-0.06	0.02	0.00
+	KeyName:	m15mothership
+	Name:	Guardpost
+	NameId:	-1
+	Faction:	52
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\PlatformOnDestroy.sal
+	}	
+}	
+Platform:	
+{	
+	ModelId:	20
+	Position:	18519.54	-20.31	104621.60
+	Rotation:	0.02	1.07	0.00
+	KeyName:	clearmontPlatform
+	Name:	Clearmont
+	NameId:	198
+	Faction:	9
+	LootDrop:	0
+	Events:	
+	{	
+		OnDestroy:	Spg2\Scripts\M20\DestroyClearmont.sal
+		OnTransport:	Spg2\Scripts\M20\TransportClearmont.sal
+	}	
+}	
+Events:	
+{	
+	OnLoad:	Spg2\Scripts\Sectors\LoadSector283.sal
+}	

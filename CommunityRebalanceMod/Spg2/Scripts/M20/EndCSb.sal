@@ -1,0 +1,9 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+ship GetPlayer SetInvulnerable 1 ;
+game SetControlEnabled 0 ;
+dialogue Spg2\Dialogues\M20\D03.dia ;
+End

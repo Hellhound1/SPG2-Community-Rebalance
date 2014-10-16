@@ -1,0 +1,11 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+float3 rotation = 0.0 0.0 0.0 ;
+waypoint GetByKeyName m01spearheadGoTo GetRotation rotation ;
+ship GetByKeyName spearheadSHP SetRotation rotation ;
+
+End

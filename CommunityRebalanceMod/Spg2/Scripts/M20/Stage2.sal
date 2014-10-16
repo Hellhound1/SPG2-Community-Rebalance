@@ -1,0 +1,4 @@
+waypoint GetByKeyName m15marker SetMark 1 ;
+waypoint GetByKeyName m15marker SetMissionTask 4 ;
+
+End

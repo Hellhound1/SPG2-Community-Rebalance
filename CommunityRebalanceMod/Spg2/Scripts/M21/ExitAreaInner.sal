@@ -1,0 +1,74 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+	+activated on mission fail or abandon
+	+linked through QuestMain.wdt
+*/
+
+int questCond = 0 ;
+int titleLine = 0 ;
+int textLine1 = 0 ;
+int textLine2 = 0 ;
+
+/* m19areaBinner */
+questCond = 0 ;
+mainquest GetById 143 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m19areaBinner */
+questCond = 0 ;
+mainquest GetById 144 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m19areaBinner */
+questCond = 0 ;
+mainquest GetById 145 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m19areaBinner */
+questCond = 0 ;
+mainquest GetById 146 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m19areaBinner */
+questCond = 0 ;
+mainquest GetById 147 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+/* m19areaBinner */
+questCond = 0 ;
+mainquest GetById 148 GetAcquire questCond ;
+if questCond == 1
+	titleLine = 62 ;
+	textLine1 = 1022 ;
+	textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+endif
+
+End

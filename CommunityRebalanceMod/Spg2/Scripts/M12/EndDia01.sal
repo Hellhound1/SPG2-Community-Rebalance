@@ -1,0 +1,7 @@
+game SetControlEnabled 1 ;
+screen ShowLine 0 ;
+pause 0.5 ;
+game ShowAllPanels 1 ;
+ship GetPlayer SetInvulnerable 0 ;
+
+End

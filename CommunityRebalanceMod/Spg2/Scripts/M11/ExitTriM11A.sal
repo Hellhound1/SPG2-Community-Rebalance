@@ -1,0 +1,58 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M11_COMPLETED ;
+
+int shipExist = 0 ;
+int questCond = 0 ;
+mainquest GetById 76 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 76 SetSolve 1 ;
+	/* mainquest GetById 76 DeleteObjective 1 ; */
+	mainquest GetById 77 SetAvailable 1 ;
+	
+	ship GetByKeyName m11samoaSHP Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11samoaSHP SetEnabled 0 ;
+	endif
+	ship GetByKeyName m11sanctuary1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11sanctuary1 SetEnabled 0 ;
+	endif
+	ship GetByKeyName m11brother3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11brother3 SetEnabled 0 ;
+	endif
+	ship GetByKeyName m11brother4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m11brother4 SetEnabled 0 ;
+	endif
+	ship GetByKeyName m11ridleySHP SetEnabled 0 ;
+	
+	dialogue Spg2\Dialogues\M11\D05.dia ;
+	
+	waypoint GetByKeyName m11aWp SetMark 0 ;
+	waypoint GetByKeyName m11aWp SetMissionTask -1 ;
+	
+	mainmissionpanel 67 ;
+	
+	game SetQuestMode 0 ;
+
+	/* -^-REWARD-^- */
+	player AddExp 17200 ;
+	player AddReputation 100 ;
+	player AddCredits 240000 ;
+	script Spg2\Scripts\BlueprintAward.sal ;
+
+	/* -^-MISSION COMPLETE-^- */
+	int titleLine = 183 ;
+	int textLine1 = 1553 ;
+	int textLine2 = -1 ;
+	screen ShowWarnings titleLine textLine1 textLine2 ;
+	
+endif
+End

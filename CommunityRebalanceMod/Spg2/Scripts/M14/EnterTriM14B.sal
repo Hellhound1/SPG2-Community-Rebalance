@@ -1,0 +1,99 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int questCond = 0 ;
+mainquest GetById 86 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 86 SetSolve 1 ;
+	mainquest GetById 86 DeleteObjective 1 ;
+	mainquest GetById 87 SetAcquire 1 ;
+	structure GetByKeyName starpoint SetMark 1 ;
+	structure GetByKeyName starpoint SetMissionTask 4 ;
+	ship GetByKeyName m14ridleyB SetEnabled 1 ;
+	ship GetByKeyName m14ridleyB SetAIQuestStatus 1 ;
+	ship GetByKeyName m14ridleyB SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform1 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform2 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform3 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform4 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform5 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform6 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform7 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform8 SetAIQuestStatus 1 ;
+	platform GetByKeyName starpointPlatform1 SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform2 SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform3 SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform4 SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform5 SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform6 SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform7 SetFriendFoe 0 ;
+	platform GetByKeyName starpointPlatform8 SetFriendFoe 0 ;
+		
+	int type = 0 ;
+	float3 position = 0.0 0.0 0.0 ;
+	int faction = 0 ;
+	int shipId1 = 4 ;	
+	int shipId2 = 3 ;
+	int shipId3 = 3 ;
+	int shipId4 = 2 ;	
+	int shipId5 = 2 ;
+	int shipId6 = 2 ;
+	int shipId8 = 1 ;	
+	int shipId7 = 1 ;
+	int shipId9 = 1 ;
+	
+	structure GetByKeyName starpoint GetPosition position ;	
+	float3 enemy1pos ;
+	float3 enemy2pos ;
+	float3 enemy3pos ;
+	float3 enemy4pos ;
+	float3 enemy5pos ;
+	float3 enemy6pos ;
+	float3 enemy1offset = 250.0 0.0 -1000.0 ;
+	float3 enemy2offset = 150.0 0.0 -900.0 ;
+	float3 enemy3offset  = 100.0 0.0 -800.0 ;
+	float3 enemy4offset = -120.0 -5.0 -650.0 ;
+	float3 enemy5offset  = 100.0 0.0 -300.0 ;
+	float3 enemy6offset = -120.0 -5.0 -290.0 ;
+	
+	math enemy1pos  = position + enemy1offset ;
+	math enemy2pos  = position + enemy2offset ;
+	math enemy3pos  = position + enemy3offset ;
+	math enemy4pos  = position + enemy4offset ;
+	math enemy5pos  = position + enemy5offset ;
+	math enemy6pos  = position + enemy6offset ;
+	
+	shipAdd enemyshp1 type enemy1pos faction shipId ;
+	shipAdd enemyshp2 type enemy2pos faction shipId ;
+	shipAdd enemyshp3 type enemy3pos faction shipId ;
+	shipAdd enemyshp4 type enemy4pos faction shipId ;
+	shipAdd enemyshp5 type enemy4pos faction shipId ;
+	shipAdd enemyshp6 type enemy4pos faction shipId ;
+	
+	ship GetByKeyName enemyshp1 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp2 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp3 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp4 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp5 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp6 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp7 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp8 SetAIQuestStatus 2 ;
+	ship GetByKeyName enemyshp9 SetAIQuestStatus 2 ;	
+	ship GetByKeyName enemyshp1 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp2 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp3 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp4 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp5 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp6 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp7 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp8 SetFriendFoe 2 ;
+	ship GetByKeyName enemyshp9 SetFriendFoe 2 ;
+	
+	game ResetShipEnemyList 1 ;
+	log 75 ;
+	script Spg2\Scripts\M14\CS14JumpIn.sal ;
+endif
+End

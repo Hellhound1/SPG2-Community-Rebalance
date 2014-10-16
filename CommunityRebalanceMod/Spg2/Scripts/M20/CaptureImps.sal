@@ -1,0 +1,74 @@
+/* quest related */
+int questCond = 0 ;
+int shipExist = 0 ;
+int seraphimCond = 2 ;
+int shipCond1 = 2 ;
+int shipCond2 = 2 ;
+int shipCond3 = 2 ;
+int shipCond4 = 2 ;
+int shipCond5 = 2 ;
+
+mainquest GetById 135 GetAcquire questCond ;
+if questCond == 1
+	
+	ship GetByKeyName m20seraphim Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m20seraphim GetCondition seraphimCond ;
+	else
+		seraphimCond = 2 ;
+	endif
+	
+	ship GetByKeyName m20imp1 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m20imp1 GetCondition shipCond1 ;
+	else
+		shipCond1 = 2 ;
+	endif
+	
+	ship GetByKeyName m20imp2 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m20imp2 GetCondition shipCond2 ;
+	else
+		shipCond2 = 2 ;
+	endif
+	
+	ship GetByKeyName m20imp3 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m20imp3 GetCondition shipCond3 ;
+	else
+		shipCond3 = 2 ;
+	endif
+	
+	ship GetByKeyName m20imp4 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m20imp4 GetCondition shipCond4 ;
+	else
+		shipCond4 = 2 ;
+	endif
+	
+	ship GetByKeyName m20imp5 Exist shipExist ;
+	if shipExist == 1
+		ship GetByKeyName m20imp5 GetCondition shipCond5 ;
+	else
+		shipCond5 = 2 ;
+	endif
+
+	if seraphimCond != 0 && shipCond1 != 0
+		if shipCond2 != 0 && shipCond3 != 0
+			if shipCond4 != 0 && shipCond5 != 0
+				mainquest GetById 135 SetSolve 1 ;
+				mainquest GetById 135 DeleteObjective 1 ;
+				mainquest GetById 136 SetAcquire 1 ;
+				platform GetByKeyName clearmontPlatform SetMark 1 ;
+				platform GetByKeyName clearmontPlatform SetMissionTask 12 ;
+				platform GetByKeyName clearmontPlatform SetAIQuestStatus 1 ;
+				game ResetShipEnemyList 1 ;
+				log 109 ;
+				script Spg2\Scripts\M20\CS20A.sal ;
+			endif
+		endif
+	endif
+	
+endif
+
+End

@@ -1,0 +1,60 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	----------------------------------
+*/
+
+int aiState = 1 ;
+
+/* first entry into trigger */
+int questCond = 0 ;
+mainquest GetById 14 GetAcquire questCond ;
+if questCond == 1
+	game SetQuestMode 1 ;
+	mainquest GetById 14 SetSolve 1 ;
+	mainquest GetById 14 DeleteObjective 1 ;
+	mainquest GetById 15 SetAcquire 1 ;
+	game SetControlEnabled 0 ;
+	waypoint GetByKeyName m03marker SetMark 0 ;
+	waypoint GetByKeyName m03marker SetMissionTask -1 ;
+	ship GetByKeyName m03yukonSHP SetEnabled 1 ;
+	ship GetByKeyName m03yukonSHP SetBoardable 0 ;
+	ship GetByKeyName m03yukonSHP SetInvulnerable 1 ;
+	ship GetByKeyName m03yukonSHP SetMark 1 ;
+	aiState = 1 ;
+	ship GetByKeyName m03yukonSHP SetAIQuestStatus aiState ;
+	
+	ship GetByKeyName m03yukonSHP SetFriendFoe 1 ;
+	game ResetShipEnemyList 1 ;
+	/* StartCS */
+	script Spg2\Scripts\M03\CS03A.sal ;
+endif
+
+/* second entry into trigger */
+mainquest GetById 19 GetAcquire questCond ;
+if questCond == 1
+	mainquest GetById 19 SetSolve 1 ;
+	mainquest GetById 19 DeleteObjective 1 ;
+	mainquest GetById 20 SetAcquire 1 ;
+	game SetControlEnabled 0 ;
+	waypoint GetByKeyName m03marker SetMark 0 ;
+	waypoint GetByKeyName m03marker SetMissionTask -1 ;
+	ship GetByKeyName m03yukonSHP SetEnabled 1 ;
+	ship GetByKeyName m03yukonSHP SetBoardable 0 ;
+	ship GetByKeyName m03yukonSHP SetInvulnerable 1 ;
+	ship GetByKeyName m03yukonSHP SetMark 1 ;
+	aiState = 1 ;
+	ship GetByKeyName m03yukonSHP SetAIQuestStatus aiState ;
+	
+	ship GetByKeyName m03yukonSHP SetFriendFoe 1 ;
+	game ResetShipEnemyList 1 ;
+	
+	/* add quest item */
+	int itemId = 4 ;
+	int amount = -1 ;
+	player AddQuestItemCount itemId amount ;
+	
+	dialogue Spg2\Dialogues\M03\D02.dia ;
+endif
+
+End

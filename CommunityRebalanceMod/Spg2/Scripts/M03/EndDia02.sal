@@ -1,0 +1,43 @@
+/*
+	----------------------------------
+	Script by: LGM Games
+	2014/8/28
+	----------------------------------
+*/
+
+PrintMessage [LGM]_M03_COMPLETED ;
+
+mainquest GetById 20 SetSolve 1 ;
+/* mainquest GetById 20 DeleteObjective 1 ; */
+mainquest GetById 21 SetAvailable 1 ;
+ship GetByKeyName m03yukonSHP SetMark 0 ;
+ship GetByKeyName m03yukonSHP SetEnabled 0 ;
+log 18 ;
+game SetControlEnabled 1 ;
+
+/* add quest item */
+int itemId = 4 ;
+int amount = 1 ;
+player RemoveQuestItemCount itemId amount ;
+
+itemId = 5 ;
+amount = 1 ;
+player AddQuestItemCount itemId amount ;
+
+mainmissionpanel 19 ;
+
+game SetQuestMode 0 ;
+
+/* -^-REWARD-^- */
+player AddExp 900 ;
+player AddReputation 100 ;
+player AddCredits 80000 ;
+script Spg2\Scripts\AwardLightWeapon1.sal ;
+
+/* -^-MISSION COMPLETE-^- */
+int titleLine = 183 ;
+int textLine1 = 1553 ;
+int textLine2 = -1 ;
+screen ShowWarnings titleLine textLine1 textLine2 ;
+
+End

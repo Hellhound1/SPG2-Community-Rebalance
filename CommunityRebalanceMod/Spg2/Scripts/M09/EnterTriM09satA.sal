@@ -1,0 +1,16 @@
+int questCond = 0 ;
+mainquest GetById 52 GetAcquire questCond ;
+if questCond == 1
+	
+	game SetQuestMode 1 ;
+
+	waypoint GetByKeyName m09markerSatA SetMark 0 ;
+	waypoint GetByKeyName m09markerSatA SetMissionTask -1 ;
+	structure GetByKeyName m09satA SetMark 1 ;
+	structure GetByKeyName m09satA SetMissionTask 11 ;
+	structure GetByKeyName m09satA SetCondition 2 ;
+	structure GetByKeyName m09satA SetCanRepair 1 ;
+	structure GetByKeyName m09satA SetDestructible 0 ;
+endif
+
+End
