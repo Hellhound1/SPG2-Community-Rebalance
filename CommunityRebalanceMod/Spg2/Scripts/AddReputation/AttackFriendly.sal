@@ -6,6 +6,37 @@ Script by: LGM Games, 2014
 +parent of the script is the attacked ship
 */
 
+/* Community Rebalance Mod
+- PlayerBounty
+- By Hellhound1
+- PLB
+*/
+
+/* PLB Start */
+int BountyIolian = 0 ;
+int BountyNyx = 0 ;
+int BountyTrader = 0 ;
+int BountyEmpire = 0 ;
+int BountyRepublic = 0 ;
+int BountyTriad = 0 ;
+int BountyProvince = 0 ;
+int BountyPorphyria = 0 ;
+int BountyCompany = 0 ;
+int BountyOutlaw = 0 ;
+
+modingvar GetInt 0 BountyIolian ;
+modingvar GetInt 1 BountyNyx ;
+modingvar GetInt 2 BountyTrader ;
+modingvar GetInt 3 BountyEmpire ;
+modingvar GetInt 4 BountyRepublic ;
+modingvar GetInt 5 BountyTriad ;
+modingvar GetInt 6 BountyProvince ;
+modingvar GetInt 7 BountyPorphyria ;
+modingvar GetInt 8 BountyCompany ;
+modingvar GetInt 9 BountyOutlaw ;
+
+/* PLB End */
+
 /* get parent faction */
 int facParent = 0 ;
 ship GetParent GetFaction facParent ;
@@ -32,53 +63,94 @@ int repBaseOut = 3 ;
 if facParent < 2
 	math repChange = repBaseTer * -1 ;
 	math shipClass = shipClass * -1 ;
+	/* PLB Start */
+	math BountyIolian = BountyIolian + 1 ;
+	modingvar SetInt 0 BountyIolian ;
+	/* PLB End */
+	
 endif
 /* Nyxian consortium */
 if facParent == 2
 	math repChange = repBaseTer * 1 ;
 	math shipClass = shipClass * 1 ;
+	/* PLB Start */
+	math BountyNyx = BountyNyx + 1 ;
+	modingvar SetInt 1 BountyNyx ;
+	/* PLB End */
 endif
 /* Traders association <-> Trinity Free States */
 if facParent > 2 && facParent < 8
 	math repChange = repBaseTer * -1 ;
 	math shipClass = shipClass * -1 ;
+	/* PLB Start */
+	math BountyTrader = BountyTrader + 1 ;
+	modingvar SetInt 2 BountyTrader ;
+	/* PLB End */
 endif
 /* Directorate & Empire */
 if facParent > 8 && facParent < 10
 	math repChange = repBaseTer * 1 ;
 	math shipClass = shipClass * 1 ;
+	/* PLB Start */
+	math BountyEmpire = BountyEmpire + 1 ;
+	modingvar SetInt 3 BountyEmpire ;
+	/* PLB End */
 endif
 /* Baeldor Republic <-> Hub */
 if facParent > 9 && facParent < 17
 	math repChange = repBaseTer * -1 ;
 	math shipClass = shipClass * -1 ;
+	/* PLB Start */
+	math BountyRepublic = BountyRepublic + 1 ;
+	modingvar SetInt 4 BountyRepublic ;
+	/* PLB End */
 endif
 /* Triad */
 if facParent == 17
 	math repChange = repBaseTer * 1 ;
 	math shipClass = shipClass * 1 ;
+	/* PLB Start */
+	math BountyTriad = BountyTriad + 1 ;
+	modingvar SetInt 5 BountyTriad ;
+	/* PLB End */
 endif
 /* LaGarde Province */
 if facParent == 18
 	math repChange = repBaseTer * -1 ;
 	math shipClass = shipClass * -1 ;
+	/* PLB Start */
+	math BountyProvince = BountyProvince + 1 ;
+	modingvar SetInt 6 BountyProvince ;
+	/* PLB End */
 endif
 /* Porphyria */
 if facParent > 52
 	math repChange = repBaseTer * -1 ;
 	math shipClass = shipClass * -1 ;
+	/* PLB Start */
+	math BountyPorphyria = BountyPorphyria + 1 ;
+	modingvar SetInt 7 BountyPorphyria ;
+	/* PLB End */
 endif
 
 /* --| COMPANY |-- */
 if facParent > 18 && facParent < 37
 	math repChange = repBaseCom * -1 ;
 	math shipClass = shipClass * -1 ;
+	/* PLB Start */
+	math BountyCompany = BountyCompany + 1 ;
+	modingvar SetInt 8 BountyCompany ;
+	/* PLB End */
 endif
 
 /* --| OUTLAW |-- */
 if facParent > 36 && facParent < 53
 	math repChange = repBaseOut * 1 ;
 	math shipClass = shipClass * 1 ;
+	/* PLB Start */
+	math BountyOutlaw = BountyOutlaw + 1 ;
+	modingvar SetInt 9 BountyOutlaw ;
+	/* PLB End */
 endif
 
 /* FINAL CALCULATION */
