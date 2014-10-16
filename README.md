@@ -19,6 +19,43 @@ Pros - You can keep any existing mods. Cons - You have to copy it across each ti
 Pros - Easy to play/update. Cons - Cant have any other mods while developing this one.
 
 
+Good Modding Practice
+=====================
+Because there will be lots of different authors, with lots of different ideas, there is a really easy way for us all to keep track of whos code is whos.
+
+At the top of each file, you need to add the following lines
+
+[code]/* Community Rebalance Mod
+	- IdeaName (For example, PlayerBounty)
+	- By AuthorName (Your name here)
+	- ModID (3 letters that identify your mod (Example: PLB)
+*/[/code]
+
+Then, when it comes to writing to your bit of code, add
+
+/* ModID Start */
+
+and at the end add
+
+/* ModID End */
+
+This should be done for each section of code. If you're writing or editing just one line, add this before and after. If you're writing 10 lines, add this at the start, and at the end.
+
+If you're editing original code, you still need to add it before and after every line you edit.
+
+IMPORTANT! If you're editing someone elses code, that already has the tags, then add your tag after it. Example:
+
+/* PLB Start */
+/* Mod1 Start */
+
+--> Code
+
+/* PLB End */
+/* Mod1 End */
+
+It may also be useful to give a small summary of what you have edited, although this is optional.
+
+
 FAQ
 ====
 
