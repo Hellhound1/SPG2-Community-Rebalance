@@ -45,13 +45,13 @@ If you're editing original code, you still need to add it before and after every
 
 IMPORTANT! If you're editing someone elses code, that already has the tags, then add your tag after it. Example:
 
-/* PLB Start */
-/* Mod1 Start */
+/* PLB Start */<br>
+/* Mod1 Start */<br>
 
 --> Code
 
-/* PLB End */
-/* Mod1 End */
+/* PLB End */<br>
+/* Mod1 End */<br>
 
 It may also be useful to give a small summary of what you have edited, although this is optional.
 
