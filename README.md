@@ -25,11 +25,11 @@ Because there will be lots of different authors, with lots of different ideas, t
 
 At the top of each file, you need to add the following lines
 
-[code]/* Community Rebalance Mod
+'''/* Community Rebalance Mod
 	- IdeaName (For example, PlayerBounty)
 	- By AuthorName (Your name here)
 	- ModID (3 letters that identify your mod (Example: PLB)
-*/[/code]
+*/'''
 
 Then, when it comes to writing to your bit of code, add
 
