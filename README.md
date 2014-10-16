@@ -6,6 +6,19 @@ Starpoint Gemini 2 Community Rebalance Mod
 This is a community driven long term project to rebalance the SPG2 Economy and to add more cargo ships, opportunities and scenarios, that any SPG2 modder can contribute to.
 
 
+Setting Up Your Repo
+=====================
+There are 2 ways to set up your repo.
+
+1) You can have it in the default folder, and copy across the files to your mod folder when you want to play the mod
+
+Pros - You can keep any existing mods. Cons - You have to copy it across each time
+
+2) You can have it saved in to your mods folder. This means when you update you have the complete files in your mod folder and can play right away, but any /other/ mods you have in the folder will try to be automatically added to the mod, which we cant have happening. 
+
+Pros - Easy to play/update. Cons - Cant have any other mods while developing this one.
+
+
 FAQ
 ====
 
