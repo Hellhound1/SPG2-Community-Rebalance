@@ -19,7 +19,7 @@ Pros - You can keep any existing mods. Cons - You have to copy it across each ti
 Pros - Easy to play/update. Cons - Cant have any other mods while developing this one.
 
 
-Good Modding Practice
+Good Modding Practice - Code
 =====================
 Because there will be lots of different authors, with lots of different ideas, there is a really easy way for us all to keep track of whos code is whos.
 
@@ -55,6 +55,25 @@ IMPORTANT! If you're editing someone elses code, that already has the tags, then
 
 It may also be useful to give a small summary of what you have edited, although this is optional.
 
+
+Good Modding Practice - Commit
+==============================
+When commiting (either in a Pull Request, or directly committing) it's important to have a good format, otherwise it may take longer to track down bugs, and confuse people.
+
+The best way to commit a change is this:
+
+Summary/Name: [ModID] - [Author] - [Summary]
+
+This allows us all to see at a glance whats going on. For example:<br>
+Summary: PLB - Hellhound1 - Add Bounty setup code
+
+
+There is also a description to fill in. You should add what you've commited, what changes you've made and any removals you've made. For example: <br>
+Added modingvars for each set of factions as predetermined by the devs in to the AttackFriendly file, which will add a "bounty score" to the player for each faction they attack. The more they attack a faction, the more this will increase.
+
+That gives a good overview of what was added and what it does.
+
+See this link for the above example: https://github.com/Hellhound1/SPG2-Community-Rebalance/commit/863c8490ab9f53642fda3b66ca84834ca2959076
 
 FAQ
 ====
