@@ -6,7 +6,6 @@
 
 /* PLB Start */
 int BountyIolian = 0 ;
-int detected = 1 ;
 int chance = 0 ;
 int outcome = 0 ;
 int ResponseLevel = 0 ;
@@ -45,6 +44,14 @@ if BountyIolian > 50
 	chance = 5 ;
 	ResponseLevel = 6 ;
 endif
+
+math outcome = RND 0 chance ;
+	if outcome == 1
+		modingvar SetInt 11 outcome ;
+		PrintMessage Player_Detected ;
+	endif
+
+End
 
 /* PLB End */
  
