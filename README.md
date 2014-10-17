@@ -88,7 +88,7 @@ A) There are 2 ways to contribute. If you're a well known SPG2 modder already, t
 
 3) Submit any changes you make to your fork.
 
-4) Create a pull request between the masters of both your fork, and this repository.
+4) Create a pull request between the master of your fork, and the <b>TESTING</b> branch of this repository.
 
 
 Enough commits (that don't corrupt files!) and you'll be given contributer status.
