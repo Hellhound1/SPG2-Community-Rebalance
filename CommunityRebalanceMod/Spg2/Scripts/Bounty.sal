@@ -1,0 +1,50 @@
+/* Community Rebalance Mod
+- PlayerBounty
+- By Hellhound1
+- PLB
+*/
+
+/* PLB Start */
+int BountyIolian = 0 ;
+int detected = 1 ;
+int chance = 0 ;
+int outcome = 0 ;
+int ResponseLevel = 0 ;
+
+
+
+modingvar GetInt 0 BountyIolian ;
+modingvar GetInt 10 ResponseLevel ;
+
+if BountyIolian <= 10
+	chance = 50 ;
+	ResponseLevel = 1 ;
+endif
+
+if BountyIolian > 11 && <= 20
+	chance = 40 ;
+	ResponseLevel = 2 ;
+endif
+
+if BountyIolian > 21 && <= 30
+	chance = 30 ;
+	ResponseLevel = 3 ;
+endif
+
+if BountyIolian > 31 && <= 40
+	chance = 20 ;
+	ResponseLevel = 4 ;
+endif
+
+if BountyIolian > 41 && <= 50
+	chance = 10 ;
+	ResponseLevel = 5 ;
+endif
+
+if BountyIolian > 50
+	chance = 5 ;
+	ResponseLevel = 6 ;
+endif
+
+/* PLB End */
+ 
