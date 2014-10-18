@@ -8,7 +8,7 @@
 int BountyIolian = 0 ;
 int chance = 0 ;
 int outcome = 0 ;
-int ResponseLevelIolain = 0 ;
+int ResponseLevelIolian = 0 ;
 
 
 
@@ -17,38 +17,38 @@ modingvar GetInt 0 BountyIolian ;
 
 if BountyIolian <= 10
 	chance = 50 ;
-	ResponseLevelIolain = 1 ;
+	ResponseLevelIolian = 1 ;
 endif
 
 if BountyIolian > 11 && <= 20
 	chance = 40 ;
-	ResponseLevelIolain = 2 ;
+	ResponseLevelIolian = 2 ;
 endif
 
 if BountyIolian > 21 && <= 30
 	chance = 30 ;
-	ResponseLevelIolain = 3 ;
+	ResponseLevelIolian = 3 ;
 endif
 
 if BountyIolian > 31 && <= 40
 	chance = 20 ;
-	ResponseLevelIolain = 4 ;
+	ResponseLevelIolian = 4 ;
 endif
 
 if BountyIolian > 41 && <= 50
 	chance = 10 ;
-	ResponseLevelIolain = 5 ;
+	ResponseLevelIolian = 5 ;
 endif
 
 if BountyIolian > 50
 	chance = 5 ;
-	ResponseLevelIolain = 6 ;
+	ResponseLevelIolian = 6 ;
 endif
 
 math outcome = RND 0 chance ;
 	if outcome == 1
 		modingvar SetInt 11 outcome ;
-		modingvar SetInt 10 ResponseLevelIolain ;
+		modingvar SetInt 10 ResponseLevelIolian ;
 		PrintMessage Player_Detected ;
 	endif
 
