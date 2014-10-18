@@ -1,0 +1,57 @@
+/* Community Rebalance Mod
+- PlayerBounty
+- By Hellhound1
+- PLB
+*/
+
+/* PLB Start */
+int BountyTrader = 0 ;
+int chance = 0 ;
+int outcome = 0 ;
+int ResponseLevelTrader = 0 ;
+
+
+
+modingvar GetInt 2 BountyTrader ;
+
+if BountyTrader <= 10
+	chance = 50 ;
+	ResponseLevelTrader = 1 ;
+endif
+
+if BountyTrader > 11 && <= 20
+	chance = 40 ;
+	ResponseLevelTrader = 2 ;
+endif
+
+if BountyTrader > 21 && <= 30
+	chance = 30 ;
+	ResponseLevelTrader = 3 ;
+endif
+
+if BountyTrader > 31 && <= 40
+	chance = 20 ;
+	ResponseLevelTrader = 4 ;
+endif
+
+if BountyTrader > 41 && <= 50
+	chance = 10 ;
+	ResponseLevelTrader = 5 ;
+endif
+
+if BountyTrader > 50
+	chance = 5 ;
+	ResponseLevelTrader = 6 ;
+endif
+
+math outcome = RND 0 chance ;
+	if outcome == 1
+		modingvar SetInt 11 outcome ;
+		modingvar SetInt 13 ResponseLevelTrader ;
+		PrintMessage Player_Detected ;
+	endif
+
+End
+
+/* PLB End */
+ 

@@ -1,0 +1,57 @@
+/* Community Rebalance Mod
+- PlayerBounty
+- By Hellhound1
+- PLB
+*/
+
+/* PLB Start */
+int BountyNyx = 0 ;
+int chance = 0 ;
+int outcome = 0 ;
+int ResponseLevelNyx = 0 ;
+
+
+
+modingvar GetInt 1 BountyNyx ;
+
+if BountyNyx <= 10
+	chance = 50 ;
+	ResponseLevelNyx = 1 ;
+endif
+
+if BountyNyx > 11 && <= 20
+	chance = 40 ;
+	ResponseLevelNyx = 2 ;
+endif
+
+if BountyNyx > 21 && <= 30
+	chance = 30 ;
+	ResponseLevelNyx = 3 ;
+endif
+
+if BountyNyx > 31 && <= 40
+	chance = 20 ;
+	ResponseLevelNyx = 4 ;
+endif
+
+if BountyNyx > 41 && <= 50
+	chance = 10 ;
+	ResponseLevelNyx = 5 ;
+endif
+
+if BountyNyx > 50
+	chance = 5 ;
+	ResponseLevelNyx = 6 ;
+endif
+
+math outcome = RND 0 chance ;
+	if outcome == 1
+		modingvar SetInt 11 outcome ;
+		modingvar SetInt 12 ResponseLevelNyx ;
+		PrintMessage Player_Detected ;
+	endif
+
+End
+
+/* PLB End */
+ 

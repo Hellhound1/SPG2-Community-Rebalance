@@ -35,6 +35,7 @@ modingvar GetInt 7 BountyPorphyria ;
 modingvar GetInt 8 BountyCompany ;
 modingvar GetInt 9 BountyOutlaw ;
 
+
 /* PLB End */
 
 /* get parent faction */
