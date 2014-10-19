@@ -1,0 +1,57 @@
+/* Community Rebalance Mod
+- PlayerBounty
+- By Hellhound1
+- PLB
+*/
+
+/* PLB Start */
+int BountyRepublic = 0 ;
+int chance = 0 ;
+int outcome = 0 ;
+int ResponseLevelRepublic = 0 ;
+
+
+
+modingvar GetInt 4 BountyRepublic ;
+
+if BountyRepublic <= 10
+	chance = 50 ;
+	ResponseLevelRepublic = 1 ;
+endif
+
+if BountyRepublic > 11 && <= 20
+	chance = 40 ;
+	ResponseLevelRepublic = 2 ;
+endif
+
+if BountyRepublic > 21 && <= 30
+	chance = 30 ;
+	ResponseLevelRepublic = 3 ;
+endif
+
+if BountyRepublic > 31 && <= 40
+	chance = 20 ;
+	ResponseLevelRepublic = 4 ;
+endif
+
+if BountyRepublic > 41 && <= 50
+	chance = 10 ;
+	ResponseLevelRepublic = 5 ;
+endif
+
+if BountyRepublic > 50
+	chance = 5 ;
+	ResponseLevelRepublic = 6 ;
+endif
+
+math outcome = RND 0 chance ;
+	if outcome == 1
+		modingvar SetInt 11 outcome ;
+		modingvar SetInt 15 ResponseLevelRepublic ;
+		PrintMessage Player_Detected ;
+	endif
+
+End
+
+/* PLB End */
+ 
